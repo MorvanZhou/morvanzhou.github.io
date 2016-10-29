@@ -3,17 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>My web</title>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>My website</h1>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/">Home</a> </li>
-        <li><a href="{{site.baseurl}}/news/">News</a></li>
-        <li><a href="{{site.baseurl}}/contact/">Contact</a></li>
-      </ul>
-    </nav>
+    {% include nav.html navclass='nav-top'%}
   </header>
 
   <main>
@@ -21,7 +16,8 @@
   </main>
 
   <footer>
-    <p>©</p>
+    {% include nav.html navclass='nav-bottom'%}
+    <p>© 2016 Morvan</p>
   </footer>
 </body>
 </html>
