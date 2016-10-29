@@ -3,4 +3,12 @@ layout: default
 ---
 
 <h1>News</h1>
-<p>This is the news page</p>
+
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="">{{post.title}}</a>
+            <p>{{post.description}}</p>
+        </li>
+    {% endfor %}
+</ul>
