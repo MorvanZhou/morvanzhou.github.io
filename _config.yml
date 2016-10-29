@@ -1,0 +1,4 @@
+markdown: redcarpet
+permalink: pretty
+baseurl:
+exclude: ['README.md']
