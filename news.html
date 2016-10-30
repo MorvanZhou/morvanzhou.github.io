@@ -7,7 +7,7 @@ layout: default
 <ul>
     {% for post in site.categories.news %}
         <li>
-            <a href="">{{post.title}}</a>
+            <a href="">{{post.title}} ({{post.time}})</a>
             <p>{{post.description}}</p>
         </li>
     {% endfor %}
