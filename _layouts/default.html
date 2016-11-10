@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
   <meta charset="utf-8">
-  <title>My web</title>
-  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+  <meta name="description" content="Morvan's python tutorial page">
+  <meta name="keywords" content="莫烦,python,tutorial,machine learning,
+  机器学习,神经网络,教学,教程">
+  <meta name="author" content="Mofan,Morvan,莫烦">
+  <title>莫烦 Python</title>
+  <link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
 </head>
+
 <body>
   <header>
-    <h1>My website</h1>
-    {% include nav.html navclass='nav-top'%}
+    <div id="blank-fill"></div>
+    {% include nav.html %}
   </header>
 
   <main>
     {{content}}
   </main>
 
+  <div id="bottom-donation-section">
+    {% if page.url != '/support/' %} {% include donate.html %} {% endif %}
+  </div>
+
   <footer>
-    {% include nav.html navclass='nav-bottom'%}
-    <p>© 2016 Morvan</p>
+    {% include footer.html %}
   </footer>
 </body>
 </html>

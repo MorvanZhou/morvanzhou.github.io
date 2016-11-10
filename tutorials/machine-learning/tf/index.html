@@ -1,0 +1,71 @@
+---
+layout: tutorials
+---
+<img class="course-image" src="{{site.baseulr}}/static/img/course-cover/tf.jpg">
+<ol class="table-of-contents-ul">
+	<li class="chapter-li"><h4>Tensorflow 简介</h4>
+		<ol>
+		{% assign tuts = (site.tensorflow | where: "chapter", "1") %}
+	  {% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ol>
+	</li>
+
+	<li class="chapter-li"><h4>Tensorflow 基础构架</h4>
+		<ol>
+		{% assign tuts = (site.tensorflow | where: "chapter", "2") %}
+		{% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ol>
+	</li>
+
+	<li class="chapter-li"><h4>建造我们第一个神经网络</h4>
+		<ol>
+		{% assign tuts = (site.tensorflow | where: "chapter", "3") %}
+		{% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ol>
+	</li>
+
+	<li class="chapter-li"><h4>可视化好助手 Tensorboard</h4>
+		<ol>
+		{% assign tuts = (site.tensorflow | where: "chapter", "4") %}
+		{% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ol>
+	</li>
+
+	<li class="chapter-li"><h4>更多神经网络结构</h4>
+		<ol>
+		{% assign tuts = (site.tensorflow | where: "chapter", "5") %}
+		{% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ol>
+	</li>
+
+</ol>

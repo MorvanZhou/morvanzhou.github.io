@@ -1,0 +1,481 @@
+
+/* ================ DEFAULT FOR PAGES ================ */
+
+body {
+font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
+font-weight: normal;
+background-color: rgb(250, 250, 250);
+font-size: 16px;
+margin: 0px;
+padding: 0px;
+}
+
+iframe {
+display: block;
+text-align: center;
+margin: 0 auto;
+padding: 1em;
+width: 700px;
+height: 394px;
+
+}
+
+/* ================ Heading ================ */
+h1 {
+font-size: 2.5em;
+text-align: center;
+padding: 0.1em 0.2em;
+display: block;
+color: #00b359;
+}
+
+h2 {
+font-size: 2em;
+color: #00b359;
+text-align: center;
+}
+
+h3 {
+font-size: 1.6em;
+color: #00b359;
+text-align: center;
+}
+
+h4 {
+font-size: 1.2em;
+color: #00b359;
+text-align: left;
+}
+
+h5 {
+font-size: 1em;
+color: #00b359;
+text-align: left;
+}
+
+p {
+line-height: 1.5em;
+padding: 0;
+text-align: justify;
+color: #415849;
+}
+
+.white {
+color:white
+}
+
+.align-left {
+text-align: left;
+}
+
+a:link {
+color: #0099ff;
+}
+
+a:visited {
+color: #cc0052;
+}
+
+a:hover {
+color: #33adff;
+}
+
+
+/* ================== DEFAULT FOR PAGES =================== */
+
+/* ====== blank fill ====== */
+#blank-fill {
+width:100;
+height:60px;
+}
+
+/* ====== navigation bar ====== */
+#home-nav > ul {
+position: fixed;
+top: 0;
+left: 0;
+list-style-type: none;
+background-color: #14b814;
+display: block;
+font-size: 130%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+#home-nav > ul > li > a, #home-nav a:link, #home-nav a:visited{
+float: left;
+color: #fff;
+text-decoration: none;
+text-align: center;
+margin: 0;
+padding: 0.5em 0.7em;
+}
+
+#home-nav > ul > li > a.nav-home {
+background-color: #009900;
+
+}
+
+#home-nav > ul > li > a:hover {
+background-color: #00cc00;
+position: relative;
+top: -1px;
+left: 0px;
+}
+
+#home-nav .dropdown-content {
+position: fixed;
+top: 48px;
+left: 159px;
+display: none;
+text-decoration: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+box-shadow: 10px 4px 10px 0px rgba(0,0,0,0.4);
+}
+
+#home-nav .dropdown-content a {
+background-color: #009900;
+font-size: 0.7em;
+min-width: 160px;
+padding: 0.2em 0em 0.2em 0.5em;
+margin: 0;
+text-align: left;
+width: 100%;
+}
+
+
+#home-nav .dropdown-content a:hover {
+background-color: #00cc00;
+}
+
+#home-nav .dropbtn:hover .dropdown-content {
+display: block;
+}
+
+@media screen and (max-width: 450px){
+    #home-nav > ul > li > a,  #home-nav a:link, #home-nav a:visited {
+    float: none;
+    display: block;
+    }
+    #home-nav > ul{
+    position: static;
+    }
+    #home-nav .dropbtn:hover .dropdown-content {
+		display: none;
+		}
+		#blank-fill {
+		display: none;
+		}
+}
+
+/* ====== main body ====== */
+main {
+margin: 0px 4em;
+}
+
+/* ====== side right ====== */
+.side-right {
+clear: right;
+float: right;
+margin: 125px 10px;
+font-size: 70%;
+background-color: #009900;
+opacity: 0.5;
+width: 240px;
+border-radius: 10px;
+}
+
+.side-right h3, .side-right p {
+color: white;
+margin-left: 1.5em;
+margin-top: 1.5em;
+text-align: left;
+}
+
+/* ======== bottom donation ======== */
+#bottom-donation-section {
+clear: right;
+}
+
+#bottom-donation-title {
+display: block;
+text-align: center;
+margin: 0;
+padding-top: 1em;
+}
+
+#bottom-donation-button {
+width: 50%;
+margin: 0 auto 0 auto;
+display: block;
+color: white;
+text-align: center;
+padding: 10px;
+background-color: #14b814;
+text-decoration: none;
+border-radius: 20px;
+}
+
+#bottom-donation-button:hover {
+background-color: #00cc00;
+}
+
+/* ======== footer ======== */
+
+footer {
+clear: both;
+font-size: 0.8em;
+background-color: #14b814;
+color: white;
+padding: 0px;
+margin: 0px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+footer p{
+color: white;
+display: block;
+clear: left;
+margin: 10px 15px;
+padding-top: 7px;
+}
+
+footer ul{
+margin:0;
+list-style-type: none;
+}
+
+footer li {
+float: left;
+padding-right: 10px;
+padding-left: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+margin: 0;
+}
+
+/* ===================== HOME PAGE ====================== */
+#home-image {
+display: block;
+float: right;
+margin:0;
+padding: 10px;
+}
+
+/* ===================== TUTORIAL PAGE ====================== */
+/* ====== header ===== */
+#tut-header {
+padding: 0;
+margin: 0 0 4em 0;
+}
+
+#tut-header h1 {
+width: 60%;
+text-align: center;
+display: inline-block;
+float: left;
+margin: 0.5em 0;
+padding: 0;
+}
+
+
+/* ====== tutorial navigation ===== */
+#tut-nav {
+width: 40%;
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+#tut-nav > ul {
+display: block;
+list-style-type: none;
+font-size: 120%;
+margin: 0;
+padding: 0;
+}
+
+#tut-nav > ul > li {
+display: block;
+margin: 0;
+padding: 0.2em 0 0.2em 0.5em;
+background-color: #14b814;
+text-align: center;
+}
+
+#tut-nav ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+#tut-nav > ul > li:hover {
+background-color: #00cc00;
+}
+
+#tut-nav > ul > li > ul {
+display: block;
+list-style-type: none;
+font-size: 100%;
+margin-left: 0;
+padding: 0;
+}
+
+#tut-nav > ul > li > ul > li {
+display: block;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+#tut-nav > ul > li > ul > li:hover {
+background-color: #00e600;
+}
+
+#tut-nav .dropdown-content {
+display: none;
+}
+
+#tut-nav .dropdown-content a {
+font-size: 0.7em;
+min-width: 160px;
+padding: 0.2em 0em 0.2em 0.5em;
+margin: 0;
+width: 100%;
+}
+
+
+#tut-nav .dropbtn:hover .dropdown-content {
+display: block;
+}
+
+/* ======== table of contents ======== */
+.table-of-contents-ul {
+background-color: #52BE80;
+padding: 1em;
+border-radius: 20px;
+color: white;
+counter-reset: item;
+list-style-type: none;
+
+}
+
+.table-of-contents-ul h4 {
+color: white;
+text-align: left;
+}
+
+.chapter-li {
+margin: 0 3em;
+}
+
+.content-li:before {
+content: counters(item, ".") " ";
+counter-increment: item;
+}
+
+.chapter-li ul {
+list-style-type: none;
+}
+
+.content-li {
+padding: 0.3em 1em;
+display: block;
+}
+
+.content-li a {
+color: white;
+text-decoration: none;
+}
+
+.content-li:hover {
+background-color: #82E0AA;
+}
+
+/* ======== inner page ======== */
+.course-image {
+padding: 1em;
+display:block;
+margin: 0 auto;
+height: 300px;
+}
+
+.link-under-youtube {
+text-align: center;
+margin: 0;
+}
+
+.PageNavigation {
+display: block;
+width: auto;
+overflow: hidden;
+}
+
+.PageNavigation a {
+display: block;
+color: white;
+background-color: #14b814;
+text-decoration: none;
+padding: 1em;
+margin: 1em 0;
+border-radius: 10px;
+}
+
+.PageNavigation a:hover {
+background-color:#00e600;
+}
+
+.PageNavigation .prev {
+float: left;
+}
+
+.PageNavigation .next {
+float: right;
+text-align: right;
+}
+
+
+/* ===================== ABOUT PAGE ==================== */
+#contact-table {
+background-color: #00cc7a /*#2dd290*/;
+padding: 1.5em;
+border-radius: 10px;
+}
+
+.row {
+display: table-row;
+}
+
+.row p {
+color: white;
+display: table-cell;
+text-align: right;
+padding: 0.4em 3em;
+}
+
+.row a {
+display: table-cell;
+padding-left: 1em;
+}
+
+/* ===================== DONATION PAGE ==================== */
+#support-box {
+padding: 4px;
+background-color: #ccffcc;
+width:100%;
+color: #00b359;
+text-align: center;
+}
+
+#support-box-wrapper {
+display: flex;
+}
+
+#support-box-wrapper div {
+flex-basis: 100%;
+text-align: center;
+}
+

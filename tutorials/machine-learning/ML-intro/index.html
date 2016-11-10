@@ -1,0 +1,31 @@
+---
+layout: tutorials
+---
+<img class="course-image" src="{{site.baseulr}}/static/img/course-cover/ML_intro.png">
+<ul class="table-of-contents-ul">
+	<li class="chapter-li"><h4>机器学习方法:</h4>
+		<ul>
+		{% assign tuts = (site.ML_intro | where: "chapter", "1") %}
+	  {% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}"> {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ul>
+	</li>
+
+	<li class="chapter-li"><h4>机器学习技巧:</h4>
+		<ul>
+		{% assign tuts = (site.ML_intro | where: "chapter", "2") %}
+		{% for tut in tuts %}
+			{% if tut.title != "page default" %}
+	      <li class="content-li">
+	          <a href="{{site.baseurl}}{{ tut.url }}"> {{tut.title}}</a>
+	      </li>
+			{% endif %}
+	  {% endfor %}
+		</ul>
+	</li>
+</ul>

@@ -1,4 +1,13 @@
+collections:
+  ML_intro:
+    output: true
+  tensorflow:
+    output: true
+  backup:
+    output: true
+
 markdown: kramdown
 permalink: pretty
 baseurl:
+
 exclude: ['README.md']
