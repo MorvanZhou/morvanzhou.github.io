@@ -1,5 +1,7 @@
 ---
 layout: tutorial-post
+tut-title: Tensorflow
+tut-link: /tutorials/machine-learning/tf/
 comments: true
 category: tensorflow
 description: 

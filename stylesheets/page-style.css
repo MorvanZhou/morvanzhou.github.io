@@ -13,8 +13,8 @@ padding: 0px;
 iframe {
 display: block;
 text-align: center;
-margin: auto;
-padding: 1em 0;
+margin: 0 auto;
+padding: 0 0 1em 0;
 width: 650px;
 height: 365px;
 }
