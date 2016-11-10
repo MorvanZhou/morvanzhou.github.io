@@ -4,7 +4,7 @@ name: theano
 ---
 
 # Theano 学习目录 (莫烦Python)
-<img src="{{site.baseurl}}/static/img/course-cover/theano.jpg" height="200">
+<img src="{{site.baseurl}}/static/img/course_cover/theano.jpg" height="200">
 
 Theano 算得上是 Tensorflow 的前身, 也是一种非常优秀的神经网络模块. 他可以实现各种各样的神经网络模式. 而且用起来也很自由. 兼容Windows, MacOS, Linux.
 

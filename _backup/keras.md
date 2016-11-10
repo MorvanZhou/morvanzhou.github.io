@@ -5,7 +5,7 @@ name: keras
 
 
 # Keras 视频教程结构 (莫烦Python)
-<img src="{{site.baseurl}}/static/img/course-cover/keras.jpg" height="200">
+<img src="{{site.baseurl}}/static/img/course_cover/keras.jpg" height="200">
 
 Keras 是一个兼容 Theano 和 Tensorflow 的神经网络高级包, 用他来组件一个神经网络非常的快速, 几条语句就搞定了. 而且广泛的兼容性能使 Keras 在 Windows 和 MacOS 或者 Linux 上穿梭自如.
 

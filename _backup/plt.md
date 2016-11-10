@@ -4,7 +4,7 @@ name: plt
 ---
  
 # Matplotlib 学习目录 (莫烦Python)
-<img src="static/img/course-cover/plt.jpg" height="200">
+<img src="static/img/course_cover/plt.jpg" height="200">
 
 Matplotlib 是我们的数据可视化好帮手, 他能呈现出2D, 3D 的数据形式,而且还能做动画. 如果你对坐标显示还有特殊要求,他都能满足你的要求.
 可以说是高度自主化的一个 python 可视化模块包.

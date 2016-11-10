@@ -4,7 +4,7 @@ name: sklearn
 ---
 
 # Sklearn 学习目录 (莫烦Python)
-<img src="{{site.baseurl}}/static/img/course-cover/sklearn.jpg" height="200">
+<img src="{{site.baseurl}}/static/img/course_cover/sklearn.jpg" height="200">
 
 
 Sklearn 是汇集了多种机器学习方法的 python 包. 如果是入门机器学习, 这里面总能有适合你问题的机器学习方法. 而且他以高度统一的学习模式规范了所有学习方法. 我们知道用一种, 就知道使用其他所有种的学习方法. Sklearn 是一款很好上手的机器学习包.
