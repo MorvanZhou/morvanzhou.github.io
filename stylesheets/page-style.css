@@ -82,6 +82,15 @@ font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
 font-weight: normal;
 color: #415849;
 }
+
+/* ====== image ====== */
+.icon-image {
+height: 25px;
+width: 25px;
+vertical-align: center;
+padding-right: 0.4em;
+}
+
 /* ====== others ====== */
 .white {
 color:white
@@ -383,8 +392,9 @@ margin: 0 3em;
 }
 
 .content-li:before {
-content: counters(item, ".") " ";
+content: counters(item, ".") ". ";
 counter-increment: item;
+color: white;
 }
 
 .chapter-li ul {
