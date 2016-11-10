@@ -99,6 +99,9 @@ color:white
 text-align: left;
 }
 
+.non-underscore {
+text-decoration: none;
+}
 /* ================== DEFAULT FOR PAGES =================== */
 
 /* ====== blank fill ====== */

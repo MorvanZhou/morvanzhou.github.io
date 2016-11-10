@@ -6,6 +6,32 @@ collections:
   backup:
     output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: ML_intro
+    values:
+      layout: tutorial-post
+      tut-title: 机器学习-简介系列
+      tut-link: /tutorials/machine-learning/ML-intro/
+      category: ML-intro
+      published: true
+      comments: true
+      tags: 机器学习, 简介
+      autoplay: true
+  - scope:
+      path: ""
+      type: tensorflow
+    values:
+      layout: tutorial-post
+      tut-title: Tensorflow
+      tut-link: /tutorials/machine-learning/tf/
+      category: tensorflow
+      published: true
+      comments: true
+      tags: tensorflow, tensorboard, 机器学习, 神经网络
+      autoplay: true
+
 markdown: kramdown
 permalink: pretty
 url: https://morvanzhou.github.io
