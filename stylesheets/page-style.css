@@ -1,5 +1,5 @@
 
-/* ================ DEFAULT FOR PAGES ================ */
+/* ================ DEFAULT FOR ALL PAGES ================ */
 
 body {
 font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
@@ -13,46 +13,43 @@ padding: 0px;
 iframe {
 display: block;
 text-align: center;
-margin: 0 auto;
-padding: 1em;
-width: 700px;
-height: 394px;
-
+margin: auto;
+padding: 1em 0;
+width: 650px;
+height: 365px;
 }
-
-/* ================ Heading ================ */
+/* ====== Headings ====== */
+h1, h2, h3, h4, h5 {
+color: #00b359;
+}
 h1 {
 font-size: 2.5em;
 text-align: center;
 padding: 0.1em 0.2em;
 display: block;
-color: #00b359;
 }
 
 h2 {
 font-size: 2em;
-color: #00b359;
 text-align: center;
 }
 
 h3 {
 font-size: 1.6em;
-color: #00b359;
 text-align: center;
 }
 
 h4 {
 font-size: 1.2em;
-color: #00b359;
 text-align: left;
 }
 
 h5 {
 font-size: 1em;
-color: #00b359;
 text-align: left;
 }
 
+/* ====== Paragraph ====== */
 p {
 line-height: 1.5em;
 padding: 0;
@@ -60,14 +57,7 @@ text-align: justify;
 color: #415849;
 }
 
-.white {
-color:white
-}
-
-.align-left {
-text-align: left;
-}
-
+/* ====== anchor ====== */
 a:link {
 color: #0099ff;
 }
@@ -80,6 +70,26 @@ a:hover {
 color: #33adff;
 }
 
+/* ====== list ====== */
+ul {
+font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
+font-weight: normal;
+color: #415849;
+}
+
+li {
+font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
+font-weight: normal;
+color: #415849;
+}
+/* ====== others ====== */
+.white {
+color:white
+}
+
+.align-left {
+text-align: left;
+}
 
 /* ================== DEFAULT FOR PAGES =================== */
 
