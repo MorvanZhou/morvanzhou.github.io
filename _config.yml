@@ -1,3 +1,11 @@
+
+markdown: redcarpet
+permalink: pretty
+url: https://morvanzhou.github.io
+baseurl:
+
+exclude: ['README.md']
+
 collections:
   ML_intro:
     output: true
@@ -31,10 +39,3 @@ defaults:
       comments: true
       tags: tensorflow, tensorboard, 机器学习, 神经网络
       autoplay: true
-
-markdown: kramdown
-permalink: pretty
-url: https://morvanzhou.github.io
-baseurl:
-
-exclude: ['README.md']

@@ -2,7 +2,7 @@
 /* ================ DEFAULT FOR ALL PAGES ================ */
 
 body {
-font-family: Tahoma, Helvetica,Arial,'宋体',sans-serif;
+font-family: Tahoma, Helvetica, Arial, Microsoft YaHei, 黑体, 宋体, sans-serif;
 font-weight: normal;
 background-color: rgb(250, 250, 250);
 font-size: 16px;
@@ -15,9 +15,14 @@ display: block;
 text-align: center;
 margin: 0 auto;
 padding: 0 0 1em 0;
-width: 650px;
-height: 365px;
+width: 600px;
+height: 338px;
 }
+
+code {
+background: blue;
+}
+
 /* ====== Headings ====== */
 h1, h2, h3, h4, h5 {
 color: #00b359;
