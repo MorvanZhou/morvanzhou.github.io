@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Morvan's python tutorial page">
+  <meta name="keywords" content="莫烦,python,tutorial,machine learning,
+  机器学习,神经网络,教学,教程">
+  <meta name="author" content="Mofan,Morvan,莫烦">
+  <title>莫烦 Python</title>
+  <link href="/stylesheets/page-style.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="/static/img/description/tab_icon.png">
+</head>
+
+<body>
+  <header>
+    <div id="blank-fill"></div>
+    <nav id="home-nav">
+  <ul>
+    <li><a class="nav-home" href="/" ><strong>莫烦PYTHON</strong></a></li>
+    <li class="dropbtn">
+      <a href="/tutorials/"
+         class="">教程 ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="/tutorials/python-basic/" >Python 基础</a></li>
+        <li><a href="/tutorials/machine-learning/" >机器学习</a></li>
+        <li><a href="/tutorials/data-manipulation/" >数据处理</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/about/" class="">关于我</a>
+    </li>
+    <li>
+      <a href="/support/"
+         class="">赞助</a>
+    </li>
+  </ul>
+</nav>
+
+
+  </header>
+
+  <main>
+    <div id="tut-header">
+  <a href="/tutorials/"><h1>Python 教程</h1></a>
+  <nav id="tut-nav">
+    <ul>
+      <li class="dropbtn"><a href="/tutorials/python-basic/">Python基础 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="/tutorials/python-basic/basic/">基础</a> </li>
+          <li><a href="/tutorials/python-basic/multiprocessing/">多进程 multiprocessing</a> </li>
+          <li><a href="/tutorials/python-basic/threading/">多线程 threading</a> </li>
+          <li><a href="/tutorials/python-basic/tkinter/">Tkinter</a> </li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="/tutorials/machine-learning/">机器学习 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="/tutorials/machine-learning/ML-intro/">机器学习-简介系列</a> </li>
+          <li><a href="/tutorials/machine-learning/tf/">Tensorflow</a> </li>
+          <li><a href="/tutorials/machine-learning/theano/">Theano</a> </li>
+          <li><a href="/tutorials/machine-learning/keras/">Keras</a> </li>
+          <li><a href="/tutorials/machine-learning/sklearn/">Scikit-learn</a> </li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="/tutorials/data-manipulation/">数据处理 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="/tutorials/data-manipulation/np-pd/">Numpy & Pandas</a> </li>
+          <li><a href="/tutorials/data-manipulation/plt/">Matplotlib</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
+<!-- for later update
+<div class="side-right">
+  
+<h3>side bar</h3>
+
+<p>11/04 - work11</p>
+<p>10/04 - work10</p>
+<p>9/04 - work9</p>
+<p>8/04 - work8</p>
+<p>7/04 - work7</p>
+
+
+</div>
+-->
+
+<h1 id="theano--python">Theano 学习目录 (莫烦Python)</h1>
+<p><img src="/static/img/course-cover/theano.jpg" height="200" /></p>
+
+<p>Theano 算得上是 Tensorflow 的前身, 也是一种非常优秀的神经网络模块. 他可以实现各种各样的神经网络模式. 而且用起来也很自由. 兼容Windows, MacOS, Linux.</p>
+
+<ul>
+  <li>这套教材主要包含了:</li>
+  <li>了解 的使用规范和原则;</li>
+  <li>知道怎么去找合适的机器学习方法;</li>
+  <li>如何按照规范调整个个参数;</li>
+  <li>运用它强大的数据库;</li>
+  <li>机器学习的一些重要原则;</li>
+</ul>
+
+<p>同时也需要大家的赞助一份力量, 让教学视频做得更加的优秀. (支付宝, 微信赞助请拉倒屏幕最下面~)</p>
+
+<hr />
+
+<ol>
+  <li><strong>Why?</strong> <a href="https://www.youtube.com/watch?v=84yGQZE43OU&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=2">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY1OTQ4NDI2OA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>介绍 Theano.</li>
+      <li>在这之前, 推荐观看 “什么是机器学习”, 迅速地了解机器学习 (<a href="https://www.youtube.com/watch?v=YY7-VKXybjc&amp;list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin&amp;index=1">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTYyMjk2NDIwOA==.html?f=27892935&amp;o=1">优酷-&gt;</a>)</li>
+      <li>也推荐观看 “什么是神经网络”, 迅速地了解神经网络 (<a href="https://www.youtube.com/watch?v=RSRkp8VAavQ&amp;index=2&amp;list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTU5NDc3MDQwOA==.html?f=27892935&amp;o=1">优酷-&gt;</a>).</li>
+    </ul>
+  </li>
+  <li><strong>安装</strong> <a href="https://www.youtube.com/watch?v=uefJFOaypj8&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=3">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY1OTUyNjIzNg==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>介绍如何安装.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano2_install.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>神经网络在什么</strong> <a href="https://www.youtube.com/watch?v=sPu4KpzLaDQ&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=4">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2MTU4MzM4MA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>用动画的形式可视化学习的过程. 这个例子我们会在之后的<a href="https://www.youtube.com/watch?v=EULCWeavwPU&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=10">回归例子</a>中详细讲解.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>基本用法</strong> <a href="https://www.youtube.com/watch?v=je2oHCX5m74&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=5">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2MTY1NDY1Ng==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>Theano 的基本使用.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano4_basic_usage.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>function 用法</strong> <a href="https://www.youtube.com/watch?v=je2oHCX5m74&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=6">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2MjY5NTI5Ng==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>function 的基本用法.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano5_function.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>shared 变量</strong> <a href="https://www.youtube.com/watch?v=2exmT0L-QV0&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=7">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2Mjc3NTU4NA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>用 shared 来控制 weights, biases 的参数变量.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano6_shared_variable.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>Activation function 激励函数</strong> <a href="https://www.youtube.com/watch?v=GbYWEOjjsAI&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=8">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2MzkxNDE1Ng==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>参考 “机器学习-简介系列” 中的 “激励函数4分钟介绍” (<a href="https://www.youtube.com/watch?v=tI9AbaBfnPc&amp;index=9&amp;list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin">Youtube-&gt;</a>. <a href="http://v.youku.com/v_show/id_XMTcxMTExNjA5Mg==.html?f=27892935&amp;o=1">优酷-&gt;</a>).</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano7_activation_function.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>定义 Layer 类</strong> <a href="https://www.youtube.com/watch?v=Xm2InCJqFY4&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=9">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2Mzk3MDI2MA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>定义Layer这个class, 便于之后添加神经层.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano8_Layer_class.py">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>Regression 回归例子</strong> <a href="https://www.youtube.com/watch?v=lWvlKqvvXyw&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=10">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NDE2MjA5Ng==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>一个简单的线性回归例子.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano9_regression_nn">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>可视化回归例子</strong> <a href="https://www.youtube.com/watch?v=EULCWeavwPU&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=11">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NDE5MDY2NA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>我们可视化这个神经网络的学习过程.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano10_regression_visualization">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>Classification 分类例子</strong> <a href="https://www.youtube.com/watch?v=nslbfsN8wiU&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=12">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NDI3ODc2NA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>一个简单的分类例子.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano11_classification_nn">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>Regularization 正规化</strong> <a href="https://www.youtube.com/watch?v=ho4ms9gVjKE&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=11">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NTAwNTk0MA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>请参考 “机器学习-简介系列” 中的 “正规化简介”(<a href="https://www.youtube.com/watch?v=e9OKufD6lRM&amp;list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin&amp;index=10">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTczNjA2Nzc5Ng==.html?f=27892935&amp;o=1">优酷-&gt;</a>).</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization">代码</a></li>
+    </ul>
+  </li>
+  <li><strong>保存 model</strong> <a href="https://www.youtube.com/watch?v=sj9BGXGyLho&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=14">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NTAyNTM0MA==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>学习好了 model, 我们也要保存学好的参数.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano13_save">代码</a>)</li>
+    </ul>
+  </li>
+  <li><strong>总结和更多</strong> <a href="https://www.youtube.com/watch?v=2VzuMu589MQ&amp;list=PLXO45tsB95cKpDID642AjNkygrSR5X15T&amp;index=15">Youtube-&gt;</a>, <a href="http://v.youku.com/v_show/id_XMTY2NTA0ODA5Mg==.html?f=27743371&amp;o=1">优酷-&gt;</a>
+    <ul>
+      <li>总结之前的东西和之后可以继续学习的东西.</li>
+      <li><a href="https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py">代码</a></li>
+    </ul>
+  </li>
+</ol>
+
+
+
+<div class="PageNavigation">
+  
+    <a class="prev" href="/backup/sklearn/">&laquo; 上一个</a>
+  
+  
+    
+    <a class="next" href="/backup/tkinter/">下一个 &raquo;</a>
+  
+</div>
+
+
+
+
+
+  </main>
+
+  <div id="bottom-donation-section">
+     
+<hr>
+<h4 id="bottom-donation-title">支持 让教学变得更优秀</h4>
+<br>
+<div>
+    <a id="bottom-donation-button" href="/support/"><strong>点我 赞助 莫烦</strong></a>
+</div>
+<br>
+ 
+  </div>
+
+  <footer>
+    
+
+<p>关注我的动向:</p>
+<ul>
+  <li><a href="https://www.youtube.com/user/MorvanZhou" target="_blank"><font color="white">Youtube频道</font></a> </li>
+  <li><a href="http://i.youku.com/pythontutorial" target="_blank"><font color="white">优酷频道</font></a></li>
+  <li><a href="https://github.com/MorvanZhou" target="_blank"><font color="white">Github</font></a></li>
+  <li><a href="http://www.weibo.com/pythontutorial/" target="_blank"><font color="white">微博</font></a></li>
+</ul>
+<br>
+<p><strong>Email:</strong>  morvanzhou@hotmail.com</p>
+<p>&copy; 2016 morvanzhou.github.io. All Rights Reserved</p>
+
+  </footer>
+</body>
+</html>
