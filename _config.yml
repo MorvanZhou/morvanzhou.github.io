@@ -8,6 +8,7 @@ collections:
 
 markdown: kramdown
 permalink: pretty
+url: https://morvanzhou.github.io
 baseurl:
 
 exclude: ['README.md']
