@@ -9,6 +9,10 @@ baseurl:
 exclude: ['README.md']
 
 collections:
+  ML_modules:
+    output: false
+  data_manipulation_modules:
+    output: false
   ML_intro:
     output: true
   keras:

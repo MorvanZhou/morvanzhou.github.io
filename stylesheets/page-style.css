@@ -87,8 +87,8 @@ color: #415849;
 
 /* ====== image ====== */
 .icon-image {
-height: 25px;
-width: 25px;
+height: 1.5em;
+width: 1.5em;
 padding-right: 0.4em;
 }
 
@@ -112,6 +112,9 @@ top:-2px;
 left: 0;
 }
 
+.large-top-bottom-padding {
+padding: 2.5em 0;
+}
 /* ================== DEFAULT FOR PAGES =================== */
 
 /* ====== blank fill ====== */
@@ -125,6 +128,7 @@ height:60px;
 position: fixed;
 top: 0;
 left: 0;
+z-index: 1;
 list-style-type: none;
 background-color: #14b814;
 display: block;
@@ -261,11 +265,9 @@ footer {
 clear: both;
 font-size: 0.8em;
 background-color: #14b814;
-color: white;
 padding: 0px;
 margin: 0px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+border: solid #14b814;
 }
 
 footer p{
@@ -301,16 +303,16 @@ padding: 10px;
 /* ===================== TUTORIAL PAGE ====================== */
 /* ====== header ===== */
 #tut-header {
-padding: 0;
-margin: 0 0 4em 0;
+display: block;
+padding: 0 0 7em 0;
+margin: 0;
 }
 
 #tut-header h1 {
-width: 60%;
+width: 50%;
 text-align: center;
 display: inline-block;
-float: left;
-margin: 0.5em 0;
+margin: 0;
 padding: 0;
 }
 
@@ -319,23 +321,27 @@ padding: 0;
 #tut-nav {
 width: 40%;
 display: inline-block;
+position: absolute;
 margin: 0;
 padding: 0;
 }
 
 #tut-nav > ul {
+z-index: 999;
 display: block;
 list-style-type: none;
 font-size: 120%;
+border-radius: 10px;
+background-color: #14b814;
 margin: 0;
 padding: 0;
+
 }
 
 #tut-nav > ul > li {
 display: block;
 margin: 0;
 padding: 0.2em 0 0.2em 0.5em;
-background-color: #14b814;
 text-align: center;
 }
 
@@ -346,6 +352,7 @@ color: #fff;
 
 #tut-nav > ul > li:hover {
 background-color: #00cc00;
+border-radius: 10px;
 }
 
 #tut-nav > ul > li > ul {
@@ -364,7 +371,8 @@ text-align: left;
 }
 
 #tut-nav > ul > li > ul > li:hover {
-background-color: #00e600;
+background-color: #26d926;
+/* background-color: #00e600; */
 }
 
 #tut-nav .dropdown-content {
@@ -382,6 +390,10 @@ width: 100%;
 
 #tut-nav .dropbtn:hover .dropdown-content {
 display: block;
+}
+
+#tut-content {
+clear: left;
 }
 
 /* ======== table of contents ======== */

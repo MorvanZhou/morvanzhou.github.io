@@ -3,18 +3,14 @@ layout: tutorials
 tut-title: 数据处理
 tut-link: /tutorials/data-manipulation/
 ---
-<a class="non-underscore hover-move" href="{{site.baseurl}}/tutorials/data-manipulation/np-pd/">
-	<h4><img class="icon-image" src="/static/img/icon/np_pd_icon.png">
-		Numpy & Pandas</h4></a>
-<p>
-	<a href="{{site.baseurl}}/tutorials/data-manipulation/np-pd/"><em>Numpy & Pandas</em></a>
-</p>
 
+{% assign modules = site.data_manipulation_modules | sort: "path" %}
+{% for module in modules %}
+	<div class="large-top-bottom-padding">
+		<a class="non-underscore hover-move" href="{{module.tut-dir}}"><h3><img class="icon-image" src="{{module.icon-dir}}">
+				{{module.title}}</h3></a>
+		{{ module.content }}
+	</div>
+{% endfor %}
 
-<a class="non-underscore hover-move" href="{{site.baseurl}}/tutorials/data-manipulation/plt/">
-	<h4><img class="icon-image" src="/static/img/icon/plt_icon.png">
-		Matplotlib</h4></a>
-<p>
-	<a href="{{site.baseurl}}/tutorials/data-manipulation/plt/"><em>Matplotlib</em></a>
-</p>
 
