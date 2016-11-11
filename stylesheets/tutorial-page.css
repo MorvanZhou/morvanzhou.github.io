@@ -22,6 +22,7 @@ display: inline-block;
 position: absolute;
 margin: 0;
 padding: 0;
+opacity: 0.95;
 }
 
 #tut-nav > ul {
