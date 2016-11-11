@@ -89,6 +89,9 @@ padding-right: 0.4em;
 color:white
 }
 
+.bold {
+font-weight: 900;
+}
 .align-left {
 text-align: left;
 }
