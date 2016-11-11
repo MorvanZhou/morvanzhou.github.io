@@ -1,0 +1,21 @@
+
+<img class="course-image" src="{{ include.tut-course-cover }}" alt="{{ include.tut-course-cover-alt }}">
+
+<ol class="table-of-contents-ul">
+	{% for chapter-name in {{include.tut-chapters}} %}
+	<li class="chapter-li"><h4>{{chapter-name}}</h4>
+		<ol>
+		{% assign tuts = ({{include.tut-collection}} | where: "chapter", forloop.index) %}
+	    {% assign tuts = (tuts | sort: "path") %}
+	    {% for tut in tuts %}
+				{% if tut.title != "page default" %}
+		      <li class="content-li">
+		          <a href="{{site.baseurl}}{{ tut.url }}">  {{tut.title}}</a>
+		      </li>
+				{% endif %}
+		  {% endfor %}
+		</ol>
+	</li>
+	{% endfor %}
+
+</ol>

@@ -3,7 +3,25 @@ layout: tutorials
 tut-title: 数据处理
 tut-link: /tutorials/data-manipulation/
 ---
+<!-- variables for this page -->
+{% assign tut-collection = site.plt %}
+{% assign tut-course-cover-alt = "matplotlib" %}
+{% assign tut-course-cover = "/static/img/course_cover/plt.jpg" %}
+{% assign tut-chapters =
+"
+Matplotlib 简介,
+基本使用 ,
+画图种类,
+多图合并显示,
+动画
+" | split: "," %}
 
-<h1 class="page-title">Matplotlib</h1>
-{% assign backup = site.backup | where: "name", "plt" %}
-<p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=tut-course-cover
+tut-course-cover-alt=tut-course-cover-alt
+tut-chapters=tut-chapters
+tut-collection=tut-collection
+%}

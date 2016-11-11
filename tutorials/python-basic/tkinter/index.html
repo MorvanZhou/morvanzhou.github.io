@@ -7,3 +7,24 @@ tut-link: /tutorials/python-basic/
 {% assign backup = site.backup | where: "name", "tkinter" %}
 <p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
 
+<!-- variables for this page -->
+{% assign tut-collection = site.tkinter %}
+{% assign tut-course-cover-alt = "tkinter" %}
+{% assign tut-course-cover = "/static/img/course_cover/tkinter.jpg" %}
+{% assign tut-chapters =
+"
+什么是 tkinter 窗口,
+tkinter 的窗口部件,
+登录窗口例子
+" | split: "," %}
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=tut-course-cover
+tut-course-cover-alt=tut-course-cover-alt
+tut-chapters=tut-chapters
+tut-collection=tut-collection
+%}
+

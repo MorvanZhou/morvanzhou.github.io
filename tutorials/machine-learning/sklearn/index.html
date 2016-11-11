@@ -7,3 +7,24 @@ tut-link: /tutorials/machine-learning/
 <h1 class="page-title">Sklearn</h1>
 {% assign backup = site.backup | where: "name", "sklearn" %}
 <p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
+
+<!-- variables for this page -->
+{% assign tut-collection = site.sklearn %}
+{% assign tut-course-cover-alt = "sklearn" %}
+{% assign tut-course-cover = "/static/img/course_cover/sklearn.jpg" %}
+{% assign tut-chapters =
+"
+Sklearn 简介,
+一般使用,
+高级使用
+" | split: "," %}
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=tut-course-cover
+tut-course-cover-alt=tut-course-cover-alt
+tut-chapters=tut-chapters
+tut-collection=tut-collection
+%}

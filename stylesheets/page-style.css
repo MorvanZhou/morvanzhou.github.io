@@ -105,6 +105,12 @@ text-align: left;
 .non-underscore {
 text-decoration: none;
 }
+
+.hover-move:hover {
+position: relative;
+top:-2px;
+left: 0;
+}
 /* ================== DEFAULT FOR PAGES =================== */
 
 /* ====== blank fill ====== */
@@ -125,6 +131,7 @@ font-size: 130%;
 width: 100%;
 margin: 0;
 padding: 0;
+opacity: 0.95;
 }
 
 #home-nav > ul > li > a, #home-nav a:link, #home-nav a:visited{

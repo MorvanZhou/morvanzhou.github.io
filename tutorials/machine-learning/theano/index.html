@@ -7,3 +7,25 @@ tut-link: /tutorials/machine-learning/
 <h1 class="page-title">Theano</h1>
 {% assign backup = site.backup | where: "name", "theano" %}
 <p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
+
+<!-- variables for this page -->
+{% assign tut-collection = site.theano %}
+{% assign tut-course-cover-alt = "theano" %}
+{% assign tut-course-cover = "/static/img/course_cover/theano.jpg" %}
+{% assign tut-chapters =
+"
+Theano 简介,
+Theano 基础构架,
+搭建自己的神经网络,
+总结
+" | split: "," %}
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=tut-course-cover
+tut-course-cover-alt=tut-course-cover-alt
+tut-chapters=tut-chapters
+tut-collection=tut-collection
+%}

@@ -11,7 +11,25 @@ exclude: ['README.md']
 collections:
   ML_intro:
     output: true
+  keras:
+    output: true
+  sklearn:
+    output: true
   tensorflow:
+    output: true
+  theano:
+    output: true
+  plt:
+    output: true
+  np_pd:
+    output: true
+  basic:
+    output: true
+  multiprocessing:
+    output: true
+  threading:
+    output: true
+  tkinter:
     output: true
   backup:
     output: true
@@ -29,6 +47,39 @@ defaults:
       comments: true
       tags: 机器学习, 简介
       autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: keras
+    values:
+      layout: tutorial-post
+      tut-title: Keras
+      tut-link: /tutorials/machine-learning/keras/
+      category: keras
+      published: true
+      comments: true
+      tags: keras, 神经网络, tensorflow, theano
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: sklearn
+    values:
+      layout: tutorial-post
+      tut-title: Sklearn
+      tut-link: /tutorials/machine-learning/sklearn/
+      category: sklearn
+      published: true
+      comments: true
+      tags: sklearn, scikit-learn, 机器学习
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
   - scope:
       path: ""
       type: tensorflow
@@ -41,3 +92,110 @@ defaults:
       comments: true
       tags: tensorflow, tensorboard, 机器学习, 神经网络
       autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: theano
+    values:
+      layout: tutorial-post
+      tut-title: Theano
+      tut-link: /tutorials/machine-learning/theano/
+      category: theano
+      published: true
+      comments: true
+      tags: theano, 机器学习, 神经网络
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: np_pd
+    values:
+      layout: tutorial-post
+      tut-title: Numpy & Pandas
+      tut-link: /tutorials/data-manipulation/np-pd/
+      category: numpy & pandas
+      published: true
+      comments: true
+      tags: numpy, pandas, 数据, 处理
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: plt
+    values:
+      layout: tutorial-post
+      tut-title: Matplotlib
+      tut-link: /tutorials/data-manipulation/plt/
+      category: plt
+      published: true
+      comments: true
+      tags: matplotlib, plt, 数据可视化
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: basic
+    values:
+      layout: tutorial-post
+      tut-title: Python 基础
+      tut-link: /tutorials/python-basic/basic/
+      category: Python 基础
+      published: true
+      comments: true
+      tags: python, 基础
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: multiprocessing
+    values:
+      layout: tutorial-post
+      tut-title: 多进程 Multiprocessing
+      tut-link: /tutorials/python-basic/multiprocessing/
+      category: multiprocessing
+      published: true
+      comments: true
+      tags: python, 基础, 多进程, multiprocessing
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: threading
+    values:
+      layout: tutorial-post
+      tut-title: 多线程 Threading
+      tut-link: /tutorials/python-basic/threading/
+      category: threading
+      published: true
+      comments: true
+      tags: python, 基础, 多线程, threading
+      autoplay: true
+      editor: Morvan
+      author: Morvan
+
+  - scope:
+      path: ""
+      type: tkinter
+    values:
+      layout: tutorial-post
+      tut-title: 窗口 Tkinter
+      tut-link: /tutorials/python-basic/tkinter/
+      category: tkinter
+      published: true
+      comments: true
+      tags: python, 基础, GUI, 窗口, tkinter, tk
+      autoplay: true
+      editor: Morvan
+      author: Morvan

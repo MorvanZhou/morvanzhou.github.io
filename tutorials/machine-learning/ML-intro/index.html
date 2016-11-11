@@ -3,33 +3,23 @@ layout: tutorials
 tut-title: 机器学习
 tut-link: /tutorials/machine-learning/
 ---
+<!-- variables for this page -->
+{% assign tut-collection = site.ML_intro %}
+{% assign tut-course-cover = "/static/img/course_cover/ML_intro.png" %}
+{% assign tut-course-cover-alt = "ML_intro" %}
+{% assign tut-chapters =
+"
+机器学习方法,
+机器学习技巧
+" | split: ","
+%}
 
-<img class="course-image" src="/static/img/course_cover/ML_intro.png" alt="ML">
-<ul class="table-of-contents-ul">
-	<li class="chapter-li"><h4>机器学习方法:</h4>
-		<ul>
-		{% assign tuts = (site.ML_intro | where: "chapter", "1") %}
-			{% assign tuts = (tuts | sort: "path") %}
-	    {% for tut in tuts %}
-				{% if tut.title != "page default" %}
-		      <li class="content-li">
-		          <a href="{{site.baseurl}}{{ tut.url }}"> {{tut.title}}</a>
-		      </li>
-				{% endif %}
-		  {% endfor %}
-		</ul>
-	</li>
 
-	<li class="chapter-li"><h4>机器学习技巧:</h4>
-		<ul>
-		{% assign tuts = (site.ML_intro | where: "chapter", "2") %}
-		{% for tut in tuts %}
-			{% if tut.title != "page default" %}
-	      <li class="content-li">
-	          <a href="{{site.baseurl}}{{ tut.url }}"> {{tut.title}}</a>
-	      </li>
-			{% endif %}
-	  {% endfor %}
-		</ul>
-	</li>
-</ul>
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=tut-course-cover
+tut-course-cover-alt=tut-course-cover-alt
+tut-chapters=tut-chapters
+tut-collection=tut-collection
+%}
