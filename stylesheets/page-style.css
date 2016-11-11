@@ -10,15 +10,6 @@ margin: 0px;
 padding: 0px;
 }
 
-iframe {
-display: block;
-text-align: center;
-margin: 0 auto;
-padding: 0 0 1em 0;
-width: 600px;
-height: 338px;
-}
-
 
 /* ====== Headings ====== */
 h1, h2, h3, h4, h5 {
@@ -53,7 +44,7 @@ text-align: left;
 
 /* ====== Paragraph ====== */
 p {
-line-height: 1.5em;
+line-height: 1.7em;
 padding: 0;
 text-align: justify;
 color: #415849;
@@ -191,6 +182,7 @@ background-color: #00cc00;
 display: block;
 }
 
+/* ======= when window width is less than 500px ======= */
 @media screen and (max-width: 500px){
     #home-nav > ul > li > a,  #home-nav a:link, #home-nav a:visited {
     float: none;
@@ -207,6 +199,18 @@ display: block;
 		}
 }
 
+/* ======= when window width is greater than 1000 px ======= */
+@media screen and (min-width: 1000px){
+    body {
+    width: 1000px;
+    margin: 0 auto;
+    }
+    #tut-header {
+    width: 1000px;
+    margin: 0 auto;
+    }
+
+}
 /* ====== main body ====== */
 main {
 margin: 0px 4em;

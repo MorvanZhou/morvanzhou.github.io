@@ -1,4 +1,24 @@
 /* ===================== TUTORIAL PAGE ====================== */
+
+/* ====== video ===== */
+.video-container {
+position: relative;
+padding-bottom: 51.7%;
+margin: 0 auto;
+max-width: 800px;
+max-height: 450px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+max-width: 800px;
+max-height: 450px;
+}
+
 /* ====== header ===== */
 #tut-header {
 display: block;
@@ -17,6 +37,7 @@ padding: 0;
 
 /* ====== tutorial navigation ===== */
 #tut-nav {
+z-index: 1;
 width: 40%;
 display: inline-block;
 position: absolute;
@@ -26,7 +47,7 @@ opacity: 0.95;
 }
 
 #tut-nav > ul {
-z-index: 999;
+z-index: 2;
 display: block;
 list-style-type: none;
 font-size: 120%;
@@ -147,6 +168,10 @@ margin: 0 auto;
 height: 300px;
 }
 
+#tut-content p {
+padding: 0em 0;
+}
+
 .link-under-youtube {
 text-align: center;
 margin: 0;
@@ -182,44 +207,6 @@ text-align: right;
 }
 
 
-/* ===================== ABOUT PAGE ==================== */
-#contact-table {
-background-color: #00cc7a /*#2dd290*/;
-padding: 1.5em;
-border-radius: 10px;
-}
 
-.row {
-display: table-row;
-}
 
-.row p {
-color: white;
-display: table-cell;
-text-align: right;
-padding: 0.4em 3em;
-}
-
-.row a {
-display: table-cell;
-padding-left: 1em;
-}
-
-/* ===================== DONATION PAGE ==================== */
-#support-box {
-padding: 4px;
-background-color: #ccffcc;
-width:100%;
-color: #00b359;
-text-align: center;
-}
-
-#support-box-wrapper {
-display: flex;
-}
-
-#support-box-wrapper div {
-flex-basis: 100%;
-text-align: center;
-}
 
