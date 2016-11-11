@@ -2,12 +2,14 @@
 
 /* ====== video ===== */
 .video-container {
+z-index: 1;
 position: relative;
 padding-bottom: 56.25%;
 margin: 0 auto;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
+z-index: 1;
 position: absolute;
 top: 0;
 left: 0;
@@ -17,17 +19,13 @@ height: 100%;
 
 /* ====== header ===== */
 #tut-header {
+z-index: 2;
 display: block;
 padding: 1.5em 0 7em 0;
 margin: 0;
 }
 
-#tut-header > * {
-vertical-align: middle;
-}
-
 #tut-header a h1 {
-z-index: 1;
 width: 50%;
 text-align: center;
 display: inline-block;
@@ -38,7 +36,7 @@ padding: 0;
 
 /* ====== tutorial navigation ===== */
 #tut-nav {
-z-index: 1;
+z-index: 2;
 vertical-align: middle;
 position: absolute;
 display: inline-block;
@@ -49,7 +47,6 @@ opacity: 0.95;
 }
 
 #tut-nav > ul {
-z-index: 2;
 display: block;
 list-style-type: none;
 font-size: 120%;
@@ -126,7 +123,6 @@ border-radius: 20px;
 color: white;
 counter-reset: item;
 list-style-type: none;
-
 }
 
 .table-of-contents-ul h4 {
@@ -167,7 +163,7 @@ background-color: #82E0AA;
 padding: 1em;
 display:block;
 margin: 0 auto;
-height: 300px;
+width: 100%;
 }
 
 #tut-content p {

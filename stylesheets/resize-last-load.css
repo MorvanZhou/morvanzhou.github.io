@@ -24,11 +24,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    main {
-    width: var(--max-window-width);
-    margin: 0 auto;
-    }
-    #tut-header {
+    main, .course-image, #tut-header {
     width: var(--max-window-width);
     margin: 0 auto;
     }
