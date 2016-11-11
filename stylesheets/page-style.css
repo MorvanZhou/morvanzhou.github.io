@@ -113,7 +113,7 @@ left: 0;
 }
 
 .large-top-bottom-padding {
-padding: 2.5em 0;
+padding: 1em 0;
 }
 /* ================== DEFAULT FOR PAGES =================== */
 
@@ -132,7 +132,7 @@ z-index: 1;
 list-style-type: none;
 background-color: #14b814;
 display: block;
-font-size: 130%;
+font-size: 140%;
 width: 100%;
 margin: 0;
 padding: 0;
@@ -162,8 +162,8 @@ left: 0px;
 
 #home-nav .dropdown-content {
 position: fixed;
-top: 48px;
-left: 159px;
+top: 53px;
+left: 170px;
 display: none;
 text-decoration: none;
 list-style-type: none;
@@ -174,7 +174,7 @@ box-shadow: 10px 4px 10px 0px rgba(0,0,0,0.4);
 
 #home-nav .dropdown-content a {
 background-color: #009900;
-font-size: 0.7em;
+font-size: 0.8em;
 min-width: 160px;
 padding: 0.2em 0em 0.2em 0.5em;
 margin: 0;
@@ -191,7 +191,7 @@ background-color: #00cc00;
 display: block;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     #home-nav > ul > li > a,  #home-nav a:link, #home-nav a:visited {
     float: none;
     display: block;
@@ -298,188 +298,6 @@ display: block;
 float: right;
 margin:0;
 padding: 10px;
-}
-
-/* ===================== TUTORIAL PAGE ====================== */
-/* ====== header ===== */
-#tut-header {
-display: block;
-padding: 0 0 7em 0;
-margin: 0;
-}
-
-#tut-header h1 {
-width: 50%;
-text-align: center;
-display: inline-block;
-margin: 0;
-padding: 0;
-}
-
-
-/* ====== tutorial navigation ===== */
-#tut-nav {
-width: 40%;
-display: inline-block;
-position: absolute;
-margin: 0;
-padding: 0;
-}
-
-#tut-nav > ul {
-z-index: 999;
-display: block;
-list-style-type: none;
-font-size: 120%;
-border-radius: 10px;
-background-color: #14b814;
-margin: 0;
-padding: 0;
-
-}
-
-#tut-nav > ul > li {
-display: block;
-margin: 0;
-padding: 0.2em 0 0.2em 0.5em;
-text-align: center;
-}
-
-#tut-nav ul li a {
-text-decoration: none;
-color: #fff;
-}
-
-#tut-nav > ul > li:hover {
-background-color: #00cc00;
-border-radius: 10px;
-}
-
-#tut-nav > ul > li > ul {
-display: block;
-list-style-type: none;
-font-size: 100%;
-margin-left: 0;
-padding: 0;
-}
-
-#tut-nav > ul > li > ul > li {
-display: block;
-margin: 0;
-padding: 0;
-text-align: left;
-}
-
-#tut-nav > ul > li > ul > li:hover {
-background-color: #26d926;
-/* background-color: #00e600; */
-}
-
-#tut-nav .dropdown-content {
-display: none;
-}
-
-#tut-nav .dropdown-content a {
-font-size: 0.7em;
-min-width: 160px;
-padding: 0.2em 0em 0.2em 0.5em;
-margin: 0;
-width: 100%;
-}
-
-
-#tut-nav .dropbtn:hover .dropdown-content {
-display: block;
-}
-
-#tut-content {
-clear: left;
-}
-
-/* ======== table of contents ======== */
-.table-of-contents-ul {
-background-color: #52BE80;
-padding: 1em;
-border-radius: 20px;
-color: white;
-counter-reset: item;
-list-style-type: none;
-
-}
-
-.table-of-contents-ul h4 {
-color: white;
-text-align: left;
-}
-
-.chapter-li {
-margin: 0 3em;
-}
-
-.content-li:before {
-content: counters(item, ".") ". ";
-counter-increment: item;
-color: white;
-}
-
-.chapter-li ul {
-list-style-type: none;
-}
-
-.content-li {
-padding: 0.3em 1em;
-display: block;
-}
-
-.content-li a {
-color: white;
-text-decoration: none;
-}
-
-.content-li:hover {
-background-color: #82E0AA;
-}
-
-/* ======== inner page ======== */
-.course-image {
-padding: 1em;
-display:block;
-margin: 0 auto;
-height: 300px;
-}
-
-.link-under-youtube {
-text-align: center;
-margin: 0;
-}
-
-.PageNavigation {
-display: block;
-width: auto;
-overflow: hidden;
-}
-
-.PageNavigation a {
-display: block;
-color: white;
-background-color: #14b814;
-text-decoration: none;
-padding: 1em;
-margin: 1em 0;
-border-radius: 10px;
-}
-
-.PageNavigation a:hover {
-background-color:#00e600;
-}
-
-.PageNavigation .prev {
-float: left;
-}
-
-.PageNavigation .next {
-float: right;
-text-align: right;
 }
 
 

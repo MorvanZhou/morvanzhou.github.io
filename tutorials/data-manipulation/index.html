@@ -4,13 +4,6 @@ tut-title: 数据处理
 tut-link: /tutorials/data-manipulation/
 ---
 
-{% assign modules = site.data_manipulation_modules | sort: "path" %}
-{% for module in modules %}
-	<div class="large-top-bottom-padding">
-		<a class="non-underscore hover-move" href="{{module.tut-dir}}"><h3><img class="icon-image" src="{{module.icon-dir}}">
-				{{module.title}}</h3></a>
-		{{ module.content }}
-	</div>
-{% endfor %}
+{% include description-loop.html descriptions=site.data_manipulation_modules %}
 
 

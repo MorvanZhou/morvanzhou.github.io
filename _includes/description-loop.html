@@ -1,0 +1,10 @@
+
+{% assign descriptions = include.descriptions | sort: "path" %}
+{% for description in descriptions %}
+	<div class="large-top-bottom-padding">
+		<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h3 class="large-top-bottom-padding">
+			<img class="icon-image" src="{{description.icon-dir}}">
+				{{description.title}}</h3></a>
+		{{ description.content }}
+	</div>
+{% endfor %}

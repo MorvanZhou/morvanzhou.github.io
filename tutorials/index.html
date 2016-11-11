@@ -10,8 +10,6 @@ tut-link: /tutorials/
     所以为了不让你也走上这些弯路, 我就把它们都做成了视频. 分享给大家我所学习到的东西.
 </p>
 
-<h3>哪些教程</h3>
-
 <p>
     目前囊括的 Python 教程内容 涉及到了
     <a href="{{site.baseurl}}/tutorials/python-basic/"><em>Python基础</em></a>,
@@ -21,32 +19,4 @@ tut-link: /tutorials/
     我不会用的, 都在学习当中~
 </p>
 
-<h3>内容介绍</h3>
-
-<br>
-<h4><img class="icon-image" src="/static/img/icon/python_icon.png">Python 基础</h4>
-<p><a href="/tutorials/python-basic/">Python基础</a> 非常适合刚入门, 或者是以前使用过其语言的朋友们,
-    每一段视频都不会很长, 节节相连, 对于迅速掌握基础的使用方法很有帮助.</p>
-<p>基础的内容包括了: 最基础使用方法, 窗口视窗的编辑 (Tkinter),
-    提高程序效率的多线程 (threading) 和 多进程 (multiprocessing) 等等.</p>
-
-<br>
-<h4><img class="icon-image" src="/static/img/icon/ML_icon.png">机器学习</h4>
-<p><a href="/tutorials/machine-learning/">机器学习</a> 的教程方面, 汇集了很多近些年来比较流行的 python 模块教程.
-    而且对于没有机器学习背景的朋友们, 我也专门制作了 <a href="/tutorials/machine-learning/ML-intro/"><em>机器学习-简介系列</em></a>.
-    让你对机器学习的每种方法都有迅速地理解. 对于已经入门了的同学们, <em>机器学习-简介系列</em> 也是一个提升自己应用机器学习的好地方,
-    因为里面同时也介绍了很多种机器学习的技巧方法, 大大帮助提升学习效果.
-</p>
-<p>机器学习教程的其他内容包括了: 神经网络模块 (Tensorflow, Theano, Keras) , 通用的机器学习方法 (SciKit-Learn) 等等.</p>
-
-<br>
-<h4><img class="icon-image" src="/static/img/icon/data_icon.png">数据处理</h4>
-<p><a href="/tutorials/data-manipulation/">数据处理</a> 教程方面, 这里汇集了在 Python 中最重要的数据处理, 科学计算模块: Numpy 和 Pandas.
-    而且还有数据可视化的利器: Matplotlib. 使用它们能够更有效的处理你的数据, 呈现你的数据~
-</p>
-<p>所以这部分的内容包括了: Numpy, Pandas, Matplotlib 等等.</p>
-
-<br>
-<h4><img class="icon-image" src="/static/img/icon/others_icon.png">其他</h4>
-<p>暂时还没有其他, 将来会有的...</p>
-<br>
+{% include description-loop.html descriptions=site.tutorial_page_contents %}

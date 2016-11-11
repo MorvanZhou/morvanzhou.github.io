@@ -3,11 +3,5 @@ layout: tutorials
 tut-title: 机器学习
 tut-link: /tutorials/machine-learning/
 ---
-{% assign modules = site.ML_modules | sort: "path" %}
-{% for module in modules %}
-	<div class="large-top-bottom-padding">
-		<a class="non-underscore hover-move" href="{{module.tut-dir}}"><h3><img class="icon-image" src="{{module.icon-dir}}">
-				{{module.title}}</h3></a>
-		{{ module.content }}
-	</div>
-{% endfor %}
+{% include description-loop.html descriptions=site.ML_modules %}
+

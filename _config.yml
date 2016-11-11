@@ -8,7 +8,14 @@ baseurl:
 
 exclude: ['README.md']
 
+
+# collection and their defaults
+
 collections:
+  tutorial_page_contents:
+    output: false
+  basic_python_modules:
+    output: false
   ML_modules:
     output: false
   data_manipulation_modules:

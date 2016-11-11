@@ -1,0 +1,224 @@
+/* ===================== TUTORIAL PAGE ====================== */
+/* ====== header ===== */
+#tut-header {
+display: block;
+padding: 0 0 7em 0;
+margin: 0;
+}
+
+#tut-header h1 {
+width: 50%;
+text-align: center;
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+
+/* ====== tutorial navigation ===== */
+#tut-nav {
+width: 40%;
+display: inline-block;
+position: absolute;
+margin: 0;
+padding: 0;
+}
+
+#tut-nav > ul {
+z-index: 999;
+display: block;
+list-style-type: none;
+font-size: 120%;
+border-radius: 10px;
+background-color: #14b814;
+margin: 0;
+padding: 0em;
+}
+
+#tut-nav > ul > li {
+display: block;
+margin: 0;
+padding: 0.3em 0 0.3em 0.5em;
+text-align: center;
+}
+
+#tut-nav ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+#tut-nav > ul > li:hover {
+background-color: #00cc00;
+border-radius: 10px;
+}
+
+#tut-nav > ul > li > ul {
+display: block;
+list-style-type: none;
+font-size: 100%;
+margin-left: 0;
+padding: 0;
+}
+
+#tut-nav > ul > li > ul > li {
+display: block;
+font-size: 1.2em;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+#tut-nav > ul > li > ul > li:hover {
+background-color: #26d926;
+/* background-color: #00e600; */
+}
+
+#tut-nav .dropdown-content {
+display: none;
+}
+
+#tut-nav .dropdown-content a {
+font-size: 0.7em;
+min-width: 160px;
+padding: 0.2em 0em 0.2em 0.5em;
+margin: 0;
+width: 100%;
+}
+
+
+#tut-nav .dropbtn:hover .dropdown-content {
+display: block;
+}
+
+#tut-content {
+clear: left;
+}
+
+/* ======== table of contents ======== */
+.table-of-contents-ul {
+background-color: #52BE80;
+padding: 1em;
+border-radius: 20px;
+color: white;
+counter-reset: item;
+list-style-type: none;
+
+}
+
+.table-of-contents-ul h4 {
+color: white;
+text-align: left;
+}
+
+.chapter-li {
+margin: 0 3em;
+}
+
+.content-li:before {
+content: counters(item, ".") ". ";
+counter-increment: item;
+color: white;
+}
+
+.chapter-li ul {
+list-style-type: none;
+}
+
+.content-li {
+padding: 0.3em 1em;
+display: block;
+}
+
+.content-li a {
+color: white;
+text-decoration: none;
+}
+
+.content-li:hover {
+background-color: #82E0AA;
+}
+
+/* ======== inner page ======== */
+.course-image {
+padding: 1em;
+display:block;
+margin: 0 auto;
+height: 300px;
+}
+
+.link-under-youtube {
+text-align: center;
+margin: 0;
+}
+
+.PageNavigation {
+display: block;
+width: auto;
+overflow: hidden;
+}
+
+.PageNavigation a {
+display: block;
+color: white;
+background-color: #14b814;
+text-decoration: none;
+padding: 1em;
+margin: 1em 0;
+border-radius: 10px;
+}
+
+.PageNavigation a:hover {
+background-color:#00e600;
+}
+
+.PageNavigation .prev {
+float: left;
+}
+
+.PageNavigation .next {
+float: right;
+text-align: right;
+}
+
+
+/* ===================== ABOUT PAGE ==================== */
+#contact-table {
+background-color: #00cc7a /*#2dd290*/;
+padding: 1.5em;
+border-radius: 10px;
+}
+
+.row {
+display: table-row;
+}
+
+.row p {
+color: white;
+display: table-cell;
+text-align: right;
+padding: 0.4em 3em;
+}
+
+.row a {
+display: table-cell;
+padding-left: 1em;
+}
+
+/* ===================== DONATION PAGE ==================== */
+#support-box {
+padding: 4px;
+background-color: #ccffcc;
+width:100%;
+color: #00b359;
+text-align: center;
+}
+
+#support-box-wrapper {
+display: flex;
+}
+
+#support-box-wrapper div {
+flex-basis: 100%;
+text-align: center;
+}
+
