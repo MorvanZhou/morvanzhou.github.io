@@ -159,11 +159,18 @@ background-color: #82E0AA;
 }
 
 /* ======== inner page ======== */
-.course-image {
-padding: 1em;
+.course-summary-image {
+padding: 0;
 display:block;
 margin: 0 auto;
 width: 100%;
+}
+
+.course-image {
+padding: 0;
+display:block;
+margin: 0 auto;
+width: 60%;
 }
 
 #tut-content p {
