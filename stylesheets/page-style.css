@@ -159,14 +159,12 @@ left: 0px;
 position: fixed;
 top: 53px;
 left: 170px;
-opacity: 0;
+display: none;
 text-decoration: none;
 list-style-type: none;
 padding: 0;
 margin: 0;
 box-shadow: 10px 4px 10px 0px rgba(0,0,0,0.4);
-transition: all 0s ease;
-transition-duration: 0.5s;
 }
 
 #home-nav .dropdown-content a {
@@ -185,8 +183,7 @@ background-color: #00cc00;
 }
 
 #home-nav .dropbtn:hover .dropdown-content {
-transition-duration: 0.5s;
-opacity: 1;
+display: block;
 }
 
 /* ====== main body ====== */
