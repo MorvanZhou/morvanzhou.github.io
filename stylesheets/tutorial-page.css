@@ -136,11 +136,11 @@ text-align: left;
 margin: 0 3em;
 }
 
-.content-li:before {
+/*.content-li:before {
 content: counters(item, ".") ". ";
 counter-increment: item;
 color: white;
-}
+}*/
 
 .chapter-li ul {
 list-style-type: none;
