@@ -8,6 +8,6 @@ chapter: 2
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py)
-  * 机器学习-简介系列 [什么是神经网络]({% link _ML_intro/1.2-NN.md %})
+  * 机器学习-简介系列 [什么是神经网络]({% link _ML_intro/1-2-NN.md %})
   
 用简单的几句语句就能搭建好 keras 的一个神经网络.

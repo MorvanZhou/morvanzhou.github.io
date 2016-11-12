@@ -8,7 +8,7 @@ chapter: 2
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py)
-  * 机器学习-简介系列 [CNN 简介]({% link _ML_intro/1.3-CNN.md %})
-  * Tensorflow [CNN]({% link _tensorflow/5.4-CNN2.md %})
+  * 机器学习-简介系列 [CNN 简介]({% link _ML_intro/1-3-CNN.md %})
+  * Tensorflow [CNN]({% link _tensorflow/5-4-CNN2.md %})
   
 CNN 一般用来处理图片. 他在图片识别上有很多优势.

@@ -8,6 +8,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * Tensorflow 提供的一些 [激励函数](https://www.tensorflow.org/versions/0.6.0/api_docs/python/nn.html)
+  * 机器学习-简介系列 [激励函数]({% link _ML_intro/2-4-activation-function.md %})
 
 Tensorflow 的神经网络 里面处理较为复杂的问题时都会需要运用激励函数 
 activation function, 影片里说到了什么是激励函数,

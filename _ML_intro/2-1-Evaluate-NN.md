@@ -13,4 +13,4 @@ chapter: 2
 * 学习资料: 
   * Theano: l1 l2 regularization [教程](#)
   * Scikit-learn: cross validation [教程](#)
-  * Tensorflow: dropout [教程]({% link _tensorflow/5.2-dropout.md %})
+  * Tensorflow: dropout [教程]({% link _tensorflow/5-2-dropout.md %})

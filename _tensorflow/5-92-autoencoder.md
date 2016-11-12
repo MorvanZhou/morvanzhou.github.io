@@ -8,7 +8,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf21_autoencoder)
-  * 机器学习-简介系列 [Autoencoder]({% link _ML_intro/1.6-autoencoder.md %})
+  * 机器学习-简介系列 [Autoencoder]({% link _ML_intro/1-6-autoencoder.md %})
   
 Autoencoder 是神经网络的一种非监督学习 unsupervised learning. 
 通过压缩再解压的过程只学习整么样重新组合数据. 

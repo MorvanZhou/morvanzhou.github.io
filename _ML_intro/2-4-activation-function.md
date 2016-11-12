@@ -11,4 +11,4 @@ chapter: 2
 
 * 学习资料: 
   * Theano 激励函数 [教程](#)
-  * Tensorflow 激励函数 [教程]({% link _tensorflow/2.6-activation.md %})
+  * Tensorflow 激励函数 [教程]({% link _tensorflow/2-6-activation.md %})
