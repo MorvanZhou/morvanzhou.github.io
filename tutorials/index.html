@@ -2,6 +2,11 @@
 layout: tutorials
 tut-title: Python 教程
 tut-link: /tutorials/
+sections:
+  - [Python基础, /tutorials/python-basic/]
+  - [机器学习, /tutorials/machine-learning/]
+  - [数据处理, /tutorials/data-manipulation/]
+
 ---
 
 <p>
@@ -11,10 +16,11 @@ tut-link: /tutorials/
 </p>
 
 <p>
-    目前囊括的 Python 教程内容 涉及到了
-    <a href="{{site.baseurl}}/tutorials/python-basic/"><em>Python基础</em></a>,
-    <a href="{{site.baseurl}}/tutorials/machine-learning/"><em>机器学习</em></a>,
-    <a href="{{site.baseurl}}/tutorials/data-manipulation/"><em>数据处理</em></a>. 没错, 当然会有更多, 因为你们的支持,
+    目前囊括的 Python 教程内容 涉及到了 [
+    {% for section in page.sections %}
+      <a href="{{site.baseurl}}{{section[1]}}"><em>{{section[0]}}</em></a>,
+    {% endfor %}
+    ]. 没错, 当然会有更多, 因为你们的支持,
     就是我学习的动力, 再也不能好好偷懒了~ 教程内容一直在不断扩展, 基本上是我会用的都已经出了教程,
     我不会用的, 都在学习当中~
 </p>

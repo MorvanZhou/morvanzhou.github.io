@@ -1,5 +1,9 @@
 ---
 layout: default
+items:
+  - {name: 支付宝, link: "/static/img/support/alipay.jpeg", image-link: "/static/img/support/alipay.jpeg", image-height: 225}
+  - {name: 微信,link: "/static/img/support/Wechat.png",image-link: "/static/img/support/Wechat.png",image-height: 225}
+  - {name: Paypal,link: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=morvanzhou%40gmail%2ecom&amp;lc=C2&amp;item_name=MorvanPython&amp;currency_code=AUD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted",image-link: "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif",image-height: auto}
 ---
 
 <h1 class="page-title">为了更优秀</h1>
@@ -17,20 +21,12 @@ layout: default
 <hr>
 <div id="support-box">
     <div id="support-box-wrapper">
-      <div >
-          <h2>支付宝</h2>
-          <a href="/static/img/support/alipay.jpeg"><img src="{{site.baseurl}}/static/img/support/alipay.jpeg" alt="alipay" height="225" ></a>
-      </div>
-      <div >
-          <h2>微信</h2>
-          <a href="/static/img/support/Wechat.png"><img src="{{site.baseurl}}/static/img/support/Wechat.png" alt="wechat" height="225" ></a>
-      </div>
-      <div>
-          <h2>Paypal</h2>
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=morvanzhou%40gmail%2ecom&amp;lc=C2&amp;item_name=MorvanPython&amp;currency_code=AUD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">
-              <img src="https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif" alt="paypal" >
-          </a>
-      </div>
+      {% for item in page.items %}
+        <div >
+            <h2>{{ item.name }}</h2>
+            <a href="{{ item.link }}"><img src="{{ item.image-link }}" alt="{{ item.name }}" height="{{ item.image-height }}" ></a>
+        </div>
+      {% endfor %}
     </div>
 </div>
 <br>

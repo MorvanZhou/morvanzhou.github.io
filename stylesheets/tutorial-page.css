@@ -1,5 +1,22 @@
 /* ===================== TUTORIAL PAGE ====================== */
 
+/* ====== header ===== */
+#tut-header {
+z-index: 2;
+display: block;
+padding: 0 0 7em 0;
+margin: 0;
+}
+
+#tut-header a h1 {
+width: 50%;
+text-align: center;
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+
 /* ====== video ===== */
 .video-container {
 z-index: 1;
@@ -15,22 +32,6 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-}
-
-/* ====== header ===== */
-#tut-header {
-z-index: 2;
-display: block;
-padding: 1.5em 0 7em 0;
-margin: 0;
-}
-
-#tut-header a h1 {
-width: 50%;
-text-align: center;
-display: inline-block;
-margin: 0;
-padding: 0;
 }
 
 
@@ -54,6 +55,7 @@ border-radius: 10px;
 background-color: #14b814;
 margin: 0;
 padding: 0em;
+box-shadow: 1px 1px 15px 2px  #888888;
 }
 
 #tut-nav > ul > li {

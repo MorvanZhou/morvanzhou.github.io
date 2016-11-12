@@ -4,23 +4,20 @@ tut-title: 机器学习
 tut-permalink: /tutorials/machine-learning/
 tut-category-name: keras
 tut-course-cover: /static/img/course_cover/keras.jpg
+tut-chapters:
+  - Keras 简介
+  - 如何搭建各种神经网络
+  - 其他应用
 ---
 
 <!-- variables for this page -->
 {% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-{% assign tut-chapters =
-"
-Keras 简介,
-如何搭建各种神经网络,
-其他应用
-" | split: ","
-%}
 
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
 tut-course-cover=page.tut-course-cover
 tut-course-cover-alt=page.tut-category-name
-tut-chapters=tut-chapters
+tut-chapters=page.tut-chapters
 tut-category=tut-category
 %}

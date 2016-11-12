@@ -4,17 +4,14 @@ tut-title: 数据处理
 tut-permalink: /tutorials/data-manipulation/
 tut-category-name: np-pd
 tut-course-cover: /static/img/course_cover/np_pd.jpg
+tut-chapters:
+  - Numpy & Pandas 简介
+  - Numpy 学习
+  - Pandas 学习
 ---
 
 <!-- variables for this page -->
 {% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-{% assign tut-chapters =
-"
-Numpy & Pandas 简介,
-Numpy 学习,
-Pandas 学习
-" | split: ","
-%}
 
 
 <!-- include for this page contents -->
@@ -22,6 +19,6 @@ Pandas 学习
 {% include tutorial-contents.html
 tut-course-cover=page.tut-course-cover
 tut-course-cover-alt=page.tut-category-name
-tut-chapters=tut-chapters
+tut-chapters=page.tut-chapters
 tut-category=tut-category
 %}
