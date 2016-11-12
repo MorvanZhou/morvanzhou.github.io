@@ -1,27 +1,29 @@
 ---
 layout: tutorials
 tut-title: 机器学习
-tut-link: /tutorials/machine-learning/
+tut-permalink: /tutorials/machine-learning/
+tut-category-name: theano
+tut-course-cover: /static/img/course_cover/theano.jpg
 ---
 
 <!-- variables for this page -->
-{% assign tut-collection = site.theano %}
-{% assign tut-course-cover-alt = "theano" %}
-{% assign tut-course-cover = "/static/img/course_cover/theano.jpg" %}
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
 {% assign tut-chapters =
 "
 Theano 简介,
 Theano 基础构架,
 搭建自己的神经网络,
 总结
-" | split: "," %}
+" | split: ","
+%}
 
 
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
-tut-course-cover=tut-course-cover
-tut-course-cover-alt=tut-course-cover-alt
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
 tut-chapters=tut-chapters
-tut-collection=tut-collection
+tut-category=tut-category
 %}

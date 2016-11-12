@@ -1,13 +1,13 @@
 ---
 layout: tutorials
 tut-title: 机器学习
-tut-link: /tutorials/machine-learning/
+tut-permalink: /tutorials/machine-learning/
+tut-category-name: keras
+tut-course-cover: /static/img/course_cover/keras.jpg
 ---
 
 <!-- variables for this page -->
-{% assign tut-collection = site.keras %}
-{% assign tut-course-cover = "/static/img/course_cover/keras.jpg" %}
-{% assign tut-course-cover-alt = "keras" %}
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 {% assign tut-chapters =
 "
 Keras 简介,
@@ -16,12 +16,11 @@ Keras 简介,
 " | split: ","
 %}
 
-
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
-tut-course-cover=tut-course-cover
-tut-course-cover-alt=tut-course-cover-alt
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
 tut-chapters=tut-chapters
-tut-collection=tut-collection
+tut-category=tut-category
 %}

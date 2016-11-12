@@ -5,8 +5,7 @@
 	{% for chapter-name in {{include.tut-chapters}} %}
 	<li class="chapter-li"><h4>{{chapter-name}}</h4>
 		<ol>
-		{% assign tuts = ({{include.tut-collection}} | where: "chapter", forloop.index) %}
-	    {% assign tuts = (tuts | sort: "path") %}
+		{% assign tuts = ({{include.tut-category}} | where: "chapter", forloop.index) %}
 	    {% for tut in tuts %}
 				{% if tut.title != "page default" %}
 		      <li class="content-li">

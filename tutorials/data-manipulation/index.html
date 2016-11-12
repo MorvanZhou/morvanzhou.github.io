@@ -4,6 +4,6 @@ tut-title: 数据处理
 tut-link: /tutorials/data-manipulation/
 ---
 
-{% include description-loop.html descriptions=site.data_manipulation_modules %}
-
+{% assign descriptions = site.contents | where: "category", "description-data-manipulation" %}
+{% include description-loop.html descriptions=descriptions %}
 

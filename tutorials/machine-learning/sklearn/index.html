@@ -1,7 +1,9 @@
 ---
 layout: tutorials
 tut-title: 机器学习
-tut-link: /tutorials/machine-learning/
+tut-permalink: /tutorials/machine-learning/
+tut-category-name: sklearn
+tut-course-cover: /static/img/course_cover/sklearn.jpg
 ---
 
 <h1 class="page-title">Sklearn</h1>
@@ -9,9 +11,7 @@ tut-link: /tutorials/machine-learning/
 <p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
 
 <!-- variables for this page -->
-{% assign tut-collection = site.sklearn %}
-{% assign tut-course-cover-alt = "sklearn" %}
-{% assign tut-course-cover = "/static/img/course_cover/sklearn.jpg" %}
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 {% assign tut-chapters =
 "
 Sklearn 简介,
@@ -23,8 +23,8 @@ Sklearn 简介,
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
-tut-course-cover=tut-course-cover
-tut-course-cover-alt=tut-course-cover-alt
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
 tut-chapters=tut-chapters
-tut-collection=tut-collection
+tut-category=tut-category
 %}

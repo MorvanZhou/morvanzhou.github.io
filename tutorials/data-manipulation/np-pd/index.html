@@ -1,17 +1,13 @@
 ---
 layout: tutorials
 tut-title: 数据处理
-tut-link: /tutorials/data-manipulation/
+tut-permalink: /tutorials/data-manipulation/
+tut-category-name: np-pd
+tut-course-cover: /static/img/course_cover/np_pd.jpg
 ---
 
-<h1 class="page-title">Numpy & Pandas</h1>
-{% assign backup = site.backup | where: "name", "np_pd" %}
-<p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
-
 <!-- variables for this page -->
-{% assign tut-collection = site.np_pd %}
-{% assign tut-course-cover = "/static/img/course_cover/np_pd.jpg" %}
-{% assign tut-course-cover-alt = "np_pd" %}
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 {% assign tut-chapters =
 "
 Numpy & Pandas 简介,
@@ -24,8 +20,8 @@ Pandas 学习
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
-tut-course-cover=tut-course-cover
-tut-course-cover-alt=tut-course-cover-alt
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
 tut-chapters=tut-chapters
-tut-collection=tut-collection
+tut-category=tut-category
 %}

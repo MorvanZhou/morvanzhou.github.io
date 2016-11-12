@@ -1,16 +1,16 @@
 ---
 layout: tutorials
 tut-title: Python 基础
-tut-link: /tutorials/python-basic/
+tut-permalink: /tutorials/python-basic/
+tut-category-name: tkinter
+tut-course-cover: /static/img/course_cover/tkinter.jpg
 ---
 
 {% assign backup = site.backup | where: "name", "tkinter" %}
 <p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
 
 <!-- variables for this page -->
-{% assign tut-collection = site.tkinter %}
-{% assign tut-course-cover-alt = "tkinter" %}
-{% assign tut-course-cover = "/static/img/course_cover/tkinter.jpg" %}
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 {% assign tut-chapters =
 "
 什么是 tkinter 窗口,
@@ -22,9 +22,9 @@ tkinter 的窗口部件,
 <!-- include for this page contents -->
 
 {% include tutorial-contents.html
-tut-course-cover=tut-course-cover
-tut-course-cover-alt=tut-course-cover-alt
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
 tut-chapters=tut-chapters
-tut-collection=tut-collection
+tut-category=tut-category
 %}
 

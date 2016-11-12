@@ -1,6 +1,6 @@
 ---
 layout: tutorial-post
-name: np_pd
+name: np-pd
 ---
 
 

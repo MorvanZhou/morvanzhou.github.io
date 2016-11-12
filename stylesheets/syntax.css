@@ -1,3 +1,11 @@
+pre.highlight {
+text-align: left;
+border-radius: 10px;
+padding: 1em;
+margin: 2.6em;
+background-color:#3f3f3f;
+}
+
 .highlight code, .highlight pre {
 color:#fdce93;
 background-color:#3f3f3f;
@@ -21,13 +29,15 @@ background-color:#222;
 color:#e37170;
 background-color:#3d3535;
 }
-
+.highlight .nf {
+color:#FC672B;
+}
 .highlight .k {
-color:#f0dfaf;
+color:#FCE948;
 }
 
 .highlight .p {
-color:#41706f;
+color:#B1CCFA;
 }
 
 .highlight .cs {
@@ -142,5 +152,5 @@ color:#9ac39f;
 }
 
 .highlight .nb,.preview-zenburn .highlight .nc,.preview-zenburn .highlight .nf,.preview-zenburn .highlight .bp,.preview-zenburn .highlight .vc {
-color:#efef8f;
+color:#FC8C48;
 }

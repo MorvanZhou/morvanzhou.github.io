@@ -19,4 +19,6 @@ tut-link: /tutorials/
     我不会用的, 都在学习当中~
 </p>
 
-{% include description-loop.html descriptions=site.tutorial_page_contents %}
+{% assign descriptions = site.contents | where: "category", "description-tutorial-home-page" %}
+
+{% include description-loop.html descriptions=descriptions %}

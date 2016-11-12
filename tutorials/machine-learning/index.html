@@ -3,5 +3,5 @@ layout: tutorials
 tut-title: 机器学习
 tut-link: /tutorials/machine-learning/
 ---
-{% include description-loop.html descriptions=site.ML_modules %}
-
+{% assign descriptions = site.contents | where: "category", "description-machine-learning" %}
+{% include description-loop.html descriptions=descriptions %}

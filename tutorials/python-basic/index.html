@@ -3,4 +3,6 @@ layout: tutorials
 tut-title: Python 基础
 tut-link: /tutorials/python-basic/
 ---
-{% include description-loop.html descriptions=site.basic_python_modules %}
+
+{% assign descriptions = site.contents | where: "category", "description-basic-python" %}
+{% include description-loop.html descriptions=descriptions %}
