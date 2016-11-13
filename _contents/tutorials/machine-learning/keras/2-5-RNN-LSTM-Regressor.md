@@ -8,8 +8,9 @@ chapter: 2
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/8-RNN_LSTM_Regressor_example.py)
-  * 机器学习-简介系列 [RNN](#)
-  * 机器学习-简介系列 [LSTM](#)
+  * 机器学习-简介系列 [RNN]({% link _contents/tutorials/machine-learning/ML-intro/1-4-RNN.md %})
+  * 机器学习-简介系列 [LSTM]({% link _contents/tutorials/machine-learning/ML-intro/1-5-LSTM.md %})
+  * Tensorflow [RNN教程](% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %)
   
 使用 LSTM RNN 来预测一个 sin, cos 曲线. 
 

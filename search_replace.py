@@ -19,7 +19,7 @@ def search_replace(path, old=r'{% link .* %}', new='#'):
 if __name__ == "__main__":
     # change("_tutorial_page_contents/")
     search_replace(
-        '_contents/tutorials/machine-learning/tensorflow',
+        '_contents/tutorials/machine-learning/keras',
         old=r']\(#\)',
         new=']({% link %})'
     )
