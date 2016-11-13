@@ -10,11 +10,6 @@ author: 灰猫
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf15_tensorboard)
   
-Tensorflow 中的 tensorboard 不仅仅可以可视化神经网络结构,
-还可以可视化我们的 training 训练结果,
-根据每一次不同的训练结果来修改提升神经网络参数是机器学习高手们必备的技能之一.
-
---- 
 上一篇讲到了 如何可视化TesorBorad整个神经网络结构的过程。 其实tensorBorad还可以可视化训练过程( biase变化过程) , 这节重点讲一下可视化训练过程的图标是如何做的 。请看下图,  这是如何做到的呢？
 
 <img class="course-image" src="/static/results/tensorflow/15_1_1.png">
