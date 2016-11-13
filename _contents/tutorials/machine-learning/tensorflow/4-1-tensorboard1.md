@@ -64,7 +64,7 @@ with tf.name_scope('inputs'):
     ys = tf.placeholder(tf.float32, [None, 1])
 ```
 
-接下来开始编辑`layer` ， 请看未编辑前的程序片段 ：
+接下来开始编辑`layer` ， 请看编辑前的程序片段 ：
 
 ```python
 def add_layer(inputs, in_size, out_size, activation_function=None):
@@ -79,39 +79,39 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
     return outputs
 ```
 
-这里的名字应该叫layer , 
+这里的名字应该叫layer, 下面是编辑后的:
 
 ```python
 def add_layer(inputs, in_size, out_size, activation_function=None):
     # add one more layer and return the output of this layer
-    with tf.name_scop('layer'):
+    with tf.name_scope('layer'):
         Weights= tf.Variable(tf.random_normal([in_size, out_size]))
         # and so on...
 ```
 
-在定义完大的框架`layer`之后，同时也需要定义每一个’框架‘里面的小部件：(Weights biase和activation function):
+在定义完大的框架`layer`之后，同时也需要定义每一个’框架‘里面的小部件：(Weights biases 和 activation function):
 现在现对 `Weights` 定义：
-定义的方法同上，可以使用`tf.name.scop()`方法，同时也可以在Weights中指定名称W。
+定义的方法同上，可以使用`tf.name.scope()`方法，同时也可以在`Weights`中指定名称`W`。
 即为：
 
 ```python
     def add_layer(inputs, in_size, out_size, activation_function=None):
 	#define layer name
-    with tf.name_scop('layer'):
+    with tf.name_scope('layer'):
         #define weights name 
-        with tf.name_scop('weights')
+        with tf.name_scope('weights')
         Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
         #and so on......
 ```
 
-接着继续定义`biase` ， 定义方式同上。
+接着继续定义`biases` ， 定义方式同上。
 
 ```python
 def add_layer(inputs, in_size, out_size, activation_function=None):
     #define layer name
-    with tf.name_scop('layer'):
+    with tf.name_scope('layer'):
         #define weights name 
-        with tf.name_scop('weights')
+        with tf.name_scope('weights')
            Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
         # define biase
         with tf.name_scope('Wx_plus_b'):
@@ -119,7 +119,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
         # and so on....
 ```
 
-`activtion_function` 的话，可以暂时忽略。因为当你自己选择用 tensorflow 中的激励函数（activation function）的时候，tensorflow会默认添加名称。
+`activation_function` 的话，可以暂时忽略。因为当你自己选择用 tensorflow 中的激励函数（activation function）的时候，tensorflow会默认添加名称。
 最终，layer形式如下：
 
 ```python
@@ -173,7 +173,7 @@ with tf.name_scope('loss'):
 
 <img class="course-image" src="/static/results/tensorflow/14_1_4.png">
 
-使用`with tf.name_scop()`再次对`train_ste`p部分进行编辑,如下：
+使用`with tf.name_scope()`再次对`train_step`部分进行编辑,如下：
 
 ```python
 with tf.name_scope('train'):
@@ -197,6 +197,6 @@ tensorborad --logdir='logs/'
 同时将终端中输出的网址复制到浏览器中， 便可以看到之前定义的视图框架了。
 
 tensorboard 还有很多其他的参数，希望大家可以多多了解、
-可以使用 tensorboard --help 查看tensorboard的详细参数
+可以使用 `tensorboard --help` 查看tensorboard的详细参数
 最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
 
