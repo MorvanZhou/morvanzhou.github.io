@@ -235,6 +235,7 @@ padding: 10px;
 background-color: #14b814;
 text-decoration: none;
 border-radius: 20px;
+box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.7);
 }
 
 #bottom-donation-button:hover {
