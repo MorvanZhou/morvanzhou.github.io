@@ -14,19 +14,19 @@ date: 2016-11-3
 
 `import` 我们所需要的模块, 我们额外加入`animation` 来实现这次的动画效果. 
 
-{% highlight python %}
+```python
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import animation
-{% endhighlight %}
+```
 
 下面的代码, 我们将生成一条基准的 sin 曲线.
 
-{% highlight python %}
+```python
 fig, ax = plt.subplots()
 x = np.arange(0, 2*np.pi, 0.01)
 line, = ax.plot(x, np.sin(x))
-{% endhighlight %}
+```
 
 <img class="course-image" src="/static/results/plt/5_1_1.png">
 
@@ -34,19 +34,19 @@ line, = ax.plot(x, np.sin(x))
 来移动我们的 `line`. 移动时, 是基于变化的 `i`, 不同的 `i` 
 将会产生不同位置的 `line`.
 
-{% highlight python %}
+```python
 def animate(i):
     line.set_ydata(np.sin(x + i/10.0)) 
     return line,
-{% endhighlight %}
+```
 
 我们还需要定义一个方程 `def init()`, 这个是 `animation` 中的初始化情况.
 
-{% highlight python %}
+```python
 def init():
     line.set_ydata(np.sin(x))
     return line,
-{% endhighlight %}
+```
 
 有了初始化情况 `init()` 和动画的方程 `animate()`, 我们就能把它们当作参数传入进 
 `plt` 的 `animation.FuncAnimation()` 中. `fig=` 是我们要输出到那一个 figure 中.

@@ -3,7 +3,7 @@ description: Tensorflow 中的 tensorboard 不仅仅可以可视化神经网络�
 youtube_id: L-RDrbYNWDk?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
 youku_link: http://v.youku.com/v_show/id_XMTYxMTcxODYyMA==.html?f=27327189&o=1
 chapter: 4
-title: Tensorboard 可视化好帮手2
+title: Tensorboard 可视化好帮手 2
 date: 2016-11-3
 ---
 * 学习资料:
