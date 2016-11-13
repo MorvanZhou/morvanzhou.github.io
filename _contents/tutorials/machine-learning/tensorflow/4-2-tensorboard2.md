@@ -19,7 +19,7 @@ author: 灰猫
 
 <img class="course-image" src="/static/results/tensorflow/15_1_2.png">
 
-（P.S. 灰猫使用的tensorflow  v1.1 显示的效果可能和视频中的不太一样， 但是tensorBorad 的使用方法的是一样的。）
+（P.S. 灰猫使用的 tensorflow v1.1 显示的效果可能和视频中的不太一样， 但是 tensorborad 的使用方法的是一样的。）
 
 这里还有一个events , 在这次练习中我们会把 整个训练过程中的误差值（loss）在event里面显示出来, 甚至你可以显示更多你想要显示的东西.
 
@@ -29,7 +29,7 @@ author: 灰猫
 
 #### 制做输入源
 由于这节我们观察训练过程中神经网络的变化, 所以首先要添一些模拟数据.
-Python 的numpy 工具包可以帮助我们制造一些模拟数据. 所以我们先导入这个工具包:
+Python 的 numpy 工具包可以帮助我们制造一些模拟数据. 所以我们先导入这个工具包:
 
 ```python
 import tensorflow as tf
@@ -37,7 +37,7 @@ import numpy as np
 
 ```
 
-然后借助 np中的`np.linespace()` 产生随机的数字, 同时为了模拟更加真实我们会添加一些噪声,这些噪声是通过`np.random.normal()` 随机产生的. 
+然后借助 np 中的 `np.linespace()` 产生随机的数字, 同时为了模拟更加真实我们会添加一些噪声, 这些噪声是通过 `np.random.normal()` 随机产生的. 
 
 ```python
  ## make up some data
@@ -47,18 +47,18 @@ import numpy as np
 
 ```
 
-输入源的问题解决之后, 我们开始制作对`Weights`和`biase`的变化图表吧. 我们期望可以做到如下的效果, 那么首先从layer1/weight做起吧
+输入源的问题解决之后, 我们开始制作对`Weights`和`biase`的变化图表吧. 我们期望可以做到如下的效果, 那么首先从 layer1/weight 做起吧
 
 <img class="course-image" src="/static/results/tensorflow/15_1_4.png">
 
 这个效果是如何做到的呢,请看下一个标题
 
-#### 在layer中为Weights,biases 设置变化图表
+#### 在 layer 中为 Weights, biases 设置变化图表
 
 
-通过上图的观察我们发现每个layer后面有有一个数字: layer1 和layer2
+通过上图的观察我们发现每个 layer 后面有有一个数字: layer1 和layer2
 
-于是我们在  `add_layer()`方法中添加一个参数`n_layer` ,用来标识层数, 并且用变量`layer_name`代表其每层的名名称 , 代码如下:
+于是我们在 `add_layer()` 方法中添加一个参数 `n_layer`,用来标识层数, 并且用变量 `layer_name` 代表其每层的名名称, 代码如下:
 
 
 ```python
@@ -195,7 +195,7 @@ sess.run(tf.initialize_all_variables())
 
 #### 训练数据
 
-假定给出了 `x_data,y_data`并且训练1000次. 
+假定给出了`x_data,y_data`并且训练1000次. 
 
 ```python
 for i in range(1000):
