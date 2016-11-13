@@ -183,6 +183,7 @@ with tf.name_scope('train'):
 我们需要使用`tf.train.SummaryWriter()`将上面‘绘画’出的图保存到一个目录中，以方便后期在浏览器中可以浏览。
 这个方法中的第二个参数需要使用`sess.graph` ， 因此我们需要把这句话放在获取`session`的后面。
 这里的`graph`是将前面定义的框架信息收集起来，然后放在`logs/`目录下面。
+
 ```python
 sess = tf.Session() ##get session
 writer = tf.train.SummaryWriter("logs/", sess.graph)
