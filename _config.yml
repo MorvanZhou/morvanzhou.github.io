@@ -52,7 +52,6 @@ defaults:
       published: true
       comments: true
 
-
   - scope:
       path: "_contents/tutorials/machine-learning/ML-intro"
     values:
