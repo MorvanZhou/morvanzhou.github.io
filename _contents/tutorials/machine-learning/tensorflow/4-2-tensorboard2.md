@@ -187,8 +187,9 @@ with tf.name_scope('loss'):
 #### 给所有训练图‘合并‘
 
 接下来， 开始合并打包。
-`tf.merge_all_summaries()` 方法会对我们所有的'summaries’ 合并到一起. 
+`tf.merge_all_summaries()` 方法会对我们所有的 `summaries` 合并到一起. 
 因此在原有代码片段中添加： 
+
 ```python
 sess= tf.Session()
 merged= tf.merge_all_summaries()
@@ -198,12 +199,12 @@ sess.run(tf.initialize_all_variables())
 ```
 
 #### 训练数据
+
 假定给出了 `x_data,y_data`并且训练1000次. 
 
 ```python
 for i in range(1000):
    sess.run(train_step, feed_dict={xs:x_data, ys:y_data})
-
 ```
 
 以上这些仅仅可以记录很绘制出训练的图表， 但是不会记录训练的数据。
