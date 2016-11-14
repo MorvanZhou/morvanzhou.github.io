@@ -13,12 +13,12 @@ Tensorflow 首先要定义神经网络的结构,
 
 <img class="course-image" src="/static/results/tensorflow/1_4_1.png">
 
-因为TensorFlow是采用数据流图（data　flow　graphs）来计算，
-所以首先我们得创建一个数据流流图，
-然后再将我们的数据（数据以张量(tensor)的形式存在）放在数据流图中计算。
-节点（Nodes）在图中表示数学操作，图中的线（edges）则表示在节点间相互联系的多维数据数组，
-即张量（tensor). 训练模型时tensor会不断的从数据流图中的一个节点flow到另一节点，
-这就是TensorFlow名字的由来。
+因为TensorFlow是采用数据流图（data　flow　graphs）来计算,
+所以首先我们得创建一个数据流流图,
+然后再将我们的数据（数据以张量(tensor)的形式存在）放在数据流图中计算.
+节点（Nodes）在图中表示数学操作,图中的线（edges）则表示在节点间相互联系的多维数据数组,
+即张量（tensor). 训练模型时tensor会不断的从数据流图中的一个节点flow到另一节点,
+这就是TensorFlow名字的由来.
 
 - 张量（tensor):
   * 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 ```[1]``` 
