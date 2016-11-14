@@ -17,7 +17,7 @@ items:
 		<div class="row">
 		  <p>{{ item[1] }}:</p>
 			{% if item[0] == "link" %}
-		    <a href="{{ item[1] }}" target="_blank">
+		    <a href="{{ item[2] }}" target="_blank">
 			    {{ item[2] }}
 		    </a>
 			{% elsif item[0] == "number" %}
