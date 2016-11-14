@@ -4,6 +4,7 @@ border-radius: 10px;
 padding: 1em;
 margin: 2.6em;
 background-color:#3f3f3f;
+overflow-x: scroll;
 }
 
 .highlight code, .highlight pre {
