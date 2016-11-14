@@ -12,18 +12,11 @@ layout: tutorials
 </p>
 
 <hr>
+{% include prev-next-post.html %}
 
 {{content}}
 
-<div class="PageNavigation">
-  {% if page.previous.url and page.category == page.previous.category %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; 上一个</a>
-  {% endif %}
-  {% if page.next.url and page.category == page.next.category %}
-    {% assign prev_page = sorted_posts[page.order-1] %}
-    <a class="next" href="{{page.next.url}}">下一个 &raquo;</a>
-  {% endif %}
-</div>
+{% include prev-next-post.html %}
 
 {% if page.comments %}
   <div id="disqus_thread"></div>
