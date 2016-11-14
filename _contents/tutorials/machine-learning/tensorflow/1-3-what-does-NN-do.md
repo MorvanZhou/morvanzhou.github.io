@@ -19,7 +19,7 @@ author: 张乐
 
 <img class='course-image' src='/static/results/tensorflow/1_3_1.png'>
 
-它是对我们数据点的一个近似表. 可以看出, 在开始阶段, 红线的表达能力不强, 误差很大.
+它是对我们数据点的一个近似表达. 可以看出, 在开始阶段, 红线的表达能力不强, 误差很大.
 不过通过不断的学习, 预测误差将会被降低. 所以学习到后来. 红线也能近似表达出数据的样子.
 
 <img class='course-image' src='/static/results/tensorflow/1_3_2.png'>
