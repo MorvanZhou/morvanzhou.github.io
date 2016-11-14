@@ -18,6 +18,7 @@ author: 张乐
 #### 安装 Tensorflow
 
 Tensorflow 的安装方式很多. 比如:
+
 * [Pip 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#pip-installation)
 * [Virtualenv 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#virtualenv-installation)
 * [Anaconda 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#anaconda-installation)
