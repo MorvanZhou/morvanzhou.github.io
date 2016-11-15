@@ -153,3 +153,12 @@ defaults:
       tut-permalink: /tutorials/python-basic/tkinter/
       category: tkinter
       tags: [python, 基础, GUI, 窗口, tkinter, tk]
+
+  - scope:
+      path: "_contents/tutorials/python-basic/tkinter"
+    values:
+      layout: tutorial-post
+      tut-title: Python 基础
+      tut-permalink: /tutorials/python-basic/basic/
+      category: basic
+      tags: [python, 基础]
