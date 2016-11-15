@@ -30,7 +30,7 @@ def search_replace(path, old=r'{% link .* %}', new='#'):
 
 if __name__ == "__main__":
     search_replace(
-        '_contents/tutorials/data-manipulation/np-pd/test.md',
-        old=r'youku_link:.*',
-        new='youku_id: '
+        '_contents/tutorials/data-manipulation/plt/',
+        old=r'youtube_id:.*',
+        new=''
     )

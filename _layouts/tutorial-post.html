@@ -1,7 +1,9 @@
 ---
 layout: tutorials
 ---
-{% include embedded-video.html youtube_id=page.youtube_id youku_link=page.youku_link %}
+
+<!-- video section -->
+{% include embedded-video.html %}
 
 <hr>
 
@@ -12,12 +14,15 @@ layout: tutorials
 </p>
 
 <hr>
+<!-- upper page navigation -->
 {% include prev-next-post.html %}
 
 {{content}}
 
+<!-- lower page navigation -->
 {% include prev-next-post.html %}
 
+<!-- comment section -->
 {% if page.comments %}
   <div id="disqus_thread"></div>
   <script>
