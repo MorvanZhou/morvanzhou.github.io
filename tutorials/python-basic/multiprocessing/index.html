@@ -2,6 +2,22 @@
 layout: tutorials
 tut-title: Python 基础
 tut-permalink: /tutorials/python-basic/
+tut-category-name: multiprocessing
+tut-course-cover: /static/img/course_cover/
+tut-chapters:
+  - 多进程
 ---
 
 <p>还在更新中...</p>
+
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}
