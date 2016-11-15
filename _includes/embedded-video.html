@@ -14,7 +14,10 @@
 <iframe id="myVideo" class="myvideo" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube_id}}?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<button onclick="myFunction()" type="button" id="switch-video">切换成 优酷 视频</button>
+<div id="switch-video-div">
+	<button onclick="myFunction()" type="button" id="switch-video">切换成 优酷 视频</button>
+	(<a href="http://v.youku.com/v_show/id_{{page.youku_id}}==">如遇问题, 点击这里</a>)
+</div>
 
 <script type="text/javascript">
 var vid = document.getElementById("myVideo");
@@ -37,7 +40,7 @@ function myFunction() {
         currentlyPlaying = 1;
         statusElement.innerText = '切换成 优酷 视频';
     }
-    var fn = function(){ vid.playVideo(); }
+    var fn = function(){ vid.load(); }
         setTimeout(fn, 1000);
     vid.addEventListener('loadedmetadata', function () {
         vid.currentTime = currentlPlayingTime;
