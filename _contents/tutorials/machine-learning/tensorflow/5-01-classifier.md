@@ -1,7 +1,9 @@
 ---
+youku_id: XMTYxMjQ2NTYyNA
+youtube_id: aNjdw9w_Qyc
 description: 机器学习中的监督学习(supervised learning)问题大部分可以分成 Regression (回归)和 Classification(分类) 这两种. Tensorflow 也可以做到这个. 回归是说我要预测的值是一个连续的值,比如房价,汽车的速度,飞机的高度等等.而分类是指我要把东西分成几类,比如猫狗猪牛等等. 我们之前的教程都是在用 regression 来教学的,这一次就介绍了如何用 Tensorflow 做 classification.
-youtube_id: aNjdw9w_Qyc?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
-youku_link: http://v.youku.com/v_show/id_XMTYxMjQ2NTYyNA==.html?f=27327189&o=1
+
+
 chapter: 5
 title: Classification 分类学习
 date: 2016-11-3

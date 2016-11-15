@@ -1,8 +1,10 @@
 ---
+youku_id: XMTU4NjU0MzE4NA
+youtube_id: mf7ktBLwaJs
 title: Numpy 属性
 description: 
-youtube_id: mf7ktBLwaJs?list=PLXO45tsB95cKKyC45gatc8wEc3Ue7BlI4
-youku_link: http://v.youku.com/v_show/id_XMTU4NjU0MzE4NA==.html?f=27329155&o=1
+
+
 date: 2016-11-3
 chapter: 2
 ---

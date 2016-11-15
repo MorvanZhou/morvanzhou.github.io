@@ -1,8 +1,10 @@
 ---
+youku_id: XMTU4NzUzNDE0MA
+youtube_id: 2TkMujKoDPI
 title: Numpy 的创建 array
 description: 
-youtube_id: 2TkMujKoDPI?list=PLXO45tsB95cKKyC45gatc8wEc3Ue7BlI4
-youku_link: http://v.youku.com/v_show/id_XMTU4NzUzNDE0MA==.html?f=27329155&o=1
+
+
 date: 2016-11-3
 chapter: 2
 author: 

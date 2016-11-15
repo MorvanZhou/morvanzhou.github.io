@@ -1,7 +1,9 @@
 ---
+youku_id: XMTYxMTYwMjEwMA
+youtube_id: SDeQRRRMUHU
 description: 学会用 Tensorflow 自带的 tensorboard 去可视化我们所建造出来的神经网络是一个很好的学习理解方式.用最直观的流程图告诉你你的神经网络是长怎样,有助于你发现编程中间的问题和疑问.
-youtube_id: SDeQRRRMUHU?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
-youku_link: http://v.youku.com/v_show/id_XMTYxMTYwMjEwMA==.html?f=27327189&o=1
+
+
 chapter: 4
 title: Tensorboard 可视化好帮手 1
 date: 2016-11-3

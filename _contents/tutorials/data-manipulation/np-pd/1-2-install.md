@@ -1,8 +1,10 @@
 ---
+youku_id: XMTU4NjM5NzgyNA
+youtube_id: JauGYB-Bzuw
 title: 安装
 description: 安装
-youtube_id: JauGYB-Bzuw?list=PLXO45tsB95cKKyC45gatc8wEc3Ue7BlI4
-youku_link: http://v.youku.com/v_show/id_XMTU4NjM5NzgyNA==.html?f=27329155&o=1
+
+
 date: 2016-11-3
 chapter: 1
 ---

@@ -1,8 +1,10 @@
 ---
+youku_id: XMTU4ODcwNjI1Ng
+youtube_id: ttSUtDTjDyI
 title: Numpy array 合并
 description: 
-youtube_id: ttSUtDTjDyI?list=PLXO45tsB95cKKyC45gatc8wEc3Ue7BlI4
-youku_link: http://v.youku.com/v_show/id_XMTU4ODcwNjI1Ng==.html?f=27329155&o=1
+
+
 date: 2016-11-3
 chapter: 2
 ---

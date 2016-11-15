@@ -1,6 +1,8 @@
 ---
+youku_id: XMTYxNjU0NzU1Mg
+youtube_id: lXznUoPCJLM
 description: 
-youtube_id: 
+
 youku_link: 
 chapter: 2
 title: 

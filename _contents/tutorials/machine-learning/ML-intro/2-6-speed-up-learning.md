@@ -1,4 +1,6 @@
 ---
+youku_id: XMTc2MjA0ODQyOA
+youtube_id: UlUGGB7akfE
 title: 加速神经网络训练 Speed Up Training
 description: "今天我们会来聊聊怎么样加速你的神经网络训练过程. 里面的方法包括: 
 Stochastic Gradient Descent (SGD);
@@ -6,8 +8,6 @@ Momentum;
 AdaGrad;
 RMSProp;
 Adam."
-youtube_id: UlUGGB7akfE?list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin
-youku_link: http://v.youku.com/v_show/id_XMTc2MjA0ODQyOA==.html?f=27892935&o=1
 date: 2016-11-3
 chapter: 2
 ---

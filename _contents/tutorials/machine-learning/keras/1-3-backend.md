@@ -1,8 +1,10 @@
 ---
+youku_id: XMTc3OTA0NDc5Mg
+youtube_id: FIZiuAM5kQo
 title: 兼容 backend
 description: 怎么样调整 keras 的 backend
-youtube_id: FIZiuAM5kQo?list=PLXO45tsB95cKhCSIgTgIfjtG5y0Bf_TIY
-youku_link: http://v.youku.com/v_show/id_XMTc3OTA0NDc5Mg==.html?f=28505797&o=1
+
+
 date: 2016-11-3
 chapter: 1
 ---

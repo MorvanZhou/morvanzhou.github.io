@@ -1,7 +1,9 @@
 ---
+youku_id: XMTYxMzQzMjEyNA
+youtube_id: pk6sAg2M-fU
 description: 安装 Tensorflow 时需要注意的几点
-youtube_id: pk6sAg2M-fU?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
-youku_link: http://v.youku.com/v_show/id_XMTYxMzQzMjEyNA==.html?f=27327189&o=1
+
+
 chapter: 1
 title: 安装
 date: 2016-11-3

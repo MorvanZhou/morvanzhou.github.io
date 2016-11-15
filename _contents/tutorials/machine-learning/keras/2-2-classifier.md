@@ -1,8 +1,8 @@
 ---
+youku_id: XMTc3OTE4NDc0OA
+youtube_id: 3mpDXAXFkfg
 title: Classifier 分类
 description: 分类的代码我们用了很多不同的途径来完成同样的事情.
-youtube_id: 3mpDXAXFkfg?list=PLXO45tsB95cKhCSIgTgIfjtG5y0Bf_TIY
-youku_link: http://v.youku.com/v_show/id_XMTc3OTE4NDc0OA==.html?f=28505797&o=1
 date: 2016-11-3
 chapter: 2
 ---

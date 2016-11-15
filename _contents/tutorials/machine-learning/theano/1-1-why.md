@@ -1,8 +1,10 @@
 ---
+youku_id: XMTY1OTQ4NDI2OA
+youtube_id: 84yGQZE43OU
 title: Why?
 description: Theano 也是一款 python 神经网络方面的模块, 相比起 Tensorflow 更为传统,更为学术化. 
-youtube_id: 84yGQZE43OU?list=PLXO45tsB95cKpDID642AjNkygrSR5X15T
-youku_link: http://v.youku.com/v_show/id_XMTY1OTQ4NDI2OA==.html?f=27743371&o=1
+
+
 chapter: 1
 date: 2016-11-3
 ---

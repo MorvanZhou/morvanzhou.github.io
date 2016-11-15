@@ -1,8 +1,10 @@
 ---
+youku_id: XMTYzMDE5ODc2OA
+youtube_id: BRps4z_EJO0
 title: Pandas 选择数据
 description: pandas 中选择数据的方法有很多种,一般我们会用到这几种.
-youtube_id: BRps4z_EJO0?list=PLXO45tsB95cKKyC45gatc8wEc3Ue7BlI4
-youku_link: http://v.youku.com/v_show/id_XMTYzMDE5ODc2OA==.html?f=27329155&o=1
+
+
 date: 2016-11-3
 chapter: 3
 ---

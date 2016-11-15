@@ -1,9 +1,11 @@
 ---
+youku_id: XMTcxNTk3NTQ2NA
+youtube_id: dLrndCJzbzA
 description: "我们之所以用 matplotlib 就是因为他在可视化上的强大. 
 不仅有2d 可视化还有3d 可视化. 除了线图, 还有散点图, 条形图, 柱状图, 可视化图片, 
 等高线, 等等. 你的数据逃不出他的掌心."
-youtube_id: dLrndCJzbzA?list=PLXO45tsB95cKiBRXYqNNCw8AUo6tYen3l
-youku_link: http://v.youku.com/v_show/id_XMTcxNTk3NTQ2NA==.html?f=28097045&o=1
+
+
 chapter: 1
 title: 为什么用 Matplotlib
 date: 2016-11-3

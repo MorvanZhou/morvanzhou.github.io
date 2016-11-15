@@ -1,7 +1,9 @@
 ---
+youku_id: XMTcyMTQ4MzQ5Mg
+youtube_id: 0g-AuWBTnyg
 description: 使用 matplotlib 做动画也是可以的, 我们使用其中一种方式, function animation 来说说.
-youtube_id: 0g-AuWBTnyg?list=PLXO45tsB95cKiBRXYqNNCw8AUo6tYen3l
-youku_link: http://v.youku.com/v_show/id_XMTcyMTQ4MzQ5Mg==.html?f=28097045&o=1
+
+
 chapter: 5
 title: Animation 动画
 date: 2016-11-3

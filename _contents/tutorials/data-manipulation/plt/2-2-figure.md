@@ -1,7 +1,9 @@
 ---
+youku_id: XMTcxNjA2OTM5Mg
+youtube_id: 5IuawGiZ7_0
 description: matplotlib 的 figure 就是一个 单独的 figure 小窗口, 小窗口里面还可以有更多的小图片. 
-youtube_id: 5IuawGiZ7_0?list=PLXO45tsB95cKiBRXYqNNCw8AUo6tYen3l
-youku_link: http://v.youku.com/v_show/id_XMTcxNjA2OTM5Mg==.html?f=28097045&o=1
+
+
 chapter: 2
 title: figure 图像
 date: 2016-11-3

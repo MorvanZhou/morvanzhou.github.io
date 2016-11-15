@@ -1,7 +1,9 @@
 ---
+youku_id: XMTYxMzQ2NzE0OA
+youtube_id: JKR1Dxinwwc
 description: 这个例子简单的阐述了 tensorflow 当中如何用代码来运行我们学到的结构.
-youtube_id: JKR1Dxinwwc?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
-youku_link: http://v.youku.com/v_show/id_XMTYxMzQ2NzE0OA==.html?f=27327189&o=1
+
+
 chapter: 2
 title: 例子2
 date: 2016-11-3

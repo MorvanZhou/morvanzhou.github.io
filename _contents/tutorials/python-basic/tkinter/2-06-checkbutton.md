@@ -1,7 +1,9 @@
 ---
+youku_id: XMTYwODE4NDc0NA
+youtube_id: WJHHDXSES-0
 description: 
-youtube_id: 
-youku_link: 
+
+
 chapter: 2
 title: 
 date: 2016-11-3

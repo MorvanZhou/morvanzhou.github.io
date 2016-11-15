@@ -1,8 +1,10 @@
 ---
+youku_id: XMTY2NTAwNTk0MA
+youtube_id: Bn3VWIwxxXg
 title: Regularization 正规化 
 description: 机器学习中,我们常常会遇到 overfitting 的问题,使用 regularization 可以帮助我们解决这种问题,达到预测的更好效果. 视频中会介绍什么是 overfitting, 怎么使用l1, l2 regularization terms.
-youtube_id: Bn3VWIwxxXg?list=PLXO45tsB95cKpDID642AjNkygrSR5X15T
-youku_link: http://v.youku.com/v_show/id_XMTY2NTAwNTk0MA==.html?f=27743371&o=1
+
+
 chapter: 3
 date: 2016-11-3
 ---

@@ -1,8 +1,8 @@
 ---
+youku_id: XMTY4MzAyNTc4NA
+youtube_id: hMIZ85t9r9A
 title: 什么是卷积神经网络 CNN? Convolutional Neural Network
 description: 卷积神经网络的简单介绍
-youtube_id: hMIZ85t9r9A?list=PLXO45tsB95cIFm8Y8vMkNNPPXAtYXwKin
-youku_link: http://v.youku.com/v_show/id_XMTY4MzAyNTc4NA==.html?f=27892935&o=1
 date: 2016-11-3
 chapter: 1
 ---
