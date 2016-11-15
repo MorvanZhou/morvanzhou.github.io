@@ -37,7 +37,8 @@ function myFunction() {
         currentlyPlaying = 1;
         statusElement.innerText = '切换成 优酷 视频';
     }
-    vid.playVideo();
+    var fn = function(){ vid.playVideo(); }
+        setTimeout(fn, 1000);
     vid.addEventListener('loadedmetadata', function () {
         vid.currentTime = currentlPlayingTime;
     }, false);
