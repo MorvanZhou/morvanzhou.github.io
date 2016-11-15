@@ -24,7 +24,7 @@ var currentlPlayingTime
 
 var src1 = "https://www.youtube.com/embed/R8LxK1Q_R8c?rel=0&autoplay=1";
 
-var src2 = "http://player.youku.com/embed/XMTYyMjk2NDIwOA";
+var src2 = "http://player.youku.com/embed/XMTYyMjk2NDIwOA==";
 
 function myFunction() {
     currentlPlayingTime = vid.currentTime;
