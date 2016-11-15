@@ -155,7 +155,7 @@ defaults:
       tags: [python, 基础, GUI, 窗口, tkinter, tk]
 
   - scope:
-      path: "_contents/tutorials/python-basic/tkinter"
+      path: "_contents/tutorials/python-basic/basic"
     values:
       layout: tutorial-post
       tut-title: Python 基础
