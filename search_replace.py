@@ -2,8 +2,20 @@ import os
 import re
 
 def search_replace(path, old=r'{% link .* %}', new='#'):
+    if os.path.isfile(path):
+        f_name = path.split('/')[-1]
+        if ".md" in f_name:
+            file_path = path
+            with open(file_path, 'r') as file:
+                filedata = file.read()
+                matches = re.findall(old, filedata)
+                print(matches)
+            for matched in matches:
+                filedata = filedata.replace(matched, new)
+            with open(file_path, 'w') as file:
+                file.write(filedata)
     for root, dirs, files in os.walk(path):
-        print(files)
+        print(root, dirs, files)
         for f_name in files:
             if ".md" in f_name:
                 file_path = root+'/'+f_name
@@ -17,9 +29,8 @@ def search_replace(path, old=r'{% link .* %}', new='#'):
                     file.write(filedata)
 
 if __name__ == "__main__":
-    # change("_tutorial_page_contents/")
     search_replace(
-        '_contents/tutorials/machine-learning/keras',
-        old=r']\(#\)',
-        new=']({% link %})'
+        '_contents/tutorials/data-manipulation/np-pd/test.md',
+        old=r'youku_link:.*',
+        new='youku_id: '
     )
