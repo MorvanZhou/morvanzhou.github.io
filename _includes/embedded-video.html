@@ -16,7 +16,7 @@
 
 <button onclick="myFunction()" type="button" id="switch-video">切换成 优酷 视频</button>
 
-<script>
+<script type="text/javascript">
 var vid = document.getElementById("myVideo");
 var statusElement = document.getElementById("switch-video");
 var currentlyPlaying = 1;
@@ -37,7 +37,7 @@ function myFunction() {
         currentlyPlaying = 1;
         statusElement.innerText = '切换成 优酷 视频';
     }
-    vid.load();
+    vid.playVideo();
     vid.addEventListener('loadedmetadata', function () {
         vid.currentTime = currentlPlayingTime;
     }, false);
