@@ -2,10 +2,8 @@
 youku_id: XMTYxMjk0MzY3Ng
 youtube_id: GB8SNR-cT7w
 description: 
-
-youku_link: 
 chapter: 2
-title: 
+title: 选择学习方法
 date: 2016-11-3
 ---
 * 学习资料:

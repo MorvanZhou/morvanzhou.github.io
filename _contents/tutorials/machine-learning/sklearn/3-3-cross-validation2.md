@@ -2,10 +2,8 @@
 youku_id: XMTYxNzgxODQzMg
 youtube_id: VsLYdjiG5KQ
 description: 
-
-youku_link: 
 chapter: 3
-title: 
+title: 交叉验证 2 Cross-validation
 date: 2016-11-3
 ---
 * 学习资料:
