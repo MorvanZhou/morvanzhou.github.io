@@ -13,8 +13,9 @@ date: 2016-11-3
 
 对于 [Linux](#linux), [MacOS](#mac), [Windows](#windows) 的安装方式各不相同. 
 
-<a name="linux"></a>
 #### Linux
+
+<a name="linux"></a>
 
 打开 Terminal 窗口, 输入一下内容
 
@@ -26,8 +27,9 @@ $ sudo apt-get install python3-matplotlib
 $ sudo apt-get install python-matplotlib
 ```
 
-<a name="mac"></a>
 #### MacOS
+
+<a name="mac"></a>
 
 打开 Terminal 窗口, 输入一下内容
 
@@ -39,8 +41,10 @@ $ pip3 install matplotlib
 $ pip install matplotlib
 ```
 
-<a name="windows"></a>
 #### Windows
+
+<a name="windows"></a>
+
 Windows 的安装最麻烦. 我们一步步来:
 
 * 确保你有安装 Visual Studio;
