@@ -28,7 +28,7 @@ var currentlPlayingTime
 
 var src1 = "https://www.youtube.com/embed/{{page.youtube_id}}";
 
-var src2 = "https://player.youku.com/embed/{{page.youku_id}}";
+var src2 = "player.youku.com/embed/{{page.youku_id}}";
 
 function myFunction() {
     currentlPlayingTime = vid.currentTime;
@@ -41,8 +41,7 @@ function myFunction() {
         currentlyPlaying = 1;
         statusElement.innerText = '切换成 优酷 视频';
     }
-    var fn = function(){ vid.load(); }
-        setTimeout(fn, 1000);
+    vid.load();
     vid.addEventListener('loadedmetadata', function () {
         vid.currentTime = currentlPlayingTime;
     }, false);
