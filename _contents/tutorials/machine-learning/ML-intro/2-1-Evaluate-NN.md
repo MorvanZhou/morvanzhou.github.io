@@ -12,5 +12,7 @@ chapter: 2
 
 * 学习资料: 
   * Theano: l1 l2 regularization [教程]({% link _contents/tutorials/machine-learning/theano/3-5-regularization.md %})
-  * Scikit-learn: cross validation [教程](#)
+  * Scikit-learn: cross validation [教程1]({% link _contents/tutorials/machine-learning/sklearn/3-2-cross-validation1.md %})
+  * Scikit-learn: cross validation [教程2]({% link _contents/tutorials/machine-learning/sklearn/3-3-cross-validation2.md %})
+  * Scikit-learn: cross validation [教程3]({% link _contents/tutorials/machine-learning/sklearn/3-4-cross-validation3.md %})
   * Tensorflow: dropout [教程]({% link _contents/tutorials/machine-learning/tensorflow/5-02-dropout.md %})
