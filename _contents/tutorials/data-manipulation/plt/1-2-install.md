@@ -9,7 +9,7 @@ title: 安装
 date: 2016-11-3
 ---
 * 学习资料:
-  * 安装 Github 版[说明](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt2_install.py)
+  * Windows 安装文件 [网址](https://pypi.python.org/pypi/matplotlib/)
 
 对于 [Linux](#linux), [MacOS](#mac), [Windows](#windows) 的安装方式各不相同. 
 
