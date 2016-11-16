@@ -28,8 +28,8 @@ var currentlPlayingTime
 
 var src1 = "https://www.youtube.com/embed/{{page.youtube_id}}";
 
-var src2 = "http://player.youku.com/embed/{{page.youku_id}}";
-
+var src2 = "http://player.youku.com/embed/{{page.youku_id}}==";
+/* https://players.youku.com/player.php/sid/XMTgwNDc1NjYwMA==/v.swf */
 function myFunction() {
     currentlPlayingTime = vid.currentTime;
     if (currentlyPlaying === 1) {
@@ -41,7 +41,7 @@ function myFunction() {
         currentlyPlaying = 1;
         statusElement.innerText = '切换成 优酷 视频';
     }
-    vid.load();
+
     vid.addEventListener('loadedmetadata', function () {
         vid.currentTime = currentlPlayingTime;
     }, false);
