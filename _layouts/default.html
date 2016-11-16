@@ -12,6 +12,35 @@
   <link href="{{site.baseurl}}/stylesheets/syntax.css" type="text/css" rel="stylesheet">
   <link href="{{site.baseurl}}/stylesheets/resize-last-load.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
+
+  <script type="text/javascript">
+    var vid = document.getElementById("myVideo");
+    var statusElement = document.getElementById("switch-video");
+    var currentlyPlaying = 1;
+    var currentlPlayingTime
+
+    var src1 = "https://www.youtube.com/embed/{{page.youtube_id}}";
+
+    var src2 = "http://player.youku.com/embed/{{page.youku_id}}";
+
+    function myFunction() {
+        currentlPlayingTime = vid.currentTime;
+        if (currentlyPlaying === 1) {
+            vid.src = src2;
+            currentlyPlaying = 2;
+            statusElement.innerText = '切换成 Youtube 视频';
+        } else {
+            vid.src = src1;
+            currentlyPlaying = 1;
+            statusElement.innerText = '切换成 优酷 视频';
+        }
+        var fn = function(){ vid.load(); }
+            setTimeout(fn, 1000);
+        vid.addEventListener('loadedmetadata', function () {
+            vid.currentTime = currentlPlayingTime;
+        }, false);
+    }
+    </script>
 </head>
 
 <body>
