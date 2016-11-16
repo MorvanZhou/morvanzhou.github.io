@@ -17,7 +17,7 @@ date: 2016-11-3
 
 <a name="linux"></a>
 
-打开 Terminal 窗口, 输入一下内容
+打开 Terminal 窗口, 输入以下内容
 
 ```python
 # python 3+ 请复制以下在 terminal 中执行
@@ -31,7 +31,7 @@ $ sudo apt-get install python-matplotlib
 
 <a name="mac"></a>
 
-打开 Terminal 窗口, 输入一下内容
+打开 Terminal 窗口, 输入以下内容
 
 ```python
 # python 3+ 请复制以下在 terminal 中执行
@@ -64,10 +64,10 @@ Windows 的安装最麻烦. 我们一步步来:
 * 用 CMD 找到这个 .whl 文件目录, 然后 pip 安装. 以 `matplotlib-1.4.3-cp35-none-win32.whl`文件为例:
 
 ```shell
-> cd python_work   # 用 cd 去到你下载的文件目录
+$ cd python_work   # 用 cd 去到你下载的文件目录
 
 # 如果是 python 3+ 版本, 像下面一样
-python_work> python -m pip3 install matplotlib-1.4.3-cp35-none-win32.whl
+python_work$ python -m pip3 install matplotlib-1.4.3-cp35-none-win32.whl
 ```
 
 * 如果安装不成功, 还有一种方法可以简便安装所有科学运算模块. 可以搜索一下 `Anaconda python` 
