@@ -11,8 +11,27 @@ title: 为什么用 Matplotlib
 date: 2016-11-3
 ---
 * 学习资料:
-  * [相关代码]()
+  * Matplotlib [官网](http://matplotlib.org/)
 
-我们之所以用 matplotlib 就是因为他在可视化上的强大. 
-不仅有2d 可视化还有3d 可视化. 除了线图, 还有散点图, 条形图, 柱状图, 可视化图片, 
-等高线, 等等. 你的数据逃不出他的掌心. 
+如果某天你发现自己要学习 Matplotlib, 很可能是因为:
+
+1. Matplotlib 是一个非常强大的 Python 画图工具;
+2. 手中有很多数据, 可是不知道该怎么呈现这些数据.
+
+所以已找到了 Matplotlib. 他能帮你画出美丽的:
+
+* 线图;
+* 散点图;
+* 等高线图;
+* 条形图;
+* 柱状图;
+* 3D 图形,
+* 甚至是图形动画等等.
+
+下面是一些例图:
+
+<img class= "course-image" src="/static/results/plt/2_1_1.png">
+
+<img class= "course-image" src="/static/results/plt/2_1_2.png">
+
+<img class= "course-image" src="/static/results/plt/2_1_3.png">
