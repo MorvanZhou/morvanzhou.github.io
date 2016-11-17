@@ -7,5 +7,5 @@ title: 存储进程输出 Queue
 date: 2016-11-3
 ---
 * 学习资料:
-  * [相关代码]()
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing3_queue.py)
 

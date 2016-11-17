@@ -7,5 +7,5 @@ title: 效率对比 threading & multiprocessing
 date: 2016-11-3
 ---
 * 学习资料:
-  * [相关代码]()
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing4_efficiency_comparison.py)
 
