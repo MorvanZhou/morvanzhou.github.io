@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # playlist link
     urls = {
         "youku": "http://list.youku.com/albumlist/show?id=27423283&ascending=1&page=1",
-        "youtube": 'https://www.youtube.com/playlist?list=PLXO45tsB95cJgYDaJbwhg629-Il5cfkhe'
+        "youtube": 'https://www.youtube.com/playlist?list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw'
     }
     path_to_assigned = '_contents/tutorials/python-basic/multiprocessing'
 
