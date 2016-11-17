@@ -238,7 +238,29 @@ float: right;
 text-align: right;
 }
 
+/* ======== comments section ======== */
+#ds-thread {
+padding: 1em 0;
+}
 
+.ds-avatar img {
+border-radius: 50% !important;
+box-shadow: 0px 0px 4px 1px  #888888 !important;
+}
 
+.ds-replybox form {
+margin: 0.5em !important;
+box-shadow: 0px 0px 8px 1px  #888888 !important;
+}
 
+.ds-post-button {
+background-color: #14b814 !important;
+}
 
+.ds-post-button:hover {
+background-color: #00e600 !important;
+}
+
+.ds-post-self {
+padding: 1em 0 !important;
+}
