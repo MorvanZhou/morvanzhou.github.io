@@ -10,9 +10,6 @@ tut-chapters:
   - 登录窗口例子
 ---
 
-{% assign backup = site.backup | where: "name", "tkinter" %}
-<p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
-
 <!-- variables for this page -->
 {% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 
