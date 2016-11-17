@@ -5,6 +5,6 @@ description:
 chapter: 2
 title: print 功能
 date: 2016-11-3
-comments: false
+comments: true
 ---
 
