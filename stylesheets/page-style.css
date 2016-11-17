@@ -128,7 +128,7 @@ left: 0;
 list-style-type: none;
 background-color: #14b814;
 display: block;
-font-size: 140%;
+font-size: 130%;
 width: 100%;
 margin: 0;
 padding: 0;
@@ -157,8 +157,8 @@ left: 0px;
 
 #home-nav .dropdown-content {
 position: fixed;
-top: 53px;
-left: 170px;
+top: 48px;
+left: 157px;
 display: none;
 text-decoration: none;
 list-style-type: none;
@@ -185,6 +185,7 @@ background-color: #00cc00;
 #home-nav .dropbtn:hover .dropdown-content {
 display: block;
 }
+
 
 /* ====== main body ====== */
 main {

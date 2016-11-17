@@ -3,7 +3,7 @@
     <li><a class="nav-home" href="{{site.baseurl}}/" ><strong>莫烦PYTHON</strong></a></li>
     <li class="dropbtn">
       <a href="{{site.baseurl}}/tutorials/"
-         class="{% if page.url  == '/tutorials/' %} current {% endif %}">教程 ▾</a>
+         class="{% if page.url  == '/tutorials/' %} current-nav {% endif %}">教程 ▾</a>
       <ul class="dropdown-content">
         <li><a href="{{site.baseurl}}/tutorials/python-basic/" >Python 基础</a></li>
         <li><a href="{{site.baseurl}}/tutorials/machine-learning/" >机器学习</a></li>
@@ -12,11 +12,15 @@
     </li>
     <li>
       <a href="{{site.baseurl}}/about/" class="{% if page.url == '/about/' %}
-           current {% endif %}">关于我</a>
+           current-nav {% endif %}">关于我</a>
     </li>
     <li>
-      <a href="{{site.baseurl}}/support/"
-         class="{% if page.url == '/support/' %} current {% endif %}">赞助</a>
+      <a href="{{site.baseurl}}/support/">
+        赞助</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/discuss/"
+      >大家说</a>
     </li>
   </ul>
 </nav>
