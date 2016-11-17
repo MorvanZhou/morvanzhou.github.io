@@ -1,7 +1,7 @@
 ---
 description: 
-chapter: 1
-title: 多说评论 测试
+chapter: 2
+title: print 功能
 date: 2016-11-3
 comments: false
 ---
