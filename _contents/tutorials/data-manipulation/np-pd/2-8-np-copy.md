@@ -3,7 +3,7 @@ youku_id: XMTU4ODc2ODUwOA
 youtube_id: lXmiDyktnCA
 title: Numpy copy & deep copy
 description: 如果直接把 numpy array赋值给另一个变量, 改变任意的一个变量都会影响到其他变量.
-Author: Bhan
+author: Bhan
 date: 2016-11-3
 chapter: 2
 ---

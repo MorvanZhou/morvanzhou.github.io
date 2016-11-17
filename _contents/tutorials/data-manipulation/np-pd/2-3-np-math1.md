@@ -3,8 +3,6 @@ youku_id: XMTU4ODI0OTQ1Ng
 youtube_id: 4QgQaNtuZLA
 title: Numpy 基础运算1
 description: 
-
-
 date: 2016-11-3
 chapter: 2
 author: Sincejuly
