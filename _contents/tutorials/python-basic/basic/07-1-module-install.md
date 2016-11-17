@@ -1,4 +1,6 @@
 ---
+youku_id: XMTU4NTE2NDk4OA
+youtube_id: D0-8urP2b5Y
 description: 
 chapter: 7
 title: 模块安装

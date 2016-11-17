@@ -1,4 +1,6 @@
 ---
+youku_id: XMTU4Mjg4MTI1Ng
+youtube_id: F9Ptmo9CZl4
 description: 
 chapter: 3
 title: while 循环

@@ -1,4 +1,6 @@
 ---
+youku_id: XMTYxMDk4OTk5Mg
+youtube_id: GXHVyjGhFuc
 description: 
 chapter: 12
 title: pickle 保存数据

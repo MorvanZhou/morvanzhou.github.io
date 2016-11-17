@@ -14,6 +14,11 @@ def get_video_id_in_playlist(urls):
         contentBytes = webPage.read()
         if page == 'youku':
             contentBytes = re.findall(r'playList.+mod\-pl\-right', str(contentBytes))
+            req = urllib.request.Request(url="http://list.youku.com/albumlist/show?id=27312381&ascending=1&page=2", headers=webheader1)
+            webPage = urllib.request.urlopen(req)
+            contentBytes2 = webPage.read()
+            contentBytes2 = re.findall(r'playList.+mod\-pl\-right', str(contentBytes2))
+            contentBytes += contentBytes2
             match = r'(<a \S+id\_[^\s]*?\.html)'
             flt = r'id\_(.+?)=='
         elif page == 'youtube':
@@ -55,10 +60,10 @@ def assign_to_path(data, path):
 if __name__ == '__main__':
     # playlist link
     urls = {
-        "youku": "http://list.youku.com/albumlist/show?id=27423283&ascending=1&page=1",
+        "youku": "http://list.youku.com/albumlist/show?id=27312381&ascending=1&page=1",
         "youtube": 'https://www.youtube.com/playlist?list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw'
     }
-    path_to_assigned = '_contents/tutorials/python-basic/multiprocessing'
+    path_to_assigned = '_contents/tutorials/python-basic/basic'
 
     df_ids = get_video_id_in_playlist(urls)
     assign_to_path(df_ids, path=path_to_assigned)

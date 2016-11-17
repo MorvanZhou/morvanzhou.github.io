@@ -1,4 +1,6 @@
 ---
+youku_id: XMTU4NTIxODg3Ng
+youtube_id: pz3I-9MgxGo
 description: 
 chapter: 8
 title: 读写文件 3

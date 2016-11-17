@@ -1,4 +1,6 @@
 ---
+youku_id: XMTYwMDE1NDUyNA
+youtube_id: kEkS2YOC80E
 description: 
 chapter: 12
 title: threading 什么是多线程

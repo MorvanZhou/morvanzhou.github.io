@@ -1,4 +1,6 @@
 ---
+youku_id: XMTU4NzI2ODI0OA
+youtube_id: tjIDFuyMuhc
 description: 
 chapter: 10
 title: 元组 列表

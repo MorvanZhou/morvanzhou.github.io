@@ -1,4 +1,6 @@
 ---
+youku_id: XMTU4Mjg2Njg4MA
+youtube_id: 1PC3etgLwVc
 description: 
 chapter: 1
 title: 安装
@@ -6,7 +8,7 @@ date: 2016-11-3
 comments: false
 ---
 * 学习资料:
-  * [相关代码](https://gentie.163.com/)
+  * [网易云跟帖](https://gentie.163.com/)
 
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
