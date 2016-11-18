@@ -8,25 +8,27 @@ items:
   - [link, 微博, "http://www.weibo.com/pythontutorial/"]
   - [number, QQ 群, 531670665]
 ---
-<h1 class="page-title">关于我</h1>
-<p>
-    联系到我有很多种方式, 欢迎大家用各种途径留言, 我们可以一起探讨问题. 以下是几种可以讨论的方式:
-</p>
-<div id="contact-table">
-	{% for item in page.items %}
-		<div class="row">
-		  <p>{{ item[1] }}:</p>
-			{% if item[0] == "link" %}
-		    <a href="{{ item[2] }}" target="_blank">
-			    {{ item[2] }}
-		    </a>
-			{% elsif item[0] == "number" %}
-			  <a style="text-decoration:none; color:white;" href="" >
-			    {{ item[2] }}
-		    </a>
-			{% endif %}
-		</div>
-	{% endfor %}
 
+<div class="pad-main">
+	<h1 class="page-title">关于我</h1>
+	<p>
+	    联系到我有很多种方式, 欢迎大家用各种途径留言, 我们可以一起探讨问题. 以下是几种可以讨论的方式:
+	</p>
+	<div id="contact-table" style="font-size:0.9em;">
+		{% for item in page.items %}
+			<div class="row">
+			  <p>{{ item[1] }}:</p>
+				{% if item[0] == "link" %}
+			    <a href="{{ item[2] }}" target="_blank">
+				    {{ item[2] }}
+			    </a>
+				{% elsif item[0] == "number" %}
+				  <a style="text-decoration:none; color:white;" href="" >
+				    {{ item[2] }}
+			    </a>
+				{% endif %}
+			</div>
+		{% endfor %}
+
+	</div>
 </div>
-
