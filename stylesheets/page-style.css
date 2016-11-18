@@ -51,16 +51,12 @@ color: #415849;
 }
 
 /* ====== anchor ====== */
-a:link {
-color: #0099ff;
-}
-
-a:visited {
-color: #cc0052;
+a:visited, a:link {
+color: #03AB49;
 }
 
 a:hover {
-color: #33adff;
+color: #23BF64;
 }
 
 /* ====== list ====== */
@@ -289,7 +285,7 @@ width: 350px;
 
 /* ===================== ABOUT PAGE ==================== */
 #contact-table {
-background-color: #00cc7a /*#2dd290*/;
+background-color: #ccffcc /*#2dd290*/;
 padding: 1.5em;
 border-radius: 10px;
 }
@@ -299,7 +295,7 @@ display: table-row;
 }
 
 .row p {
-color: white;
+color: #00b359;
 display: table-cell;
 text-align: right;
 padding: 0.4em 2em;
@@ -317,6 +313,7 @@ background-color: #ccffcc;
 width:100%;
 color: #00b359;
 text-align: center;
+border-radius: 10px;
 }
 
 #support-box-wrapper {
