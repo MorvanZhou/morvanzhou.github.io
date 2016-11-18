@@ -8,21 +8,23 @@ sections:
   - [数据处理, /tutorials/data-manipulation/]
 ---
 
-<p>
-    Python 是一个相对简单的语言, 我们可以拿它来实现很多事情.
-    这些教程也是我在学习之余尽力做出来的. 自己走过很多弯路, 知道走弯路付出的代价,
-    所以为了不让你也走上这些弯路, 我就把它们都做成了视频. 分享给大家我所学习到的东西.
-</p>
+<div class="pad-main">
+  <p>
+      Python 是一个相对简单的语言, 我们可以拿它来实现很多事情.
+      这些教程也是我在学习之余尽力做出来的. 自己走过很多弯路, 知道走弯路付出的代价,
+      所以为了不让你也走上这些弯路, 我就把它们都做成了视频. 分享给大家我所学习到的东西.
+  </p>
 
-<p>
-    目前囊括的 Python 教程内容 涉及到了 [
-    {% for section in page.sections %}
-      <a href="{{site.baseurl}}{{section[1]}}"><em>{{section[0]}}</em></a>,
-    {% endfor %}
-    ]. 没错, 当然会有更多, 因为你们的支持,
-    就是我学习的动力, 再也不能好好偷懒了~ 教程内容一直在不断扩展, 基本上是我会用的都已经出了教程,
-    我不会用的, 都在学习当中~
-</p>
+  <p>
+      目前囊括的 Python 教程内容 涉及到了 [
+      {% for section in page.sections %}
+        <a href="{{site.baseurl}}{{section[1]}}"><em>{{section[0]}}</em></a>,
+      {% endfor %}
+      ]. 没错, 当然会有更多, 因为你们的支持,
+      就是我学习的动力, 再也不能好好偷懒了~ 教程内容一直在不断扩展, 基本上是我会用的都已经出了教程,
+      我不会用的, 都在学习当中~
+  </p>
+</div>
 
 {% assign descriptions = site.contents | where: "category", "description-tutorial-home-page" %}
 

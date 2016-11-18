@@ -190,11 +190,12 @@ display: block;
 /* ====== main body ====== */
 main {
 margin: 0px auto;
-padding: 3em 5em;
 background-color:#FAFAFA;
 box-shadow: 0px 0px 30px 5px  #888888;
 }
-
+.pad-main {
+padding: 3em 5em;
+}
 /* ====== side right ====== */
 .side-right {
 clear: right;

@@ -2,10 +2,12 @@
 layout: default
 ---
 
+<div class="pad-main">
 {% include announcement.html %}
+</div>
 
 <div id="tut-header">
-  <a class="hover-move bold" href="{{site.baseurl}}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
+  <a class="hover-move bold" href="{{site.baseurl}}{{ page.tut-permalink }}"><h2>{{ page.tut-title }}</h2></a>
   <nav id="tut-nav">
     <ul>
       <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/python-basic/">
@@ -38,6 +40,7 @@ layout: default
   </nav>
 
 </div>
+
 
 <!-- for later update
 <div class="side-right">

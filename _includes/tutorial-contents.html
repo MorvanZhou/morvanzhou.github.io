@@ -1,22 +1,24 @@
 
 <img class="course-summary-image" src="{{ include.tut-course-cover }}" alt="{{ include.tut-course-cover-alt }}">
 
-<ol class="table-of-contents-ul">
-	{% for chapter-name in {{include.tut-chapters}} %}
-	{% assign chapter-id = forloop.index %}
-	<li class="chapter-li"><h4>{{chapter-name}}</h4>
-		<ol>
-		{% assign tuts = ({{include.tut-category}} | where: "chapter", forloop.index) %}
-	    {% for tut in tuts %}
-			{% assign section-id = forloop.index %}
-				{% if tut.title != "page default" %}
-		      <li class="content-li">
-		          <a href="{{site.baseurl}}{{ tut.url }}">{{chapter-id}}.{{section-id}} {{tut.title}}</a>
-		      </li>
-				{% endif %}
-		  {% endfor %}
-		</ol>
-	</li>
-	{% endfor %}
+<div class="pad-main">
+	<ol class="table-of-contents-ul">
+		{% for chapter-name in {{include.tut-chapters}} %}
+		{% assign chapter-id = forloop.index %}
+		<li class="chapter-li"><h4>{{chapter-name}}</h4>
+			<ol>
+			{% assign tuts = ({{include.tut-category}} | where: "chapter", forloop.index) %}
+		    {% for tut in tuts %}
+				{% assign section-id = forloop.index %}
+					{% if tut.title != "page default" %}
+			      <li class="content-li">
+			          <a href="{{site.baseurl}}{{ tut.url }}">{{chapter-id}}.{{section-id}} {{tut.title}}</a>
+			      </li>
+					{% endif %}
+			  {% endfor %}
+			</ol>
+		</li>
+		{% endfor %}
 
-</ol>
+	</ol>
+</div>

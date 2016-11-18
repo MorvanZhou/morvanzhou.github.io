@@ -8,12 +8,13 @@ padding: 0 0 7em 0;
 margin: 0;
 }
 
-#tut-header a h1 {
-width: 50%;
+#tut-header a h2 {
+width: 45%;
 text-align: center;
 display: inline-block;
+line-height: 2em;
 margin: 0;
-padding: 0;
+padding: 0 5px;
 }
 
 
