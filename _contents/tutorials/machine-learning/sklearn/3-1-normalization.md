@@ -72,7 +72,7 @@ plt.show()
 
 ##### 数据标准化前
 
-标准化前的预测準度只有`0.477777777778`
+标准化前的预测准确率只有`0.477777777778`
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
@@ -88,7 +88,7 @@ print(clf.score(X_test, y_test))
 
 <img class="course-image" src="/static/results/sklearn/3_1_2.png">
 
-标准化后的预测準度提升至`0.9`
+标准化后的预测准确率提升至`0.9`
 
 ```python
 X = preprocessing.scale(X)
