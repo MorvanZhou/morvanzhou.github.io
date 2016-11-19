@@ -8,5 +8,5 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread5_GIL.py)
-  * 多进程 [教程]({% link tutorials/python-basic/multiprocessing/index.html %})
+  * 多进程 [教程](/tutorials/python-basic/multiprocessing/)
 

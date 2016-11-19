@@ -8,5 +8,5 @@ date: 2016-11-3
 comments: true
 ---
 * 学习资料
-  * 全套[threading 教程]({% link tutorials/python-basic/threading/index.html %})
+  * 全套[threading 教程](/tutorials/python-basic/threading/)
 

@@ -1,19 +1,17 @@
 ---
 layout: tutorials
+permalink: /tutorials/machine-learning/tensorflow/
 tut-title: 机器学习
 tut-permalink: /tutorials/machine-learning/
-tut-category-name: sklearn
-tut-course-cover: /static/img/course_cover/sklearn.jpg
+tut-category-name: tensorflow
+tut-course-cover: /static/img/course_cover/tf.jpg
 tut-chapters:
-  - Sklearn 简介
-  - 一般使用
-  - 高级使用
+  - Tensorflow 简介
+  - Tensorflow 基础构架
+  - 建造我们第一个神经网络
+  - 可视化好助手 Tensorboard
+  - 更多神经网络结构
 ---
-
-<h1 class="page-title">Sklearn</h1>
-{% assign backup = site.backup | where: "name", "sklearn" %}
-<p>还在更新中... 简易版在这: <a href="{{site.baseurl}}{{backup[0].url}}">网址</a></p>
-
 <!-- variables for this page -->
 {% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 
@@ -22,7 +20,8 @@ tut-chapters:
 
 {% include tutorial-contents.html
 tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
+tut-course-cover-alt=page.page.tut-category-name
 tut-chapters=page.tut-chapters
 tut-category=tut-category
 %}
+

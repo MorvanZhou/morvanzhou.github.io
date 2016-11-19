@@ -9,7 +9,7 @@ chapter: 1
 date: 2016-11-3
 ---
 * 学习资料:
-  * Tensorflow [教程](#)
+  * Tensorflow [教程](/tutorials/machine-learing/tensorflow/)
   
 
 Theano 也是一款 python 神经网络方面的模块,
