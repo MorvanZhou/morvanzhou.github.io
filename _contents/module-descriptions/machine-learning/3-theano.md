@@ -8,6 +8,6 @@ Theano 的使用方法和 Tensorflow 类似, 甚至可以说 Theano 是 Tensorfl
 它已经是一个很完善的神经网络模块了. 而且集成了 Windows 的兼容性 (Tensorflow暂不支持 Windows),
 所以, Theano 也是不二的学习选择. 
 
-[*Theano 教程*](/tutorials/machine-learning/theano/)
+[*Theano 教程*]({{page.tut-dir}})
 和 Tensorflow 一样, 也是从初级的 Theano 代码格式开始讲解, 先理解底层结构,
 然后再开始运用.
