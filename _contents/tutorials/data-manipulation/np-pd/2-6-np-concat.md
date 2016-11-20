@@ -58,9 +58,11 @@ print(A[np.newaxis,:].shape)
 # (1,3)
 
 print(A[:,np.newaxis])
-#[[1]
-# [1]
-# [1]]
+"""
+[[1]
+[1]
+[1]]
+"""
 
 print(A[:,np.newaxis].shape)
 # (3,1)
@@ -79,9 +81,11 @@ C = np.vstack((A,B))   # vertical stack
 D = np.hstack((A,B))   # horizontal stack
 
 print(D)
-#[[1 2]
-# [1 2]
-# [1 2]]
+"""
+[[1 2]
+[1 2]
+[1 2]]
+"""
 
 print(A.shape,D.shape)
 # (3,1) (3,2)
