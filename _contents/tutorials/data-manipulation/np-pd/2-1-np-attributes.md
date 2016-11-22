@@ -3,15 +3,40 @@ youku_id: XMTU4NjU0MzE4NA
 youtube_id: mf7ktBLwaJs
 title: Numpy 属性
 description: 
-
-
+author: abner
 date: 2016-11-3
 chapter: 2
 ---
-* 学习资料:
-  * [相关代码]()
+这次我们会介绍几种 numpy 的属性:
 
-numpy 的属性基本上有这几种常用到的,
-np.size
-np.shape
-np.ndim
+- `ndim`：维度
+- `shape`：行数和列数
+- `size`：元素个数
+
+使用`numpy`首先要导入模块
+```python
+import numpy as np #为了方便使用numpy 采用np简写
+```
+
+列表转化为矩阵：
+```python
+array = np.array([[1,2,3],[2,3,4]])  #列表转化为矩阵
+print(array)
+"""
+array([[1, 2, 3],
+       [2, 3, 4]])
+"""
+```
+
+接着我们看看这几种属性的结果:
+
+```python
+print('number of dim:',array.ndim)  # 维度
+# number of dim: 2
+
+print('shape :',array.shape)    # 行数和列数
+# shape : (2, 3)
+
+print('size:',array.size)   # 元素个数
+# size: 6
+```
