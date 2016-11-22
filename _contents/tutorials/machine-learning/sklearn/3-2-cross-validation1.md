@@ -105,7 +105,7 @@ for k in k_range:
 
 plt.plot(k_range, k_scores)
 plt.xlabel('Value of K for KNN')
-plt.ylabel('Cross-Validated Accuracy')
+plt.ylabel('Cross-Validated MSE')
 plt.show()
 ```
 
