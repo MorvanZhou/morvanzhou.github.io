@@ -59,7 +59,7 @@ class Layer(object):
 
 这段代码中，我们最关心的就是这个类的构造函数
 
-```
+```python
 def __init__(self, inputs, in_size, out_size, activation_function=None)
 ```
 
@@ -69,21 +69,21 @@ def __init__(self, inputs, in_size, out_size, activation_function=None)
 方差为1高斯分布的随机变量值组成的`in_size-by-out_size`的矩阵; `b`初始化为值为0.1的`out_put-by-1`的向量。
 (当然，我们也可以采用不同的初始化方法，这里我们暂时不讨论初始化权值对最终神经网络训练的影响)。
  
-```
+```python
 self.W = theano.shared(np.random.normal(0, 1, (in_size, out_size)))
 self.b = theano.shared(np.zeros((out_size, )) + 0.1)
 ```
 
 首先我们要计算所有神经元的输入矩阵, 也就是输入`inputs`与输入权值`W`的点乘（dot product）在加上偏置值`b`：
 
-```
+```python
 self.Wx_plus_b = T.dot(inputs, self.W) + self.b
 ```
 
 然后，我们需要根据我们构造神经层指定的激活函数类型`activation_function`,来计算神经层的输出向量。
 这里我们假设如果`activation_function`是`None`， 那就是该层神经元采用线形输出；如果是其他`Theano`的激活函数，就把`Wx_plus_b`作为该层激活函数的输入，同时函数的输出即为神经层的输出：
 
-```
+```python
 self.activation_function = activation_function
 if activation_function is None:
 	self.outputs = self.Wx_plus_b
