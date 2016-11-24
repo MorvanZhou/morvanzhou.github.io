@@ -53,10 +53,12 @@ color: #415849;
 /* ====== anchor ====== */
 a:visited, a:link {
 color: #F56100;
+text-decoration: none;
 }
 
 a:hover {
 color: #FC8333;
+text-decoration: none;
 }
 
 /* ====== list ====== */
