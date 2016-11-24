@@ -151,6 +151,7 @@ Epoch 20/20
 # plotting
 encoded_imgs = encoder.predict(x_test)
 plt.scatter(encoded_imgs[:, 0], encoded_imgs[:, 1], c=y_test)
+plt.colorbar()
 plt.show()
 ```
 
