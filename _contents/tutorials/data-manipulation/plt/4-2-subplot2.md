@@ -107,4 +107,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_1.png">
+<img class="course-image" src="/static/results/plt/4_2_3.png">
