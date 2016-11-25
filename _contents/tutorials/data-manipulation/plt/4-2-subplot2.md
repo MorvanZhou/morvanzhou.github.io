@@ -36,7 +36,7 @@ ax1.set_title('ax1_title')  # 设置小图的标题
 ```
 
 使用`plt.subplot2grid`来创建第2个小图, `(3,3)`表示将整个图像窗口分成3行3列, `(1,0)`表示从第1行第0列开始作图，`colspan=2`表示列的跨度为2.
-同上画出 `ax3`, `(1,2)`表示从第1行第2列开始作图，`rowspan=2`表示行的跨度为2. 在画一个 `ax4` 和 `ax5`, 使用默认 `colspan, rowspan`.
+同上画出 `ax3`, `(1,2)`表示从第1行第2列开始作图，`rowspan=2`表示行的跨度为2. 再画一个 `ax4` 和 `ax5`, 使用默认 `colspan, rowspan`.
 
 ```python
 ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=2)
