@@ -12,15 +12,11 @@ date: 2016-11-3
 
 matplotlib 是可以组合许多的小图, 放在一张大图里面显示的. 使用到的方法叫作 subplot.  
 
-使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`. 
+使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`. 使用`plt.figure`创建一个图像窗口.
 
 ```python
 import matplotlib.pyplot as plt
-```
 
-使用`plt.figure`创建一个图像窗口.
-
-```python
 plt.figure()
 ```
 
@@ -48,18 +44,13 @@ plt.plot([0,1],[0,3])
 `plt.subplot(224)`表示将整个图像窗口分为2行2列, 当前位置为4. 使用`plt.plot([0,1],[0,4])`在第4个位置创建一个小图.   
 
 ```python
-plt.subplot(223)
+plt.subplot(224)
 plt.plot([0,1],[0,4])
-```
 
-使用`plt.show`显示图像
-
-```python
-plt.show()
+plt.show()  # 展示
 ```
 
 <img class="course-image" src="/static/results/plt/4_1_1.png">
-
 
 如果希望展示的小图的大小不相同, 应该怎么做呢?
 以上面的4个小图为例, 如果把第1个小图放到第一行, 而剩下的3个小图都放到第二行.  
@@ -84,23 +75,16 @@ plt.plot([0,1],[0,2])
 这一步中使用`plt.subplot(2,3,4)`将整个图像窗口分为2行3列, 于是整个图像窗口的第1行就变成了3列, 也就是成了3个位置, 于是第2行的第1个位置是整个图像窗口的第4个位置. 
 
 使用`plt.subplot(235)`将整个图像窗口分为2行3列,当前位置为5.  使用`plt.plot([0,1],[0,3])`在第5个位置创建一个小图.
+同上, 再创建`plt.subplot(236)`.
 
 ```python
 plt.subplot(235)
 plt.plot([0,1],[0,3])
-```
 
-使用`plt.subplot(236)`将整个图像窗口分为2行3列, 当前位置为6. 使用`plt.plot([0,1],[0,4])`在第6个位置创建一个小图.   
-
-```python
 plt.subplot(236)
 plt.plot([0,1],[0,4])
-```
 
-使用`plt.show`显示图像
-
-```python
-plt.show()
+plt.show()  # 展示
 ```
 
 <img class="course-image" src="/static/results/plt/4_1_2.png">
