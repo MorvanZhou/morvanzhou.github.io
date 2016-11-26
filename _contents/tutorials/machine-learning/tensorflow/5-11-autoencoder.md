@@ -5,7 +5,6 @@ description: Autoencoder 是神经网络的一种非监督学习 unsupervised le
 author: Hao
 chapter: 5
 title: 自编码 Autoencoder (非监督学习)
-date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf21_autoencoder)

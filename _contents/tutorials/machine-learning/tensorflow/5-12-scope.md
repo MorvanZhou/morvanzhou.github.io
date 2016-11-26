@@ -4,7 +4,6 @@ youtube_id: fkZKdLtgNVo
 description: name_scope 和 variable_scope 的不同还有使用方法
 chapter: 5
 title: scope 命名方法
-date: 2016-11-3
 ---
 * 学习资料:
   * 不同 scope [对比代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_scope.py)
