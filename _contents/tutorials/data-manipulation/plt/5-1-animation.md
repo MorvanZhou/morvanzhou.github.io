@@ -2,8 +2,7 @@
 youku_id: XMTcyMTQ4MzQ5Mg
 youtube_id: 0g-AuWBTnyg
 description: 使用 matplotlib 做动画也是可以的, 我们使用其中一种方式, function animation 来说说.
-
-
+author: Jeff
 chapter: 5
 title: Animation 动画
 date: 2016-11-3
@@ -11,38 +10,36 @@ date: 2016-11-3
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt19_animation.py)
   * [reference](http://matplotlib.org/examples/animation/simple_anim.html)
-  
-使用 matplotlib 做动画也是可以的, 我们使用其中一种方式, function animation 来说说.
 
-`import` 我们所需要的模块, 我们额外加入`animation` 来实现这次的动画效果. 
+
+使用matplotlib做动画也是可以的，我们使用其中一种方式，function animation来说说，
+具体可参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html)。首先，我们做一些准备工作：
 
 ```python
-import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import animation
+import numpy as np
+fig, ax = plt.subplots()
 ```
 
-下面的代码, 我们将生成一条基准的 sin 曲线.
+我们的数据是一个0~2π内的正弦曲线：
 
 ```python
-fig, ax = plt.subplots()
 x = np.arange(0, 2*np.pi, 0.01)
 line, = ax.plot(x, np.sin(x))
 ```
 
 <img class="course-image" src="/static/results/plt/5_1_1.png">
 
-接着我们将在这条曲线上面动手脚啦, 首先要定义一个方程 `def animate(i)` 
-来移动我们的 `line`. 移动时, 是基于变化的 `i`, 不同的 `i` 
-将会产生不同位置的 `line`.
+接着，构造自定义动画函数`animate`，用来更新每一帧上各个`x`对应的`y`坐标值，参数表示第i帧：
 
 ```python
 def animate(i):
-    line.set_ydata(np.sin(x + i/10.0)) 
+    line.set_ydata(np.sin(x + i/10.0))
     return line,
 ```
 
-我们还需要定义一个方程 `def init()`, 这个是 `animation` 中的初始化情况.
+然后，构造开始帧函数`init`：
 
 ```python
 def init():
@@ -50,30 +47,34 @@ def init():
     return line,
 ```
 
-有了初始化情况 `init()` 和动画的方程 `animate()`, 我们就能把它们当作参数传入进 
-`plt` 的 `animation.FuncAnimation()` 中. `fig=` 是我们要输出到那一个 figure 中.
-`func=` 是定义我们的动画方程, `frames=` 是每次循环这个方程多少步, 这个和上面的 `i` 有关,
-`init_func=` 是放初始状态的地方, `interval=` 是显示动画的频率(20毫秒更新一次),
-`blit=`需要注意, 如果你使用 mac 系统, `blit=False`才不会报错(plt 有 bug), 
- `blit=True` 的意思是只更新图中有变化的数, 这个可以节省系统资源.
+接下来，我们调用`FuncAnimation`函数生成动画。参数说明：
+1. `fig` 进行动画绘制的figure
+2. `func` 自定义动画函数，即传入刚定义的函数`animate`
+3. `frames` 动画长度，一次循环包含的帧数
+4. `init_func` 自定义开始帧，即传入刚定义的函数`init`
+5. `interval` 更新频率，以ms计
+6. `blit` 选择更新所有点，还是仅更新产生变化的点。应选择`True`，但mac用户请选择`False`，否则无法显示动画
 
 ```python
-ani = animation.FuncAnimation(
-    fig=fig, func=animate, 
-    frames=100, init_func=init,
-    interval=20, blit=False
-    )
+ani = animation.FuncAnimation(fig=fig,
+                              func=animate,
+                              frames=100,
+                              init_func=init,
+                              interval=20,
+                              blit=False)
+```
+
+显示动画：
+
+```python
 plt.show()
 ```
 
-如果想保存制作好的动画, 需要安装额外的模块: `ffmpeg` 或者 `mencoder`. 
-具体信息请查看这个[链接](http://matplotlib.sourceforge.net/api/animation_api.html).
-设置好了以后, 就能运用下面的代码来保存动画啦.
+当然，你也可以将动画以mp4格式保存下来，但首先要保证你已经安装了`ffmpeg` 或者`mencoder`，
+更多信息参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html)：
 
 ```python
-anim.save(
-    'basic_animation.mp4', 
-    fps=30, 
-    extra_args=['-vcodec', 'libx264']
-    )
+anim.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
 ```
+  
+  

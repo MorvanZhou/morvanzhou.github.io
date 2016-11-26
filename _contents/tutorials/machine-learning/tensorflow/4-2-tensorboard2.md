@@ -2,8 +2,6 @@
 youku_id: XMTYxMTcxODYyMA
 youtube_id: L-RDrbYNWDk
 description: Tensorflow 中的 tensorboard 不仅仅可以可视化神经网络结构,还可以可视化我们的 training 训练结果,根据每一次不同的训练结果来修改提升神经网络参数是机器学习高手们必备的技能之一.
-
-
 chapter: 4
 title: Tensorboard 可视化好帮手 2
 date: 2016-11-3

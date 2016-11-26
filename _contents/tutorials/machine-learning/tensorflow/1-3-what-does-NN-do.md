@@ -2,8 +2,6 @@
 youku_id: XMTYxMzQzNDc5Ng
 youtube_id: tM4z02cDNa4
 description: 机器学习 其实就是让电脑不断的尝试模拟预测已知的数据.
-
-
 chapter: 1
 title: 神经网络在干嘛
 date: 2016-11-3
