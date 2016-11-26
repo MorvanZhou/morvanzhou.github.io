@@ -1,10 +1,31 @@
 
 <div class="PageNavigation">
-  {% if page.previous.url and page.category == page.previous.category %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; 上一个</a>
+  <!-- select url for next and previous -->
+  {% assign posts = site.contents | where: "category", page.category %}
+  {% for post in posts %}
+    {% if post.id == page.id %}
+      {% if forloop.index0 != 0 %}
+        {% assign pre_index = forloop.index0 | minus:"1" %}
+        {% assign post_previous = posts[pre_index] %}
+        {% assign post_previous_url = post_previous.url %}
+      {% endif %}
+
+      {% if forloop.rindex0 != 0 %}
+        {% assign next_index = forloop.index0 | plus:"1" %}
+        {% assign post_next = posts[next_index] %}
+        {% assign post_next_url = post_next.url %}
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+
+  <!-- assign url for next and previous -->
+  {% if post_previous_url %}
+    <a class="prev" href="{{post_previous_url}}">&laquo; 上一个</a>
   {% endif %}
-  {% if page.next.url and page.category == page.next.category %}
-    {% assign prev_page = sorted_posts[page.order-1] %}
-    <a class="next" href="{{page.next.url}}">下一个 &raquo;</a>
+  {% if post_next_url %}
+    <a class="next" href="{{post_next_url}}">下一个 &raquo;</a>
   {% endif %}
 </div>
+
+

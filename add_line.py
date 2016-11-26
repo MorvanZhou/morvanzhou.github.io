@@ -14,4 +14,4 @@ def add_line(path):
                     contents = "".join(contents)
                     f.write(contents)
 
-add_line('_contents/tutorials/machine-learning/ML-intro')
+add_line('_contents/tutorials/machine-learning/test')
