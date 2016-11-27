@@ -1,5 +1,5 @@
 ---
-youku_id: XMTgzNDk2NjcyNA==
+youku_id: XMTgzNDk2NjcyNA
 youtube_id: fkZKdLtgNVo
 description: name_scope 和 variable_scope 的不同还有使用方法
 chapter: 5
