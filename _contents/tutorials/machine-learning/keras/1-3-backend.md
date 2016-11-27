@@ -4,8 +4,7 @@ youtube_id: FIZiuAM5kQo
 title: 兼容 backend
 description: 怎么样调整 keras 的 backend
 
-
-date: 2016-11-3
+publish-date: 2016-10-29
 chapter: 1
 ---
 * 学习资料:

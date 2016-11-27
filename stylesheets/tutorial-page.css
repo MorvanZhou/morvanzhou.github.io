@@ -17,6 +17,22 @@ margin: 0;
 padding: 0 5px;
 }
 
+/* ====== recent update ===== */
+#recent-update {
+list-style-type: none;
+margin: 0 auto;
+line-height: 100px;
+}
+
+#recent-update li {
+padding: 0 5px 0 0;
+float: left;
+}
+
+#recent-update img:hover {
+background-color:#000;
+opacity:0.8;
+}
 
 /* ====== video ===== */
 .video-container {

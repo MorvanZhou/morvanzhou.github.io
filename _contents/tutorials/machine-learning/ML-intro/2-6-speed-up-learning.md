@@ -8,7 +8,6 @@ Momentum;
 AdaGrad;
 RMSProp;
 Adam."
-date: 2016-11-3
 chapter: 2
 ---
 

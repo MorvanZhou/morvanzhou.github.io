@@ -4,8 +4,9 @@ youtube_id: OubNgB-Fa4M
 title: Autoencoder 自编码
 description: Keras 的 autoencoder自编码 也很好编辑, 类加上几个 layers 就好了. 
 author: Alice
-date: 2016-11-3
+publish-date: 2016-10-30
 chapter: 2
+thumbnail: "/static/thumbnail/keras/09 autoencoder.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/9-Autoencoder_example.py)

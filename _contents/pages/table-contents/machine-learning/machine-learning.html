@@ -4,5 +4,5 @@ permalink: /tutorials/machine-learning/
 tut-title: 机器学习
 tut-link: /tutorials/machine-learning/
 ---
-{% assign descriptions = site.contents | where: "category", "description-machine-learning" %}
+{% assign descriptions = site.contents | where: "description", "machine-learning" %}
 {% include description-loop.html descriptions=descriptions %}

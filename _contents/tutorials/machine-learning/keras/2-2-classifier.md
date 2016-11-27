@@ -3,9 +3,10 @@ youku_id: XMTc3OTE4NDc0OA
 youtube_id: 3mpDXAXFkfg
 title: Classifier 分类
 description: 分类的代码我们用了很多不同的途径来完成同样的事情.
-date: 2016-11-3
+publish-date: 2016-10-29
 chapter: 2
 author: Alice
+thumbnail: "/static/thumbnail/keras/05 classifier.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/5-classifier_example.py)

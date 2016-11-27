@@ -14,8 +14,6 @@ exclude: ['README.md']
 collections:
   tutorial_page_contents:
     output: false
-  backup:
-    output: true
   contents:
     output: true
     permalink: /:path/
@@ -24,24 +22,24 @@ collections:
 
 defaults:
   - scope:
-      path: "_contents/tutorial-home-page"
+      path: "_contents/pages/tutorial-home-page"
     values:
-      category: description-tutorial-home-page
+      description: tutorial-home-page
 
   - scope:
-      path: "_contents/module-descriptions/basic-python"
+      path: "_contents/pages/module-descriptions/basic-python"
     values:
-      category: description-basic-python
+      description: basic-python
 
   - scope:
-      path: "_contents/module-descriptions/data-manipulation"
+      path: "_contents/pages/module-descriptions/data-manipulation"
     values:
-      category: description-data-manipulation
+      description: data-manipulation
 
   - scope:
-      path: "_contents/module-descriptions/machine-learning"
+      path: "_contents/pages/module-descriptions/machine-learning"
     values:
-      category: description-machine-learning
+      description: machine-learning
 
   - scope:
       path: "_contents/tutorials"
@@ -51,6 +49,7 @@ defaults:
       autoplay: true
       published: true
       comments: true
+      sort-date: true
 
   - scope:
       path: "_contents/tutorials/machine-learning/ML-intro"

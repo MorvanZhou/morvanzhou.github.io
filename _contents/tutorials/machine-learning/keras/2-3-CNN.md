@@ -3,10 +3,9 @@ youku_id: XMTc4MDEyMDk0MA
 youtube_id: zHop6Oq757Y
 title: CNN 卷积神经网络
 description: CNN 一般用来处理图片. 他在图片识别上有很多优势.
-
-
-date: 2016-11-3
+publish-date: 2016-10-30
 chapter: 2
+thumbnail: "/static/thumbnail/keras/06 CNN.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py)

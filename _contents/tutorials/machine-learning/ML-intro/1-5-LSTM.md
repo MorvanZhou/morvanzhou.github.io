@@ -3,7 +3,6 @@ youku_id: XMTc0MzY5MTQxMg
 youtube_id: Vdg5zlZAXnU
 title: 什么是 LSTM RNN 循环神经网络? LSTM
 description: 用 LSTM 解决普通 RNN 的弊端
-date: 2016-11-3
 chapter: 1
 ---
 今天我们会来聊聊在普通RNN的弊端和为了解决这个弊端而提出的 LSTM 技术.
