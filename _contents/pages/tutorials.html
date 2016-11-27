@@ -19,7 +19,7 @@ sections:
   {% for item in sorted-items limit:6 %}
 
     <li><a href="{{item.url}}">
-      <img src="{{item.thumbnail}}" height="130">
+      <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">
     </a></li>
 
   {% endfor %}
