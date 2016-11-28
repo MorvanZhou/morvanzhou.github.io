@@ -16,7 +16,7 @@ matplotlib 的 subplot 还可以是分格的,这里介绍三种方法.
 * Method 2: [gridspec](#m2)
 * Method 3: [subplots](#m3)
 
-<h4 id="m1">Method 1: subplot2grid</h4>
+<h4 class="tut-h4-pad" id="m1">Method 1: subplot2grid</h4>
 
 使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`. 使用`plt.figure()`创建一个图像窗口
 
@@ -55,7 +55,7 @@ ax4.set_ylabel('ax4_y')
 
 <img class="course-image" src="/static/results/plt/4_2_1.png">
 
-<h4 id="m2">Method 2: gridspec</h4>
+<h4 class="tut-h4-pad" id="m2">Method 2: gridspec</h4>
 
 使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`.
 使用`import`导入`matplotlib.gridspec`, 并简写成`gridspec`.
@@ -85,7 +85,7 @@ ax10 = plt.subplot(gs[-1, -2])
 
 <img class="course-image" src="/static/results/plt/4_2_2.png">
 
-<h4 id="m3">Method 3: subplots</h4>
+<h4 class="tut-h4-pad" id="m3">Method 3: subplots</h4>
 
 使用`plt.subplots`建立一个2行2列的图像窗口，`sharex=True`表示共享x轴坐标, `sharey=True`表示共享y轴坐标. 
 `((ax11, ax12), (ax13, ax14))`表示第1行从左至右依次放`ax11`和`ax12`, 第2行从左至右依次放`ax13`和`ax14`. 

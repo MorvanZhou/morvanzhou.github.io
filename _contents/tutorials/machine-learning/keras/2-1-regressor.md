@@ -26,7 +26,7 @@ chapter: 2
 
 
 
-<h4 id="data">导入模块并创建数据</h4>
+<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
 
 `models.Sequential`，用来一层一层一层的去建立神经层；
 `layers.Dense` 意思是这个神经层是全连接层。
@@ -49,7 +49,7 @@ plt.show()
 
 <img class="course-image" src="/static/results/keras/2-1-1.png">
 
-<h4 id="create">建立模型</h4>
+<h4 class="tut-h4-pad" id="create">建立模型</h4>
 
 然后用 `Sequential` 建立 `model`，
 再用 `model.add` 添加神经层，添加的是 `Dense` 全连接神经层。
@@ -63,7 +63,7 @@ model = Sequential()
 model.add(Dense(output_dim=1, input_dim=1))
 ```
 
-<h4 id="compile">激活模型</h4>
+<h4 class="tut-h4-pad" id="compile">激活模型</h4>
 
 接下来要激活神经网络，上一步只是定义模型。
 
@@ -77,7 +77,7 @@ model.compile(loss='mse', optimizer='sgd')
 以上三行就构建好了一个神经网络，它比 Tensorflow 要少了很多代码，很简单。
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 训练的时候用 `model.train_on_batch` 一批一批的训练 `X_train`, `Y_train`。默认的返回值是 `cost`，每100步输出一下结果。
 
@@ -98,7 +98,7 @@ train cost:  0.003544030711054802
 """
 ```
 
-<h4 id="evaluate">检验模型</h4>
+<h4 class="tut-h4-pad" id="evaluate">检验模型</h4>
 
 用到的函数是 `model.evaluate`，输入测试集的`x`和`y`， 输出 `cost`，`weights` 和 `biases`。其中 `weights` 和 `biases` 是取在模型的第一层 `model.layers[0]` 学习到的参数。从学习到的结果你可以看到, weights 比较接近0.5，bias 接近 2。
 
@@ -120,7 +120,7 @@ biases= [ 2.00056005]
 ```
 
 
-<h4 id="plot">可视化结果</h4>
+<h4 class="tut-h4-pad" id="plot">可视化结果</h4>
 
 最后可以画出预测结果，与测试集的值进行对比。
 

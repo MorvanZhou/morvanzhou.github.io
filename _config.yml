@@ -42,6 +42,11 @@ defaults:
       description: machine-learning
 
   - scope:
+      path: "_contents/pages/module-descriptions/others"
+    values:
+      description: others
+
+  - scope:
       path: "_contents/tutorials"
     values:
       editor: Morvan
@@ -50,6 +55,8 @@ defaults:
       published: true
       comments: true
       sort-date: true
+
+  ### start of tutorials ###
 
   - scope:
       path: "_contents/tutorials/machine-learning/ML-intro"
@@ -161,3 +168,12 @@ defaults:
       tut-permalink: /tutorials/python-basic/basic/
       category: basic
       tags: [python, 基础]
+
+  - scope:
+      path: "_contents/tutorials/others/git"
+    values:
+      layout: tutorial-post
+      tut-title: Git 版本管理
+      tut-permalink: /tutorials/others/git/
+      category: git
+      tags: [其他, git, VCS]

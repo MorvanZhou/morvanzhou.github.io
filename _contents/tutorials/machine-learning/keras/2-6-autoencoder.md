@@ -29,7 +29,7 @@ thumbnail: "/static/thumbnail/keras/09 autoencoder.jpg"
 
 
 
-<h4 id="data">导入模块并创建数据</h4>
+<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
 
 数据仍然用 `datasets.mnist`。
 
@@ -63,7 +63,7 @@ print(x_test.shape)
 
 
 
-<h4 id="create">建立模型</h4>
+<h4 class="tut-h4-pad" id="create">建立模型</h4>
 
 `encoding_dim`，要压缩成的维度。
 
@@ -114,7 +114,7 @@ encoder = Model(input=input_img, output=encoder_output)
 当我们想要看由 784 压缩到 2维后，这个结果是什么样的时候，也可以只单独组建压缩的板块，此时它的输入是图片，输出是压缩环节的最后结果。
 
 
-<h4 id="compile">激活模型</h4>
+<h4 class="tut-h4-pad" id="compile">激活模型</h4>
 
 接下来是编译自编码这个模型，优化器用的是 `adam`，损失函数用的是 `mse`。
 
@@ -125,7 +125,7 @@ autoencoder.compile(optimizer='adam', loss='mse')
 
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 接下来训练自编码模型，注意它的输入和输出是一样的，都是训练集的 X。
 
@@ -144,7 +144,7 @@ Epoch 20/20
 
 
 
-<h4 id="plot">可视化结果</h4>
+<h4 class="tut-h4-pad" id="plot">可视化结果</h4>
 
 最后看到可视化的结果，自编码模型可以把这几个数字给区分开来，我们可以用自编码这个过程来作为一个特征压缩的方法，和PCA的功能一样，效果要比它好一些，因为它是非线性的结构。
 

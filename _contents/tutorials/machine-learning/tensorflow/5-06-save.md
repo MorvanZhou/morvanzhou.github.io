@@ -16,7 +16,7 @@ title: Saver 保存读取
 * [保存](#save)
 * [提取](#reload)
 
-<h4 id="save">保存</h4>
+<h4 class="tut-h4-pad" id="save">保存</h4>
 
 `import`所需的模块, 然后建立神经网络当中的 `W` 和 `b`, 并 初始化变量.
 
@@ -48,7 +48,7 @@ Save to path:  my_net/save_net.ckpt
 ```
 
 
-<h4 id="reload">提取</h4>
+<h4 class="tut-h4-pad" id="reload">提取</h4>
 
 提取时, 先建立零时的`W` 和 `b`容器. 找到文件目录, 并用`saver.restore()`我们放在这个目录的变量.
 

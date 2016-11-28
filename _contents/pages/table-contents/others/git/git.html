@@ -1,0 +1,25 @@
+---
+layout: tutorials
+tut-title: Git 版本管理
+permalink: /tutorials/others/git/
+tut-permalink: /tutorials/others/
+tut-category-name: git
+tut-course-cover: /static/img/course_cover/git.jpg
+tut-chapters:
+  - 介绍
+  - 2
+  - 3
+  - 4
+---
+
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}

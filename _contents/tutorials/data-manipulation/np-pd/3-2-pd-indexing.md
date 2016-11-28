@@ -35,7 +35,7 @@ df = pd.DataFrame(np.arange(24).reshape((6,4)),index=dates, columns=['A','B','C'
 """
 ```
 
-<h4 id="pd-simple">简单的筛选</h4>
+<h4 class="tut-h4-pad" id="pd-simple">简单的筛选</h4>
 
 如果我们想选取`DataFrame`中的数据，下面描述了两种途径, 他们都能达到同一个目的：
 
@@ -78,7 +78,7 @@ A   B   C   D
 
 如果`df[3:3]`将会是一个空对象。后者选择`20130102`到`20130104`标签之间的数据，并且包括这两个标签。
 
-<h4 id="pd-loc">loc</h4>
+<h4 class="tut-h4-pad" id="pd-loc">loc</h4>
 
 同样我们可以使用标签来选择数据 `loc`, 本例子主要通过标签名字选择某一行数据，
 或者通过选择某行或者所有行（`:`代表所有行）然后选其中某一列或几列数据。:
@@ -112,7 +112,7 @@ Name: 2013-01-02 00:00:00, dtype: int64
 """
 ```
 
-<h4 id="pd-iloc">iloc</h4>
+<h4 class="tut-h4-pad" id="pd-iloc">iloc</h4>
 另外我们可以采用位置进行选择 `iloc`, 在这里我们可以通过位置选择在不同情况下所需要的数据例如选某一个，连续选或者跨行选等操作。
 
 ```python
@@ -138,7 +138,7 @@ print(df.iloc[[1,3,5],1:3])
 
 在这里我们可以通过位置选择在不同情况下所需要的数据, 例如选某一个，连续选或者跨行选等操作。
 
-<h4 id="pd-ix">ix</h4>
+<h4 class="tut-h4-pad" id="pd-ix">ix</h4>
 
 当然我们可以采用混合选择 `ix`, 其中选择'A'和'C'的两列，并选择前三行的数据。
 
@@ -152,7 +152,7 @@ print(df.ix[:3,['A','C']])
 """
 ```
 
-<h4 id="pd-boolean">使用判断</h4>
+<h4 class="tut-h4-pad" id="pd-boolean">使用判断</h4>
 
 最后我们可以采用判断指令 (Boolean indexing) 进行选择. 我们可以约束某项条件然后选择出当前所有数据.
 

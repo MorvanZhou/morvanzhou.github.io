@@ -4,7 +4,8 @@ permalink: /tutorials/python-basic/
 tut-title: Python 基础
 tut-link: /tutorials/python-basic/
 tut-permalink: /tutorials/
+tut-description: basic-python
 ---
 
-{% assign descriptions = site.contents | where: "description", "basic-python" %}
+{% assign descriptions = site.contents | where: "description", page.tut-description %}
 {% include description-loop.html descriptions=descriptions %}

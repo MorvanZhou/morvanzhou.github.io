@@ -19,7 +19,7 @@ chapter: 3
 
 
 
-<h4 id="data">导入模块并创建数据</h4>
+<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
 
 引入需要使用的Python包：
 
@@ -56,7 +56,7 @@ D = (rng.randn(N, feats), rng.randint(size=N, low=0, high=2))
 
 
 
-<h4 id="create">建立模型</h4>
+<h4 class="tut-h4-pad" id="create">建立模型</h4>
 
 接下来，定义神经网络。
 
@@ -102,7 +102,7 @@ gW, gb = T.grad(cost, [W, b])
 
 
 
-<h4 id="compile">激活模型</h4>
+<h4 class="tut-h4-pad" id="compile">激活模型</h4>
 
 
 接下来激活网络。
@@ -123,7 +123,7 @@ predict = theano.function(inputs=[x], outputs=prediction)
 ```
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 接下来训练模型。
 用训练集的 feature 和 target 训练模型，输出预测值和损失 `pred, err`。

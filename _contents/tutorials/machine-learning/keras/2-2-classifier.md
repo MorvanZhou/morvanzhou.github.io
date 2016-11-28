@@ -24,7 +24,7 @@ thumbnail: "/static/thumbnail/keras/05 classifier.jpg"
 3. [训练网络](#train)
 4. [测试模型](#evaluate)
 
-<h4 id="data">数据预处理</h4>
+<h4 class="tut-h4-pad" id="data">数据预处理</h4>
 
 Keras 自身就有 MNIST 这个数据包，再分成训练集和测试集。`x` 是一张张图片，`y` 是每张图片对应的标签，即它是哪个数字。
 
@@ -62,7 +62,7 @@ print(y_train[:3])
 
 
 
-<h4 id="create">建立神经网络</h4>
+<h4 class="tut-h4-pad" id="create">建立神经网络</h4>
 
 今天会讲到几种不同的方式来建立和训练模型。
 
@@ -126,7 +126,7 @@ model.compile(optimizer=rmsprop,
 ```
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 这里用到的是 `fit` 函数，把训练集的 `x` 和 `y` 传入之后，`nb_epoch` 表示把整个数据训练多少次，`batch_size` 每批处理32个。
 
@@ -144,7 +144,7 @@ Epoch 2/2
 """
 ```
 
-<h4 id="evaluate">测试模型</h4>
+<h4 class="tut-h4-pad" id="evaluate">测试模型</h4>
 
 接下来就是用测试集来检验一下模型，方法和回归网络中是一样的，运行代码之后，可以输出 `accuracy` 和 `loss`。
 

@@ -34,7 +34,7 @@ date: 2016-11-3
 5. [可视化结果](#plot)
 
 
-<h4 id="data">导入模块并创建数据</h4>
+<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
 
 引入需要使用的Python包：
 
@@ -80,7 +80,7 @@ y = T.dmatrix("y")
 ```
 
 
-<h4 id="create">建立模型</h4>
+<h4 class="tut-h4-pad" id="create">建立模型</h4>
 
 建立两个神经层，`l1` 有 13 个属性，50 个神经元，激活函数是 `T.tanh`。
 `l2` 的输入值为前一层的输出，有 50 个，输出值为房价，只有 1 个。
@@ -106,7 +106,7 @@ gW1, gb1, gW2, gb2 = T.grad(cost, [l1.W, l1.b, l2.W, l2.b])
 
 
 
-<h4 id="compile">激活模型</h4>
+<h4 class="tut-h4-pad" id="compile">激活模型</h4>
 
 定义学习率，训练函数等。
 
@@ -123,7 +123,7 @@ compute_cost = theano.function(inputs=[x, y], outputs=cost)
 ```
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 用 `train_err_list` 等来记录训练过程中产生的误差，方便后面可视化。
 训练 1000 次，每 10 步记录一次训练集和测试集的误差。
@@ -143,7 +143,7 @@ for i in range(1000):
         learning_time.append(i)
 ```
 
-<h4 id="plot">可视化结果</h4>
+<h4 class="tut-h4-pad" id="plot">可视化结果</h4>
 
 最后可视化两种误差，红色是训练集的，蓝色是测试集。
 

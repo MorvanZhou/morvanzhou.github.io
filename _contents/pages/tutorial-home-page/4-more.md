@@ -1,6 +1,7 @@
 ---
 title: 其他
 icon-dir: /static/img/icon/others_icon.png
-tut-dir: #
+tut-dir: /tutorials/others/
 ---
-暂时还没有其他, 将来会有的...
+
+[Git 教程]({{page.tut-dir}})更新中...

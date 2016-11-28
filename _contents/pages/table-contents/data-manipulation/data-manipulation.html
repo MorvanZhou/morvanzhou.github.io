@@ -4,8 +4,9 @@ permalink: /tutorials/data-manipulation/
 tut-title: 数据处理
 tut-link: /tutorials/data-manipulation/
 tut-permalink: /tutorials/
+tut-description: data-manipulation
 ---
 
-{% assign descriptions = site.contents | where: "description", "data-manipulation" %}
+{% assign descriptions = site.contents | where: "description", page.tut-description %}
 {% include description-loop.html descriptions=descriptions %}
 

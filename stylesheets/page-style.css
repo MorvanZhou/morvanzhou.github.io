@@ -15,6 +15,7 @@ background-color:#F4F4F2;
 h1, h2, h3, h4, h5 {
 color: #00b359;
 }
+
 h1 {
 font-size: 2.5em;
 text-align: center;
@@ -30,10 +31,12 @@ text-align: center;
 h3 {
 font-size: 1.6em;
 text-align: center;
+padding-top: 2em;
+padding-bottom: 1em;
 }
 
 h4 {
-font-size: 1.2em;
+font-size: 1.5em;
 text-align: left;
 }
 

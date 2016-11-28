@@ -22,7 +22,7 @@ thumbnail: "/static/thumbnail/keras/10 save.jpg"
 
 
 
-<h4 id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="train">训练模型</h4>
 
 下面的导入数据和训练模型用的是之前讲过的回归模型的例子，今天要做的是如何保存这个模型。
 
@@ -50,7 +50,7 @@ for step in range(301):
 
 
 
-<h4 id="save">保存模型</h4>
+<h4 class="tut-h4-pad" id="save">保存模型</h4>
 
 训练完模型之后，可以打印一下预测的结果，接下来就保存模型。
 
@@ -71,7 +71,7 @@ test before save:  [[ 1.87243938] [ 2.20500779]]
 """
 ```
 
-<h4 id="load">导入模型并应用</h4>
+<h4 class="tut-h4-pad" id="load">导入模型并应用</h4>
 
 导入保存好的模型，再执行一遍预测，与之前预测的结果比较，可以发现结果是一样的。
 
