@@ -3,7 +3,7 @@ youku_id: XMTc3OTA0NDc5Mg
 youtube_id: FIZiuAM5kQo
 title: 兼容 backend
 description: 怎么样调整 keras 的 backend
-
+author: 刘思成
 publish-date: 2016-10-29
 chapter: 1
 ---
@@ -26,9 +26,11 @@ import keras
 ```python
 Using Theano Backend
 ```
+
 这就说明现在使用的是Theano在作Backend。
 
 #### 如何修改Backend
+
 ```python
 ~/.keras/keras.json
 ```
@@ -88,5 +90,5 @@ import os
 os.environ['KERAS_BACKEND']='tensorflow'
 ```
 
-这时import keras就会显示Using Tensorflow backend。
-第三种修改影响的范围是仅这个脚本内，所以其他文件的执行Keras还是会去找keras.json配置文件来确定用什么backend。
+这时`import keras`就会显示`Using Tensorflow backend`。
+第三种修改影响的范围是仅这个脚本内，所以其他文件的执行Keras还是会去找`keras.json`配置文件来确定用什么`backend`。
