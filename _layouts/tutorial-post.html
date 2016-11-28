@@ -7,25 +7,25 @@ layout: tutorials
 <!-- video section -->
 {% include embedded-video.html %}
 
+
+
 <div class="pad-main">
-<hr>
+  <!-- upper page navigation -->
+  {% include prev-next-post.html %}
 
-<h2>{{page.title}}</h2>
-<p style="text-align: center;">
-  作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
-  编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
-</p>
+  <hr>
 
+  <h2>{{page.title}}</h2>
+  <p style="text-align: center;">
+    作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+    编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
+  </p>
 
-<!-- upper page navigation -->
-{% include prev-next-post.html %}
+  {{content}}
 
-{{content}}
+  <!-- lower page navigation -->
+  {% include prev-next-post.html %}
 
-<!-- lower page navigation -->
-{% include prev-next-post.html %}
-
-<!-- comment section -->
-{% include comment-section.html %}
-
+  <!-- comment section -->
+  {% include comment-section.html %}
 </div>
