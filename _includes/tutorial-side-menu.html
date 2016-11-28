@@ -1,8 +1,16 @@
+<head>
+<style>
+  .tutorial-side-menu {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  }
+</style>
+</head>
+<body>
 
-<img class="course-summary-image" src="{{ include.tut-course-cover }}" alt="{{ include.tut-course-cover-alt }}">
-
-<div class="pad-main">
-	<ul class="table-of-contents-ul">
+<div class="tutorial-side-menu">
+  <ul class="table-of-contents-ul">
 		{% for chapter-name in {{include.tut-chapters}} %}
 			{% assign chapter-id = forloop.index %}
 			<li class="chapter-li"><h4>{{chapter-name}}</h4>
