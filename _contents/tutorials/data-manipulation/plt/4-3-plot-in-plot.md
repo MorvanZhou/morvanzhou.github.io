@@ -17,6 +17,7 @@ date: 2016-11-3
 可以看到，整个Figure 1包含了三个图，其中两个小图`title inside 1`和`title inside 2`又出现在大图`title`中。这是如何做到的呢？
 
 首先是一些准备工作：
+
 ```python
 # 导入pyplot模块
 import matplotlib.pyplot as plt
@@ -38,6 +39,7 @@ left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
 注意，4个值都是占整个`figure`坐标系的百分比。在这里，假设`figure`的大小是10x10，那么大图就被包含在由(1, 1)开始，宽8，高8的坐标系内。
 
 将大图坐标系添加到`figure`中，颜色为r(red)，取名为title：
+
 ```python
 ax1 = fig.add_axes([left, bottom, width, height])
 ax1.plot(x, y, 'r')
