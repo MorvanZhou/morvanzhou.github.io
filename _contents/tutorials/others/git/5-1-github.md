@@ -8,13 +8,16 @@ comments: true
 thumbnail: /static/thumbnail/git/5-01.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件]()
+  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_5-1.zip)
   
 本节内容分为:
   
 * [建立 github 版本库](#github-repository)
 * [连接本地版本库](#link)
 * [推送修改](#push-change)
+
+github 是一个大家都积极贡献的地方, 你可以和各种人合作创作. 也是开源的天堂~
+只要你愿意, 任何人都能下载, 或修改你的杰作.
 
 <h4 class="tut-h4-pad" id="github-repository">建立 github 版本库</h4>
 
@@ -60,3 +63,5 @@ $ git push -u origin master
 github 中就会查到这个:
 
 <img class="course-image" src="/static/results/git/5-1-5.png">
+
+这样就有更多的人可以看到你的杰出作品啦~

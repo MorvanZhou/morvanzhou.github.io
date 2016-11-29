@@ -8,7 +8,7 @@ comments: true
 thumbnail: /static/thumbnail/git/2-02.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件]()
+  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_2-2.zip)
   * [log 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
   * [diff 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Viewing-Your-Staged-and-Unstaged-Changes)
   
