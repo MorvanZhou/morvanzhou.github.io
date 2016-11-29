@@ -20,6 +20,15 @@ Git 是一个分布式版本控制系统. 它的灵活性, 优越性使得它从
 * 当你觉得代码太多;
 * 当你已经开始用日期或版本号命名的代码文件的时候.
 
+你是想要这样的文件夹:
+
+<img class="course-image" src="/static/results/git/1-1-1.png">
+
+还是这样的文件夹:
+
+<img class="course-image" src="/static/results/git/1-1-2.png">
+
+
 #### 什么文件可以被 Git 管理?
 
 * 文本文件 (.txt) 等;
