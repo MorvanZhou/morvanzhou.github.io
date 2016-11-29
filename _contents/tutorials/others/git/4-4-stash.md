@@ -12,15 +12,9 @@ thumbnail: /static/thumbnail/git/4-03.jpg
   
 本节内容分为:
   
-* [Linux 系统](#linux)
-* [MacOS 系统](#mac)
-* [Windows 系统](#windows)
-
-<h4 class="tut-h4-pad" id="linux">Linux 系统</h4>
-
-<h4 class="tut-h4-pad" id="mac">MacOS 系统</h4>
-
-<h4 class="tut-h4-pad" id="windows">Windows 系统</h4>
+* [暂存修改](#temp-save)
+* [做其它任务](#other-job)
+* [恢复暂存](#restore)
 
 
 想想有天在开开心心地改进代码, 突然接到老板的一个电话说要改之前的一个程序.
@@ -30,6 +24,7 @@ thumbnail: /static/thumbnail/git/4-03.jpg
 这时 `stash` 就是我的救星了. 用 `stash` 能先将我的那改进的部分放在一边分隔开来. 
 再另外单独处理老板的任务.
 
+<h4 class="tut-h4-pad" id="temp-save">暂存修改</h4>
 
 假设我们现在在 `dev` 分支上快乐地改代码:
 
@@ -55,6 +50,8 @@ $ git status
 On branch dev
 nothing to commit, working directory clean  # 干净得很
 ```
+
+<h4 class="tut-h4-pad" id="other-job">做其它任务</h4>
 
 然后我们建立另一个 `branch` 用来完成老板的任务:
 
@@ -106,6 +103,8 @@ $ git log --oneline --graph
 * c6762a1 change 1
 * 13be9a7 create 1.py
 ```
+
+<h4 class="tut-h4-pad" id="restore">恢复暂存</h4>
 
 轻松了, 现在可以继续开心的在 `dev` 上刷代码了.
 
