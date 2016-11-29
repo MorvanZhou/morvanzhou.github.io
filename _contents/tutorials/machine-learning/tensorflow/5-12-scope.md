@@ -67,7 +67,7 @@ with tf.variable_scope("a_variable_scope") as scope:
     var4_reuse = tf.Variable(name='var4', initial_value=[4], dtype=tf.float32)
     
 with tf.Session() as sess:
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
     print(var3.name)            # a_variable_scope/var3:0
     print(sess.run(var3))       # [ 3.]
     print(var3_reuse.name)      # a_variable_scope/var3:0
@@ -114,5 +114,5 @@ with tf.variable_scope('rnn') as scope:
     train_rnn = RNN(train_config)
     scope.reuse_variables()
     test_rnn = RNN(test_config)
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
 ```

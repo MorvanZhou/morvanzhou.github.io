@@ -38,7 +38,8 @@ update = tf.assign(state, new_value)
 
 ```python
 # 如果定义 Variable, 就一定要 initialize
-init = tf.initialize_all_variables() 
+# init = tf.initialize_all_variables() # tf 马上就要废弃这种写法
+init = tf.global_variables_initializer()  # 替换成这样就好
  
 # 使用 Session
 with tf.Session() as sess:

@@ -39,8 +39,8 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
 这里的`x_data`和`y_data`并不是严格的一元二次函数的关系，因为我们多加了一个`noise`,这样看起来会更像真实情况。
 
 ```python
-x_data = np.linspace(-1,1,300)[:, np.newaxis]
-noise = np.random.normal(0, 0.05, x_data.shape)
+x_data = np.linspace(-1,1,300, dtype=np.float32)[:, np.newaxis]
+noise = np.random.normal(0, 0.05, x_data.shape).astype(np.float32)
 y_data = np.square(x_data) - 0.5 + noise
 ```
 
@@ -86,7 +86,8 @@ train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 使用变量时，都要对它进行初始化，这是必不可少的。
 
 ```python
-init = tf.initialize_all_variables()
+# init = tf.initialize_all_variables() # tf 马上就要废弃这种写法
+init = tf.global_variables_initializer()  # 替换成这样就好
 ```
 
 定义`Session`，并用 `Session` 来执行 `init` 初始化步骤。

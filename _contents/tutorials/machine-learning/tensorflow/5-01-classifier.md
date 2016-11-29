@@ -60,6 +60,10 @@ train方法（最优化算法）采用梯度下降法。
 
 ```python
 train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
+sess = tf.Session()
+# tf.initialize_all_variables() 这种写法马上就要被废弃
+# 替换成下面的写法:
+sess.run(tf.global_variables_initializer())
 ```
 
 现在开始train，每次只取100张图片，免得数据太多训练太慢。

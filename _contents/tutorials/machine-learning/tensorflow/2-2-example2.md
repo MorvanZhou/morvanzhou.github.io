@@ -54,7 +54,8 @@ train = optimizer.minimize(loss)
 我们必须先初始化所有之前定义的`Variable`, 所以这一步是很重要的!
 
 ```python
-init = tf.initialize_all_variables()
+# init = tf.initialize_all_variables() # tf 马上就要废弃这种写法
+init = tf.global_variables_initializer()  # 替换成这样就好
 ```
 
 接着,我们再创建会话 `Session`. 我们会在下一节中详细讲解 Session. 

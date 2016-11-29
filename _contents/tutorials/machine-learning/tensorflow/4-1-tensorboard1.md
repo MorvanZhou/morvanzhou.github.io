@@ -99,8 +99,8 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
 	#define layer name
     with tf.name_scope('layer'):
         #define weights name 
-        with tf.name_scope('weights')
-        Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
+        with tf.name_scope('weights'):
+            Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
         #and so on......
 ```
 
@@ -112,10 +112,10 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
     with tf.name_scope('layer'):
         #define weights name 
         with tf.name_scope('weights')
-           Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
+            Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
         # define biase
         with tf.name_scope('Wx_plus_b'):
-           Wx_plus_b = tf.add(tf.matmul(inputs, Weights), biases)
+            Wx_plus_b = tf.add(tf.matmul(inputs, Weights), biases)
         # and so on....
 ```
 
@@ -123,12 +123,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
 最终，layer形式如下：
 
 ```python
-def add_layer(
-    inputs, 
-    in_size, 
-    out_size, 
-    activation_function=None
-    ):
+def add_layer(inputs, in_size, out_size, activation_function=None):
     # add one more layer and return the output of this layer
     with tf.name_scope('layer'):
         with tf.name_scope('weights'):
@@ -162,11 +157,9 @@ def add_layer(
 with tf.name_scope('loss'):
     loss = tf.reduce_mean(
     tf.reduce_sum(
-    tf.square(ys - prediction
-    ),
-    eduction_indices=[1])
-    )
-
+    tf.square(ys - prediction),
+    eduction_indices=[1]
+    ))
 ```
 
 这句话就是“绘制” loss了， 如下：

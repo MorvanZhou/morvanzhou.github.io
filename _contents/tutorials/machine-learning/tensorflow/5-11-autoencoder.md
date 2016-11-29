@@ -123,7 +123,9 @@ optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)
 ```python
 # Launch the graph
 with tf.Session() as sess:
-    sess.run(init)
+    # tf 马上就要废弃tf.initialize_all_variables()这种写法
+    # 替换成下面:
+    sess.run(tf.global_variables_initializer())
     total_batch = int(mnist.train.num_examples/batch_size)
     # Training cycle
     for epoch in range(training_epochs):

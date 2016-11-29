@@ -18,7 +18,7 @@ title: Saver 保存读取
 
 <h4 class="tut-h4-pad" id="save">保存</h4>
 
-`import`所需的模块, 然后建立神经网络当中的 `W` 和 `b`, 并 初始化变量.
+`import`所需的模块, 然后建立神经网络当中的 `W` 和 `b`, 并初始化变量.
 
 ```python
 import tensorflow as tf
@@ -29,7 +29,9 @@ import numpy as np
 W = tf.Variable([[1,2,3],[3,4,5]], dtype=tf.float32, name='weights')
 b = tf.Variable([[1,2,3]], dtype=tf.float32, name='biases')
 
-init= tf.initialize_all_variables()
+# init= tf.initialize_all_variables() # tf 马上就要废弃这种写法
+# 替换成下面的写法:
+init = tf.global_variables_initializer()
 ```
 
 保存时, 首先要建立一个 `tf.train.Saver()` 用来保存, 提取变量. 再创建一个名为`my_net`的文件夹, 用这个 `saver` 来保存变量到这个目录 `"my_net/save_net.ckpt"`.

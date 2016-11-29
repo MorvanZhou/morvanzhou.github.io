@@ -41,8 +41,8 @@ import numpy as np
 
 ```python
  ## make up some data
- x_data= np.linspace(-1, 1, 300)[:,np.newaxis]
- noise=  np.random.normal(0, 0.05, x_data.shape)
+ x_data= np.linspace(-1, 1, 300, dtype=np.float32)[:,np.newaxis]
+ noise=  np.random.normal(0, 0.05, x_data.shape).astype(np.float32)
  y_data= np.square(x_data) -0.5+ noise
 
 ```
@@ -98,7 +98,7 @@ with tf.name_scope('biases'):
 
 ```
 
-至于activiation_function 可以不绘制. 我们对output 使用同样的方法:
+至于`activation_function` 可以不绘制. 我们对output 使用同样的方法:
 
 ```python 
 tf.histogram_summary(layer_name+'/outputs',outputs)
@@ -188,7 +188,8 @@ with tf.name_scope('loss'):
 sess= tf.Session()
 merged= tf.merge_all_summaries()
 writer = tf.train.SummaryWriter("logs/", sess.graph)
-sess.run(tf.initialize_all_variables())
+# sess.run(tf.initialize_all_variables()) # tf.initialize_all_variables() # tf 马上就要废弃这种写法
+sess.run(tf.global_variables_initializer())  # 替换成这样就好
 
 ```
 
@@ -208,7 +209,6 @@ for i in range(1000):
 if i%50 == 0:
     rs = sess.run(merged,feed_dict={xs:x_data,ys:y_data})
     writer.add_summary(rs, i)
-
 ```
 
 最后修改后的片段如下：
