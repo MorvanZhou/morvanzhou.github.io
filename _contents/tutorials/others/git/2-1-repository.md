@@ -12,6 +12,7 @@ comments: true
 * [创建版本库 (init)](#init)
 * [添加文件管理 (add)](#add)
 * [提交改变 (commit)](#commit)
+* [流程图](#figure)
 
 <h4 class="tut-h4-pad" id="init">创建版本库 init</h4>
 
@@ -70,12 +71,12 @@ Initial commit
 Untracked files:    
   (use "git add <file>..." to include in what will be committed)
 
-	1.py        # 1.py 文件没有被加入版本库
+	1.py        # 1.py 文件没有被加入版本库 (unstaged)
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-现在 `1.py` 并没有被放入版本库中, 所以我们要使用 `add` 把它添加进版本库:
+现在 `1.py` 并没有被放入版本库中 (unstaged), 所以我们要使用 `add` 把它添加进版本库 (staged):
 
 ```shell
 $ git add 1.py
@@ -91,7 +92,7 @@ Initial commit
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   1.py    # 版本库已识别 1.py
+	new file:   1.py    # 版本库已识别 1.py (staged)
 ```
 
 如果想一次性添加文件夹中所有未被添加的文件, 可以使用这个:
@@ -112,3 +113,9 @@ $ git commit -m "create 1.py"
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 1.py
 ```
+
+<h4 class="tut-h4-pad"  id="figure">流程图</h4>
+
+整个上述过程可以被这张 git 官网上的流程图直观地表现:
+
+<img class="course-image" src="/static/results/git/2-1-1.png">
