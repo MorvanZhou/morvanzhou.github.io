@@ -5,6 +5,7 @@ description:
 chapter: 2
 title: 第一个版本库 Repository
 comments: true
+thumbnail: /static/thumbnail/git/2-01.jpg
 ---
 
 本节内容分为: 

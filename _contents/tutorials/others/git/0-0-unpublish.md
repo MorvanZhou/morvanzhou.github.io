@@ -3,12 +3,13 @@ youku_id:
 youtube_id: 
 description: 
 chapter: 1
-title: Why?
+title: 
 comments: true
+thumbnail: 
 published: false
 ---
 * 学习资料:
-  * [上节内容的文件]()
+  * [这节例子的初始文件]()
   
 本节内容分为:
   

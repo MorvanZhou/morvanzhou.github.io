@@ -6,6 +6,7 @@ chapter: 1
 title: Why?
 date: 2016-11-28
 comments: true
+thumbnail: /static/thumbnail/git/1-01.jpg
 ---
 * 学习资料:
   * [Git 官网](https://git-scm.com/)

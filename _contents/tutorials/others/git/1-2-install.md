@@ -6,6 +6,7 @@ chapter: 1
 title: 安装
 date: 2016-11-28
 comments: true
+thumbnail: /static/thumbnail/git/1-02.jpg
 ---
 * 学习资料:
   * [Git 官网安装说明](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)

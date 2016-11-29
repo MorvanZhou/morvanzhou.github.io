@@ -5,9 +5,10 @@ description:
 chapter: 3
 title: 回到从前 (reset)
 comments: true
+thumbnail: /static/thumbnail/git/3-01.jpg
 ---
 * 学习资料:
-  * [上节内容的文件]()
+  * [这节例子的初始文件]()
   
 本节内容分为:
   
@@ -37,7 +38,7 @@ c6762a1 change 1
 
 <h4 class="tut-h4-pad" id="reset">回到过去 reset</h4>
 
-<strong id="undo-add">回到 `add` 之前</strong>
+<h5 id="undo-add">回到 `add` 之前</h5>
 
 有时我们添加 `add` 了修改, 但是又后悔, 并想补充一些内容再 `add`. 这时,
 我们有一种方式可以回到 `add` 之前. 比如在 `1.py` 文件中添加这一行:
@@ -64,7 +65,7 @@ $ git status -s
  M 1.py     # unstaged
 ```
 
-<strong id="undo-commit">回到 `commit` 之前</strong>
+<h5 id="undo-commit">回到 `commit` 之前</h5>
 
 在穿梭到过去的 `commit` 之前, 我们必须了解 git 是如何一步一步累加更改的.
 我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html)
@@ -107,7 +108,7 @@ c6762a1 change 1
 13be9a7 create 1.py
 ```
 
-怎么 `change 2` 消失了!!! 还有办法挽救消失的 `change 2` 吗? 只要你的 terminal 窗口没有关闭, 那好事有救的.
+怎么 `change 2` 消失了!!! 还有办法挽救消失的 `change 2` 吗? 只要你的 terminal 窗口没有关闭, 那还是有救的.
 我们可以查看 `$ git reflog` 里面最近做的所有修改, 并选择想要挽救的 `commit id`:
 
 ```shell

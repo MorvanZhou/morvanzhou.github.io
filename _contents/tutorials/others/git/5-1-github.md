@@ -1,0 +1,62 @@
+---
+youku_id: 
+youtube_id: 
+description: 
+chapter: 5
+title: Github
+comments: true
+thumbnail: /static/thumbnail/git/5-01.jpg
+---
+* 学习资料:
+  * [这节例子的初始文件]()
+  
+本节内容分为:
+  
+* [建立 github 版本库](#github-repository)
+* [连接本地版本库](#link)
+* [推送修改](#push-change)
+
+<h4 class="tut-h4-pad" id="github-repository">建立 github 版本库</h4>
+
+在 [github](https://github.com/) 注册一个 github 账户, 这个不用我多说, 大家都知道注册.
+
+然后添加你的一个 online 版本库 repository:
+ 
+<img class="course-image" src="/static/results/git/5-1-1.png">
+
+添加好了以后, 会出现下面的介绍, 你可以选择红框里的代码链接上你的本地版本库.
+
+<img class="course-image" src="/static/results/git/5-1-2.png">
+
+<h4 class="tut-h4-pad" id="link">连接本地版本库</h4>
+
+使用这节内容的初始例子文件, 然后将本地的版本库推送到网上:
+
+```shell
+$ git remote add origin https://github.com/MorvanZhou/git-demo.git
+$ git push -u origin master     # 推送本地 master 去 origin
+$ git push -u origin dev        # 推送本地 dev  去 origin
+```
+
+现在网上就已经有了你推上去的版本库了.
+
+<img class="course-image" src="/static/results/git/5-1-3.png">
+
+你甚至能在这里观看之前有哪些 `commit` 和 `commit` 具体做了什么:
+
+<img class="course-image" src="/static/results/git/5-1-4.png">
+
+
+<h4 class="tut-h4-pad" id="push-change">推送修改</h4>
+
+如果在本地再进行修改, 比如在 `1.py` 文件中加上 `# happy github`,
+然后 `commit` 并推上去:
+
+```shell
+$ git commit -am "change 5"
+$ git push -u origin master
+```
+
+github 中就会查到这个:
+
+<img class="course-image" src="/static/results/git/5-1-5.png">

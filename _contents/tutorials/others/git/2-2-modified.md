@@ -5,9 +5,10 @@ description:
 chapter: 2
 title: 记录修改 (log & diff)
 comments: true
+thumbnail: /static/thumbnail/git/2-02.jpg
 ---
 * 学习资料:
-  * [上节内容的文件]()
+  * [这节例子的初始文件]()
   * [log 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
   * [diff 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Viewing-Your-Staged-and-Unstaged-Changes)
   
@@ -105,7 +106,7 @@ a = 2
 b = 1
 ```
 
-<strong id="unstaged">查看 unstaged</strong>
+<h5 id="unstaged">查看 unstaged</h5>
 
 如果想要查看这次还没 `add` (unstaged) 的修改部分 和上个已经 `commit` 的文件有何不同, 
 我们将使用 `$ git diff`:
@@ -124,7 +125,7 @@ index 1337a53..ff7c36c 100644
 +b = 1  # 添加了 b = 1
 ```
 
-<strong id="staged">查看 staged `--cached`</strong>
+<h5 id="staged">查看 staged `--cached`</h5>
 
 如果你已经 `add` 了这次修改, 文件变成了 "可提交状态" (staged), 我们可以在 `diff` 中添加参数 
 `--cached` 来查看修改:
@@ -144,7 +145,7 @@ index 1337a53..ff7c36c 100644
 +b = 1
 ```
 
-<strong id="stust">查看 staged & unstaged `HEAD`</strong>
+<h5 id="stust">查看 staged & unstaged `HEAD`</h5>
 
 还有种方法让我们可以查看 `add` 过 (staged) 和 没 `add` (unstaged) 的修改, 
 比如我们再修改一下 `1.py` 但不 `add`:

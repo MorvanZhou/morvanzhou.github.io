@@ -5,9 +5,10 @@ description:
 chapter: 3
 title: 回到从前 (checkout 针对单个文件)
 comments: true
+thumbnail: /static/thumbnail/git/3-02.jpg
 ---
 * 学习资料:
-  * [上节内容的文件]()
+  * [这节例子的初始文件]()
 
 
 之前我们使用 `reset` 的时候是针对整个版本库, 回到版本库的某个过去. 
