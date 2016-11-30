@@ -28,7 +28,7 @@ thumbnail: /static/thumbnail/git/4-01.jpg
 <h4 class="tut-h4-pad" id="figure">分支 图例</h4>
 
 之前我们说编辑的所有改变都是在一条主分支 `master` 上进行的. 通常我们会把 `master` 当作最终的版本, 
-而开发新版本或者新属性的时候, 在另外一个分支上进行, 这样就能使开发和使用互不干扰了. 
+而开发新版本或者新属性的时候, 在另外一个分支上进行, 这样就能使开发和使用互不干扰了. [图片网址](https://www.atlassian.com/git/tutorials/using-branches/)
 
 <img class="course-image" src="/static/results/git/4-1-1.png">
 
