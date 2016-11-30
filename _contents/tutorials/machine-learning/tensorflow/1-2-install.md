@@ -5,13 +5,12 @@ description: 安装 Tensorflow 时需要注意的几点
 chapter: 1
 title: 安装
 date: 2016-11-3
-author: 张乐
 ---
 * 学习资料:
   * 官方关于 Tensorflow 安装的 [说明](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
 安装 Tensorflow 时需要注意的几点:
-1. 确保你的系统是 mac OS 或者是 Linux, (tensorflow 暂不支持 windows)
+1. MacOS, Linux, Windows 系统均已支持 Tensorflow
 2. 确定你的 python 版本
 3. 你的 GPU 是 NVIDIA, 就可以安装 GPU 版本的 Tensorflow; 你的 GPU 不是 NVIDIA 也没有关系, 安装 CPU 版本的就好了.
 
@@ -25,8 +24,21 @@ Tensorflow 的安装方式很多. 比如:
 * [Docker 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#docker-installation)
 * [从安装源 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#installing-from-sources)
 
+每个系统的安装方式:
+
+* [Linux 和 MacOS](#LM)
+  * [CPU 版](#LM-CPU)
+  * [GPU 版](#LM-GPU)
+* [Windows](#W)
+* [测试](#test)
+* [更新 Tensorflow](#update)
+
+
+<h4 id="LM">Linux 和 MacOS</h4>
+
 本文将提到第一种最简单的安装方式, pip 安装.
-使用 pip 安装的时候要确保你的 pip 已经存在于你的电脑中. 如果还没有安装 pip. 你可以在 Terminal 窗口中运行这个
+使用 pip 安装的时候要确保你的 pip 已经存在于你的电脑中. 如果还没有安装 pip. 
+你可以在 Terminal 窗口中运行这个:
 
 ```shell
 # Ubuntu/Linux 64-位 系统的执行代码:
@@ -37,42 +49,58 @@ $ sudo easy_install pip
 $ sudo easy_install --upgrade six
 ```
 
-接下来挑选一个适合你电脑 Tensorflow 版本, 复制并粘贴到 terminal 中运行:
-**(注意: 以下链接是 Tensorflow 0.11.0 版本的, 如需更高版本, 请前往[官网](https://www.tensorflow.org/versions/master/get_started/os_setup.html))**
+<h5 id="LM-CPU">CPU 版</h5>
 
+激动人心的时刻到了, Tensorflow 刚刚做了更新, 绕过了复杂的安装步骤, 如果你只需要安装
+CPU 版本的 Tensorflow, 运行下面这个就好了:
+
+```shell
+# python 2+ 的用户:
+$ pip install tensorflow
+
+# python 3+ 的用户:
+$ pip3 install tensorflow
 ```
+
+注意: 你需要8.1或更高版的 `pip` 才能顺利安装.
+
+<h5 id="LM-GPU">GPU 版</h5>
+
+但是 如果你想安装 GPU 版的 Tensorflow, 你要在下面找一个适合你版本的安装文件, 并在 terminal 中执行: 
+
+```shell
 # Ubuntu/Linux 64-bit, CPU only, Python 2.7
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp27-none-linux_x86_64.whl
 
 # Ubuntu/Linux 64-bit, GPU enabled, Python 2.7
 # Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp27-none-linux_x86_64.whl
 
 # Mac OS X, CPU only, Python 2.7:
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc2-py2-none-any.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py2-none-any.whl
 
 # Mac OS X, GPU enabled, Python 2.7:
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow-0.11.0rc2-py2-none-any.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py2-none-any.whl
 
 # Ubuntu/Linux 64-bit, CPU only, Python 3.4
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp34-cp34m-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
 
 # Ubuntu/Linux 64-bit, GPU enabled, Python 3.4
 # Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc2-cp34-cp34m-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
 
 # Ubuntu/Linux 64-bit, CPU only, Python 3.5
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp35-cp35m-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
 
 # Ubuntu/Linux 64-bit, GPU enabled, Python 3.5
 # Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc2-cp35-cp35m-linux_x86_64.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
 
 # Mac OS X, CPU only, Python 3.4 or 3.5:
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc2-py3-none-any.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py3-none-any.whl
 
 # Mac OS X, GPU enabled, Python 3.4 or 3.5:
-(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow-0.11.0rc2-py3-none-any.whl
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py3-none-any.whl
 ```
 
 最后, 根据自己的 python 版本, 在 terminal 中执行以下语句:
@@ -85,6 +113,27 @@ $ sudo easy_install --upgrade six
 (tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL
 ```
 
+<h4 id="W">Windows</h4>
+
+tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows)
+
+安装前的检查:
+
+* 目前只支持 Python 3.5 (64bit) 版本
+* 你有安装 numpy (没有的话,请看这里[numpy 安装教程]({% link _contents/tutorials/data-manipulation/np-pd/1-2-install.md %}))
+
+接下来惊心动魄啦! 在 command 窗口中执行
+
+```shell
+# CPU 版的
+C:\> pip install tensorflow
+
+# GPU 版的
+C:\> pip install tensorflow-gpu
+```
+
+<h4 id="test">测试</h4>
+
 然后打开你的 python 编辑器, 输入
 
 ```python
@@ -93,7 +142,7 @@ import tensorflow
 
 运行脚本来检查一下是否有正确安装.
 
-#### 更新 Tensorflow
+<h4 id="update">更新 Tensorflow</h4> 
 
 最后, 如果你需要升级 Tensorflow 的版本, 推荐的方式是:
 

@@ -1,6 +1,6 @@
 ---
-youku_id: 
-youtube_id: qSql8KDTEuY
+youku_id: XMTg0MjQzMzQ3Mg
+youtube_id: pscvLcZetzE
 description: 
 chapter: 3
 title: 回到从前 (reset)
