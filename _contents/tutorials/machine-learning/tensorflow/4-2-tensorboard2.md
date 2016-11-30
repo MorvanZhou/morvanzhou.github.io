@@ -19,7 +19,7 @@ author: 灰猫
 
 <img class="course-image" src="/static/results/tensorflow/15_1_2.png">
 
-（P.S. 灰猫使用的 tensorflow v1.1 显示的效果可能和视频中的不太一样， 但是 tensorborad 的使用方法的是一样的。）
+（P.S. 灰猫使用的 tensorflow v1.1 显示的效果可能和视频中的不太一样， 但是 tensorboard 的使用方法的是一样的。）
 
 这里还有一个events , 在这次练习中我们会把 整个训练过程中的误差值（loss）在event里面显示出来, 甚至你可以显示更多你想要显示的东西.
 

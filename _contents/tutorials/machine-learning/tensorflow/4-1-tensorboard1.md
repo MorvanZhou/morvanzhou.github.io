@@ -185,7 +185,7 @@ writer = tf.train.SummaryWriter("logs/", sess.graph)
 最后在你的terminal（终端）中  ，使用以下命令
 
 ```shell
-tensorborad --logdir='logs/'
+tensorboard --logdir='logs/'
 ```
 
 同时将终端中输出的网址复制到浏览器中， 便可以看到之前定义的视图框架了。
