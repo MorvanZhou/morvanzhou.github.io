@@ -1,6 +1,6 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0MjkzMDkwOA
+youtube_id: RhJLfEJV36w
 description: 
 chapter: 3
 title: 回到从前 (reset)
@@ -82,7 +82,7 @@ $ git status -s
 
 
 ```shell
-# 之前做了一些 add 工作, 这一步让我们回到 add 前
+# 不管我们之前有没有做了一些 add 工作, 这一步让我们回到 上一次的 commit
 $ git reset --hard HEAD    
 # 输出
 HEAD is now at 904e1ba change 2
@@ -109,7 +109,7 @@ c6762a1 change 1
 ```
 
 怎么 `change 2` 消失了!!! 还有办法挽救消失的 `change 2` 吗? 
-我们可以查看 `$ git reflog` 里面最近做的所有修改, 并选择想要挽救的 `commit id`:
+我们可以查看 `$ git reflog` 里面最近做的所有 `HEAD` 的改动, 并选择想要挽救的 `commit id`:
 
 ```shell
 $ git reflog
