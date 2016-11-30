@@ -51,7 +51,7 @@ $ sudo easy_install --upgrade six
 
 <h5 id="LM-CPU">CPU 版</h5>
 
-激动人心的时刻到了, Tensorflow 刚刚做了更新, 绕过了复杂的安装步骤, 如果你只需要安装
+激动人心的时刻到了, Tensorflow (0.12) 刚刚做了更新, 绕过了复杂的安装步骤, 如果你只需要安装
 CPU 版本的 Tensorflow, 运行下面这个就好了:
 
 ```shell
@@ -107,10 +107,10 @@ $ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorf
 
 ```shell
 # 如果你是 Python 2, 请复制下面
-(tensorflow)$ pip install --ignore-installed --upgrade $TF_BINARY_URL
+$ sudo pip install --upgrade $TF_BINARY_URL
 
 # 如果你是 Python 3, 请复制下面
-(tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL
+$ sudo pip3 install --upgrade $TF_BINARY_URL
 ```
 
 <h4 class="tut-h4-pad" id="W">Windows</h4>
@@ -119,7 +119,7 @@ tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get
 
 安装前的检查:
 
-* 目前只支持 Python 3.5 (64bit) 版本
+* 目前只支持 **Python 3.5 (64bit)** 版本
 * 你有安装 numpy (没有的话,请看这里[numpy 安装教程]({% link _contents/tutorials/data-manipulation/np-pd/1-2-install.md %}))
 
 接下来惊心动魄啦! 在 command 窗口中执行
