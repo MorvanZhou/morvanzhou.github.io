@@ -1,9 +1,11 @@
 ---
-youku_id: XMTYxMzQzMjEyNA
-youtube_id: pk6sAg2M-fU
+youku_id: XMTg0MjcwMDc0NA
+youtube_id: EXsn02rMWX8
 description: 安装 Tensorflow 时需要注意的几点
 chapter: 1
 title: 安装
+publish-date: 2016-11-30
+thumbnail: /static/thumbnail/tf/tf2-install.jpg
 date: 2016-11-3
 ---
 * 学习资料:
