@@ -39,7 +39,7 @@ thumbnail: /static/thumbnail/git/4-03.jpg
 这一点不同, 使得在共享分支中使用 `rebase` 变得危险.
 如果是共享分支的历史被改写. 别人再和共享分支进行合并, 就会导致很多问题. 
 
-<img class="course-image" src="/static/results/git/4-1-1.png">
+<img class="course-image" src="/static/results/git/4-2-1.png">
 
 所以需要强调的是 **!!! 只能在你自己的分支中使用 rebase, 和别人共享的部分是不能用 !!!**. 
 如果你不小心弄错了. 没事, 我们还能用在 [reset 这一节]({% link _contents/tutorials/others/git/3-1-reset.md %})
