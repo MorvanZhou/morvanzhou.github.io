@@ -1,10 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0MjA2MzU3Ng
+youtube_id: kQSzft2Jj8Y
 description: 
 chapter: 1
 title: Why?
-date: 2016-11-28
+publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/1-01.jpg
 ---

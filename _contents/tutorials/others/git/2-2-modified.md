@@ -1,9 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0MjI5NTYwOA
+youtube_id: qSql8KDTEuY
 description: 
 chapter: 2
 title: 记录修改 (log & diff)
+publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/2-02.jpg
 ---

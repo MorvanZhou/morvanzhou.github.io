@@ -1,9 +1,10 @@
 ---
 youku_id: 
-youtube_id: 
+youtube_id: qSql8KDTEuY
 description: 
 chapter: 3
 title: 回到从前 (reset)
+publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/3-01.jpg
 ---

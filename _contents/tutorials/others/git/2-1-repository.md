@@ -1,9 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0MjE3NzE1Ng
+youtube_id: obbH1hGB5GI
 description: 
 chapter: 2
 title: 第一个版本库 Repository
+publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/2-01.jpg
 ---

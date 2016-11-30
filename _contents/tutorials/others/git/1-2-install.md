@@ -1,10 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0MjA5NzM3Mg
+youtube_id: BMKlINSwEas 
 description: 
 chapter: 1
 title: 安装
-date: 2016-11-28
+publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/1-02.jpg
 ---
