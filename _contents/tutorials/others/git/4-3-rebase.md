@@ -41,7 +41,9 @@ thumbnail: /static/thumbnail/git/4-03.jpg
 
 <img class="course-image" src="/static/results/git/4-1-1.png">
 
-所以需要强调的是 **!!! 只能在你自己的分支中使用 rebase, 和别人共享的部分是不能用 !!!**
+所以需要强调的是 **!!! 只能在你自己的分支中使用 rebase, 和别人共享的部分是不能用 !!!**. 
+如果你不小心弄错了. 没事, 我们还能用在 [reset 这一节]({% link _contents/tutorials/others/git/3-1-reset.md %})
+提到的 `reflog` 恢复原来的样子.
 为了验证在共享分支上使用 `rebase` 的危险性, 我们在下面的例子中也验证一下.
 
 

@@ -1,6 +1,6 @@
 ---
-youku_id: XMTg0MjQzMzQ3Mg
-youtube_id: pscvLcZetzE
+youku_id: 
+youtube_id: 
 description: 
 chapter: 3
 title: 回到从前 (reset)
@@ -80,7 +80,6 @@ $ git status -s
 指引当前的状态是在哪个 `commit`. 最近的一次 `commit` 在最右边, 我们如果要回到过去,
 就是让 `HEAD` 回到过去并 `reset` 此时的 `HEAD` 到过去的位置.
 
-**注意: 以下步骤一旦执行, 而且关闭了 terminal 窗口, 就没有回头路了**
 
 ```shell
 # 之前做了一些 add 工作, 这一步让我们回到 add 前
@@ -109,7 +108,7 @@ c6762a1 change 1
 13be9a7 create 1.py
 ```
 
-怎么 `change 2` 消失了!!! 还有办法挽救消失的 `change 2` 吗? 只要你的 terminal 窗口没有关闭, 那还是有救的.
+怎么 `change 2` 消失了!!! 还有办法挽救消失的 `change 2` 吗? 
 我们可以查看 `$ git reflog` 里面最近做的所有修改, 并选择想要挽救的 `commit id`:
 
 ```shell
@@ -133,6 +132,6 @@ c6762a1 change 1
 13be9a7 create 1.py
 ```
 
-我们又再次奇迹般的回到了 `change 2`. 在学这一节内容的时候要小心..不然没有回头路了.
+我们又再次奇迹般的回到了 `change 2`.
 
 
