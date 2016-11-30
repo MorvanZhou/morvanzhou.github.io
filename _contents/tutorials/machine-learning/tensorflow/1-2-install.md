@@ -10,6 +10,7 @@ date: 2016-11-3
   * 官方关于 Tensorflow 安装的 [说明](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
 安装 Tensorflow 时需要注意的几点:
+
 1. MacOS, Linux, Windows 系统均已支持 Tensorflow
 2. 确定你的 python 版本
 3. 你的 GPU 是 NVIDIA, 就可以安装 GPU 版本的 Tensorflow; 你的 GPU 不是 NVIDIA 也没有关系, 安装 CPU 版本的就好了.
