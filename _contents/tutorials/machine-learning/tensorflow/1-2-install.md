@@ -34,7 +34,7 @@ Tensorflow 的安装方式很多. 比如:
 * [更新 Tensorflow](#update)
 
 
-<h4 id="LM">Linux 和 MacOS</h4>
+<h4 class="tut-h4-pad" id="LM">Linux 和 MacOS</h4>
 
 本文将提到第一种最简单的安装方式, pip 安装.
 使用 pip 安装的时候要确保你的 pip 已经存在于你的电脑中. 如果还没有安装 pip. 
@@ -113,7 +113,7 @@ $ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorf
 (tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL
 ```
 
-<h4 id="W">Windows</h4>
+<h4 class="tut-h4-pad" id="W">Windows</h4>
 
 tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows)
 
@@ -132,7 +132,7 @@ C:\> pip install tensorflow
 C:\> pip install tensorflow-gpu
 ```
 
-<h4 id="test">测试</h4>
+<h4 class="tut-h4-pad" id="test">测试</h4>
 
 然后打开你的 python 编辑器, 输入
 
@@ -142,7 +142,7 @@ import tensorflow
 
 运行脚本来检查一下是否有正确安装.
 
-<h4 id="update">更新 Tensorflow</h4> 
+<h4 class="tut-h4-pad" id="update">更新 Tensorflow</h4> 
 
 最后, 如果你需要升级 Tensorflow 的版本, 推荐的方式是:
 
