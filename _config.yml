@@ -62,7 +62,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/ML-intro"
     values:
       layout: tutorial-post
-      tut-title: 机器学习-简介系列
+      tut-title: 有趣的机器学习
       tut-permalink: /tutorials/machine-learning/ML-intro/
       category: ML-intro
       tags: [机器学习, 简介]
