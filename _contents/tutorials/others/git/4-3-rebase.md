@@ -150,6 +150,6 @@ $ git log --oneline --graph
 
 **!! 注意 !!**
 这个例子也说明了使用 `rebase` 要万分小心, 千万不要在共享的 branch 中 `rebase`, 不然就像上面那样, 
-现在 `master` 的历史已经被 `rebase` 改变了. 如果有其他人也要 `merge` 来 `master`, 他们基于的 `change 4 in master` 这个
-`commit` 就变得了不同. 所以千万不要在共享分支中使用 `rebase`.
+现在 `master` 的历史已经被 `rebase` 改变了. `master` 当中别人提交的 `change 4` 就被你无情地修改掉了, 
+所以千万不要在共享分支中使用 `rebase`.
 
