@@ -1,9 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0NDYzNjUzNg
+youtube_id: mqjAMciBrdU
 description: 
 chapter: 4
 title: 临时修改 (stash)
+publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/4-03.jpg
 ---
