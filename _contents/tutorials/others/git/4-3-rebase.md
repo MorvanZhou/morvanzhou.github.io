@@ -38,7 +38,7 @@ thumbnail: /static/thumbnail/git/4-03.jpg
 可以看出 `rebase` 改变了 `C3` 的属性, `C3` 已经不是从 `C1` 衍生而来的了. 
 这一点和 `merge` 不一样. `merge` 在合并的时候创建了一个新的 `C5` `commit`. 
 这一点不同, 使得在共享分支中使用 `rebase` 变得危险.
-如果是共享分支的历史被改写. 别人再和共享分支进行合并, 就会导致很多问题. 
+如果是共享分支的历史被改写. 别人之前共享内容的 `commit` 就被你的 `rebase` 修改掉了. 
 
 <img class="course-image" src="/static/results/git/4-2-1.png">
 
