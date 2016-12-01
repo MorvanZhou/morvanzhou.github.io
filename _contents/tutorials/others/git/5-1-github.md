@@ -1,10 +1,11 @@
 ---
-youku_id: 
-youtube_id: 
-description: 
+youku_id: XMTg0NDY5NDMzMg
+youtube_id: oWUvXRheaeY
+description: github 是一个大家都积极贡献的地方, 你可以和各种人合作创作. 也是开源的天堂~ 只要你愿意, 任何人都能下载, 或修改你的杰作.
 chapter: 5
 title: Github
 comments: true
+publish-date: 2016-12-02
 thumbnail: /static/thumbnail/git/5-01.jpg
 ---
 * 学习资料:
