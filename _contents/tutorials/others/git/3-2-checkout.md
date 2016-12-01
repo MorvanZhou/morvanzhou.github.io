@@ -1,6 +1,6 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0Mzg1MjE4OA
+youtube_id: QEuqlpMOL9E
 description: 
 chapter: 3
 title: 回到从前 (checkout 针对单个文件)
