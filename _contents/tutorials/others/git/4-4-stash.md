@@ -6,7 +6,7 @@ chapter: 4
 title: 临时修改 (stash)
 publish-date: 2016-12-01
 comments: true
-thumbnail: /static/thumbnail/git/4-03.jpg
+thumbnail: /static/thumbnail/git/4-04.jpg
 ---
 * 学习资料:
   * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_4-4.zip?raw=true)
