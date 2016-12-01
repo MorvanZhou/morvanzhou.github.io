@@ -9,7 +9,7 @@ comments: true
 thumbnail: /static/thumbnail/git/3-01.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_3-1.zip)
+  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_3-1.zip?raw=true)
   
 本节内容分为:
   

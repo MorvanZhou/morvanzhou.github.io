@@ -1,14 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTg0NDU3ODYwMA
+youtube_id: fLvr4BRoJ8I
 description: 
 chapter: 4
 title: rebase 分支冲突
 comments: true
+publish-date: 2016-12-01
 thumbnail: /static/thumbnail/git/4-03.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_4-3.zip)
+  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_4-3.zip?raw=true)
   
 本节内容分为:
   
