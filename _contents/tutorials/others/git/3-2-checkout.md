@@ -4,6 +4,7 @@ youtube_id: QEuqlpMOL9E
 description: 
 chapter: 3
 title: 回到从前 (checkout 针对单个文件)
+publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/3-02.jpg
 ---

@@ -4,6 +4,7 @@ youtube_id: gN0E9SQmySw
 description: 
 chapter: 4
 title: merge 分支冲突
+publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/4-02.jpg
 ---

@@ -4,6 +4,7 @@ youtube_id: 68CMwz3wMRE
 description: 
 chapter: 4
 title: 分支 (branch)
+publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/4-01.jpg
 ---
