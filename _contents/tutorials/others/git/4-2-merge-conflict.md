@@ -1,6 +1,6 @@
 ---
 youku_id: 
-youtube_id: 
+youtube_id: gN0E9SQmySw
 description: 
 chapter: 4
 title: merge 分支冲突
@@ -19,8 +19,9 @@ thumbnail: /static/thumbnail/git/4-02.jpg
 当创建了一个分支后, 我们同时对两个分支都进行了修改. 
 
 比如在:
-  * `master` 中的 `1.py` 加上 `# edited in master`.
-  * `dev` 中的 `1.py` 加上 `# edited in dev`.
+
+* `master` 中的 `1.py` 加上 `# edited in master`.
+* `dev` 中的 `1.py` 加上 `# edited in dev`.
 
 在下面可以看出在 `master` 和 `dev` 中不同的 `commit`:
 
