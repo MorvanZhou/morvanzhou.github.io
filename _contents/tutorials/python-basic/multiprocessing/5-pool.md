@@ -70,7 +70,7 @@ def multicore():
     print(res)
 ```
 
-#### `apply_async()`
+#### apply_async()
 
 `Pool`除了`map()`外，还有可以返回结果的方式，那就是`apply_async()`.
 
@@ -93,7 +93,7 @@ def multicore():
 4 # apply_async()
 ```
 
-#### 用`apply_async()`输出多个结果
+#### 用 apply_async() 输出多个结果
 
 那么如何用`apply_async()`输出多个迭代呢？
 
