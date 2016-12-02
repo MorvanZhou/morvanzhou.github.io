@@ -10,7 +10,7 @@ author: 灰猫
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard)
 
-注意: 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 Google Chrome. 
+**注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
 
 学会用 Tensorflow 自带的 tensorboard 去可视化我们所建造出来的神经网络是一个很好的学习理解方式.
@@ -188,9 +188,12 @@ writer = tf.train.SummaryWriter("logs/", sess.graph)
 tensorboard --logdir='logs/'
 ```
 
-同时将终端中输出的网址复制到浏览器中， 便可以看到之前定义的视图框架了。
+同时将终端中输出的网址复制到浏览器中，便可以看到之前定义的视图框架了。
 
-tensorboard 还有很多其他的参数，希望大家可以多多了解、
+**注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
+使用其他的浏览器不保证所有内容都能正常显示.
+
+tensorboard 还有很多其他的参数，希望大家可以多多了解,
 可以使用 `tensorboard --help` 查看tensorboard的详细参数
 最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
 

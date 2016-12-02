@@ -135,6 +135,18 @@ C:\> pip install tensorflow
 C:\> pip install tensorflow-gpu
 ```
 
+**注意** Windows 运行 Tensorflow 如果遇到这个报错:
+
+```
+Error importing tensorflow.  Unless you are using bazel,
+you should not try to import tensorflow from its source directory;
+please exit the tensorflow source tree, and relaunch your python interpreter
+from there.
+```
+
+不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/).
+就能解决这个问题.
+
 <h4 class="tut-h4-pad" id="test">测试</h4>
 
 然后打开你的 python 编辑器, 输入
@@ -144,6 +156,7 @@ import tensorflow
 ```
 
 运行脚本来检查一下是否有正确安装.
+
 
 <h4 class="tut-h4-pad" id="update">更新 Tensorflow</h4> 
 
