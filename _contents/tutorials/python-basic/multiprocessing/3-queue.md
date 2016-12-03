@@ -9,3 +9,4 @@ date: 2016-11-3
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing3_queue.py)
 
+{% include announcement.html %}

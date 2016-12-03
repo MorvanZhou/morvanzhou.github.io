@@ -2,14 +2,12 @@
 youku_id: XMTYwNTc3OTE3Mg
 youtube_id: vMAK1oJAtkQ
 description: 
-
-
 chapter: 2
-title: 
+title: Label & Button 标签和按钮
 date: 2016-11-3
 ---
 * 学习资料:
-  * [相关代码]()
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk2_label_button.py)
 
 
 #### 窗口主体框架

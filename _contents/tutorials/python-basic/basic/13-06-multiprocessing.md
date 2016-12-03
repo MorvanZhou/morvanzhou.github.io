@@ -10,3 +10,4 @@ comments: true
 * 学习资料
   * 全套[multiprocessing 教程](/tutorials/python-basic/multiprocessing/)
 
+{% include announcement.html %}

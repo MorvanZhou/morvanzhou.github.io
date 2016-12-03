@@ -8,3 +8,4 @@ date: 2016-11-3
 comments: true
 ---
 
+{% include announcement.html %}

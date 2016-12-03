@@ -9,3 +9,4 @@ comments: true
 ---
 
 
+{% include announcement.html %}
