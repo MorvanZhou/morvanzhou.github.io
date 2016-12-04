@@ -31,7 +31,7 @@ model.add(Convolution2D(
     nb_row=5,
     nb_col=5,
     border_mode='same',     # Padding method
-    dim_ordering='th',      
+    dim_ordering='th',    # 采用 theano 的 input 格式  
     input_shape=(1,         # channels
                  28, 28,)    # height & width
 ))
@@ -71,7 +71,7 @@ model.add(Dense(10))
 model.add(Activation('softmax'))
 ```
 
-设置优化方法，loss函数和metrics方法
+设置`adam`优化方法，`loss`函数, `metrics`方法来观察输出结果
 
 ```python
 model.compile(optimizer=adam,
@@ -85,6 +85,6 @@ model.compile(optimizer=adam,
 model.fit(X_train, y_train, nb_epoch=1, batch_size=32,)             
 ```
 
-输出test的loss和accuracy结果
+输出`test`的`loss`和`accuracy`结果
 
 <img class="course-image" src="/static/results/keras/2-3-1.png">
