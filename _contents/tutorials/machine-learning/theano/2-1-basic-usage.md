@@ -14,6 +14,7 @@ chapter: 2
 theano 和 tensorflow 类似，都是基于建立神经网络每个组件，在组件联系起来，数据放入组件，得到结果。
 
 首先, 我们这次需要加载 theano 和 numpy 两个模块, 并且使用 theano 来创建 `function`.
+
 ```python
 import numpy as np
 import theano.tensor as T
