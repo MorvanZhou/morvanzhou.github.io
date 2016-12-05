@@ -23,11 +23,11 @@ author: 灰猫
 以前几节的代码为例：[相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/for_you_to_practice.py)
 通过tensorflow的工具大致可以看到，今天要显示的神经网络差不多是这样子的
 
-<img class="course-image" src="/static/results/tensorflow/14_1_1.png">
+<img class="course-image" src="/static/results/tensorflow/4_1_1.png">
 
 同时我们也可以展开看每个layer中的一些具体的结构：
 
-<img class="course-image" src="/static/results/tensorflow/14_1_2.png">
+<img class="course-image" src="/static/results/tensorflow/4_1_2.png">
 
 好，通过阅读代码和之前的图片我们大概知道了此处是有一个输入层（inputs），一个隐含层（layer），还有一个输出层（output）
 现在可以看看如何进行可视化.
@@ -147,7 +147,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
 
 效果如下：（有没有看见刚才定义layer里面的“内部构件”呢？）
 
-<img class="course-image" src="/static/results/tensorflow/14_1_4.png">
+<img class="course-image" src="/static/results/tensorflow/4_1_4.png">
 
 最后编辑`loss`部分：将`with tf.name_scope()`添加在`loss`上方，并为它起名为`loss`
 
@@ -164,7 +164,7 @@ with tf.name_scope('loss'):
 
 这句话就是“绘制” loss了， 如下：
 
-<img class="course-image" src="/static/results/tensorflow/14_1_4.png">
+<img class="course-image" src="/static/results/tensorflow/4_1_4.png">
 
 使用`with tf.name_scope()`再次对`train_step`部分进行编辑,如下：
 
