@@ -140,7 +140,7 @@ def add_layer(inputs ,
 
 修改之后的名称会显示在每个tensorBorad中每个图表的上方显示,  如下图所示:
 
-<img class="course-image" src="/static/results/tensorflow/14_1_5.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_5.png">
 
 由于我们对`addlayer` 添加了一个参数, 所以修改之前调用`addlayer()`函数的地方.
 对此处进行修改:
