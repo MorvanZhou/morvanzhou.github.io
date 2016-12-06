@@ -5,6 +5,7 @@ title: 为什么要批标准化? Batch Normalization
 description:  
 publish-date: 2016-12-06
 chapter: 2
+thumbnail: /static/thumbnail/ML-intro/BN.png
 ---
 * 学习资料: 
   * [Tensorflow 使用 Batch normalization]({% link _contents/tutorials/machine-learning/tensorflow/5-13-BN.md %})
