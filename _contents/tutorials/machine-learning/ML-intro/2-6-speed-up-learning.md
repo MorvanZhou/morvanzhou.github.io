@@ -11,6 +11,9 @@ Adam."
 chapter: 2
 ---
 
+* 学习资料: 
+  * 英文学习[资料](http://sebastianruder.com/optimizing-gradient-descent/)
+  
 今天我们会来聊聊怎么样加速你的神经网络训练过程.
 里面的方法包括: 
 Stochastic Gradient Descent (SGD);
@@ -19,5 +22,4 @@ AdaGrad;
 RMSProp;
 Adam.
 
-* 学习资料: 
-  * 英文学习[资料](http://sebastianruder.com/optimizing-gradient-descent/)
+
