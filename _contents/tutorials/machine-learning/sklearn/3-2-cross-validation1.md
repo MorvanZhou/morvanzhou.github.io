@@ -14,7 +14,14 @@ date: 2016-11-3
 Sklearn 中的 Cross Validation (交叉验证)对于我们选择正确的 Model 和 Model 的参数是非常有帮助的，
 有了他的帮助，我们能直观的看出不同 Model 或者参数对结构准确度的影响。
 
-#### 例子1 - 如何选择正确的Model `基础验证法`
+本节内容包括:
+
+* [例子1 - 如何选择正确的Model 基础验证法](#ex1)
+* [例子2 - 如何选择正确的Model 交叉验证法(Cross Validation)](#ex2)
+* [例子3 - 如何选择模型参数? 以准确率(accuracy)判断](#ex3)
+* [例子4 - 如何选择模型参数? 以平均方差(Mean squared error)判断](#ex4)
+
+<h4 id="ex1" class="tut-h4-pad">例子1 - 如何选择正确的Model 基础验证法</h4>
 
 ```python
 from sklearn.datasets import load_iris # iris数据集
@@ -42,7 +49,7 @@ print(knn.score(X_test, y_test))
 
 可以看到基础验证的准确率为`0.973684210526`
 
-#### 例子2 - 如何选择正确的Model `交叉验证法(Cross Validation)`
+<h4 id="ex2" class="tut-h4-pad">例子2 - 如何选择正确的Model 交叉验证法(Cross Validation)</h4>
 
 ```python
 from sklearn.cross_validation import cross_val_score # K折交叉验证模块
@@ -61,7 +68,7 @@ print(scores.mean())
 
 可以看到交叉验证的准确平均率为`0.973333333333`
 
-#### 例子3 - 如何选择模型参数? 以`准确率(accuracy)`判断
+<h4 id="ex3" class="tut-h4-pad">例子3 - 如何选择模型参数? 以准确率(accuracy)判断</h4>
 
 一般来说`准确率(accuracy)`会用于判断分类(Classification)模型的好坏。
 
@@ -90,7 +97,7 @@ plt.show()
 
 从图中可以得知，选择`12~18`的`k`值最好。高过`18`之后，准确率开始下降则是因为过拟合(Over fitting)的问题。
 
-#### 例子4 - 如何选择模型参数? 以`平均方差(Mean squared error)`判断
+<h4 id="ex4" class="tut-h4-pad">例子4 - 如何选择模型参数? 以平均方差(Mean squared error)判断</h4>
 
 一般来说`平均方差(Mean squared error)`会用于判断回归(Regression)模型的好坏。
 

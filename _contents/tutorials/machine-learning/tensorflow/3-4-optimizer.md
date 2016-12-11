@@ -14,7 +14,7 @@ date: 2016-11-3
 
 本次课程，我们会讲到`Tensorflow`里面的优化器。
 
-`Tensorflow`中的优化器会有很多不同的种类。最基本, 也是最常用的一种就是`GradientDescentOptimizer`。
+Tensorflow 中的优化器会有很多不同的种类。最基本, 也是最常用的一种就是`GradientDescentOptimizer`。
 
 在Google搜索中输入“tensorflow optimizer"可以看到`Tensorflow`提供了7种优化器：[链接](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html)
 

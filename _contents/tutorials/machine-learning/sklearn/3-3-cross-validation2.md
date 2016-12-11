@@ -13,7 +13,7 @@ date: 2016-11-3
 `sklearn.learning_curve` 中的 learning curve 可以很直观的看出我们的 model 学习的进度,
 对比发现有没有 overfitting 的问题. 然后我们可以对我们的 model 进行调整, 克服 overfitting 的问题.
 
-#### 例子 - 藉由学习曲线(Learning curve)来检视过拟合(Overfitting)的问题
+<h4 class="tut-h4-pad">例子 - 藉由学习曲线(Learning curve)来检视过拟合(Overfitting)的问题</h4>
 
 加载对应模块:
 

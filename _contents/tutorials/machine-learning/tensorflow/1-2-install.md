@@ -19,7 +19,7 @@ date: 2016-11-3
 
 #### 安装 Tensorflow
 
-Tensorflow 的安装方式很多. 比如:
+Tensorflow 的安装方式很多. 比如官网提供的:
 
 * [Pip 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#pip-installation)
 * [Virtualenv 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#virtualenv-installation)
@@ -27,7 +27,7 @@ Tensorflow 的安装方式很多. 比如:
 * [Docker 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#docker-installation)
 * [从安装源 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#installing-from-sources)
 
-使用 pip 在每个系统的安装方式:
+这节内容使用 pip 在每个系统的安装方式:
 
 * [Linux 和 MacOS](#LM)
   * [CPU 版](#LM-CPU)

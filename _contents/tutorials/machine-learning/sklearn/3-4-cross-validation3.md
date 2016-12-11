@@ -16,7 +16,7 @@ date: 2016-11-3
 叫做`validation_curve`,用这一种曲线我们就能更加直观看出改变模型中的参数的时候有没有过拟合(overfitting)的问题了.
 这也是可以让我们更好的选择参数的方法.
 
-#### 例子 - 藉由`validation_curve`来检视模型参数有没有过拟合(Overfitting)的问题
+<h4 class="tut-h4-pad">例子 - 藉由 validation_curve 来检视模型参数有没有过拟合(Overfitting)的问题</h4>
 
 继续上一节的例子，并稍作小修改即可画出图形。这次我们来验证`SVC`中的一个参数 `gamma` 在什么范围内能使 model 产生好的结果. 以及过拟合和 `gamma` 取值的关系.
 

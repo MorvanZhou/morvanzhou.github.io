@@ -10,10 +10,16 @@ date: 2016-11-3
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk11_save.py)
 
+
 总算到了最后一次的课程了,我们训练好了一个Model 以后总需要保存和再次预测,
 所以保存和读取我们的sklearn model也是同样重要的一步。这次主要介绍两种保存Model的模块`pickle`与`joblib`。
 
-#### 方法 1 - `pickle`
+本节内容包括:
+
+* [使用 pickle 保存](#pickle)
+* [使用 joblib 保存](#joblib)
+
+<h4 id="pickle" class="tut-h4-pad">方法 1 - pickle</h4>
 
 首先简单建立与训练一个`SVC`Model。
 
@@ -46,7 +52,7 @@ with open('save/clf.pickle', 'rb') as f:
 # [0]
 ```
 
-#### 方法 2 - `joblib`
+<h4 id="joblib"  class="tut-h4-pad">方法 2 - joblib</h4>
 
 `joblib`是`sklearn`的外部模块。
 

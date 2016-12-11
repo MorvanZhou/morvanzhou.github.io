@@ -30,7 +30,7 @@ Sklearn 本身就有很多数据库，可以用来练习。
 2. [创建数据](#data)
 3. [建立模型－训练－预测](#model)
 
-<h4 id="pkg">导入模块</h4>
+<h4 id="pkg" class="tut-h4-pad">导入模块</h4>
 
 ```python
 from sklearn import datasets
@@ -38,7 +38,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 ```
 
-<h4 id="data">创建数据</h4>
+<h4 id="data" class="tut-h4-pad">创建数据</h4>
 
 加载 `iris` 的数据，把属性存在 `X`，类别标签存在 `y`：
 
@@ -84,7 +84,7 @@ print(y_train)
  """
 ```
 
-<h4 id="model">定义模型－训练模型－预测</h4>
+<h4 id="model" class="tut-h4-pad">定义模型－训练模型－预测</h4>
 
 定义模块方式 `KNeighborsClassifier()`，
 用 `fit` 来训练 `training data`，这一步就完成了训练的所有步骤，
