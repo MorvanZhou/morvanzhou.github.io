@@ -15,11 +15,11 @@ chapter: 3
 
 本节内容包括:
 
-* [axis 合并方向](#axis)
+* [axis         合并方向](#axis)
 * [ignore_index 重置 index](#ignore-index)
-* [join 合并方式](#join)
-* [join_axes 依照 axes 合并](#join-axes)
-* [append 添加数据](#append)
+* [join         合并方式](#join)
+* [join_axes    依照 axes 合并](#join-axes)
+* [append       添加数据](#append)
 
 <h4 class="tut-h4-pad" id="axis">axis 合并方向</h4>
 
