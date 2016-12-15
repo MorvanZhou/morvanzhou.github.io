@@ -21,7 +21,7 @@ chapter: 3
 * [join_axes (依照 axes 合并)](#join-axes)
 * [append (添加数据)](#append)
 
-<h4 class="tut-h4-pad" id="axis">axis 合并方向</h4>
+<h4 class="tut-h4-pad" id="axis">axis (合并方向)</h4>
 
 
 `axis=0`是预设值，因此未设定任何参数时，函数默认`axis=0`。
@@ -54,7 +54,7 @@ print(res)
 
 仔细观察会发现结果的`index`是0, 1, 2, 0, 1, 2, 0, 1, 2，若要将`index`重置，请看**例子二**。
 
-<h4 class="tut-h4-pad" id="ignore-index">ignore_index 重置 index</h4>
+<h4 class="tut-h4-pad" id="ignore-index">ignore_index (重置 index)</h4>
 
 
 ```python
@@ -77,7 +77,7 @@ print(res)
 
 结果的`index`变0, 1, 2, 3, 4, 5, 6, 7, 8。
 
-<h4 class="tut-h4-pad" id="join">join 合并方式</h4>
+<h4 class="tut-h4-pad" id="join">join (合并方式)</h4>
 
 
 `join='outer'`为预设值，因此未设定任何参数时，函数默认`join='outer'`。此方式是依照`column`来做纵向合并，有相同的`column`上下合并在一起，其他独自的`column`个自成列，原本没有值的位置皆以`NaN`填充。
@@ -134,7 +134,7 @@ print(res)
 # 5  1.0  1.0  1.0
 ```
 
-<h4 class="tut-h4-pad" id="join-axes">join_axes 依照 axes 合并</h4>
+<h4 class="tut-h4-pad" id="join-axes">join_axes (依照 axes 合并)</h4>
 
 
 ```python
@@ -165,7 +165,7 @@ print(res)
 # 4  NaN  NaN  NaN  NaN  1.0  1.0  1.0  1.0
 ```
 
-<h4 class="tut-h4-pad" id="append">append 添加数据</h4>
+<h4 class="tut-h4-pad" id="append">append (添加数据)</h4>
 
 `append`只有纵向合并，没有横向合并。
 
