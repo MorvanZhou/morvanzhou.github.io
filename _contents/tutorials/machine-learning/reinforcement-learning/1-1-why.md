@@ -21,3 +21,5 @@ install everything (https://github.com/openai/gym#installing-everything)
 装了我很久个小时.
 
 openai gym not support windows at the moment
+
+useful learning material https://github.com/aikorea/awesome-rl
