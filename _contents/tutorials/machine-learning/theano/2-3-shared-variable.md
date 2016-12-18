@@ -65,10 +65,15 @@ accumulator = theano.function([inc], state, updates=[(state, state+inc)])
 ```python
 # to get variable value
 print(state.get_value())
+# 0.0
+
 accumulator(1)   # return previous value, 0 in here
 print(state.get_value())
+# 1.0
+
 accumulator(10)  # return previous value, 1 in here
 print(state.get_value())
+# 11.0
 ```
 
 `get_value` 可以用来提取参数的值，然后保存到根目录。
@@ -81,6 +86,7 @@ print(state.get_value())
 state.set_value(-1)
 accumulator(3)
 print(state.get_value())
+# 2.0
 ```
 
 `get_value， set_value` 这两种只能在 `Shared 变量` 的时候调用。
@@ -106,7 +112,10 @@ tmp_func = state * 2 + inc
 a = T.scalar(dtype=state.dtype)
 skip_shared = theano.function([inc, a], tmp_func, givens=[(state, a)]) # temporarily use a's value for the state
 print(skip_shared(2, 3))
+# 8.0
+
 print(state.get_value()) # old state value
+# 2.0
 ```
 
 最后输出 `print(skip_shared(2, 3))` 时，就得到 3*2 + 2 = 8.
