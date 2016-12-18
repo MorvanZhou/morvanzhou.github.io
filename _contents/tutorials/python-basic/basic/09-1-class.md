@@ -11,10 +11,10 @@ author: Huanyu Mao
 
 本节主要内容：
 
-- [class, 定义一个类](#class)
+- [class 定义一个类](#class)
 - [总结](#conclusion)
 
-<h4 class="tut-h4-pad" id="class">Class</h4>
+<h4 class="tut-h4-pad" id="class">Class 定义一个类</h4>
 
 `class` 定义一个类, 后面的类别首字母推荐以大写的形式定义，比如`Calculator`.
 `class`可以先定义自己的属性，比如该属性的名称可以写为 `name='Good Calculator'`.
