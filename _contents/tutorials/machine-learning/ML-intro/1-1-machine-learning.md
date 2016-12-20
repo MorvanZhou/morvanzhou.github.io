@@ -21,8 +21,8 @@ chapter: 1
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: document.location.href,
-    sourceId: "{{site.url}}{{page.url}}",
+    url: "{{site.url}}{{page.url}}",
+    sourceId: "",
     productKey: "7ec85e7652dc4f3889d6e3d66b19953d",
     target: "cloud-tie-wrapper"
   };
