@@ -1,25 +1,34 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id:
+youtube_id:
 chapter: 1
 title: Why?
-publish: false
 ---
 * 学习资料:
-  * s
+  * [有趣的机器学习](/tutorials/machine-learning/ML-intro/)
 
-partial install with:
-You'll be able to run a few environments right away:
+强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
+和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
+AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
+强化学习也是让你的程序从对当前环境完全陌生, 成长为一个在环境中游刃有余的高手.
 
-algorithmic
-toy_text
-classic_control (you'll need pyglet to render though)
+这些教程的教学, 不依赖于任何强化学习的 python 模块.
+因为强化学习的复杂性, 多样性, 到现在还没有比较好的统一化模块.
 
-fully install:
-have to install dependence for macos and linux
-install everything (https://github.com/openai/gym#installing-everything)
-装了我很久个小时.
+不过我们还是能用最基础的方法编出优秀的强化学习程序! 以下是我们将要在后续的课程中实现的牛逼的自学程序.
 
-openai gym not support windows at the moment
+Youtube 的模拟视频都在这里([https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)).
 
-useful learning material https://github.com/aikorea/awesome-rl
+优酷的在这里 ([http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1](http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1))
+
+下面是其中一些模拟视频:
+
+* Maze <a href="http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html?f=27485743&o=1&spm=a2h1n.8251843.playList.5!3~5~A">
+<img class="course-image" src="http://r1.ykimg.com/054104085859CFD26A0A4E045BF47890">
+</a>
+* Cartpole <a href="http://v.youku.com/v_show/id_XMTg3NTI2OTQzNg==.html?f=27485743&o=1&spm=a2h1n.8251843.playList.5!7~5~A">
+<img class="course-image" src="http://r2.ykimg.com/054104085859D0EA6A0A41046DEE5A75">
+</a>
+* Mountain car <a href="http://v.youku.com/v_show/id_XMTg3NTI3MDMzMg==.html?&f=27485743&from=y1.2-3.4.8&spm=a2h0j.8191423.item_XMTg3NTI3MDMzMg==.A">
+<img class="course-image" src="http://r4.ykimg.com/054104085859D2BC6A0A4D048AB30E52">
+</a>

@@ -68,6 +68,15 @@ defaults:
       tags: [机器学习, 简介]
 
   - scope:
+      path: "_contents/tutorials/machine-learning/reinforcement-learning"
+    values:
+      layout: tutorial-post
+      tut-title: 强化学习 Reinforcement Learning
+      tut-permalink: /tutorials/machine-learning/reinforcement-learning/
+      category: reinforcement-learning
+      tags: [reinforcement learning, 强化学习, tensorflow, theano]
+
+  - scope:
       path: "_contents/tutorials/machine-learning/keras"
     values:
       layout: tutorial-post
