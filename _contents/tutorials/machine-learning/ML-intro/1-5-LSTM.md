@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc0MzY5MTQxMg
 youtube_id: Vdg5zlZAXnU
-title: 什么是 LSTM RNN 循环神经网络? LSTM
+title: LSTM RNN 循环神经网络 (LSTM)
 description: 用 LSTM 解决普通 RNN 的弊端
 chapter: 1
 ---

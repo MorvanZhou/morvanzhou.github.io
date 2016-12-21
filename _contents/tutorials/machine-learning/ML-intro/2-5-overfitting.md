@@ -1,7 +1,7 @@
 ---
 youku_id: XMTczNjA2Nzc5Ng
 youtube_id: e9OKufD6lRM
-title: 什么是过拟合? Overfitting
+title: 过拟合 (Overfitting)
 description: 今天我们会来聊聊机器学习中的过拟合 overfitting 现象, 和解决过拟合的方法.
 chapter: 2
 ---

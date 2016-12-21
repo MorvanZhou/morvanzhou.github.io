@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc2MjA0ODQyOA
 youtube_id: UlUGGB7akfE
-title: 加速神经网络训练 Speed Up Training
+title: 加速神经网络训练 (Speed Up Training)
 description: "今天我们会来聊聊怎么样加速你的神经网络训练过程. 里面的方法包括: 
 Stochastic Gradient Descent (SGD);
 Momentum;

@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYyMjk2NDIwOA
 youtube_id: YY7-VKXybjc
-title: 什么是机器学习? Machine Learning
+title: 机器学习 (Machine Learning)
 description: 在这里我们介绍了什么是机器学习, 还有机器学习包含了哪些方法.
 chapter: 1
 ---

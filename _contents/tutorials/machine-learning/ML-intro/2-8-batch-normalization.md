@@ -1,7 +1,7 @@
 ---
 youku_id: XMTg1MTYwNDg2OA
 youtube_id: -5hESl-Lj-4
-title: 为什么要批标准化? Batch Normalization
+title: 批标准化 (Batch Normalization)
 description:  
 publish-date: 2016-12-06
 chapter: 2

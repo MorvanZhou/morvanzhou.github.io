@@ -1,7 +1,7 @@
 ---
 youku_id: XMTY4MzAyNTc4NA
 youtube_id: hMIZ85t9r9A
-title: 什么是卷积神经网络 CNN? Convolutional Neural Network
+title: 卷积神经网络 CNN (Convolutional Neural Network)
 description: 卷积神经网络的简单介绍
 chapter: 1
 ---

@@ -1,7 +1,7 @@
 ---
 youku_id: XMTcyNzYwNjU1Ng
 youtube_id: EEtf4kNsk7Q
-title: 什么是循环神经网络 RNN? Recurrent Neural Network
+title: 循环神经网络 RNN (Recurrent Neural Network)
 description: 循环神经网络简介
 chapter: 1
 ---
