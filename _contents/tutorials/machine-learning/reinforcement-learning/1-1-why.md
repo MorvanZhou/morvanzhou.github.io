@@ -6,6 +6,14 @@ title: Why?
 ---
 * 学习资料:
   * [有趣的机器学习](/tutorials/machine-learning/ML-intro/)
+  * [什么是强化学习](#)
+
+本节内容包括:
+
+* [强化学习介绍](#intro)
+* [模拟程序提前看](#sim)
+
+<h4 class="tut-h4-pad" id="intro">强化学习介绍</h4>
 
 强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
 和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
@@ -14,12 +22,19 @@ AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
 
 这些教程的教学, 不依赖于任何强化学习的 python 模块.
 因为强化学习的复杂性, 多样性, 到现在还没有比较好的统一化模块.
+不过我们还是能用最基础的方法编出优秀的强化学习程序!
 
-不过我们还是能用最基础的方法编出优秀的强化学习程序! 以下是我们将要在后续的课程中实现的牛逼的自学程序.
+<h4 class="tut-h4-pad" id="sim">模拟程序提前看</h4>
 
-Youtube 的模拟视频都在这里([https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)).
+以下是我们将要在后续的课程中实现的牛逼的自学程序.
 
-优酷的在这里 ([http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1](http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1))
+Youtube 的模拟视频都在这里:
+
+[https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_).
+
+优酷的模拟视频在这里:
+
+[http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1](http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1)
 
 下面是其中一些模拟视频:
 
