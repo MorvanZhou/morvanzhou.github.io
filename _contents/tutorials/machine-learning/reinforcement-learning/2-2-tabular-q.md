@@ -2,11 +2,12 @@
 youku_id: 
 youtube_id: 
 chapter: 2
-title: 小例子
+title: Q-learning
+published: false
 ---
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/1_command_line_reinforcement_learning/treasure_on_right.py)
-  * [什么是强化学习](#)
+  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/2_Q_Learning_maze)
+  * [什么是 Q-learning](#)
 
 这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为.
@@ -20,10 +21,7 @@ Q-learning 是一种记录行为值 (Q value) 的方法, 每种在一定状态�
 `s` 在上面的探索者游戏中, 就是 `o` 所在的地点了. 而每一个地点探索者都能做出两个行为 `left/right`, 这就是探索者的所有可行的 `a` 啦.
 
 如果在某个地点 `s1`, 探索者计算了他能有的两个行为, `a1/a2=left/right`, 计算结果是 `Q(s1, a1) > Q(s1, a2)`, 那么探索者就会选择 `left` 这个行为.
-这就是 Q learning 的行为选择简单规则.
-
-**当然我们还会细说更具体的规则. 在之后的教程中, 我们会更加详细得讲解 RL 中的各种方法, 下面的内容,
-大家大概看看就行, 有个大概的 RL 概念就行, 知道 RL 的一些关键步骤就行, 这节的算法不用仔细研究.**
+这就是 Q learning 的行为选择简单规则. 当然我们还会细说更具体的规则.
 
 
 本节内容包括:
@@ -143,8 +141,7 @@ def update_env(S, episode, step_counter):
 
 <h4 class="tut-h4-pad" id="loop">强化学习主循环</h4>
 
-最重要的地方就在这里. 你定义的 RL 方法都在这里体现. 在之后的教程中, 我们会更加详细得讲解 RL 中的各种方法, 下面的内容,
-大家大概看看就行, 这节内容不用仔细研究.
+最重要的地方就在这里. 你定义的 RL 方法都在这里体现.
 
 <img class="course-image" src="/static/results/rl/2-1-1.png">
 
