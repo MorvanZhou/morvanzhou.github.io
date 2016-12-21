@@ -5,8 +5,8 @@ chapter: 1
 title: Why?
 ---
 * 学习资料:
-  * [有趣的机器学习](/tutorials/machine-learning/ML-intro/)
-  * [什么是强化学习](#)
+  * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
+  * [什么是强化学习 短视频](#)
 
 本节内容包括:
 

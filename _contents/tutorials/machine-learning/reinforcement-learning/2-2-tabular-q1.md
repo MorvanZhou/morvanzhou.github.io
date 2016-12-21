@@ -7,7 +7,7 @@ title: Q-learning 算法部分
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/2_Q_Learning_maze)
-  * [什么是 Q-learning](#)
+  * [什么是 Q-learning 短视频](#)
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
 
 

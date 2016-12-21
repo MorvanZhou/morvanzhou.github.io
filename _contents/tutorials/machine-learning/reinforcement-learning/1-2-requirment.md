@@ -8,7 +8,7 @@ title: 课程要求
   * [OpenAI gym 官网](https://gym.openai.com/)
   * [我的 Tensorflow 快速入门教程](/tutorials/machine-learning/tensorflow/)
   * [我的 numpy pandas 快速入门教程](/tutorials/data-manipulation/np-pd/)
-  * [有趣的机器学习](/tutorials/machine-learning/ML-intro/)
+  * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
 
 本节内容包括:
 
