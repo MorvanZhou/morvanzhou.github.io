@@ -13,7 +13,7 @@ author: 灰猫
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
 
-上一篇讲到了 如何可视化TesorBorad整个神经网络结构的过程。 其实tensorBorad还可以可视化训练过程( biase变化过程) , 这节重点讲一下可视化训练过程的图标是如何做的 。请看下图,  这是如何做到的呢？
+上一篇讲到了 如何可视化TesorBorad整个神经网络结构的过程。 其实tensorboard还可以可视化训练过程( biase变化过程) , 这节重点讲一下可视化训练过程的图标是如何做的 。请看下图,  这是如何做到的呢？
 
 <img class="course-image" src="/static/results/tensorflow/4_2_1.png">
 
@@ -28,9 +28,18 @@ author: 灰猫
 
 <img class="course-image" src="/static/results/tensorflow/4_2_3.png">
 
-好了, 开始练习吧
+好了, 开始练习吧, 本节内容包括:
 
-#### 制作输入源
+* [制作输入源](#data)
+* [在 layer 中为 Weights, biases 设置变化图表](#weights-biases)
+* [设置loss的变化图](#loss)
+* [给所有训练图‘合并‘](#merge)
+* [训练数据](#train)
+* [在 tensorboard 中查看效果](#result)
+
+
+<h4 class="tut-h4-pad" id="data">制作输入源</h4>
+
 由于这节我们观察训练过程中神经网络的变化, 所以首先要添一些模拟数据.
 Python 的 numpy 工具包可以帮助我们制造一些模拟数据. 所以我们先导入这个工具包:
 
@@ -50,13 +59,15 @@ import numpy as np
 
 ```
 
-输入源的问题解决之后, 我们开始制作对`Weights`和`biase`的变化图表吧. 我们期望可以做到如下的效果, 那么首先从 layer1/weight 做起吧
+输入源的问题解决之后, 我们开始制作对`Weights`和`biases`的变化图表吧. 我们期望可以做到如下的效果, 那么首先从 layer1/weight 做起吧
 
 <img class="course-image" src="/static/results/tensorflow/4_2_4.png">
 
 这个效果是如何做到的呢,请看下一个标题
 
-#### 在 layer 中为 Weights, biases 设置变化图表
+
+<h4 class="tut-h4-pad" id="weights-biases">在 layer 中为 Weights, biases 设置变化图表</h4>
+
 
 通过上图的观察我们发现每个 layer 后面有有一个数字: layer1 和layer2
 
@@ -138,7 +149,7 @@ def add_layer(inputs ,
     return outputs
 ```
 
-修改之后的名称会显示在每个tensorBorad中每个图表的上方显示,  如下图所示:
+修改之后的名称会显示在每个tensorboard中每个图表的上方显示,  如下图所示:
 
 <img class="course-image" src="/static/results/tensorflow/4_2_5.png">
 
@@ -162,7 +173,8 @@ prediction= add_layer(l1, 10, 1, n_layer=2, activation_function=None)
 ```
 
 
-#### 设置loss的变化图
+<h4 class="tut-h4-pad" id="loss">设置loss的变化图</h4>
+
 
 `Loss` 的变化图和之前设置的方法略有不同.  loss是在tesnorBorad 的event下面的, 这是由于我们使用的是`tf.scalar_summary()` 方法.
 
@@ -181,7 +193,8 @@ with tf.name_scope('loss'):
      tf.scalar_summary('loss',loss)
 ```
 
-#### 给所有训练图‘合并‘
+<h4 class="tut-h4-pad" id="merge">给所有训练图‘合并‘</h4>
+
 
 接下来， 开始合并打包。
 `tf.merge_all_summaries()` 方法会对我们所有的 `summaries` 合并到一起. 
@@ -196,7 +209,9 @@ sess.run(tf.global_variables_initializer())  # 替换成这样就好
 
 ```
 
-#### 训练数据
+
+<h4 class="tut-h4-pad" id="train">训练数据</h4>
+
 
 假定给出了`x_data,y_data`并且训练1000次. 
 
@@ -224,7 +239,9 @@ for i in range(1000):
       writer.add_summary(rs, i)
 ```
 
-#### 在tensorBorad 中查看效果
+
+<h4 class="tut-h4-pad" id="result">在 tensorboard 中查看效果</h4>
+
 程序运行完毕之后, 会产生logs目录 , 使用命令 `tesnsorboard --logdir='logs/'`
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
