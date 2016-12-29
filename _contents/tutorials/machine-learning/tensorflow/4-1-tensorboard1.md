@@ -173,13 +173,14 @@ with tf.name_scope('train'):
     train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 ```
 
-我们需要使用`tf.train.SummaryWriter()`将上面‘绘画’出的图保存到一个目录中，以方便后期在浏览器中可以浏览。
+我们需要使用 `tf.summary.FileWriter()` (`tf.train.SummaryWriter()` 这种方式已经在 tf >= 0.12 版本中摒弃) 将上面‘绘画’出的图保存到一个目录中，以方便后期在浏览器中可以浏览。
 这个方法中的第二个参数需要使用`sess.graph` ， 因此我们需要把这句话放在获取`session`的后面。
 这里的`graph`是将前面定义的框架信息收集起来，然后放在`logs/`目录下面。
 
 ```python
-sess = tf.Session() ##get session
-writer = tf.train.SummaryWriter("logs/", sess.graph)
+sess = tf.Session() # get session
+# tf.train.SummaryWriter soon be deprecated, use following
+writer = tf.summary.FileWriter("logs/", sess.graph)
 ```
 
 最后在你的terminal（终端）中  ，使用以下命令

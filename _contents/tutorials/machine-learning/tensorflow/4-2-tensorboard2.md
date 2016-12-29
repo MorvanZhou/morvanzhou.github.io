@@ -203,7 +203,10 @@ with tf.name_scope('loss'):
 ```python
 sess= tf.Session()
 merged= tf.merge_all_summaries()
-writer = tf.train.SummaryWriter("logs/", sess.graph)
+
+# tf.train.SummaryWriter soon be deprecated, use following
+writer = tf.summary.FileWriter("logs/", sess.graph)
+
 # sess.run(tf.initialize_all_variables()) # tf.initialize_all_variables() # tf 马上就要废弃这种写法
 sess.run(tf.global_variables_initializer())  # 替换成这样就好
 
