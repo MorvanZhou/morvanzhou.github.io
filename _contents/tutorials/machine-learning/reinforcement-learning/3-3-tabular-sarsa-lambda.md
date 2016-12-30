@@ -93,8 +93,8 @@ class SarsaLambdaTable(RL): # 继承 RL class
 
 <h4 class="tut-h4-pad" id="learn">学习</h4>
 
-有了父类的 `RL`, 我们这次的编写就很简单, 只需要编写 `SarsaTable` 中 `learn` 这个功能就完成了. 因为其他功能都和父类是一样的.
-这就是我们所有的 `SarsaTable` 于父类 `RL` 不同之处的代码. 是不是很简单.
+有了父类的 `RL`, 我们这次的编写就很简单, 只需要编写 `SarsaLambdaTable` 中 `learn` 这个功能就完成了. 因为其他功能都和父类是一样的.
+这就是我们所有的 `SarsaLambdaTable` 于父类 `RL` 不同之处的代码. 是不是很简单.
 
 ```python
 class SarsaLambdaTable(RL): # 继承 RL class
@@ -113,13 +113,13 @@ class SarsaLambdaTable(RL): # 继承 RL class
         error = q_target - q_predict
 
         # 这里开始不同:
-        # 对于经历过的 state-action, 我们让他+1, 证明他是得到 reward 图中不可或缺的一环
+        # 对于经历过的 state-action, 我们让他+1, 证明他是得到 reward 路途中不可或缺的一环
         self.eligibility_trace.ix[s, a] += 1
 
         # Q table 更新
         self.q_table += self.lr * error * self.eligibility_trace
 
-        # 随着时间衰减 eligibility trace 的值, 离获取 reward 越远的步, 他的不可或缺性越小
+        # 随着时间衰减 eligibility trace 的值, 离获取 reward 越远的步, 他的"不可或缺性"越小
         self.eligibility_trace *= self.gamma*self.lambda_
 ```
 
@@ -129,7 +129,7 @@ class SarsaLambdaTable(RL): # 继承 RL class
 # 上面代码中的方式:
 self.eligibility_trace.ix[s, a] += 1
 
-# 跟有效的方式:
+# 更有效的方式:
 self.eligibility_trace.ix[s, :] *= 0
 self.eligibility_trace.ix[s, a] = 1
 ```
