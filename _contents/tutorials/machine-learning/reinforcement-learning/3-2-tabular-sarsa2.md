@@ -10,7 +10,7 @@ title: Sarsa 思维决策
   * [什么是 Sarsa 短视频](#)
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
 
-接着上节内容, 我们来实现 `RL_brain` 的 `SarsaTable` 部分, 这也是 RL 的大脑部分, 复制决策和思考.
+接着上节内容, 我们来实现 `RL_brain` 的 `SarsaTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 
 
 本节内容包括:
