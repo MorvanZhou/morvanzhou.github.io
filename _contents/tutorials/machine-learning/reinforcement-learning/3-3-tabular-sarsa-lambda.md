@@ -16,7 +16,7 @@ Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到�
 如果 lambda = 0, Sarsa-lambda 就是 Sarsa, 只更新获取到 reward 前, 经历的最后一步.
 如果 lambda = 1, Sarsa-lambda 更新的是 获取到 reward 前, 所有经历的步.
 
-这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频](#), 用动画暂时具体的区别.
+这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频](#), 用动画展示具体的区别.
 
 本节内容包括:
 
