@@ -38,12 +38,20 @@ Youtube 的模拟视频都在这里:
 
 下面是其中一些模拟视频:
 
-* Maze <a href="http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html?f=27485743&o=1&spm=a2h1n.8251843.playList.5!3~5~A">
-<img class="course-image" src="http://r1.ykimg.com/054104085859CFD26A0A4E045BF47890">
-</a>
-* Cartpole <a href="http://v.youku.com/v_show/id_XMTg3NTI2OTQzNg==.html?f=27485743&o=1&spm=a2h1n.8251843.playList.5!7~5~A">
-<img class="course-image" src="http://r2.ykimg.com/054104085859D0EA6A0A41046DEE5A75">
-</a>
-* Mountain car <a href="http://v.youku.com/v_show/id_XMTg3NTI3MDMzMg==.html?&f=27485743&from=y1.2-3.4.8&spm=a2h0j.8191423.item_XMTg3NTI3MDMzMg==.A">
-<img class="course-image" src="http://r4.ykimg.com/054104085859D2BC6A0A4D048AB30E52">
-</a>
+* Maze
+<video width="500" controls loop autoplay>
+  <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+* Cartpole
+<video width="500" controls loop autoplay>
+  <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+* Mountain car
+<video width="500" controls loop autoplay>
+  <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
