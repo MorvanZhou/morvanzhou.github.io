@@ -2,7 +2,7 @@
 youku_id: 
 youtube_id: 
 chapter: 2
-title: Q-learning 算法部分
+title: Q-learning 算法更新
 ---
 
 * 学习资料:
@@ -28,9 +28,9 @@ title: Q-learning 算法部分
 <img class="course-image" src="/static/results/rl/2-1-1.png">
 
 整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
-Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q table 的更新不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).
+Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q table 的更新可以不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).
 不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用.
-On-policy 和 off-policy 的差别我们会在之后的 Deep Q network (off-policy) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
+On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-policy)](#) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
 
 <h4 class="tut-h4-pad" id="coding">算法的代码形式</h4>
 
@@ -40,7 +40,7 @@ On-policy 和 off-policy 的差别我们会在之后的 Deep Q network (off-poli
 
 ```python
 from maze_env import Maze
-from RL_brain import QTable
+from RL_brain import QLearningTable
 ```
 
 下面的代码, 我们可以根据上面的图片中的算法对应起来, 这就是整个 Qlearning 最重要的迭代更新部分啦.
@@ -79,7 +79,7 @@ def update():
 if __name__ == "__main__":
     # 定义环境 env 和 RL 方式
     env = Maze()
-    RL = QTable(actions=list(range(env.n_actions)))
+    RL = QLearningTable(actions=list(range(env.n_actions)))
 
     # 开始可视化环境 env
     env.after(100, update)

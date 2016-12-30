@@ -2,7 +2,7 @@
 youku_id: 
 youtube_id: 
 chapter: 2
-title: Q-learning 思维部分
+title: Q-learning 思维决策
 ---
 
 * 学习资料:
@@ -10,21 +10,39 @@ title: Q-learning 思维部分
   * [什么是 Q-learning 短视频](#)
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
 
-接着上节内容, 我们来实现 `RL_brain` 的 `QTable` 部分, 这也是 RL 的大脑部分, 复制决策和思考.
+接着上节内容, 我们来实现 `RL_brain` 的 `QLearningTable` 部分, 这也是 RL 的大脑部分, 复制决策和思考.
 
 
 本节内容包括:
 
+* [代码主结构](#main-structure)
 * [预设值](#setting)
 * [决定行为](#action)
 * [学习](#learn)
 * [检测 state 是否存在](#check)
 
+<h4 class="tut-h4-pad" id="main-structure">代码主结构</h4>
+
+与上回不一样的地方是, 我们将要以一个 class 形式定义 Q learning, 并把这种 tabular q learning 方法叫做 `QLearningTable`.
+
+```python
+class QLearningTable:
+    # 初始化
+    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
+
+    # 选行为
+    def choose_action(self, observation):
+
+    # 学习更新参数
+    def learn(self, s, a, r, s_):
+
+    # 检测 state 是否存在
+    def check_state_exist(self, state):
+```
+
 
 <h4 class="tut-h4-pad" id="setting">预设值</h4>
 
-
-与上回不一样的地方是, 我们将要以一个 class 形式定义 Q learning, 并把这种 tabular q learning 方法叫做 `QTable`.
 初始的参数意义不会在这里提及了, 请参考这个快速了解通道 [机器学习系列-Q learning](#)
 
 ```python
@@ -32,7 +50,7 @@ import numpy as np
 import pandas as pd
 
 
-class QTable:
+class QLearningTable:
     def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
         self.actions = actions  # a list
         self.lr = learning_rate # 学习率
