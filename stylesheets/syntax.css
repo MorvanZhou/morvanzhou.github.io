@@ -3,13 +3,13 @@ text-align: left;
 border-radius: 10px;
 padding: 1em;
 margin: 2.6em;
-background-color:#3f3f3f;
+background-color: #494949/*#3f3f3f*/;
 overflow-x: scroll;
 }
 
 .highlight code, .highlight pre {
 color:#fdce93;
-background-color:#3f3f3f;
+background-color:#494949/*#3f3f3f*/;
 font-size: 0.75em;
 }
 
@@ -29,7 +29,7 @@ background-color:#222;
 
 .highlight .err {
 color:#e37170;
-background-color:#3d3535;
+background-color:#494949/*#3d3535*/;
 }
 .highlight .nf {
 color:#FC672B;
