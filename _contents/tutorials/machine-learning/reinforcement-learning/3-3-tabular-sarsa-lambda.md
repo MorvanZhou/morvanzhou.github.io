@@ -13,8 +13,10 @@ title: Sarsa-lambda
 Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
 如果说 Sarsa 和 Qlearning 都是每次获取到 reward, 只更新获取到 reward 的前一步.
 那 Sarsa-lambda 就是更新获取到 reward 的前 lambda 步. lambda 是在 [0, 1] 之间取值,
-如果 lambda = 0, Sarsa-lambda 就是 Sarsa, 只更新获取到 reward 前, 经历的最后一步.
-如果 lambda = 1, Sarsa-lambda 更新的是 获取到 reward 前, 所有经历的步.
+
+如果 lambda = 0, Sarsa-lambda 就是 Sarsa, 只更新获取到 reward 前经历的最后一步.
+
+如果 lambda = 1, Sarsa-lambda 更新的是 获取到 reward 前所有经历的步.
 
 这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频](#), 用动画展示具体的区别.
 
@@ -144,9 +146,16 @@ self.eligibility_trace.ix[s, a] = 1
 <img class="course-image" src="/static/results/rl/3-3-2.png">
 
 这是针对于一个 state-action 值按经历次数的变化.
-最上面是经历 state-action 的时间点, 第二张图是使用 `self.eligibility_trace.ix[s, a] += 1` 这种方式所带来的 "不可或缺性值",
-下面图是使用 `self.eligibility_trace.ix[s, :] *= 0; self.eligibility_trace.ix[s, a] = 1` 这种方法带来的 "不可或缺性值",
-实验证明 选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
+最上面是经历 state-action 的时间点, 第二张图是使用
+
+`self.eligibility_trace.ix[s, a] += 1`
+
+这种方式所带来的 "不可或缺性值", 下面图是使用
+
+`self.eligibility_trace.ix[s, :] *= 0; self.eligibility_trace.ix[s, a] = 1`
+
+这种方法带来的 "不可或缺性值",
+实验证明选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
 
 
 

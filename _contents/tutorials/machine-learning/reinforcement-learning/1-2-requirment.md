@@ -26,7 +26,7 @@ title: 课程要求
 * [Numpy, Pandas](/tutorials/data-manipulation/np-pd/) (必学), 用于学习的数据处理
 * [Matplotlib](/tutorials/data-manipulation/plt/) (可学), 偶尔会用来呈现误差曲线什么的
 * [Tkinter](/tutorials/python-basic/tkinter/) (可学), 你可以自己用它来编写模拟环境
-* [Tensorflow](/tutorials/machine-learning/tensorflow/) (可学), 后面实现神经网络于强化学习结合的时候用到
+* [Tensorflow](/tutorials/machine-learning/tensorflow/) (可学), 后面实现神经网络与强化学习结合的时候用到
 * [OpenAI gym](https://gym.openai.com/) (可学), 提供了很多现成的模拟环境
 
 
