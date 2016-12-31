@@ -3,7 +3,7 @@ youku_id: XMTY4MzAyNTc4NA
 youtube_id: hMIZ85t9r9A
 title: 卷积神经网络 CNN (Convolutional Neural Network)
 description: 卷积神经网络的简单介绍
-chapter: 1
+chapter: 2
 ---
 * 学习资料: 
   * Tensorflow CNN [教程1]({% link _contents/tutorials/machine-learning/tensorflow/5-03-CNN1.md %})

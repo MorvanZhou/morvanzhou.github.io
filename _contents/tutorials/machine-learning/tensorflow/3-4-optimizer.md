@@ -9,7 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * 各种 Optimizer 的对比 [链接](http://cs231n.github.io/neural-networks-3/)(英文)
-  * 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/2-6-speed-up-learning.md %})
+  * 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html) 
 
 本次课程，我们会讲到`Tensorflow`里面的优化器。
@@ -20,5 +20,5 @@ Tensorflow 中的优化器会有很多不同的种类。最基本, 也是最常�
 
 <img class="course-image" src="/static/results/tensorflow/3_4_1.png">
 
-更多关系 Optimizer 的解释, 请参考我制作的 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/2-6-speed-up-learning.md %})
+更多关系 Optimizer 的解释, 请参考我制作的 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
 

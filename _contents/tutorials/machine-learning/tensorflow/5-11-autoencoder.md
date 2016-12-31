@@ -8,13 +8,13 @@ title: 自编码 Autoencoder (非监督学习)
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf21_autoencoder)
-  * 机器学习-简介系列 [Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/1-6-autoencoder.md %})
+  * 机器学习-简介系列 [Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
 
 **Autoencoder** 简单来说就是将有很多Feature的数据进行压缩，之后再进行解压的过程。
 本质上来说，它也是一个对数据的非监督学习，如果大家知道 **PCA** (Principal component analysis)，
 与 Autoencoder 相类似，它的主要功能即对数据进行非监督学习，并将压缩之后得到的“特征值”，这一中间结果正类似于PCA的结果。
 之后再将压缩过的“特征值”进行解压，得到的最终结果与原始数据进行比较，对此进行非监督学习。如果大家还不是非常了解，请观*看机器学习简介*系列里的 
-[Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/1-6-autoencoder.md %}) 那一集；
+[Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %}) 那一集；
 如果对它已经有了一定的了解，那么便可以进行代码阶段的学习了。大概过程如下图所示：
 
 <img class="course-image" src="/static/results/tensorflow/5_11_1.png">

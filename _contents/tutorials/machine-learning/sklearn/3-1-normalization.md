@@ -9,7 +9,7 @@ author: Bhan
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk7_normalization.py)
-  * 机器学习-简介系列 [特征标准化]({% link _contents/tutorials/machine-learning/ML-intro/2-2-normalization.md %})
+  * 机器学习-简介系列 [特征标准化]({% link _contents/tutorials/machine-learning/ML-intro/3-02-normalization.md %})
 
 由于资料的**偏差**与**跨度**会影响机器学习的成效，因此正规化(标准化)数据可以提升机器学习的成效。首先由例子来讲解:
 

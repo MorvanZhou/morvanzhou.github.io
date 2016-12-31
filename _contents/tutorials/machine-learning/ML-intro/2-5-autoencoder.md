@@ -4,7 +4,7 @@ youtube_id: w8HmXgXnVEo
 title: 自编码 (Autoencoder)
 description: 自编码是一种神经网络的形式, 用于压缩再解压得到的数据, 也可以用于特征的降维, 类似 PCA.
 publish-date: 2016-11-04
-chapter: 1
+chapter: 2
 thumbnail: /static/thumbnail/ML-intro/autoencoder.png
 ---
 * 学习资料: 

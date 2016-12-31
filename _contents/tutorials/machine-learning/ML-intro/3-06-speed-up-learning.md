@@ -8,7 +8,7 @@ Momentum;
 AdaGrad;
 RMSProp;
 Adam."
-chapter: 2
+chapter: 3
 ---
 
 * 学习资料: 

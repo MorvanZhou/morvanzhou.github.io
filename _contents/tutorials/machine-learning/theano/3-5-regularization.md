@@ -9,7 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization)
-  * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/2-5-overfitting.md %})
+  * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
 
 
 什么是 overfitting ？

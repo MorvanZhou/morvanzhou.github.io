@@ -10,7 +10,7 @@ thumbnail: "/static/thumbnail/keras/06 CNN.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py)
-  * 机器学习-简介系列 [CNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/1-3-CNN.md %})
+  * 机器学习-简介系列 [CNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/2-2-CNN.md %})
   * Tensorflow [CNN]({% link _contents/tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
   
   

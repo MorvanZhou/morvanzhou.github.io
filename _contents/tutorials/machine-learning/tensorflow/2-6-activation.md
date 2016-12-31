@@ -9,11 +9,11 @@ date: 2016-11-3
 ---
 * 学习资料:
   * Tensorflow 提供的一些 [激励函数](https://www.tensorflow.org/versions/0.6.0/api_docs/python/nn.html)
-  * 机器学习-简介系列 [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/2-4-activation-function.md %})
+  * 机器学习-简介系列 [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
 
 欢迎回来！这节课我们学习 Tensorflow 中的 `activation function` .
 
 激励函数运行时激活神经网络中某一部分神经元，将激活信息向后传入下一层的神经系统。激励函数的实质是非线性方程。
 Tensorflow 的神经网络 里面处理较为复杂的问题时都会需要运用激励函数 `activation function` 。
-详细介绍请前往 "机器学习-简介系列" [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/2-4-activation-function.md %})
+详细介绍请前往 "机器学习-简介系列" [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
 

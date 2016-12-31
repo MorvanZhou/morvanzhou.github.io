@@ -4,7 +4,7 @@ youtube_id: -5hESl-Lj-4
 title: 批标准化 (Batch Normalization)
 description:  
 publish-date: 2016-12-06
-chapter: 2
+chapter: 3
 thumbnail: /static/thumbnail/ML-intro/BN.png
 ---
 * 学习资料: 

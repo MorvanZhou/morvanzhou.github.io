@@ -10,7 +10,7 @@ thumbnail: "/static/thumbnail/keras/09 autoencoder.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/9-Autoencoder_example.py)
-  * 机器学习-简介系列 [自编码 Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/1-6-autoencoder.md %})
+  * 机器学习-简介系列 [自编码 Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
 
 自编码，简单来说就是把输入数据进行一个压缩和解压缩的过程。
 原来有很多 Feature，压缩成几个来代表原来的数据，解压之后恢复成原来的维度，再和原数据进行比较。

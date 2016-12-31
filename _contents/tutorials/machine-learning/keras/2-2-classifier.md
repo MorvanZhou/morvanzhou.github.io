@@ -10,8 +10,8 @@ thumbnail: "/static/thumbnail/keras/05 classifier.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/5-classifier_example.py)
-  * 机器学习-简介系列 [特征标准化]({% link _contents/tutorials/machine-learning/ML-intro/2-2-normalization.md %})
-  * 机器学习-简介系列 [加速训练]({% link _contents/tutorials/machine-learning/ML-intro/2-6-speed-up-learning.md %})
+  * 机器学习-简介系列 [特征标准化]({% link _contents/tutorials/machine-learning/ML-intro/3-02-normalization.md %})
+  * 机器学习-简介系列 [加速训练]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
 
 
 今天用 Keras 来构建一个分类神经网络，用到的数据集是 MNIST，就是 0 到 9 这几个数字的图片数据集。

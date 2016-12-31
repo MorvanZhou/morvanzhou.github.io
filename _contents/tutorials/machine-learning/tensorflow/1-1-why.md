@@ -9,7 +9,7 @@ author: 张乐
 ---
 * 学习资料:
   * Tensorflow [官网](https://www.tensorflow.org/)
-  * 机器学习-简介系列: [什么是神经网络]({% link _contents/tutorials/machine-learning/ML-intro/1-2-NN.md %})
+  * 机器学习-简介系列: [什么是神经网络]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
 
 本节内容包括:
 

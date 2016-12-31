@@ -10,8 +10,8 @@ thumbnail: "/static/thumbnail/keras/08 RNN2.jpg"
 ---
 * 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/8-RNN_LSTM_Regressor_example.py)
-  * 机器学习-简介系列 [RNN]({% link _contents/tutorials/machine-learning/ML-intro/1-4-RNN.md %})
-  * 机器学习-简介系列 [LSTM]({% link _contents/tutorials/machine-learning/ML-intro/1-5-LSTM.md %})
+  * 机器学习-简介系列 [RNN]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
+  * 机器学习-简介系列 [LSTM]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * Tensorflow [RNN教程]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
    
 这次我们使用RNN来求解回归(Regression)问题.
