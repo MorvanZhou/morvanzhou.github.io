@@ -1,12 +1,12 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMTg5MjM2ODgwOA
+youtube_id: o5fjkcM_lHs
 chapter: 1
 title: Why?
 ---
 * 学习资料:
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
-  * [什么是强化学习 短视频](#)
+  * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
 
 本节内容包括:
 
