@@ -99,4 +99,5 @@ class SarsaTable(RL):   # 继承 RL class
         self.q_table.ix[s, a] += self.lr * (q_target - q_predict)  # 更新 q_table
 ```
 
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/3_Sarsa_maze)
 

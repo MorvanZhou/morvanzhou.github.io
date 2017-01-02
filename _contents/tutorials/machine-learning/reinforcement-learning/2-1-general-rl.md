@@ -184,3 +184,5 @@ if __name__ == "__main__":
     print('\r\nQ-table:\n')
     print(q_table)
 ```
+
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/1_command_line_reinforcement_learning/treasure_on_right.py)

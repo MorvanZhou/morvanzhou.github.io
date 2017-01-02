@@ -39,19 +39,19 @@ Youtube 的模拟视频都在这里:
 下面是其中一些模拟视频:
 
 * Maze
-<video width="500" controls loop autoplay>
+<video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 * Cartpole
-<video width="500" controls loop autoplay>
+<video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 * Mountain car
-<video width="500" controls loop autoplay>
+<video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

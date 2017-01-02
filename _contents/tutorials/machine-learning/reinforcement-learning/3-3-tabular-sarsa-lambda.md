@@ -20,7 +20,7 @@ Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到�
 
 这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频](#), 用动画展示具体的区别.
 
-<video width="500" controls loop autoplay>
+<video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -158,6 +158,6 @@ self.eligibility_trace.ix[s, a] = 1
 实验证明选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
 
 
-
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/4_Sarsa_lambda_maze)
 
 
