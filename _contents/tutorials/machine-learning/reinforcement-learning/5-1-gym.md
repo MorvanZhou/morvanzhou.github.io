@@ -10,7 +10,7 @@ title: OpenAI gym 环境库
 			id="myVideo"
 			class="myvideo"
 			width="560" height="315"
-			src="https://players.youku.com/player.php/sid/XMTQ4NDIxMDc1Mg==/v.swf"
+			src="https://players.youku.com/player.php/sid/XMTg0NDY5NDMzMg==/v.swf"
 			frameborder="0"
 			allowfullscreen>
 		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
