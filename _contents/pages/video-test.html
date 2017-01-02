@@ -5,7 +5,7 @@ youtube_id: _njYDK9Frpg
 youku_id: XMTg1MTYwNDg2OA
 ---
 
-
+<p>切视频测试</p>
 <div class="video-container">
 	<iframe
 			id="myVideo"
@@ -29,6 +29,34 @@ youku_id: XMTg1MTYwNDg2OA
 </div>
 
 
+<p>测试 flash iframe https 方法</p>
+<iframe
+			class="myvideo"
+			width="560" height="315"
+			src="https://players.youku.com/player.php/sid/{{page.youku_id}}==/v.swf"
+			frameborder="0"
+			allowfullscreen>
+		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
+</iframe>
+
+<p>测试 iframe embed http 方法</p>
+<iframe
+			class="myvideo"
+			width="560" height="315"
+			src="http://player.youku.com/embed/{{page.youku_id}}=="
+			frameborder="0"
+			allowfullscreen>
+		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
+</iframe>
+
+<p>测试 flash embed https 方法</p>
+<embed
+		src='https://players.youku.com/player.php/sid/{{page.youku_id}}==/v.swf'
+		allowFullScreen='true' quality='high' width='480' height='400'
+		align='middle' allowScriptAccess='always'
+		type='application/x-shockwave-flash'>
+	测试测试
+</embed>
 
 
 <script type="text/javascript">
@@ -60,3 +88,5 @@ function myFunction() {
 </script>
 
 <!--var src2 = "http://player.youku.com/embed/{{page.youku_id}}==";-->
+
+
