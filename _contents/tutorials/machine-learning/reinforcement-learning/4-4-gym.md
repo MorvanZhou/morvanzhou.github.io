@@ -105,7 +105,7 @@ RL = DeepQNetwork(n_actions=env.action_space.n,
 
 total_steps = 0 # 记录步数
 
-for i_episode in range(60):
+for i_episode in range(100):
 
     # 获取回合 i_episode 第一个 observation
     observation = env.reset()
@@ -122,8 +122,8 @@ for i_episode in range(60):
         # x 是车的水平位移, 所以 r1 是车越偏离中心, 分越少
         # theta 是棒子离垂直的角度, 角度越大, 越不垂直. 所以 r2 是棒越垂直, 分越高
 
-        r1 = (env.x_threshold - abs(x))/env.x_threshold - 2
-        r2 = (env.theta_threshold_radians - abs(theta))/env.theta_threshold_radians
+        r1 = (env.x_threshold - abs(x))/env.x_threshold - 0.8
+        r2 = (env.theta_threshold_radians - abs(theta))/env.theta_threshold_radians - 0.5
         reward = r1 + r2    # 总 reward 是 r1 和 r2 的结合, 既考虑位置, 也考虑角度, 这样 DQN 学习更有效率
 
         # 保存这一组记忆
