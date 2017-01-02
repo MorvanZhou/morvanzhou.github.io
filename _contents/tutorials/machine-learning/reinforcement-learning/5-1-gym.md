@@ -16,6 +16,7 @@ title: OpenAI gym 环境库
 		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
 	</iframe>
 
+<embed src='https://players.youku.com/player.php/sid/XMTg0NDY5NDMzMg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/6_OpenAI_gym)
