@@ -194,20 +194,26 @@ if i_episode == 0:
     plt.show()
 ```
 
-我们看看这一段的输出, `vt` 也就是 `discounted_ep_rs_norm`, 看他是整么样诱导我们的 gradient descent.
+我们看看这一段的输出, `vt` 也就是 `discounted_ep_rs_norm`, 看他是怎么样诱导我们的 gradient descent.
 
 <img class="course-image" src="/static/results/rl/5-2-2.png">
 
-可以看出, 左边一段的 `vt` 有较高的值, 右边较低, 这就是 `vt` 在说: "请重视我这回合开始时的一系列动作, 因为前面一段时间杆子还没有掉下来.
-而且请惩罚我之后的一系列动作, 因为后面的动作让杆子掉下来了", 这样 `vt` 就能在这里 `loss = tf.reduce_mean(log_prob * self.tf_vt)`
+可以看出, 左边一段的 `vt` 有较高的值, 右边较低, 这就是 `vt` 在说:
+
+**"请重视我这回合开始时的一系列动作, 因为前面一段时间杆子还没有掉下来.
+而且请惩罚我之后的一系列动作, 因为后面的动作让杆子掉下来了"**
+
+这样 `vt` 就能在这里 `loss = tf.reduce_mean(log_prob * self.tf_vt)`
 诱导 gradient descent 朝着正确的方向发展了.
 
 如果你玩了下 `MountainCar` 的模拟程序, 你会发现 `MountainCar` 模拟程序中的 `vt` 长这样:
 
 <img class="course-image" src="/static/results/rl/5-2-3.png">
 
-这张图在说: "请重视我这回合最后的一系列动作, 因为这一系列动作让我爬上了山.
-而且请惩罚我开始的一系列动作, 因为这些动作没能让我爬上山". 也是通过这些 `vt` 来诱导梯度下降的方向.
+这张图在说: **"请重视我这回合最后的一系列动作, 因为这一系列动作让我爬上了山.
+而且请惩罚我开始的一系列动作, 因为这些动作没能让我爬上山".**
+
+也是通过这些 `vt` 来诱导梯度下降的方向.
 
 最后是如何用算法实现对未来 reward 的衰减.
 
