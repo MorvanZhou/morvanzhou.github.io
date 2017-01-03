@@ -98,9 +98,9 @@ print(env.observation_space.low)    # 查看 observation 最低取值
 # 定义使用 DQN 的算法
 RL = DeepQNetwork(n_actions=env.action_space.n,
                   n_features=len(env.observation_space.high),
-                  learning_rate=0.01, e_greedy=0.99,
+                  learning_rate=0.01, e_greedy=0.9,
                   replace_target_iter=100, memory_size=2000,
-                  e_greedy_increment=0.001,
+                  e_greedy_increment=0.0008,
                   hidden_layers=[20, 20],)
 
 total_steps = 0 # 记录步数
