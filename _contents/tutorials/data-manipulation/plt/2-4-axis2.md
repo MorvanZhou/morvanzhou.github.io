@@ -73,6 +73,7 @@ plt.yticks([-2, -1.8, -1, 1.22, 3],['$really\ bad$', '$bad$', '$normal$', '$good
 ax = plt.gca()
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
+plt.show()
 ```
 
 <img class= "course-image" src="/static/results/plt/2_4_1.png">
@@ -89,6 +90,7 @@ ax.xaxis.set_ticks_position('bottom')
 
 ```python
 ax.spines['bottom'].set_position(('data', 0))
+plt.show()
 ```
 
 <img class= "course-image" src="/static/results/plt/2_4_2.png">

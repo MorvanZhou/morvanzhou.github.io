@@ -38,6 +38,7 @@ y2 = x**2
 ```python
 plt.figure()
 plt.plot(x, y1)
+plt.show()
 ```
 
 <img class= "course-image" src="/static/results/plt/2_2_1.png">

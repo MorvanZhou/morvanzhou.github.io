@@ -53,6 +53,7 @@ plt.xlim((-1, 2))
 plt.ylim((-2, 3))
 plt.xlabel('I am x')
 plt.ylabel('I am y')
+plt.show()
 ```
 
 <img class= "course-image" src="/static/results/plt/2_3_1.png">
