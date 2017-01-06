@@ -3,6 +3,7 @@ youku_id:
 youtube_id: 
 chapter: 2
 title: 小例子
+thumbnail: /static/thumbnail/rl/3 example.jpg
 ---
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/1_command_line_reinforcement_learning/treasure_on_right.py)

@@ -3,6 +3,7 @@ youku_id:
 youtube_id: 
 chapter: 2
 title: Q-learning 算法更新
+thumbnail: /static/thumbnail/rl/4 qlearning 1.jpg
 ---
 
 * 学习资料:

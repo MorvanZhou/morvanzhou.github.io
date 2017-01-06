@@ -4,6 +4,7 @@ youtube_id: o5fjkcM_lHs
 chapter: 1
 title: Why?
 publish-date: 2017-01-01
+thumbnail: /static/thumbnail/rl/1 why.jpg
 ---
 * 学习资料:
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)

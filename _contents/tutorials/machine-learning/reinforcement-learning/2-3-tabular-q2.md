@@ -3,6 +3,7 @@ youku_id:
 youtube_id: 
 chapter: 2
 title: Q-learning 思维决策
+thumbnail: /static/thumbnail/rl/4 qlearning 2.jpg
 ---
 
 * 学习资料:

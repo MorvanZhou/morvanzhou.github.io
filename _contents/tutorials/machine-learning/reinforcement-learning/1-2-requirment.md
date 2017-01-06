@@ -4,6 +4,7 @@ youtube_id: fdwfd6VSNxs
 chapter: 1
 title: 课程要求
 publish-date: 2017-01-06
+thumbnail: /static/thumbnail/rl/2 requirement.jpg
 ---
 * 学习资料:
   * [OpenAI gym 官网](https://gym.openai.com/)
