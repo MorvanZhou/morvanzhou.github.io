@@ -1,13 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTk2NzM1Mjk5Mg
+youtube_id: OkGFJE_XDzI
 chapter: 2
 title: 小例子
 thumbnail: /static/thumbnail/rl/3 example.jpg
+publish-date: 2017-01-09
 ---
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/1_command_line_reinforcement_learning/treasure_on_right.py)
   * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
+  * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
 
 这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为.
