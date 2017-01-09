@@ -1,14 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMTk3MTU4Njg2MA
+youtube_id: JafbuFHZPdc
 chapter: 2
 title: Q-learning 思维决策
 thumbnail: /static/thumbnail/rl/4 qlearning 2.jpg
+publish-date: 2017-01-09
 ---
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/2_Q_Learning_maze)
-  * [什么是 Q-learning 短视频](#)
+  * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
 
 接着上节内容, 我们来实现 `RL_brain` 的 `QLearningTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
