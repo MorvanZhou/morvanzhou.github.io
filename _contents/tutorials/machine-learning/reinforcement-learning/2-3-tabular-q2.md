@@ -3,7 +3,7 @@ youku_id: XMTk3MTU4Njg2MA
 youtube_id: JafbuFHZPdc
 chapter: 2
 title: Q-learning 思维决策
-thumbnail: /static/thumbnail/rl/4 qlearning 2.jpg
+thumbnail: /static/thumbnail/rl/5 qlearning 2.jpg
 publish-date: 2017-01-09
 ---
 
