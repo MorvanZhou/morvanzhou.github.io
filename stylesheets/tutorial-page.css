@@ -1,3 +1,8 @@
+:root {
+  --c-tut-table: #419873;
+  --c-tut-table-hover: #398564;
+}
+
 /* ===================== TUTORIAL PAGE ====================== */
 
 /* ====== header ===== */
@@ -62,7 +67,7 @@ text-align: center;
 }
 button#switch-video {
 display: inline;
-background-color: #14b814;
+background-color: var(--c-n);
 border: none;
 font-size: 1em;
 color: white;
@@ -71,7 +76,7 @@ border-radius:5px;
 }
 
 button#switch-video:hover {
-background-color: #00cc00;
+background-color: var(--c-n-mofan);
 }
 
 /* ====== tutorial navigation ===== */
@@ -91,7 +96,7 @@ display: block;
 list-style-type: none;
 font-size: 120%;
 border-radius: 10px;
-background-color: #14b814;
+background-color: var(--c-n);
 margin: 0;
 padding: 0em;
 box-shadow: 1px 1px 15px 2px  #888888;
@@ -110,7 +115,7 @@ color: #fff;
 }
 
 #tut-nav > ul > li:hover {
-background-color: #00cc00;
+background-color: var(--c-n-mofan);
 border-radius: 10px;
 }
 
@@ -130,10 +135,9 @@ padding: 0;
 text-align: left;
 }
 
-#tut-nav > ul > li > ul > li:hover {
+/*#tut-nav > ul > li > ul > li:hover {
 background-color: #26d926;
-/* background-color: #00e600; */
-}
+}*/
 
 #tut-nav .dropdown-content {
 display: none;
@@ -158,7 +162,7 @@ clear: left;
 
 /* ======== table of contents ======== */
 .table-of-contents-ul {
-background-color: #52BE80;
+background-color: var(--c-tut-table);
 padding: 1em;
 border-radius: 20px;
 color: white;
@@ -191,7 +195,7 @@ text-decoration: none;
 }
 
 .content-li:hover {
-background-color: #82E0AA;
+background-color: var(--c-tut-table-hover);
 }
 
 /* ======== inner page ======== */
@@ -255,7 +259,7 @@ text-align: right;
 }
 
 /* ======== comments section ======== */
-#ds-thread {
+/*#ds-thread {
 padding: 1em 0;
 }
 
@@ -280,3 +284,4 @@ background-color: #00e600 !important;
 .ds-post-self {
 padding: 1em 0 !important;
 }
+*/
