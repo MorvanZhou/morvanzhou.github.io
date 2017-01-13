@@ -1,13 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMjI2Nzg3MTgxNg
+youtube_id: gXZ4AWgkrQE
 chapter: 3
 title: Sarsa-lambda
+thumbnail: "/static/thumbnail/rl/8 sarsa lambda.jpg"
+publish-date: 2017-01-13
 ---
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/4_Sarsa_lambda_maze)
-  * [什么是 Sarsa-lambda 短视频](#)
+  * [什么是 Sarsa-lambda 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-05-sarsa-lambda.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=0-odgVLZ5EQ&index=3&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NzcyOA==.html)
 
 Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
@@ -18,7 +20,7 @@ Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到�
 
 如果 lambda = 1, Sarsa-lambda 更新的是 获取到 reward 前所有经历的步.
 
-这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频](#), 用动画展示具体的区别.
+这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-05-sarsa-lambda.md %}), 用动画展示具体的区别.
 
 <video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">

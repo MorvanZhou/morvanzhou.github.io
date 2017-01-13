@@ -1,13 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMjI2NTY5NTczNg
+youtube_id: Sv6IB-Uu4ks
 chapter: 3
 title: Sarsa 算法更新
+thumbnail: "/static/thumbnail/rl/6 sarsa 1.jpg"
+publish-date: 2017-01-13
 ---
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/3_Sarsa_maze)
-  * [什么是 Sarsa 短视频](#)
+  * [什么是 Sarsa 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
 
 

@@ -1,13 +1,15 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMjI2NjIxODcyMA
+youtube_id: sqpuf7hCC4c
 chapter: 3
 title: Sarsa 思维决策
+thumbnail: "/static/thumbnail/rl/7 sarsa 2.jpg"
+publish-date: 2017-01-13
 ---
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/3_Sarsa_maze)
-  * [什么是 Sarsa 短视频](#)
+  * [什么是 Sarsa 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
 
 接着上节内容, 我们来实现 `RL_brain` 的 `SarsaTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
