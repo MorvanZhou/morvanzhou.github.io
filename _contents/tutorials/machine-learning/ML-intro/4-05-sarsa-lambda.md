@@ -5,7 +5,7 @@ title: 什么是 Sarsa(lambda)
 description:  
 publish-date: 2017-01-13
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png
+thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 ---
 * 学习资料: 
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
