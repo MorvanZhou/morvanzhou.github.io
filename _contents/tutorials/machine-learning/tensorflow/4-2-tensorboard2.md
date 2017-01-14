@@ -99,7 +99,8 @@ def add_layer(inputs ,
     with tf.name_scope('layer'):
          with tf.name_scope('weights'):
               Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
-              tf.histogram_summary(layer_name+'/weights',Weights)
+              tf.histogram_summary(layer_name+'/weights',Weights)   # tensorflow 0.12 以下版的
+              # tf.summary.histogram(layer_name + '/weights', Weights) # tensorflow >= 0.12
     ##and so no ……
 ```
 
@@ -107,15 +108,16 @@ def add_layer(inputs ,
 
 ```python
 with tf.name_scope('biases'):
-     biases = tf.Variable(tf.zeros([1,out_size])+0.1, name='b')
-     tf.histogram_summary(layer_name+'/biase',biases)
-
+    biases = tf.Variable(tf.zeros([1,out_size])+0.1, name='b')
+    tf.histogram_summary(layer_name+'/biase',biases)   # tensorflow 0.12 以下版的
+    # tf.summary.histogram(layer_name + '/biases', biases)  # Tensorflow >= 0.12
 ```
 
 至于`activation_function` 可以不绘制. 我们对output 使用同样的方法:
 
 ```python 
-tf.histogram_summary(layer_name+'/outputs',outputs)
+tf.histogram_summary(layer_name+'/outputs',outputs) # tensorflow 0.12 以下版本
+# tf.summary.histogram(layer_name + '/outputs', outputs) # Tensorflow >= 0.12
 ```
 
 最终经过我们的修改 , `addlayer()`方法成为如下的样子:
@@ -131,10 +133,12 @@ def add_layer(inputs ,
          with tf.name_scope('weights'):
               Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
               tf.histogram_summary(layer_name+'/weights',Weights)
+              # tf.summary.histogram(layer_name + '/weights', Weights) # tensorflow >= 0.12
 
          with tf.name_scope('biases'):
               biases = tf.Variable(tf.zeros([1,out_size])+0.1, name='b')
               tf.histogram_summary(layer_name+'/biase',biases)
+              # tf.summary.histogram(layer_name + '/biases', biases)  # Tensorflow >= 0.12
 
          with tf.name_scope('Wx_plus_b'):
               Wx_plus_b = tf.add(tf.matmul(inputs,Weights), biases)
@@ -145,6 +149,7 @@ def add_layer(inputs ,
             outputs= activation_function(Wx_plus_b)
 
          tf.histogram_summary(layer_name+'/outputs',outputs)
+         # tf.summary.histogram(layer_name + '/outputs', outputs) # Tensorflow >= 0.12
 
     return outputs
 ```
@@ -190,7 +195,8 @@ prediction= add_layer(l1, 10, 1, n_layer=2, activation_function=None)
 with tf.name_scope('loss'):
      loss= tf.reduce_mean(tf.reduce_sum(
               tf.square(ys- prediction), reduction_indices=[1]))
-     tf.scalar_summary('loss',loss)
+     tf.scalar_summary('loss',loss) # tensorflow < 0.12
+     # tf.summary.scalar('loss', loss) # tensorflow >= 0.12
 ```
 
 <h4 class="tut-h4-pad" id="merge">给所有训练图‘合并‘</h4>
@@ -202,10 +208,12 @@ with tf.name_scope('loss'):
 
 ```python
 sess= tf.Session()
-merged= tf.merge_all_summaries()
 
-# tf.train.SummaryWriter soon be deprecated, use following
-writer = tf.summary.FileWriter("logs/", sess.graph)
+merged= tf.merge_all_summaries()    # tensorflow < 0.12
+# merged = tf.summary.merge_all() # tensorflow >= 0.12
+
+writer = tf.train.SummaryWriter('logs/', sess.graph)    # tensorflow < 0.12
+# writer = tf.summary.FileWriter("logs/", sess.graph) # tensorflow >=0.12
 
 # sess.run(tf.initialize_all_variables()) # tf.initialize_all_variables() # tf 马上就要废弃这种写法
 sess.run(tf.global_variables_initializer())  # 替换成这样就好
