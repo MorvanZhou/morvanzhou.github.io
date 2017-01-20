@@ -42,7 +42,7 @@ y = Weights*x_data + biases
 loss = tf.reduce_mean(tf.square(y-y_data))
 ```
 
-反向传递误差的工作就教给`optimizer`了, 我们使用的误差专递方法是梯度下降法: `Gradient Descent`
+反向传递误差的工作就教给`optimizer`了, 我们使用的误差传递方法是梯度下降法: `Gradient Descent`
 让后我们使用 `optimizer` 来进行参数的更新.
 
 ```python
