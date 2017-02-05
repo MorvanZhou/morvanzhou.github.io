@@ -70,7 +70,7 @@ display: inline;
 background-color: var(--c-n);
 border: none;
 font-size: 1em;
-color: white;
+color: #DCDCDC;
 box-shadow: 0px 0px 20px 2px #888888;
 border-radius:5px;
 }
@@ -89,6 +89,10 @@ width: 50%;
 margin: 0;
 padding: 0;
 opacity: 0.95;
+}
+
+#tut-nav a, #tut-nav a:link, #tut-nav a:visited{
+color: #DCDCDC;
 }
 
 #tut-nav > ul {
@@ -237,7 +241,7 @@ overflow: hidden;
 
 .PageNavigation a {
 display: block;
-color: white;
+color: #DCDCDC;
 background-color: #14b814;
 text-decoration: none;
 padding: 1em;

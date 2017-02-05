@@ -145,8 +145,8 @@ opacity: 0.95;
 }
 
 #home-nav > ul > li > a, #home-nav a:link, #home-nav a:visited{
+color: #DCDCDC;
 float: left;
-color: #fff;
 text-decoration: none;
 text-align: center;
 margin: 0;
@@ -240,7 +240,7 @@ padding: 1em 0;
 width: 50%;
 margin: 0 auto 0 auto;
 display: block;
-color: white;
+color: #DCDCDC;
 text-align: center;
 padding: 10px;
 background-color: var(--c-donation);
@@ -265,7 +265,7 @@ border: solid #00850a;
 }
 
 footer p{
-color: white;
+color: #DCDCDC;
 display: block;
 clear: left;
 margin: 10px 15px;
