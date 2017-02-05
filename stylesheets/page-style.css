@@ -277,6 +277,10 @@ margin:0;
 list-style-type: none;
 }
 
+footer a{
+color: #DCDCDC;
+}
+
 footer li {
 float: left;
 padding-right: 10px;
