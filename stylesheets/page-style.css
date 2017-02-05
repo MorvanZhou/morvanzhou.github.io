@@ -257,6 +257,7 @@ background-color: var(--c-donation-hover);
 
 footer {
 clear: both;
+color: #DCDCDC;
 font-size: 0.8em;
 background-color: var(--c-n);
 padding: 0px;
