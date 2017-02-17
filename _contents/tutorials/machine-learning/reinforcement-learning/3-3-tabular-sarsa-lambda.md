@@ -148,15 +148,14 @@ self.eligibility_trace.ix[s, a] = 1
 <img class="course-image" src="/static/results/rl/3-3-2.png">
 
 这是针对于一个 state-action 值按经历次数的变化.
-最上面是经历 state-action 的时间点, 第二张图是使用
+最上面是经历 state-action 的时间点, 第二张图是使用这种方式所带来的 "不可或缺性值":
 
 `self.eligibility_trace.ix[s, a] += 1`
 
-这种方式所带来的 "不可或缺性值", 下面图是使用
+下面图是使用这种方法带来的 "不可或缺性值":
 
 `self.eligibility_trace.ix[s, :] *= 0; self.eligibility_trace.ix[s, a] = 1`
 
-这种方法带来的 "不可或缺性值",
 实验证明选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
 
 
