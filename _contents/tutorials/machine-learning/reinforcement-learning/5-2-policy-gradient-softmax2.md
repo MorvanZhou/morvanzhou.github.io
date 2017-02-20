@@ -109,7 +109,7 @@ class PolicyGradient:
             self.all_act_prob = tf.nn.softmax(layer2)  # 所有 actions 的概率
 
         with tf.name_scope('loss'):
-            log_prob = tf.nn.sparse_softmax_cross_entropy_with_logits(self.all_act_prob, self.tf_acts) # 所选 action 的概率 log 值
+            log_prob = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.all_act_prob, labels=self.tf_acts) # 所选 action 的概率 log 值
             loss = tf.reduce_mean(log_prob * self.tf_vt)  # (vt = 本reward + 衰减的未来reward) 引导参数的梯度下降
 
         with tf.name_scope('train'):

@@ -65,7 +65,7 @@ RL = PolicyGradient(
     n_actions=env.action_space.n,
     n_features=len(env.observation_space.high),
     learning_rate=0.02,
-    reward_decay=0.9,   # gamma
+    reward_decay=0.7,   # gamma
     # output_graph=True,    # 输出 tensorboard 文件
 )
 ```
