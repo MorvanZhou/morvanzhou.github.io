@@ -22,9 +22,9 @@ author: 高峰
 
 <h4 class="tut-h4-pad" id="basic">基本使用</h4>
 
-while 语句同其他变成语言中 while 的使用方式大同小异，主要结构如下
+while 语句同其他变成语言中 while 的使用方式大同小异，主要结构如下:
 
-```Python
+```python
 while condition:
     expressions
 ```
@@ -37,7 +37,7 @@ while condition:
 
 比如要打印出 0 - 9 的所有数据,
 
-```Python : n
+```python
 condition = 0
 while condition < 10:
     print(condition)
@@ -57,7 +57,7 @@ while condition < 10:
 在使用 while 句法的时候一定要注意在循环内部一定要修改判断条件的值，否则程序的 while 部分
 将**永远执行下去**。
 
-```Python
+```python
 while True:
     print("I'm True")
 ```
@@ -100,7 +100,7 @@ while condiiton:
 在 Python 中集合类型有 `list`、 `tuple` 、`dict` 和 `set` 等，如果该集合对象作为 while 判断语句，
 如果集合中的元素数量为 0，那么将会返回 `False`, 否则返回 `True`。
 
-```Python
+```python
 a = range(10)
 while a:
     print(a[-1])
