@@ -76,7 +76,8 @@ while True:
 + 不等于 (!=)
 
 会返回 `True` 和 `False`值，例如其他也会返回 `True` 和 `False`
-1. 数字
+
+##### 数字
 
 整数和浮点数也能进行 `Boolean` 数据操作, 具体规则，如果该值等于 `0` 或者 `0.0` 将会返回 `False`
 其余的返回 `True`
@@ -91,11 +92,11 @@ while condiiton:
 输出的结果将会是 `10, 9, 8, 7, 6, 5, 4, 3, 2, 1`, 在这里 `condition` 在 while 语句中，如果该值
 大于0，那么将会返回为 `True`,执行循环内部语句，直至 `condition` 等于0，返回 `False`。
 
-2. None 类型
+##### None 类型
 
 如果 while 后面接着的语句数据类型 `None`, 将会返回 `False`。
 
-3. 集合类型
+##### 集合类型
 
 在 Python 中集合类型有 `list`、 `tuple` 、`dict` 和 `set` 等，如果该集合对象作为 while 判断语句，
 如果集合中的元素数量为 0，那么将会返回 `False`, 否则返回 `True`。
