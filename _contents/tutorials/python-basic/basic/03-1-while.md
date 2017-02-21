@@ -36,6 +36,7 @@ while condition:
 
 
 比如要打印出 0 - 9 的所有数据,
+
 ```Python : n
 condition = 0
 while condition < 10:
