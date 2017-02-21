@@ -25,7 +25,7 @@ import numpy as np
 n = 1024    # data size
 X = np.random.normal(0, 1, n) # 每一个点的X值
 Y = np.random.normal(0, 1, n) # 每一个点的Y值
-T = arctan2(Y,X) # for color value
+T = np.arctan2(Y,X) # for color value
 ```
 
 
