@@ -17,7 +17,11 @@ layout: tutorials
 
   <h1>{{page.title}}</h1>
   <p style="text-align: center;">
-    作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+    {% if page.author-link != "#" %}
+      作者: <a href="{{page.author-link}}" target="_blank"><strong>{{page.author}}</strong></a> &nbsp;&nbsp;
+    {% else %}
+      作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+    {% endif %}
     编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
   </p>
 

@@ -51,6 +51,7 @@ defaults:
     values:
       editor: Morvan
       author: Morvan
+      author-link: "#"
       autoplay: true
       published: true
       comments: true
