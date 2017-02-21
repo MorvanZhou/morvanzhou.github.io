@@ -10,5 +10,8 @@ tut-dir: /tutorials/machine-learning/
 *有趣的机器学习* 也是一个提升自己应用机器学习的好地方,
 因为里面同时也介绍了很多种机器学习的技巧方法, 大大帮助提升学习效果.
 
-机器学习教程的其他内容包括了: 强化学习 (Reinforcement Learning), 神经网络模块 (Tensorflow, Theano, Keras) ,
-通用的机器学习方法 (SciKit-Learn) 等等.
+机器学习教程的其他内容包括了:
+[强化学习 (Reinforcement Learning)](/tutorials/machine-learning/reinforcement-learning/),
+神经网络模块 ([Tensorflow](/tutorials/machine-learning/tensorflow/),
+[Theano](/tutorials/machine-learning/theano/), [Keras](/tutorials/machine-learning/keras/)) ,
+通用的机器学习方法 ([SciKit-Learn](/tutorials/machine-learning/sklearn/)) 等等.

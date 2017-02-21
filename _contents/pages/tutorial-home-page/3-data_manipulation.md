@@ -8,4 +8,4 @@ tut-dir: /tutorials/data-manipulation/
 科学计算模块: Numpy 和 Pandas. 而且还有数据可视化的利器: 
 Matplotlib. 使用它们能够更有效的处理你的数据, 呈现你的数据~
 
-所以这部分的内容包括了: Numpy, Pandas, Matplotlib 等等.
+所以这部分的内容包括了: [Numpy, Pandas](/tutorials/data-manipulation/np-pd/), [Matplotlib](/tutorials/data-manipulation/plt/) 等等.
