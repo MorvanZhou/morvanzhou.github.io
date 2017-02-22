@@ -7,7 +7,7 @@ title: OpenAI gym 环境库
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/6_OpenAI_gym)
-  * [什么是 DQN 短视频](#)
+  * [什么是 DQN 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-06-DQN.md %})
   * [OpenAI gym 官网](https://gym.openai.com/)
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2OTQzNg==.html)
@@ -29,7 +29,8 @@ title: OpenAI gym 环境库
 <h4 class="tut-h4-pad" id="install">安装 gym</h4>
 
 在 MacOS 和 Linux 系统下, 安装 gym 很方便, 首先确定你是 python 2.7 或者 python 3.5 版本.
-然后在你的 terminal 中复制下面这些
+然后在你的 terminal 中复制下面这些. 但是 gym 暂时还不支持 Windows, 不过说不定某天突然就支持了~
+所以接下来要说的安装方法只有 MacOS 和 Linux 的. Windows 用户还是自行刷一个 Linux 或者手动用 tkinter 编吧~
 
 ```shell
 # python 2.7, 复制下面
@@ -100,8 +101,7 @@ RL = DeepQNetwork(n_actions=env.action_space.n,
                   n_features=len(env.observation_space.high),
                   learning_rate=0.01, e_greedy=0.9,
                   replace_target_iter=100, memory_size=2000,
-                  e_greedy_increment=0.0008,
-                  hidden_layers=[20, 20],)
+                  e_greedy_increment=0.0008,)
 
 total_steps = 0 # 记录步数
 
@@ -167,10 +167,9 @@ print(env.observation_space)
 print(env.observation_space.high)
 print(env.observation_space.low)
 
-RL = DeepQNetwork(n_actions=3, n_features=2, learning_rate=0.0005, e_greedy=0.9,
+RL = DeepQNetwork(n_actions=3, n_features=2, learning_rate=0.001, e_greedy=0.9,
                   replace_target_iter=300, memory_size=3000,
-                  e_greedy_increment=0.0002,
-                  hidden_layers=[20, 20])
+                  e_greedy_increment=0.0002,)
 
 total_steps = 0
 
