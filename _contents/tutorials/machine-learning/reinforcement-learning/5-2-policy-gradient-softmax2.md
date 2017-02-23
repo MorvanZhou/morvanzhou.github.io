@@ -98,20 +98,22 @@ class PolicyGradient:
             self.tf_vt = tf.placeholder(tf.float32, [None, ], name="actions_value") # 接收每个 state-action 所对应的 value (通过 reward 计算)
 
         # fc1
-        layer = tf.contrib.layers.fully_connected(
+        layer = tf.layers.dense(
             inputs=self.tf_obs,
-            num_outputs=10,
-            activation_fn=None,
-            weights_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
-            biases_initializer=tf.constant_initializer(0.01),
+            units=10,
+            activation=None,
+            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
+            bias_initializer=tf.constant_initializer(0.01),
+            name='fc1'
         )
         # fc2
-        self.all_act_prob = tf.contrib.layers.fully_connected(
+        self.all_act_prob = tf.layers.dense(
             inputs=layer,
-            num_outputs=self.n_actions,
-            activation_fn=tf.nn.softmax,
-            weights_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
-            biases_initializer=tf.constant_initializer(0.01),
+            units=self.n_actions,
+            activation=tf.nn.softmax,
+            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
+            bias_initializer=tf.constant_initializer(0.01),
+            name='fc2'
         )
 
         with tf.name_scope('loss'):
@@ -124,7 +126,7 @@ class PolicyGradient:
 
 <h4 class="tut-h4-pad" id="action">选行为</h4>
 
-这个行为不再是用 value 来选定的, 而是用概率来选定. 即使不用 epsilon-greedy, 也具有一定的随机性.
+这个行为不再是用 Q value 来选定的, 而是用概率来选定. 即使不用 epsilon-greedy, 也具有一定的随机性.
 
 ```python
 class PolicyGradient:
