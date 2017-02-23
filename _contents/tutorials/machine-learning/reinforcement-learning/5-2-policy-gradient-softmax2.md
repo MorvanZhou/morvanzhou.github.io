@@ -34,13 +34,13 @@ class PolicyGradient:
     # 初始化 (有改变)
     def __init__(self, n_actions, n_features, learning_rate=0.01, reward_decay=0.95, output_graph=False):
 
-    # 建立 policy gradient 神经网络 (有改变样)
+    # 建立 policy gradient 神经网络 (有改变)
     def _build_net(self):
 
-    # 选行为 (有改变样)
+    # 选行为 (有改变)
     def choose_action(self, observation):
 
-    # 存储回合 transition (有改变样)
+    # 存储回合 transition (有改变)
     def store_transition(self, s, a, r):
 
     # 学习更新参数 (有改变)
@@ -100,24 +100,26 @@ class PolicyGradient:
         # fc1
         layer = tf.layers.dense(
             inputs=self.tf_obs,
-            units=10,
-            activation=None,
-            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
-            bias_initializer=tf.constant_initializer(0.01),
+            units=10,   # 输出个数
+            activation=tf.nn.tanh,  # 激励函数
+            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.3),
+            bias_initializer=tf.constant_initializer(0.1),
             name='fc1'
         )
         # fc2
-        self.all_act_prob = tf.layers.dense(
+        all_act = tf.layers.dense(
             inputs=layer,
-            units=self.n_actions,
-            activation=tf.nn.softmax,
-            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.2),
-            bias_initializer=tf.constant_initializer(0.01),
+            units=self.n_actions,   # 输出个数
+            activation=None,    # 之后再加 Softmax
+            kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.3),
+            bias_initializer=tf.constant_initializer(0.1),
             name='fc2'
         )
 
+        self.all_act_prob = tf.nn.softmax(all_act, name='act_prob')  # 激励函数 softmax 出概率
+
         with tf.name_scope('loss'):
-            log_prob = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.all_act_prob, labels=self.tf_acts) # 所选 action 的概率 log 值
+            log_prob = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=all_act, labels=self.tf_acts) # 所选 action 的概率 log 值
             loss = tf.reduce_mean(log_prob * self.tf_vt)  # (vt = 本reward + 衰减的未来reward) 引导参数的梯度下降
 
         with tf.name_scope('train'):
