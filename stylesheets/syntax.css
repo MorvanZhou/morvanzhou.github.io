@@ -1,8 +1,8 @@
 pre.highlight {
 text-align: left;
-border-radius: 10px;
+border-radius: 4px;
 padding: 1em;
-margin: 2.6em;
+margin: 1em 0em;
 background-color: #494949/*#3f3f3f*/;
 overflow-x: scroll;
 }
@@ -10,7 +10,7 @@ overflow-x: scroll;
 .highlight code, .highlight pre {
 color:#fdce93;
 background-color:#494949/*#3f3f3f*/;
-font-size: 0.75em;
+font-size: 0.8em;
 }
 
 code.highlighter-rouge {
