@@ -63,7 +63,7 @@ print(env.observation_space.low)    # 显示 observation 最低值
 # 定义
 RL = PolicyGradient(
     n_actions=env.action_space.n,
-    n_features=len(env.observation_space.high),
+    n_features=env.observation_space.shape[0],
     learning_rate=0.02,
     reward_decay=0.99,   # gamma
     # output_graph=True,    # 输出 tensorboard 文件
