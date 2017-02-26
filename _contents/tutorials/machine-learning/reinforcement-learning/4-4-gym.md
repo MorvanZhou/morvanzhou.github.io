@@ -3,6 +3,8 @@ youku_id:
 youtube_id: 
 chapter: 4
 title: OpenAI gym 环境库
+publish-date: 2017-03-26
+thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 ---
 
 * 学习资料:
