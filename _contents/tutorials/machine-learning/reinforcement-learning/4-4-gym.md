@@ -72,11 +72,12 @@ $ pip3 install gym[all]
 
 <h4 class="tut-h4-pad" id="cartpole">CartPole 例子</h4>
 
+<div align="center">
 <video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-
+</div>
 
 之前我编写的 `maze_env` 基本上是按照 `gym` 环境格式写的, 所以你换成 `gym` 格式会很简单.
 
@@ -152,10 +153,12 @@ RL.plot_cost()
 
 <h4 class="tut-h4-pad" id="mountaincar">MountainCar 例子</h4>
 
+<div align="center">
 <video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</div>
 
 代码基本和上述代码相同, 就只是在 reward 上动了下手脚.
 
@@ -171,7 +174,7 @@ print(env.observation_space.low)
 
 RL = DeepQNetwork(n_actions=3, n_features=2, learning_rate=0.001, e_greedy=0.9,
                   replace_target_iter=300, memory_size=3000,
-                  e_greedy_increment=0.0002,)
+                  e_greedy_increment=0.0001,)
 
 total_steps = 0
 
