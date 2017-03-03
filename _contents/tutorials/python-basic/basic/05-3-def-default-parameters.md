@@ -66,6 +66,7 @@ def report(name, *grades):
         total_grade += grade
     print(name, 'total grade is ', total_grade)
 ```
+
 定义了一个函数，传入一个参数为 `name`, 后面的参数 `*grades` 使用了 `*` 修饰，表明该参数是一个可变参数，这是一个可迭代的对象。该函数输入姓名和各科的成绩，输出姓名和总共成绩。所以可以这样调用函数 `report('Mike', 8, 9)`，输出的结果为
 `Mike total grade is 17`, 也可以这样调用 `report('Mike', 8, 9, 10)`，输出的结果为 `Mike total grade is 27`
 

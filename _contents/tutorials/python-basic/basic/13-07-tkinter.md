@@ -10,4 +10,3 @@ comments: true
 * 学习资料
   * 全套[ tkinter 教程](/tutorials/python-basic/tkinter.html)
 
-{% include announcement.html %}
