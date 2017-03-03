@@ -7,7 +7,7 @@ title: 函数参数
 date: 2016-11-3
 comments: true
 author-link: http://gaufung.info/
-author : 高峰
+author: 高峰
 ---
 
 
