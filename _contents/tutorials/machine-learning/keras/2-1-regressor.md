@@ -45,6 +45,9 @@ Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, ))
 # plot data
 plt.scatter(X, Y)
 plt.show()
+
+X_train, Y_train = X[:160], Y[:160]     # train 前 160 data points
+X_test, Y_test = X[160:], Y[160:]       # test 后 40 data points
 ```
 
 <img class="course-image" src="/static/results/keras/2-1-1.png">
