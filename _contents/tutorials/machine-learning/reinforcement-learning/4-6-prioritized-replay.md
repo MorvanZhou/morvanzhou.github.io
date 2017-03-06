@@ -2,7 +2,8 @@
 youku_id:
 youtube_id:
 chapter: 4
-title: * Prioritized Experience Replay (DQN)
+title: Prioritized Experience Replay (DQN)
+publish-date:
 thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 ---
 

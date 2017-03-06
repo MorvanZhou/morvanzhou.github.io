@@ -2,7 +2,8 @@
 youku_id:
 youtube_id:
 chapter: 4
-title: * Double DQN
+title: Double DQN
+publish-date:
 thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
 ---
 
