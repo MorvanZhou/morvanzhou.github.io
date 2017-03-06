@@ -54,8 +54,8 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 <img class="course-image" src="/static/results/rl/4-5-1.png">
 
 因为我们的神经网络预测 `Qmax` 本来就有误差, 每次也向着最大误差的 `Q现实` 改进神经网络,
-就是因为这个 `Qmax` 导致了 overestimate. 所以 Double DQN 的想法就是引入另一个神经网络来大小一些最大误差的影响.
-而 DQN 中本来就有两个神经网络, 我们何不利用一下这个地理优势呢. 所以在 `Q现实` 中,
+就是因为这个 `Qmax` 导致了 overestimate. 所以 Double DQN 的想法就是引入另一个神经网络来打消一些最大误差的影响.
+而 DQN 中本来就有两个神经网络, 我们何不利用一下这个地理优势呢. 所以,
 我们用 `Q估计` 的神经网络估计 `Q现实` 中 `Qmax(s', a')` 的最大动作值. 然后用这个被
 `Q估计` 估计出来的动作来选择 `Q现实` 中的 `Q(s')`. 总结一下:
 
@@ -64,6 +64,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 原本的 `Q_next = max(Q_next(s', a_all))`.
 
 Double DQN 中的 `Q_next = Q_next(s', argmax(Q_eval(s', a_all)))`. 也可以表达成下面那样.
+
 
 <img class="course-image" src="/static/results/rl/4-5-2.png">
 
@@ -74,8 +75,8 @@ Double DQN 中的 `Q_next = Q_next(s', argmax(Q_eval(s', a_all)))`. 也可以表
 
 好了, 有了理论, 我们就来用 Python 实现它吧.
 
-
-在 `RL_brain` [(github)](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py) 中, 我们将 class 的名字改成 `DoubleDQN`, 为了对比 Natural DQN,
+这里的代码都是基于之前 DQN 教程中的代码 [(github)](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py),
+在 `RL_brain` 中, 我们将 class 的名字改成 `DoubleDQN`, 为了对比 Natural DQN,
 我们也保留原来大部分的 DQN 的代码. 我们在 `__init__` 中加一个 `double_q` 参数来表示使用的是 Natural DQN 还是 Double DQN.
 为了对比的需要, 我们的 `tf.Session()` 也单独传入. 并移除原本在 DQN 代码中的这一句:
 
@@ -97,13 +98,13 @@ class DoubleDQN:
 接着我们来修改 `learn()` 中的代码. 我们对比 Double DQN 和 Natural DQN 在 tensorboard 中的图,
 发现他们的结构并没有不同, 但是在计算 `q_target` 的时候, 方法是不同的.
 
-<img class="course-image" src="/static/results/rl/4-5-4.png">
+<img class="course-image" src="/static/results/rl/4-5-3.png">
 
 ```python
 class DoubleDQN:
     def learn(self):
         # 这一段和 DQN 一样:
-                if self.learn_step_counter % self.replace_target_iter == 0:
+        if self.learn_step_counter % self.replace_target_iter == 0:
             self._replace_target_params()
             print('\ntarget_params_replaced\n')
 
