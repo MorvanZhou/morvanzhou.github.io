@@ -3,7 +3,6 @@ youku_id:
 youtube_id:
 chapter: 4
 title: * Dueling DQN
-publish-date:
 thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 ---
 
