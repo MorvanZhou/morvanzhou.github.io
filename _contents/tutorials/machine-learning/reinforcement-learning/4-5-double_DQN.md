@@ -98,7 +98,9 @@ class DoubleDQN:
 接着我们来修改 `learn()` 中的代码. 我们对比 Double DQN 和 Natural DQN 在 tensorboard 中的图,
 发现他们的结构并没有不同, 但是在计算 `q_target` 的时候, 方法是不同的.
 
+<a href="/static/results/rl/4-5-3.png">
 <img class="course-image" src="/static/results/rl/4-5-3.png">
+</a>
 
 ```python
 class DoubleDQN:

@@ -126,7 +126,7 @@ class DuelingDQN:
 这次我们看看累积奖励 reward, 杆子立起来的时候奖励 = 0, 其他时候都是负值,
 所以当累积奖励没有在降低时, 说明杆子已经被成功立了很久了.
 
-<a href="/static/results/rl/4-7-5.png">
+<a href="/static/results/rl/4-7-5.jpg">
 <img class="course-image" src="/static/results/rl/4-7-5.jpg">
 </a>
 

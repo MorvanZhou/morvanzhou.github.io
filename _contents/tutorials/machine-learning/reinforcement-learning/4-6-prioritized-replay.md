@@ -163,8 +163,9 @@ class DQNPrioritiedReplay:
             self.sess = sess
 ```
 
-
+<a href="/static/results/rl/4-6-3.png">
 <img class="course-image" src="/static/results/rl/4-6-3.png">
+</a>
 
 搭建神经网络时, 我们发现 DQN with Prioritized replay 只多了一个 `ISWeights`, 这个正是[刚刚算法中](/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/#algorithm)提到的
 `Importance-Sampling Weights`, 用来恢复被 Prioritized replay 打乱的抽样概率分布.
