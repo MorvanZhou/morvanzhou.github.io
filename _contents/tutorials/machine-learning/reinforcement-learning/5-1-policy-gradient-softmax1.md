@@ -17,15 +17,19 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 最大的一个优势是: 输出的这个 action 可以是一个连续的值, 之前我们说到的 value-based 方法输出的都是不连续的值, 然后再选择值最大的 action.
 而 policy gradient 可以在一个连续分布上选取 action.
 
+<div align="center">
 <video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole policy gradient softmax.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</div
 
+<div align="center">
 <video width="500" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar policy gradient softmax.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</div
 
 本节内容包括:
 
