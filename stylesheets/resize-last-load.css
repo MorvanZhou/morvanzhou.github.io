@@ -20,10 +20,10 @@
 
 /* ======= when window width is greater than 1000 px ======= */
 :root {
-  --max-window-width: 800px;
+  --max-window-width: 1000px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     main {
     width: var(--max-window-width);
     margin: 0 auto;
