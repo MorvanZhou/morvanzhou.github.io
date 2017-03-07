@@ -3,7 +3,7 @@ youku_id: XMjYxMTI2NTU2NA
 youtube_id: OiEkaYpPHM0
 chapter: 4
 title: Dueling DQN
-publish-date: 2017-03-07
+publish-date: 2017-03-08
 thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 ---
 
