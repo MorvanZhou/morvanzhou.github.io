@@ -126,7 +126,7 @@ class DuelingDQN:
 所以当累积奖励没有在降低时, 说明杆子已经被成功立了很久了.
 
 <a href="/static/results/rl/4-7-5.jpg">
-<img class="course-image" src="/static/results/rl/4-7-5.jpg">
+<img class="course-image" src="/static/results/rl/4-7-5.png">
 </a>
 
 我们发现当可用动作越高, 学习难度就越大, 不过 Dueling DQN 还是会比 Natural DQN 学习得更快. 收敛效果更好.

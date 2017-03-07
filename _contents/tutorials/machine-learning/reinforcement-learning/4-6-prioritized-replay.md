@@ -153,7 +153,7 @@ class DQNPrioritiedReplay:
         if self.prioritized:
             self.memory = Memory(capacity=memory_size)
         else:
-            self.memory = pd.DataFrame(np.zeros((self.memory_size, n_features*2+2)))
+            self.memory = np.zeros((self.memory_size, n_features*2+2))
 
         if sess is None:
             self.sess = tf.Session()
@@ -205,7 +205,7 @@ class DQNPrioritizedReplay:
                 self.memory_counter = 0
             transition = np.hstack((s, [a, r], s_))
             index = self.memory_counter % self.memory_size
-            self.memory.iloc[index, :] = transition
+            self.memory[index, :] = transition
             self.memory_counter += 1
 ```
 
@@ -220,8 +220,8 @@ class DQNPrioritizedReplay:
         if self.prioritized:
             tree_idx, batch_memory, ISWeights = self.memory.sample(self.batch_size)
         else:
-            batch_memory = self.memory.sample(self.batch_size)
-        batch_memory = np.asarray(batch_memory)
+            sample_index = np.random.choice(self.memory_size, size=self.batch_size)
+            batch_memory = self.memory[sample_index, :]
 
         ...
 
