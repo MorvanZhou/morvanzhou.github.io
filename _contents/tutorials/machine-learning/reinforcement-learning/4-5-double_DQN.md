@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjYxMTA1NzkwOA
+youtube_id: TjAEpfE8A64
 chapter: 4
 title: Double DQN
-publish-date:
+publish-date: 2017-03-07
 thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
 ---
 
