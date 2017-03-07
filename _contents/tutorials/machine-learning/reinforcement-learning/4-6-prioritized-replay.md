@@ -21,7 +21,7 @@ thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 这一次还是使用 MountainCar 来进行实验, 因为这次我们不需要重度改变他的 reward 了.
 所以只要是没有拿到小旗子, reward=-1, 拿到小旗子时, 我们定义它获得了 +10 的 reward.
 比起之前 DQN 中, 这个 reward 定义更加准确. 如果使用这种 reward 定义方式,
-可以想象 Natural DQN 会话很久的时间学习, 因为记忆库中只有很少很少的 +10 reward 可以学习. 正负样本不一样.
+可以想象 Natural DQN 会花很久的时间学习, 因为记忆库中只有很少很少的 +10 reward 可以学习. 正负样本不一样.
 而使用 Prioritized replay, 就会重视这种少量的, 但值得学习的样本.
 
 <div align="center">
