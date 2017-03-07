@@ -4,7 +4,7 @@ youtube_id: OiEkaYpPHM0
 chapter: 4
 title: Dueling DQN
 publish-date: 2017-03-08
-thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
+thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 ---
 
 * 学习资料:
