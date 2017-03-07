@@ -182,7 +182,7 @@ import tensorflow as tf
 env = gym.make('Pendulum-v0')
 env.seed(1) # 可重复实验
 MEMORY_SIZE = 3000
-ACTION_SPACE = 5    # 将原本的连续动作分离成 5 个动作
+ACTION_SPACE = 11    # 将原本的连续动作分离成 11 个动作
 
 sess = tf.Session()
 with tf.variable_scope('Natural_DQN'):
@@ -220,7 +220,7 @@ def train(RL):
         if total_steps > MEMORY_SIZE:   # learning
             RL.learn()
 
-        if total_steps - MEMORY_SIZE > 10000:   # stop game
+        if total_steps - MEMORY_SIZE > 20000:   # stop game
             break
 
         observation = observation_
@@ -245,5 +245,5 @@ plt.show()
 
 <img class="course-image" src="/static/results/rl/4-5-4.png">
 
-可以看出, Natural DQN 学得差不多后, 在立起来时, 估计的 Q值 要大于0, 这时就出现了
-overestimate, 而 Double DQN 的 Q值 就消除了一些 overestimate.
+可以看出, Natural DQN 学得差不多后, 在立起来时, 大部分时间都是 估计的 Q值 要大于0, 这时就出现了
+overestimate, 而 Double DQN 的 Q值 就消除了一些 overestimate, 将估计值保持在 0 左右.
