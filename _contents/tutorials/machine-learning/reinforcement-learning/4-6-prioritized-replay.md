@@ -16,8 +16,7 @@ thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 以下教程缩减了在 DQN 方面的介绍, 着重强调 DQN with Prioritized Replay 和 DQN 在代码上不同的地方.
 所以还没了解 DQN 的同学们, 有关于 DQN 的知识,
 请从 [这个视频]({% link _contents/tutorials/machine-learning/ML-intro/4-06-DQN.md %})
-和 [这个Python教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 开始学习.
-中进行了解.**
+和 [这个Python教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 开始学习.**
 
 这一次还是使用 MountainCar 来进行实验, 因为这次我们不需要重度改变他的 reward 了.
 所以只要是没有拿到小旗子, reward=-1, 拿到小旗子时, 我们定义它获得了 +10 的 reward.

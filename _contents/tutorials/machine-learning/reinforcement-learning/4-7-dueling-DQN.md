@@ -17,8 +17,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 以下教程缩减了在 DQN 方面的介绍, 着重强调 Dueling DQN 和 DQN 在代码上不同的地方.
 所以还没了解 DQN 的同学们, 有关于 DQN 的知识,
 请从 [这个视频]({% link _contents/tutorials/machine-learning/ML-intro/4-06-DQN.md %})
-和 [这个Python教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 开始学习.
-中进行了解.**
+和 [这个Python教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 开始学习.**
 
 只要稍稍修改 DQN 中神经网络的结构, 就能大幅提升学习效果, 加速收敛. 这种新方法叫做
 Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q 拆分成了 state 的 Value
