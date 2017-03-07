@@ -14,7 +14,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
-以下教程缩减了在 DQN 方面的介绍, 着重强调 Double DQN 和 DQN 在代码上不同的地方.
+以下教程缩减了在 DQN 方面的介绍, 着重强调 Dueling DQN 和 DQN 在代码上不同的地方.
 所以还没了解 DQN 的同学们, 有关于 DQN 的知识,
 请从 [这个视频]({% link _contents/tutorials/machine-learning/ML-intro/4-06-DQN.md %})
 和 [这个Python教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 开始学习.
