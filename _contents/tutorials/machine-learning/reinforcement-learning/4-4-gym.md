@@ -2,7 +2,7 @@
 youku_id: XMjUzMjA1NjY2NA
 youtube_id: 9m3DN2dyi8I
 chapter: 4
-title: OpenAI gym 环境库
+title: OpenAI gym 环境库 (Tensorflow)
 publish-date: 2017-02-26
 thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 ---

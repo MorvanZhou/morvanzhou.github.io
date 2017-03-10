@@ -2,7 +2,7 @@
 youku_id: 
 youtube_id: 
 chapter: 5
-title: Policy Gradients 思维决策
+title: Policy Gradients 思维决策 (Tensorflow)
 ---
 
 * 学习资料:

@@ -2,7 +2,7 @@
 youku_id: 
 youtube_id: 
 chapter: 6
-title: Actor Critic 算法更新
+title: Actor Critic 算法更新 (Tensorflow)
 published: false
 ---
 

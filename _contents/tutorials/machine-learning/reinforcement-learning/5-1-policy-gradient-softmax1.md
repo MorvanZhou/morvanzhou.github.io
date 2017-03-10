@@ -2,7 +2,7 @@
 youku_id: 
 youtube_id: 
 chapter: 5
-title: Policy Gradients 算法更新
+title: Policy Gradients 算法更新 (Tensorflow)
 ---
 
 * 学习资料:

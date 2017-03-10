@@ -2,7 +2,7 @@
 youku_id: XMjYxMTA1NzkwOA
 youtube_id: TjAEpfE8A64
 chapter: 4
-title: Double DQN
+title: Double DQN (Tensorflow)
 publish-date: 2017-03-07
 thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
 ---
