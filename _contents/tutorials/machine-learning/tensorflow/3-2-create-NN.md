@@ -112,7 +112,7 @@ for i in range(1000):
 每50步我们输出一下机器学习的误差。
 
 ```python
-if i % 50 == 0:
+    if i % 50 == 0:
         # to see the step improvement
         print(sess.run(loss, feed_dict={xs: x_data, ys: y_data}))
 ```
