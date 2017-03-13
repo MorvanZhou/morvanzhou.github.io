@@ -8,7 +8,7 @@ overflow-x: scroll;
 }
 
 .highlight code, .highlight pre {
-font-family: Menlo;
+font-family: Menlo, Helvetica, Arial, Microsoft YaHei,;
 color:#fdce93;
 background-color:#494949/*#3f3f3f*/;
 font-size: 0.8em;
