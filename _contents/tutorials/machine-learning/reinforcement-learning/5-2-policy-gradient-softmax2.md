@@ -27,7 +27,7 @@ title: Policy Gradients 思维决策 (Tensorflow)
 
 <h4 class="tut-h4-pad" id="main-structure">代码主结构</h4>
 
-用基本的 Policy gradient 算法, 和之前的 value-based 算法看上去很类似, 不够实际上并没有多少一样的东西.
+用基本的 Policy gradient 算法, 和之前的 value-based 算法看上去很类似.
 
 ```python
 class PolicyGradient:
