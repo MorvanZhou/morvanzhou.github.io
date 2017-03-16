@@ -253,7 +253,7 @@ for i in range(1000):
 
 <h4 class="tut-h4-pad" id="result">在 tensorboard 中查看效果</h4>
 
-程序运行完毕之后, 会产生logs目录 , 使用命令 `tensorboard --logdir='logs/'`
+程序运行完毕之后, 会产生logs目录 , 使用命令 `tensorboard --logdir logs/`
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
