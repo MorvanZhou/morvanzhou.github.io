@@ -46,7 +46,7 @@ thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
 
 这套算法是在普通的 Policy gradient 算法上面修改的, 如果对 Policy Gradient
 算法还不是很了解, 欢迎[戳这里]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}).
-打个比方:
+对这套算法打个比方如下:
 
 **`Actor` 修改行为时就像蒙着眼睛一直向前开车, `Critic` 就是那个扶方向盘改变 `Actor`
 开车方向的.**
@@ -68,15 +68,15 @@ thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
 ```python
 class Actor(object):
     def __init__(self, sess, n_features, n_actions, lr=0.001):
-        用 tensorflow 建立 Actor 神经网络,
-        搭建好训练的 Graph.
+        # 用 tensorflow 建立 Actor 神经网络,
+        # 搭建好训练的 Graph.
 
     def learn(self, s, a, td):
-        s, a 用于产生 Gradient ascent 的方向,
-        td 来自 Critic, 用于告诉 Actor 这方向对不对.
+        # s, a 用于产生 Gradient ascent 的方向,
+        # td 来自 Critic, 用于告诉 Actor 这方向对不对.
 
     def choose_action(self, s):
-        根据 s 选 行为 a
+        # 根据 s 选 行为 a
 ```
 
 
@@ -87,22 +87,22 @@ class Actor(object):
 ```python
 class Critic(object):
     def __init__(self, sess, n_features, lr=0.01):
-        用 tensorflow 建立 Critic 神经网络,
-        搭建好训练的 Graph.
+        # 用 tensorflow 建立 Critic 神经网络,
+        # 搭建好训练的 Graph.
 
     def learn(self, s, r, s_):
-        学习 状态的价值 (state value), 不是行为的价值 (action value),
-        计算 TD_error = (r + v_) - v,
-        用 TD_error 评判这一步的行为有没有带来比平时更好的结果,
-        可以把它看做 Advantage
-        return 学习时产生的 TD_error
+        # 学习 状态的价值 (state value), 不是行为的价值 (action value),
+        # 计算 TD_error = (r + v_) - v,
+        # 用 TD_error 评判这一步的行为有没有带来比平时更好的结果,
+        # 可以把它看做 Advantage
+        return # 学习时产生的 TD_error
 ```
 
 
 
 <h4 class="tut-h4-pad" id="learn">两者学习方式</h4>
 
-`Actor` 想要最大化期望的 `reward`, 在 `Actor Critic` 算法中, 我们用比平时好多少
+`Actor` 想要最大化期望的 `reward`, 在 `Actor Critic` 算法中, 我们用 "比平时好多少"
 (`TD error`) 来当做 `reward`, 所以就是:
 
 ```python
@@ -116,7 +116,7 @@ with tf.variable_scope('train'):
     self.train_op = tf.train.AdamOptimizer(lr).minimize(-self.exp_v)
 ```
 
-`Critic` 的更新很简单, 就是想 Q learning 那样更新现实和估计的误差 (TD error) 就好了.
+`Critic` 的更新很简单, 就是像 Q learning 那样更新现实和估计的误差 (TD error) 就好了.
 
 ```python
 with tf.variable_scope('squared_TD_error'):
@@ -164,8 +164,8 @@ for i_episode in range(MAX_EPISODE):
             break
 ```
 
-
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)
+建立神经网络的详细流程请直接看代码更直观, 其他方面的代码也不是重点, 所以直接看代码很好懂.
+一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)
 
 由于更新时的 网络相关性, state 相关性, Actor Critic 很难收敛. 如果同学们对这份代码做过修改,
 并且达到了好的收敛性, 欢迎在下面分享~
