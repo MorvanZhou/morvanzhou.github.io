@@ -2,47 +2,170 @@
 youku_id: 
 youtube_id: 
 chapter: 6
-title: Actor Critic 算法更新 (Tensorflow)
-published: false
+title: Actor Critic (Tensorflow)
+thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
 ---
 
 * 学习资料:
-  * [全部代码](#)
+  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage)
   * [什么是 Actor Critic 短视频](#)
-  * 本节内容的模拟视频效果:
-    * CartPole: [Youtube](#), [优酷](#)
 
+**一句话概括 Actor Critic 方法**:
 
+结合了 Policy Gradient (Actor) 和 Function Approximation (Critic) 的方法.
+`Actor` 基于概率选行为, `Critic` 基于 `Actor` 的行为评判行为的得分,
+`Actor` 根据 `Critic` 的评分修改选行为的概率.
 
+**Actor Critic 方法的优势**:
+可以进行单步更新, 比传统的 Policy Gradient 要快.
 
+**Actor Critic 方法的劣势**:
+取决于 Critic 的价值判断, 但是 Critic 难收敛, 再加上 Actor 的更新, 就更难收敛.
+为了解决收敛问题, Google Deepmind 提出了 `Actor Critic` 升级版 `Deep Deterministic Policy Gradient`.
+后者融合了 DQN 的优势, 解决了收敛难的问题. 我们之后也会要讲到 `Deep Deterministic Policy Gradient`.
+不过那个是要以 `Actor Critic` 为基础, 懂了 `Actor Critic`, 后面那个就好懂了.
+
+下面是基于 Actor Critic 的 Gym Cartpole 实验:
+
+<div align="center">
+<video width="500" controls loop autoplay muted>
+  <source src="/static/results/rl/cartpole actor critic.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
 
 本节内容包括:
 
+* [算法](#algorithm)
 * [代码主结构](#main-structure)
-* [初始化](#init)
-* [建立 Policy 神经网络](#net)
-* [选行为](#action)
-* [存储回合](#transition)
-* [学习](#learn)
+* [两者学习方式](#learn)
+* [每回合算法](#episode)
 
+
+<h4 class="tut-h4-pad" id="algorithm">算法</h4>
+
+这套算法是在普通的 Policy gradient 算法上面修改的, 如果对 Policy Gradient
+算法还不是很了解, 欢迎[戳这里]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}).
+打个比方:
+
+**`Actor` 修改行为时就像蒙着眼睛一直向前开车, `Critic` 就是那个扶方向盘改变 `Actor`
+开车方向的.**
+
+<img class="course-image" src="/static/results/rl/6-1-1.png">
+
+或者说详细点, 就是 `Actor` 在运用 Policy Gradient 的方法进行 Gradient ascent 的时候, 由
+`Critic` 来告诉他, 这次的 Gradient ascent 是不是一次正确的 ascent, 如果这次的得分不好,
+那么就不要 ascent 那么多.
 
 <h4 class="tut-h4-pad" id="main-structure">代码主结构</h4>
 
+有了点理解, 我们来代码 (如果想一次性看所有代码, 请来我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)):
 
-<h4 class="tut-h4-pad" id="init">初始化</h4>
+<img class="course-image" src="/static/results/rl/6-1-2.png">
+
+上图是 `Actor` 的神经网络结果, 代码结构在下面:
+
+```python
+class Actor(object):
+    def __init__(self, sess, n_features, n_actions, lr=0.001):
+        用 tensorflow 建立 Actor 神经网络,
+        搭建好训练的 Graph.
+
+    def learn(self, s, a, td):
+        s, a 用于产生 Gradient ascent 的方向,
+        td 来自 Critic, 用于告诉 Actor 这方向对不对.
+
+    def choose_action(self, s):
+        根据 s 选 行为 a
+```
 
 
-<h4 class="tut-h4-pad" id="net">建立 Policy 神经网络</h4>
+<img class="course-image" src="/static/results/rl/6-1-3.png">
 
-<h4 class="tut-h4-pad" id="action">选行为</h4>
+上图是 `Critic` 的神经网络结果, 代码结构在下面:
+
+```python
+class Critic(object):
+    def __init__(self, sess, n_features, lr=0.01):
+        用 tensorflow 建立 Critic 神经网络,
+        搭建好训练的 Graph.
+
+    def learn(self, s, r, s_):
+        学习 状态的价值 (state value), 不是行为的价值 (action value),
+        计算 TD_error = (r + v_) - v,
+        用 TD_error 评判这一步的行为有没有带来比平时更好的结果,
+        可以把它看做 Advantage
+        return 学习时产生的 TD_error
+```
 
 
-<h4 class="tut-h4-pad" id="transition">存储回合</h4>
+
+<h4 class="tut-h4-pad" id="learn">两者学习方式</h4>
+
+`Actor` 想要最大化期望的 `reward`, 在 `Actor Critic` 算法中, 我们用比平时好多少
+(`TD error`) 来当做 `reward`, 所以就是:
+
+```python
+with tf.variable_scope('exp_v'):
+    log_prob = tf.log(self.acts_prob[0, self.a])    # log 动作概率
+    self.exp_v = tf.reduce_mean(log_prob * self.td_error)   # log 概率 * TD 方向
+with tf.variable_scope('train'):
+    # 因为我们想不断增加这个 exp_v (动作带来的额外价值),
+    # 所以我们用过 minimize(-exp_v) 的方式达到
+    # maximize(exp_v) 的目的
+    self.train_op = tf.train.AdamOptimizer(lr).minimize(-self.exp_v)
+```
+
+`Critic` 的更新很简单, 就是想 Q learning 那样更新现实和估计的误差 (TD error) 就好了.
+
+```python
+with tf.variable_scope('squared_TD_error'):
+    self.td_error = self.r + GAMMA * self.v_ - self.v
+    self.loss = tf.square(self.td_error)    # TD_error = (r+gamma*V_next) - V_eval
+with tf.variable_scope('train'):
+    self.train_op = tf.train.AdamOptimizer(lr).minimize(self.loss)
+```
 
 
-<h4 class="tut-h4-pad" id="learn">学习</h4>
+
+<h4 class="tut-h4-pad" id="episode">每回合算法</h4>
+
+```python
+for i_episode in range(MAX_EPISODE):
+    s = env.reset()
+    t = 0
+    track_r = []    # 每回合的所有奖励
+    while True:
+        if RENDER: env.render()
+
+        a = actor.choose_action(s)
+
+        s_, r, done, info = env.step(a)
+
+        if done: r = -20    # 回合结束的惩罚
+
+        track_r.append(r)
+
+        td_error = critic.learn(s, r, s_)  # Critic 学习
+        actor.learn(s, a, td_error)     # Actor 学习
+
+        s = s_
+        t += 1
+
+        if done or t >= MAX_EP_STEPS:
+            # 回合结束, 打印回合累积奖励
+            ep_rs_sum = sum(track_r)
+            if 'running_reward' not in globals():
+                running_reward = ep_rs_sum
+            else:
+                running_reward = running_reward * 0.95 + ep_rs_sum * 0.05
+            if running_reward > DISPLAY_REWARD_THRESHOLD: RENDER = True  # rendering
+            print("episode:", i_episode, "  reward:", int(running_reward))
+            break
+```
 
 
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)
 
-如果想一次性看到全部代码, 请去我的 [Github](#)
-
+由于更新时的 网络相关性, state 相关性, Actor Critic 很难收敛. 如果同学们对这份代码做过修改,
+并且达到了好的收敛性, 欢迎在下面分享~
