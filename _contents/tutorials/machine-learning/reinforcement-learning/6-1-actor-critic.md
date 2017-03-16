@@ -22,7 +22,7 @@ thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
 **Actor Critic 方法的劣势**:
 取决于 Critic 的价值判断, 但是 Critic 难收敛, 再加上 Actor 的更新, 就更难收敛.
 为了解决收敛问题, Google Deepmind 提出了 `Actor Critic` 升级版 `Deep Deterministic Policy Gradient`.
-后者融合了 DQN 的优势, 解决了收敛难的问题. 我们之后也会要讲到 `Deep Deterministic Policy Gradient`.
+后者融合了 DQN 的优势, 解决了收敛难的问题. 我们之后也会要讲到 [Deep Deterministic Policy Gradient]({% link _contents/tutorials/machine-learning/reinforcement-learning/6-2-DDPG.md %}).
 不过那个是要以 `Actor Critic` 为基础, 懂了 `Actor Critic`, 后面那个就好懂了.
 
 下面是基于 Actor Critic 的 Gym Cartpole 实验:
