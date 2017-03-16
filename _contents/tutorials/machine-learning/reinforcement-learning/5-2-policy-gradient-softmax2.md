@@ -7,7 +7,7 @@ title: Policy Gradients 思维决策 (Tensorflow)
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax)
-  * [什么是 Policy Gradient 短视频](#)
+  * [什么是 Policy Gradient 短视频(即将制作)](#)
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)

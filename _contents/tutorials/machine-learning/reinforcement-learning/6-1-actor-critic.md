@@ -8,7 +8,7 @@ thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage)
-  * [什么是 Actor Critic 短视频](#)
+  * [什么是 Actor Critic 短视频(即将制作)](#)
 
 **一句话概括 Actor Critic 方法**:
 
