@@ -20,6 +20,15 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 因为 `DDPG` 和 `DQN` 还有 `Actor Critic` 很相关,
 所以最好这两者都了解下, 对于学习 `DDPG` 很有帮助. 我的教程链接都能在上面的学习资料中找到.
 
+下面是这节内容的效果提前看:
+
+<div align="center">
+<video width="500" controls loop autoplay muted>
+  <source src="/static/results/rl/Pendulum DDPG.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
 
 本节内容包括:
 
