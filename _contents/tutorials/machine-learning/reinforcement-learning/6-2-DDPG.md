@@ -40,7 +40,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 关于 `Actor` 部分, 他的参数更新同样会涉及到 `Critic`, 上面是关于 `Actor` 参数的更新,
 它的前半部分 `grad[Q]` 是从 `Critic` 来的, 这是在说: **这次 `Actor` 的动作要怎么移动, 才能获得更大的 `Q`**,
 而后半部分 `grad[u]` 是从 `Actor` 来的, 这是在说: **`Actor` 要怎么样修改自身参数, 使得 `Actor` 更有可能做这个动作**.
-所以两者合起来就是在说: **`Actor` 要朝着更有可能获取大 `Q` 的方向修改动作了**.
+所以两者合起来就是在说: **`Actor` 要朝着更有可能获取大 `Q` 的方向修改动作参数了**.
 
 
 <img class="course-image" src="/static/results/rl/6-2-1.png">
@@ -71,7 +71,7 @@ class Actor(object):
         with tf.variable_scope('Actor'):
             # 这个网络用于及时更新参数
             self.a = self._build_net(S, scope='eval_net', trainable=True)
-            # 这个网络不及时更新参数, 用语预测 Q_target 中的 action
+            # 这个网络不及时更新参数, 用于预测 Critic 的 Q_target 中的 action
             self.a_ = self._build_net(S_, scope='target_net', trainable=False)
         ...
 
@@ -108,7 +108,16 @@ with tf.variable_scope('A_train'):
     self.train_op = opt.apply_gradients(zip(self.policy_grads_and_vars, self.e_params)) # 对 eval_net 的参数更新
 ```
 
-而在 `Critic` 中, 我们用的东西简单一点, 同时下面也提到的传送给 `Actor` 的 `a_grad` 应该用 Tensorflow 怎么计算.
+同时下面也提到的传送给 `Actor` 的 `a_grad` 应该用 Tensorflow 怎么计算. 这个 `a_grad`
+是 `Critic` class 里面的:
+
+```python
+with tf.variable_scope('a_grad'):
+    self.a_grads = tf.gradients(self.q, A)[0]   # dQ/da
+```
+
+
+而在 `Critic` 中, 我们用的东西简单一点.
 
 <img class="course-image" src="/static/results/rl/6-2-5.png">
 
@@ -117,19 +126,12 @@ with tf.variable_scope('A_train'):
 ```python
 # 计算 target Q
 with tf.variable_scope('target_q'):
-    self.target_q = R + self.gamma * self.q_
+    self.target_q = R + self.gamma * self.q_    # self.q_ 根据 Actor 的 target_net 来的
 # 计算误差并反向传递误差
 with tf.variable_scope('TD_error'):
-    self.loss = tf.reduce_mean(tf.squared_difference(self.target_q, self.q))
+    self.loss = tf.reduce_mean(tf.squared_difference(self.target_q, self.q))  # self.q 又基于 Actor 的 target_net
 with tf.variable_scope('C_train'):
     self.train_op = tf.train.AdamOptimizer(self.lr).minimize(self.loss)
-```
-
-下面这一段就是在 `Critic` 中计算要传递给 `Actor` 的 `a_grad` 了.
-
-```python
-with tf.variable_scope('a_grad'):
-    self.a_grads = tf.gradients(self.q, A)[0]   # dQ/da
 ```
 
 最后我们建立并把 `Actor` 和 `Critic` 融合在一起的时候是这样写的.
