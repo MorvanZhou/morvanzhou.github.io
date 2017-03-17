@@ -11,6 +11,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
   * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
   * [Q-learning 简介视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
+  * [Sarsa Python 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/3-1-tabular-sarsa1.md %})
 
 
 

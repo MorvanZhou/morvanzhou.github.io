@@ -11,6 +11,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
   * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
   * [Sarsa 简介视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
+  * [Sarsa(lambda) Python 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/3-3-tabular-sarsa-lambda.md %})
 
 
 今天我们会来说说强化学习中基于 Sarsa 的一种提速方法, 叫做 sarsa-lambda.

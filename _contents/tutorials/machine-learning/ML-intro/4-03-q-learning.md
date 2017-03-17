@@ -10,6 +10,7 @@ thumbnail: /static/thumbnail/ML-intro/what_is_QLearning.png
 * 学习资料: 
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
   * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
+  * [Q learning Python 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/2-2-tabular-q1.md %})
 
 
 今天我们会来说说强化学习中一个很有名的算法, Q-learning
