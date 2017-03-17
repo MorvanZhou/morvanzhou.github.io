@@ -1,7 +1,7 @@
 ---
 youku_id: XMjI1OTczMjQ3Mg
 youtube_id: PANBb46qiYI
-title: 什么是 Sarsa(lambda)
+title: Sarsa(lambda)
 description:  
 publish-date: 2017-01-13
 chapter: 4

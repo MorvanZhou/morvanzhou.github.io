@@ -1,7 +1,7 @@
 ---
 youku_id: XMTk2NTQxMzQxNg
 youtube_id: HTZ5xn12AL4
-title: 什么是 Q Leaning
+title: Q Leaning
 description:  
 publish-date: 2017-01-09
 chapter: 4
