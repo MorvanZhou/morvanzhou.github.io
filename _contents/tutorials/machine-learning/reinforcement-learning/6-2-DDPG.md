@@ -199,7 +199,7 @@ for i in range(MAX_EPISODES):
 
         s = s_
 
-        if j == MAX_EP_STEPS:
+        if j == MAX_EP_STEPS-1:
             break
 ```
 

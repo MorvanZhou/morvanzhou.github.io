@@ -62,6 +62,7 @@ RENDER = False  # 在屏幕上显示模拟窗口会拖慢运行速度, 我们等
 DISPLAY_REWARD_THRESHOLD = 400  # 当 回合总 reward 大于 400 时显示模拟窗口
 
 env = gym.make('CartPole-v0')   # CartPole 这个模拟
+env = env.unwrapped     # 取消限制
 env.seed(1)     # 普通的 Policy gradient 方法, 使得回合的 variance 比较大, 所以我们选了一个好点的随机种子
 
 print(env.action_space)     # 显示可用 action
