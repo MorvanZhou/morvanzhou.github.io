@@ -27,7 +27,7 @@ print(d1['apple'])  # 1
 print(a_list[0])    # 1
 
 del d1['pear']
-print(d1)   # {'orange': 3, 'pear': 2, 'apple': 1}
+print(d1)   # {'orange': 3, 'apple': 1}
 
 d1['b'] = 20
 print(d1)   # {'orange': 3, 'b': 20, 'pear': 2, 'apple': 1}
