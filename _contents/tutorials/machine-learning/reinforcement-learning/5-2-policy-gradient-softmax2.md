@@ -1,8 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMjY1MzU2NTc2NA
+youtube_id: DwrGHh9Nkvg
 chapter: 5
 title: Policy Gradients 思维决策 (Tensorflow)
+thumbnail: "/static/thumbnail/rl/14 PG2.jpg"
+publish-date: 2017-03-21
 ---
 
 * 学习资料:
