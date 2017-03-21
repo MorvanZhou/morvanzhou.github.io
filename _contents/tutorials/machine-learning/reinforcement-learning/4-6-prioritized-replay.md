@@ -196,7 +196,8 @@ class DQNPrioritizedReplay:
     def store_transition(self, s, a, r, s_):
         if self.prioritized:    # prioritized replay
             transition = np.hstack((s, [a, r], s_))
-            self.memory.store(1, transition)    # 新记忆优先度也高
+            max_p = np.max(self.memory.tree.tree[-self.memory.tree.capacity:])
+            self.memory.store(max_p, transition)    # 新记忆优先度也高
         else:       # random replay
             if not hasattr(self, 'memory_counter'):
                 self.memory_counter = 0
