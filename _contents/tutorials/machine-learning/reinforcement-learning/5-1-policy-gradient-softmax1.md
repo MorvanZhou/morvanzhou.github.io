@@ -1,8 +1,10 @@
 ---
-youku_id: 
-youtube_id: 
+youku_id: XMjY1MzQ0MDI4NA
+youtube_id: A54GU_WqLmQ
 chapter: 5
 title: Policy Gradients 算法更新 (Tensorflow)
+thumbnail: "/static/thumbnail/rl/13 PG1.jpg"
+publish-date: 2017-03-21
 ---
 
 * 学习资料:
