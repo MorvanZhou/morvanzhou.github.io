@@ -246,8 +246,7 @@ class DQNPrioritizedReplay:
 <img class="course-image" src="/static/results/rl/4-6-4.png">
 
 运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/run_MountainCar.py),
-我们就不难发现, 虽然开始的时候, Natural DQN 要比 DQN with Prioritized replay 还要先拿到一个 `r=+10` 样本,
-但是它并没有很好地利用这个 `r=+10` 样本, 导致花了很长时间才逐渐开始学习. 而 DQN with Prioritized replay 不幸运,
-没能一开始很快拿到 `r=+10` 样本, 但是它高效的样本学习法, 弥补了这个不幸运, 它每个 episode 很快就能结束, 很快就到达了小旗子.
-并比 natural DQN 节约了很多 training 的时间, 学习得更快.
+我们就不难发现, 我们都从两种方法最初拿到第一个 `R=+10` 奖励的时候算起, 看看经历过一次 `R=+10` 后, 他们有没有好好利用这次的奖励,
+可以看出, 有 Prioritized replay 的可以高效的利用这些不常拿到的奖励, 并好好学习他们. 所以 Prioritized replay 会更快结束每个 episode, 很快就到达了小旗子.
+
 
