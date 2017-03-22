@@ -44,7 +44,7 @@ from sklearn import preprocessing
 import numpy as np
 
 # 将资料分割成train与test的模块
-from sklearn.cross_validation import train_test_split 
+frfrom sklearn.model_selection import train_test_split
 
 # 生成适合做classification资料的模块
 from sklearn.datasets.samples_generator import make_classification 

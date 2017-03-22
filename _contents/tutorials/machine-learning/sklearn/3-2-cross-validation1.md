@@ -25,7 +25,7 @@ Sklearn 中的 Cross Validation (交叉验证)对于我们选择正确的 Model 
 
 ```python
 from sklearn.datasets import load_iris # iris数据集
-from sklearn.cross_validation import train_test_split # 分割数据模块
+from sklearn.model_selection import train_test_split # 分割数据模块
 from sklearn.neighbors import KNeighborsClassifier # K最近邻(kNN，k-NearestNeighbor)分类算法
 
 #加载iris数据集
