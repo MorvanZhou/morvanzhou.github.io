@@ -10,7 +10,7 @@ thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/5.1_Double_DQN)
   * [什么是 Double DQN 短视频(即将制作)](#)
-  * [本教程基于的 Paper](https://arxiv.org/abs/1509.06461)
+  * [Double DQN Paper](https://arxiv.org/abs/1509.06461)
 
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
