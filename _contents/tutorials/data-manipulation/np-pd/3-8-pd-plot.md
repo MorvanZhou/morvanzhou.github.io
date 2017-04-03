@@ -35,6 +35,8 @@ data.cumsum()
 
 # pandas 数据可以直接观看其可视化形式
 data.plot()
+
+plt.show()
 ```
 
 就这么简单，熟悉 matplotlib 的朋友知道如果需要`plot`一个数据，我们可以使用 `plt.plot(x=, y=)`，把`x`,`y`的数据作为参数存进去，但是`data`本来就是一个数据，所以我们可以直接`plot`。
