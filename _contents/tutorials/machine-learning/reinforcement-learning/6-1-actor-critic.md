@@ -1,9 +1,10 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjY4NTE1MDY3Mg
+youtube_id: tvMu5oPYpsw
 chapter: 6
 title: Actor Critic (Tensorflow)
 thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
+publish-date: 2017-04-03
 ---
 
 * 学习资料:
