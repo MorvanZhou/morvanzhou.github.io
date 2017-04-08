@@ -8,7 +8,7 @@ thumbnail: "/static/thumbnail/rl/16 DDPG.jpg"
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
-  * [什么是 Deep Deterministic Policy Gradient 短视频(即将制作)](#)
+  * [什么是 Deep Deterministic Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-09-DDPG.md %})
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 基于的 Paper [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
   * [我的 DQN 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %})
