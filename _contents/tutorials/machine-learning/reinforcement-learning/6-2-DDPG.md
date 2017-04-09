@@ -114,7 +114,7 @@ with tf.variable_scope('policy_grads'):
         grad_ys=a_grads # 这是从 Critic 来的 dQ/da
     )
 with tf.variable_scope('A_train'):
-    opt = tf.train.AdamOptimizer(-self.lr)  # 负的学习率为了使我们计算的梯度往上升, 和 Policy Gradient 中的方式一个性质
+    opt = tf.train.AdamOptimizer(-self.lr/BATCH_SIZE)  # 负的学习率为了使我们计算的梯度往上升, 和 Policy Gradient 中的方式一个性质
     self.train_op = opt.apply_gradients(zip(self.policy_grads, self.e_params)) # 对 eval_net 的参数更新
 ```
 
