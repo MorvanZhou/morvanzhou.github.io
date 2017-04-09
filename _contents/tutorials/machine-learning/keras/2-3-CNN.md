@@ -82,7 +82,7 @@ model.compile(optimizer=adam,
 开始训练模型
 
 ```python
-model.fit(X_train, y_train, nb_epoch=1, batch_size=32,)             
+model.fit(X_train, y_train, epoch=1, batch_size=32,)
 ```
 
 输出`test`的`loss`和`accuracy`结果
