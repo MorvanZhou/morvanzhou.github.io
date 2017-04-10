@@ -52,7 +52,7 @@ N_STATES = 6   # 1维世界的宽度
 ACTIONS = ['left', 'right']     # 探索者的可用动作
 EPSILON = 0.9   # 贪婪度 greedy
 ALPHA = 0.1     # 学习率
-LAMBDA = 0.9    # 奖励递减值
+GAMMA = 0.9    # 奖励递减值
 MAX_EPISODES = 13   # 最大回合数
 FRESH_TIME = 0.3    # 移动间隔时间
 ```
@@ -165,7 +165,7 @@ def rl():
             S_, R = get_env_feedback(S, A)  # 实施行为并得到环境的反馈
             q_predict = q_table.ix[S, A]    # 估算的(状态-行为)值
             if S_ != 'terminal':
-                q_target = R + LAMBDA * q_table.iloc[S_, :].max()   #  实际的(状态-行为)值 (回合没结束)
+                q_target = R + GAMMA * q_table.iloc[S_, :].max()   #  实际的(状态-行为)值 (回合没结束)
             else:
                 q_target = R     #  实际的(状态-行为)值 (回合结束)
                 is_terminated = True    # terminate this episode
