@@ -82,7 +82,7 @@ def portrait(name, **kw):
 ```
 
 定义了一个函数，传入一个参数 `name`, 和关键字参数 `kw`，使用了 `**` 修饰。表明该参数是关键字参数，通常来讲关键字参数是放在函数参数列表的最后。如果调用参数
-`portrait('Mike', age=24, country='China', education='bachelor'`
+`portrait('Mike', age=24, country='China', education='bachelor')`
 输出:
 
 ```
