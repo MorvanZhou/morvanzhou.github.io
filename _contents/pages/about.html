@@ -2,17 +2,17 @@
 layout: default
 permalink: /about/
 items:
-  - [number, Email (推荐), "morvanzhou@hotmail.com"]
+  - [text, Email (推荐), "morvanzhou@hotmail.com"]
   - [link, Youtube 频道, "https://www.youtube.com/user/MorvanZhou"]
   - [link, 优酷 频道, "http://i.youku.com/pythontutorial"]
   - [link, 网易云课堂, "http://study.163.com/u/2635988091/"]
   - [link, Github (代码) 地址, "https://github.com/MorvanZhou"]
   - [link, 微博, "http://www.weibo.com/pythontutorial/"]
   - [link, 知乎, "https://zhuanlan.zhihu.com/morvan"]
-  - [number, 机器学习 QQ 群, 531670665]
-  - [number, 强化学习 QQ 群, 294229279]
-  - [number, CNN QQ群, 483723575]
-  - [number, RNN QQ群, 568841300]
+  - [text, 机器学习 QQ 群, 531670665]
+  - [text, 强化学习 QQ 群, 294229279]
+  - [text, CNN QQ群, 483723575]
+  - [text, RNN QQ群, 568841300]
 ---
 
 
@@ -50,10 +50,10 @@ items:
 			    <a href="{{ item[2] }}" target="_blank">
 				    {{ item[2] }}
 			    </a>
-				{% elsif item[0] == "number" %}
-				  <a style="text-decoration:none; color:#00b359;" href="" >
+				{% elsif item[0] == "text" %}
+				  <span style="text-decoration:none; color:#00b359;" >
 				    {{ item[2] }}
-			    </a>
+			    </span>
 				{% endif %}
 			</div>
 		{% endfor %}
