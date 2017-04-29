@@ -86,6 +86,14 @@ defaults:
       category: keras
       tags: [keras, 神经网络, tensorflow, theano]
 
+  - scope:
+      path: "_contents/tutorials/machine-learning/torch"
+    values:
+      layout: tutorial-post
+      tut-title: PyTorch
+      tut-permalink: /tutorials/machine-learning/torch/
+      category: keras
+      tags: [Torch, pytorch, 神经网络]
 
   - scope:
       path: "_contents/tutorials/machine-learning/sklearn"

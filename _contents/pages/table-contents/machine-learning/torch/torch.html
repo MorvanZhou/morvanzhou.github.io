@@ -1,0 +1,27 @@
+---
+layout: tutorials
+permalink: /tutorials/machine-learning/torch/
+tut-title: PyTorch
+tut-permalink: /tutorials/machine-learning/
+tut-category-name: torch
+tut-course-cover: /static/img/course_cover/torch.jpg
+tut-chapters:
+  - PyTorch 简介
+  - PyTorch 神经网络基础
+  - 建造第一个神经网络
+  - 高级神经网络结构
+  - 高阶内容
+---
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+
+<!-- include for this page contents -->
+
+{% include tutorial-contents.html
+tut-course-cover=page.tut-course-cover
+tut-course-cover-alt=page.page.tut-category-name
+tut-chapters=page.tut-chapters
+tut-category=tut-category
+%}
+
