@@ -19,7 +19,7 @@ chapter: 1
 
 <h4 class="tut-h4-pad" id="intro">为什么用 PyTorch</h4>
 
-PyTorch 是 [Torch](http://torch.ch/) 在 Python 上的衍生. 因为 [Torch](http://torch.ch/) 是一个使用 [Lua](https://www.lua.org/)
+[PyTorch](http://pytorch.org/) 是 [Torch](http://torch.ch/) 在 Python 上的衍生. 因为 [Torch](http://torch.ch/) 是一个使用 [Lua](https://www.lua.org/)
 语言的神经网络库, Torch 很好用, 但是 Lua 又不是特别流行, 所有开发团队将 Lua 的 Torch 移植到了更流行的语言 Python 上.
 是的 PyTorch 一出生就引来了剧烈的反响. 为什么呢?
 
@@ -37,7 +37,8 @@ PyTorch 是 [Torch](http://torch.ch/) 在 Python 上的衍生. 因为 [Torch](ht
 而我认为, 各家有各家的优势和劣势, 所以我们要以中立的态度. 两者都是大公司,
 Tensorflow 自己说自己在分布式训练上下了很大的功夫, 那我就默认 Tensorflow 在这一点上要超出 PyTorch,
 但是 Tensorflow 的静态计算图使得他在 RNN 上有一点点被动 (虽然它用其他途径解决了), 不过用 PyTorch 的时候, 你会对这种动态的 RNN 有更好的理解.
-Tensorflow 的高度工业化, 它的底层代码... 你是看不懂的.
+
+而且 Tensorflow 的高度工业化, 它的底层代码... 你是看不懂的.
 PyTorch 好那么一点点, 如果你深入 API, 你至少能比看 Tensorflow 多看懂一点点 PyTorch 的底层在干嘛.
 
 
