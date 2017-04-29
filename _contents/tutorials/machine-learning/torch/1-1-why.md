@@ -3,6 +3,8 @@ youku_id:
 youtube_id:
 title: Why?
 description:
+publish-date:
+thumbnail: "/static/thumbnail/torch/1 why.jpg"
 chapter: 1
 ---
 
