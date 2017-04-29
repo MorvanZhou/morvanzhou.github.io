@@ -15,7 +15,7 @@ publish-date: 2017-01-09
 接着上节内容, 我们来实现 `RL_brain` 的 `QLearningTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 
 
-本节内容包括:
+#### 本节内容包括:
 
 * [代码主结构](#main-structure)
 * [预设值](#setting)

@@ -33,7 +33,7 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 </video>
 </div>
 
-本节内容包括:
+#### 本节内容包括:
 
 * [算法](#algorithm)
 * [算法代码形式](#coding)

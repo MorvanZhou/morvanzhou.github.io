@@ -31,7 +31,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 </video>
 </div>
 
-本节内容包括:
+#### 本节内容包括:
 
 * [Prioritized replay 算法](#algorithm)
 * [SumTree 有效抽样](#sumtree)

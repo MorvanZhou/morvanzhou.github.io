@@ -32,7 +32,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 </div>
 
 
-本节内容包括:
+#### 本节内容包括:
 
 * [算法](#algorithm)
 * [主结构](#main-structure)

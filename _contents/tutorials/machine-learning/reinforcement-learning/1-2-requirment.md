@@ -12,7 +12,7 @@ thumbnail: /static/thumbnail/rl/2 requirement.jpg
   * [我的 numpy pandas 快速入门教程](/tutorials/data-manipulation/np-pd/)
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
 
-本节内容包括:
+#### 本节内容包括:
 
 * [教程必备模块](#modules)
 * [快速了解强化学习](#quick-learn)

@@ -31,7 +31,7 @@ Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q �
 </div>
 
 
-本节内容包括:
+#### 本节内容包括:
 
 * [Dueling 算法](#algorithm)
 * [更新方法](#learn)

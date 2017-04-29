@@ -10,7 +10,7 @@ chapter: 1
 * 学习资料:
   * [PyTorch 官网](http://pytorch.org/)
 
-本节内容包括:
+#### 本节内容包括:
 
 * [支持的系统](#OS)
 * [安装](#install)

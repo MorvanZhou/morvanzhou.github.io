@@ -37,7 +37,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 </video>
 </div>
 
-本节内容包括:
+#### 本节内容包括:
 
 * [Double DQN 算法](#algorithm)
 * [更新方法](#learn)

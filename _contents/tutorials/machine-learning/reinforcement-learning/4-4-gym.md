@@ -21,7 +21,7 @@ thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 这里有我制作的很好的 [tkinter 入门教程]({% link _contents/pages/table-contents/python-basic/tkinter/tkinter.html %}), 之前的 maze 环境也是用 tkinter
 编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/maze_env.py)编写就 ok 啦.
 
-本节内容包括:
+#### 本节内容包括:
 
 * [安装 gym](#install)
 * [CartPole 例子](#cartpole)

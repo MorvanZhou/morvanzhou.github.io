@@ -10,7 +10,7 @@ thumbnail: /static/thumbnail/rl/1 why.jpg
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
   * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
 
-本节内容包括:
+#### 本节内容包括:
 
 * [强化学习介绍](#intro)
 * [模拟程序提前看](#sim)
