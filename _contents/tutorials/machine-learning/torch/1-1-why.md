@@ -29,6 +29,8 @@ chapter: 1
 
 可见, 著名的 Facebook, twitter 等都在使用它, 这就说明 PyTorch 的确是好用的, 而且是值得推广.
 
+而且如果你知道 [Numpy](http://www.numpy.org/), PyTorch 说他就是在神经网络领域可以用来替换 numpy 的模块.
+
 
 
 <h4 class="tut-h4-pad" id="torch-tf">PyTorch 和 Tensorflow</h4>
