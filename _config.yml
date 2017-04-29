@@ -92,7 +92,7 @@ defaults:
       layout: tutorial-post
       tut-title: PyTorch
       tut-permalink: /tutorials/machine-learning/torch/
-      category: keras
+      category: torch
       tags: [Torch, pytorch, 神经网络]
 
   - scope:
