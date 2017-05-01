@@ -14,9 +14,9 @@ chapter: 4
   * [PyTorch 官网](http://pytorch.org/)
 
 循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
-[我制作的 循环神经网络 RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %}) 和
-[我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %}) 能让你生动理解 RNN.
-接着我们就一步一步做一个分析手写数字的 NN 吧.
+[RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %}) 和
+[LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %}) 能让你生动理解 RNN.
+接着我们就一步一步做一个分析手写数字的 RNN 吧.
 
 
 #### 本节内容包括:
@@ -86,9 +86,7 @@ test_y = test_data.test_labels[:2000]
 
 <h4 class="tut-h4-pad" id="RNN">RNN模型</h4>
 
-和以前一样, 我们用一个 class 来建立 NN 模型. 这个 RNN 整体流程是 卷积(`Conv2d`) ->
- 激励函数(`ReLU`) -> 池化, 向下采样 (`MaxPooling`) -> 再来一遍 -> 展平多维的卷积成的特征图 ->
-  接入全连接层 (`Linear`) -> 输出
+和以前一样, 我们用一个 class 来建立 RNN 模型. 这个 RNN 整体流程是 `input` -> `LSTM` -> `LSTM` -> ... -> `LSTM` ->  `last output` -> `Linear`.
 
 ```python
 class RNN(nn.Module):
@@ -129,7 +127,7 @@ RNN (
 <h4 class="tut-h4-pad" id="train">训练</h4>
 
 ```python
-optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all cnn parameters
+optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all parameters
 loss_func = nn.CrossEntropyLoss()   # the target label is not one-hotted
 
 # training and testing
@@ -173,5 +171,3 @@ print(test_y[:10], 'real number')
 ```
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/10_RNN_classifier.py) 中的每一步的意义啦.
-
-
