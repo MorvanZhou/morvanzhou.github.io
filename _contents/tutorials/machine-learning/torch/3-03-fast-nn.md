@@ -1,137 +1,78 @@
 ---
 youku_id:
 youtube_id:
-title: 保存提取
+title: 快速搭建法
 publish-date:
-thumbnail: "/static/thumbnail/torch/3-4 save reload.jpg"
+thumbnail: "/static/thumbnail/torch/3-3 nn fast.jpg"
 chapter: 3
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/07_save_reload.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/06_build_nn_quickly.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
-我们用回归的神经网络举例实现保存提取.
+Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
 
 
 #### 本节内容包括:
 
-* [保存](#save)
-* [提取网络](#load-nn)
-* [只提取网络参数](#load-param)
-* [显示结果](#results)
+* [快速搭建](#fast)
 
 
-<h4 class="tut-h4-pad" id="save">保存</h4>
+<h4 class="tut-h4-pad" id="fast"> 快速搭建</h4>
 
-我们快速地建造数据, 搭建网络:
+我们先看看之前写神经网络时用到的步骤. 我们用 `net1` 代表这种方式搭建的神经网络.
 
 ```python
-torch.manual_seed(1)    # reproducible
+class Net(torch.nn.Module):
+    def __init__(self, n_feature, n_hidden, n_output):
+        super(Net, self).__init__()
+        self.hidden = torch.nn.Linear(n_feature, n_hidden)
+        self.predict = torch.nn.Linear(n_hidden, n_output)
 
-# 假数据
-x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
-y = x.pow(2) + 0.2*torch.rand(x.size())  # noisy y data (tensor), shape=(100, 1)
-x, y = Variable(x, requires_grad=False), Variable(y, requires_grad=False)
+    def forward(self, x):
+        x = F.relu(self.hidden(x))
+        x = self.predict(x)
+        return x
 
-
-def save():
-    # 建网络
-    net1 = torch.nn.Sequential(
-        torch.nn.Linear(1, 10),
-        torch.nn.ReLU(),
-        torch.nn.Linear(10, 1)
-    )
-    optimizer = torch.optim.SGD(net1.parameters(), lr=0.5)
-    loss_func = torch.nn.MSELoss()
-
-    # 训练
-    for t in range(100):
-        prediction = net1(x)
-        loss = loss_func(prediction, y)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-
-    # 显示结果 (之后再显示)
-    plt.figure(1, figsize=(10, 3))
-    plt.subplot(131)
-    plt.title('Net1')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
+net1 = Net(1, 10, 1)   # 这是我们用这种方式搭建的 net1
 ```
 
-接下来我们有两种途径来保存
+我们用 class 继承了一个 torch 中的神经网络结构, 然后对其进行了修改, 不过还有更快的一招, 用一句话就概括了上面所有的内容!
 
 ```python
-torch.save(net1, 'net.pkl')  # 保存整个网络
-torch.save(net1.state_dict(), 'net_params.pkl')   # 只保存网络中的参数 (速度快, 占内存少)
+net2 = torch.nn.Sequential(
+    torch.nn.Linear(1, 10),
+    torch.nn.ReLU(),
+    torch.nn.Linear(10, 1)
+)
 ```
 
-<h4 class="tut-h4-pad" id="load-nn">提取网络</h4>
-
-这种方式将会提取整个神经网络, 网络大的时候可能会比较慢.
+我们再对比一下两者的结构:
 
 ```python
-def restore_net():
-    # restore entire net1 to net2
-    net2 = torch.load('net.pkl')
-    prediction = net2(x)
-
-    # 显示结果 (之后再显示)
-    plt.subplot(132)
-    plt.title('Net2')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
+print(net1)
+"""
+Net (
+  (hidden): Linear (1 -> 10)
+  (predict): Linear (10 -> 1)
+)
+"""
+print(net2)
+"""
+Sequential (
+  (0): Linear (1 -> 10)
+  (1): ReLU ()
+  (2): Linear (10 -> 1)
+)
+"""
 ```
 
-<h4 class="tut-h4-pad" id="load-param">只提取网络参数</h4>
+我们会发现 `net2` 多显示了一些内容, 这是为什么呢? 原来他把激励函数也一同纳入进去了, 但是 `net1` 中, 激励函数实际上是在 `forward()` 功能中才被调用的.
+这也就说明了, 相比 `net2`, `net1` 的好处就是, 你可以根据你的个人需要更加个性化你自己的前向传播过程, 比如(RNN).
+不过如果你不需要七七八八的过程, 相信 `net2` 这种形式更适合你.
 
-这种方式将会提取所有的参数, 然后再放到你的新建网络中.
-
-```python
-def restore_params():
-    # 新建 net3
-    net3 = torch.nn.Sequential(
-        torch.nn.Linear(1, 10),
-        torch.nn.ReLU(),
-        torch.nn.Linear(10, 1)
-    )
-
-    # 将保存的参数复制到 net3
-    net3.load_state_dict(torch.load('net_params.pkl'))
-    prediction = net3(x)
-
-    # 显示结果 (之后再显示)
-    plt.subplot(133)
-    plt.title('Net3')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
-    plt.show()
-```
-
-
-<h4 class="tut-h4-pad" id="results">显示结果</h4>
-
-调用上面建立的几个功能, 然后出图.
-
-```python
-# 保存 net1 (1. 整个网络, 2. 只有参数)
-save()
-
-# 提取整个网络
-restore_net()
-
-# 提取网络参数, 复制到新网络
-restore_params()
-```
-
-<img class="course-image" src="/static/results/torch/1-1-2.gif">
-
-这样我们就能看出三个网络完全一模一样啦.
-
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/07_save_reload.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/06_build_nn_quickly.py) 中的每一步的意义啦.
 
 
