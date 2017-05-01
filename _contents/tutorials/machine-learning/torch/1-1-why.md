@@ -15,6 +15,7 @@ chapter: 1
 #### 本节内容包括:
 
 * [为什么用 PyTorch](#intro)
+* [神经网络在做什么](#NN)
 * [PyTorch 和 Tensorflow](#torch-tf)
 
 <h4 class="tut-h4-pad" id="intro">为什么用 PyTorch</h4>
@@ -31,6 +32,16 @@ chapter: 1
 
 而且如果你知道 [Numpy](http://www.numpy.org/), PyTorch 说他就是在神经网络领域可以用来替换 numpy 的模块.
 
+
+<h4 class="tut-h4-pad" id="NN">神经网络在做什么</h4>
+
+神经网络在学习区分数据(分类):
+
+<img class="course-image" src="/static/results/torch/1-1-2.gif">
+
+神经网络在学习拟合线条(回归):
+
+<img class="course-image" src="/static/results/torch/1-1-3.gif">
 
 
 <h4 class="tut-h4-pad" id="torch-tf">PyTorch 和 Tensorflow</h4>
