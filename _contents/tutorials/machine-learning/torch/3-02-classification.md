@@ -14,7 +14,7 @@ chapter: 3
 
 这次我们也是用最简单的途径来看看神经网络是怎么进行事物的分类.
 
-<img class="course-image" src="static/results/torch/1-1-3.gif">
+<img class="course-image" src="/static/results/torch/1-1-3.gif">
 
 
 #### 本节内容包括:
@@ -142,7 +142,7 @@ plt.ioff()  # 停止画图
 plt.show()
 ```
 
-<img class="course-image" src="static/results/torch/1-1-3.gif">
+<img class="course-image" src="/static/results/torch/1-1-3.gif">
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/05_classification.py) 中的每一步的意义啦.
 
