@@ -35,11 +35,11 @@ chapter: 1
 
 <h4 class="tut-h4-pad" id="NN">神经网络在做什么</h4>
 
-神经网络在学习区分数据(分类):
+神经网络在学习拟合线条(回归):
 
 <img class="course-image" src="/static/results/torch/1-1-2.gif">
 
-神经网络在学习拟合线条(回归):
+神经网络在学习区分数据(分类):
 
 <img class="course-image" src="/static/results/torch/1-1-3.gif">
 

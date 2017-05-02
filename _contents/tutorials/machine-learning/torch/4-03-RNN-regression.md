@@ -112,7 +112,7 @@ RNN (
 
 ```python
 optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all rnn parameters
-loss_func = nn.MSELoss()   # the target label is not one-hotted
+loss_func = nn.MSELoss()
 
 h_state = None   # 要使用初始 hidden state, 可以设成 None
 
