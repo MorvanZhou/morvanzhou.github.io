@@ -142,7 +142,7 @@ plt.ioff()  # 停止画图
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/torch/1-1-3.gif">
+<img class="course-image" src="/static/results/torch/3-2-1.png">
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/302_classification.py) 中的每一步的意义啦.
 

@@ -124,7 +124,7 @@ for t in range(100):
         plt.pause(0.1)
 ```
 
-<img class="course-image" src="/static/results/torch/1-1-2.gif">
+<img class="course-image" src="/static/results/torch/3-1-1.png">
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/301_regression.py) 中的每一步的意义啦.
 

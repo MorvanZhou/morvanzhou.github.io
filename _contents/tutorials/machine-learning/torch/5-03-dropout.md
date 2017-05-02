@@ -30,7 +30,7 @@ chapter: 5
 
 <h4 class="tut-h4-pad" id="data">做点数据</h4>
 
-自己做一些伪数据, 用来模拟真实情况.
+自己做一些伪数据, 用来模拟真实情况. 数据少, 才能凸显过拟合问题, 所以我们就做10个数据点.
 
 <img class="course-image" src="/static/results/torch/5-3-2.png">
 
@@ -154,6 +154,8 @@ for t in range(500):
         net_overfitting.train()
         net_dropped.train()
 ```
+
+<img class="course-image" src="/static/results/torch/5-3-3.png">
 
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/503_dropout.py) 中的每一步的意义啦.

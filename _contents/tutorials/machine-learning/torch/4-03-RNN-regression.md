@@ -149,6 +149,8 @@ plt.ioff()
 plt.show()
 ```
 
+<img class="course-image" src="/static/results/torch/4-3-3.png">
+
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/403_RNN_regressor.py) 中的每一步的意义啦.
 
