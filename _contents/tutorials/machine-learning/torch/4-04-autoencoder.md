@@ -110,7 +110,6 @@ class AutoEncoder(nn.Module):
         decoded = self.decoder(encoded)
         return encoded, decoded
 
-
 autoencoder = AutoEncoder()
 ```
 
@@ -195,7 +194,7 @@ ax.set_zlim(Z.min(), Z.max())
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/torch/4-4-4.png">
+<img class="course-image" src="/static/results/torch/4-4-5.png">
 
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/404_autoencoder.py) 中的每一步的意义啦.
