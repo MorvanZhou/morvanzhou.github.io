@@ -8,7 +8,7 @@ chapter: 4
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/11_RNN_regressor.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/403_RNN_regressor.py)
   * [我制作的 循环神经网络 RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/)
@@ -150,6 +150,6 @@ plt.show()
 ```
 
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/11_RNN_regressor.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/403_RNN_regressor.py) 中的每一步的意义啦.
 
 

@@ -8,7 +8,7 @@ chapter: 2
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/01_torch_numpy.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/201_torch_numpy.py)
   * [PyTorch 官网](http://pytorch.org/)
   * [PyTorch 中的常用数学计算](http://pytorch.org/docs/torch.html#math-operations)
 
