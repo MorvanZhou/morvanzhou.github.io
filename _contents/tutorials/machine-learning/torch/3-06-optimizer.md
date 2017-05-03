@@ -14,7 +14,7 @@ chapter: 3
   * [PyTorch 官网](http://pytorch.org/)
 
 这节内容主要是用 Torch 实践 [这个 优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
-中起到的几种优化器, 这几种优化器具体的优势不会再这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.
+中起到的几种优化器, 这几种优化器具体的优势不会在这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.
 
 下图就是这节内容对比各种优化器的效果:
 
@@ -138,6 +138,11 @@ plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/3-6-2.png">
+
+`SGD` 是最普通的优化器, 也可以说没有加速效果, 而 `Momentum` 是 `SGD` 的改良版, 它加入了动量原则.
+后面的 `RMSprop` 又是 `Momentum` 的升级版. 而 `Adam` 又是 `RMSprop` 的升级版.
+不过从这个结果中我们看到, `Adam` 的效果似乎比 `RMSprop` 要差一点. 所以说并不是越先进的优化器, 结果越佳.
+我们在自己的试验中可以尝试不同的优化器, 找到那个最适合你数据/网络的优化器.
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/306_optimizer.py) 中的每一步的意义啦.
 
