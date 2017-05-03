@@ -1,0 +1,144 @@
+---
+youku_id:
+youtube_id:
+title: Optimizer 优化器
+publish-date:
+thumbnail: "/static/thumbnail/torch/3-6 optimizer.jpg"
+chapter: 3
+---
+
+* 学习资料:
+  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/306_optimizer.py)
+  * [我制作的 训练优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
+  * [PyTorch 优化器网页](http://pytorch.org/docs/optim.html)
+  * [PyTorch 官网](http://pytorch.org/)
+
+这节内容主要是用 Torch 实践 [这个 优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
+中起到的几种优化器, 这几种优化器具体的优势不会再这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.
+
+下图就是这节内容对比各种优化器的效果:
+
+<img class="course-image" src="/static/results/torch/3-6-2.png">
+
+
+#### 本节内容包括:
+
+* [伪数据](#data)
+* [每个优化器优化一个神经网络](#nn)
+* [优化器 Optimizer](#optimizer)
+* [训练/出图](#train)
+
+
+
+
+<h4 class="tut-h4-pad" id="data">伪数据</h4>
+
+为了对比各种优化器的效果, 我们需要有一些数据, 今天我们还是自己编一些伪数据, 这批数据是这样的:
+
+<img class="course-image" src="/static/results/torch/3-6-1.png">
+
+
+```python
+import torch
+import torch.utils.data as Data
+import torch.nn.functional as F
+from torch.autograd import Variable
+import matplotlib.pyplot as plt
+
+torch.manual_seed(1)    # reproducible
+
+LR = 0.01
+BATCH_SIZE = 32
+EPOCH = 12
+
+# fake dataset
+x = torch.unsqueeze(torch.linspace(-1, 1, 1000), dim=1)
+y = x.pow(2) + 0.1*torch.normal(torch.zeros(*x.size()))
+
+# plot dataset
+plt.scatter(x.numpy(), y.numpy())
+plt.show()
+
+# 使用上节内容提到的 data loader
+torch_dataset = Data.TensorDataset(data_tensor=x, target_tensor=y)
+loader = Data.DataLoader(dataset=torch_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2,)
+```
+
+<h4 class="tut-h4-pad" id="nn">每个优化器优化一个神经网络</h4>
+
+为了对比每一种优化器, 我们给他们各自创建一个神经网络, 但这个神经网络都来自同一个 `Net` 形式.
+
+```python
+# 默认的 network 形式
+class Net(torch.nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.hidden = torch.nn.Linear(1, 20)   # hidden layer
+        self.predict = torch.nn.Linear(20, 1)   # output layer
+
+    def forward(self, x):
+        x = F.relu(self.hidden(x))      # activation function for hidden layer
+        x = self.predict(x)             # linear output
+        return x
+
+# 为每个优化器创建一个 net
+net_SGD         = Net()
+net_Momentum    = Net()
+net_RMSprop     = Net()
+net_Adam        = Net()
+nets = [net_SGD, net_Momentum, net_RMSprop, net_Adam]
+```
+
+<h4 class="tut-h4-pad" id="optimizer">优化器 Optimizer</h4>
+
+接下来在创建不同的优化器, 用来训练不同的网络. 并创建一个 `loss_func` 用来计算误差.
+我们用几种常见的优化器, `SGD`, `Momentum`, `RMSprop`, `Adam`.
+
+```python
+# different optimizers
+opt_SGD         = torch.optim.SGD(net_SGD.parameters(), lr=LR)
+opt_Momentum    = torch.optim.SGD(net_Momentum.parameters(), lr=LR, momentum=0.8)
+opt_RMSprop     = torch.optim.RMSprop(net_RMSprop.parameters(), lr=LR, alpha=0.9)
+opt_Adam        = torch.optim.Adam(net_Adam.parameters(), lr=LR, betas=(0.9, 0.99))
+optimizers = [opt_SGD, opt_Momentum, opt_RMSprop, opt_Adam]
+
+loss_func = torch.nn.MSELoss()
+losses_his = [[], [], [], []]   # 记录 training 时不同神经网络的 loss
+```
+
+<h4 class="tut-h4-pad" id="train">训练/出图</h4>
+
+接下来训练和 loss 画图.
+
+```python
+for epoch in range(EPOCH):
+    print('Epoch: ', epoch)
+    for step, (batch_x, batch_y) in enumerate(loader):
+        b_x = Variable(batch_x)  # 务必要用 Variable 包一下
+        b_y = Variable(batch_y)
+
+        # 对每个优化器, 优化属于他的神经网络
+        for net, opt, l_his in zip(nets, optimizers, losses_his):
+            output = net(b_x)              # get output for every net
+            loss = loss_func(output, b_y)  # compute loss for every net
+            opt.zero_grad()                # clear gradients for next train
+            loss.backward()                # backpropagation, compute gradients
+            opt.step()                     # apply gradients
+            l_his.append(loss.data[0])     # loss recoder
+
+# 下面就是画出每个优化器的优化的网络 loss 变化情况
+labels = ['SGD', 'Momentum', 'RMSprop', 'Adam']
+for i, l_his in enumerate(losses_his):
+    plt.plot(l_his, label=labels[i])
+plt.legend(loc='best')
+plt.xlabel('Steps')
+plt.ylabel('Loss')
+plt.ylim((0, 0.2))
+plt.show()
+```
+
+<img class="course-image" src="/static/results/torch/3-6-2.png">
+
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/306_optimizer.py) 中的每一步的意义啦.
+
+
