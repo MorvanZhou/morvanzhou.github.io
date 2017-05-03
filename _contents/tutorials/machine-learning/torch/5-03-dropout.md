@@ -95,8 +95,7 @@ net_dropped = torch.nn.Sequential(
 ```python
 optimizer_ofit = torch.optim.Adam(net_overfitting.parameters(), lr=0.01)
 optimizer_drop = torch.optim.Adam(net_dropped.parameters(), lr=0.01)
-loss_func_ofit = torch.nn.MSELoss()
-loss_func_drop = torch.nn.MSELoss()
+loss_func = torch.nn.MSELoss()
 
 plt.ion()   # 画图时用到
 plt.show()
@@ -105,8 +104,8 @@ for t in range(500):
     pred_ofit = net_overfitting(x)
     pred_drop = net_dropped(x)
 
-    loss_ofit = loss_func_ofit(pred_ofit, y)
-    loss_drop = loss_func_drop(pred_drop, y)
+    loss_ofit = loss_func(pred_ofit, y)
+    loss_drop = loss_func(pred_drop, y)
 
     optimizer_ofit.zero_grad()
     optimizer_drop.zero_grad()
