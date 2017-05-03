@@ -25,9 +25,10 @@ chapter: 5
 
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.
 下图是一种我在[强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)中的 Tensorflow 计算图.
-也就是说, Tensorflow 是先搭建好这样一个计算系统, 一旦搭建好了, 就不能改动了, 所有的计算都会在这种图中流动, 当然很多情况, 这样就够了, 我们不需要改动什么结构.
-不动结构当然可以提高效率. 但是一旦计算流程不是静态的, 计算图要变动. 最典型的例子就是 RNN, 有时候 RNN 的 time step 不会一样, 或者在 training 和 testing 的时候,
-步长也不一样, 这时, Tensorflow 就头疼了, Tensorflow 的人也头疼了. 哈哈, 如果用一个动态计算图的 Torch, 我们就好理解多了.
+也就是说, 大部分时候, 用 Tensorflow 是先搭建好这样一个计算系统, 一旦搭建好了, 就不能改动了 (也有例外, 比如`dynamic_rnn()`, 但是总体来说他还是运用了一个静态思维),
+所有的计算都会在这种图中流动, 当然很多情况, 这样就够了, 我们不需要改动什么结构.
+不动结构当然可以提高效率. 但是一旦计算流程不是静态的, 计算图要变动. 最典型的例子就是 RNN, 有时候 RNN 的 time step 不会一样, 或者在 training 和 testing 的时候, `batch_size 和
+`time_step` 也不一样, 这时, Tensorflow 就头疼了, Tensorflow 的人也头疼了. 哈哈, 如果用一个动态计算图的 Torch, 我们就好理解多了, 写起来也简单多了.
 
 <img class="course-image" src="/static/results/rl/6-2-2.png">
 
