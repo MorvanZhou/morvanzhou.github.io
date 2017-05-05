@@ -12,7 +12,7 @@ author: Ryan Gao
 
 这次我们讲进程池`Pool`。 进程池就是我们将所要运行的东西，放到池子里，Python会自行解决多进程的问题
 
-首先`import module`和定义`job()`
+首先`import multiprocessing`和定义`job()`
 
 ```python
 import multiprocessing as mp
