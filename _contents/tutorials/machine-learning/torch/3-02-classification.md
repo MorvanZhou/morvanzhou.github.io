@@ -2,7 +2,7 @@
 youku_id: XMjc0NjQ2MjQxNg
 youtube_id: Qm3zzq-xeDI
 title: 区分类型 (分类)
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/3-2 classification.jpg"
 chapter: 3
 ---
