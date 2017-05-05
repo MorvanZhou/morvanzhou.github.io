@@ -46,7 +46,7 @@ x = torch.cat((x0, x1), 0).type(torch.FloatTensor)  # FloatTensor = 32-bit float
 y = torch.cat((y0, y1), ).type(torch.LongTensor)    # LongTensor = 64-bit integer
 
 # torch 只能在 Variable 上训练, 所以把它们变成 Variable
-x, y = Variable(x, requires_grad=False), Variable(y, requires_grad=False)
+x, y = Variable(x), Variable(y)
 
 # plt.scatter(x.data.numpy(), y.data.numpy())
 # plt.show()
