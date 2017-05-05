@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NjQ2MjQxNg
+youtube_id: Qm3zzq-xeDI
 title: 区分类型 (分类)
 publish-date:
 thumbnail: "/static/thumbnail/torch/3-2 classification.jpg"
@@ -48,7 +48,7 @@ y = torch.cat((y0, y1), ).type(torch.LongTensor)    # LongTensor = 64-bit intege
 # torch 只能在 Variable 上训练, 所以把它们变成 Variable
 x, y = Variable(x), Variable(y)
 
-# plt.scatter(x.data.numpy(), y.data.numpy())
+# plt.scatter(x.data.numpy()[:, 0], x.data.numpy()[:, 1], c=y.data.numpy(), s=100, lw=0, cmap='RdYlGn')
 # plt.show()
 
 # 画图
