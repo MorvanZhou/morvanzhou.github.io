@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NTk2NTgxNg
+youtube_id: JIGkxYmLPPY
 title: 安装
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/2 install.jpg"
 chapter: 1
 ---
