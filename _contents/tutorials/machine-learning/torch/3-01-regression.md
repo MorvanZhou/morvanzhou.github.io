@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NjI5MTEyNA
+youtube_id: psE63sPbIeI
 title: 关系拟合 (回归)
 publish-date:
 thumbnail: "/static/thumbnail/torch/3-1 regression.jpg"
