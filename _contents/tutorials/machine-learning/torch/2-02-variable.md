@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NjExOTkwNA
+youtube_id: jxW37CV38-A
 title: 变量 (Variable)
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/2-2 variable.jpg"
 chapter: 2
 ---

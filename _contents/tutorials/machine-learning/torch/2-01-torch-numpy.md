@@ -2,7 +2,7 @@
 youku_id: XMjc0NjA3MzE1Mg
 youtube_id: KBdb53NrVAc
 title: Torch 或 Numpy
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/2-1 torch or numpy.jpg"
 chapter: 2
 ---
