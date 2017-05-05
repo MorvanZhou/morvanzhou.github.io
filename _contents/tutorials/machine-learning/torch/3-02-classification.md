@@ -97,7 +97,9 @@ Net (
 ```python
 # optimizer 是训练的工具
 optimizer = torch.optim.SGD(net.parameters(), lr=0.02)  # 传入 net 的所有参数, 学习率
-loss_func = torch.nn.CrossEntropyLoss()  # 算误差的时候, 注意真实值都是 one-hot 形式的
+# 算误差的时候, 注意真实值!不是! one-hot 形式的, 而是1D Tensor, (batch,)
+# 但是预测值是2D tensor (batch, n_classes)
+loss_func = torch.nn.CrossEntropyLoss()
 
 for t in range(100):
     out = net(x)     # 喂给 net 训练数据 x, 输出分析值
