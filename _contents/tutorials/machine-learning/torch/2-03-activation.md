@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NjIxMDIxNg
+youtube_id: 6YnzemVHvIU
 title: 激励函数 (Activation)
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/2-3 activation.jpg"
 chapter: 2
 ---
