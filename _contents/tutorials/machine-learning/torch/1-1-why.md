@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0NTg5Nzk3Ng
+youtube_id: wnKgOd3NdzA
 title: Why?
 description:
-publish-date:
+publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/1 why.jpg"
 chapter: 1
 ---
