@@ -8,7 +8,7 @@ chapter: 3
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/306_optimizer.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/306_optimizer.py)
   * [我制作的 训练优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * [PyTorch 优化器网页](http://pytorch.org/docs/optim.html)
   * [PyTorch 官网](http://pytorch.org/)
@@ -144,6 +144,6 @@ plt.show()
 不过从这个结果中我们看到, `Adam` 的效果似乎比 `RMSprop` 要差一点. 所以说并不是越先进的优化器, 结果越佳.
 我们在自己的试验中可以尝试不同的优化器, 找到那个最适合你数据/网络的优化器.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/306_optimizer.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/306_optimizer.py) 中的每一步的意义啦.
 
 

@@ -8,7 +8,7 @@ chapter: 3
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/303_build_nn_quickly.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
@@ -73,6 +73,6 @@ Sequential (
 这也就说明了, 相比 `net2`, `net1` 的好处就是, 你可以根据你的个人需要更加个性化你自己的前向传播过程, 比如(RNN).
 不过如果你不需要七七八八的过程, 相信 `net2` 这种形式更适合你.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/303_build_nn_quickly.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py) 中的每一步的意义啦.
 
 

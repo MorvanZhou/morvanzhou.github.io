@@ -8,7 +8,7 @@ chapter: 4
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/402_RNN_classifier.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py)
   * [我制作的 循环神经网络 RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/)
@@ -170,4 +170,4 @@ print(test_y[:10], 'real number')
 """
 ```
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/402_RNN_classifier.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py) 中的每一步的意义啦.

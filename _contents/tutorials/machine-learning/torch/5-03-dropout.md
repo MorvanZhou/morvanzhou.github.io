@@ -8,7 +8,7 @@ chapter: 5
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/503_dropout.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/503_dropout.py)
   * [我制作的 什么是过拟合 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
   * [我制作的 L1/L2 正规化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-09-l1l2regularization.md %})
   * [PyTorch 官网](http://pytorch.org/)
@@ -157,6 +157,6 @@ for t in range(500):
 <img class="course-image" src="/static/results/torch/5-3-3.png">
 
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/503_dropout.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/503_dropout.py) 中的每一步的意义啦.
 
 

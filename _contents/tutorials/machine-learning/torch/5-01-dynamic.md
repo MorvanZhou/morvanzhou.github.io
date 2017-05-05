@@ -8,7 +8,7 @@ chapter: 5
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/501_why_torch_dynamic_graph.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py)
   * [PyTorch 官网](http://pytorch.org/)
 
 听说过 Torch 的人都听说了 torch 是动态的, 那他的动态到底是什么呢? 我们用一个 RNN 的例子来展示一下动态计算到底长什么样.
@@ -37,7 +37,7 @@ chapter: 5
 <h4 class="tut-h4-pad" id="RNN">动态RNN</h4>
 
 我们拿 [这一节内容的 RNN]({% link _contents/tutorials/machine-learning/torch/4-03-RNN-regression.md %})
-来解释动态计算图. 那节内容的[代码在这](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/11_RNN_regressor.py).
+来解释动态计算图. 那节内容的[代码在这](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/11_RNN_regressor.py).
 
 ```python
 ...
@@ -82,6 +82,6 @@ for i in range(60):
 
 经过这样的折腾, torch 还能 handle 住, 已经很不容易啦. 所以当你想要处理这些动态计算图的时候, Torch 还是你首选的神经网络模块.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/501_why_torch_dynamic_graph.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py) 中的每一步的意义啦.
 
 

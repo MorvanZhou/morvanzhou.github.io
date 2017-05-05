@@ -8,7 +8,7 @@ chapter: 3
 ---
 
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/301_regression.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/301_regression.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
@@ -126,6 +126,6 @@ for t in range(100):
 
 <img class="course-image" src="/static/results/torch/3-1-1.png">
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/tutorials/blob/master/pytorchTUT/301_regression.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/301_regression.py) 中的每一步的意义啦.
 
 
