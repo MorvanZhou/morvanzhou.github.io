@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0ODAxNDYwMA
+youtube_id: yqo9-lWTdOk
 title: 快速搭建法
-publish-date:
+publish-date: 2017-05-06
 thumbnail: "/static/thumbnail/torch/3-3 nn fast.jpg"
 chapter: 3
 ---
