@@ -8,7 +8,7 @@ thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/6_OpenAI_gym)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym)
   * [什么是 DQN 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-06-DQN.md %})
   * [OpenAI gym 官网](https://gym.openai.com/)
   * 本节内容的模拟视频效果:

@@ -8,7 +8,7 @@ thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/5.3_Dueling_DQN)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN)
   * [什么是 Dueling DQN 短视频(即将制作)](#)
   * [Dueling DQN Paper](https://arxiv.org/abs/1511.06581)
 
@@ -68,7 +68,7 @@ advantage 的影响. 发红的地方左右了自己车子的移动原则.
 <h4 class="tut-h4-pad" id="learn">更新方法</h4>
 
 下面的修改都是基于我之前写的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py).
-这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/5.3_Dueling_DQN).
+这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN).
 
 <a href="/static/results/rl/4-7-4.png">
 <img class="course-image" src="/static/results/rl/4-7-4.png">

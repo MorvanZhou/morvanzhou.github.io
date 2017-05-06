@@ -8,7 +8,7 @@ publish-date: 2017-03-21
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)

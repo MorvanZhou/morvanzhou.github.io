@@ -8,7 +8,7 @@ publish-date: 2017-01-13
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/4_Sarsa_lambda_maze)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/4_Sarsa_lambda_maze)
   * [什么是 Sarsa-lambda 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-05-sarsa-lambda.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=0-odgVLZ5EQ&index=3&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NzcyOA==.html)
 
@@ -161,6 +161,6 @@ self.eligibility_trace.ix[s, a] = 1
 实验证明选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
 
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/4_Sarsa_lambda_maze)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/4_Sarsa_lambda_maze)
 
 

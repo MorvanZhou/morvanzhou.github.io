@@ -8,7 +8,7 @@ publish-date: 2017-04-22
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
   * [什么是 Deep Deterministic Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-09-DDPG.md %})
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 基于的 Paper [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
@@ -73,7 +73,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 
 <img class="course-image" src="/static/results/rl/6-2-3.png">
 
-其搭建的代码部分在这 (如果想一次性看全部, 请去我的[Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)):
+其搭建的代码部分在这 (如果想一次性看全部, 请去我的[Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)):
 
 ```python
 class Actor(object):
@@ -153,12 +153,12 @@ critic = Critic(..., actor.a_)  # 将 actor 同它的 target_net 产生的 a_ �
 actor.add_grad_to_graph(critic.a_grads) # 将 critic 产出的 dQ/da 加入到 Actor 的 Graph 中去
 ```
 
-同样, 如果你觉得只看部分代码不舒服, [这里有全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py).
+同样, 如果你觉得只看部分代码不舒服, [这里有全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py).
 
 <h4 class="tut-h4-pad" id="memory">记忆库 Memory</h4>
 
 以下是关于类似于 `DQN` 中的记忆库代码, 我们用一个 `class` 来建立.
-关于 `Memory` 的详细算法, 请直接去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py) 中看, 这样更简单.
+关于 `Memory` 的详细算法, 请直接去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py) 中看, 这样更简单.
 
 ```python
 class Memory(object):
@@ -175,7 +175,7 @@ class Memory(object):
 <h4 class="tut-h4-pad" id="episode">每回合算法</h4>
 
 这里的回合算法只提到了最重要的部分, 省掉了一些没必要的, 有助理解.
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
 
 ```python
 var = 3  # 这里初始化一个方差用于增强 actor 的探索性

@@ -8,7 +8,7 @@ publish-date: 2017-01-13
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/3_Sarsa_maze)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze)
   * [什么是 Sarsa 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
 
@@ -101,4 +101,4 @@ if __name__ == "__main__":
 
 下一节我们会来讲解 `SarsaTable` 这种算法具体要怎么编.
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/3_Sarsa_maze)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze)

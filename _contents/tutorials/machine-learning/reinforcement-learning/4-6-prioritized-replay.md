@@ -8,7 +8,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.2_Prioritized_Replay_DQN)
   * [什么是 Prioritized Replay 短视频(即将制作)](#)
   * [Prioriitzed replay Paper](https://arxiv.org/abs/1511.05952)
 

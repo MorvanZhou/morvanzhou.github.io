@@ -8,7 +8,7 @@ publish-date: 2017-01-09
 ---
 
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/2_Q_Learning_maze)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
 
@@ -120,4 +120,4 @@ class QLearningTable:
             )
 ```
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/tree/master/Reinforcement_learning_TUT/2_Q_Learning_maze)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)

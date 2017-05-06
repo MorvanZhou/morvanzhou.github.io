@@ -7,7 +7,7 @@ thumbnail: /static/thumbnail/rl/3 example.jpg
 publish-date: 2017-01-09
 ---
 * 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/1_command_line_reinforcement_learning/treasure_on_right.py)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/1_command_line_reinforcement_learning/treasure_on_right.py)
   * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
 
@@ -188,4 +188,4 @@ if __name__ == "__main__":
     print(q_table)
 ```
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/1_command_line_reinforcement_learning/treasure_on_right.py)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/1_command_line_reinforcement_learning/treasure_on_right.py)
