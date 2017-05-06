@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0ODE5OTYyMA
+youtube_id: FIZgQuOXk8g
 title: Optimizer 优化器
-publish-date:
+publish-date: 2017-05-06
 thumbnail: "/static/thumbnail/torch/3-6 optimizer.jpg"
 chapter: 3
 ---
