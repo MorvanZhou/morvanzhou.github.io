@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0ODEzMjQ4MA
+youtube_id: 6k2hp7-5vkc
 title: 批训练
-publish-date:
+publish-date: 2017-05-06
 thumbnail: "/static/thumbnail/torch/3-5 train batch.jpg"
 chapter: 3
 ---
