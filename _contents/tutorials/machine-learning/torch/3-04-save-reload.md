@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc0ODA2MDIzMg
+youtube_id: ZfmXTsaW3Lo
 title: 保存提取
-publish-date:
+publish-date: 2017-05-06
 thumbnail: "/static/thumbnail/torch/3-4 save reload.jpg"
 chapter: 3
 ---
