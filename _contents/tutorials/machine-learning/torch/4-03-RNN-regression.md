@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc1NzYxMTg2MA
+youtube_id: CA27ONB8SQ4
 title: RNN 循环神经网络 (回归)
-publish-date:
+publish-date: 2017-05-11
 thumbnail: "/static/thumbnail/torch/4.3RNN regressor.jpg"
 chapter: 4
 ---
