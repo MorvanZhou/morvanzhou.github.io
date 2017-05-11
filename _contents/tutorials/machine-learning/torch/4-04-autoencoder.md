@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc1NzczNzY2OA
+youtube_id: V7VgLkEgXVY
 title: AutoEncoder (自编码/非监督学习)
-publish-date:
+publish-date: 2017-05-11
 thumbnail: "/static/thumbnail/torch/4.4 autoencoder.jpg"
 chapter: 4
 ---
