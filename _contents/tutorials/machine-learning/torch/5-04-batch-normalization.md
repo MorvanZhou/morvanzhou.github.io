@@ -166,8 +166,6 @@ for epoch in range(EPOCH):
 
 ```python
 f, axs = plt.subplots(4, N_HIDDEN+1, figsize=(10, 5))
-plt.ion()   # something about plotting
-plt.show()
 
 def plot_histogram(l_in, l_in_bn, pre_ac, pre_ac_bn):
     ...

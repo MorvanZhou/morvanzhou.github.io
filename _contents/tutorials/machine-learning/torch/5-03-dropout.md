@@ -97,9 +97,6 @@ optimizer_ofit = torch.optim.Adam(net_overfitting.parameters(), lr=0.01)
 optimizer_drop = torch.optim.Adam(net_dropped.parameters(), lr=0.01)
 loss_func = torch.nn.MSELoss()
 
-plt.ion()   # 画图时用到
-plt.show()
-
 for t in range(500):
     pred_ofit = net_overfitting(x)
     pred_drop = net_dropped(x)
@@ -135,19 +132,10 @@ for t in range(500):
         net_overfitting.eval()
         net_dropped.eval()  # 因为 drop 网络在 train 的时候和 test 的时候参数不一样.
 
-        # 画图
-        plt.cla()
+        ...
         test_pred_ofit = net_overfitting(test_x)
         test_pred_drop = net_dropped(test_x)
-        plt.scatter(x.data.numpy(), y.data.numpy(), c='magenta', s=50, alpha=0.3, label='train')
-        plt.scatter(test_x.data.numpy(), test_y.data.numpy(), c='cyan', s=50, alpha=0.3, label='test')
-        plt.plot(test_x.data.numpy(), test_pred_ofit.data.numpy(), 'r-', lw=3, label='overfitting')
-        plt.plot(test_x.data.numpy(), test_pred_drop.data.numpy(), 'b--', lw=3, label='dropout(50%)')
-        plt.text(0, -1.2, 'overfitting loss=%.4f' % loss_func(test_pred_ofit, test_y).data[0], fontdict={'size': 20, 'color':  'red'})
-        plt.text(0, -1.5, 'dropout loss=%.4f' % loss_func(test_pred_drop, test_y).data[0], fontdict={'size': 20, 'color': 'blue'})
-        plt.legend(loc='upper left')
-        plt.ylim((-2.5, 2.5))
-        plt.pause(0.1)
+        ...
 
         # 将两个网络改回 训练形式
         net_overfitting.train()

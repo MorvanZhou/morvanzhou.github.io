@@ -125,16 +125,6 @@ for epoch in range(EPOCH):
             loss.backward()                # backpropagation, compute gradients
             opt.step()                     # apply gradients
             l_his.append(loss.data[0])     # loss recoder
-
-# 下面就是画出每个优化器的优化的网络 loss 变化情况
-labels = ['SGD', 'Momentum', 'RMSprop', 'Adam']
-for i, l_his in enumerate(losses_his):
-    plt.plot(l_his, label=labels[i])
-plt.legend(loc='best')
-plt.xlabel('Steps')
-plt.ylabel('Loss')
-plt.ylim((0, 0.2))
-plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/3-6-2.png">

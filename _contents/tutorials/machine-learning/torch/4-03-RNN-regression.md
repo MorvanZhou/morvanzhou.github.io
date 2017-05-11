@@ -49,15 +49,6 @@ TIME_STEP = 10      # rnn time step / image height
 INPUT_SIZE = 1      # rnn input size / image width
 LR = 0.02           # learning rate
 DOWNLOAD_MNIST = False  # set to True if haven't download the data
-
-# show data
-steps = np.linspace(0, np.pi*2, 100, dtype=np.float32)
-x_np = np.sin(steps)    # float32 for converting torch FloatTensor
-y_np = np.cos(steps)
-plt.plot(steps, y_np, 'r-', label='target (cos)')
-plt.plot(steps, x_np, 'b-', label='input (sin)')
-plt.legend(loc='best')
-plt.show()
 ```
 
 
@@ -115,10 +106,6 @@ loss_func = nn.MSELoss()
 
 h_state = None   # 要使用初始 hidden state, 可以设成 None
 
-plt.figure(1, figsize=(12, 5))
-plt.ion()   # continuously plot
-plt.show()
-
 for step in range(60):
     start, end = step * np.pi, (step+1)*np.pi   # time steps
     # sin 预测 cos
@@ -137,15 +124,6 @@ for step in range(60):
     optimizer.zero_grad()               # clear gradients for this training step
     loss.backward()                     # backpropagation, compute gradients
     optimizer.step()                    # apply gradients
-
-    # plotting
-    plt.plot(steps, y_np.flatten(), 'r-')
-    plt.plot(steps, prediction.data.numpy().flatten(), 'b-')
-    plt.draw()
-    plt.pause(0.05)
-
-plt.ioff()
-plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/4-3-3.png">

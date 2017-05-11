@@ -61,13 +61,6 @@ train_data = torchvision.datasets.MNIST(
                                                     # torch.FloatTensor of shape (C x H x W) and normalize in the range [0.0, 1.0]
     download=DOWNLOAD_MNIST,                        # download it if you don't have it
 )
-
-# 画出图看看
-print(train_data.train_data.size())     # (60000, 28, 28)
-print(train_data.train_labels.size())   # (60000)
-plt.imshow(train_data.train_data[2].numpy(), cmap='gray')
-plt.title('%i' % train_data.train_labels[2])
-plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/4-4-3.png">
@@ -123,18 +116,6 @@ autoencoder = AutoEncoder()
 optimizer = torch.optim.Adam(autoencoder.parameters(), lr=LR)
 loss_func = nn.MSELoss()
 
-# 初始化可视化图
-f, a = plt.subplots(2, N_TEST_IMG, figsize=(5, 2))
-plt.ion()   # continuously plot
-plt.show()
-
-# 5张原图放在第一行, 压缩解压后的图在循环中一次次放入
-view_data = Variable(train_data.train_data[:N_TEST_IMG].view(-1, 28*28).type(torch.FloatTensor)/255.)
-for i in range(N_TEST_IMG):
-    a[0][i].imshow(np.reshape(view_data.data.numpy()[i], (28, 28)), cmap='gray')
-    a[0][i].set_xticks(())
-    a[0][i].set_yticks(())
-
 for epoch in range(EPOCH):
     for step, (x, y) in enumerate(train_loader):
         b_x = Variable(x.view(-1, 28*28))   # batch x, shape (batch, 28*28)
@@ -147,22 +128,6 @@ for epoch in range(EPOCH):
         optimizer.zero_grad()               # clear gradients for this training step
         loss.backward()                     # backpropagation, compute gradients
         optimizer.step()                    # apply gradients
-
-        if step % 100 == 0:
-            print('Epoch: ', epoch, '| train loss: %.4f' % loss.data[0])
-
-            # 压缩解压后的图放在第二行
-            _, decoded_data = autoencoder(view_data)    # 提取解压后的值
-            for i in range(N_TEST_IMG):
-                a[1][i].clear()
-                a[1][i].imshow(np.reshape(decoded_data.data.numpy()[i], (28, 28)), cmap='gray')
-                a[1][i].set_xticks(())
-                a[1][i].set_yticks(())
-            plt.draw()
-            plt.pause(0.05)
-
-plt.ioff()
-plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/4-4-4.png">

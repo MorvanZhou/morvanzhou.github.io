@@ -57,13 +57,6 @@ train_data = torchvision.datasets.MNIST(
                                                     # torch.FloatTensor (C x H x W), 训练的时候 normalize 成 [0.0, 1.0] 区间
     download=DOWNLOAD_MNIST,          # 没下载就下载, 下载了就不用再下了
 )
-
-# plot one example
-print(train_data.train_data.size())  # (60000, 28, 28)
-print(train_data.train_labels.size()) # (60000)
-plt.imshow(train_data.train_data[0].numpy(), cmap='gray')
-plt.title('%i' % train_data.train_labels[0])
-plt.show()
 ```
 
 <img class="course-image" src="/static/results/torch/4-1-1.png">
@@ -141,13 +134,6 @@ for epoch in range(EPOCH):
         optimizer.zero_grad()           # clear gradients for this training step
         loss.backward()                 # backpropagation, compute gradients
         optimizer.step()                # apply gradients
-
-        if step % 50 == 0:
-            test_output = rnn(test_x)  # (samples, time_step, input_size)
-            pred_y = torch.max(test_output, 1)[1].data.numpy().squeeze()
-            accuracy = sum(pred_y == test_y) / test_y.size
-            print('Epoch: ', epoch, '| train loss: %.4f' % loss.data[0], '| test accuracy: %.2f' % accuracy)
-
 """
 ...
 Epoch:  0 | train loss: 0.0945 | test accuracy: 0.94

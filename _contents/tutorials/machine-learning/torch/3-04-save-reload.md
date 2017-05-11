@@ -54,13 +54,6 @@ def save():
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
-    # 显示结果 (之后再显示)
-    plt.figure(1, figsize=(10, 3))
-    plt.subplot(131)
-    plt.title('Net1')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
 ```
 
 接下来我们有两种途径来保存
@@ -79,12 +72,6 @@ def restore_net():
     # restore entire net1 to net2
     net2 = torch.load('net.pkl')
     prediction = net2(x)
-
-    # 显示结果 (之后再显示)
-    plt.subplot(132)
-    plt.title('Net2')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
 ```
 
 <h4 class="tut-h4-pad" id="load-param">只提取网络参数</h4>
@@ -103,13 +90,6 @@ def restore_params():
     # 将保存的参数复制到 net3
     net3.load_state_dict(torch.load('net_params.pkl'))
     prediction = net3(x)
-
-    # 显示结果 (之后再显示)
-    plt.subplot(133)
-    plt.title('Net3')
-    plt.scatter(x.data.numpy(), y.data.numpy())
-    plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
-    plt.show()
 ```
 
 
