@@ -46,7 +46,7 @@ torch.manual_seed(1)    # reproducible
 
 # Hyper Parameters
 BATCH_SIZE = 64
-TIME_STEP = 5       # rnn time step / image height
+TIME_STEP = 10      # rnn time step / image height
 INPUT_SIZE = 1      # rnn input size / image width
 LR = 0.02           # learning rate
 DOWNLOAD_MNIST = False  # set to True if haven't download the data
