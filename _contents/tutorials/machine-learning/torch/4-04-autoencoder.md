@@ -108,7 +108,9 @@ autoencoder = AutoEncoder()
 
 <h4 class="tut-h4-pad" id="train">训练</h4>
 
-训练, 并可视化训练的过程.
+训练, 并可视化训练的过程. 我们可以有效的利用 `encoder` 和 `decoder` 来做很多事,
+比如这里我们用 `decoder` 的信息输出看和原图片的对比, 还能用 `encoder` 来看经过压缩后, 神经网络对原图片的理解.
+`encoder` 能将不同图片数据大概的分离开来. 这样就是一个无监督学习的过程.
 
 <img class="course-image" src="/static/results/torch/4-4-1.gif">
 
