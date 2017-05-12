@@ -13,6 +13,7 @@ chapter: 3
 
 * 学习资料: 
   * 英文学习[资料](http://sebastianruder.com/optimizing-gradient-descent/)
+  * [PyTorch 可视化优化器]({% link _contents/tutorials/machine-learning/torch/3-06-optimizer.md %})
 
 
 今天我们会来聊聊在怎么样加速你的神经网络训练过程.

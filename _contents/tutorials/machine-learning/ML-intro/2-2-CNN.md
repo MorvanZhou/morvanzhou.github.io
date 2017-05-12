@@ -9,6 +9,7 @@ chapter: 2
   * Tensorflow CNN [教程1]({% link _contents/tutorials/machine-learning/tensorflow/5-03-CNN1.md %})
   * Tensorflow CNN [教程2]({% link _contents/tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
   * Tensorflow CNN [教程3]({% link _contents/tutorials/machine-learning/tensorflow/5-05-CNN3.md %})
+  * PyTorch CNN [教程]({% link _contents/tutorials/machine-learning/torch/4-01-CNN.md %})
   * 方便快捷的 Keras CNN[教程]({% link _contents/tutorials/machine-learning/keras/2-3-CNN.md %})
 
 

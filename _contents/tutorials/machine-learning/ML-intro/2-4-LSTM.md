@@ -11,6 +11,8 @@ chapter: 2
   * Tensorflow RNN [例子1]({% link _contents/tutorials/machine-learning/tensorflow/5-07-RNN1.md %})
   * Tensorflow RNN [例子2]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   * Tensorflow RNN [例子3]({% link _contents/tutorials/machine-learning/tensorflow/5-09-RNN3.md %})
+  * PyTorch RNN [例子1]({% link _contents/tutorials/machine-learning/torch/4-02-RNN-classification.md %})
+  * PyTorch RNN [例子2]({% link _contents/tutorials/machine-learning/torch/4-03-RNN-regression.md %})
   * Keras [快速搭建 RNN 1]({% link _contents/tutorials/machine-learning/keras/2-4-RNN-classifier.md %})
   * Keras [快速搭建 RNN 2]({% link _contents/tutorials/machine-learning/keras/2-5-RNN-LSTM-Regressor.md %})
 
