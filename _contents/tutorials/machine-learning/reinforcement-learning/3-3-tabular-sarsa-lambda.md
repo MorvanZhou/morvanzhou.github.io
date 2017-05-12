@@ -160,6 +160,18 @@ self.eligibility_trace.ix[s, a] = 1
 
 实验证明选择下面这种方法会有更好的效果. 大家也可以自己玩一玩, 试试两种方法的不同表现.
 
+最后不要忘了, eligibility trace 只是记录每个回合的每一步, 新回合开始的时候需要将 Trace 清零.
+
+```python
+for episode in range(100):
+    ...
+
+    # 新回合, 清零
+    RL.eligibility_trace *= 0
+
+    while True: # 开始回合
+        ...
+```
 
 如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/4_Sarsa_lambda_maze)
 
