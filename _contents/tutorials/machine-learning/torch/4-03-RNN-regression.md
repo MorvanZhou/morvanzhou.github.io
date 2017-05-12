@@ -56,7 +56,7 @@ DOWNLOAD_MNIST = False  # set to True if haven't download the data
 <h4 class="tut-h4-pad" id="RNN">RNN模型</h4>
 
 这一次的 RNN, 我们对每一个 `r_out` 都得放到 `Linear` 中去计算出预测的 `output`, 所以我们能用一个 for loop 来循环计算.
-**这点是 Tensorflow 望尘莫及的!**
+**这点是 Tensorflow 望尘莫及的!** 除了这点, 还有一些动态的过程都可以在[这个教程]({% link _contents/tutorials/machine-learning/torch/5-01-dynamic.md %})中查看, 看看我们的 PyTorch 和 Tensorflow 到底哪家强.
 
 ```python
 class RNN(nn.Module):

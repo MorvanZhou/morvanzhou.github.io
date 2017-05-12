@@ -80,6 +80,10 @@ for i in range(60):
 """
 ```
 
+有人会说了, Tensorflow 也有类似的功能呀, 比如说 `dynamic_rnn()`. 对的, 没错, 不过大家是否想过, 如果我在 Tensorflow 当中定义一个 input 的 `placeholder`,
+这个 `placeholder` 将会有 (batch, time step, input size) 这几个维度, batch 好说, 随便什么大小都可以, 可是 time step 可是固定的呀, 这可不好改, 或者说 盖起来很麻烦.
+那 PyTorch 中又可以变 batch 又可以边 time step, 这不是很方便吗. 这就体现了动态神经网络的好处.
+
 经过这样的折腾, torch 还能 handle 住, 已经很不容易啦. 所以当你想要处理这些动态计算图的时候, Torch 还是你首选的神经网络模块.
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py) 中的每一步的意义啦.
