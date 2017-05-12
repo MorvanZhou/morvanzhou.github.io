@@ -80,6 +80,7 @@ test_y = test_data.test_labels[:2000]
 <h4 class="tut-h4-pad" id="RNN">RNN模型</h4>
 
 和以前一样, 我们用一个 class 来建立 RNN 模型. 这个 RNN 整体流程是 `input` -> `LSTM` -> `LSTM` -> ... -> `LSTM` ->  `last output` -> `Linear`.
+通过`LSTM`分析每一时刻的值, 并且将这一时刻和前面时刻的理解合并在一起, 生成当前时刻对前面数据的理解或记忆. 传递这种理解给下一时刻分析.
 
 ```python
 class RNN(nn.Module):
@@ -118,6 +119,9 @@ RNN (
 ```
 
 <h4 class="tut-h4-pad" id="train">训练</h4>
+
+我们将图片数据看成一个时间上的连续数据, 每一行的像素点都是这个时刻的输入, 读完整张图片就是从上而下的读完了每行的像素点.
+然后我们就可以拿出 RNN 在最后一步的分析值判断图片是哪一类了.
 
 ```python
 optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all parameters
