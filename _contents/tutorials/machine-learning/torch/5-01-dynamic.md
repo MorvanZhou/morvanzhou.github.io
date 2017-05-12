@@ -25,7 +25,8 @@ chapter: 5
 
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.
 下图是一种我在[强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)中的 Tensorflow 计算图.
-也就是说, 大部分时候, 用 Tensorflow 是先搭建好这样一个计算系统, 一旦搭建好了, 就不能改动了 (也有例外, 比如`dynamic_rnn()`, 但是总体来说他还是运用了一个静态思维),
+也就是说, 大部分时候, 用 Tensorflow 是先搭建好这样一个计算系统, 一旦搭建好了, 就不能改动了 (也有例外, 比如`dynamic_rnn()`,
+但是总体来说他还是运用了一个静态思维),
 所有的计算都会在这种图中流动, 当然很多情况, 这样就够了, 我们不需要改动什么结构.
 不动结构当然可以提高效率. 但是一旦计算流程不是静态的, 计算图要变动. 最典型的例子就是 RNN, 有时候 RNN 的 time step 不会一样, 或者在 training 和 testing 的时候, `batch_size` 和
 `time_step` 也不一样, 这时, Tensorflow 就头疼了, Tensorflow 的人也头疼了. 哈哈, 如果用一个动态计算图的 Torch, 我们就好理解多了, 写起来也简单多了.
@@ -81,8 +82,9 @@ for i in range(60):
 ```
 
 有人会说了, Tensorflow 也有类似的功能呀, 比如说 `dynamic_rnn()`. 对的, 没错, 不过大家是否想过, 如果我在 Tensorflow 当中定义一个 input 的 `placeholder`,
-这个 `placeholder` 将会有 (batch, time step, input size) 这几个维度, batch 好说, 随便什么大小都可以, 可是 time step 可是固定的呀, 这可不好改, 或者说 盖起来很麻烦.
-那 PyTorch 中又可以变 batch 又可以边 time step, 这不是很方便吗. 这就体现了动态神经网络的好处.
+这个 `placeholder` 将会有 (`batch`, `time step`, `input size`) 这几个维度,
+`batch` 好说, 随便什么大小都可以, 可是 `time step` 可是固定的呀, 这可不好改, 或者说改起来很麻烦.
+那 PyTorch 中又可以变 `batch` 又可以变 `time step`, 这不是很方便吗. 这就体现了动态神经网络的好处.
 
 经过这样的折腾, torch 还能 handle 住, 已经很不容易啦. 所以当你想要处理这些动态计算图的时候, Torch 还是你首选的神经网络模块.
 
