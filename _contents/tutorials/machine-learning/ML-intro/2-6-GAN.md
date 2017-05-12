@@ -1,5 +1,5 @@
 ---
-youku_id: XMjc1OTI0MDM3Mg
+youku_id: XMjc1OTY2OTMxNg
 youtube_id: yYUN_k36u5Q
 title: 生成对抗网络 (GAN)
 description:
