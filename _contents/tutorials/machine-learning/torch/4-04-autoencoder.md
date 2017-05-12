@@ -1,5 +1,5 @@
 ---
-youku_id: XMjc1NzczNzY2OA
+youku_id: XMjc2MDUxNzUyOA
 youtube_id: V7VgLkEgXVY
 title: AutoEncoder (自编码/非监督学习)
 publish-date: 2017-05-11
