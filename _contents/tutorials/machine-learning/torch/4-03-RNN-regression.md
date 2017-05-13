@@ -93,6 +93,18 @@ RNN (
 """
 ```
 
+其实熟悉 RNN 的朋友应该知道, `forward` 过程中的对每个时间点求输出还有一招使得计算量比较小的.
+不过上面的内容主要是为了呈现 PyTorch 在动态构图上的优势,
+所以我用了一个 `for loop` 来搭建那套输出系统. 下面介绍一个替换方式. 使用 reshape 的方式整批计算.
+
+```python
+def forward(self, x, h_state):
+    r_out, h_state = self.rnn(x, h_state)
+    r_out_reshaped = r_out.view(-1, HIDDEN_SIZE) # to 2D data
+    outs = self.linear_layer(r_out_reshaped)
+    outs = outs.view(-1, TIME_STEP, INPUT_SIZE)  # to 3D data
+```
+
 <h4 class="tut-h4-pad" id="train">训练</h4>
 
 下面的代码就能实现动图的效果啦~开心, 可以看出, 我们使用 `x` 作为输入的 `sin` 值,
