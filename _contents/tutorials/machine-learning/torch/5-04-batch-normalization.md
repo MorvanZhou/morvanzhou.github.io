@@ -9,6 +9,7 @@ chapter: 5
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py)
+  * [Tensorflow 的70行 批标准化代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/502_batch_normalization.py)
   * [我制作的 什么批标准化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-08-batch-normalization.md %})
   * [基于的论文 Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
   * [PyTorch 官网](http://pytorch.org/)

@@ -9,6 +9,7 @@ chapter: 4
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py)
+  * [Tensorflow 的 50行 AutoEncoder 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/404_AutoEncoder.py)
   * [我制作的 自编码 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
   * [PyTorch 官网](http://pytorch.org/)
 

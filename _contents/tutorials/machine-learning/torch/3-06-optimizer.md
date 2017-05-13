@@ -9,6 +9,7 @@ chapter: 3
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/306_optimizer.py)
+  * [Tensorflow 的 Optimizer 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/304_optimizer.py)
   * [我制作的 训练优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * [PyTorch 优化器网页](http://pytorch.org/docs/optim.html)
   * [PyTorch 官网](http://pytorch.org/)

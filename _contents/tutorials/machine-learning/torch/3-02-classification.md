@@ -9,6 +9,7 @@ chapter: 3
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/302_classification.py)
+  * [用 Tensorflow 达到同样效果的代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/302_simple_classification.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
