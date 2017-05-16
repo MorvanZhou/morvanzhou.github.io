@@ -11,6 +11,7 @@ publish-date: 2017-04-03
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/8_Actor_Critic_Advantage)
   * [什么是 Actor Critic 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-08-AC.md %})
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
+  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
 
 **一句话概括 Actor Critic 方法**:

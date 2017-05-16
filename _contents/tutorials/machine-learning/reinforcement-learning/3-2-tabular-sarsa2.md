@@ -11,6 +11,7 @@ publish-date: 2017-01-13
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze)
   * [什么是 Sarsa 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
+  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
 接着上节内容, 我们来实现 `RL_brain` 的 `SarsaTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 

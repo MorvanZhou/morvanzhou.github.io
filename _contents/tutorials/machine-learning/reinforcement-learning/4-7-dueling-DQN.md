@@ -10,7 +10,7 @@ thumbnail: "/static/thumbnail/rl/12_2 dueling DQN.jpg"
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN)
   * [什么是 Dueling DQN 短视频(即将制作)](#)
-  * [Dueling DQN Paper](https://arxiv.org/abs/1511.06581)
+  * 论文 [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
 
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.

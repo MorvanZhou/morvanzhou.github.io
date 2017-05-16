@@ -11,6 +11,7 @@ publish-date: 2017-01-09
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
+  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
 
 上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),

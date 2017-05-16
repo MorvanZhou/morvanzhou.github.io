@@ -13,6 +13,7 @@ publish-date: 2017-03-21
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
+  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
 
 Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q learning, Sarsa), 但他也要接受环境信息 (observation),
 不同的是他要输出不是 action 的 value, 而是具体的那一个 action, 这样 policy gradient 就跳过了 value 这个阶段. 而且个人认为 Policy gradient

@@ -11,7 +11,7 @@ chapter: 5
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py)
   * [Tensorflow 的70行 批标准化代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/502_batch_normalization.py)
   * [我制作的 什么批标准化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-08-batch-normalization.md %})
-  * [基于的论文 Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
+  * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
   * [PyTorch 官网](http://pytorch.org/)
 
 批标准化通俗来说就是对每一层神经网络进行标准化 (normalize) 处理, 我们知道对输入数据进行标准化能让机器学习有效率地学习.

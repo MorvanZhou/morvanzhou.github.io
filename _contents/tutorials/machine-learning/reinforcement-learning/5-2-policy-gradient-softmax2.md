@@ -13,6 +13,8 @@ publish-date: 2017-03-21
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
+  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
+
 
 接着上节内容, 我们来实现 `RL_brain` 的 `PolicyGradient` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 

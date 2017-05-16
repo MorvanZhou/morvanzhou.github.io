@@ -10,7 +10,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.2_Prioritized_Replay_DQN)
   * [什么是 Prioritized Replay 短视频(即将制作)](#)
-  * [Prioriitzed replay Paper](https://arxiv.org/abs/1511.05952)
+  * 论文 [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
 以下教程缩减了在 DQN 方面的介绍, 着重强调 DQN with Prioritized Replay 和 DQN 在代码上不同的地方.
