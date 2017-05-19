@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc3MzA3OTM0NA
 youtube_id: lAaCeiqE6CE
-title: 科普: 人工神经网络 VS 生物神经网络
+title: "科普: 人工神经网络 VS 生物神经网络"
 thumbnail: "/static/thumbnail/ML-intro/ANN_and_NN.png"
 publish-date: 2017-05-19
 chapter: 2
