@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc4ODI0NzE0MA
+youtube_id: -VnZSJX4v64
 title: Dropout 缓解过拟合
-publish-date:
+publish-date: 2017-05-27
 thumbnail: "/static/thumbnail/torch/5.3 dropout.jpg"
 chapter: 5
 ---
