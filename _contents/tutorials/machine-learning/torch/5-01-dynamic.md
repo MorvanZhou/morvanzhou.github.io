@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjc4ODExNDYxMg
+youtube_id: 4IuaU08Wuq0
 title: 为什么 Torch 是动态的
-publish-date:
+publish-date: 2017-05-27
 thumbnail: "/static/thumbnail/torch/5.1 dynamic.jpg"
 chapter: 5
 ---
