@@ -1,5 +1,5 @@
 ---
-youku_id: XMjc4ODI0NzE0MA
+youku_id: XMjc4ODMxMDkxMg
 youtube_id: -VnZSJX4v64
 title: Dropout 缓解过拟合
 publish-date: 2017-05-27
