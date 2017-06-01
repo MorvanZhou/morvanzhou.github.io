@@ -194,6 +194,9 @@ tensorboard --logdir logs
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
 
+**同时注意, 如果使用 `http://0.0.0.0:6006` 或者 tensorboard 中显示的网址打不开的朋友们,
+请使用 `http://localhost:6006`, 大多数朋友都是这个问题.**
+
 tensorboard 还有很多其他的参数，希望大家可以多多了解,
 可以使用 `tensorboard --help` 查看tensorboard的详细参数
 最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
