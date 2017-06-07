@@ -27,13 +27,12 @@ from keras.layers import Dense, Activation, Convolution2D, MaxPooling2D, Flatten
 
 ```python
 model.add(Convolution2D(
-    nb_filter=32,
-    nb_row=5,
-    nb_col=5,
-    border_mode='same',     # Padding method
-    dim_ordering='th',    # 采用 theano 的 input 格式  
-    input_shape=(1,         # channels
-                 28, 28,)    # height & width
+    batch_input_shape=(64, 1, 28, 28),
+    filters=32,
+    kernel_size=5,
+    strides=1,
+    padding='same',      # Padding method
+    data_format='channels_first',
 ))
 model.add(Activation('relu'))
 ```
@@ -42,18 +41,19 @@ model.add(Activation('relu'))
 
 ```python
 model.add(MaxPooling2D(
-    pool_size=(2, 2),
-    strides=(2, 2),
-    border_mode='same',    # Padding method
+    pool_size=2,
+    strides=2,
+    padding='same',    # Padding method
+    data_format='channels_first',
 ))
 ```
 
 再添加第二卷积层和池化层
 
 ```python
-model.add(Convolution2D(64, 5, 5, border_mode='same'))
+model.add(Convolution2D(64, 5, strides=1, padding='same', data_format='channels_first'))
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=(2, 2), border_mode='same'))
+model.add(MaxPooling2D(2, 2, 'same', data_format='channels_first'))
 ```
 
 经过以上处理之后数据shape为（64，7，7），需要将数据抹平成一维，再添加全连接层1
