@@ -122,7 +122,7 @@ RNN (
 <h4 class="tut-h4-pad" id="train">训练</h4>
 
 我们将图片数据看成一个时间上的连续数据, 每一行的像素点都是这个时刻的输入, 读完整张图片就是从上而下的读完了每行的像素点.
-然后我们就可以拿出 RNN 在最后一步的分析值判断图片是哪一类了.
+然后我们就可以拿出 RNN 在最后一步的分析值判断图片是哪一类了. 下面的代码省略了计算 `accuracy` 的部分, 你可以在我的 github 中看到全部代码.
 
 ```python
 optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all parameters
