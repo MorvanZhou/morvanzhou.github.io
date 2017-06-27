@@ -9,6 +9,7 @@ publish-date: 2017-04-22
 
 * 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
+  * [修改版代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py)
   * [什么是 Deep Deterministic Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-09-DDPG.md %})
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
@@ -215,4 +216,4 @@ for i in range(MAX_EPISODES):
 后来我在回过头来看代码, 结果发现计算 `Actor` 更新时有点小问题, 所以就修改了之前的代码.
 但是修改后我觉得.. 代码变得累赘了, 所以我觉得再重写一个, 简化所有流程.
 能看到这一个板块的朋友们有没有感到绝望(MD 看了那么久上面的代码, 结果有个更简单的). 哈哈,没关系.
-学习代码和技术不要嫌多. 所以[代码就直接看](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)吧, 相信有了上面的了解, 看这份代码会比较容易.
+学习代码和技术不要嫌多. 所以[代码就直接看](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py)吧, 相信有了上面的了解, 看这份代码会比较容易.
