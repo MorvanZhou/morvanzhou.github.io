@@ -39,6 +39,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 * [Actor Critic](#AC)
 * [记忆库 Memory](#memory)
 * [每回合算法](#episode)
+* [简化版代码(录完视频后发现了小错误, 重写了代码)](#update)
 
 
 <h4 class="tut-h4-pad" id="algorithm">算法</h4>
@@ -63,6 +64,9 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 
 
 <h4 class="tut-h4-pad" id="main-structure">主结构</h4>
+
+**注意, 录视频的时候代码有个地方有小错误, 以下部分和视频中有些地方不同, 特别是计算 `Actor` 更新的时候.
+ 所以请以文字描述中的为准.**
 
 我们用 Tensorflow 搭建神经网络, 主结构可以见这个 tensorboard 的出来的图.
 
@@ -90,7 +94,8 @@ class Critic(object):
     def __init__(self):
         with tf.variable_scope('Critic'):
             # 这个网络是用于及时更新参数
-            self.q = self._build_net(S, A, 'eval_net', trainable=True)
+            self.a = a  # 这个 a 是来自 Actor 的, 但是 self.a 在更新 Critic 的时候是之前选择的 a 而不是来自 Actor 的 a.
+            self.q = self._build_net(S, self.a, 'eval_net', trainable=True)
             # 这个网络不及时更新参数, 用于给出 Actor 更新参数时的 Gradient ascent 强度
             self.q_ = self._build_net(S_, a_, 'target_net', trainable=False)
 ```
@@ -115,16 +120,16 @@ with tf.variable_scope('policy_grads'):
         grad_ys=a_grads # 这是从 Critic 来的 dQ/da
     )
 with tf.variable_scope('A_train'):
-    opt = tf.train.AdamOptimizer(-self.lr/BATCH_SIZE)  # 负的学习率为了使我们计算的梯度往上升, 和 Policy Gradient 中的方式一个性质
+    opt = tf.train.AdamOptimizer(-self.lr)  # 负的学习率为了使我们计算的梯度往上升, 和 Policy Gradient 中的方式一个性质
     self.train_op = opt.apply_gradients(zip(self.policy_grads, self.e_params)) # 对 eval_net 的参数更新
 ```
 
 同时下面也提到的传送给 `Actor` 的 `a_grad` 应该用 Tensorflow 怎么计算. 这个 `a_grad`
-是 `Critic` class 里面的:
+是 `Critic` class 里面的, 这个 `a` 是来自 `Actor` 根据 `S` 计算而来的:
 
 ```python
 with tf.variable_scope('a_grad'):
-    self.a_grads = tf.gradients(self.q, A)[0]   # dQ/da
+    self.a_grads = tf.gradients(self.q, a)[0]   # dQ/da
 ```
 
 
@@ -149,7 +154,7 @@ with tf.variable_scope('C_train'):
 
 ```python
 actor = Actor(...)
-critic = Critic(..., actor.a_)  # 将 actor 同它的 target_net 产生的 a_ 传给 Critic
+critic = Critic(..., actor.a, actor.a_)  # 将 actor 同它的 eval_net/target_net 产生的 a/a_ 传给 Critic
 actor.add_grad_to_graph(critic.a_grads) # 将 critic 产出的 dQ/da 加入到 Actor 的 Graph 中去
 ```
 
@@ -196,7 +201,7 @@ for i in range(MAX_EPISODES):
             b_M = M.sample(BATCH_SIZE)
             ...   # 将 b_M 拆分成下面的输入信息
             critic.learn(b_s, b_a, b_r, b_s_)
-            actor.learn(b_s, b_a)
+            actor.learn(b_s)
 
         s = s_
 
@@ -205,5 +210,9 @@ for i in range(MAX_EPISODES):
 ```
 
 
+<h4 class="tut-h4-pad" id="update">简化版代码</h4>
 
-
+后来我在回过头来看代码, 结果发现计算 `Actor` 更新时有点小问题, 所以就修改了之前的代码.
+但是修改后我觉得.. 代码变得累赘了, 所以我觉得再重写一个, 简化所有流程.
+能看到这一个板块的朋友们有没有感到绝望(MD 看了那么久上面的代码, 结果有个更简单的). 哈哈,没关系.
+学习代码和技术不要嫌多. 所以[代码就直接看](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)吧, 相信有了上面的了解, 看这份代码会比较容易.
