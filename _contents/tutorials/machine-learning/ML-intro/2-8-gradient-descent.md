@@ -10,7 +10,7 @@ publish-date: 2017-06-29
   * 神经网络 编程教程 Tensorflow [学习目录](/tutorials/machine-learning/tensorflow/)
   * 神经网络 编程教程 PyTorch [学习目录](/tutorials/machine-learning/torch/)
   * 神经网络 编程教程 Theano [学习目录](/tutorials/machine-learning/theano/)
-  * 神经网络 编程教程 Keras [学习目录](tutorials/machine-learning/keras/)
+  * 神经网络 编程教程 Keras [学习目录](/tutorials/machine-learning/keras/)
   
 欢迎观看有趣的机器学习系列视频, 神经网络是当今为止最流行的一种深度学习框架, 他的基本原理也很简单, 就是一种梯度下降机制. 我们今天就来看看这神奇的优化模式吧.
 
