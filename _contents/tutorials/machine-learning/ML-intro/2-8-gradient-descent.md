@@ -1,9 +1,10 @@
 ---
-youku_id: XMTU5NDc3MDQwOA
+youku_id:
 youtube_id: 9sJG7LjGCnI
 title: 神经网络 梯度下降
 chapter: 2
 thumbnail: "/static/thumbnail/ML-intro/gradient_descent.png"
+publish-data: 2017-06-29
 ---
 * 学习资料: 
   * 神经网络 编程教程 Tensorflow [学习目录](/tutorials/machine-learning/tensorflow/)
