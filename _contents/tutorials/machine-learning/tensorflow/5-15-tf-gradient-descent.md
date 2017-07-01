@@ -15,7 +15,7 @@ thumbnail: "/static/thumbnail/tf/tf25 gradient descent.jpg"
 
 <img class="course-image" src="/static/results/tensorflow/5_15_01.gif">
 
-同时, 我们还可以扩展开来, 神经网络就是一种梯度下降的方法. 而梯度下降是之中最优化方法, 我们还能拿它来干点其它事. 比如说 **为公式调参**.
+同时, 我们还可以扩展开来, 神经网络就是一种梯度下降的方法. 而梯度下降是一种最优化方法, 我们还能拿它来干点其它事. 比如说 **为公式调参**.
 我们会在下面具体讲解.
 
 接着我们还会提到在梯度下降中, 以及神经网络中很难避免的一种现象, 叫做局部最优, 以及局部最优的影响.
@@ -139,7 +139,7 @@ tf_y_fun = lambda a, b: a * x**3 + b * x**2
 
 <h4 class="tut-h4-pad" id="local_minima">局部最优/全局最优</h4>
 
-在回到神经网络的话题中来, 多层的有激活神经网络必定有很多局部最优节的. 我在这个[短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})中也提过什么是全局最优和局部最优.
+在回到神经网络的话题中来, 多层的有激活神经网络必定有很多局部最优解的. 我在这个[短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})中也提过什么是全局最优和局部最优.
 那么我们就来做一个有两个参数的简单神经网络吧. 同样, 我们至于要修改 `y_fun` 和 `tf_y_fun` 就好了:
 
 ```python
