@@ -4,7 +4,7 @@ youtube_id:
 chapter: 5
 title: 用 Tensorflow 可视化梯度下降
 publish-date: 2017-07-01
-thumbnail: "/static/thumbnail/tf/"
+thumbnail: "/static/thumbnail/tf/tf25 gradient descent.jpg"
 ---
 
 * 学习资料:
