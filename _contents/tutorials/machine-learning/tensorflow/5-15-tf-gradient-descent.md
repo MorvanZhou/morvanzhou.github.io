@@ -106,7 +106,7 @@ with tf.Session() as sess:
 
 <img class="course-image" src="/static/results/tensorflow/5_15_04.gif">
 
-貌似这时的梯度下降变得纠结起来, 梯度下不起了. 原来这就是因为学习效率过大的原因, 导致虽然学得快, 但是没办法收敛.
+貌似这时的梯度下降变得纠结起来, 梯度下不去了. 原来这就是因为学习效率过大的原因, 导致虽然学得快, 但是没办法收敛.
 我们也能从学习到的预测线看出来这样的现象, 现在下面的预测线没有办法预测出真实数据了. 所以切记, 当你的模型没办法收敛的时候, 试试调低学习率.
 
 <img class="course-image" src="/static/results/tensorflow/5_15_05.png">
