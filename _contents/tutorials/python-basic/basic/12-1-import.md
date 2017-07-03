@@ -45,7 +45,7 @@ time.struct_time(tm_year=2016, tm_mon=12, tm_mday=23, tm_hour=14, tm_min=12, tm_
 ```python
 from time import time, localtime
 print(localtime())
-print(time)
+print(time())
 """"
 time.struct_time(tm_year=2016, tm_mon=12, tm_mday=23, tm_hour=14, tm_min=41, tm_sec=38, tm_wday=4, tm_yday=358, tm_isdst=0)
 
