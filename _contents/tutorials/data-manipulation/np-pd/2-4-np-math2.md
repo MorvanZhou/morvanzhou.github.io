@@ -43,7 +43,7 @@ print(A.mean())          # 7.5
 同样的，我们可以写出求解中位数的函数：
 
 ```python
-print(np.median())       # 7.5
+print(A.median())       # 7.5
 ```
 
 另外，和matlab中的`cumsum()`累加函数类似，Numpy中也具有`cumsum()`函数，其用法如下：

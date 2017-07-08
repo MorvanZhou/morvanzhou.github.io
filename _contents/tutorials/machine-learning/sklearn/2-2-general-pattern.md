@@ -34,7 +34,7 @@ Sklearn 本身就有很多数据库，可以用来练习。
 
 ```python
 from sklearn import datasets
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 ```
 
