@@ -11,7 +11,7 @@ tut-dir: /tutorials/machine-learning/
 因为里面同时也介绍了很多种机器学习的技巧方法, 大大帮助提升学习效果.
 
 机器学习教程的其他内容包括了:
-[强化学习 (Reinforcement Learning)](/tutorials/machine-learning/reinforcement-learning/),
+[强化学习 (Reinforcement Learning)](/tutorials/machine-learning/reinforcement-learning/);
 神经网络模块 ([Tensorflow](/tutorials/machine-learning/tensorflow/), [Pytorch](/tutorials/machine-learning/torch/),
-[Theano](/tutorials/machine-learning/theano/), [Keras](/tutorials/machine-learning/keras/)) , 进化算法[(遗传算法, 神经进化, 进化策略)](/tutorials/machine-learning/evolutionary-algorithm/)
+[Theano](/tutorials/machine-learning/theano/), [Keras](/tutorials/machine-learning/keras/)) ; 进化算法[(遗传算法, 神经进化, 进化策略)](/tutorials/machine-learning/evolutionary-algorithm/);
 通用的机器学习方法 ([SciKit-Learn](/tutorials/machine-learning/sklearn/)) 等等.
