@@ -46,7 +46,7 @@ chapter: 3
 
 <center><img src="/static/results/evolutionary-algorithm/3-1-1.png"  width="500px"></center>
 
-通过不断尝试变异, 修改连接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的.
+通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的.
 
 ##### 尝试2: 修改参数 和 形态
 
@@ -57,7 +57,7 @@ chapter: 3
 
 对比这两种不同的方式, 我们可以想象肯定是越能变化的, 结果会越好啦. 因为它能够探索的形态结构越多, 找到好方法的机会就越大.
 而且还有一个优点就是, NEAT 可以最小化结构. 换句话说如果你拿一个 50 层的神经网络训练, 但是要解决的问题很简单, 并不会用到那么复杂的神经网络,
-越多的层结构也是一种浪费, 所以用 NEAT 来自己探索需要使用多少连接, 他就能忽略那些没用的连接, 所以神经网络也就比较小, 而且小的神经网络运行也快嘛.
+越多的层结构也是一种浪费, 所以用 NEAT 来自己探索需要使用多少链接, 他就能忽略那些没用的链接, 所以神经网络也就比较小, 而且小的神经网络运行也快嘛.
 
 
 <h4 class="tut-h4-pad" id="neat">NEAT 算法</h4>
@@ -67,10 +67,10 @@ NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Ne
 
 简单来说, NEAT 有几个关键步骤,
 
-* 使用 创新号码 (Innovation ID) 对神经网络的直接编码 (direct coding)
-* 根据 innovation ID 进行交叉配对 (crossover)
-* 对神经元 (node), 神经连接 (link) 进行基因突变 (mutation)
-* 尽量保留生物多样性 (有些不好的网络说不定突然变异成超厉害的)
+* 使用 `创新号码 (Innovation ID)` 对神经网络的 `直接编码 (direct coding)`
+* 根据 innovation ID 进行 `交叉配对 (crossover)`
+* 对 `神经元 (node)`, `神经链接 (link)` 进行 `基因突变 (mutation)`
+* 尽量保留 `生物多样性 (Speciation)` (有些不好的网络说不定突然变异成超厉害的)
 * 通过初始化只有 input 连着 output 的神经网络来尽量减小神经网络的大小 (从最小的神经网络结构开始发展)
 
 我们再来具体看看他是怎么 搭建/交叉/变异 神经网络的. 之后的用图都是上面提到的 paper 中的.
@@ -78,20 +78,21 @@ NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Ne
 
 <center><img src="/static/results/evolutionary-algorithm/3-1-3.png"  width="500px"></center>
 
-上面的图你可以想象成就是我们如何通过 DNA (图中的 Genome) 来编译出神经网络的. Node genes 很简单就是神经网络每个节点的定义.
-哪些时输入, 哪些输出, 哪些是隐藏节点. Connect. Genes 则是对于每一个节点与节点的链接是什么样的形式, 从输入节点 (In) 到输出节点 (Out),
-这个连接的参数 (weight) 是多少. 输出节点的值就是 `Out = In * weight`. 然后这条连接是要被使用 (Enabled) 还是不被使用 (DISAB). 最后就是这条链接专属的 创新号 (Innov)
+上面的图你可以想象成就是我们如何通过 DNA (图中的 Genome) 来编译出神经网络的. `Node genes` 很简单就是神经网络每个节点的定义.
+哪些是输入, 哪些输出, 哪些是隐藏节点. `Connect. Genes` 则是对于每一个节点与节点的链接是什么样的形式, 从输入节点 (In) 到输出节点 (Out),
+这个链接的参数 (weight) 是多少. 输出节点的值就是 `Out = In * weight`. 然后这条链接是要被使用 (Enabled) 还是不被使用 (DISAB). 最后就是这条链接专属的 创新号 (Innov)
 
-通过上面的 Genome 我们就能搭建出下面的那个神经网络了, 可以看出我们有一个 2-5 `DISAB` 的连接, 原因就是在2-5之间我们已经变异出了一个4节点.
-所以2-5 是通过 4 相连接的, 这样我们就需要将原来的 2-5 链接 disable 掉.
+通过上面的 Genome 我们就能搭建出那个神经网络了, 可以看出我们有一个 2-5 `DISAB` 的链接, 原因就是在2-5之间我们已经变异出了一个4节点.
+所以2-5 是通过 4 相链接的, 这样我们就需要将原来的 2-5 链接 disable 掉.
 
 <center><img src="/static/results/evolutionary-algorithm/3-1-4.png"  width="500px"></center>
 
-关于变异呢. 我们可以有 节点变异 和 链接变异, 就和上图一样, 这个简单, 大家都看得出来. 但是要提的一点是, 如果新加的戒烟想 6 那样, 是在原有链接上的突变节点, 那么原来的 3-5 连接就要被 disable 掉.
+关于变异呢. 我们可以有 `节点变异` 和 `链接变异`, 就和上图一样, 这个简单, 大家都看得出来. 但是要提的一点是,
+如果新加的节点像 6 那样, 是在原有链接上的突变节点, 那么原来的 3-5 链接就要被 disable 掉.
 
 <center><img src="/static/results/evolutionary-algorithm/3-1-5.png"  width="500px"></center>
 
-再来就是 crossover 了, 两个神经网络 "交配" 啦. 这时你就发现原来 innovation number 在这里是这么重要.
+再来就是 `crossover` 了, 两个神经网络 "交配" 啦. 这时你就发现原来 innovation number 在这里是这么重要.
 两个父母通过 innovation number 对齐, 双方都有的 innovation, 我们就随机选一个, 如果双方有个方没有的 Innovation, 我们就直接全部遗传给后代.
 
 之所以图上还出现了 "disjoint" 和 "excess" 的基因, 是因为在后面如果要区分种群不同度, 来选择要保留的种群的时候, 我们需要通过这个来计算, 计算方式我就不细提了,

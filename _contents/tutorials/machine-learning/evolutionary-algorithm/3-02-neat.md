@@ -42,7 +42,7 @@ $ pip3 install neat-python
 
 目前的 neat 版本是 0.91, 如果之后安装不成功, 或者有所变化, 请参考这个[网页](http://neat-python.readthedocs.io/en/latest/installation.html).
 
-好了, 这就安装好了主程序了, 接下来为了可视化的效果, 我们还要检查一下是否有安装 graphviz 模块. 如果在你电脑中没有这个模块, 如果是 MacOS, 请直接 同上面的步骤 使用 pip install 就好了.
+好了, 这就安装好了主程序了, 接下来为了可视化的效果, 我们还要检查一下是否有安装 `graphviz` 模块. 如果在你电脑中没有这个模块, 如果是 MacOS, 请直接 同上面的步骤 使用 pip install 就好了.
 如果是 Linux, 使用 `sudo apt-get install graphviz` 就好.
 
 不过我在实际运行中发现了这个报错 "RuntimeError: Make sure the Graphviz executables are on your system's path", 简单搜索了一下,
@@ -126,9 +126,9 @@ print('\nOutput:')
 
 <center><img src="/static/results/evolutionary-algorithm/3-2-1.png"  width="500px"></center>
 
-<center><img src="/static/results/evolutionary-algorithm/3-1-2.png"  width="500px"></center>
+<center><img src="/static/results/evolutionary-algorithm/3-2-2.png"  width="500px"></center>
 
-<center><img src="/static/results/evolutionary-algorithm/3-1-3.png"  width="500px"></center>
+<center><img src="/static/results/evolutionary-algorithm/3-2-3.png"  width="500px"></center>
 
-关于最下面的那个神经网络图, 需要说明一下, 如果是实线, 如 B->1, B->2, 说明这个连接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个连接是 Disabled 的.
+关于最下面的那个神经网络图, 需要说明一下, 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
