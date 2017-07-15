@@ -109,7 +109,7 @@ res = pool.apply_async(job, (2,3,4,))
 TypeError: job() takes exactly 1 argument (3 given)
 ```
 
-即`apply_async()`只能输入一个值。
+即`apply_async()`只能输入一组参数。
 
 在此我们将`apply_async()` 放入迭代器中，定义一个新的`multi_res`
 
@@ -119,7 +119,7 @@ multi_res = [pool.apply_async(job, (i,)) for i in range(10)]
 
 同样在取出值时需要一个一个取出来
 
-```pyton
+```python
 print([res.get() for res in multi_res])
 ```
 
@@ -155,7 +155,7 @@ def multicore():
 
 2. `map()` 放入迭代参数，返回多个结果
 
-3. `apply_async()`只能放入一个参数，并返回一个结果，如果想得到`map()`的效果需要通过迭代
+3. `apply_async()`只能放入一组参数，并返回一个结果，如果想得到`map()`的效果需要通过迭代
 
    ​
 
