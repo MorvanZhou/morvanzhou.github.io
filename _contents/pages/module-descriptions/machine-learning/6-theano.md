@@ -1,5 +1,5 @@
 ---
-title: 神经网络: Theano
+title: "神经网络: Theano"
 icon-dir: /static/img/icon/theano_icon.png
 tut-dir: /tutorials/machine-learning/theano/
 ---

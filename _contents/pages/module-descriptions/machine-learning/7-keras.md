@@ -1,5 +1,5 @@
 ---
-title: 神经网络: Keras
+title: "神经网络: Keras"
 icon-dir: /static/img/icon/keras_icon.jpg
 tut-dir: /tutorials/machine-learning/keras/
 ---

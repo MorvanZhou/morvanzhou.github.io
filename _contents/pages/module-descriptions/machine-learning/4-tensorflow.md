@@ -1,5 +1,5 @@
 ---
-title: 神经网络: Tensorflow
+title: "神经网络: Tensorflow"
 icon-dir: /static/img/icon/tf_icon.png
 tut-dir: /tutorials/machine-learning/tensorflow/
 ---
