@@ -9,5 +9,5 @@ tut-dir: /tutorials/machine-learning/evolutionary-algorithm/
 反正我就是抱着这种想法学习这一类算法的. 我就想看看自己电脑里面的小生物能够进化到多聪明.
 
 
-[*进化算法 教程*]({{page.tut-dir}}) 会介绍到一下主要几个板块: 经典的遗传算法 (Genetic Algorithm),
+[*进化算法 教程*]({{page.tut-dir}}) 会介绍到主要的几个板块: 经典的遗传算法 (Genetic Algorithm),
 神经进化 (NeuroEvolution), 进化策略 (Evolution Strategy)
