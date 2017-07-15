@@ -81,7 +81,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/evolutionary-algorithm"
     values:
       layout: tutorial-post
-      tut-title: 进化算法 (遗传算法等)
+      tut-title: 进化算法
       tut-permalink: /tutorials/machine-learning/evolutionary-algorithm/
       category: evolutionary-algorithm
       tags: [evolutionary algorithm, 进化算法, 遗传算法, genetic algorithm, neuro evalution]
