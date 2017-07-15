@@ -25,10 +25,8 @@ chapter: 3
 </video>
 </div>
 
-这些是上面实验的部分链接:
-* [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44)
-* [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s)
-* [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58)
+这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
+ [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
 
 #### 本节内容包括:
 
