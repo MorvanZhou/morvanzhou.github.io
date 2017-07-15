@@ -1,5 +1,5 @@
 ---
-title: PyTorch
+title: 神经网络: PyTorch
 icon-dir: /static/img/icon/torch_icon.png
 tut-dir: /tutorials/machine-learning/torch/
 ---

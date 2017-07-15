@@ -1,5 +1,5 @@
 ---
-title: SciKit-Learn
+title: 机器学习通用: SciKit-Learn
 icon-dir: /static/img/icon/sklearn_icon.png
 tut-dir: /tutorials/machine-learning/sklearn/
 ---
