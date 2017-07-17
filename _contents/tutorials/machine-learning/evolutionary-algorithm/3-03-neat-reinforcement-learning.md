@@ -174,5 +174,6 @@ net = neat.nn.RecurrentNetwork.create(genome, config)
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-3-3.png">
 
 
-最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如 [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf);
-[ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf).
+最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如
+* [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf);
+* [ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf).
