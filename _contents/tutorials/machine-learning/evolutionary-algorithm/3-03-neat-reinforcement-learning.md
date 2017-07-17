@@ -35,7 +35,7 @@ chapter: 3
 
 * [gym 模拟环境](#gym)
 * [CartPole 进化吧](#cartpole)
-
+* [Recurrent link/node](#recurrent)
 
 
 <h4 class="tut-h4-pad" id="gym">gym 模拟环境</h4>
@@ -147,8 +147,14 @@ def evaluation():
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
 
+<h4 class="tut-h4-pad" id="recurrent">Recurrent link/node</h4>
+
 如果修改一下 `config` [文件](#)里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
-这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样.
+这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样. 不过这里的 recurrent 貌似是和我们一般见到的 Recurrent Neural Network 有所不同,
+我们通常说的 RNN 是通过一个 hidden state 来传递记忆, 而 NEAT 中的 Recurrent 是通过一种 "延迟刷新的形式" (不知道这样说对不对, 我是细看了一遍 NEAT-python 的底层代码发现的),
+每一个时间点每个节点只接收这一时刻传来的信息. 比如下面第一张图中, 现在所有节点都为0, 如果我先更新 `node3`, 由于接收到了 `act2=0`,  `node3` 还是会为0. 但是如果是先更新 `act2`, 等 `act2` 有值了再更新 `node3`,
+那 `node3` 这时刻也会有值. 如果这是一个 feedforward net, 更新 link/node 的顺序十分重要, 上述情况肯定会出问题的. 不过在这种版本中的 recurrent, 程序不知道顺序,
+所以每次都 copy 一份所有 node 的值, 用上一步的 node 的值进行这一步的操作, 这样进行 recurrent 的操作.
 
 ```shell
 feed_forward            = False
