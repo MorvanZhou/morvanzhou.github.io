@@ -28,7 +28,7 @@ chapter: 3
 
 这个机器人的神经网络长这样:
 
-<center><img src="/static/results/evolutionary-algorithm/3-2-0.png"  width="500px"></center>
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.png">
 
 
 #### 本节内容包括:
@@ -42,7 +42,8 @@ chapter: 3
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
-<center><img src="/static/results/evolutionary-algorithm/3-3-1.png"  width="500px"></center>
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-1.png">
+
 
 安装 gym 的方式也很简单, 大家可以直接参考我在之前做 强化学习 Reinforcement learning 教程中的[这节内容]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-4-gym.md %}),
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
@@ -136,7 +137,7 @@ def evaluation():
 这串代码的结果就是这节内容最上面的那个视频效果啦. `winner` 的神经网络进化成这样了. 不过你的生成的神经网络可能并不是长这样.
 是时候还可能某个 `input` 都没有使用到. 就说明这个 `input` 的效用可能并不大.
 
-<center><img src="/static/results/evolutionary-algorithm/3-2-0.png"  width="500px"></center>
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.png">
 
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
