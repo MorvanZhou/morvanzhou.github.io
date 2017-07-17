@@ -73,6 +73,11 @@ fitness_criterion     = max     # 按照适应度最佳的模式选个体
 fitness_threshold     = 2.
 
 activation_default      = relu      # 我挑选的 激活函数
+
+# network 输入输出个数
+num_hidden              = 0
+num_inputs              = 4
+num_outputs             = 2
 ```
 
 有了这个 `config` 文件里面的信息, 我们就能创建网络和评估网络了. 和上次一样, 下面的功能对每一个个体生成一个神经网络,
@@ -82,7 +87,7 @@ activation_default      = relu      # 我挑选的 激活函数
 然后我们挑选一个概率最大的动作.
 
 ```python
-softmax = lambda logits: np.exp(logits)/np.sum(np.exp(logits))   # softmax function for choosing action
+softmax = lambda logits: np.exp(logits)/np.sum(np.exp(logits) + 1e-4)   # softmax function for choosing action
 
 def eval_genomes(genomes, config):
     for genome_id, genome in genomes:
@@ -141,3 +146,20 @@ def evaluation():
 
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
+
+如果修改一下 `config` [文件](#)里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
+这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样.
+
+```shell
+feed_forward            = False
+```
+
+这样我们就能发现, 产生的网络还能是这样, 注意箭头的方向和位置.
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-2.png">
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-3.png">
+
+
+最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如 [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf);
+[ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf).
