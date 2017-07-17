@@ -103,7 +103,7 @@ def eval_genomes(genomes, config):
 ```
 
 不知道大家看到这里有没有想过, 如果我们能并行运算该多好. 所以, 我亲测失败. 原因是, `gym` 的环境不支持 `multiprocessing`. 如果你想多线程的话, 可以考虑使用
-`threading`, 不过不保证效率有提高. 想知道为什么的话, [请看这里]({% link _contents/tutorials/python-basic/multiprocessing/4-comparison.md %).
+`threading`, 不过不保证效率有提高. 想知道为什么的话, [请看这里]({% link _contents/tutorials/python-basic/multiprocessing/4-comparison.md %}).
 
 接下来我们就开始写 `run` 里面的内容了, 创建种群, 繁衍后代, 适者生存, 不适者淘汰.
 
