@@ -1,7 +1,7 @@
 ---
 youku_id:
 youtube_id:
-title: NEAT
+title: NEAT 监督学习
 publish-date:
 thumbnail: "/static/thumbnail/"
 chapter: 3
@@ -16,10 +16,14 @@ chapter: 3
 接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-neuro-evolution-neat.md %}),
 我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
 我也尝试着纯手工编写 NEAT 算法. 可是... 尝试了几天过后, 因为太麻烦了, 我就放弃了. 我先总结下自己淌过的水, 如果你有能力解决下面提到的几点, 恭喜你, 你真的特别厉害.
-如果不能, 其实也没关系, 有高手已经写好了 NEAT 的 [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html), 我们直接调用就行.
 
 难点 (1) 有效的储存编码的神经网络 (我用 numpy 解决了); (2) 有效的解码并生成一个可以正向传播的神经网络 (由于没有层结构, 不能方便地使用矩阵 dot 点乘.
 我查了很多方法, 但是觉得那些方法都比较没效率); (3) 可视化网络结构 (当然要可视化啦, 不可视化出来, 你怎么知道自己的神经网络长什么样, 不好 debug 了呀)
+
+如果不能, 其实也没关系, 有高手已经写好了 NEAT 的 [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html), 我们直接调用就行.
+下图就是使用 NEAT 模块生成的一个神经网络, 看起来很优雅吧.
+
+<center><img src="/static/results/evolutionary-algorithm/3-2-0.png"  width="500px"></center>
 
 #### 本节内容包括:
 
@@ -132,3 +136,5 @@ print('\nOutput:')
 
 关于最下面的那个神经网络图, 需要说明一下, 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
+
+下一次呢, 我们来点更厉害的, [使用 NEAT 进化出一个会立杆子的机器人]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-03-neat-reinforcement-learning.md %}).
