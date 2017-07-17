@@ -28,6 +28,11 @@ chapter: 3
 这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
  [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
 
+具体来说, Neuro Evolution 其实可以在很多方面来处理问题.
+比如用它来做监督学习 (不过在这点上一般没有反向传播的神经网络学得快, 我们在下节内容里会做一个简单的监督学习例子),
+还有可以拿它来做强化学习 (这和传统的强化学习 Reinforcement Learning 是有的一拼的,
+在下下节内容中我们使用 gym 模块来实现 NeuroEvolution 的强化学习).
+
 #### 本节内容包括:
 
 * [神经网络进化的方式](#evolve)

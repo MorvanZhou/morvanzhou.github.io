@@ -31,8 +31,8 @@ thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 <h4 class="tut-h4-pad" id="install">安装 gym</h4>
 
 在 MacOS 和 Linux 系统下, 安装 gym 很方便, 首先确定你是 python 2.7 或者 python 3.5 版本.
-然后在你的 terminal 中复制下面这些. 但是 gym 暂时还不支持 Windows, 不过说不定某天突然就支持了~
-所以接下来要说的安装方法只有 MacOS 和 Linux 的. Windows 用户还是自行刷一个 Linux 或者手动用 tkinter 编吧~
+然后在你的 terminal 中复制下面这些. 但是 gym 暂时还不完全支持 Windows, 不过有些虚拟环境已经的到了支持, 想立杆子那个已经支持了.
+所以接下来要说的安装方法只有 MacOS 和 Linux 的. Windows 用户的安装方式应该也差不多, 如果 Windows 用户遇到了问题, 欢迎在留言区分享解决的方法.
 
 ```shell
 # python 2.7, 复制下面
