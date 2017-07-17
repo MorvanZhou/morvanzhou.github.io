@@ -160,6 +160,13 @@ def evaluation():
 feed_forward            = False
 ```
 
+将所有原来的 `net = neat.nn.FeedForwardNetwork` 改成 `neat.nn.RecurrentNetwork`, 就能按上面所说的方式进行 recurrent 操作了.
+
+```python
+# net = neat.nn.FeedForwardNetwork.create(winner, p.config)
+net = neat.nn.RecurrentNetwork.create(genome, config)
+```
+
 这样我们就能发现, 产生的网络还能是这样, 注意箭头的方向和位置.
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-3-2.png">
