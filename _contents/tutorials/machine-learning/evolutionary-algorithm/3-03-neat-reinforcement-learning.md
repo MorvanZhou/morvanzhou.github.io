@@ -175,5 +175,5 @@ net = neat.nn.RecurrentNetwork.create(genome, config)
 
 
 最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如
-* [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf);
-* [ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf).
+* [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf), 使用 NEAT 形式生成 CPPN 的网络, 用 CPPN 进行 indirect encoding 生成更大更复杂的神经网络, 但是后者的网络结构的 capacity 不能改变;
+* [ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf), 解决上面提到的网络结构 capacity 不可变问题.

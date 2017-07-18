@@ -9,6 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow8_feeds.py)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 
 这一次我们会讲到 Tensorflow 中的 `placeholder` ,  `placeholder` 是 Tensorflow 中的占位符，暂时储存变量.

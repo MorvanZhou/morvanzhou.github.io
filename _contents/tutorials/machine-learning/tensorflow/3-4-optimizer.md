@@ -10,7 +10,8 @@ date: 2016-11-3
 * 学习资料:
   * 各种 Optimizer 的对比 [链接](http://cs231n.github.io/neural-networks-3/)(英文)
   * 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
-  * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html) 
+  * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 本次课程，我们会讲到`Tensorflow`里面的优化器。
 

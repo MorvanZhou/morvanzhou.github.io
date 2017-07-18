@@ -8,6 +8,7 @@ title: 自编码 Autoencoder (非监督学习)
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf21_autoencoder)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * 机器学习-简介系列 [Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
 
 **Autoencoder** 简单来说就是将有很多Feature的数据进行压缩，之后再进行解压的过程。

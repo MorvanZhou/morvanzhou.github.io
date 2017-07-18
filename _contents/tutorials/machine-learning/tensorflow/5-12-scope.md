@@ -9,6 +9,7 @@ thumbnail: /static/thumbnail/tf/tf22_scope.jpg
 ---
 * 学习资料:
   * 不同 scope [对比代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_scope.py)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * reuse variable [RNN 代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py)
   * sharing variable [tensorflow 官网介绍](https://www.tensorflow.org/versions/master/how_tos/variable_scope/index.html)
 

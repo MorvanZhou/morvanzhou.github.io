@@ -9,6 +9,7 @@ thumbnail: "/static/thumbnail/tf/tf25 gradient descent.jpg"
 
 * 学习资料:
   * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * [什么是梯度下降4分钟短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})
 
 这一次, 我们想要真正意义上的看到自己手中的模型是怎么样进行梯度下降 (gradient descent) 的. 打个比方就像下面这张图. 红色圆点就是最开始的参数误差.

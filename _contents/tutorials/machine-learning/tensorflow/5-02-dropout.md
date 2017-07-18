@@ -9,6 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf17_dropout)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
   
 Overfitting 也被称为过度学习，过度拟合。 它是机器学习中常见的问题。

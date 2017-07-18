@@ -9,6 +9,7 @@ author: 灰猫
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.

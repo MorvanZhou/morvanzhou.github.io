@@ -9,6 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf16_classification)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 这次我们会介绍如何使用TensorFlow解决Classification（分类）问题。
 之前的视频讲解的是Regression (回归)问题。

@@ -9,6 +9,7 @@ date: 2016-11-3
 ---
 * 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow7_variable.py)
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 这节课我们学习如何在 Tensorflow 中使用 `Variable` .
 
