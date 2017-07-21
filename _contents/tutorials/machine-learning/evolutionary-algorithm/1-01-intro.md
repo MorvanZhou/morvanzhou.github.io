@@ -7,9 +7,7 @@ thumbnail: "/static/thumbnail/"
 chapter: 1
 ---
 
-&#955; aasada
 
-*E*~0~=*mc*^2^
 
 <!--
 * 学习资料:
