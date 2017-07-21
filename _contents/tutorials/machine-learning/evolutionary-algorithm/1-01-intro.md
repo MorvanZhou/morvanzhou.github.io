@@ -7,6 +7,10 @@ thumbnail: "/static/thumbnail/"
 chapter: 1
 ---
 
+&#955; aasada
+
+*E*~0~=*mc*^2^
+
 <!--
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py)

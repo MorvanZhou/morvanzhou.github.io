@@ -140,7 +140,7 @@ def evaluation():
 ```
 
 这串代码的结果就是这节内容最上面的那个视频效果啦. `winner` 的神经网络进化成这样了. 不过你的生成的神经网络可能并不是长这样.
-是时候还可能某个 `input` 都没有使用到. 就说明这个 `input` 的效用可能并不大.
+有时候还可能某个 `input` 都没有使用到. 就说明这个 `input` 的效用可能并不大.
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.png">
 
