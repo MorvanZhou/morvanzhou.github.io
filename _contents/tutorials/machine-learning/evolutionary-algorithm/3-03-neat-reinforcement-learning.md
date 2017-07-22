@@ -83,12 +83,10 @@ num_outputs             = 2
 有了这个 `config` 文件里面的信息, 我们就能创建网络和评估网络了. 和上次一样, 下面的功能对每一个个体生成一个神经网络,
 然后把这个网络放在立杆子游戏中玩, 一个 generation 中我们对每一个 `genome` 的 `net` 测试 `GENERATION_EP` 这么多回合,
 然后最后挑选这么多回合中总 `reward` 最少的那个回合当成这个 `net` 的 `fitness` (你可以想象这是木桶效应, 整体的效应取决于最差的那个结果).
-然后要注意的是, `net.activate()` 之后我们会使用一个 `softmax` 激励函数来激活最后 output 的值. 将 output 转换成施加动作的概率.
-然后我们挑选一个概率最大的动作.
+然后要注意的是, `net.activate()` output 的是动作的值.
+然后我们挑选一个值最大的动作.
 
 ```python
-softmax = lambda logits: np.exp(logits)/np.sum(np.exp(logits) + 1e-4)   # softmax function for choosing action
-
 def eval_genomes(genomes, config):
     for genome_id, genome in genomes:
         net = neat.nn.FeedForwardNetwork.create(genome, config)
@@ -97,8 +95,8 @@ def eval_genomes(genomes, config):
             accumulative_r = 0.         # stage longer to get a greater episode reward
             observation = env.reset()
             for t in range(EP_STEP):
-                action_logits = net.activate(observation)
-                action = np.argmax(softmax(action_logits))
+                action_values = net.activate(observation)
+                action = np.argmax(action_values)
                 observation_, reward, done, _ = env.step(action)
                 accumulative_r += reward
                 if done:
@@ -134,7 +132,7 @@ def evaluation():
         s = env.reset()
         while True:
             env.render()
-            a = np.argmax(softmax(net.activate(s)))
+            a = np.argmax(net.activate(s))
             s, r, done, _ = env.step(a)
             if done: break
 ```
