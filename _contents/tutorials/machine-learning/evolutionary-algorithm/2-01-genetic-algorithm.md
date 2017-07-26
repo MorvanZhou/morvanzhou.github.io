@@ -7,74 +7,128 @@ thumbnail: "/static/thumbnail/"
 chapter: 2
 ---
 
-<!--
-* 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py)
-  * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
-  * [PyTorch 官网](http://pytorch.org/)
 
-Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
+* 学习资料:
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py)
+  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+
+如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法](#), 在动画里有了基础的了解,
+在接下来的内容中, 你就如鱼得水啦. 如果让我用一句话概括遗传算法: "在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝".
+
+在这一节中, 我们的 "乖宝宝" 就是图中更高的点, 用遗传算法, 我们就能轻松找到 "最乖的宝宝".
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-0.gif">
 
 
 #### 本节内容包括:
 
-* [快速搭建](#fast)
+* [找一个好的 fitness 方程](#fitness)
+* [DNA 编码](#DNA)
+* [进化啦](#eval)
 
 
-<h4 class="tut-h4-pad" id="fast"> 快速搭建</h4>
+<h4 class="tut-h4-pad" id="fitness">找一个好的 fitness 方程</h4>
 
-我们先看看之前写神经网络时用到的步骤. 我们用 `net1` 代表这种方式搭建的神经网络.
+所有的遗传算法 (Genetic Algorithm), 后面都简称 GA, 我们都需要一个评估好坏的方程,
+这个方程通常被称为 fitness. 在今天的问题中, 我们找到下面这个曲线当中的最高点.
+那么这个 fitness 方程就很好定, 越高的点, fitness 越高.
 
-```python
-class Net(torch.nn.Module):
-    def __init__(self, n_feature, n_hidden, n_output):
-        super(Net, self).__init__()
-        self.hidden = torch.nn.Linear(n_feature, n_hidden)
-        self.predict = torch.nn.Linear(n_hidden, n_output)
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-1.png">
 
-    def forward(self, x):
-        x = F.relu(self.hidden(x))
-        x = self.predict(x)
-        return x
-
-net1 = Net(1, 10, 1)   # 这是我们用这种方式搭建的 net1
-```
-
-我们用 class 继承了一个 torch 中的神经网络结构, 然后对其进行了修改, 不过还有更快的一招, 用一句话就概括了上面所有的内容!
+如果这个曲线上任一点的 y 值是 `pred` 的话, 我们的 fitness 就是下面这样:
 
 ```python
-net2 = torch.nn.Sequential(
-    torch.nn.Linear(1, 10),
-    torch.nn.ReLU(),
-    torch.nn.Linear(10, 1)
-)
+def get_fitness(pred):
+    return pred
 ```
 
-我们再对比一下两者的结构:
+<h4 class="tut-h4-pad" id="DNA">DNA 编码</h4>
+
+在 GA 中有基因, 为了方便, 我们直接就称为 `DNA` 吧. GA 中第二重要的就是这 `DNA` 了, 如何编码和解码 `DNA`,
+就是你使用 GA 首先要想到的问题. 传统的 GA 中, `DNA` 我们能用一串二进制来表示, 比如:
 
 ```python
-print(net1)
-"""
-Net (
-  (hidden): Linear (1 -> 10)
-  (predict): Linear (10 -> 1)
-)
-"""
-print(net2)
-"""
-Sequential (
-  (0): Linear (1 -> 10)
-  (1): ReLU ()
-  (2): Linear (10 -> 1)
-)
-"""
+DNA1 = [1, 1, 0, 1, 0, 0, 1]
+DNA2 = [1, 0, 1, 1, 0, 1, 1]
 ```
 
-我们会发现 `net2` 多显示了一些内容, 这是为什么呢? 原来他把激励函数也一同纳入进去了, 但是 `net1` 中, 激励函数实际上是在 `forward()` 功能中才被调用的.
-这也就说明了, 相比 `net2`, `net1` 的好处就是, 你可以根据你的个人需要更加个性化你自己的前向传播过程, 比如(RNN).
-不过如果你不需要七七八八的过程, 相信 `net2` 这种形式更适合你.
+为什么会要用二进制编码, 我们之后在下面的内容中详细说明这样编码的好处. 但是长成这样的 `DNA` 并不好使用.
+如果要将它解码, 我们可以将二进制转换成十进制, 比如二进制的 `11` 就是十进制的 `3`. 这种转换的步骤在程序中很好执行.
+但是有时候我们会需要精确到小数, 其实也很简单, 只要再将十进制的数浓缩一下就好. 比如我有 `1111` 这么长的 `DNA`, 我们产生的十进制数范围是 [0, 15],
+而我需要的范围是 [-1, 1], 我们就将 [0, 15] 缩放到 [-1, 1] 这个范围就好.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py) 中的每一步的意义啦.
+```python
+def translateDNA(pop):
+    return pop.dot(2 ** np.arange(DNA_SIZE)[::-1]) / (2**DNA_SIZE-1) * X_BOUND[1]
+```
 
+注意, 这里的 `pop` 是一个储存二进制 `DNA` 的矩阵, 他的 shape 是这样 (pop_size, DNA_size).
 
--->
+<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+
+进化分三步:
+
+* 适者生存 (selection)
+* DNA 交叉配对 (crossover)
+* DNA 变异 (mutation)
+
+我们用 python 的三个功能, 一个循环表示:
+
+```python
+# 种群 DNA
+pop = np.random.randint(0, 2, (1, DNA_SIZE)).repeat(POP_SIZE, axis=0)
+
+F_values = F(translateDNA(pop))
+fitness = get_fitness(F_values)
+pop = select(pop, fitness)      # 按适应度选 pop
+pop_copy = pop.copy()           # 备个份
+for parent in pop:
+    child = croseeover(parent, pop_copy)
+    child = mutate(child)
+    parent[:] = child           # 宝宝变大人
+```
+
+适者生存的 `select()` 很简单, 我们只要按照适应程度 `fitness` 来选 `pop` 中的 `parent` 就好.
+`fitness` 越大, 越有可能被选到.
+
+```python
+def select(pop, fitness):
+    idx = np.random.choice(np.arange(POP_SIZE), size=POP_SIZE, replace=True,
+                           p=fitness/fitness.sum()) # p 就是选它的比例
+    return pop[idx]
+```
+
+接下来进行交叉配对. 方式很简单. 比如这两个 DNA, `Y` 的点我们取 `DNA1` 中的元素, `N` 的点取 `DNA2` 中的.
+生成的 `DNA3` 就有来自父母的基因了.
+
+```python
+DNA1 = [1, 1, 0, 1, 0, 0, 1]
+       [Y, N, Y, N, N, Y, N]
+DNA2 = [1, 0, 1, 1, 0, 1, 1]
+
+DNA3 = [1, 0, 0, 1, 0, 1, 1]
+```
+
+而 python 写出来也很方便, 从 `pop_copy` 中随便选一个当另一个父辈 和 `parent` 进行随机的 crossover:
+
+```python
+def crossover(parent, pop_copy):
+    if np.random.rand() < CROSS_RATE:
+        i_ = np.random.choice(np.arange(POP_SIZE), size=1)  # select another individual from pop
+        cross_points = np.random.randint(0, 2, DNA_SIZE).astype(np.bool)  # choose a crossover points
+        parent[cross_points] = pop[i_, cross_points]  # mating and produce one child
+    return parent
+```
+
+mutation 就更好写了, 将某些 DNA 中的 `0` 变成 `1`, `1` 变成 `0`.
+
+```python
+def mutate(child):
+    for point in range(DNA_SIZE):
+        if np.random.rand() < MUTATION_RATE:
+            child[point] = 1 if child[point] == 0 else 0
+    return child
+```
+
+有了这些规则, `select`, `crossover`, `mutate`, 我们就能在程序里上演进化论啦.
+赶紧运行一下我在github的[这套全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py).
