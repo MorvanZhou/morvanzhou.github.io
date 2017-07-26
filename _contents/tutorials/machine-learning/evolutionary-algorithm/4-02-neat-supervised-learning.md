@@ -8,7 +8,7 @@ chapter: 4
 ---
 
 * 学习资料:
-  * [本节的全部代码](#)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT)
   * [我制作的 什么是神经进化(即将制作) 动画简介](#)
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
@@ -87,7 +87,7 @@ def eval_genomes(genomes, config):
 ```
 
 每一个 neat 的程序里有需要有这样的评分标准. 接着我们创建一个 config 的文件, 用来给定所有运行参数.
-这个 config 文件要分开存储, 而且文件里要有一下几个方面的参数预设. 对于每个方面具体的预设值请参考我在 github 中的[config-forward](#)这个文件.
+这个 config 文件要分开存储, 而且文件里要有一下几个方面的参数预设. 对于每个方面具体的预设值请参考我在 github 中的[config-forward](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/config-feedforward)这个文件.
 对于每个方面的解释, 不太明白的话, 请参考[这里](http://neat-python.readthedocs.io/en/latest/config_file.html)
 
 ```shell
@@ -116,7 +116,7 @@ p = neat.Population(config)
 winner = p.run(eval_genomes, 300)   # 输入计算 fitness 的方式和 generation 的次数
 ```
 
-最主要的过程就完啦, 简单吧. 在这个[例子脚本](#)中的其他代码都是现实结果的代码, 大家随便看看就知道了.
+最主要的过程就完啦, 简单吧. 在这个[例子脚本](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/run_xor.py)中的其他代码都是现实结果的代码, 大家随便看看就知道了.
 
 ```python
 print('\nOutput:')
@@ -126,7 +126,7 @@ print('\nOutput:')
         print("input {!r}, expected output {!r}, got {!r}".format(xi, xo, output))
 ```
 
-我们通过这个来输出最后的 `winner` 神经网络预测结果, 不出意外, 你应该预测很准. 最后通过 `visualize.py` [文件的可视化功能](#), 我们就能生成几个图片,
+我们通过这个来输出最后的 `winner` 神经网络预测结果, 不出意外, 你应该预测很准. 最后通过 `visualize.py` [文件的可视化功能](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/visualize.py), 我们就能生成几个图片,
 使用浏览器打开 `speciation.svg` 看看不同种群的变化趋势, `avg_fitness.svg` 看看 fitness 的变化曲线, `Digraph.gv.svg` 看这个生成的神经网络长怎样.
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/4-2-1.png">

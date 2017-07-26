@@ -1,7 +1,7 @@
 ---
 youku_id:
 youtube_id:
-title: 遗传算法 (Genetic Algorithm)
+title: 遗传算法
 publish-date:
 thumbnail: "/static/thumbnail/"
 chapter: 2

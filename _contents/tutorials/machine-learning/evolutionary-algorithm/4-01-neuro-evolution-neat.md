@@ -1,7 +1,7 @@
 ---
 youku_id:
 youtube_id:
-title: 神经进化 (NeuroEvolution)
+title: 神经进化
 publish-date:
 thumbnail: "/static/thumbnail/"
 chapter: 4
@@ -32,7 +32,7 @@ chapter: 4
 具体来说, Neuro Evolution 其实可以在很多方面来处理问题.
 比如用它来做监督学习 (不过在这点上一般没有反向传播的神经网络学得快, 我们在下节内容里会做一个简单的监督学习例子),
 还有可以拿它来做强化学习 (这和传统的强化学习 Reinforcement Learning 是有的一拼的,
-在下下节内容中我们使用 gym 模块来实现 NeuroEvolution 的强化学习).
+在之后内容中我们使用 gym 模块来实现 NeuroEvolution 的强化学习).
 
 #### 本节内容包括:
 
