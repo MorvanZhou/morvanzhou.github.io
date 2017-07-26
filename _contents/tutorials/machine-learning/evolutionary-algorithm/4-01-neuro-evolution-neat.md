@@ -117,7 +117,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 [Evolution Strategy]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %}) 相比较于 [Genetic Algorithm]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})
 更加注重 mutation 的过程. 而且其中高度使用到了二次分布 (Normal distribution).
 
-而 OpenAI 提出的能够替代强化学习的 EA 可以终结如下:
+而 OpenAI 提出的能够替代强化学习的 ES 可以终结如下:
 
 * 固定神经网络结构;
 * 使用二次分布来扰动 (perturb) 神经网络链接参数;
@@ -131,6 +131,6 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 </a>
 
 如果机器学习就是为了找到图中最红的地方, 那么 ES 就是在自己周围随机繁殖后代, 然后有些后代会靠经红色的地方, 有些不会.
-那么我们就修改 ES 神经网络的参数, 让它更加想那些好后代的参数. 使用这种方式来越来越靠近红色.
+那么我们就修改 ES 神经网络的参数, 让它更加像那些好后代的参数. 使用这种方式来越来越靠近红色.
 
 接下来的内容我们就来用代码实现上述的两种途径.

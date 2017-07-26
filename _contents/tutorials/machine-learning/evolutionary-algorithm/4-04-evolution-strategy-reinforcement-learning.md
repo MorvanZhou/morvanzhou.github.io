@@ -40,7 +40,7 @@ chapter: 4
 简单来说, 这个算法就是在不断地试错, 然后每一次试错后, 让自己更靠近到那些返回更多奖励的尝试点. 如果大家对[强化学习的 Policy Gradient]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %})
 有了解的话, 我们就来在这里说说 Policy Gradient (PG) 和 Evolution Strategy (ES) 的不同之处.
 
-PG 和 ES 是一对双胞胎兄弟, 他们非常像, 不过他们最重要的一点差别就是. PG 需要进行误差反向传播, 而 ES 不用. 在行为的策略上, **PG 是扰动 Action**, 不同的 action 带来不同的 reward,
+PG 和 ES 是一对双胞胎兄弟, 他们非常像, 不过他们最重要的一点差别就是. **PG 需要进行误差反向传播, 而 ES 不用**. 在行为的策略上, **PG 是扰动 Action**, 不同的 action 带来不同的 reward,
 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 **ES 是扰动 神经网络中的 Parameters**, 不同的 parameters 带来不同的 reward,
 通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
 
@@ -91,7 +91,7 @@ def build_net():
 def train():
     # 让儿孙们尽情在平行世界玩耍
     rewards = [get_reward() for i in range(N_KID)]
-    # 在用 rewards 更新 net
+    # 再用 rewards 更新 net
 
 build_net()
 for g in range(N_GENERATION):
@@ -120,7 +120,7 @@ def build_net():
 我们将使用 `multiprocessing` 这个模块来实现 CPU 的并行, 有兴趣了解 python 并行的朋友, 我有一个非常简单的 `multiprocessing` 的[教程](https://morvanzhou.github.io/tutorials/python-basic/multiprocessing/). 并行的时候传给每个 CPU 的数据越少, 运行越快,
 所以与其将像这样的 `np.random.randn(noise.size)` array 噪点数据传入其他 CPU, 还不如在其他 CPU 运算的时候在组装这些噪点就好.
 因为我们只需要给 CPU 传入一个数 `noise seed` 来代替庞大的 `array`, 用 `seed` 来伪随机生成 `array`, 这样能加速你的运算.
-在更新网络的时候再用通用的 `seed` 伪随机构造同样的 `array` 更新就行. 虽然创建了两遍 `array`, 但是这还是比将 `noise array` 传入其他 CPU 快.
+在更新网络的时候再用同样的 `seed` 伪随机构造同样的 `array` 更新就行. 虽然创建了两遍 `array`, 但是这还是比将 `noise array` 传入其他 CPU 快.
 
 ```python
 def train(net_shapes, net_params, pool):
@@ -128,7 +128,8 @@ def train(net_shapes, net_params, pool):
     noise_seed = np.random.randint(0, 2 ** 32 - 1, size=N_KID)
 
     # 用多进程完成 get_reward 功能
-    jobs = [pool.apply_async(get_reward, (这里是 get_reward 需要的数据)) for k_id in range(N_KID)]
+    jobs = [pool.apply_async(get_reward, (这里是get_reward需要的数据, 比如 seed))
+            for k_id in range(N_KID)]
     rewards = np.array([j.get() for j in jobs])
 
     cumulative_update = np.zeros_like(net_params)       # initialize update values
@@ -147,7 +148,7 @@ def train(net_shapes, net_params, pool):
 而是使用了 `utility` 这个东西. 简单来说, 就是将 `reward` 排序, `reward` 最大的那个, 对应上 `utility` 的第一个,
 反之, `reward` 最小的对应上 `utility` 最后一位. 而我们的 `utility` 长这样:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-2.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-2.png">
 
 OpenAI 的 paper 当中提到这样会促进学习, 我想这样的效果应该和 normalize reward 的效果差不多. 我们就按 OpenAI 提到的方法来.
 
@@ -175,14 +176,14 @@ def get_reward(shapes, params, env, ep_max_step, seed,):
 当中, 用了论文中提到的 `mirrored sampling` 这种方法 (论文名: [Mirrored Sampling and Sequential Selection for
 Evolution Strategies](https://hal.inria.fr/inria-00530202/document)). 下面是这个论文中的图.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-3.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-3.png">
 
 简单说, 我们会生成很多噪点, 与其完全随机, 还不如生成一些镜像的噪点. 那这些镜像噪点中,
 大多数情况都是其中一个比另一个好, 所以总会有比较好的那个一个噪点, 我们就利用镜像中比较好的噪点, 加大幅度更新.
 
 上面的就是 ES 的核心功能了, 其他的小功能, 我想, 只要你运行一下[我写的那个文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py),
 自己折腾一下, 就能轻松理解.
-在这里挑选不同的模拟环境:
+你在这里挑选不同的模拟环境:
 
 ```python
 CONFIG = [
