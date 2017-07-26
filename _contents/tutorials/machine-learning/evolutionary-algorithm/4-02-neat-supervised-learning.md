@@ -4,7 +4,7 @@ youtube_id:
 title: NEAT 监督学习
 publish-date:
 thumbnail: "/static/thumbnail/"
-chapter: 3
+chapter: 4
 ---
 
 * 学习资料:

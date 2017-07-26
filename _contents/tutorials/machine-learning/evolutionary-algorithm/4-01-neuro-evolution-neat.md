@@ -4,12 +4,13 @@ youtube_id:
 title: 神经进化 (NeuroEvolution)
 publish-date:
 thumbnail: "/static/thumbnail/"
-chapter: 3
+chapter: 4
 ---
 
 * 学习资料:
   * [我制作的 什么是神经进化(即将制作) 动画简介](#)
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
+  * OpenAI 的 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/)
 
 
 神经网络在当今是一种迅速发展的机器学习方式, 使用反向传播的神经网络更是被推向了一轮又一轮的高峰, 可是我们的视野请不要被反向传播的神经网络变得狭隘.
@@ -20,7 +21,7 @@ chapter: 3
 
 <div align="center">
 <video width="500" controls loop autoplay muted>
-  <source src="/static/results/evolutionary-algorithm/4_1-0.mp4" type="video/mp4">
+  <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </div>
@@ -37,6 +38,7 @@ chapter: 3
 
 * [神经网络进化的方式](#evolve)
 * [NEAT 算法](#neat)
+* [进化策略与神经网络](#es)
 
 
 
@@ -49,15 +51,17 @@ chapter: 3
 
 这种思路很简单, 我们有一个全连接神经网络, 像下图:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4_1-1.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-1.png">
 
-通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的.
+通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的. 在这方面, OpenAI 在2017年做出了一个[有贡献的研究](https://blog.openai.com/evolution-strategies/).
+他们将进化策略 (Evolution Strategy) 衍生到神经网络, 然后不断进化神经网络中的参数. 他们的实验结果都能够媲美很多强化学习方法, 比如 [Q-learning]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %}),
+[Policy Gradient]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %}).
 
 ##### 尝试2: 修改参数 和 形态
 
 这种变化更多, 除了参数, 形态也是能够改变的. 我们待会要提到的 NEAT 算法就是这样一种. 因为能够变化形态, 所以在 NEAT 中, 并不存在神经层这种东西.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4_1-2.jpg">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-2.jpg">
 
 
 对比这两种不同的方式, 我们可以想象肯定是越能变化的, 结果会越好啦. 因为它能够探索的形态结构越多, 找到好方法的机会就越大.
@@ -67,7 +71,7 @@ chapter: 3
 
 <h4 class="tut-h4-pad" id="neat">NEAT 算法</h4>
 
-NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)),
+NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}), 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)),
 如果想偷懒, 这篇在 conference 上的浓缩版([Efficient evolution of neural network topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf))也是很好的阅读材料.
 
 简单来说, NEAT 有几个关键步骤,
@@ -81,7 +85,7 @@ NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Ne
 我们再来具体看看他是怎么 搭建/交叉/变异 神经网络的. 之后的用图都是上面提到的 paper 中的.
 
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4_1-3.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-3.png">
 
 
 上面的图你可以想象成就是我们如何通过 DNA (图中的 Genome) 来编译出神经网络的. `Node genes` 很简单就是神经网络每个节点的定义.
@@ -91,13 +95,13 @@ NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Ne
 通过上面的 Genome 我们就能搭建出那个神经网络了, 可以看出我们有一个 2-5 `DISAB` 的链接, 原因就是在2-5之间我们已经变异出了一个4节点.
 所以2-5 是通过 4 相链接的, 这样我们就需要将原来的 2-5 链接 disable 掉.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4_1-4.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-4.png">
 
 
 关于变异呢. 我们可以有 `节点变异` 和 `链接变异`, 就和上图一样, 这个简单, 大家都看得出来. 但是要提的一点是,
 如果新加的节点像 6 那样, 是在原有链接上的突变节点, 那么原来的 3-5 链接就要被 disable 掉.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4_1-5.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-5.png">
 
 
 再来就是 `crossover` 了, 两个神经网络 "交配" 啦. 这时你就发现原来 innovation number 在这里是这么重要.
@@ -108,4 +112,25 @@ NEAT 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Ne
 
 好了, 通过上面的方式一步步进行, 好的神经网络被保留, 坏的杀掉. 我们的神经网络就能朝着正确的方形进化啦.
 
-下一节内容我们就来用代码实现上述的过程.
+<h4 class="tut-h4-pad" id="es">进化策略与神经网络</h4>
+
+[Evolution Strategy]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %}) 相比较于 [Genetic Algorithm]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})
+更加注重 mutation 的过程. 而且其中高度使用到了二次分布 (Normal distribution).
+
+而 OpenAI 提出的能够替代强化学习的 EA 可以终结如下:
+
+* 固定神经网络结构;
+* 使用二次分布来扰动 (perturb) 神经网络链接参数;
+* 使用扰动的网络在环境中收集奖励;
+* 用奖励 (reward) 或者 效用 (utility) 来诱导参数更新幅度;
+
+[下面的图](https://blog.openai.com/evolution-strategies/)是 OpenAI 用来诠释 ES 算法的精辟:
+
+<a href="https://blog.openai.com/evolution-strategies/">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-6.png">
+</a>
+
+如果机器学习就是为了找到图中最红的地方, 那么 ES 就是在自己周围随机繁殖后代, 然后有些后代会靠经红色的地方, 有些不会.
+那么我们就修改 ES 神经网络的参数, 让它更加想那些好后代的参数. 使用这种方式来越来越靠近红色.
+
+接下来的内容我们就来用代码实现上述的两种途径.
