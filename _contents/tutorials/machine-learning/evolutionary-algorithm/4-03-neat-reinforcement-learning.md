@@ -13,7 +13,7 @@ chapter: 3
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
 
-[上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-02-neat-supervised-learning.md %}) 里,
+[上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-02-neat-supervised-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
 有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)
 
@@ -21,14 +21,14 @@ chapter: 3
 
 <div align="center">
 <video width="500" controls loop autoplay muted>
-  <source src="/static/results/evolutionary-algorithm/3-3-0.mp4" type="video/mp4">
+  <source src="/static/results/evolutionary-algorithm/4-3-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </div>
 
 这个机器人的神经网络长这样:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-2-0.png">
 
 
 #### 本节内容包括:
@@ -42,7 +42,7 @@ chapter: 3
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-1.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-1.png">
 
 
 安装 gym 的方式也很简单, 大家可以直接参考我在之前做 强化学习 Reinforcement learning 教程中的[这节内容]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-4-gym.md %}),
@@ -140,7 +140,7 @@ def evaluation():
 这串代码的结果就是这节内容最上面的那个视频效果啦. `winner` 的神经网络进化成这样了. 不过你的生成的神经网络可能并不是长这样.
 有时候还可能某个 `input` 都没有使用到. 就说明这个 `input` 的效用可能并不大.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-2-0.png">
 
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
@@ -167,9 +167,9 @@ net = neat.nn.RecurrentNetwork.create(genome, config)
 
 这样我们就能发现, 产生的网络还能是这样, 注意箭头的方向和位置.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-2.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-2.png">
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-3.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-3.png">
 
 
 最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如
