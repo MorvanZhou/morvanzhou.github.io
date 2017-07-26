@@ -128,4 +128,4 @@ Gen 181 :  You get it!
 
 赶紧试试这套github的[全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py).
 
-接下来几节内容, 我们就来看看在不同的情况中如何根据不同的标注选择 fitness 和 DNA 编码.
+接下来几节内容, 我们就来看看在不同的情况中如何根据不同的标准选择 fitness 和 DNA 编码.
