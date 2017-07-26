@@ -96,7 +96,7 @@ class GA:
         self.pop = pop
 ```
 
-有了上面定义的这些功能, 在将其他的[小部分](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)补全.
+有了上面定义的这些功能, 再将其他的[小部分](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)补全.
 我们就能很容易的使用这个 `GA` class 了.
 
 ```python
