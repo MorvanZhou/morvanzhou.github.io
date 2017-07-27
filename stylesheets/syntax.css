@@ -1,5 +1,4 @@
 pre.highlight {
-font-family: Tahoma, Menlo, Helvetica, Arial, Microsoft YaHei,;
 text-align: left;
 border-radius: 4px;
 padding: 1em;
@@ -11,6 +10,7 @@ overflow-x: scroll;
 .highlight code, .highlight pre {
 color:#fdce93;
 background-color:#494949/*#3f3f3f*/;
+font-family: Menlo, Andale Mono, Arial, Tahoma, Microsoft YaHei;
 font-size: 0.8em;
 }
 

@@ -31,7 +31,7 @@ chapter: 2
 * [进化啦](#eval)
 
 
-<h4 class="tut-h4-pad" id="fitness">找一个好的 fitness 方程</h4>
+<h4 class="tut-h4-pad" id="fitness">fitness 和 DNA</h4>
 
 上次我们提到过 GA 中最重要的就是怎么定义 fitness function, 怎么给 DNA 编码. 这次我们来句另一个例子.
 比如我们有一个要生成的句子:
