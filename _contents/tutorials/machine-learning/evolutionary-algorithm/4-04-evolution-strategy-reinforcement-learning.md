@@ -14,7 +14,7 @@ chapter: 4
 
 [上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-03-neat-reinforcement-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.
-如果你的计算机是多核的, 我们还能将模拟程序并行到你多个核上去.
+如果你的计算机是多核的, 我们还能将模拟程序并行到你多个核上去. **如果我用一句话概括强化学习上的 ES : 在自己附近生宝宝, 让自己更像那些表现好的宝宝**
 
 本节内容提前看:
 

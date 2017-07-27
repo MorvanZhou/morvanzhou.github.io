@@ -13,7 +13,7 @@ chapter: 4
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
 
-接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution-neat.md %}),
+接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}),
 我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
 我也尝试着纯手工编写 NEAT 算法. 可是... 尝试了几天过后, 因为太麻烦了, 我就放弃了. 我先总结下自己淌过的水, 如果你有能力解决下面提到的几点, 恭喜你, 你真的特别厉害.
 
