@@ -9,7 +9,7 @@ publish-date: 2016-12-01
 thumbnail: /static/thumbnail/git/4-03.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/tree/master/gitTUT)
+  * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-3.zip)
   
 本节内容分为:
   

@@ -9,7 +9,7 @@ comments: true
 thumbnail: /static/thumbnail/git/3-02.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/tree/master/gitTUT)
+  * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_3-2.zip)
 
 
 之前我们使用 `reset` 的时候是针对整个版本库, 回到版本库的某个过去. 
