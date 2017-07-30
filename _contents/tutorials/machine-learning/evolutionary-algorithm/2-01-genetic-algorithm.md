@@ -112,9 +112,9 @@ DNA3 = [1, 0, 0, 1, 0, 1, 1]
 而 python 写出来也很方便, 从 `pop_copy` 中随便选一个当另一个父辈 和 `parent` 进行随机的 crossover:
 
 ```python
-def crossover(parent, pop_copy):
+def crossover(parent, pop):
     if np.random.rand() < CROSS_RATE:
-        i_ = np.random.choice(np.arange(POP_SIZE), size=1)  # select another individual from pop
+        i_ = np.random.randint(0, POP_SIZE, size=1)  # select another individual from pop
         cross_points = np.random.randint(0, 2, DNA_SIZE).astype(np.bool)  # choose a crossover points
         parent[cross_points] = pop[i_, cross_points]  # mating and produce one child
     return parent

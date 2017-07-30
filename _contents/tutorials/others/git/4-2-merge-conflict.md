@@ -9,7 +9,7 @@ comments: true
 thumbnail: /static/thumbnail/git/4-02.jpg
 ---
 * 学习资料:
-  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/blob/master/gitTUT/for_gitTUT_4-2.zip?raw=true)
+  * [这节例子的初始文件](https://github.com/MorvanZhou/tutorials/tree/master/gitTUT)
   
 
 今天的情况是这样, 想象不仅有人在做开发版 `dev` 的更新, 还有人在修改 `master` 中的一些 bug.
