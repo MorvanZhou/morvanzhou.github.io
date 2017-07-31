@@ -8,74 +8,90 @@ chapter: 1
 ---
 
 
-
-<!--
 * 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py)
-  * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
-  * [PyTorch 官网](http://pytorch.org/)
+  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+  * [我制作的 什么是进化策略(即将制作) 动画简介](#)
+  * [我制作的 什么是神经进化(即将制作) 动画简介](#)
 
-Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
+"进化" Evolution, 可以说是人类历史上伟大的发现之一. 适者生存, 不适者淘汰, 达尔文的进化理论让我们见识到了自己是怎么来的.
+那, 现在想象一下, 如果你的程序也能进化, 也用适者生存, 不适者淘汰的原则生长出一个牛逼的物种,
+是不是很开心, 是不是很激动! 反正这就是我为什么会对这类算法特别感兴趣的原因之一了.
 
 
 #### 本节内容包括:
 
-* [快速搭建](#fast)
+* [大神们都拿它做了些什么](#examples)
+* [算法们](#algorithms)
+* [这个教程的内容](#tutorial)
 
+<h4 class="tut-h4-pad" id="examples">大神们都拿它做了些什么</h4>
 
-<h4 class="tut-h4-pad" id="fast"> 快速搭建</h4>
+在 Youtube 上, 一搜就能搜到很多关于 Evolution Algorithm (之后简称为 EA) 的实验短片.
+我截取了几个给大家看看, 后面也附上他们的链接. 如果你能翻墙, 也能看看他们有趣的实验.
 
-我们先看看之前写神经网络时用到的步骤. 我们用 `net1` 代表这种方式搭建的神经网络.
+<div align="center">
+<video width="500" controls loop autoplay muted>
+  <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
 
-```python
-class Net(torch.nn.Module):
-    def __init__(self, n_feature, n_hidden, n_output):
-        super(Net, self).__init__()
-        self.hidden = torch.nn.Linear(n_feature, n_hidden)
-        self.predict = torch.nn.Linear(n_hidden, n_output)
+这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
+ [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
 
-    def forward(self, x):
-        x = F.relu(self.hidden(x))
-        x = self.predict(x)
-        return x
+如果你提起兴趣了, 恭喜你, 你离学会这些又进了一步. 接着看看我为大家尽心准备的教程,
+相信大家就能迅速上手. 如果大家觉得真的学习到了东西, 我做的东西对你的学习生活有所帮助.
+希望大家也能[支持我](https://morvanzhou.github.io/support/)做出更好, 更简单易懂的教程.
+如果没有大家之前的支持, 这一系列进化算法的教程也出不来~ 感谢~
 
-net1 = Net(1, 10, 1)   # 这是我们用这种方式搭建的 net1
-```
+<h4 class="tut-h4-pad" id="algorithms">算法们</h4>
 
-我们用 class 继承了一个 torch 中的神经网络结构, 然后对其进行了修改, 不过还有更快的一招, 用一句话就概括了上面所有的内容!
+EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达尔文的进化理论, 虽然有一些发展到后面, 有点偏离的这个轨道, 不过他们都是受这个的启蒙.
+在 [wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm)上, EA 包括了:
 
-```python
-net2 = torch.nn.Sequential(
-    torch.nn.Linear(1, 10),
-    torch.nn.ReLU(),
-    torch.nn.Linear(10, 1)
-)
-```
+* 遗传算法 (Genetic Algorithm)
+* 进化策略 (Evolution strategy)
+* 神经进化 (Neuroevolution)
+* Genetic programming
+* ...
 
-我们再对比一下两者的结构:
+在这一系列的教程中我们会着重讲解比较著名的 遗传算法 (Genetic Algorithm), 进化策略 (Evolution strategy) 和
+神经进化 (Neuroevolution). 看看在多种多样的问题中, 他们是如何自由穿梭.
+尤其是之后, 我们还会涉及到强化学习的内容. 如果大家有了解我做过的 [强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/),
+在后续教程中我们就来看看能挑战当今流行的强化学习的 "进化方法".
 
-```python
-print(net1)
-"""
-Net (
-  (hidden): Linear (1 -> 10)
-  (predict): Linear (10 -> 1)
-)
-"""
-print(net2)
-"""
-Sequential (
-  (0): Linear (1 -> 10)
-  (1): ReLU ()
-  (2): Linear (10 -> 1)
-)
-"""
-```
+<h4 class="tut-h4-pad" id="tutorial">这个教程的内容</h4>
 
-我们会发现 `net2` 多显示了一些内容, 这是为什么呢? 原来他把激励函数也一同纳入进去了, 但是 `net1` 中, 激励函数实际上是在 `forward()` 功能中才被调用的.
-这也就说明了, 相比 `net2`, `net1` 的好处就是, 你可以根据你的个人需要更加个性化你自己的前向传播过程, 比如(RNN).
-不过如果你不需要七七八八的过程, 相信 `net2` 这种形式更适合你.
+在这个教程中, 我们会用实践的方式, 手把手教你如何在电脑里进化. 让你也能动手实践, 更好的理解消化知识点.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py) 中的每一步的意义啦.
+比如用 OpenAI gym 来[训练你的小机器人]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-04-evolution-strategy-reinforcement-learning.md %}).
 
--->
+<div align="center">
+<video width="500" controls loop autoplay muted>
+  <source src="/static/results/evolutionary-algorithm/4-4-0.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+用简单的代码, 可视化各种进化算法的本质. 比如[这个]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}).
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-0.gif">
+
+旅行商人的[最短路劲]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-03-genetic-algorithm-travel-sales-problem.md %})问题:
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-0.gif">
+
+[配对句子]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-02-genetic-algorithm-match-phrase.md %})问题:
+
+<div align="center">
+<video width="500" controls loop autoplay muted>
+  <source src="/static/results/evolutionary-algorithm/2-2-0.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+结合了梯度下降的原则的[进化算法]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-03-evolution-strategy-natural-evolution-strategy.md %}):
+
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-0.gif">
+
+等等等等. 我们就来慢慢理解消化啦~
