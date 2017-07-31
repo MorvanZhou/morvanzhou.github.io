@@ -79,7 +79,7 @@ Covariance Matrix Adaptation"](https://www.lri.fr/~hansen/gecco2011-CMA-ES-tutor
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-2-1.png">
 
 图中的意思是, 还没到收敛的时候(上面左图), 我们增大 `MUT_STRENGTH`, 如果已经快到收敛了(上右图), 我们就减小 `MUT_STRENGTH`.
-那如何判断是否快到收敛没呢, 就是如果有1/5的变异比原始的 parent 好的话, 就是快收敛了(像上右图). 在上左图中, 有一般比原始 parent 好, 一般比较差, 所以还没到收敛.
+那如何判断是否快到收敛没呢, 就是如果有1/5的变异比原始的 parent 好的话, 就是快收敛了(像上右图). 在上左图中, 有一半比原始 parent 好, 一半比较差, 所以还没到收敛.
 在上面提到的课件中, 用一个公式就能概括这种1/5关系.
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-2-2.png">
