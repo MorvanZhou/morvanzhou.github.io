@@ -35,22 +35,22 @@ Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. *
 
 像最开始说的那样, 我们有一些 `population`, 每次在进化的时候, 我们会从这个 `pop` 中随机抽 2 个 DNA 出来,
 然后对比一下他们的 `fitness`, 我们将 `fitness` 高的定义成 `winner`, 反之是 `loser`. 我们不会去动任何 `winner` 的 DNA,
-要动手脚的之后这个 `loser`, 比如对 `loser` 进行 `crossover` 和 `mutate`. 动完手脚后将 `winner` 和 `loser` 一同放回 `pop` 中.
+要动手脚的只有这个 `loser`, 比如对 `loser` 进行 `crossover` 和 `mutate`. 动完手脚后将 `winner` 和 `loser` 一同放回 `pop` 中.
 
-通过这样的流程, 我们就不用担心有时候变异这变异者, 那些原本好的 pop 流失掉了, 有了这个 MGA 算法, `winner` 总是会被保留下来的.
+通过这样的流程, 我们就不用担心有时候变异着变异着, 那些原本好的 pop 流失掉了, 有了这个 MGA 算法, `winner` 总是会被保留下来的.
 GA 中的 Elitism 问题通过这种方法巧妙解决了.
 
 
 <h4 class="tut-h4-pad" id="eval">进化啦</h4>
 
 这次我们还是通过之前那个找曲线中最大点的方式诠释 MGA 算法. class 中的结构框架基本没变, 只是少了 `select` 的功能.
-因为我们会将 select 功能写在 evolve 中. 这样方便点.
+因为我们会将 `select` 功能写在 `evolve` 中. 这样方便点.
 
 ```python
 class MGA:
-    def crossover(self, parent, pop):
+    def crossover(self, loser_winner):
 
-    def mutate(self, child):
+    def mutate(self, loser_winner):
 
     def evolve(self, n):
 ```
@@ -98,7 +98,7 @@ class MGA:
 
 
 如果觉得看整体代码可能方便理解的话, 请去往我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py) 中查看整套代码.
-最后的套上训练的循环, 就完事啦.
+最后套上训练的循环, 就完事啦.
 
 ```python
 ga = MGA(...)
