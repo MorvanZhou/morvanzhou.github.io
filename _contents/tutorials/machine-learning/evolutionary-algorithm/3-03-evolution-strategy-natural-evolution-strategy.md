@@ -41,6 +41,9 @@ Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下
 提到梯度下降, 哈哈, 那么那些 scipy, Tensorflow 都可以考虑用一用. 这个教程中将会使用到
 Tensorflow 来完成这种梯度下降的做法. 如果你对 Tensorflow 感兴趣, 我也有[一套 Tensorflow 的教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/)哦~
 
+NES 的方法其实和强化学习中 [Policy Gradient]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}) 的方法非常接近.
+简单来概括一下它们的不同: PG 需要进行误差反向传播, 而 ES 不用. 在行为的策略上, PG 是扰动 Action, 不同的 action 带来不同的 reward, 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 ES 是扰动 神经网络中的 Parameters, 不同的 parameters 带来不同的 reward, 通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
+
 <h4 class="tut-h4-pad" id="eval">进化啦</h4>
 
 Tensorflow 是神经网络模块, 虽然我们今天不拿它来做神经网络, 但是首先还是需要搭建一个计算图纸,
