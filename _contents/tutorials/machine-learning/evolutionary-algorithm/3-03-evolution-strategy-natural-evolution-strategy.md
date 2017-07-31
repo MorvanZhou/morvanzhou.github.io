@@ -97,4 +97,4 @@ for g in range(N_GENERATION):
 
 可视化的代码我没有在文章中体现, 如果想详细看看如何可视化, 请看到我的 [Github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py).
 
-下次我们来看看一种加入了梯度下降原则的 ES 算法.
+下次我们来看看[遗传算法和进化策略+神经网络的牛逼应用]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}).
