@@ -10,10 +10,10 @@ chapter: 2
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py)
-  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+  * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * 论文 [The Microbial Genetic Algorithm ](https://pdfs.semanticscholar.org/b079/54447f861b074a54752b61af63d960862f92.pdf)
 
-如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法](#), 在动画里有了基础的了解,
+如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
 
 说到遗传算法 (GA), 有一点不得不提的是如何有效保留好的父母 (Elitism), 让好的父母不会消失掉. 这也是永远都给自己留条后路的意思.

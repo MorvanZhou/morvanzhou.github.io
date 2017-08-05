@@ -9,7 +9,7 @@ chapter: 1
 
 
 * 学习资料:
-  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+  * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [我制作的 什么是进化策略(即将制作) 动画简介](#)
   * [我制作的 什么是神经进化(即将制作) 动画简介](#)
 

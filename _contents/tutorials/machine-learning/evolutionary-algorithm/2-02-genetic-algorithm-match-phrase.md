@@ -10,9 +10,9 @@ chapter: 2
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)
-  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+  * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
-如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法](#), 在动画里有了基础的了解,
+如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
 
 接着[上节对遗传算法的基本应用]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}),

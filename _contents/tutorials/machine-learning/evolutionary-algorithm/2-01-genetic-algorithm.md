@@ -10,9 +10,9 @@ chapter: 2
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py)
-  * [我制作的 什么是遗传算法(还在制作中) 动画简介](#)
+  * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
-如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法](#), 在动画里有了基础的了解,
+如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦. **如果让我用一句话概括遗传算法: "在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝".**
 
 在这一节中, 我们的 "乖宝宝" 就是图中更高的点, 用遗传算法, 我们就能轻松找到 "最乖的宝宝".
