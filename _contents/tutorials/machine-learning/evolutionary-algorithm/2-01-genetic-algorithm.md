@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk2MzE1Mjc0MA
+youtube_id: 9ExCPd918Yk
 title: 遗传算法
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/21ga.jpg"
