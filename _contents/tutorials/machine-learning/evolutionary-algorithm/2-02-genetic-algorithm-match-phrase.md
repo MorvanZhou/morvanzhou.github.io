@@ -2,8 +2,8 @@
 youku_id:
 youtube_id:
 title: 例子 配对句子
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-12
+thumbnail: "/static/thumbnail/evolutionary-algorithm/22ga.jpg"
 chapter: 2
 ---
 

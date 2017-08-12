@@ -2,8 +2,8 @@
 youku_id:
 youtube_id:
 title: 遗传算法
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-12
+thumbnail: "/static/thumbnail/evolutionary-algorithm/21ga.jpg"
 chapter: 2
 ---
 

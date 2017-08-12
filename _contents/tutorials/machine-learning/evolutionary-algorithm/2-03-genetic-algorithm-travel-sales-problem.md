@@ -2,8 +2,8 @@
 youku_id:
 youtube_id:
 title: 例子 旅行商人问题 (Travel Sales Problem)
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-12
+thumbnail: "/static/thumbnail/evolutionary-algorithm/23ga.jpg"
 chapter: 2
 ---
 

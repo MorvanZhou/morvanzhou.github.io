@@ -2,8 +2,8 @@
 youku_id:
 youtube_id:
 title: Microbial Genetic Algorithm
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-12
+thumbnail: "/static/thumbnail/evolutionary-algorithm/24ga.jpg"
 chapter: 2
 ---
 

@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk2MzAwMjYyMA
+youtube_id: 7R3bnpv5q9k
 title: 进化算法 简介
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-12
+thumbnail: "/static/thumbnail/evolutionary-algorithm/11ea.jpg"
 chapter: 1
 ---
 
