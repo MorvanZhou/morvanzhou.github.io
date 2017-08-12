@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk2MzI4OTg3Mg
+youtube_id: solxwZUtOQc
 title: 例子 配对句子
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/22ga.jpg"
