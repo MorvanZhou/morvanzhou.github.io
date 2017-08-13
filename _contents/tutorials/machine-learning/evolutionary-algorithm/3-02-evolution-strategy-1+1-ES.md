@@ -19,7 +19,7 @@ chapter: 3
 
 本节要实践的内容提前看:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-1-0.gif">
+<img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.gif">
 
 
 #### 本节内容包括:
