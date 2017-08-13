@@ -120,7 +120,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 而 OpenAI 提出的能够替代强化学习的 ES 可以终结如下:
 
 * 固定神经网络结构;
-* 使用二次分布来扰动 (perturb) 神经网络链接参数;
+* 使用正太分布来扰动 (perturb) 神经网络链接参数;
 * 使用扰动的网络在环境中收集奖励;
 * 用奖励 (reward) 或者 效用 (utility) 来诱导参数更新幅度;
 
