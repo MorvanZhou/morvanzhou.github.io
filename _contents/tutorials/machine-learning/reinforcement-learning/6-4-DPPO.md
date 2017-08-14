@@ -152,9 +152,11 @@ for ep in range(EP_MAX):
 `state value` 这两者的差 (advantage). 然后最小化这个差值:
 
 ```python
-self.advantage = self.tfdc_r - self.v   # discounted reward - Critic 出来的 state value
-self.closs = tf.reduce_mean(tf.square(self.advantage))
-self.ctrain_op = tf.train.AdamOptimizer(C_LR).minimize(self.closs)
+class PPO:
+    def __init__(self):
+        self.advantage = self.tfdc_r - self.v   # discounted reward - Critic 出来的 state value
+        self.closs = tf.reduce_mean(tf.square(self.advantage))
+        self.ctrain_op = tf.train.AdamOptimizer(C_LR).minimize(self.closs)
 ```
 
 在更新 Actor 的时候, 其实有两种方式, 一种是用之前提到的 KL penalty 来更新.
