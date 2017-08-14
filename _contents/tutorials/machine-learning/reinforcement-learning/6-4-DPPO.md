@@ -48,7 +48,7 @@ OpenAI 的 [Demo](https://blog.openai.com/openai-baselines-ppo/#ppo):
 
 <div align="center">
 <video width="500" controls loop autoplay muted>
-  <source src="/static/results/rl/6-4-demo_openai.mp4.crdownload" type="video/mp4">
+  <source src="/static/results/rl/6-4-demo_openai.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </div>
