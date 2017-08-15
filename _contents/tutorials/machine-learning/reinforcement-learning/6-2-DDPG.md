@@ -73,7 +73,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 
 <img class="course-image" src="/static/results/rl/6-2-2.png">
 
-看起来很复制吧, 没关系, 我们一步步来, 拆开来看就容易了. 首先看看 `Actor`
+看起来很复杂吧, 没关系, 我们一步步来, 拆开来看就容易了. 首先看看 `Actor`
 和 `Critic` 中各有什么结构.
 
 <img class="course-image" src="/static/results/rl/6-2-3.png">
