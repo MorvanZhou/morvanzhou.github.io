@@ -1,5 +1,5 @@
 ---
-youku_id: XMjk2MzE1Mjc0MA
+youku_id: XMjk3MDExOTUwNA
 youtube_id: 9ExCPd918Yk
 title: 遗传算法
 publish-date: 2017-08-12
