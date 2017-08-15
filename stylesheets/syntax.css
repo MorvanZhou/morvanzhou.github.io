@@ -15,9 +15,11 @@ font-size: 0.8em;
 }
 
 code.highlighter-rouge {
-color: #FE4E4E;
-background-color: #E5E8E8;
-padding: 0.2em;
+color: #fe7171;
+background-color: #e5e8e8;
+font-family: Menlo, Andale Mono, Arial, Tahoma, Microsoft YaHei;
+font-size: 0.8em;
+padding: 0.1em;
 border-radius: 4px;
 }
 .highlight pre {
