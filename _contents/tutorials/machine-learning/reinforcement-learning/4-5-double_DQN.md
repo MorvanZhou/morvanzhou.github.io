@@ -106,7 +106,7 @@ class DoubleDQN:
     def learn(self):
         # 这一段和 DQN 一样:
         if self.learn_step_counter % self.replace_target_iter == 0:
-            self._replace_target_params()
+            self.sess.run(self.replace_target_op)
             print('\ntarget_params_replaced\n')
 
         if self.memory_counter > self.memory_size:
