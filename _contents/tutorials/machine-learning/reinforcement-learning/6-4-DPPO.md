@@ -169,6 +169,7 @@ class PPO:
 
 <img class="course-image" src="/static/results/rl/6-4-6.png">
 
+这里的 `r(theta)` 是 (New Policy/Old Policy) 的比例, 和前面的公式一样.
 我在代码中把这两种都写上了, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py).
 
 ```python
@@ -206,10 +207,11 @@ class PPO:
 
         # 更新 Actor 时, kl penalty 和 clipping 方式是不同的
         if METHOD['name'] == 'kl_pen':  # 如果用 KL penalty
-            _, kl = self.sess.run(
-                    [self.atrain_op, self.kl_mean],
-                    {self.tfs: s, self.tfa: a, self.tfadv: adv, self.tflam: METHOD['lam']})
-            # 之后根据 kl 的值, 调整 METHOD['lam'] 这个参数
+            for _ in range(A_UPDATE_STEPS):
+                _, kl = self.sess.run(
+                        [self.atrain_op, self.kl_mean],
+                        {self.tfs: s, self.tfa: a, self.tfadv: adv, self.tflam: METHOD['lam']})
+                # 之后根据 kl 的值, 调整 METHOD['lam'] 这个参数
         else:   # 如果用 clipping 的方法
             [self.sess.run(self.atrain_op, {self.tfs: s, self.tfa: a, self.tfadv: adv}) for _ in range(A_UPDATE_STEPS)]
 
