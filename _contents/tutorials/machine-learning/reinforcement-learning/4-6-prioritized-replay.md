@@ -63,16 +63,23 @@ SumTree 是一种树形结构, 每片树叶存储每个样本的优先级 `p`, �
 </a>
 
 抽样时, 我们会将 `p` 的总合 除以 batch size, 分成 batch size 那么多区间, (n=sum(p)/batch_size).
-然后在每个区间里随机选取一个数.
+如果将所有 node 的 priority 加起来是42的话, 我们如果抽5个样本, 这时的区间拥有的 priority 可能是这样.
 
-比如上面的叶子中抽取 2 个 samples, 先将 42 / 2 = 21.
-然后在 (0-21) 这个优先度区间中随机选数, 比如选到 2. 再从 root 开始向下根据 2 来抽样, 具体怎么抽, 请看下面的代码好懂一点.
-然后在 (21-42) 这个优先度区间随机抽数, 比如选到 24, 再从 root 开始向下根据 24 来抽样. 这样我们就根据优先度抽取到了 2 个样本.
+`[0-3], [3-13], [13-25], [25-29], [29-30], [30-32], [32-40], [40-42]`
 
+然后在每个区间里随机选取一个数. 比如在第二个区间 `[13-25]` 里选到了24, 就按照这个 16 从最顶上的42开始向下搜索.
+首先看到最顶上 `42` 下面有两个 child nodes, 拿着手中的24对比左边的 child `29`, 如果 左边的 child 比自己手中的值大, 那我们就走左边这条路,
+接着再对比 `29` 下面的左边那个点 `13`, 这时, 手中的 24 比 `13` 大, 那我们就走右边的路,
+并且将手中的值根据 `13` 修改一下, 变成 24-13 = 11. 接着拿着 11 和 `13` 左下角的 `12` 比, 结果 `12` 比 11 大,
+那我们就选 12 当做这次选到的 priority, 并且也选择 12 对于的数据.
 
 <h4 class="tut-h4-pad" id="sumtree">SumTree 有效抽样</h4>
 
+**注意: 下面的代码和视频中有一点点不同, 下面的代码是根据评论中讨论的进行了修改, 多谢大家的评论.**
+
 首先要提的是, 这个 SumTree 的算法是对于 [Jaromír Janisch 写的 Sumtree](https://github.com/jaara/AI-blog/blob/master/SumTree.py) 的修改版.
+Jaromír Janisch 的代码在更新 sumtree 的时候和抽样的时候多次用到了 recursive 递归结构, 我使用的是 while 循环, 测试要比递归结构运行快.
+在 class 中的功能也比它的代码少几个, 我优化了一下.
 
 ```python
 class SumTree(object):
@@ -82,51 +89,43 @@ class SumTree(object):
     def __init__(self, capacity):
 
     # 当有新 sample 时, 添加进 tree 和 data
-    def add_new_priority(self, p, data):
+    def add(self, p, data):
 
     # 当 sample 被 train, 有了新的 TD-error, 就在 tree 中更新
     def update(self, tree_idx, p):
 
-    # update 和 add_new_priority 时会调用这个功能
-    def _propagate_change(self, tree_idx, change):
+    # 根据选取的 v 点抽取样本
+    def get_leaf(self, v):
 
-    # 抽取样本
-    def get_leaf(self, lower_bound):
-
-    # get_leaf 时调用这个
-    def _retrieve(self, lower_bound, parent_idx=0):
-
-    # 获取 sum(p)
+    # 获取 sum(priorities)
     @property
-    def root_priority(self):
+    def totoal_p(self):
 ```
 
+具体的抽要和更新值的规则和上面说的类似.
 具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/RL_brain.py#L18-L93)
-
 
 
 
 
 <h4 class="tut-h4-pad" id="memory">Memory 类</h4>
 
-这个 Memory 类也是基于 [Jaromír Janisch 所写的 Memory](https://github.com/jaara/AI-blog/blob/master/Seaquest-DDQN-PER.py) 进行了修改.
+这个 Memory 类也是基于 [Jaromír Janisch 所写的 Memory](https://github.com/jaara/AI-blog/blob/master/Seaquest-DDQN-PER.py) 进行了修改和优化.
 
 ```python
 class Memory(object):
     # 建立 SumTree 和各种参数
     def __init__(self, capacity):
 
-    # 存储 sample
-    def store(self, error, transition):
+    # 存储数据, 更新 SumTree
+    def store(self, transition):
 
     # 抽取 sample
     def sample(self, n):
 
-    # train 完被抽取的 samples 后更新在 tree 中的 samples
-    def update(self, idx, error):
+    # train 完被抽取的 samples 后更新在 tree 中的 sample 的 priority
+    def batch_update(self, tree_idx, abs_errors):
 
-    # update 和 store 都会用到
-    def _get_priority(self, error):
 ```
 
 具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/RL_brain.py#L96-L136)
@@ -196,8 +195,7 @@ class DQNPrioritizedReplay:
     def store_transition(self, s, a, r, s_):
         if self.prioritized:    # prioritized replay
             transition = np.hstack((s, [a, r], s_))
-            max_p = np.max(self.memory.tree.tree[-self.memory.tree.capacity:])
-            self.memory.store(max_p, transition)    # 新记忆优先度也高
+            self.memory.store(transition)
         else:       # random replay
             if not hasattr(self, 'memory_counter'):
                 self.memory_counter = 0
@@ -228,9 +226,7 @@ class DQNPrioritizedReplay:
                                          feed_dict={self.s: batch_memory[:, :self.n_features],
                                                     self.q_target: q_target,
                                                     self.ISWeights: ISWeights})
-            for i in range(len(tree_idx)):  # update priority
-                idx = tree_idx[i]
-                self.memory.update(idx, abs_errors[i])
+            self.memory.batch_update(tree_idx, abs_errors)   # update priority
         else:
             _, self.cost = self.sess.run([self._train_op, self.loss],
                                          feed_dict={self.s: batch_memory[:, :self.n_features],
