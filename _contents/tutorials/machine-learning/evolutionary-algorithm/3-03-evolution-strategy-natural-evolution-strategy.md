@@ -47,7 +47,7 @@ NES 的方法其实和强化学习中 [Policy Gradient]({% link _contents/tutori
 <h4 class="tut-h4-pad" id="eval">进化啦</h4>
 
 Tensorflow 是神经网络模块, 虽然我们今天不拿它来做神经网络, 但是首先还是需要搭建一个计算图纸,
-之后再往图纸里面灌数据. 不断自动梯度下降, 提升参数. 关于正太分布, 我们从 tf 中 import `MultivariateNormalFullCovariance`.
+之后再往图纸里面灌数据. 不断自动梯度下降, 提升参数. 关于正态分布, 我们从 tf 中 import `MultivariateNormalFullCovariance`.
 之前提出的要学习的变量包括均值和均方差, 但是到了多变量的正态分布, 我们要学习的就是协方差矩阵 Covariance matrix.
 如果不太了解 Covariance matrix, 你就把他想象成要学习的均方差就行, 意思差不多.
 

@@ -99,7 +99,7 @@ OpenAI PPO 论文里给出的算法... 写得也太简单了 (注意他们这个
 
 图中的 `pi` 就是我们的 Actor 了. 每次要进行 PPO 更新 Actor 和 Critic 的时候, 我们有需要将 `pi` 的参数复制给 `oldpi`.
 这就是 `update_oldpi` 这个 operation 在做的事. Critic 和 Actor 的内部结构, 我们不会打开细说了. 因为就是一堆的神经网络而已.
-这里的 Actor 使用了 normal distribution 正太分布输出动作.
+这里的 Actor 使用了 normal distribution 正态分布输出动作.
 
 这个 `PPO` 我们可以用一个 Python 的 class 代替:
 

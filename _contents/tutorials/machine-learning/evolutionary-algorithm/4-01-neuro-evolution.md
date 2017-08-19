@@ -115,12 +115,12 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 <h4 class="tut-h4-pad" id="es">进化策略与神经网络</h4>
 
 [Evolution Strategy]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %}) 相比较于 [Genetic Algorithm]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})
-更加注重 mutation 的过程. 而且其中高度使用到了正太分布 (Normal distribution).
+更加注重 mutation 的过程. 而且其中高度使用到了正态分布 (Normal distribution).
 
 而 OpenAI 提出的能够替代强化学习的 ES 可以终结如下:
 
 * 固定神经网络结构;
-* 使用正太分布来扰动 (perturb) 神经网络链接参数;
+* 使用正态分布来扰动 (perturb) 神经网络链接参数;
 * 使用扰动的网络在环境中收集奖励;
 * 用奖励 (reward) 或者 效用 (utility) 来诱导参数更新幅度;
 
