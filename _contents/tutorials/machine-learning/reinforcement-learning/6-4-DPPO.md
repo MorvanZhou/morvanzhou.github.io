@@ -1,10 +1,10 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk5NDgzNjc3Ng
+youtube_id: ftqmu6RXl3E
 chapter: 6
 title: Distributed Proximal Policy Optimization (DPPO) (Tensorflow)
 thumbnail: "/static/thumbnail/rl/6.4 PPO.jpg"
-publish-date:
+publish-date: 2017-08-28
 ---
 
 * 学习资料:
@@ -123,29 +123,29 @@ ppo = PPO()
 for ep in range(EP_MAX):
     s = env.reset()
     buffer_s, buffer_a, buffer_r = [], [], []
-        for t in range(EP_LEN):
-            env.render()
-            a = ppo.choose_action(s)
-            s_, r, done, _ = env.step(a)
-            buffer_s.append(s)
-            buffer_a.append(a)
-            buffer_r.append((r+8)/8)    # normalize reward, 发现有帮助
-            s = s_
+    for t in range(EP_LEN):
+        env.render()
+        a = ppo.choose_action(s)
+        s_, r, done, _ = env.step(a)
+        buffer_s.append(s)
+        buffer_a.append(a)
+        buffer_r.append((r+8)/8)    # normalize reward, 发现有帮助
+        s = s_
 
-            # 如果 buffer 收集一个 batch 了或者 episode 完了
-            if (t+1) % BATCH == 0 or t == EP_LEN-1:
-                # 计算 discounted reward
-                v_s_ = ppo.get_v(s_)
-                discounted_r = []
-                for r in buffer_r[::-1]:
-                    v_s_ = r + GAMMA * v_s_
-                    discounted_r.append(v_s_)
-                discounted_r.reverse()
+        # 如果 buffer 收集一个 batch 了或者 episode 完了
+        if (t+1) % BATCH == 0 or t == EP_LEN-1:
+            # 计算 discounted reward
+            v_s_ = ppo.get_v(s_)
+            discounted_r = []
+            for r in buffer_r[::-1]:
+                v_s_ = r + GAMMA * v_s_
+                discounted_r.append(v_s_)
+            discounted_r.reverse()
 
-                bs, ba, br = batch(buffer_s, buffer_a, discounted_r)
-                # 清空 buffer
-                buffer_s, buffer_a, buffer_r = [], [], []
-                ppo.update(bs, ba, br)  # 更新 PPO
+            bs, ba, br = batch(buffer_s, buffer_a, discounted_r)
+            # 清空 buffer
+            buffer_s, buffer_a, buffer_r = [], [], []
+            ppo.update(bs, ba, br)  # 更新 PPO
 ```
 
 了解了这些更新步骤, 我们就来看看如何更新我们的 `PPO`. 我们更新 Critic 的时候是根据 刚刚计算的 `discounted_r` 和自己分析出来的
