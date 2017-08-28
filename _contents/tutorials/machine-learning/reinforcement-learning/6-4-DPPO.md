@@ -3,7 +3,7 @@ youku_id:
 youtube_id:
 chapter: 6
 title: Distributed Proximal Policy Optimization (DPPO) (Tensorflow)
-thumbnail: "/static/thumbnail/rl/"
+thumbnail: "/static/thumbnail/rl/6.4 PPO.jpg"
 publish-date:
 ---
 
