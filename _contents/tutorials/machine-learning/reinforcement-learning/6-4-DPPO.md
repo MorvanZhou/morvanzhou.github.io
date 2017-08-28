@@ -1,6 +1,6 @@
 ---
-youku_id: XMjk5NDgzNjc3Ng
-youtube_id: ftqmu6RXl3E
+youku_id: XMjk5NTA2NTQ4OA
+youtube_id: _B2oMdOVVJc
 chapter: 6
 title: Distributed Proximal Policy Optimization (DPPO) (Tensorflow)
 thumbnail: "/static/thumbnail/rl/6.4 PPO.jpg"
