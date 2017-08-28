@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk5NDUzNTc0OA
+youtube_id: 9yuL-vuiOO0
 title: 进化策略
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-28
+thumbnail: "/static/thumbnail/evolutionary-algorithm/31es.jpg"
 chapter: 3
 ---
 
