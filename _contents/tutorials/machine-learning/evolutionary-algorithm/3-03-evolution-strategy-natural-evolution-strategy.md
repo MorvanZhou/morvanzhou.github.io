@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk5NDY4ODc5Ng=
+youtube_id: ozSdqrN-kFQ
 title: Natural Evolution Strategy
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail/evolutionary-algorithm/33es.jpg"
