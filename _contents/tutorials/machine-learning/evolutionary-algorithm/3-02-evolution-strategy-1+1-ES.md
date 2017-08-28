@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMjk5NDYxNTQ0OA
+youtube_id: AcTeLqukgkA
 title: (1+1)-ES
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-28
+thumbnail: "/static/thumbnail/evolutionary-algorithm/32es.jpg"
 chapter: 3
 ---
 

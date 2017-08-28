@@ -49,8 +49,8 @@ defaults:
   - scope:
       path: "_contents/tutorials"
     values:
-      editor: Morvan
-      author: Morvan
+      editor: 莫烦
+      author: 莫烦
       author-link: "#"
       autoplay: true
       published: true

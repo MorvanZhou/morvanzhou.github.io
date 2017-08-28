@@ -2,8 +2,8 @@
 youku_id:
 youtube_id:
 title: Natural Evolution Strategy
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-08-28
+thumbnail: "/static/thumbnail/evolutionary-algorithm/33es.jpg"
 chapter: 3
 ---
 
