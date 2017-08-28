@@ -10,11 +10,11 @@ chapter: 3
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py)
-  * [我制作的 什么是进化策略(即将制作) 动画简介](#)
+  * [我制作的 什么是进化策略(即将制作) 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * 论文 [Natural evolution strategies](http://www.jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf)
 
 
-如果你想对进化策略有一个快速了解, [这个几分钟的短动画](#)是个很好的方式.
+如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})是个很好的方式.
 
 Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下降法,
 **如果要我用一句话来概括 NES: 生宝宝, 用好宝宝的梯度辅助找到前进的方向**

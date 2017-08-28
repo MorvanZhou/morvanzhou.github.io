@@ -10,9 +10,9 @@ chapter: 3
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1)-ES.py)
-  * [我制作的 什么是进化策略(即将制作) 动画简介](#)
+  * [我制作的 什么是进化策略(即将制作) 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
-如果你想对进化策略有一个快速了解, [这个几分钟的短动画](#)是个很好的方式.
+如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})是个很好的方式.
 
 (1+1)-ES 是 ES 进化策略的一种形式, 也是众多形式中比较方便有效的一种. 接下来我们来细说他们的类别.
 **如果要我用一句话来概括 (1+1)-ES: 一个爸爸和一个孩子的战争**

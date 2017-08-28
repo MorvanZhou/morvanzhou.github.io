@@ -10,9 +10,9 @@ chapter: 3
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py)
-  * [我制作的 什么是进化策略(即将制作) 动画简介](#)
+  * [我制作的 什么是进化策略(即将制作) 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
-如果你想对进化策略有一个快速了解, [这个几分钟的短动画](#)是个很好的方式.
+如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %}Fƒ)是个很好的方式.
 
 进化策略 (Evolution Strategy) 后面都简称 ES. 它和 遗传算法 GA 是好兄弟. 步骤和流程都非常相似.
 如果你对遗传算法也感兴趣, [前面几节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})都是有关于遗传算法的.
