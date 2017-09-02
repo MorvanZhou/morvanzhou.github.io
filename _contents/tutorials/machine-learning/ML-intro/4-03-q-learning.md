@@ -51,7 +51,7 @@ thumbnail: /static/thumbnail/ML-intro/what_is_QLearning.png
 
 
 
-#### Q-Learning 中的 Lambda
+#### Q-Learning 中的 Gamma
 
 <center><img src="/static/results/ML_intro/q5.png" width="550px"></center>
 
