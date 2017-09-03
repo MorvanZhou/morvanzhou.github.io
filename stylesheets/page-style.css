@@ -145,7 +145,7 @@ opacity: 0.95;
 }
 
 #home-nav > ul > li > a, #home-nav a:link, #home-nav a:visited{
-color: #DCDCDC;
+color: #cecece;/*#DCDCDC;*/
 float: left;
 text-decoration: none;
 text-align: center;
