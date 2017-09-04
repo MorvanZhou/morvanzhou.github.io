@@ -5,7 +5,7 @@ description:
 chapter: 2
 title: Entry & Text 输入, 文本框
 date: 2016-11-3
-author：郭锡锋
+author: 郭锡锋
 ---
 
 * 学习资料:
