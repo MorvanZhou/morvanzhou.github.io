@@ -34,7 +34,7 @@ windo.mainloop()
 
 #### 窗口内容（窗口上的控件）
 
-1. 创建按钮分别触发两种情况
+创建按钮分别触发两种情况
 
 ```python
 b1 = tk.Button(window,text="insert point",width=15,height=2,command=insert_point)
@@ -44,21 +44,21 @@ b2 = tk.Button(window,text="insert end",command=insert_end)
 b2.pack()
 ```
 
-2. 创建输入框entry，用户输入任何内容都显示为*
+创建输入框entry，用户输入任何内容都显示为*
 
 ```python
 e = tk.Entry(window,show='*')
 e.pack()
 ```
 
-3. 创建一个文本框用于显示
+创建一个文本框用于显示
 
 ```python
 t = tk.Text(window,height=2)
 t.pack()
 ```
 
-4. 定义触发事件时的函数（注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面）
+定义触发事件时的函数（注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面）
 
 ```python
 def insert_point():
@@ -70,7 +70,7 @@ def insert_end():
     t.insert('end',var)
 ```
 
-5. 窗口界面
+窗口界面
 
 <img class="course-image" src="/static/results/tkinter/2-02-01.png">
 
