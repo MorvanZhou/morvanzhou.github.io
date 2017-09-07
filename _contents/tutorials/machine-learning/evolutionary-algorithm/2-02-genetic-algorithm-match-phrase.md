@@ -19,7 +19,7 @@ chapter: 2
 在这一节中, 我们用通过不同的编码 DNA 方式, 不同的 fitness 定义方式来让程序生成出自己设定的句子来.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/2-2-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

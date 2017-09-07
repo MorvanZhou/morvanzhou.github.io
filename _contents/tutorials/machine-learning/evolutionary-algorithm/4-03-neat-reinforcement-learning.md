@@ -22,7 +22,7 @@ chapter: 4
 立杆子的机器人最后学习的效果提前看:
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-3-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

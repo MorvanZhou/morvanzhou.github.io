@@ -73,7 +73,7 @@ $ pip3 install gym[all]
 <h4 class="tut-h4-pad" id="cartpole">CartPole 例子</h4>
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -158,7 +158,7 @@ RL.plot_cost()
 <h4 class="tut-h4-pad" id="mountaincar">MountainCar 例子</h4>
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

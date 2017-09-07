@@ -24,7 +24,7 @@ Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q �
 加上 每个动作的 Advantage.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/Pendulum DQN.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

@@ -354,12 +354,12 @@ display: table-row;
 color: #00b359;
 display: table-cell;
 text-align: right;
-padding: 0.4em 2em;
+padding: 0.4em 1em;
 }
 
 .row a {
 display: table-cell;
-padding-left: 1em;
+padding-left: 0.3em;
 }
 
 /* ===================== DONATION PAGE ==================== */

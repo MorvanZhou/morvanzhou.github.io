@@ -25,7 +25,7 @@ thumbnail: "/static/thumbnail/rl/12_2 prioritized replay.jpg"
 而使用 Prioritized replay, 就会重视这种少量的, 但值得学习的样本.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

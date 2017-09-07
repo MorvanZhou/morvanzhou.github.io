@@ -18,7 +18,7 @@ publish-date: 2017-01-09
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/maze q.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

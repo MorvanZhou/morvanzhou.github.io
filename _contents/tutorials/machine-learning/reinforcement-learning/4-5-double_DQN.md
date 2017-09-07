@@ -31,7 +31,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 以下就是这次的结果, 先睹为快.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/Pendulum DQN.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

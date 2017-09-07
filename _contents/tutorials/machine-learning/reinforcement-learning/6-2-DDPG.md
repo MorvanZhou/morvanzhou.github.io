@@ -26,7 +26,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 下面是这节内容的效果提前看:
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/Pendulum DDPG.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -213,7 +213,7 @@ for i in range(MAX_EPISODES):
 我也用这套 DDPG 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm).
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/experiment_arm.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

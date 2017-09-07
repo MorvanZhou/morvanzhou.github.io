@@ -30,7 +30,7 @@ chapter: 1
 我截取了几个给大家看看, 后面也附上他们的链接. 如果你能翻墙, 也能看看他们有趣的实验.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -67,7 +67,7 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 比如用 OpenAI gym 来[训练你的小机器人]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-04-evolution-strategy-reinforcement-learning.md %}).
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-4-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -84,7 +84,7 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 [配对句子]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-02-genetic-algorithm-match-phrase.md %})问题:
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/2-2-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

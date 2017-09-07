@@ -22,7 +22,7 @@ chapter: 4
 以下是我在 Youtube 中搜索看到大家都拿 Neuro Evolution 做的小实验. 看上去很高大上呀. 是不是又激情澎湃了.
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

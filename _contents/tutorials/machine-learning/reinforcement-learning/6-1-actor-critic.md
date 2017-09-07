@@ -32,7 +32,7 @@ publish-date: 2017-04-03
 下面是基于 Actor Critic 的 Gym Cartpole 实验:
 
 <div align="center">
-<video width="500" controls loop autoplay muted>
+<video width="80%" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole actor critic.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
