@@ -1,23 +1,4 @@
 
-
-/* ======= when window width is less than 500px ======= */
-@media screen and (max-width: 500px){
-    #home-nav > ul > li > a,  #home-nav a:link, #home-nav a:visited {
-    float: none;
-    display: block;
-    }
-    #home-nav > ul{
-    position: static;
-    }
-    #home-nav .dropbtn:hover .dropdown-content {
-		display: none;
-		}
-		#blank-fill {
-		display: none;
-		}
-}
-
-
 /* ======= when window width is greater than 1000 px ======= */
 :root {
   --max-window-width: 800px;

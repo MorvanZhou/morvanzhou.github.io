@@ -31,6 +31,7 @@ line-height: 100px;
 
 #recent-update li {
 padding: 0 5px 0 0;
+border: 1px solid black;
 float: left;
 }
 
@@ -39,6 +40,19 @@ background-color:#000;
 opacity:0.8;
 }
 
+@media screen and (max-width: 40.5em) {
+  #recent-update li {
+    display: block;
+    padding: 0;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align:center;
+  }
+  #recent-update {
+    list-style-type: none;
+    line-height: 0px;
+  }
+}
 /* ====== video ===== */
 .video-container {
 z-index: 1;
@@ -174,6 +188,13 @@ display: block;
 clear: left;
 }
 
+@media screen and (max-width: 40.5em) {
+  #tut-nav {
+    font-size: 0.8em;
+    padding: 0em;
+  }
+}
+
 /* ======== table of contents ======== */
 .table-of-contents-ul {
 background-color: var(--c-tut-table);
@@ -191,7 +212,7 @@ text-align: left;
 }
 
 .chapter-li {
-margin: 0 3em;
+margin: 0 1.5em;
 }
 
 .chapter-li ul {
@@ -199,7 +220,7 @@ list-style-type: none;
 }
 
 .content-li {
-padding: 0.3em 1em;
+padding: 0.3em 0.3em;
 display: block;
 }
 

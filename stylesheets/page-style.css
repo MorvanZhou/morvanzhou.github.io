@@ -20,6 +20,12 @@ padding: 0px;
 background-color:#F4F4F2;
 }
 
+@media screen and (max-width: 40.5em) {
+  body {
+    font-size:14px;
+  }
+}
+
 
 /* ====== Headings ====== */
 h1, h2, h3, h4, h5 {
@@ -53,6 +59,21 @@ text-align: left;
 h5 {
 font-size: 1em;
 text-align: left;
+}
+
+@media screen and (max-width: 40.5em) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
 }
 
 /* ====== Paragraph ====== */
@@ -119,6 +140,11 @@ left: 0;
 padding: 1em 0;
 }
 
+@media screen and (max-width: 40.5em) {
+  .large-top-bottom-padding {
+    padding: 0.5em 0;
+  }
+}
 
 /* ================== DEFAULT FOR PAGES =================== */
 
@@ -186,7 +212,6 @@ text-align: left;
 width: 100%;
 }
 
-
 #home-nav .dropdown-content a:hover {
 background-color: var(--c-n-drop-hover);
 }
@@ -195,6 +220,12 @@ background-color: var(--c-n-drop-hover);
 display: block;
 }
 
+@media screen and (max-width: 40.5em) {
+  #home-nav {
+    font-size: 0.8em;
+    padding: 0em;
+  }
+}
 
 /* ====== main body ====== */
 main {
@@ -205,6 +236,13 @@ box-shadow: 0px 0px 30px 5px  #888888;
 .pad-main {
 padding: 3em 4em;
 }
+
+@media screen and (max-width: 40.5em) {
+  .pad-main {
+    padding: 1em 0.5em;
+  }
+}
+
 /* ====== side right ====== */
 .side-right {
 clear: right;
@@ -262,7 +300,7 @@ font-size: 0.8em;
 background-color: var(--c-n);
 padding: 0px;
 margin: 0px;
-border: solid #00850a;
+border: solid var(--c-n);
 }
 
 footer p{
@@ -341,6 +379,10 @@ display: flex;
 #support-box-wrapper div {
 flex-basis: 100%;
 text-align: center;
+}
+
+#support-box-wrapper img {
+  width:95%;
 }
 
 

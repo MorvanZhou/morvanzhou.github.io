@@ -1,46 +1,56 @@
 ---
 layout: default
+nav-items:
+  - top-name: "Python基础 ▾"
+    tut-path: "python-basic/"
+    icon-path: "python_icon.png"
+    drop-contents:
+      - ["基础", "basic/"]
+      - ["多进程 multiprocessing", "multiprocessing/"]
+      - ["多线程 threading", "threading/"]
+      - ["窗口视窗 Tkinter", "tkinter/"]
+  - top-name: "机器学习 ▾"
+    tut-path: "machine-learning/"
+    icon-path: "ML_icon.png"
+    drop-contents:
+      - ["有趣的机器学习", "ML-intro/"]
+      - ["强化学习 Reinforcement Learning", "reinforcement-learning/"]
+      - ["进化算法 Evolutionary Algorithm", "evolutionary-algorithm/"]
+      - ["神经网络: Tensorflow", "tensorflow/"]
+      - ["神经网络: PyTorch", "torch/"]
+      - ["神经网络: Theano", "theano/"]
+      - ["神经网络: Keras", "keras/"]
+      - ["机器学习: Scikit-learn", "sklearn/"]
+  - top-name: "数据处理 ▾"
+    tut-path: "data-manipulation/"
+    icon-path: "data_icon.png"
+    drop-contents:
+      - ["数据 Numpy & Pandas", "np-pd/"]
+      - ["画图 Matplotlib", "plt/"]
+  - top-name: "其他 ▾"
+    tut-path: "others/"
+    icon-path: "others_icon.png"
+    drop-contents:
+      - ["Git 版本管理", "git/"]
 ---
 
 <div id="tut-header">
-  <a class="hover-move bold" href="{{site.baseurl}}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
+  <a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
   <nav id="tut-nav">
     <ul>
-      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/python-basic/">
-        <img class="icon-image" src="/static/img/icon/python_icon.png">Python基础 ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="{{site.baseurl}}/tutorials/python-basic/basic/">基础</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/python-basic/multiprocessing/">多进程 multiprocessing</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/python-basic/threading/">多线程 threading</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/python-basic/tkinter/">窗口视窗 Tkinter</a> </li>
-        </ul>
-      </li>
-      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/machine-learning/">
-        <img class="icon-image" src="/static/img/icon/ML_icon.png">机器学习 ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/ML-intro/">有趣的机器学习</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/reinforcement-learning/">强化学习 Reinforcement Learning</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/evolutionary-algorithm/">进化算法 Evolutionary Algorithm</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/tensorflow/">神经网络: Tensorflow</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/torch/">神经网络: PyTorch</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/theano/">神经网络: Theano</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/keras/">神经网络: Keras</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/machine-learning/sklearn/">机器学习: Scikit-learn</a> </li>
-        </ul>
-      </li>
-      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/data-manipulation/">
-        <img class="icon-image" src="/static/img/icon/data_icon.png">数据处理 ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="{{site.baseurl}}/tutorials/data-manipulation/np-pd/">数据 Numpy & Pandas</a> </li>
-          <li><a href="{{site.baseurl}}/tutorials/data-manipulation/plt/">画图 Matplotlib</a> </li>
-        </ul>
-      </li>
-      <li class="dropbtn"><a href="{{site.baseurl}}/tutorials/others/">
-        <img class="icon-image" src="/static/img/icon/others_icon.png">其他 ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="{{site.baseurl}}/tutorials/others/git/">Git 版本管理</a> </li>
-        </ul>
-      </li>
+      {% for item in layout.nav-items %}
+        <li class="dropbtn">
+          <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}">
+            <img class="icon-image" src="/static/img/icon/{{ item.icon-path }}">
+            {{ item.top-name }}
+          </a>
+          <ul class="dropdown-content">
+            {% for sub-item in item.drop-contents %}
+              <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item[1] }}">{{ sub-item[0] }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 

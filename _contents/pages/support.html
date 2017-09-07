@@ -6,20 +6,15 @@ items:
   - name: 支付宝
     link: "/static/img/support/alipay.jpeg"
     image-link: "/static/img/support/alipay.jpeg"
-    image-height: 180
   - name: 微信
     link: "/static/img/support/Wechat.jpeg"
     image-link: "/static/img/support/Wechat.jpeg"
-    image-height: 180
   - name: Patreon
     link: "https://www.patreon.com/morvan"
     image-link: "/static/img/support/patreon.jpg"
-    image-height: 150
   - name: Paypal
     link: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=morvanzhou%40gmail%2ecom&amp;lc=C2&amp;item_name=MorvanPython&amp;currency_code=AUD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"
     image-link: "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
-    image-height: auto
-
 ---
 
 <div class="pad-main">
@@ -39,13 +34,12 @@ items:
   <div id="support-box">
       <div id="support-box-wrapper">
         {% for item in page.items %}
-          <div >
+          <div>
               <h3>{{ item.name }}</h3>
               <a href="{{ item.link }}">
-                <img style="{% if item.name != 'Paypal' %} border-radius: 20px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
+                <img style="{% if item.name != 'Paypal' %} border-radius: 10px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
                      src="{{ item.image-link }}"
-                     alt="{{ item.name }}"
-                     height="{{ item.image-height }}" ></a>
+                     alt="{{ item.name }}"></a>
           </div>
         {% endfor %}
       </div>
