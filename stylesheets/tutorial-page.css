@@ -114,7 +114,7 @@ opacity: 0.95;
 }
 
 #tut-nav a, #tut-nav a:link, #tut-nav a:visited{
-color: #DCDCDC;
+color: white; /*#DCDCDC;*/
 }
 
 #tut-nav > ul {
@@ -137,7 +137,7 @@ text-align: center;
 
 #tut-nav ul li a {
 text-decoration: none;
-color: #fff;
+color: #ffffff;
 }
 
 #tut-nav > ul > li:hover {
@@ -178,9 +178,10 @@ width: 100%;
 }
 
 
-/*#tut-nav .dropbtn:hover .dropdown-content {
-display: block;
-}*/
+#tut-nav a:hover {
+color: #303030;
+background-color: var(--c-n-hover);
+}
 
 #tut-content {
 clear: left;

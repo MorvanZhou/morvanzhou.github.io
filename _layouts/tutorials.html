@@ -5,33 +5,56 @@ nav-items:
     tut-path: "python-basic/"
     icon-path: "python_icon.png"
     drop-contents:
-      - ["基础", "basic/"]
-      - ["多进程 multiprocessing", "multiprocessing/"]
-      - ["多线程 threading", "threading/"]
-      - ["窗口视窗 Tkinter", "tkinter/"]
+      - name: "基础"
+        link: "basic/"
+        has-cont: no
+      - name: "多进程 multiprocessing"
+        link: "multiprocessing/"
+        has-cont: no
+      - name: "多线程 threading"
+        link: "threading/"
+        has-cont: no
+      - name: "窗口视窗 Tkinter"
+        link: "tkinter/"
+        has-cont: no
   - top-name: "机器学习 ▾"
     tut-path: "machine-learning/"
     icon-path: "ML_icon.png"
     drop-contents:
-      - ["有趣的机器学习", "ML-intro/"]
-      - ["强化学习 Reinforcement Learning", "reinforcement-learning/"]
-      - ["进化算法 Evolutionary Algorithm", "evolutionary-algorithm/"]
-      - ["神经网络: Tensorflow", "tensorflow/"]
-      - ["神经网络: PyTorch", "torch/"]
-      - ["神经网络: Theano", "theano/"]
-      - ["神经网络: Keras", "keras/"]
-      - ["机器学习: Scikit-learn", "sklearn/"]
+      - name: "有趣的机器学习"
+        has-cont: no
+        link: "ML-intro/"
+      - name: "强化学习 Reinforcement Learning"
+        has-cont: no
+        link: "reinforcement-learning/"
+      - name: "进化算法 Evolutionary Algorithm"
+        has-cont: no
+        link: "evolutionary-algorithm/"
+      - name: "神经网络 ▾"
+        has-cont: "yes"
+        link:
+          - ["Tensorflow", "tensorflow/"]
+          - ["PyTorch", "torch/"]
+          - ["Theano", "theano/"]
+          - ["Keras", "keras/"]
+          - ["Scikit-learn", "sklearn/"]
   - top-name: "数据处理 ▾"
     tut-path: "data-manipulation/"
     icon-path: "data_icon.png"
     drop-contents:
-      - ["数据 Numpy & Pandas", "np-pd/"]
-      - ["画图 Matplotlib", "plt/"]
-  - top-name: "其他 ▾"
+      - name: "数据 Numpy & Pandas"
+        link: "np-pd/"
+        has-cont: no
+      - name: "画图 Matplotlib"
+        link: "plt/"
+        has-cont: no
+  - top-name: "Git ▾"
     tut-path: "others/"
     icon-path: "others_icon.png"
     drop-contents:
-      - ["Git 版本管理", "git/"]
+      - name: "Git 版本管理"
+        link: "git/"
+        has-cont: no
 ---
 
 <div id="tut-header">
@@ -39,8 +62,8 @@ nav-items:
   <a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
 
   <!-- navigation -->
-  <nav id="tut-nav" class="click-nav">
-    <ul class="no-js">
+  <nav id="tut-nav">
+    <ul>
       {% for item in layout.nav-items %}
         <li class="dropbtn">
           <a class="clicker">
@@ -49,7 +72,17 @@ nav-items:
           </a>
           <ul class="dropdown-content">
             {% for sub-item in item.drop-contents %}
-              <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item[1] }}">{{ sub-item[0] }}</a></li>
+              {% if sub-item.has-cont == "yes" %}
+                <li class="dropbtn"><a class="clicker">{{ sub-item.name }}</a>
+                  <ul class="dropdown-content">
+                    {% for sub-item-link in sub-item.link %}
+                    <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
+              {% endif %}
             {% endfor %}
           </ul>
         </li>
@@ -57,27 +90,6 @@ nav-items:
     </ul>
   </nav>
 </div>
-
-<!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-$(function() {
-  // Clickable Dropdown
-  $('.click-nav > ul').toggleClass('no-js js');
-  $('.click-nav .js ul').hide();
-  $('.click-nav .js').click(function(e) {
-    $('.click-nav .js ul').slideToggle(200);
-    $('.clicker').toggleClass('active');
-    e.stopPropagation();
-  });
-  $(document).click(function() {
-    if ($('.click-nav .js ul').is(':visible')) {
-      $('.click-nav .js ul', this).slideUp();
-      $('.clicker').removeClass('active');
-    }
-  });
-});
-</script>
 
 
 
