@@ -1,57 +1,101 @@
-<!DOCTYPE html>
-<html lang="cn">
-<head>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-4601203457616636",
-      enable_page_level_ads: true
-    });
-  </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Morvan's Python tutorials">
-  <meta name="keywords" content="莫烦,python,tutorial,machine learning,
-  机器学习,神经网络,教学,教程,强化学习, 进化算法, 遗传算法, Evolutionary Algorithm, genetic algorithm, tensorflow, keras, theano, reinforcement learning,
-  sklearn, tkinter, multiprocessing, threading, git, numpy, pandas, matplotlib, plt,">
-  <meta name="author" content="Mofan,Morvan,莫烦,周沫凡,周莫烦">
-  <title>莫烦Python - {{page.title}}</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
-  <link href="{{site.baseurl}}/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
-  <link href="{{site.baseurl}}/stylesheets/syntax.css" type="text/css" rel="stylesheet">
-  <link href="{{site.baseurl}}/stylesheets/resize-last-load.css" type="text/css" rel="stylesheet">
-  <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
+---
+layout: main
+nav-items:
+  - top-name: "Python基础 ▾"
+    tut-path: "python-basic/"
+    icon-path: "python_icon.png"
+    drop-contents:
+      - name: "基础"
+        link: "basic/"
+        has-cont: no
+      - name: "多进程 multiprocessing"
+        link: "multiprocessing/"
+        has-cont: no
+      - name: "多线程 threading"
+        link: "threading/"
+        has-cont: no
+      - name: "窗口视窗 Tkinter"
+        link: "tkinter/"
+        has-cont: no
+  - top-name: "机器学习 ▾"
+    tut-path: "machine-learning/"
+    icon-path: "ML_icon.png"
+    drop-contents:
+      - name: "有趣的机器学习"
+        has-cont: no
+        link: "ML-intro/"
+      - name: "强化学习 Reinforcement Learning"
+        has-cont: no
+        link: "reinforcement-learning/"
+      - name: "进化算法 Evolutionary Algorithm"
+        has-cont: no
+        link: "evolutionary-algorithm/"
+      - name: "神经网络 ▾"
+        has-cont: "yes"
+        link:
+          - ["Tensorflow", "tensorflow/"]
+          - ["PyTorch", "torch/"]
+          - ["Theano", "theano/"]
+          - ["Keras", "keras/"]
+          - ["Scikit-learn", "sklearn/"]
+  - top-name: "数据处理 ▾"
+    tut-path: "data-manipulation/"
+    icon-path: "data_icon.png"
+    drop-contents:
+      - name: "数据 Numpy & Pandas"
+        link: "np-pd/"
+        has-cont: no
+      - name: "画图 Matplotlib"
+        link: "plt/"
+        has-cont: no
+  - top-name: "Git ▾"
+    tut-path: "others/"
+    icon-path: "others_icon.png"
+    drop-contents:
+      - name: "Git 版本管理"
+        link: "git/"
+        has-cont: no
+---
 
-  <!-- click dropdown -->
-  <script>
-  $(document).ready(function(){
-    $('.clicker').on("click", function(e){
-      $(this).next('ul').toggle();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-  });
-  </script>
-</head>
+<header>
+  <div id="blank-fill"></div>
+  <nav id="home-nav">
+    <ul>
+      <li><a class="nav-home" href="{{site.baseurl}}/tutorials" ><strong>莫烦PYTHON</strong></a></li>
+      <li><a href="{{site.baseurl}}/discuss/">大家说</a></li>
+      <li><a href="{{site.baseurl}}/support/">赞助</a></li>
+      <li><a href="{{site.baseurl}}/about/" class="{% if page.url == '/about/' %} current-nav {% endif %}">About</a></li>
+      <li class="dropbtn"><a class="clicker">教程 ▾</a>
+        <ul class="dropdown-content">
+          {% for item in layout.nav-items %}
+            <li class="dropbtn">
+              <a class="clicker">
+                <img class="icon-image" src="/static/img/icon/{{ item.icon-path }}">
+                {{ item.top-name }}
+              </a>
+              <ul class="dropdown-content">
+                {% for sub-item in item.drop-contents %}
+                  {% if sub-item.has-cont == "yes" %}
+                    <li class="dropbtn"><a class="clicker">{{ sub-item.name }}</a>
+                      <ul class="dropdown-content">
+                        {% for sub-item-link in sub-item.link %}
+                        <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% else %}
+                    <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-<body>
-  <header>
-    <div id="blank-fill"></div>
-    {% include nav.html %}
-  </header>
-
-  <main>
-    {{content}}
-  </main>
-
-  <div id="bottom-donation-section">
-    {% if page.url != '/support/' %} {% include donate.html %} {% endif %}
-  </div>
-
-  <footer>
-    {% include footer.html %}
-  </footer>
-</body>
-</html>
+<main>
+  {{content}}
+</main>

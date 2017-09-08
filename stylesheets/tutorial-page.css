@@ -5,22 +5,6 @@
 
 /* ===================== TUTORIAL PAGE ====================== */
 
-/* ====== header ===== */
-#tut-header {
-z-index: 2;
-display: block;
-padding: 3em 0 8em 0;
-margin: 0;
-}
-
-#tut-header a h1 {
-width: 45%;
-text-align: center;
-display: inline-block;
-line-height: 2em;
-margin: 0;
-padding: 0 5px;
-}
 
 /* ====== recent update ===== */
 #recent-update {
@@ -101,99 +85,6 @@ button#switch-video:hover {
 background-color: var(--c-n-mofan);
 }
 
-/* ====== tutorial navigation ===== */
-#tut-nav {
-z-index: 2;
-vertical-align: middle;
-position: absolute;
-display: inline-block;
-width: 50%;
-margin: 0;
-padding: 0;
-opacity: 0.95;
-}
-
-#tut-nav a, #tut-nav a:link, #tut-nav a:visited{
-color: white; /*#DCDCDC;*/
-}
-
-#tut-nav > ul {
-display: block;
-list-style-type: none;
-font-size: 120%;
-border-radius: 10px;
-background-color: var(--c-n);
-margin: 0;
-padding: 0em;
-box-shadow: 1px 1px 15px 2px  #888888;
-}
-
-#tut-nav > ul > li {
-display: block;
-margin: 0;
-padding: 0.3em 0 0.3em 0.5em;
-text-align: center;
-}
-
-#tut-nav ul li a {
-text-decoration: none;
-color: #ffffff;
-}
-
-#tut-nav > ul > li:hover {
-background-color: var(--c-n-mofan);
-border-radius: 10px;
-}
-
-#tut-nav > ul > li > ul {
-display: block;
-list-style-type: none;
-font-size: 100%;
-margin-left: 0;
-padding: 0;
-}
-
-#tut-nav > ul > li > ul > li {
-display: block;
-font-size: 1.2em;
-margin: 0;
-padding: 0;
-text-align: left;
-}
-
-/*#tut-nav > ul > li > ul > li:hover {
-background-color: #26d926;
-}*/
-
-#tut-nav .dropdown-content {
-display: none;
-}
-
-#tut-nav .dropdown-content a {
-font-size: 0.7em;
-min-width: 160px;
-padding: 0.2em 0em 0.2em 0.5em;
-margin: 0;
-width: 100%;
-}
-
-
-#tut-nav a:hover {
-color: #303030;
-background-color: var(--c-n-hover);
-}
-
-#tut-content {
-clear: left;
-}
-
-@media screen and (max-width: 40.5em) {
-  #tut-nav {
-    font-size: 0.8em;
-    padding: 0em;
-  }
-}
-
 /* ======== table of contents ======== */
 .table-of-contents-ul {
 background-color: var(--c-tut-table);
@@ -272,7 +163,7 @@ overflow: hidden;
 
 .PageNavigation a {
 display: block;
-color: #DCDCDC;
+color: white;
 background-color: #14b814;
 text-decoration: none;
 padding: 1em;
@@ -281,7 +172,7 @@ border-radius: 10px;
 }
 
 .PageNavigation a:hover {
-background-color:#00e600;
+color: #303030;
 }
 
 .PageNavigation .prev {
