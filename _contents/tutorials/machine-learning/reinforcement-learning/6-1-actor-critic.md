@@ -169,7 +169,7 @@ for i_episode in range(MAX_EPISODE):
 ```
 
 建立神经网络的详细流程请直接看代码更直观, 其他方面的代码也不是重点, 所以直接看代码很好懂.
-一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)
+一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/8_Actor_Critic_Advantage/AC_CartPole.py)
 
 由于更新时的 网络相关性, state 相关性, Actor Critic 很难收敛. 如果同学们对这份代码做过修改,
 并且达到了好的收敛性, 欢迎在下面分享~
