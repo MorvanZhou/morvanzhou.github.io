@@ -35,12 +35,15 @@ nav-items:
 ---
 
 <div id="tut-header">
+  <!-- page main title -->
   <a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
-  <nav id="tut-nav">
-    <ul>
+
+  <!-- navigation -->
+  <nav id="tut-nav" class="click-nav">
+    <ul class="no-js">
       {% for item in layout.nav-items %}
         <li class="dropbtn">
-          <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}">
+          <a class="clicker">
             <img class="icon-image" src="/static/img/icon/{{ item.icon-path }}">
             {{ item.top-name }}
           </a>
@@ -53,8 +56,28 @@ nav-items:
       {% endfor %}
     </ul>
   </nav>
-
 </div>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+  // Clickable Dropdown
+  $('.click-nav > ul').toggleClass('no-js js');
+  $('.click-nav .js ul').hide();
+  $('.click-nav .js').click(function(e) {
+    $('.click-nav .js ul').slideToggle(200);
+    $('.clicker').toggleClass('active');
+    e.stopPropagation();
+  });
+  $(document).click(function() {
+    if ($('.click-nav .js ul').is(':visible')) {
+      $('.click-nav .js ul', this).slideUp();
+      $('.clicker').removeClass('active');
+    }
+  });
+});
+</script>
 
 
 

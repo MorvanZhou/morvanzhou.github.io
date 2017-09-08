@@ -178,9 +178,9 @@ width: 100%;
 }
 
 
-#tut-nav .dropbtn:hover .dropdown-content {
+/*#tut-nav .dropbtn:hover .dropdown-content {
 display: block;
-}
+}*/
 
 #tut-content {
 clear: left;
