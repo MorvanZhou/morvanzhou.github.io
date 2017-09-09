@@ -4,7 +4,9 @@ layout: tutorials
 <!-- Tutorial menu button-->
 <!--{% include tutorial-side-menu.html %}-->
 
-<br>
+<!-- page main title -->
+<a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1 class="tut-title">{{ page.tut-title }}</h1></a>
+
 <!-- top ads -->
 <div class="ads-container">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -18,11 +20,6 @@ layout: tutorials
   (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 </div>
-
-<br>
-<!-- page main title -->
-<a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1>{{ page.tut-title }}</h1></a>
-<br>
 
 <!-- video section -->
 {% include embedded-video.html %}

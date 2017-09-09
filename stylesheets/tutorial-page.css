@@ -36,6 +36,13 @@ opacity:0.8;
     line-height: 0px;
   }
 }
+
+
+/* ======= tutorial title ====== */
+.tut-title {
+margin: 0;
+padding: 1em 0 0.5em 0;
+}
 /* ====== video ===== */
 .video-container {
 z-index: 1;
