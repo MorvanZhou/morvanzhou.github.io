@@ -8,15 +8,19 @@ nav-items:
       - name: "基础"
         link: "basic/"
         has-cont: no
+        icon-path: "basic_icon.png"
       - name: "多进程 multiprocessing"
         link: "multiprocessing/"
         has-cont: no
+        icon-path: "multiprocessing_icon.png"
       - name: "多线程 threading"
         link: "threading/"
         has-cont: no
+        icon-path: "thread_icon.png"
       - name: "窗口视窗 Tkinter"
         link: "tkinter/"
         has-cont: no
+        icon-path: "GUI_icon.png"
   - top-name: "机器学习 ▾"
     tut-path: "machine-learning/"
     icon-path: "ML_icon.png"
@@ -24,22 +28,27 @@ nav-items:
       - name: "有趣的机器学习"
         has-cont: no
         link: "ML-intro/"
+        icon-path: "ML_intro_icon.png"
       - name: "强化学习 Reinforcement Learning"
         has-cont: no
         link: "reinforcement-learning/"
+        icon-path: "rl_icon.png"
       - name: "进化算法 Evolutionary Algorithm"
         has-cont: no
         link: "evolutionary-algorithm/"
+        icon-path: "evolution_icon.png"
       - name: "神经网络 ▾"
         has-cont: "yes"
+        icon-path: "neural_net_icon.png"
         link:
-          - ["Tensorflow", "tensorflow/"]
-          - ["PyTorch", "torch/"]
-          - ["Theano", "theano/"]
-          - ["Keras", "keras/"]
+          - ["Tensorflow", "tensorflow/", "tf_icon.png"]
+          - ["PyTorch", "torch/", "torch_icon.png"]
+          - ["Theano", "theano/", "theano_icon.png"]
+          - ["Keras", "keras/", "keras_icon.jpg"]
       - name: "通用机器学习 Scikit-learn"
         has-cont: no
         link: "sklearn/"
+        icon-path: "sklearn_icon.png"
   - top-name: "数据处理 ▾"
     tut-path: "data-manipulation/"
     icon-path: "data_icon.png"
@@ -47,9 +56,11 @@ nav-items:
       - name: "数据 Numpy & Pandas"
         link: "np-pd/"
         has-cont: no
+        icon-path: "np_pd_icon.png"
       - name: "画图 Matplotlib"
         link: "plt/"
         has-cont: no
+        icon-path: "plt_icon.png"
   - top-name: "Git ▾"
     tut-path: "others/"
     icon-path: "others_icon.png"
@@ -57,6 +68,7 @@ nav-items:
       - name: "Git 版本管理"
         link: "git/"
         has-cont: no
+        icon-path: "git_icon.png"
 ---
 
 <header>
@@ -78,15 +90,18 @@ nav-items:
               <ul class="dropdown-content">
                 {% for sub-item in item.drop-contents %}
                   {% if sub-item.has-cont == "yes" %}
-                    <li class="dropbtn"><a class="clicker">{{ sub-item.name }}</a>
+                    <li class="dropbtn"><img class="icon-image" src="/static/img/icon/{{ sub-item.icon-path }}" style="max-width:1.5em; max-height:1.1em;">
+                      <a class="clicker">{{ sub-item.name }}</a>
                       <ul class="dropdown-content">
                         {% for sub-item-link in sub-item.link %}
-                        <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
+                        <li><img class="icon-image" src="/static/img/icon/{{ sub-item-link[2] }}" style="max-width:1.5em; max-height:1.1em;">
+                          <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
                         {% endfor %}
                       </ul>
                     </li>
                   {% else %}
-                    <li><a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
+                    <li><img class="icon-image" src="/static/img/icon/{{ sub-item.icon-path }}" style="max-width:1.5em; max-height:1.1em;">
+                      <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>
