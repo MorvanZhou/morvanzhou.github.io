@@ -72,6 +72,19 @@ margin: 0;
 padding:0;
 }
 
+/* ======= tutorial content menu ========= */
+.tut-content-menu {
+position: fixed;
+bottom: 2%;
+right: 2%;
+}
+
+.tut-content-menu img {
+max-width: 4em;
+border-radius:50%;
+box-shadow: 0px 0px 10px #888888;
+}
+
 /* ====== switch video button ===== */
 div#switch-video-div {
 display:block;
