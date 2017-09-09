@@ -96,6 +96,7 @@ display: inline;
 background-color: var(--c-n);
 border: none;
 font-size: 1em;
+padding: 0.2em 2em;
 color: #DCDCDC;
 box-shadow: 0px 0px 20px 2px #888888;
 border-radius:5px;
@@ -103,6 +104,12 @@ border-radius:5px;
 
 button#switch-video:hover {
 background-color: var(--c-n-mofan);
+}
+.collapse{
+display:none
+}
+.collapse.in{
+display:block
 }
 
 /* ======== table of contents ======== */

@@ -78,7 +78,20 @@ nav-items:
       <li><a class="nav-home" href="{{site.baseurl}}/tutorials" ><strong>莫烦PYTHON</strong></a></li>
       <li><a href="{{site.baseurl}}/discuss/">大家说</a></li>
       <li><a href="{{site.baseurl}}/support/">赞助</a></li>
-      <li><a href="{{site.baseurl}}/about/" class="{% if page.url == '/about/' %} current-nav {% endif %}">About</a></li>
+      <li><a href="{{site.baseurl}}/about/" style="vertical-align: middle;">About</a></li>
+
+      <!-- bing search -->
+      <li>
+        <a class="search-bar">
+          <form method="get" action="https://www.bing.com/search" target="_blank">
+            <input type="hidden" name="q1" value="site:morvanzhou.github.io" />
+            <input class="search-text" type="text" name="q" placeholder="Search.." size="20" value=""/>
+            <input class="search-img" type="image" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go" />
+          </form>
+        </a>
+      </li>
+
+      <!-- tutorial navigation -->
       <li class="dropbtn"><a class="clicker">教程 ▾</a>
         <ul class="dropdown-content">
           {% for item in layout.nav-items %}
