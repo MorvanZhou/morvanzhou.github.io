@@ -28,7 +28,7 @@
   <script>
   $(document).ready(function(){
     $('.clicker').on("click", function(e){
-      $(this).next('ul').toggle();
+      $(this).next('.dropdown-content').toggle();
       e.stopPropagation();
       e.preventDefault();
     });

@@ -82,13 +82,12 @@ nav-items:
 
       <!-- bing search -->
       <li>
-        <a class="search-bar">
-          <form method="get" action="https://www.bing.com/search" target="_blank">
-            <input type="hidden" name="q1" value="site:morvanzhou.github.io" />
-            <input class="search-text" type="text" name="q" placeholder="Search.." size="20" value=""/>
-            <input class="search-img" type="image" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go" />
-          </form>
-        </a>
+        <a class="search-bar clicker"><img class="search-img" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go"></a>
+        <form class="search-box dropdown-content" method="get" action="https://www.bing.com/search" target="_blank">
+          <input type="hidden" name="q1" value="site:morvanzhou.github.io" />
+          <input class="search-text" type="text" name="q" placeholder="Search.." size="20" value=""/>
+          <!-- <input class="search-img" type="image" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go" /> -->
+        </form>
       </li>
 
       <!-- tutorial navigation -->

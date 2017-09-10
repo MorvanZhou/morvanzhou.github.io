@@ -158,7 +158,7 @@ height:50px;
 
 @media screen and (max-width: 40.5em) {
   #blank-fill {
-    height:35px;
+    height:3.3em;
   }
 }
 
@@ -174,9 +174,6 @@ width: 100%;
 margin: 0;
 padding: 0;
 opacity: 0.95;
-overflow-x: scroll;
-overflow-y: scroll;
-white-space: nowrap;
 }
 
 #home-nav ul {
@@ -196,23 +193,21 @@ float: left;
 float: right;
 }
 
-/* search bar */
-#home-nav .search-bar form {
-display:inline-block;
-line-height:1.2em;
+#home-nav .search-img {
+max-height:1.3em;
+vertical-align: middle;
+}
+
+.search-box {
+display: none;
+position: fixed;
+top:51px;
 }
 
 #home-nav .search-text {
-font-size:0.8em;
-padding:0.3em;
+font-size:1em;
 border-radius:5px;
-border:none;
-vertical-align: middle;
-}
-
-#home-nav .search-img {
-max-height:1.6em;
-vertical-align: middle;
+border: 5px solid var(--c-n);
 }
 
 #home-nav a {
@@ -311,8 +306,10 @@ color: #303030;
 @media screen and (max-width: 40.5em) {
   #home-nav {
     font-size: 0.8em;
-    padding: 0em;
   }
+  #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
+      padding: 0.8em 0.7em;
+      }
   #home-nav > ul > li > ul {
     width: 80%;
   }
@@ -322,6 +319,18 @@ color: #303030;
   #home-nav > ul > li:last-child {       /* tutorial dropdown */
     float: none;
   }
+  #home-nav > ul > li > ul {
+    top:3.3em;
+    }
+  .search-box {
+    display: none;
+    position: fixed;
+    top:3.3em;
+    left:0;
+    }
+  #home-nav .search-text {
+    font-size:1.4em;
+    }
 }
 
 /* ====== main body ====== */
