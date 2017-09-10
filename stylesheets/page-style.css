@@ -174,7 +174,8 @@ width: 100%;
 margin: 0;
 padding: 0;
 opacity: 0.95;
-overflow: auto;
+overflow-x: scroll;
+overflow-y: scroll;
 white-space: nowrap;
 }
 
@@ -210,7 +211,7 @@ vertical-align: middle;
 }
 
 #home-nav .search-img {
-max-height:1.7em;
+max-height:1.6em;
 vertical-align: middle;
 }
 
@@ -230,6 +231,8 @@ background-color: var(--c-n-mofan);
 }
 
 #home-nav > ul > li > ul {     /* tutorial dropdown */
+max-height: 90%;
+overflow-y: scroll;
 position: fixed;
 display: none;
 top: 2.4em;

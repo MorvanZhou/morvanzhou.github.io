@@ -15,7 +15,7 @@
   机器学习,神经网络,教学,教程,强化学习, 进化算法, 遗传算法, Evolutionary Algorithm, genetic algorithm, tensorflow, keras, theano, reinforcement learning,
   sklearn, tkinter, multiprocessing, threading, git, numpy, pandas, matplotlib, plt,">
   <meta name="author" content="Mofan,Morvan,莫烦,周沫凡,周莫烦">
-  <title>莫烦Python - {{page.title}}</title>
+  <title>{{page.title}} - 莫烦Python</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
@@ -27,7 +27,7 @@
   <!-- click dropdown -->
   <script>
   $(document).ready(function(){
-    $('.clicker').on("click touchstart", function(e){
+    $('.clicker').on("click", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
