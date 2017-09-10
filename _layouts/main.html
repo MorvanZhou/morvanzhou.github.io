@@ -27,7 +27,7 @@
   <!-- click dropdown -->
   <script>
   $(document).ready(function(){
-    $('.clicker').on("click", function(e){
+    $('.clicker').on("click touchstart", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
