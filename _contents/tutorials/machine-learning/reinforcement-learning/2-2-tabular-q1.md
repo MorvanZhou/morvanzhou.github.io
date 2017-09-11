@@ -37,7 +37,7 @@ publish-date: 2017-01-09
 整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
 Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q table 的更新可以不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).
 不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用.
-On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-policy)](#) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
+On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-policy)]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
 
 <h4 class="tut-h4-pad" id="coding">算法的代码形式</h4>
 
