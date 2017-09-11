@@ -103,7 +103,7 @@ class SumTree(object):
 ```
 
 具体的抽要和更新值的规则和上面说的类似.
-具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/RL_brain.py#L18-L93)
+具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L18-L86)
 
 
 
@@ -128,10 +128,24 @@ class Memory(object):
 
 ```
 
-具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/RL_brain.py#L96-L136)
+具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L89-L129)
+下面有很多朋友经常问的一个问题, 这个 ISweight 到底怎么算. 需要提到的一点是, 代码中的计算方法是经过了简化的, 将 paper 中的步骤合并了一些.
+比如 `prob = p / self.tree.total_p; ISWeights = np.power(prob/max_prob, -self.beta)`
 
+下面是我的推导, 如果有不正确还请指出. 在paper 中, `ISWeight = (N*Pj)^(-beta) / maxi_wi` 里面的 `maxi_wi` 是为了 normalize ISWeight, 所以我们先把他放在一边.
+所以单纯的 importance sampling 就是 `(N*Pj)^(-beta)`, 那 `maxi_wi = maxi[(N*Pi)^(-beta)]`.
 
+如果将这两个式子合并,
 
+`ISWeight = (N*Pj)^(-beta) / maxi[ (N*Pi)^(-beta) ]`
+
+看出来了吧, 有的东西可以抵消掉的. 最后
+
+`ISWeight = (Pj / maxi[Pi])^(-beta)`
+
+这样我们就有了代码中的样子.
+
+还有代码中的 `alpha` 是一个决定我们要使用多少 ISweight 的影响, 如果 `alpha = 0`, 我们就没使用到任何 Importance Sampling.
 
 
 <h4 class="tut-h4-pad" id="learn">更新方法</h4>

@@ -308,13 +308,13 @@ color: #303030;
     font-size: 0.8em;
   }
   #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
-      padding: 0.8em 0.7em;
+      padding: 0.8em 0.5em;
       }
   #home-nav > ul > li > ul {
     width: 80%;
   }
   #home-nav > ul > li > ul > li > a,  #home-nav > ul > li > ul > li > ul > li > a, #home-nav > ul > li > ul > li > ul > li > ul {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   #home-nav > ul > li:last-child {       /* tutorial dropdown */
     float: none;
@@ -329,7 +329,7 @@ color: #303030;
     left:0;
     }
   #home-nav .search-text {
-    font-size:1.4em;
+    font-size:1.3em;
     }
 }
 
