@@ -6,7 +6,15 @@ description: 在 Numpy 中, 运用最多的, 还是方便的索引功能, 这里
 author: Sincejuly
 date: 2016-11-3
 chapter: 2
+post-headings:
+  - 一维索引
+  - 二维索引
 ---
+{% assign post-heading-count = -1 %}
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们都知道，在元素列表或者数组中，我们可以用如同`a[2]`一样的表示方法，同样的，在Numpy中也有相对应的表示方法：
 
@@ -34,6 +42,9 @@ print(A[2])
 ```
 
 实际上这时的`A[2]`对应的就是矩阵`A`中第三行(从0开始算第一行)的所有元素。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果你想要表示具体的单个元素，可以仿照上述的例子：
 

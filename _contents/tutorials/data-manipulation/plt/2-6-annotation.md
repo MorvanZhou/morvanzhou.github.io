@@ -6,10 +6,18 @@ chapter: 2
 title: Annotation 标注
 date: 2016-11-3
 author: 快乐的石板桥
+post-headings:
+  - 画出基本图
+  - 移动坐标
+  - 添加注释 annotate
+  - 添加注释 text
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt8_annotation.py)
   
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 当图线中某些特殊地方需要标注时，我们可以使用 `annotation`. matplotlib 中的 `annotation` 有两种方法，
 一种是用 plt 里面的 `annotate`，一种是直接用 plt 里面的 `text` 来写标注.
@@ -28,6 +36,9 @@ plt.plot(x, y,)
 ```
 
 <img class= "course-image" src="/static/results/plt/2_6_1.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 然后我们挪动坐标轴的位置.
 
@@ -56,7 +67,9 @@ plt.scatter([x0, ], [y0, ], s=50, color='b')
 
 <img class= "course-image" src="/static/results/plt/2_6_3.png">
 
-#### 标注方式1: 使用 `annotate`
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 接下来我们就对`(x0, y0)`这个点进行标注.
 
@@ -71,7 +84,9 @@ plt.annotate(r'$2x+1=%s$' % y0, xy=(x0, y0), xycoords='data', xytext=(+30, -30),
 
 <img class= "course-image" src="/static/results/plt/2_6_4.png">
 
-#### 标注方式2: 使用 `text`
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 ```python
 plt.text(-3.7, 3, r'$This\ is\ the\ some\ text. \mu\ \sigma_i\ \alpha_t$',

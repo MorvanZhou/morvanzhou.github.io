@@ -6,7 +6,18 @@ description: 关于 Numpy array 的分割运算, 包括横向和纵向分割的�
 author: Bhan
 date: 2016-11-3
 chapter: 2
+post-headings:
+  - 创建数据
+  - 纵向分割
+  - 横向分割
+  - 错误的分割
+  - 不等量的分割
+  - 其他的分割方式
 ---
+{% assign post-heading-count = -1 %}
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先 `import` 模块
 
@@ -26,7 +37,8 @@ array([[ 0,  1,  2,  3],
 """
 ```
 
-#### 纵向分割
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 print(np.split(A, 2, axis=1))
@@ -39,7 +51,8 @@ print(np.split(A, 2, axis=1))
 """
 ```
 
-#### 横向分割
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 print(np.split(A, 3, axis=0))
@@ -47,7 +60,8 @@ print(np.split(A, 3, axis=0))
 # [array([[0, 1, 2, 3]]), array([[4, 5, 6, 7]]), array([[ 8,  9, 10, 11]])]
 ```
 
-#### 错误的分割
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 范例的Array只有4列，只能等量对分，因此输入以上程序代码后Python就会报错。
 
@@ -59,7 +73,8 @@ print(np.split(A, 3, axis=1))
 
 为了解决这种情况, 我们会有下面这种方式.
 
-#### 不等量的分割
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在机器学习时经常会需要将数据做不等量的分割，因此解决办法为`np.array_split()`
 
@@ -78,7 +93,8 @@ print(np.array_split(A, 3, axis=1))
 
 成功将Array不等量分割!
 
-#### 其他的分割方式
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在Numpy里还有`np.vsplit()`与横`np.hsplit()`方式可用。
 

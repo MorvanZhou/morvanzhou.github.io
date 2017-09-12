@@ -6,15 +6,24 @@ description: 使用 pandas 进行文件的导入导出是一件非常简单的�
 author: Bhan
 date: 2016-11-3
 chapter: 3
+post-headings:
+  - 要点
+  - 读取csv
+  - 将资料存取成pickle
+
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/numpy%26pandas/15_read_to)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `pandas`可以读取与存取的资料格式有很多种，像`csv`、`excel`、`json`、`html`与`pickle`等…，
 详细请看[官方说明文件](http://pandas.pydata.org/pandas-docs/stable/io.html)
 
-#### 例子一 - 读取csv
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 示范档案下载 - [student.csv](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv)
 
@@ -28,7 +37,8 @@ data = pd.read_csv('students.csv')
 print(data)
 ```
 
-#### 例子二 - 将资料存取成pickle
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 data.to_pickle('student.pickle')

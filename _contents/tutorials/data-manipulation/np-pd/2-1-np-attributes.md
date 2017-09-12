@@ -6,7 +6,10 @@ description: Numpy 的几种常用属性介绍 (shape, size, ndim).
 author: abner
 date: 2016-11-3
 chapter: 2
+
 ---
+{% assign post-heading-count = -1 %}
+
 这次我们会介绍几种 numpy 的属性:
 
 - `ndim`：维度

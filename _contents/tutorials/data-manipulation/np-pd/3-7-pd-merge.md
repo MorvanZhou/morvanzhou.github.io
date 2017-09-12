@@ -6,22 +6,26 @@ description: pandas 中的 merge 和 concat 类似,但主要是用于两组有 k
 author: Bhan
 date: 2016-11-3
 chapter: 3
+post-headings:
+  - 要点
+  - 依据一组key合并
+  - 依据两组key合并
+  - Indicator
+  - 依据index合并
+  - 解决overlapping的问题
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/17_merge.py)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `pandas`中的`merge`和`concat`类似,但主要是用于**两组有key column的数据**,统一索引的数据. 通常也被用在Database的处理当中.
 
-本节内容包含:
 
-* [依据一组key合并](#p0)
-* [依据两组key合并](#p1)
-* [Indicator](#p2)
-* [依据index合并](#p3)
-* [解决overlapping的问题](#p4)
-
-<h4 class="tut-h4-pad" id="p0">依据一组key合并</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import pandas as pd
@@ -59,7 +63,8 @@ print(res)
 # 3  A3  B3  K3  C3  D3
 ```
 
-<h4 class="tut-h4-pad" id="p1">依据两组key合并</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 合并时有4种方法`how = ['left', 'right', 'outer', 'inner']`，预设值`how='inner'`。
 
@@ -126,7 +131,8 @@ print(res)
 # 3  NaN  NaN   K2   K0  C3  D3
 ```
 
-<h4 class="tut-h4-pad" id="p2">Indicator</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `indicator=True`会将合并的记录放在新的一列。
 
@@ -167,7 +173,8 @@ print(res)
 # 3   2.0      NaN        2.0       right_only
 ```
 
-<h4 class="tut-h4-pad" id="p3">依据index合并</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import pandas as pd
@@ -209,7 +216,8 @@ print(res)
 # K2  A2  B2  C2  D2
 ```
 
-<h4 class="tut-h4-pad" id="p4">解决overlapping的问题</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import pandas as pd

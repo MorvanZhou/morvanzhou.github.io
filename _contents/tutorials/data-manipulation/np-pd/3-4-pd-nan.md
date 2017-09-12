@@ -6,10 +6,21 @@ description: 有时候我们导入或处理数据, 会产生一些空的或者�
 author: 张能波
 date: 2016-11-3
 chapter: 3
+post-headings:
+  - 创建含 NaN 的矩阵
+  - pd.dropna()
+  - pd.fillna()
+  - pd.isnull()
+
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/14_nan.py)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 有时候我们导入或处理数据, 会产生一些空的或者是 `NaN` 数据,如何删除或者是填补这些 `NaN` 数据就是我们今天所要提到的内容. 
 
 建立了一个6X4的矩阵数据并且把两个位置置为空.
@@ -30,6 +41,9 @@ df.iloc[1,2] = np.nan
 """
 ```
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 如果想直接去掉有 `NaN` 的行或列, 可以使用 `dropna`
 
 ```python
@@ -46,6 +60,9 @@ df.dropna(
 """
 ```
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 如果是将 `NaN` 的值用其他值代替, 比如代替成 `0`:
 
 ```python
@@ -60,6 +77,9 @@ df.fillna(value=0)
 2013-01-06  20  21.0  22.0  23
 """
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 判断是否有缺失数据 `NaN`, 为 `True` 表示缺失数据:
 

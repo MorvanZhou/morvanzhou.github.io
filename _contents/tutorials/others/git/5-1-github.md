@@ -7,20 +7,22 @@ title: Github
 comments: true
 publish-date: 2016-12-02
 thumbnail: /static/thumbnail/git/5-01.jpg
+post-headings:
+  - 建立 github 版本库
+  - 连接本地版本库
+  - 推送修改
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_5-1.zip)
   
-本节内容分为:
-  
-* [建立 github 版本库](#github-repository)
-* [连接本地版本库](#link)
-* [推送修改](#push-change)
+
 
 github 是一个大家都积极贡献的地方, 你可以和各种人合作创作. 也是开源的天堂~
 只要你愿意, 任何人都能下载, 或修改你的杰作.
 
-<h4 class="tut-h4-pad" id="github-repository">建立 github 版本库</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在 [github](https://github.com/) 注册一个 github 账户, 这个不用我多说, 大家都知道注册.
 
@@ -32,7 +34,8 @@ github 是一个大家都积极贡献的地方, 你可以和各种人合作创�
 
 <img class="course-image" src="/static/results/git/5-1-2.png">
 
-<h4 class="tut-h4-pad" id="link">连接本地版本库</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 使用这节内容的初始例子文件, 然后将本地的版本库推送到网上:
 
@@ -51,7 +54,8 @@ $ git push -u origin dev        # 推送本地 dev  去 origin
 <img class="course-image" src="/static/results/git/5-1-4.png">
 
 
-<h4 class="tut-h4-pad" id="push-change">推送修改</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果在本地再进行修改, 比如在 `1.py` 文件中加上 `# happy github`,
 然后 `commit` 并推上去:

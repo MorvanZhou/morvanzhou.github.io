@@ -7,9 +7,15 @@ description: "我们之所以用 matplotlib 就是因为他在可视化上的强
 chapter: 1
 title: 为什么用 Matplotlib
 date: 2016-11-3
+post-headings:
+  - 为什么选择 Matplotlib
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * Matplotlib [官网](http://matplotlib.org/)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果某天你发现自己要学习 Matplotlib, 很可能是因为:
 

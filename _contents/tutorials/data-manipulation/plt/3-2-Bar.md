@@ -6,8 +6,12 @@ author: Hao
 chapter: 3
 title: Bar 柱状图 
 date: 2016-11-3
+post-headings:
+  - 生成基本图形
+  - 加颜色和数据
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt11_bar.py)
   
 
@@ -16,6 +20,9 @@ date: 2016-11-3
 <img class="course-image" src="/static/results/plt/3_2_1.png">
 
 今天的柱状图分成上下两部分，每一个柱体上都有相应的数值标注，并且取消坐标轴的显示。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 向上向下分别生成12个数据，X为 0 到 11 的整数 ，Y是相应的[均匀分布](https://en.wikipedia.org/wiki/Uniform_distribution)的随机数据。
 使用的函数是`plt.bar`，参数为X和Y：
@@ -44,6 +51,9 @@ plt.show()
 这样我们就生成了下图所示的柱状图基本框架：
 
 <img class="course-image" src="/static/results/plt/3_2_2.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 下面我们就颜色和数值进行优化。
 用`facecolor`设置主体颜色，`edgecolor`设置边框颜色为白色，

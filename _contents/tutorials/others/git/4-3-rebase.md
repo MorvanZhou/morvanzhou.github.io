@@ -12,17 +12,19 @@ title: rebase 分支冲突
 comments: true
 publish-date: 2016-12-01
 thumbnail: /static/thumbnail/git/4-03.jpg
+post-headings:
+  - 什么是 rebase
+  - 使用 rebase
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-3.zip)
   
-本节内容分为:
-  
-* [什么是 rebase](#rebase)
-* [使用 rebase](#use-rebase)
 
 
-<h4 class="tut-h4-pad" id="rebase">什么是 rebase</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 和上节内容一样, 不过我们今天来玩一个更高级的合并方式 `rebase`.
 同样是合并 `rebase` 的做法和 `merge` 不一样. 
@@ -53,7 +55,8 @@ thumbnail: /static/thumbnail/git/4-03.jpg
 为了验证在共享分支上使用 `rebase` 的危险性, 我们在下面的例子中也验证一下.
 
 
-<h4 class="tut-h4-pad" id="use-rebase">使用 rebase</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 初始的版本库还是和上回一样, 在 `master` 和 `dev` 分支中都有自己的独立修改.
 

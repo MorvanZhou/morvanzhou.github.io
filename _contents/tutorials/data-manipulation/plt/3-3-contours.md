@@ -6,13 +6,21 @@ author: Hao
 chapter: 3
 title: Contours 等高线图
 date: 2016-11-3
+post-headings:
+  - 画等高线
+  - 添加高度数字
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt12_contours.py)
 
 本节讲解如何用`matplotlib`生成等高线图。今天的结果如下图所示：
 
 <img class="course-image" src="/static/results/plt/3_3_1.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 数据集即三维点 (x,y) 和对应的高度值，共有256个点。高度值使用一个 height function `f(x,y)` 生成。
 x, y 分别是在区间 [-3,3] 中均匀分布的256个值，并用`meshgrid`在二维平面中将每一个x和每一个y分别对应起来，编织成栅格:
@@ -39,6 +47,7 @@ X,Y = np.meshgrid(x, y)
 plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)
 ```
 
+
 接下来进行等高线绘制。使用`plt.contour`函数划线。位置参数为：X, Y, f(X,Y)。颜色选黑色，线条宽度选0.5。现在的结果如下图所示，只有颜色和线条，还没有数值Label：
 
 ```python
@@ -46,7 +55,10 @@ plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)
 C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=.5)
 ```
 
-<img  class="course-image" src="/static/results/plt/3_3_1.png">
+<img  class="course-image" src="/static/results/plt/3_3_2.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 其中，8代表等高线的密集程度，这里被分为10个部分。如果是0，则图像被一分为二。
 

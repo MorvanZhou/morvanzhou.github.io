@@ -10,8 +10,11 @@ title: merge 分支冲突
 publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/4-02.jpg
+post-headings:
+  - merge 分支冲突
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-2.zip)
   
 

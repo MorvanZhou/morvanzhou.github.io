@@ -10,19 +10,20 @@ title: 回到从前 (reset)
 publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/3-01.jpg
+post-headings:
+  - 修改已 commit 的版本
+  - reset 回到 add 之前
+  - reset 回到 commit 之前
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_3-1.zip)
   
-本节内容分为:
-  
-* [修改已 commit 的版本](#amend)
-* [回到过去 reset](#reset)
-  * [回到 add 之前](#undo-add)
-  * [回到 commit 之前](#undo-commit)
 
 
-<h4 class="tut-h4-pad" id="amend">修改已 commit 的版本</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 有时候我们总会忘了什么, 比如已经提交了 `commit` 却发现在这个 `commit` 中忘了附上另一个文件.
 接下来我们模拟这种情况. 上节内容中, 我们最后一个 `commit` 是 `change 2`, 我们将要添加另外一个文件, 
@@ -40,9 +41,8 @@ c6762a1 change 1
 13be9a7 create 1.py
 ```
 
-<h4 class="tut-h4-pad" id="reset">回到过去 reset</h4>
-
-<h5 id="undo-add">回到 `add` 之前</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 有时我们添加 `add` 了修改, 但是又后悔, 并想补充一些内容再 `add`. 这时,
 我们有一种方式可以回到 `add` 之前. 比如在 `1.py` 文件中添加这一行:
@@ -69,7 +69,8 @@ $ git status -s
  M 1.py     # unstaged
 ```
 
-<h5 id="undo-commit">回到 `commit` 之前</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在穿梭到过去的 `commit` 之前, 我们必须了解 git 是如何一步一步累加更改的.
 我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html)

@@ -6,10 +6,17 @@ author: Jeff
 chapter: 4
 title: 次坐标轴
 date: 2016-11-3
+post-headings:
+  - 第一个y坐标
+  - 第二个y坐标
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt18_secondary_yaxis.py)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 有时候我们会用到次坐标轴，即在同个图上有第2个y轴存在。同样可以用matplotlib做到，而且很简单。
 
 首先，我们做一些准备工作：
@@ -30,6 +37,9 @@ y2 = -1 * y1
 ```python
 fig, ax1 = plt.subplots()
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 对`ax1`调用`twinx()`方法，生成如同镜面效果后的`ax2`：
 

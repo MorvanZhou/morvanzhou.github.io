@@ -9,16 +9,19 @@ title: 第一个版本库 Repository
 publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/2-01.jpg
+post-headings:
+  - 创建版本库 (init)
+  - 添加文件管理 (add)
+  - 提交改变 (commit)
+  - 流程图
 ---
+{% assign post-heading-count = -1 %}
 
-本节内容分为: 
- 
-* [创建版本库 (init)](#init)
-* [添加文件管理 (add)](#add)
-* [提交改变 (commit)](#commit)
-* [流程图](#figure)
 
-<h4 class="tut-h4-pad" id="init">创建版本库 init</h4>
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们先要确定要把哪个文件夹里的文件进行管理. 比如说我桌面上的一个叫 `gitTUT` 的文件夹.
 然后在 Terminal (Windows 的 git bash) 中把当前目录调到这个文件夹 `gitTUT`,
@@ -46,7 +49,8 @@ $ git init
 
 因为这个文件夹中还没有任何的文件, 它返回出来一句话告诉我们已经建立了一个空的 git 管理库.
 
-<h4 class="tut-h4-pad"  id="add">添加文件管理 (add)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 通常我们执行 `$ ls` 就能看到文件夹中的所有文件, 不过 git 创建的管理库文件 `.git` 是被隐藏起来的.
 所以我们要执行这一句才能看到被隐藏的文件:
@@ -105,7 +109,8 @@ Changes to be committed:
 $ git add .
 ```
 
-<h4 class="tut-h4-pad"  id="commit">提交改变 (commit)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们已经添加好了 `1.py` 文件, 最后一步就是提交这次的改变, 并在 `-m` 自定义这次改变的信息:
 
@@ -118,7 +123,8 @@ $ git commit -m "create 1.py"
  create mode 100644 1.py
 ```
 
-<h4 class="tut-h4-pad"  id="figure">流程图</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 整个上述过程可以被这张 git 官网上的流程图直观地表现:
 

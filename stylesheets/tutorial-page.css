@@ -181,6 +181,7 @@ padding: 0 2em;
 display: inline-block;
 vertical-align:top;
 position: fixed;
+width: 20%;
 top: 5em;
 padding: 0 0.8em;
 }
@@ -207,7 +208,7 @@ padding: 0 0.8em;
   main.tut-post {
   max-width: 1200px;
   }
-  main.tut-post .video-container, main.tut-post .video-container iframe, main.tut-post .video-container object, main.tut-post .video-container embed {
+  ads-container, main.tut-post .video-container, main.tut-post .video-container iframe, main.tut-post .video-container object, main.tut-post .video-container embed {
   max-width: 1200px;
   max-height: calc(1200/16*9)px;
   margin: 0 auto;
@@ -237,7 +238,7 @@ border-radius: 10px;
 }
 
 .PageNavigation i {
-font-size: 0.8em;
+font-size: 1em;
 }
 
 .PageNavigation a:hover {

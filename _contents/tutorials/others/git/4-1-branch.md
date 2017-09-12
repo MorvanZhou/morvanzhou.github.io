@@ -10,18 +10,17 @@ title: 分支 (branch)
 publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/4-01.jpg
+post-headings:
+  - 分支 图例
+  - 使用 branch 创建 dev 分支
+  - 使用 checkout 创建 dev 分支
+  - 在 dev 分支中修改
+  - 将 dev 的修改推送到 master
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-1.zip)
-  
-本节内容分为:
-  
-* [分支 图例](#figure)
-* [建立 dev 分支](#dev)
-  * [使用 branch 创建](#create-branch)
-  * [使用 checkout 创建](#create-checkout)
-* [在 dev 分支中修改](#change-in-dev)
-* [将 dev 的修改推送到 master](#merge)
+
 
 
 很多时候我们需要给自己或者客户用一个稳定的版本库, 
@@ -29,12 +28,14 @@ thumbnail: /static/thumbnail/git/4-01.jpg
 我们开发我们的开发版. 不过 git 的做法却不一样, 它把这两者融合成了一个文件, 使用不同的分支来管理.
 所以这一节我们来说说 git 中的 分支 Branch.
 
-<h4 class="tut-h4-pad" id="figure">分支 图例</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 之前我们说编辑的所有改变都是在一条主分支 `master` 上进行的. 通常我们会把 `master` 当作最终的版本, 
 而开发新版本或者新属性的时候, 在另外一个分支上进行, 这样就能使开发和使用互不干扰了. [图片网址](https://www.atlassian.com/git/tutorials/using-branches/)
 
-<img class="course-image" src="/static/results/git/4-1-1.png">
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们之前的文件当中, 仅仅只有一条 `master` 分支, 我们可以通过 `--graph` 来观看分支:
 
@@ -47,9 +48,8 @@ $ git log --oneline --graph
 * 13be9a7 create 1.py
 ```
 
-<h4 class="tut-h4-pad" id="dev">建立 dev 分支</h4>
-
-<h5 id="create-branch">使用 `branch` 创建</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着我们建立另一个分支 `dev`, 并查看所有分支:
 
@@ -77,7 +77,8 @@ $ git branch
   master
 ```
 
-<h5 id="create-checkout">使用 `checkout` 创建</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 使用 `checkout -b` + 分支名, 就能直接创建和切换到新建的分支:
 
@@ -94,7 +95,8 @@ $ git branch
   master
 ```
 
-<h4 class="tut-h4-pad" id="change-in-dev">在 dev 分支中修改</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `dev` 分支中的 `1.py` 和 `2.py` 和 `master` 中的文件是一模一样的.
 因为当前的指针 `HEAD` 在 `dev` 分支上, 所以现在对文件夹中的文件进行修改将不会影响到 `master` 分支.
@@ -105,7 +107,8 @@ $ git branch
 $ git commit -am "change 3 in dev"  # "-am": add 所有改变 并直接 commit
 ```
 
-<h4 class="tut-h4-pad" id="merge">将 dev 的修改推送到 master</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 好了, 我们的开发板 `dev` 已经更新好了, 我们要将 `dev` 中的修改推送到 `master` 中, 
 大家就能使用到正式版中的新功能了.

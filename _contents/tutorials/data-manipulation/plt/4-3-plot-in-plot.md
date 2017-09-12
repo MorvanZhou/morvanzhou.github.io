@@ -6,8 +6,13 @@ author: Jeff
 chapter: 4
 title: 图中图
 date: 2016-11-3
+post-headings:
+  - 数据
+  - 大图
+  - 小图
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt17_plot_in_plot.py)
 
 这次我们来讲matplotlib里一个很有意思的功能，叫做图中图(plot in plot)，最后的效果如下：
@@ -15,6 +20,9 @@ date: 2016-11-3
  <img class="course-image" src="/static/results/plt/4_3_1.png">
 
 可以看到，整个Figure 1包含了三个图，其中两个小图`title inside 1`和`title inside 2`又出现在大图`title`中。这是如何做到的呢？
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先是一些准备工作：
 
@@ -29,6 +37,9 @@ fig = plt.figure()
 x = [1, 2, 3, 4, 5, 6, 7]
 y = [1, 3, 4, 2, 5, 8, 6]
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着，我们来绘制大图。首先确定大图左下角的位置以及宽高：
 
@@ -51,6 +62,9 @@ ax1.set_title('title')
 效果如下：
 
  <img class="course-image" src="/static/results/plt/4_3_2.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着，我们来绘制左上角的小图，步骤和绘制大图一样，注意坐标系位置和大小的改变：
 

@@ -7,20 +7,23 @@ title: 安装
 publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/1-02.jpg
+post-headings:
+  - Linux 系统
+  - MacOS 系统
+  - Windows 系统
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [Git 官网安装说明](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 安装 git 的方式在每种系统中各不相同, 所以我们分开来说:
 
-* [Linux 系统](#linux)
-* [MacOS 系统](#mac)
-* [Windows 系统](#windows)
 
 图个方便, 也可以直接上 git 的下载页面, 让网站自动识别你的系统, 并提供可用的下载文件:
 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-<h4 class="tut-h4-pad" id="linux">Linux 系统</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 使用 Linux 的朋友们, 大家肯定都很熟悉怎么在 Linux 上装东西, 
 所以只要找到你的 Terminal, 并输入以下指令就可以啦:
@@ -35,13 +38,15 @@ $ sudo yum install git-all
 
 Linux 的更多 distribution 的安装, 请看[这里](https://git-scm.com/download/linux)
 
-<h4 class="tut-h4-pad" id="mac">MacOS 系统</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Git 已经为 Mac 用户做好了一个安装包, 我们可以在这里下载并安装 [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
 
 <img class="course-image" src="/static/results/git/1-2-1.png">
 
-<h4 class="tut-h4-pad" id="windows">Windows 系统</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Git 也为 Windows 系统提供了简易的 `.exe` 安装包, 直接从这里下载并安装就可以了: [https://git-scm.com/download/win](https://git-scm.com/download/win)
 

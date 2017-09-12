@@ -9,19 +9,20 @@ title: 记录修改 (log & diff)
 publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/2-02.jpg
+post-headings:
+  - 修改记录 log
+  - 查看 unstaged
+  - 查看 staged (--cached)
+  - 查看 staged & unstaged (HEAD)
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_2-2.zip)
   * [log 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
   * [diff 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Viewing-Your-Staged-and-Unstaged-Changes)
   
 本节内容分为:
-  
-* [修改记录 log](#log)
-* [查看修改部分 diff](#param)
-  * [查看 unstaged](#unstaged)
-  * [查看 staged (--cached)](#staged)
-  * [查看 staged & unstaged (HEAD)](#stust)
+
 
 
 在 git 中, 每一次提交(commit)的修改, 都会被单独的保存起来. 
@@ -29,7 +30,8 @@ thumbnail: /static/thumbnail/git/2-02.jpg
 了盖楼需添加或者拿走的材料. 整个施工过程也被记录了下来.
 
 
-<h4 class="tut-h4-pad" id="log">修改记录 log</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 之前我们以`Morvan Zhou` 的名义对版本库进行了一次修改, 添加了一个 `1.py` 的文件.
 接下来我们就来查看版本库的些施工的过程. 可以看到在 `Author` 那已经有我的名字和 email 信息了.
@@ -100,8 +102,6 @@ Date:   Tue Nov 29 00:06:47 2016 +1100
     create 1.py
 ```
 
-<h4 class="tut-h4-pad" id="diff">查看修改部分 diff</h4>
-
 如果删除一部分代码, 也会被记录上, 比如把 `a = 1` 改成 `a = 2`, 再添加一个 `b = 1`.
 
 ```python
@@ -109,7 +109,8 @@ a = 2
 b = 1
 ```
 
-<h5 id="unstaged">查看 unstaged</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果想要查看这次还没 `add` (unstaged) 的修改部分 和上个已经 `commit` 的文件有何不同, 
 我们将使用 `$ git diff`:
@@ -128,7 +129,8 @@ index 1337a53..ff7c36c 100644
 +b = 1  # 添加了 b = 1
 ```
 
-<h5 id="staged">查看 staged `--cached`</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果你已经 `add` 了这次修改, 文件变成了 "可提交状态" (staged), 我们可以在 `diff` 中添加参数 
 `--cached` 来查看修改:
@@ -148,7 +150,8 @@ index 1337a53..ff7c36c 100644
 +b = 1
 ```
 
-<h5 id="stust">查看 staged & unstaged `HEAD`</h5>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 还有种方法让我们可以查看 `add` 过 (staged) 和 没 `add` (unstaged) 的修改, 
 比如我们再修改一下 `1.py` 但不 `add`:

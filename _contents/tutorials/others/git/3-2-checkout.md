@@ -8,15 +8,19 @@ title: 回到从前 (checkout 针对单个文件)
 publish-date: 2016-12-01
 comments: true
 thumbnail: /static/thumbnail/git/3-02.jpg
+post-headings:
+  - 改写文件 checkout
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_3-2.zip)
 
 
 之前我们使用 `reset` 的时候是针对整个版本库, 回到版本库的某个过去. 
 不过如果我们只想回到某个文件的过去, 又该怎么办呢?
 
-<h4 class="tut-h4-pad" id="checkout">改写文件 checkout</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 其实 `checkout` 最主要的用途并不是让单个文件回到过去, 我们之后会继续讲 `checkout`
 在分支 `branch` 中的应用, 这一节主要讲 `checkout` 让文件回到过去.

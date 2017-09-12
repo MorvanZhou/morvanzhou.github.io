@@ -6,11 +6,19 @@ description:  Numpy array 数组的几种常用属性和功能介绍 (dtype, zer
 author: abner
 date: 2016-11-3
 chapter: 2
+post-headings:
+  - 关键字
+  - 创建数组
+  - 指定数据 dtype
+  - 创建特定数据
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 创建 array 有很多 [形式](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 
-#### 关键字 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 - `array`：创建数组
 - `dtype`：指定数据类型
@@ -20,14 +28,17 @@ chapter: 2
 - `arrange`：按指定范围创建数据
 - `linspace`：创建线段
 
-#### 创建数组
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 ```python
 a = np.array([2,23,4])  # list 1d
 print(a)
 # [2 23 4]
 ```
 
-#### 指定数据 `dtype`
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 a = np.array([2,23,4],dtype=np.int)
@@ -53,7 +64,8 @@ print(a.dtype)
 # float32
 ```
 
-#### 创建特定数据
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 a = np.array([[2,23,4],[2,32,4]])  # 2d 矩阵 2行3列
@@ -77,7 +89,7 @@ array([[ 0.,  0.,  0.,  0.],
 
 创建全一数组, 同时也能指定这些特定数据的 `dtype`:
 
-```python 
+```python
 a = np.ones((3,4),dtype = np.int)   # 数据为1，3行4列
 """
 array([[1, 1, 1, 1],

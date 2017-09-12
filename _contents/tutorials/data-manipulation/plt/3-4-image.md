@@ -6,10 +6,17 @@ author: Hao
 chapter: 3
 title: Image 图片
 date: 2016-11-3
+post-headings:
+  - 随机矩阵画图
+  - 出图方式
+  - colorbar
 ---
-
-* 学习资料：
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt13_image.py)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这一节我们讲解怎样在**matplotlib**中打印出图像。这里我们打印出的是纯粹的数字，而非自然图像。
 我们今天用这样 3x3 的 2D-array 来表示点的颜色，每一个点就是一个pixel。
@@ -38,12 +45,18 @@ plt.imshow(a, interpolation='nearest', cmap='bone', origin='lower')
 我们之前选cmap的参数时用的是：`cmap=plt.cmap.bone`，而现在，我们可以直接用单引号传入参数。
 `origin='lower'`代表的就是选择的原点的位置。
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 我们在这个[链接](http://matplotlib.org/examples/images_contours_and_fields/interpolation_methods.html)
 可以看到**matplotlib**官网上对于内插法的不同方法的描述。下图是一个示例：
 
 <img class="course-image" src="/static/results/plt/3_4_2.png">
 
 这里我们使用的是内插法中的 [Nearest-neighbor](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation) 的方法，其他的方式也都可以随意取选。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 下面我们添加一个`colorbar` ，其中我们添加一个`shrink`参数，使`colorbar`的长度变短为原来的92%：
 

@@ -6,7 +6,10 @@ description: Numpy 的基础数学运算介绍, 涉及到矩阵的加减等.
 date: 2016-11-3
 chapter: 2
 author: Sincejuly
+
 ---
+{% assign post-heading-count = -1 %}
+
 
 让我们从一个脚本开始了解相应的计算以及表示形式 ：
 

@@ -5,15 +5,20 @@ description: 对于 Windows, MacOS, Linux, matplotlib 的安装方式各不相�
 chapter: 1
 title: 安装
 date: 2016-11-3
+post-headings:
+  - Linux
+  - MacOS
+  - Windows
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * Windows 安装文件 [网址](https://pypi.python.org/pypi/matplotlib/)
 
 对于 [Linux](#linux), [MacOS](#mac), [Windows](#windows) 的安装方式各不相同. 
 
-#### Linux
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<a name="linux"></a>
 
 打开 Terminal 窗口, 输入以下内容
 
@@ -25,9 +30,9 @@ $ sudo apt-get install python3-matplotlib
 $ sudo apt-get install python-matplotlib
 ```
 
-#### MacOS
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<a name="mac"></a>
 
 打开 Terminal 窗口, 输入以下内容
 
@@ -39,9 +44,9 @@ $ pip3 install matplotlib
 $ pip install matplotlib
 ```
 
-#### Windows
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<a name="windows"></a>
 
 Windows 的安装最麻烦. 我们一步步来:
 

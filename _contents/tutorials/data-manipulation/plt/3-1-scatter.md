@@ -6,8 +6,11 @@ author: Hao
 chapter: 3
 title: Scatter 散点图
 date: 2016-11-3
+post-headings:
+  - 散点图
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt10_scatter.py)
 
 
@@ -15,6 +18,9 @@ date: 2016-11-3
 今天用到的例子最终呈现的结果如下图：
 
 <img class="course-image" src="/static/results/plt/3_1_1.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先，先引入`matplotlib.pyplot`简写作`plt`,再引入模块`numpy`用来产生一些随机数据。生成1024个呈[标准正态分布](https://zh.wikipedia.org/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83)的二维数据组 (平均数是0，方差为1) 作为一个数据集，并图像化这个数据集。每一个点的颜色值用`T`来表示：
 

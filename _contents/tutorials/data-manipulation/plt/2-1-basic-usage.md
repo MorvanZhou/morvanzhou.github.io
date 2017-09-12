@@ -6,10 +6,16 @@ author: 黄伟
 chapter: 2
 title: 基本用法
 date: 2016-11-3
+post-headings:
+  - 基础应用
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt3_simple_plot.py)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 使用`import`导入模块`matplotlib.pyplot`，并简写成`plt`
 使用`import`导入模块`numpy`，并简写成`np`
 

@@ -7,8 +7,10 @@ author: Sincejuly
 date: 2016-11-3
 chapter: 2
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+
+学习资料:
   * [Numpy官方英文教材](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 
 通过上一节的学习，我们可以了解到一部分矩阵中元素的计算和查找操作。然而在日常使用中，对应元素的索引也是非常重要的。依然，让我们先从一个脚本开始 ：

@@ -6,22 +6,26 @@ description: pandas 处理多组数据的时候往往会要用到数据的合并
 author: Bhan
 date: 2016-11-3
 chapter: 3
+post-headings:
+  - 要点
+  - axis (合并方向)
+  - ignore_index (重置 index)
+  - join (合并方式)
+  - join_axes (依照 axes 合并)
+  - append (添加数据)
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/16_concat.py)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `pandas`处理多组数据的时候往往会要用到数据的合并处理,使用 `concat`是一种基本的合并方式.而且`concat`中有很多参数可以调整,合并成你想要的数据形式.
 
-本节内容包括:
 
-* [axis (合并方向)](#axis)
-* [ignore_index (重置 index)](#ignore-index)
-* [join (合并方式)](#join)
-* [join_axes (依照 axes 合并)](#join-axes)
-* [append (添加数据)](#append)
-
-<h4 class="tut-h4-pad" id="axis">axis (合并方向)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 `axis=0`是预设值，因此未设定任何参数时，函数默认`axis=0`。
@@ -54,7 +58,8 @@ print(res)
 
 仔细观察会发现结果的`index`是0, 1, 2, 0, 1, 2, 0, 1, 2，若要将`index`重置，请看**例子二**。
 
-<h4 class="tut-h4-pad" id="ignore-index">ignore_index (重置 index)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 ```python
@@ -77,7 +82,8 @@ print(res)
 
 结果的`index`变0, 1, 2, 3, 4, 5, 6, 7, 8。
 
-<h4 class="tut-h4-pad" id="join">join (合并方式)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 `join='outer'`为预设值，因此未设定任何参数时，函数默认`join='outer'`。此方式是依照`column`来做纵向合并，有相同的`column`上下合并在一起，其他独自的`column`个自成列，原本没有值的位置皆以`NaN`填充。
@@ -134,7 +140,8 @@ print(res)
 # 5  1.0  1.0  1.0
 ```
 
-<h4 class="tut-h4-pad" id="join-axes">join_axes (依照 axes 合并)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 ```python
@@ -165,7 +172,8 @@ print(res)
 # 4  NaN  NaN  NaN  NaN  1.0  1.0  1.0  1.0
 ```
 
-<h4 class="tut-h4-pad" id="append">append (添加数据)</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `append`只有纵向合并，没有横向合并。
 

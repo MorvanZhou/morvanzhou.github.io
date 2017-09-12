@@ -6,10 +6,16 @@ description: 在 numpy 中的复制功能介绍. 如果直接把 numpy array 赋
 author: Bhan
 date: 2016-11-3
 chapter: 2
+post-headings:
+  - = 的赋值方式会带有关联性
+  - copy() 的赋值方式没有关联性
 ---
+{% assign post-heading-count = -1 %}
 
 
-#### `=` 的赋值方式会带有关联性
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先 `import numpy` 并建立变量, 给变量赋值。
 
@@ -49,7 +55,9 @@ print(b)            # array([11, 22, 33,  3])
 print(c)            # array([11, 22, 33,  3])
 ```
 
-#### `copy()`的赋值方式没有关联性
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 b = a.copy()    # deep copy

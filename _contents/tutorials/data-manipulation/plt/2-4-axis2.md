@@ -6,13 +6,19 @@ author: 黄伟
 chapter: 2
 title: 设置坐标轴2
 date: 2016-11-3
+post-headings:
+  - 设置不同名字和位置
+  - 调整坐标轴
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt6_ax_setting2.py)
 
 这次会说到在我们如何移动matplotlib 中 axis 坐标轴的位置.
 
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 使用`import`导入模块`matplotlib.pyplot`，并简写成`plt`
 使用`import`导入模块`numpy`，并简写成`np`
@@ -76,6 +82,9 @@ plt.show()
 ```
 
 <img class= "course-image" src="/static/results/plt/2_4_1.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 使用`.xaxis.set_ticks_position`设置x坐标刻度数字或名称的位置：`bottom`.（所有位置：`top`，`bottom`，`both`，`default`，`none`）
 
