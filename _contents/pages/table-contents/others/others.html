@@ -5,8 +5,6 @@ permalink: /tutorials/others/
 tut-title: 其他
 tut-link: /tutorials/others/
 tut-permalink: /tutorials/
-tut-description: others
 ---
 
-{% assign descriptions = site.contents | where: "description", page.tut-description %}
-{% include description-loop.html descriptions=descriptions %}
+{% include description-loop.html url=page.url %}

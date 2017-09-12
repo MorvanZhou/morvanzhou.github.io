@@ -1,6 +1,8 @@
 
 <div class="pad-main">
-	{% assign descriptions = include.descriptions | sort: "path" %}
+	{% assign words = include.url | split: '/' %}
+	{% assign descriptions = site.contents | where: "content-for", words[-1] %}
+	{% assign descriptions = descriptions | sort: "path" %}
 	{% for description in descriptions %}
 		<div class="large-top-bottom-padding">
 			<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h3 class="large-top-bottom-padding">

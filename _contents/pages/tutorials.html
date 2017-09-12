@@ -9,6 +9,8 @@ sections:
   - [机器学习, /tutorials/machine-learning/]
   - [数据处理, /tutorials/data-manipulation/]
   - [其他, /tutorials/others/]
+description: "关于 Python, 学习资料层出不穷, 在教学资料如山的时代, 这一个网站为你提供最系统化, 最优质化的学习资料.
+这里特别注重机器学习方面的教学. 让你从一个对 Python, 对机器学习的小白, 立马变成掌握这门技术的先驱者."
 ---
 
 
@@ -31,7 +33,4 @@ sections:
 <hr style="clear: left; width: 80%;">
 <br style="clear: left; padding-bottom: 4em;">
 
-
-{% assign descriptions = site.contents | where: "description", "tutorial-home-page" %}
-
-{% include description-loop.html descriptions=descriptions %}
+{% include description-loop.html url=page.url %}

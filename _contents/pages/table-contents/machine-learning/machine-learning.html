@@ -4,8 +4,6 @@ permalink: /tutorials/machine-learning/
 tut-title: 机器学习
 tut-link: /tutorials/machine-learning/
 tut-permalink: /tutorials/
-tut-description: machine-learning
 ---
 
-{% assign descriptions = site.contents | where: "description", page.tut-description %}
-{% include description-loop.html descriptions=descriptions %}
+{% include description-loop.html url=page.url %}
