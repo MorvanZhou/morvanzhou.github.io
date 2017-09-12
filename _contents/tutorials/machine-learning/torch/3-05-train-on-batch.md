@@ -8,23 +8,28 @@ chapter: 3
 description: "Torch 中提供了一种帮你整理你的数据结构的好东西, 叫做 DataLoader, 我们能用它来包装自己的数据,
 进行批训练. 而且批训练可以有很多种途径, 详情请见 我制作的 训练优化器 动画简介.
 "
+post-headings:
+  - 要点
+  - DataLoader
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/305_batch_train.py)
   * [我制作的 训练优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * [PyTorch 官网](http://pytorch.org/)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Torch 中提供了一种帮你整理你的数据结构的好东西, 叫做 `DataLoader`, 我们能用它来包装自己的数据,
 进行批训练. 而且批训练可以有很多种途径, 详情请见 [我制作的 训练优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %}).
 
 
-#### 本节内容包括:
-
-* [DataLoader](#loader)
 
 
-<h4 class="tut-h4-pad" id="loader">DataLoader</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `DataLoader` 是 torch 给你用来包装你的数据的工具. 所以你要讲自己的 (numpy array 或其他) 数据形式装换成 Tensor, 然后再放进这个包装器中.
 使用 `DataLoader` 有什么好处呢? 就是他们帮你有效地迭代数据, 举例:

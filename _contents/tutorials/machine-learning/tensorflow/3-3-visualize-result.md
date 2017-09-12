@@ -6,8 +6,11 @@ author: 赵孔亚
 chapter: 3
 title: 例子3 结果可视化
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf12_plot_result)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 

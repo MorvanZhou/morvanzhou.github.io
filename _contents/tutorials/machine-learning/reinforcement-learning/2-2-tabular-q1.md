@@ -9,14 +9,22 @@ description: "上次我们知道了 RL 之中的 Q-learning 方法是在做什�
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
 Qlearning 是一个 off-policy 的算法, 因为里面的 max action 让 Q table 的更新可以不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).
 不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用."
+post-headings:
+  - 要点
+  - 算法
+  - 算法的代码形式
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2Mzg3Ng==.html)
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.
@@ -28,13 +36,10 @@ Qlearning 是一个 off-policy 的算法, 因为里面的 max action 让 Q table
 </video>
 </div>
 
-#### 本节内容包括:
-
-* [算法](#algorithm)
-* [算法的代码形式](#coding)
 
 
-<h4 class="tut-h4-pad" id="algorithm">算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 <img class="course-image" src="/static/results/rl/2-1-1.png">
 
@@ -43,7 +48,8 @@ Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q tab
 不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用.
 On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-policy)]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
 
-<h4 class="tut-h4-pad" id="coding">算法的代码形式</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先我们先 import 两个模块,  `maze_env` 是我们的环境模块, 已经编写好了, 大家可以直接在[这里下载](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/2_Q_Learning_maze/maze_env.py),
 `maze_env` 模块我们可以不深入研究, 如果你对编辑环境感兴趣, 可以去看看如何使用 python 自带的简单 GUI 模块 `tkinter` 来编写虚拟环境.

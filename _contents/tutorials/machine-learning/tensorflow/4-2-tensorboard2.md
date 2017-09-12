@@ -6,10 +6,23 @@ chapter: 4
 title: Tensorboard 可视化好帮手 2
 date: 2016-11-3
 author: 灰猫
+post-headings:
+  - 要点
+  - 制作输入源
+  - 在 layer 中为 Weights, biases 设置变化图表
+  - 设置loss的变化图
+  - 给所有训练图合并
+  - 训练数据
+  - 在 tensorboard 中查看效果
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf15_tensorboard)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
@@ -31,15 +44,10 @@ author: 灰猫
 
 好了, 开始练习吧, 本节内容包括:
 
-* [制作输入源](#data)
-* [在 layer 中为 Weights, biases 设置变化图表](#weights-biases)
-* [设置loss的变化图](#loss)
-* [给所有训练图‘合并‘](#merge)
-* [训练数据](#train)
-* [在 tensorboard 中查看效果](#result)
 
 
-<h4 class="tut-h4-pad" id="data">制作输入源</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 由于这节我们观察训练过程中神经网络的变化, 所以首先要添一些模拟数据.
 Python 的 numpy 工具包可以帮助我们制造一些模拟数据. 所以我们先导入这个工具包:
@@ -67,7 +75,8 @@ import numpy as np
 这个效果是如何做到的呢,请看下一个标题
 
 
-<h4 class="tut-h4-pad" id="weights-biases">在 layer 中为 Weights, biases 设置变化图表</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 通过上图的观察我们发现每个 layer 后面有有一个数字: layer1 和layer2
@@ -179,7 +188,8 @@ prediction= add_layer(l1, 10, 1, n_layer=2, activation_function=None)
 ```
 
 
-<h4 class="tut-h4-pad" id="loss">设置loss的变化图</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 `Loss` 的变化图和之前设置的方法略有不同.  loss是在tesnorBorad 的event下面的, 这是由于我们使用的是`tf.scalar_summary()` 方法.
@@ -200,7 +210,8 @@ with tf.name_scope('loss'):
      tf.summary.scalar('loss', loss) # tensorflow >= 0.12
 ```
 
-<h4 class="tut-h4-pad" id="merge">给所有训练图‘合并‘</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 接下来， 开始合并打包。
@@ -222,7 +233,8 @@ sess.run(tf.global_variables_initializer())  # 替换成这样就好
 ```
 
 
-<h4 class="tut-h4-pad" id="train">训练数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 假定给出了`x_data,y_data`并且训练1000次. 
@@ -252,7 +264,8 @@ for i in range(1000):
 ```
 
 
-<h4 class="tut-h4-pad" id="result">在 tensorboard 中查看效果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 程序运行完毕之后, 会产生logs目录 , 使用命令 `tensorboard --logdir logs`
 

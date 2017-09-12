@@ -5,21 +5,23 @@ title: Classification 分类学习
 description: 这节我们说到了一很简单的神经网络,甚至还不能算是一个正规的神经网络,不过原理通了,大家就能应用自如啦.这个神经网络只有两层,一个输入,一个输出层,没有隐藏层,不过大家可以根据上次所讲的 Layer class 来自己做练习,加上隐藏层.
 author: Alice
 chapter: 3
+post-headings:
+  - 导入模块并创建数据
+  - 建立模型
+  - 激活模型
+  - 训练模型
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano11_classification_nn)
 
 
-#### 用 Theano 构建分类网络的步骤：
-
-1. [导入模块并创建数据](#data)
-2. [建立模型](#create)
-3. [激活模型](#compile)
-4. [训练模型](#train)
 
 
 
-<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 引入需要使用的Python包：
 
@@ -56,7 +58,8 @@ D = (rng.randn(N, feats), rng.randint(size=N, low=0, high=2))
 
 
 
-<h4 class="tut-h4-pad" id="create">建立模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来，定义神经网络。
 
@@ -102,7 +105,8 @@ gW, gb = T.grad(cost, [W, b])
 
 
 
-<h4 class="tut-h4-pad" id="compile">激活模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 接下来激活网络。
@@ -123,7 +127,8 @@ predict = theano.function(inputs=[x], outputs=prediction)
 ```
 
 
-<h4 class="tut-h4-pad" id="train">训练模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来训练模型。
 用训练集的 feature 和 target 训练模型，输出预测值和损失 `pred, err`。

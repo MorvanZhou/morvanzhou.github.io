@@ -4,10 +4,12 @@ youtube_id: Vdg5zlZAXnU
 title: LSTM RNN 循环神经网络 (LSTM)
 description: 今天我们会来聊聊在普通RNN的弊端和为了解决这个弊端而提出的 LSTM 技术. LSTM 是 long-short term memory 的简称, 中文叫做 长短期记忆. 是当下最流行的 RNN 形式之一.
 chapter: 2
+post-headings:
+  - RNN 的弊端
+  - LSTM
 ---
 
-
-* 学习资料: 
+学习资料:
   * Tensorflow RNN [例子1]({% link _contents/tutorials/machine-learning/tensorflow/5-07-RNN1.md %})
   * Tensorflow RNN [例子2]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   * Tensorflow RNN [例子3]({% link _contents/tutorials/machine-learning/tensorflow/5-09-RNN3.md %})
@@ -25,7 +27,7 @@ chapter: 2
 
 
 
-#### RNN 的弊端
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/lstm1.png">
 
@@ -43,7 +45,8 @@ chapter: 2
 
 
 
-#### LSTM
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/lstm5.png">
 

@@ -6,11 +6,20 @@ description: 用一个class类来规划神经网络层的信息会比较方便�
 author: C.Cui
 chapter: 3
 date: 2016-11-3
+post-headings:
+  - 要点
+  - 定义层结构
+  - 细节说明
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano8_Layer_class.py)
   
 在学习了如何利用`Theano`定义神经网络的激活函数后，我们用一个`class`类来规划神经网络层的信息，这样会比较方便的我们之后的编程应用.   
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先，和之前所有的练习一样，我们引入需要程序需要使用的Python包： 
 
@@ -41,6 +50,9 @@ l2 = Layer(l1.outputs, 10, 1, None)
 
 以上的代码，描述并构建了一个`1-10-1`的神经网络（inputs-l1-l2）。
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 接下来我们来具体的实现`Layer`类的代码：
 
 ```python
@@ -56,6 +68,10 @@ class Layer(object):
             self.outputs = self.activation_function(self.Wx_plus_b)
 
 ```
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这段代码中，我们最关心的就是这个类的构造函数
 

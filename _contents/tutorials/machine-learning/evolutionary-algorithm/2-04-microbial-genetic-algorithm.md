@@ -8,13 +8,19 @@ chapter: 2
 description: "说到遗传算法 (GA), 有一点不得不提的是如何有效保留好的父母 (Elitism), 让好的父母不会消失掉. 这也是永远都给自己留条后路的意思.
 Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. 一句话来概括: 在袋子里抽两个球, 对比两个球, 把球大的放回袋子里, 把球小的变一下再放回袋子里,
 这样在这次选着中, 大球不会被改变任何东西, 就被放回了袋子, 当作下一代的一部分."
+post-headings:
+  - 要点
+  - 算法
+  - 进化啦
 ---
 
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py)
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * 论文 [The Microbial Genetic Algorithm ](https://pdfs.semanticscholar.org/b079/54447f861b074a54752b61af63d960862f92.pdf)
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
@@ -26,13 +32,8 @@ Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. *
 <img class="course-image" src="/static/results/evolutionary-algorithm/2-4-0.gif">
 
 
-#### 本节内容包括:
 
-* [算法](#algorithm)
-* [进化啦](#eval)
-
-
-<h4 class="tut-h4-pad" id="algorithm">算法</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/2-4-1.png">
 
@@ -44,7 +45,7 @@ Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. *
 GA 中的 Elitism 问题通过这种方法巧妙解决了.
 
 
-<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 这次我们还是通过之前那个找曲线中最大点的方式诠释 MGA 算法. class 中的结构框架基本没变, 只是少了 `select` 的功能.
 因为我们会将 `select` 功能写在 `evolve` 中. 这样方便点.

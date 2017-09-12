@@ -6,10 +6,21 @@ chapter: 2
 author: Alice
 title: 通用学习模式
 date: 2016-11-3
+post-headings:
+  - 要点
+  - 导入模块
+  - 创建数据
+  - 建立模型－训练－预测
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk4_learning_pattern.py)
   
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 Sklearn 把所有机器学习的模式整合统一起来了，学会了一个模式就可以通吃其他不同类型的学习模式。
 
@@ -24,13 +35,11 @@ Sklearn 本身就有很多数据库，可以用来练习。
 
 今天用 `KNN classifier`，就是选择几个临近点，综合它们做个平均来作为预测值。
 
-#### 使用模型的步骤：
 
-1. [导入模块](#pkg)
-2. [创建数据](#data)
-3. [建立模型－训练－预测](#model)
 
-<h4 id="pkg" class="tut-h4-pad">导入模块</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 ```python
 from sklearn import datasets
@@ -38,7 +47,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 ```
 
-<h4 id="data" class="tut-h4-pad">创建数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 加载 `iris` 的数据，把属性存在 `X`，类别标签存在 `y`：
 
@@ -84,7 +95,9 @@ print(y_train)
  """
 ```
 
-<h4 id="model" class="tut-h4-pad">定义模型－训练模型－预测</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 定义模块方式 `KNeighborsClassifier()`，
 用 `fit` 来训练 `training data`，这一步就完成了训练的所有步骤，

@@ -6,8 +6,11 @@ author : 商晋
 chapter: 2
 title: 激励函数 Activation Function
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * Tensorflow 提供的一些 [激励函数](https://www.tensorflow.org/versions/0.6.0/api_docs/python/nn.html)
   * 机器学习-简介系列 [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)

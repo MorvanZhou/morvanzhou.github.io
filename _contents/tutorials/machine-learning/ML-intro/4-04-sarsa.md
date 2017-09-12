@@ -7,8 +7,13 @@ description: "今天我们会来说说强化学习中一个和 Q learning 类似
 publish-date: 2017-01-13
 chapter: 4
 thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png
+post-headings:
+  - Sarsa 决策
+  - Sarsa 更新行为准则
+  - 对比 Sarsa 和 Q-learning 算法
 ---
-* 学习资料: 
+
+学习资料:
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
   * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
   * [Q-learning 简介视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
@@ -25,8 +30,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png
 
 在强化学习中 Sarsa 和 Q learning 及其类似, 这节内容会基于之前我们所讲的 Q learning. 所以还不熟悉 Q learning 的朋友们, 请前往我制作的 Q learning 简介 (知乎专栏). 我们会对比 Q learning, 来看看 Sarsa 是特殊在哪些方面. 和上次一样, 我们还是使用写作业和看电视这个例子. 没写完作业去看电视被打, 写完了作业有糖吃.
 
-
-#### Sarsa 决策
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/s2.png">
 
@@ -34,7 +38,8 @@ Sarsa 的决策部分和 Q-learning 一模一样, 因为我们使用的是 Q 表
 
 
 
-#### Sarsa 更新行为准则
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/s3.png">
 
@@ -42,7 +47,7 @@ Sarsa 的决策部分和 Q-learning 一模一样, 因为我们使用的是 Q 表
 
 
 
-#### 对比 Sarsa 和 Q-learning 算法
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/s4.png">
 

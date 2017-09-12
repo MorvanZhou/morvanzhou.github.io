@@ -7,17 +7,25 @@ publish-date: 2017-06-10
 chapter: 2
 description: "今天我们来说说为了理解神经网络在做什么, 对神经网络这个黑盒的正确打开方式.
 当然, 这可不是人类的神经网络, 因为至今我们都还没彻底弄懂人类复杂神经网络的运行方式. 今天只来说说计算机中的人工神经网络. 我们都听说过, 神经网络是一个黑盒."
+post-headings:
+  - 神经网络
+  - 黑盒
+  - 神经网络分区
+  - 举例说明
+  - 迁移学习
 ---
 
 今天我们来说说为了理解神经网络在做什么, 对神经网络这个黑盒的正确打开方式.
 
-#### 神经网络
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/feature_representation1.png">
 
 当然, 这可不是人类的神经网络, 因为至今我们都还没彻底弄懂人类复杂神经网络的运行方式. 今天只来说说计算机中的人工神经网络. 我们都听说过, 神经网络是一个黑盒.
 
-#### 黑盒
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/feature_representation2.png">
 
@@ -27,7 +35,8 @@ description: "今天我们来说说为了理解神经网络在做什么, 对神�
 
 正好我手边有一个手电筒, 我们打开黑盒好好照亮看看. 一般来说, 神经网络是一连串神经层所组成的把输入进行加工再输出的系统. 中间的加工过程就是我们所谓的黑盒. 想把黑盒打开, 就是把神经网络给拆开. 按正常的逻辑, 我们能将神经网络分成三部分,
 
-#### 神经网络分区
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/feature_representation4.png">
 
@@ -35,7 +44,8 @@ description: "今天我们来说说为了理解神经网络在做什么, 对神�
 
 现在的输入端增加了一层, 原本我们认定为黑盒的一部分被照亮, 变成了一个已知部分. 我们将最左边两层的神经层共同看成输入端. 貌似怪怪的, 你可能会问: "可是这时的输入端不再是我们知道的”宝宝”了呀, 为什么可以这样看?" 想得没错, 它的确已经不是我们认识的宝宝啦, 但是”宝宝”这个人类定义的形象通过了一层神经网络加工, 变成了另外一种宝宝的形象,可能这种形象我们用肉眼看起来并不像宝宝, 不过计算机却能理解, 这是它所能识别的”宝宝”形象.  在专业术语中, 我们将宝宝当做特征(features), 将神经网络第一层加工后的宝宝叫做代表特征(feature representation). 如果再次移动红线, 我们的黑盒就消失了,  这时原本在黑盒里的所有神经层都被照亮. 原本的代表特征再次被加工, 变成了另一种代表特征, 同样, 再次加工形成的代表特征通常只有计算机自己看得懂, 能够理解. 所以, 与其说黑盒是在加工处理, 还不如说是在将一种代表特征转换成另一种代表特征, 一次次特征之间的转换, 也就是一次次的更有深度的理解. 比如神经网络如果接收人类手写数字的图片.
 
-#### 举例说明
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/feature_representation5.png">
 
@@ -45,7 +55,9 @@ description: "今天我们来说说为了理解神经网络在做什么, 对神�
 
 有了用3个点表示的数字代表特征, 我们就能整理整理, 将落在相同区域的数字分为一类, 如果落在了那些1所在的区域, 我们就认定张手写图片就是1, 如果是2的区域, 就认定为2. 这就是神经网络的黑盒并不黑的原因啦, 只是因为有时候代表特征太多了,我们人类没有办法看懂他们代表的是什么, 然而计算机却能看清楚它所学到的规律, 所以我们才觉得神经网络就是个黑盒. 这种代表特征的理解方式其实非常有用, 以至于人们拿着它来研究更高级的神经网络玩法. 比如迁移学习(Transfer Learning). 我们举一个例子.
 
-#### 迁移学习
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/feature_representation7.png">
 

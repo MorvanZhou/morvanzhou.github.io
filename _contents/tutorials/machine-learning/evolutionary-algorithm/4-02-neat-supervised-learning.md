@@ -12,15 +12,21 @@ description: "我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通�
 NEAT 的 Recurrent link/node 不是通常说的 RNN, 处理形式不同.
 如果不能, 其实也没关系, 有高手已经写好了 NEAT 的 Python 模块, 我们直接调用就行.
 下图就是使用 NEAT 模块生成的一个神经网络, 看起来很优雅吧."
+post-headings:
+  - 要点
+  - 安装 neat-python
+  - 例子
 ---
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT)
   * [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}),
 我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
@@ -35,14 +41,10 @@ NEAT 的 Recurrent link/node 不是通常说的 RNN, 处理形式不同.
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/4-2-0.png">
 
-#### 本节内容包括:
-
-* [安装 neat-python](#install)
-* [例子](#example)
 
 
 
-<h4 class="tut-h4-pad" id="install">安装 neat-python</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 我们可以直接在 terminal 中输入:
 
@@ -65,7 +67,7 @@ $ pip3 install neat-python
 
 最后确认你的有安装 `matplotlib` 和 `numpy` 就好了.
 
-<h4 class="tut-h4-pad" id="example">例子</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 接着我们来说说 neat-python 网页上的一个使用例子, 用 neat 来进化出一个神经网络预测 XOR 判断. 什么是 XOR 呢, 简单来说就是 OR 判断的改版.
 

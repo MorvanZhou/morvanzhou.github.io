@@ -6,8 +6,15 @@ author: Mark JingNB
 chapter: 5
 title: Classification 分类学习
 date: 2016-11-3
+post-headings:
+  - MNIST 数据
+  - 搭建网络
+  - Cross entropy loss
+  - 训练
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf16_classification)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
@@ -17,6 +24,10 @@ date: 2016-11-3
 通俗理解定量输出是回归，或者说是连续变量预测；
 定性输出是分类，或者说是离散变量预测。如预测房价这是一个回归任务；
 把东西分成几类, 比如猫狗猪牛，就是一个分类任务。 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 首先准备数据（MNIST库）
 
@@ -30,6 +41,10 @@ MNIST库是手写体数字库，差不多是这样子的
 <img class="course-image" src="/static/results/tensorflow/5_01_1.png">
 
 数据中包含55000张训练图片，每张图片的分辨率是28×28，所以我们的训练网络输入应该是28×28=784个像素数据。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 ```python
 xs = tf.placeholder(tf.float32, [None, 784]) # 28x28
@@ -51,6 +66,10 @@ prediction = add_layer(xs, 784, 10, activation_function=tf.nn.softmax)
 
 <img class="course-image" src="/static/results/tensorflow/5_01_2.png">
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+
 loss函数（即最优化目标函数）选用交叉熵函数。交叉熵用来衡量预测值和真实值的相似程度，如果完全相同，它们的交叉熵等于零。
 
 ```python
@@ -66,6 +85,9 @@ sess = tf.Session()
 # 替换成下面的写法:
 sess.run(tf.global_variables_initializer())
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 现在开始train，每次只取100张图片，免得数据太多训练太慢。
 

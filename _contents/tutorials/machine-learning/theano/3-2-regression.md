@@ -6,10 +6,20 @@ description: 用 theano 做回归的问题可以像视频中提到的这种方�
 author: C.Cui
 chapter: 3
 date: 2016-11-3
+post-headings:
+  - 导入模块
+  - 定义层结构
+  - 伪造数据
+  - 搭建网络
+  - 训练
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano9_regression_nn)
   
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在上一节课程中，我么学习了如何利用`Theano`定义神经网络的层类，我们设计了一个`Layer`类来规划神经网络层的信息。 
 
@@ -26,6 +36,9 @@ import matplotlib.pyplot as plt
 与之前的代码不同的地方是我们在这里引入了`matplotlib`这个工具包, 用来实现绘图及数据可视化。 
 
 大家可以利用我的视频教程来学习或复习 Matplotlib 这个工具： [Matplotlib 数据可视化神器 Python](/tutorials/data-manipulation/plt/)。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来我们声明我们的Layer类。 对于神经网络的每个Layer， 
 它需要具备输入来源`input`，输入神经元维度`in_size`，输出神经元纬度`out_size`,
@@ -44,6 +57,9 @@ class Layer(object):
         else:
             self.outputs = self.activation_function(self.Wx_plus_b)
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来，我们首先人工生成一个简单的带有白噪声的一维数据 `y = x^2 - 0.5 + noise`。
 
@@ -65,6 +81,9 @@ plt.show()
 显示结果: 
 
 <img class="course-image" src="/static/results/theano/3_2_1.png">
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 然后，我们定义神经网络的输入与目标；
 
@@ -125,6 +144,9 @@ train = theano.function(
 # prediction
 predict = theano.function(inputs=[x], outputs=l2.outputs)
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 最后，我们就要开始真正的训练啦！我们要把神经网络训练1000次，同时呢每训练50次时就输出此时的误差（cost）：
 

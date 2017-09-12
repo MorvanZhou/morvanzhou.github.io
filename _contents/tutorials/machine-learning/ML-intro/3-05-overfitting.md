@@ -4,8 +4,13 @@ youtube_id: e9OKufD6lRM
 title: 过拟合 (Overfitting)
 description: 今天我们会来聊聊机器学习中的过拟合 overfitting 现象, 和解决过拟合的方法. 在细说之前, 我们先用实际生活中的一个例子来比喻一下过拟合现象. 说白了, 就是机器学习模型于自信. 已经到了自负的阶段了. 那自负的坏处, 大家也知道, 就是在自己的小圈子里表现非凡,  不过在现实的大圈子里却往往处处碰壁. 所以在这个简介里,  我们把自负和过拟合画上等号.
 chapter: 3
+post-headings:
+  - 过于自负
+  - 回归分类的过拟合
+  - 解决方法
 ---
-* 学习资料: 
+
+学习资料:
   * Tensorflow: dropout [教程]({% link _contents/tutorials/machine-learning/tensorflow/5-02-dropout.md %})
   * PyTorch: dropout [教程]({% link _contents/tutorials/machine-learning/torch/5-03-dropout.md %})
   * Theano: l1 l2 regularization [教程]({% link _contents/tutorials/machine-learning/theano/3-5-regularization.md %})
@@ -14,17 +19,31 @@ chapter: 3
 
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
-<img class="course-image" src="/static/results/ML_intro/overfitting1.png"  width="500px"></center>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/overfitting1.png"  width="500px">
 
 在细说之前, 我们先用实际生活中的一个例子来比喻一下过拟合现象. 说白了, 就是机器学习模型于自信. 已经到了自负的阶段了. 那自负的坏处, 大家也知道, 就是在自己的小圈子里表现非凡,  不过在现实的大圈子里却往往处处碰壁. 所以在这个简介里,  我们把自负和过拟合画上等号.
 
-<img class="course-image" src="/static/results/ML_intro/overfitting2.png"  width="500px"></center>
+
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/overfitting2.png"  width="500px">
 
 机器学习模型的自负又表现在哪些方面呢.  这里是一些数据.  如果要你画一条线来描述这些数据, 大多数人都会这么画. 对, 这条线也是我们希望机器也能学出来的一条用来总结这些数据的线. 这时蓝线与数据的总误差可能是10. 可是有时候, 机器过于纠结这误差值, 他想把误差减到更小, 来完成他对这一批数据的学习使命. 所以, 他学到的可能会变成这样  . 它几乎经过了每一个数据点, 这样, 误差值会更小 . 可是误差越小就真的好吗? 看来我们的模型还是太天真了. 当我拿这个模型运用在现实中的时候, 他的自负就体现出来. 小二, 来一打现实数据  . 这时, 之前误差大的蓝线误差基本保持不变  .误差小的 红线误差值突然飙高 , 自负的红线再也骄傲不起来, 因为他不能成功的表达除了训练数据以外的其他数据. 这就叫做过拟合. Overfitting.
 
-<img class="course-image" src="/static/results/ML_intro/overfitting3.png"  width="500px"></center>
+<img class="course-image" src="/static/results/ML_intro/overfitting3.png"  width="500px">
 
 那么在分类问题当中  . 过拟合的分割线可能是这样 ,  小二, 再上一打数据 . 我们明显看出, 有两个黄色的数据并没有被很好的分隔开来. 这也是过拟合在作怪.好了, 既然我们时不时会遇到过拟合问题, 那解决的方法有那些呢.
+
+
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/overfitting4.png">
 

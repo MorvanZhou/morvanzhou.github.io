@@ -6,11 +6,20 @@ description: 我们肯定需要保存学习好的 model, 毕竟不能浪费学�
 author: Alice
 chapter: 3
 date: 2016-11-3
+post-headings:
+  - 要点
+  - 导入模块
+  - 创建数据－建立模型－激活－训练
+  - 保存模型
+  - 提取模型
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano13_save)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 今天学习如何保存神经网络，以方便日后可以直接提取使用。
 
@@ -22,15 +31,11 @@ date: 2016-11-3
 
 本文以 [Classification 分类学习](https://morvanzhou.github.io/tutorials/machine-learning/theano/3-4-classification/) 那节的代码为例。
 
-#### 用 Theano 保存提取模型的步骤：
-
-1. [导入模块](#pkg)
-2. [创建数据－建立模型－激活－训练](#model)
-3. [保存模型](#save)
-4. [提取模型](#load)
 
 
-<h4 id="pkg">导入模块</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在引入相关包时，需要用到 pickle， 这是 python 中用来储存文件的一个模块。
 
@@ -41,7 +46,8 @@ import theano.tensor as T
 import pickle
 ```
 
-<h4 id="model">创建数据－建立模型－激活－训练</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来的 创建数据－建立模型－激活模型－训练模型 都和分类那节课的内容是一样的。
 
@@ -91,7 +97,8 @@ for i in range(500):
 
 今天重点放在保存和提取模型的部分：
 
-<h4 id="save">保存模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 把所有的参数放入 `save` 文件夹中，命名文件为 `model.pickle`，以 `wb` 的形式打开并把参数写入进去。
 
@@ -120,7 +127,8 @@ accuracy: 1.0
 执行上述代码后可以看到 `save` 文件夹中生成了一个 `model.pickle` 的文件。
 
 
-<h4 id="load">提取模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来提取模型时，提前把代码中 `# Training` 和 `# save model` 两部分注释掉，即相当于只是通过 创建数据－建立模型－激活模型 构建好了新的模型结构，下面要通过调用存好的参数来进行预测。
 

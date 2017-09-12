@@ -8,24 +8,27 @@ description: "进化 Evolution, 可以说是人类历史上伟大的发现之一
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/11ea.jpg"
 chapter: 1
+post-headings:
+  - 要点
+  - 大神们都拿它做了些什么
+  - 算法们
+  - 这个教程的内容
 ---
 
 
-* 学习资料:
-  * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
-  * [我制作的 什么是进化策略(即将制作) 动画简介](#)
-  * [我制作的 什么是神经进化(即将制作) 动画简介](#)
+学习资料:
+
+* [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
+* [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+* [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
 
 "进化" Evolution, 可以说是人类历史上伟大的发现之一. 适者生存, 不适者淘汰, 达尔文的进化理论让我们见识到了自己是怎么来的.
 那, 现在想象一下, 如果你的程序也能进化, 也用适者生存, 不适者淘汰的原则生长出一个牛逼的物种,
 是不是很开心, 是不是很激动! 反正这就是我为什么会对这类算法特别感兴趣的原因之一了.
 
-
-#### 本节内容包括:
-
-* [大神们都拿它做了些什么](#examples)
-* [算法们](#algorithms)
-* [这个教程的内容](#tutorial)
 
 <h4 class="tut-h4-pad" id="examples">大神们都拿它做了些什么</h4>
 

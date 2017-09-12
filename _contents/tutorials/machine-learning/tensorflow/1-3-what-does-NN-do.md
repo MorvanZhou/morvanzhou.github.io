@@ -6,8 +6,11 @@ chapter: 1
 title: 神经网络在干嘛
 date: 2016-11-3
 author: 张乐
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 本节的代码会在 [这一节]({% link _contents/tutorials/machine-learning/tensorflow/3-1-add-layer.md %}) 中一一实现.
 
 机器学习 其实就是让电脑不断的尝试模拟已知的数据.

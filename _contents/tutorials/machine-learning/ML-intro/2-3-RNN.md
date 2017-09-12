@@ -4,9 +4,14 @@ youtube_id: EEtf4kNsk7Q
 title: 循环神经网络 RNN (Recurrent Neural Network)
 description: 今天我们会来聊聊在语言分析, 序列化数据中穿梭自如的循环神经网络 RNN. RNN 是用来干什么的 ? 它和普通的神经网络有什么不同 ? 我会将会一一探讨.
 chapter: 2
+post-headings:
+  - RNN 的用途
+  - 序列数据
+  - 处理序列数据的神经网络
+  - RNN 的应用
 ---
 
-* 学习资料: 
+学习资料:
   * Tensorflow RNN [例子1]({% link _contents/tutorials/machine-learning/tensorflow/5-07-RNN1.md %})
   * Tensorflow RNN [例子2]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   * Tensorflow RNN [例子3]({% link _contents/tutorials/machine-learning/tensorflow/5-09-RNN3.md %})
@@ -26,7 +31,7 @@ chapter: 2
 
 
 
-#### RNN 的用途
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/rnn1.png">
 
@@ -34,7 +39,7 @@ chapter: 2
 
 
 
-#### 序列数据
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/rnn2.png">
 
@@ -42,7 +47,7 @@ chapter: 2
 
 
 
-#### 处理序列数据的神经网络
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/rnn3.png">
 
@@ -54,7 +59,7 @@ chapter: 2
 
 
 
-#### RNN 的运用
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 RNN 的形式不单单这有这样一种, 他的结构形式很自由. 如果用于分类问题, 比如说一个人说了一句话, 这句话带的感情色彩是积极的还是消极的. 那我们就可以用只有最后一个时间点输出判断结果的RNN.
 

@@ -6,14 +6,24 @@ author: 赵孔亚
 chapter: 3
 title: 例子3 建造神经网络
 date: 2016-11-3
+post-headings:
+  - add_layer 功能
+  - 导入数据
+  - 搭建网络
+  - 训练
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow11_build_network.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
 这次提到了怎样建造一个完整的神经网络,包括添加神经层,计算误差,训练步骤,判断是否在学习.
 
 本次课程，我们会在上节课的基础上，继续讲解如何构建神经层。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先，我们导入本次所需的模块。
 	
@@ -35,6 +45,9 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
         outputs = activation_function(Wx_plus_b)
     return outputs
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 构建所需的数据。
 这里的`x_data`和`y_data`并不是严格的一元二次函数的关系，因为我们多加了一个`noise`,这样看起来会更像真实情况。
@@ -58,6 +71,10 @@ ys = tf.placeholder(tf.float32, [None, 1])
 所以我们就只有一个输入；隐藏层我们可以自己假设，这里我们假设隐藏层有10个神经元；
 输出层和输入层的结构是一样的，所以我们的输出层也是只有一层。
 所以，我们构建的是——输入层1个、隐藏层10个、输出层1个的神经网络。
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 下面，我们开始定义隐藏层,利用之前的`add_layer()`函数，这里使用 Tensorflow 自带的激励函数`tf.nn.relu`。
 
@@ -98,6 +115,9 @@ init = tf.global_variables_initializer()  # 替换成这样就好
 sess = tf.Session()
 sess.run(init)
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 下面，让机器开始学习。
 

@@ -7,12 +7,19 @@ thumbnail: "/static/thumbnail/evolutionary-algorithm/32es.jpg"
 chapter: 3
 description: "(1+1)-ES 是 ES 进化策略的一种形式, 也是众多形式中比较方便有效的一种. 接下来我们来细说他们的类别.
 如果要我用一句话来概括 (1+1)-ES: 一个爸爸和一个孩子的战争"
+post-headings:
+  - 要点
+  - ES的不同形式
+  - 进化啦
 ---
 
 
-* 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1)-ES.py)
-  * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+学习资料:
+
+* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1)-ES.py)
+* [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})是个很好的方式.
 
@@ -24,13 +31,7 @@ description: "(1+1)-ES 是 ES 进化策略的一种形式, 也是众多形式中
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.gif">
 
 
-#### 本节内容包括:
-
-* [ES的不同形式](#ES)
-* [进化啦](#eval)
-
-
-<h4 class="tut-h4-pad" id="ES">ES的不同形式</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 像上面看到的, 统一来说都是 (μ/ρ +, λ)-ES, (1+1)-ES 只是一种特殊形式.
 这里的 μ 是 population 的数量, ρ 是从 population 中选取的个数, 用来生成宝宝的.
@@ -47,7 +48,7 @@ description: "(1+1)-ES 是 ES 进化策略的一种形式, 也是众多形式中
 * 在爸爸和宝宝中选好的那个变成下一代爸爸.
 
 
-<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 同[上节]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %})一样,
 这次我们还是两个功能, `make_kid` 和 `kill_bad`

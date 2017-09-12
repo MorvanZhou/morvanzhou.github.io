@@ -9,14 +9,23 @@ description: "循环神经网络让神经网络有了记忆, 对于序列话的�
 RNN 动画简介 和
 LSTM 动画简介能让你生动理解 RNN.
 接着我们就一步一步做一个分析手写数字 MNIST 的 RNN 吧."
+post-headings:
+  - 要点
+  - MNIST手写数据
+  - RNN模型
+  - 训练
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py)
   * [Tensorflow 的 50行 RNN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/402_RNN_classification.py)
   * [我制作的 循环神经网络 RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
 [RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %}) 和
@@ -24,15 +33,11 @@ LSTM 动画简介能让你生动理解 RNN.
 接着我们就一步一步做一个分析手写数字的 RNN 吧.
 
 
-#### 本节内容包括:
-
-* [MNIST手写数据](#mnist)
-* [RNN模型](#RNN)
-* [训练](#train)
 
 
 
-<h4 class="tut-h4-pad" id="mnist">MNIST手写数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import torch
@@ -82,7 +87,8 @@ test_y = test_data.test_labels[:2000]
 ```
 
 
-<h4 class="tut-h4-pad" id="RNN">RNN模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 和以前一样, 我们用一个 class 来建立 RNN 模型. 这个 RNN 整体流程是
 
@@ -129,7 +135,8 @@ RNN (
 """
 ```
 
-<h4 class="tut-h4-pad" id="train">训练</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们将图片数据看成一个时间上的连续数据, 每一行的像素点都是这个时刻的输入, 读完整张图片就是从上而下的读完了每行的像素点.
 然后我们就可以拿出 RNN 在最后一步的分析值判断图片是哪一类了. 下面的代码省略了计算 `accuracy` 的部分, 你可以在我的 github 中看到全部代码.

@@ -9,19 +9,21 @@ description: "PyTorch 是 Torch 在 Python 上的衍生. 因为 Torch 是一个�
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/1 why.jpg"
 chapter: 1
+post-headings:
+  - 为什么用 PyTorch
+  - 神经网络在做什么
+  - PyTorch 和 Tensorflow
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [什么是神经网络 短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-#### 本节内容包括:
 
-* [为什么用 PyTorch](#intro)
-* [神经网络在做什么](#NN)
-* [PyTorch 和 Tensorflow](#torch-tf)
 
-<h4 class="tut-h4-pad" id="intro">为什么用 PyTorch</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 [PyTorch](http://pytorch.org/) 是 [Torch](http://torch.ch/) 在 Python 上的衍生. 因为 [Torch](http://torch.ch/) 是一个使用 [Lua](https://www.lua.org/)
 语言的神经网络库, Torch 很好用, 但是 Lua 又不是特别流行, 所有开发团队将 Lua 的 Torch 移植到了更流行的语言 Python 上.
@@ -36,7 +38,8 @@ chapter: 1
 而且如果你知道 [Numpy](http://www.numpy.org/), PyTorch 说他就是在神经网络领域可以用来替换 numpy 的模块.
 
 
-<h4 class="tut-h4-pad" id="NN">神经网络在做什么</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 神经网络在学习拟合线条(回归):
 
@@ -47,7 +50,8 @@ chapter: 1
 <img class="course-image" src="/static/results/torch/1-1-3.gif">
 
 
-<h4 class="tut-h4-pad" id="torch-tf">PyTorch 和 Tensorflow</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 据 PyTorch 自己介绍, 他们家的最大优点就是建立的神经网络是动态的, 对比静态的 Tensorflow, 他能更有效地处理一些问题, 比如说 RNN 变化时间长度的输出.
 而我认为, 各家有各家的优势和劣势, 所以我们要以中立的态度. 两者都是大公司,

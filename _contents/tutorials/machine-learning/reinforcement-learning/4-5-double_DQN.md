@@ -10,13 +10,22 @@ description: "接下来我们说说为什么会有 Double DQN 这种算法.
 一句话概括, DQN 基于 Q-learning, Q-Learning 中有 Qmax, Qmax
 会导致 Q现实 当中的过估计 (overestimate). 而 Double DQN 就是用来解决过估计的.
 在实际问题中, 如果你输出你的 DQN 的 Q 值, 可能就会发现, Q 值都超级大. 这就是出现了 overestimate."
+post-headings:
+  - 要点
+  - Double DQN 算法
+  - 更新方法
+  - 记录 Q 值
+  - 对比结果
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.1_Double_DQN)
   * [什么是 Double DQN 短视频(即将制作)](#)
   * 论文 [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
 以下教程缩减了在 DQN 方面的介绍, 着重强调 Double DQN 和 DQN 在代码上不同的地方.
@@ -42,15 +51,10 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 </video>
 </div>
 
-#### 本节内容包括:
-
-* [Double DQN 算法](#algorithm)
-* [更新方法](#learn)
-* [记录 Q 值](#q_value)
-* [对比结果](#result)
 
 
-<h4 class="tut-h4-pad" id="algorithm">Double DQN 算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们知道 DQN 的神经网络部分可以看成一个 `最新的神经网络` + `老神经网络`,
 他们有相同的结构, 但内部的参数更新却有时差. 而它的 `Q现实` 部分是这样的:
@@ -75,7 +79,8 @@ Double DQN 中的 `Q_next = Q_next(s', argmax(Q_eval(s', a_all)))`. 也可以表
 
 
 
-<h4 class="tut-h4-pad" id="learn">更新方法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 好了, 有了理论, 我们就来用 Python 实现它吧.
 
@@ -150,7 +155,8 @@ class DoubleDQN:
 ```
 
 
-<h4 class="tut-h4-pad" id="q_value">记录 Q 值</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 为了记录下我们选择动作时的 Q 值, 接下来我们就修改 `choose_action()` 功能, 让它记录下每次选择的 Q 值.
 
@@ -172,7 +178,8 @@ class DoubleDQN:
         return action
 ```
 
-<h4 class="tut-h4-pad" id="result">对比结果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着我们就来对比 Natural DQN 和 Double DQN 带来的不同结果啦. [代码在这](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/run_Pendulum.py)
 

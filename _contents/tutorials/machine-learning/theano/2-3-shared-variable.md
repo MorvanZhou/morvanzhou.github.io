@@ -6,8 +6,15 @@ description: theano 中的 shared 基本上是用于定义神经网络的 weight
 author: Alice
 chapter: 2
 date: 2016-11-3
+post-headings:
+  - 定义 Shared 变量
+  - 提取 使用
+  - 临时使用
+
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano6_shared_variable.py)
 
 今天讲 `Shared 变量`，意思是这些变量可以在运算过程中，不停地进行交换和更新值。
@@ -15,14 +22,9 @@ date: 2016-11-3
 
 今天会学习如何定义和使用它。
 
-#### 本文结构：
 
-1. [定义 Shared 变量](#def)
-2. [提取 使用](#get)
-3. [临时使用](#tmp)
-
-
-<h4 id="def" class="tut-h4-pad">定义 Shared 变量</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 我们会用累加器来定义 `Shared 变量`，每一次向上面加一个值，每一次基于上面的变化，再加上另一个值，就这样不断地更新并保存这样的值。
@@ -56,7 +58,8 @@ inc = T.scalar('inc', dtype=state.dtype)
 accumulator = theano.function([inc], state, updates=[(state, state+inc)])
 ```
 
-<h4 id="get" class="tut-h4-pad">提取 使用</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 打印：
 不能直接用 `print(accumulator(10))`，因为这样输出的，第一次就是初始值 0，只能到下一次输出的时候，才会出现 10.
@@ -92,7 +95,8 @@ print(state.get_value())
 `get_value， set_value` 这两种只能在 `Shared 变量` 的时候调用。
 
 
-<h4 id="tmp" class="tut-h4-pad">临时使用</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 有时只是想暂时使用 `Shared 变量`，并不需要把它更新：
 这时我们可以定义一个 `a` 来临时代替 `state`，注意定义 `a` 的时候也要统一 `dtype`。

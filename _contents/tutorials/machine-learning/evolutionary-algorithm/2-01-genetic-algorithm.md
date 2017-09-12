@@ -6,12 +6,19 @@ description: 使用 Python 来实现遗传算法的简单教学. 如果让我用
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/21ga.jpg"
 chapter: 2
+post-headings:
+  - 要点
+  - 找一个好的fitness方程
+  - DNA 编码
+  - 进化啦
 ---
 
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py)
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦. **如果让我用一句话概括遗传算法: "在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝".**
@@ -21,14 +28,8 @@ chapter: 2
 <img class="course-image" src="/static/results/evolutionary-algorithm/2-1-0.gif">
 
 
-#### 本节内容包括:
 
-* [找一个好的 fitness 方程](#fitness)
-* [DNA 编码](#DNA)
-* [进化啦](#eval)
-
-
-<h4 class="tut-h4-pad" id="fitness">找一个好的 fitness 方程</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 所有的遗传算法 (Genetic Algorithm), 后面都简称 GA, 我们都需要一个评估好坏的方程,
 这个方程通常被称为 fitness. 在今天的问题中, 我们找到下面这个曲线当中的最高点.
@@ -43,7 +44,7 @@ def get_fitness(pred):
     return pred
 ```
 
-<h4 class="tut-h4-pad" id="DNA">DNA 编码</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 在 GA 中有基因, 为了方便, 我们直接就称为 `DNA` 吧. GA 中第二重要的就是这 `DNA` 了, 如何编码和解码 `DNA`,
 就是你使用 GA 首先要想到的问题. 传统的 GA 中, `DNA` 我们能用一串二进制来表示, 比如:
@@ -65,7 +66,7 @@ def translateDNA(pop):
 
 注意, 这里的 `pop` 是一个储存二进制 `DNA` 的矩阵, 他的 shape 是这样 (pop_size, DNA_size).
 
-<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 进化分三步:
 

@@ -8,13 +8,18 @@ publish-date: 2016-10-30
 author: Mark JingNB
 chapter: 2
 thumbnail: "/static/thumbnail/keras/06 CNN.jpg"
+post-headings:
+  - 搭建模型
+  - 训练
 ---
-* 学习资料:
+
+学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py)
   * 机器学习-简介系列 [CNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/2-2-CNN.md %})
   * Tensorflow [CNN]({% link _contents/tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
   
-  
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
 这次我们主要讲CNN（Convolutional Neural Networks）卷积神经网络在 keras 上的代码实现。
 用到的数据集还是MNIST。不同的是这次用到的层比较多，导入的模块也相应增加了一些。
 
@@ -79,6 +84,8 @@ model.compile(optimizer=adam,
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 ```
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 开始训练模型
 

@@ -6,8 +6,11 @@ description: 如果我们能可视化训练的结果,这样会对我们理解神
 author: C.Cui
 chapter: 3
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano10_regression_visualization)
   
 

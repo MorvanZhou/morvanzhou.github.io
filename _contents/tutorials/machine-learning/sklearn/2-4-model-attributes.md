@@ -6,8 +6,13 @@ chapter: 2
 title: sklearn 常用属性与功能
 author: Alice
 date: 2016-11-3
+post-headings:
+  - 训练和预测
+  - 参数和分数
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py)
   
   
@@ -26,6 +31,11 @@ data_y = loaded_data.target
 model = LinearRegression()
 ```
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+
 接下来 `model.fit` 和 `model.predict` 就属于 Model 的功能，用来训练模型，用训练好的模型预测。
 
 ```python
@@ -37,6 +47,9 @@ print(model.predict(data_X[:4, :]))
 [ 30.00821269  25.0298606   30.5702317   28.60814055]
 """
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 然后，`model.coef_` 和 `model.intercept_ ` 属于 Model 的属性，
 例如对于 `LinearRegressor` 这个模型，这两个属性分别输出模型的斜率和截距（与y轴的交点）。

@@ -7,12 +7,18 @@ author: Mark JingNB
 publish-date: 2016-10-30
 chapter: 2
 thumbnail: "/static/thumbnail/keras/07 RNN1.jpg"
+post-headings:
+  - 方法介绍
+  - 搭建模型
+  - 训练
 ---
-* 学习资料:
+
+学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/7-RNN_Classifier_example.py)
   * 机器学习-简介系列 [RNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * Tensorflow [RNN教程]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 这次我们用循环神经网络(RNN, Recurrent Neural Networks)进行分类（classification），采用MNIST数据集，主要用到`SimpleRNN`层。
 
@@ -32,6 +38,9 @@ MNIST里面的图像分辨率是28×28，为了使用RNN，我们将图像理解
 X_train = X_train.reshape(-1, 28, 28) / 255.      # normalize
 X_test = X_test.reshape(-1, 28, 28) / 255.        # normalize
 ```
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 首先添加RNN层，输入为训练数据，输出数据大小由`CELL_SIZE`定义。
 
@@ -54,6 +63,8 @@ model.add(Activation('softmax'))
 
 设置优化方法，`loss`函数和`metrics`方法之后就可以开始训练了。
 每次训练的时候并不是取所有的数据，只是取`BATCH_SIZE`个序列，或者称为`BATCH_SIZE`张图片，这样可以大大降低运算时间，提高训练效率。
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 ```python
 for step in range(4001):

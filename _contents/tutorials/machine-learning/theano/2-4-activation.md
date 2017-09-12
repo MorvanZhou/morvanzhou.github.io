@@ -6,8 +6,14 @@ description: Activation function 激励函数是神经网络学习当中必不�
 author: Alice
 chapter: 2
 date: 2016-11-3
+post-headings:
+  - 什么是 Activation function
+  - 几种常用激活函数
+  - 应用场景
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano7_activation_function.py)
   * Theano 激励函数选择 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html#theano.tensor.nnet.nnet.sigmoid)
   * 机器学习-简介系列 [激励函数]({% link _contents/tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
@@ -15,15 +21,10 @@ date: 2016-11-3
 
 今天讲一下在神经网络中激励函数的作用和如何运作，以及 Theano 中有哪些激励函数。
 
-#### 本文结构：
-
-1. [什么是 Activation function](#def)
-2. [几种常用激活函数](#get)
-3. [应用场景](#tmp)
 
 
-
-<h4 id="def" class="tut-h4-pad">什么是 Activation function</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先，什么是 `Activation function`？
 
@@ -38,7 +39,8 @@ date: 2016-11-3
 总而言之，激活函数的作用就是使重要的信息被激励，不重要或者反向的信息不被激励。传进来的值，经过这种变化，得到另一种结果，而这正是我们需要的。
 
 
-<h4 id="get" class="tut-h4-pad">几种常用激活函数</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Theano 中可以用的激励函数可以在这个 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html) 中找到。
 进入这个链接，以 `theano.tensor.nnet.nnet.sigmoid(x)` 为例。
@@ -49,7 +51,8 @@ Theano 中可以用的激励函数可以在这个 [链接](http://deeplearning.n
 在实际中可以尝试在不同的神经层中，放入不同的激活函数，尝试得到不同的效果。具体问题具体分析，会发现有些激活函数并不适合当前的问题。
 
 
-<h4 id="tmp" class="tut-h4-pad">应用场景</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在隐藏层中，可以用 `relu, tanh, softplus` 等非线性的激活函数。
 在分类问题中，可以用 `sigmoid ，softmax` 来求概率。例如选择 N 类中概率最大的那一类作为预测值。

@@ -9,14 +9,22 @@ description: "上节内容里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.
 如果你的计算机是多核的, 我们还能将模拟程序并行到你多个核上去. 如果我用一句话概括强化学习上的 ES : 在自己附近生宝宝, 让自己更像那些表现好的宝宝
 本节内容提前看:"
+post-headings:
+  - 要点
+  - 算法介绍
+  - gym模拟环境
+  - Python实践
 ---
 
-* 学习资料:
+
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py)
   * [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * 论文 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://arxiv.org/abs/1703.03864)
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 [上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-03-neat-reinforcement-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.
@@ -33,13 +41,7 @@ description: "上节内容里,
 
 
 
-#### 本节内容包括:
-
-* [算法介绍](#algorithm)
-* [gym 模拟环境](#gym)
-* [Python 实践](#python)
-
-<h4 class="tut-h4-pad" id="algorithm">算法介绍</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/4-4-1.png">
 
@@ -73,7 +75,11 @@ for i in range(300):
 ```
 
 
-<h4 class="tut-h4-pad" id="gym">gym 模拟环境</h4>
+
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
@@ -83,7 +89,10 @@ for i in range(300):
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
 
 
-<h4 class="tut-h4-pad" id="python">Python 实践</h4>
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 这次进化的框架系统大致是这样的:
 

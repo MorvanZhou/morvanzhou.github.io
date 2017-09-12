@@ -11,6 +11,7 @@ description: "在这里我们介绍了什么是机器学习, 还有机器学习�
 遗传算法 genetic algorithm.
 大家就在影片中看看这些方法究竟都有哪些不同吧."
 chapter: 1
+post-headings:
 ---
 
 

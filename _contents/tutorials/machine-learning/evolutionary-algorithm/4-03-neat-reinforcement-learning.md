@@ -8,15 +8,22 @@ chapter: 4
 description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
 有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)
 立杆子的机器人最后学习的效果提前看"
-------------------
+post-headings:
+  - 要点
+  - gym 模拟环境
+  - CartPole 进化吧
+  - Recurrent link 和 node
+---
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym)
   * [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 [上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-02-neat-supervised-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
@@ -36,14 +43,8 @@ description: "我们见到了使用 NEAT 来进化出一个类似于监督学习
 <img class="course-image" src="/static/results/evolutionary-algorithm/4-2-0.png">
 
 
-#### 本节内容包括:
 
-* [gym 模拟环境](#gym)
-* [CartPole 进化吧](#cartpole)
-* [Recurrent link/node](#recurrent)
-
-
-<h4 class="tut-h4-pad" id="gym">gym 模拟环境</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
@@ -54,7 +55,7 @@ description: "我们见到了使用 NEAT 来进化出一个类似于监督学习
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
 
 
-<h4 class="tut-h4-pad" id="cartpole">CartPole 进化吧</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 这次进化的框架系统大致是这样的:
 
@@ -150,7 +151,7 @@ def evaluation():
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
 
-<h4 class="tut-h4-pad" id="recurrent">Recurrent link/node</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 如果修改一下 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config)里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
 这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样. 不过这里的 recurrent 貌似是和我们一般见到的 Recurrent Neural Network 有所不同,

@@ -6,17 +6,22 @@ chapter: 3
 title: 正规化 Normalization
 date: 2016-11-3
 author: Bhan
+post-headings:
+  - 数据标准化
+  - 数据标准化对机器学习成效的影响
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk7_normalization.py)
   * 机器学习-简介系列 [特征标准化]({% link _contents/tutorials/machine-learning/ML-intro/3-02-normalization.md %})
 
 由于资料的**偏差**与**跨度**会影响机器学习的成效，因此正规化(标准化)数据可以提升机器学习的成效。首先由例子来讲解:
 
-* [例子1 - 数据标准化](#ex1)
-* [例子2 - 数据标准化对机器学习成效的影响](#ex2)
 
-<h4 id="ex1" class="tut-h4-pad">例子1 - 数据标准化</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 ```python
 from sklearn import preprocessing #标准化数据模块
@@ -34,9 +39,10 @@ print(preprocessing.scale(a))
 #  [ 1.22474487  1.40357859  1.40351318]]
 ```
 
-<h4 id="ex2" class="tut-h4-pad">例子2 - 数据标准化对机器学习成效的影响</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-##### 加载模块
+加载模块
 
 ```python
 # 标准化数据模块
@@ -56,7 +62,7 @@ from sklearn.svm import SVC
 import matplotlib.pyplot as plt 
 ```
 
-##### 生成适合做Classification数据
+生成适合做Classification数据
 
 ```python
 #生成具有2种属性的300笔数据
@@ -73,7 +79,7 @@ plt.show()
 
 <img class="course-image" src="/static/results/sklearn/3_1_1.png">
 
-##### 数据标准化前
+数据标准化前
 
 标准化前的预测准确率只有`0.477777777778`
 
@@ -85,7 +91,7 @@ print(clf.score(X_test, y_test))
 # 0.477777777778
 ```
 
-##### 数据标准化后
+数据标准化后
 
 数据的单位发生了变化, `X` 数据也被压缩到差不多大小范围.
 

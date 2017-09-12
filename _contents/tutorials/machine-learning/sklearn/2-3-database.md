@@ -6,12 +6,24 @@ chapter: 2
 title: sklearn 强大数据库
 author: Alice
 date: 2016-11-3
+post-headings:
+  - 要点
+  - 导入模块
+  - 导入数据－训练模型
+  - 创建虚拟数据－可视化
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk5_datasets.py)
   * 更多可用数据 [网址](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)  
   
 今天来看 `Sklearn` 中的 `data sets`，很多而且有用，可以用来学习算法模型。
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 eg: boston 房价, 糖尿病, 数字, Iris 花。
 
@@ -33,14 +45,10 @@ sklearn.datasets.make_regression(n_samples=100, n_features=100, n_informative=10
 
 接下来用代码练习一下。
 
-#### 本文结构：
 
-1. [导入模块](#pkg)
-2. [导入数据－训练模型](#data)
-3. [创建虚拟数据－可视化](#vision)
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-
-<h4 id="pkg" class="tut-h4-pad">导入模块</h4>
 
 导入 `datasets` 包，本文以 `Linear Regression` 为例。
 
@@ -51,7 +59,9 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 ```
 
-<h4 id="data" class="tut-h4-pad">导入数据－训练模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 用 `datasets.load_boston()` 的形式加载数据，并给 `X` 和 `y` 赋值，这种形式在 `Sklearn` 中都是高度统一的。
 
@@ -85,7 +95,9 @@ print(data_y[:4])
 
 为了提高准确度，可以通过尝试不同的 `model`，不同的参数，不同的预处理等方法，入门的话可以直接用默认值。
 
-<h4 id="vision" class="tut-h4-pad">创建虚拟数据－可视化</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 下面是创造数据的例子。
 

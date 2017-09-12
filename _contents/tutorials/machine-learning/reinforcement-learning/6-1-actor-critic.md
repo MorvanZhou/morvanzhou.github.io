@@ -14,14 +14,23 @@ Actor Critic 方法的优势:
 Actor Critic 方法的劣势:
 取决于 Critic 的价值判断, 但是 Critic 难收敛, 再加上 Actor 的更新, 就更难收敛.
 为了解决收敛问题, Google Deepmind 提出了 Actor Critic 升级版 Deep Deterministic Policy Gradient."
+post-headings:
+  - 要点
+  - 算法
+  - 代码主结构
+  - 两者学习方式
+  - 每回合算法
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/8_Actor_Critic_Advantage)
   * [什么是 Actor Critic 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-08-AC.md %})
   * [什么是 Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **一句话概括 Actor Critic 方法**:
 
@@ -47,15 +56,11 @@ Actor Critic 方法的劣势:
 </video>
 </div>
 
-#### 本节内容包括:
-
-* [算法](#algorithm)
-* [代码主结构](#main-structure)
-* [两者学习方式](#learn)
-* [每回合算法](#episode)
 
 
-<h4 class="tut-h4-pad" id="algorithm">算法</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这套算法是在普通的 Policy gradient 算法上面修改的, 如果对 Policy Gradient
 算法还不是很了解, 欢迎[戳这里]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}).
@@ -70,7 +75,8 @@ Actor Critic 方法的劣势:
 `Critic` 来告诉他, 这次的 Gradient ascent 是不是一次正确的 ascent, 如果这次的得分不好,
 那么就不要 ascent 那么多.
 
-<h4 class="tut-h4-pad" id="main-structure">代码主结构</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 有了点理解, 我们来代码 (如果想一次性看所有代码, 请来我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)):
 
@@ -113,7 +119,8 @@ class Critic(object):
 
 
 
-<h4 class="tut-h4-pad" id="learn">两者学习方式</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `Actor` 想要最大化期望的 `reward`, 在 `Actor Critic` 算法中, 我们用 "比平时好多少"
 (`TD error`) 来当做 `reward`, 所以就是:
@@ -141,7 +148,8 @@ with tf.variable_scope('train'):
 
 
 
-<h4 class="tut-h4-pad" id="episode">每回合算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 for i_episode in range(MAX_EPISODE):

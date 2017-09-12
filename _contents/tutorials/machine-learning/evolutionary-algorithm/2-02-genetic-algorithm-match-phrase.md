@@ -7,12 +7,19 @@ description: "使用遗传算法的 Python 教学. 接着上节对遗传算法�
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/22ga.jpg"
 chapter: 2
+post-headings:
+  - 要点
+  - fitness 和 DNA
+  - 进化啦
+  - Python实践
 ---
 
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
@@ -27,13 +34,9 @@ chapter: 2
 </video>
 </div>
 
-#### 本节内容包括:
-
-* [fitness 和 DNA](#fitness)
-* [进化啦](#eval)
 
 
-<h4 class="tut-h4-pad" id="fitness">fitness 和 DNA</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 上次我们提到过 GA 中最重要的就是怎么定义 fitness function, 怎么给 DNA 编码. 这次我们来句另一个例子.
 比如我们有一个要生成的句子:
@@ -69,7 +72,7 @@ class GA:
 # array([100,  97, 115, 100,  64], dtype=uint8)
 ```
 
-<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 如果 GA 用一个 class 代替, 那 select, mutate, crossover 都是 class 里的功能了.
 

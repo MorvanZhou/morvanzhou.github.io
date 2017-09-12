@@ -5,8 +5,11 @@ description: Scikit learn 也简称 sklearn, 是机器学习领域当中最知�
 chapter: 1
 title: Why?
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * sklearn [官网](http://scikit-learn.org/)
   
 Scikit learn 也简称 sklearn, 

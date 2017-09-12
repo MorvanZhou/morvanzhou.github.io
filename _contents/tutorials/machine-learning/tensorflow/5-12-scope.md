@@ -8,8 +8,14 @@ chapter: 5
 title: scope 命名方法
 publish-date: 2016-11-25
 thumbnail: /static/thumbnail/tf/tf22_scope.jpg
+post-headings:
+  - tf.name_scope()
+  - tf.variable_scope()
+  - RNN应用例子
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 不同 scope [对比代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_scope.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * reuse variable [RNN 代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py)
@@ -18,12 +24,10 @@ thumbnail: /static/thumbnail/tf/tf22_scope.jpg
 scope 能让你命名变量的时候轻松很多. 同时也会在 reusing variable 代码中常常见到. 所以今天我们会来讨论下 tensorflow 当中的两种定义 scope 的方式. 
 最后并附加一个 RNN 运用 reuse variable 的例子.
 
-* [tf.name_scope()](#name_scope)
-* [tf.variable_scope()](#variable_scope)
-* [RNN应用例子](#RNN_example)
 
 
-<h4 class="tut-h4-pad" id="name_scope">tf.name_scope()</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在 Tensorflow 当中有两种途径生成变量 variable, 一种是 `tf.get_variable()`, 另一种是 `tf.Variable()`. 
 如果在 `tf.name_scope()` 的框架下使用这两种方式, 结果会如下. 
@@ -54,7 +58,8 @@ with tf.Session() as sess:
 可以看出使用 `tf.Variable()` 定义的时候, 虽然 `name` 都一样, 但是为了不重复变量名, Tensorflow 输出的变量名并不是一样的. 
 所以, 本质上 `var2`, `var21`, `var22` 并不是一样的变量. 而另一方面, 使用`tf.get_variable()`定义的变量不会被`tf.name_scope()`当中的名字所影响.
 
-<h4 class="tut-h4-pad" id="variable_scope">tf.variable_scope()</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果想要达到重复利用变量的效果, 我们就要使用 `tf.variable_scope()`, 并搭配 `tf.get_variable()` 这种方式产生和提取变量.
 不像 `tf.Variable()` 每次都会产生新的变量, `tf.get_variable()` 如果遇到了同样名字的变量时, 它会单纯的提取这个同样名字的变量(避免产生新变量).
@@ -82,7 +87,8 @@ with tf.Session() as sess:
     
 ```
 
-<h4 class="tut-h4-pad" id="RNN_example">RNN 应用例子</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 RNN 例子的代码在[这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py), 整个 RNN 的结构已经在这里定义好了.
 在 training RNN 和 test RNN 的时候, RNN 的 `time_steps` 会有不同的取值, 这将会影响到整个 RNN 的结构, 所以导致在 test 的时候, 不能单纯地使用 training 时建立的那个 RNN. 

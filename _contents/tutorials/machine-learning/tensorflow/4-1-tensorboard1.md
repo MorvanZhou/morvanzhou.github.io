@@ -6,8 +6,14 @@ chapter: 4
 title: Tensorboard 可视化好帮手 1
 date: 2016-11-3
 author: 灰猫
+post-headings:
+  - 效果
+  - 搭建图纸
+  - 可能会遇到的问题
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
@@ -15,16 +21,12 @@ author: 灰猫
 使用其他的浏览器不保证所有内容都能正常显示.
 
 
-本节内容包括:
-
-* [效果](#result)
-* [搭建图纸](#graph)
-* [可能会遇到的问题](#problems)
 
 学会用 Tensorflow 自带的 tensorboard 去可视化我们所建造出来的神经网络是一个很好的学习理解方式.
 用最直观的流程图告诉你你的神经网络是长怎样,有助于你发现编程中间的问题和疑问.
 
-<h4 class="tut-h4-pad" id="result">效果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 好，我们开始吧。
@@ -43,7 +45,8 @@ author: 灰猫
 好，通过阅读代码和之前的图片我们大概知道了此处是有一个输入层（inputs），一个隐含层（layer），还有一个输出层（output）
 现在可以看看如何进行可视化.
 
-<h4 class="tut-h4-pad" id="graph">搭建图纸</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先从 `Input` 开始：
 
@@ -208,7 +211,8 @@ tensorboard 还有很多其他的参数，希望大家可以多多了解,
 可以使用 `tensorboard --help` 查看tensorboard的详细参数
 最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
 
-<h4 class="tut-h4-pad" id="problems">可能会遇到的问题</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.

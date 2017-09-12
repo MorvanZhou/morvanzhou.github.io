@@ -6,8 +6,15 @@ description: theano 当中的function 就和 python 中的 function 类似,不�
 author: 灰猫
 chapter: 2
 date: 2016-11-3
+post-headings:
+  - 激励函数例子
+  - 多输入/输出的 function
+  - function 的名字
+  - 总结
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano5_function.py)
 
 theano 当中的 `function` 就和 python 中的 function 类似, 不过因为要被用在多进程并行运算中,所以他的 `function` 有他自己的一套使用方式.
@@ -15,12 +22,8 @@ theano 当中的 `function` 就和 python 中的 function 类似, 不过因为�
 
 这是涉及的是Theano 的function 用法。在theano中由于涉及到GPU加速以及CPU 的并行的运算，所以他的function会有不同。
 
-这次介绍了function的三种用法，并且各举一个例子：
+这次介绍了function的三种用法，并且各举一个例.
 
-* [激励函数例子](#activation)
-* [多输入/输出的 function](#multi-input)
-* [function 的名字](#name)
-* [总结](#summary)
 
 首先 ， 导入所需要的python包：
 
@@ -30,7 +33,8 @@ import theano.tensor as T
 import theano
 ```
 
-<h4 id="activation" class="tut-h4-pad">激励函数例子</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 使用activation function(激励函数)的例子。
@@ -59,7 +63,8 @@ print(logistic([[0,1],[-2,-3]]))
 """
 ```
 
-<h4 id="multi-input" class="tut-h4-pad">多输入/输出的 function</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 假定我们的 theano 函数中的输入值是两个，输出也是两个。
@@ -105,7 +110,8 @@ array([[ 1.,  0.],
 ```
 
 
-<h4 id="name" class="tut-h4-pad">function 的名字</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先，我们可以使用 `T.dscalars()` 里面同时定义三个纯量的容器。 以及输出值`z`
 
@@ -150,7 +156,8 @@ print (f(23,1,weights=4)) ##调用方式
 ```
 
 
-<h4 id="summary" class="tut-h4-pad">总结</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这节中，我们介绍了function的三种方式：
 首先，一个theanod的function的简单用法;

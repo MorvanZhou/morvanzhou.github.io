@@ -7,8 +7,16 @@ title: 安装
 publish-date: 2016-11-30
 thumbnail: /static/thumbnail/tf/tf2-install.jpg
 date: 2016-11-3
+post-headings:
+  - 多种安装途径
+  - Linux 和 MacOS
+  - Windows
+  - 测试
+  - 更新 Tensorflow
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 官方关于 Tensorflow 安装的 [说明](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
 安装 Tensorflow 时需要注意的几点:
@@ -17,7 +25,8 @@ date: 2016-11-3
 2. 确定你的 python 版本
 3. 你的 GPU 是 NVIDIA, 就可以安装 GPU 版本的 Tensorflow; 你的 GPU 不是 NVIDIA 也没有关系, 安装 CPU 版本的就好了.
 
-#### 安装 Tensorflow
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Tensorflow 的安装方式很多. 比如官网提供的:
 
@@ -29,15 +38,9 @@ Tensorflow 的安装方式很多. 比如官网提供的:
 
 这节内容使用 pip 在每个系统的安装方式:
 
-* [Linux 和 MacOS](#LM)
-  * [CPU 版](#LM-CPU)
-  * [GPU 版](#LM-GPU)
-* [Windows](#W)
-* [测试](#test)
-* [更新 Tensorflow](#update)
 
-
-<h4 class="tut-h4-pad" id="LM">Linux 和 MacOS</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 本文将提到第一种最简单的安装方式, pip 安装.
 使用 pip 安装的时候要确保你的 pip 已经存在于你的电脑中. 如果还没有安装 pip. 
@@ -116,7 +119,8 @@ $ sudo pip install --upgrade $TF_BINARY_URL
 $ sudo pip3 install --upgrade $TF_BINARY_URL
 ```
 
-<h4 class="tut-h4-pad" id="W">Windows</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows)
 
@@ -147,7 +151,8 @@ from there.
 不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/).
 就能解决这个问题.
 
-<h4 class="tut-h4-pad" id="test">测试</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 然后打开你的 python 编辑器, 输入
 
@@ -158,7 +163,8 @@ import tensorflow
 运行脚本来检查一下是否有正确安装.
 
 
-<h4 class="tut-h4-pad" id="update">更新 Tensorflow</h4> 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 最后, 如果你需要升级 Tensorflow 的版本, 推荐的方式是:
 

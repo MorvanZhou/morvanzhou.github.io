@@ -6,8 +6,15 @@ description: "今天我们会来说说强化学习中基于 Sarsa 的一种提�
 publish-date: 2017-01-13
 chapter: 4
 thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
+post-headings:
+  - Sarsa(n)
+  - 单步更新 and 回合更新
+  - 有时迷茫
+  - Lambda 含义
+  - Lambda 取值
 ---
-* 学习资料: 
+
+学习资料:
   * [强化学习教程]({% link _contents/pages/table-contents/machine-learning/reinforcement-learning/reinforcement-learning.html %})
   * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
   * [Sarsa 简介视频]({% link _contents/tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
@@ -20,8 +27,8 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
 
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
-#### Sarsa(n)
 
 <img class="course-image" src="/static/results/ML_intro/sl1.png">
 
@@ -29,7 +36,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 
 
 
-#### 单步更新, 回合更新对比
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/sl2.png">
 
@@ -37,7 +44,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 
 
 
-#### 有时迷茫
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/sl3.png">
 
@@ -45,7 +52,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 
 
 
-#### Lambda 含义
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/sl4.png">
 
@@ -53,7 +60,7 @@ thumbnail: /static/thumbnail/ML-intro/Sarsa-lambda_thumbnail.png
 
 
 
-#### Lambda 取值
+<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/sl5.png">
 

@@ -7,8 +7,12 @@ description: "怎么样调整 keras 的 backend (Tensorflow, theano). 我们来�
 author: 刘思成
 publish-date: 2016-10-29
 chapter: 1
+post-headings:
+  - 如何看当前使用的是什么Backend
+  - 如何修改Backend
 ---
-* 学习资料:
+
+学习资料:
   * backend [说明](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/3-backend.py)
 
 我们来介绍 Keras 的两个 Backend，也就是Keras基于什么东西来做运算。Keras 可以基于两个Backend，一个是 Theano，一个是 Tensorflow。如果我们选择Theano作为Keras的Backend，
@@ -17,7 +21,8 @@ chapter: 1
 目前 Tensorflow 支持 Mac 和 Linux 系统，而 Theano 不但支持包括 Mac 和 Linux，还支持 Windows 系统，
 所以我们就可以选择自己可以用的 Backend 就可以。
 
-#### 如何看当前使用的是什么Backend
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
 每次当我们`import keras`的时候，就会看到屏幕显示当前使用的 Backend
 
 ```python
@@ -30,7 +35,7 @@ Using Theano Backend
 
 这就说明现在使用的是Theano在作Backend。
 
-#### 如何修改Backend
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 ```python
 ~/.keras/keras.json

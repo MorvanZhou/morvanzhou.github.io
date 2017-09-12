@@ -9,14 +9,22 @@ description: "神经网络在当今是一种迅速发展的机器学习方式, �
 因为使用神经网络的机器学习方法还有这么一种叫做: 神经进化 (NeuroEvolution). 这种神经网络个人认为是更接近于生物的神经网络系统, 因为他和生物神经网络一样,
 并没有反向传播这一步. 主导它解决问题的方式就是 进化, 而反向传播的神经网络解决问题的方式, 我们可以看作是 优化.
 以下是我在 Youtube 中搜索看到大家都拿 Neuro Evolution 做的小实验. 看上去很高大上呀. 是不是又激情澎湃了."
+post-headings:
+  - 要点
+  - 神经网络进化的方式
+  - NEAT算法
+  - 进化策略与神经网络
 ---
 
-* 学习资料:
+
+学习资料:
   * [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * OpenAI 的 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/)
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 
 神经网络在当今是一种迅速发展的机器学习方式, 使用反向传播的神经网络更是被推向了一轮又一轮的高峰, 可是我们的视野请不要被反向传播的神经网络变得狭隘.
@@ -40,15 +48,9 @@ description: "神经网络在当今是一种迅速发展的机器学习方式, �
 还有可以拿它来做强化学习 (这和传统的强化学习 Reinforcement Learning 是有的一拼的,
 在之后内容中我们使用 gym 模块来实现 NeuroEvolution 的强化学习).
 
-#### 本节内容包括:
-
-* [神经网络进化的方式](#evolve)
-* [NEAT 算法](#neat)
-* [进化策略与神经网络](#es)
 
 
-
-<h4 class="tut-h4-pad" id="evolve">神经网络进化的方式</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 说到进化, 我们之前看到了在遗传算法 (Genetic Algorithm) 中, 种群 `Population` 是通过不同的 DNA 配对, DNA 变异来实现物种的多样性,
 然后通过自然选择 (Natural Selection), 繁衍下一代来实现 "适者生存, 不适者淘汰" 这条定律. 在神经网络中我们如何使用这种规律呢.
@@ -75,7 +77,7 @@ description: "神经网络在当今是一种迅速发展的机器学习方式, �
 越多的层结构也是一种浪费, 所以用 NEAT 来自己探索需要使用多少链接, 他就能忽略那些没用的链接, 所以神经网络也就比较小, 而且小的神经网络运行也快嘛.
 
 
-<h4 class="tut-h4-pad" id="neat">NEAT 算法</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}), 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)),
 如果想偷懒, 这篇在 conference 上的浓缩版([Efficient evolution of neural network topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf))也是很好的阅读材料.
@@ -118,7 +120,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 
 好了, 通过上面的方式一步步进行, 好的神经网络被保留, 坏的杀掉. 我们的神经网络就能朝着正确的方形进化啦.
 
-<h4 class="tut-h4-pad" id="es">进化策略与神经网络</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 [Evolution Strategy]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %}) 相比较于 [Genetic Algorithm]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})
 更加注重 mutation 的过程. 而且其中高度使用到了正态分布 (Normal distribution).

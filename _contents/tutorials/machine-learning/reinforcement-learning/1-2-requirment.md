@@ -9,19 +9,19 @@ description: "强化学习有一些现成的模块可以使用, 但是那些模�
 对于不同学习环境的强化学习, 可能 RL 的代码就不同. 所以我们要抱着以不变应万变的心态, 用基础的模块, 从基础学起.
 懂了原理, 再复杂的环境也不在话下.
 所以用到的模块和对应的教程如下"
+post-headings:
+  - 教程必备模块
+  - 快速了解强化学习
 ---
-* 学习资料:
+
+学习资料:
   * [OpenAI gym 官网](https://gym.openai.com/)
   * [我的 Tensorflow 快速入门教程](/tutorials/machine-learning/tensorflow/)
   * [我的 numpy pandas 快速入门教程](/tutorials/data-manipulation/np-pd/)
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
 
-#### 本节内容包括:
 
-* [教程必备模块](#modules)
-* [快速了解强化学习](#quick-learn)
-
-<h4 class="tut-h4-pad" id="modules">教程必备模块</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 强化学习有一些现成的模块可以使用, 但是那些模块并不全面, 而且强化学习很依赖与你给予的学习环境.
 对于不同学习环境的强化学习, 可能 RL 的代码就不同. 所以我们要抱着以不变应万变的心态, 用基础的模块, 从基础学起.
@@ -38,7 +38,7 @@ description: "强化学习有一些现成的模块可以使用, 但是那些模�
 
 
 
-<h4 class="tut-h4-pad" id="quick-learn">快速了解强化学习</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 我也会制作每种强化学习对应的简介视频 (在这个学习列表里: [有趣的机器学习](/tutorials/machine-learning/ML-intro/)),
 大家可以只花很少的时间来观看了解这些学习方法的不同之处. 有了一定概念和基础,

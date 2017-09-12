@@ -4,8 +4,13 @@ youtube_id: 1YpKUpitT98
 title: 特征标准化 (Feature Normalization)
 description: 今天我们会来聊聊机器学习所需要的数据,为了让机器学习方面消化, 我们需不需要对数据动些手脚呢. 所以今天就会提到特征数据的标准化, 也可以说正常化, 归一化, 正规化等等. 使用这些标准化手段. 我们不仅可以快速推进机器学习的学习速度, 还可以避免机器学习 学得特扭曲.
 chapter: 3
+post-headings:
+  - 现实中的数据
+  - 数据方程
+  - 举例说明
 ---
-* 学习资料: 
+
+学习资料:
   * Sklearn: feature normalization [教程]({% link _contents/tutorials/machine-learning/sklearn/3-1-normalization.md %})
 
 
@@ -16,15 +21,15 @@ chapter: 3
 
 
 
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
-#### 现实中的数据
 
 <img class="course-image" src="/static/results/ML_intro/norm1.png">
 
 在说特征标准化之前, 我们先来说说现实生活中, 我们的数据是什么样的. 它们很可能来自不同的地方, 被不同的人采集, 有着不同的规格. 用最经典的房价预测例子来和大家说说. 我们用机器学习从房屋的各个层面来预测房价, 房屋的特征可能包括, 离市中心的距离, 房屋楼层, 房屋面积, 所在城市, 几室几厅等等. 这些数据的取值范围往往差距悬殊, 比如楼层一般在2-30层以内, 面积可能上百, 离市中心距离可以以千来记.
 
 
-#### 数据方程
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/norm2.png">
 
@@ -36,7 +41,7 @@ chapter: 3
 
 
 
-#### 举例说明
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/norm4.png">
 

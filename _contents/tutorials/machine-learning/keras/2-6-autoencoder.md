@@ -9,8 +9,15 @@ author: Alice
 publish-date: 2016-10-30
 chapter: 2
 thumbnail: "/static/thumbnail/keras/09 autoencoder.jpg"
+post-headings:
+  - 导入模块并创建数据
+  - 建立模型
+  - 激活模型
+  - 训练模型
+  - 可视化结果
 ---
-* 学习资料:
+
+学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/9-Autoencoder_example.py)
   * 机器学习-简介系列 [自编码 Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
 
@@ -21,17 +28,9 @@ thumbnail: "/static/thumbnail/keras/09 autoencoder.jpg"
 
 今天要做的事情是把 `datasets.mnist` 数据的 28×28＝784 维的数据，压缩成 2 维的数据，然后在一个二维空间中可视化出分类的效果。
 
-#### 用 Keras 构建自编码网络的步骤：
-
-1. [导入模块并创建数据](#data)
-2. [建立模型](#create)
-3. [激活模型](#compile)
-4. [训练模型](#train)
-5. [可视化结果](#plot)
 
 
-
-<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 数据仍然用 `datasets.mnist`。
 
@@ -65,7 +64,7 @@ print(x_test.shape)
 
 
 
-<h4 class="tut-h4-pad" id="create">建立模型</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 `encoding_dim`，要压缩成的维度。
 
@@ -116,7 +115,7 @@ encoder = Model(input=input_img, output=encoder_output)
 当我们想要看由 784 压缩到 2维后，这个结果是什么样的时候，也可以只单独组建压缩的板块，此时它的输入是图片，输出是压缩环节的最后结果。
 
 
-<h4 class="tut-h4-pad" id="compile">激活模型</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 接下来是编译自编码这个模型，优化器用的是 `adam`，损失函数用的是 `mse`。
 
@@ -127,7 +126,7 @@ autoencoder.compile(optimizer='adam', loss='mse')
 
 
 
-<h4 class="tut-h4-pad" id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 接下来训练自编码模型，注意它的输入和输出是一样的，都是训练集的 X。
 
@@ -146,7 +145,7 @@ Epoch 20/20
 
 
 
-<h4 class="tut-h4-pad" id="plot">可视化结果</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
 
 最后看到可视化的结果，自编码模型可以把这几个数字给区分开来，我们可以用自编码这个过程来作为一个特征压缩的方法，和PCA的功能一样，效果要比它好一些，因为它是非线性的结构。
 

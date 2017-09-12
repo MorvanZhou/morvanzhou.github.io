@@ -4,8 +4,13 @@ youtube_id: tI9AbaBfnPc
 title: 激励函数 (Activation Function)
 description: 今天我们会来聊聊现代神经网络中 必不可少的一个组成部分, 激励函数, activation function. 激励函数也就是为了解决我们日常生活中不能用线性方程所概括的问题.
 chapter: 3
+post-headings:
+  - 非线性方程
+  - 激励函数
+  - 常用选择
 ---
-* 学习资料: 
+
+学习资料:
   * Theano 激励函数 [教程]({% link _contents/tutorials/machine-learning/theano/2-4-activation.md %})
   * Tensorflow 激励函数 [教程]({% link _contents/tutorials/machine-learning/tensorflow/2-6-activation.md %})
   * PyTorch 激励函数 [教程]({% link _contents/tutorials/machine-learning/torch/2-03-activation.md %})
@@ -15,9 +20,7 @@ chapter: 3
 
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
-
-
-#### 非线性方程
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 我们为什么要使用激励函数? 用简单的语句来概括. 就是因为, 现实并没有我们想象的那么美好, 它是残酷多变的. 哈哈, 开个玩笑, 不过激励函数也就是为了解决我们日常生活中 不能用线性方程所概括的问题. 好了,我知道你的问题来了. 什么是线性方程 (linear function)?
 
@@ -31,7 +34,10 @@ chapter: 3
 
 
 
-#### 激励函数
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
 
 <img class="course-image" src="/static/results/ML_intro/active3.png">
 
@@ -42,8 +48,7 @@ chapter: 3
 你甚至可以创造自己的激励函数来处理自己的问题, 不过要确保的是这些激励函数必须是可以微分的, 因为在 backpropagation 误差反向传递的时候, 只有这些可微分的激励函数才能把误差传递回去.
 
 
-
-#### 常用选择
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/active4.png">
 

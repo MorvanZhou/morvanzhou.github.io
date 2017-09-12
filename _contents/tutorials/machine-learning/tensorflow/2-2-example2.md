@@ -1,12 +1,21 @@
 ---
 youku_id: XMTYxMzQ2NzE0OA
 youtube_id: JKR1Dxinwwc
-description: 这个例子简单的阐述了 tensorflow 当中如何用代码来运行我们学到的结构.
+description: "Tensorflow 是非常重视结构的, 我们得建立好了神经网络的结构, 才能将数字放进去,
+运行这个结构.这个例子简单的阐述了 tensorflow 当中如何用代码来运行我们搭建的结构."
 chapter: 2
 title: 例子2
 date: 2016-11-3
+post-headings:
+  - 创建数据
+  - 搭建模型
+  - 计算误差
+  - 传播误差
+  - 训练
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf5_example2)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   
@@ -14,6 +23,9 @@ Tensorflow 是非常重视结构的, 我们得建立好了神经网络的结构,
 运行这个结构.
 
 这个例子简单的阐述了 tensorflow 当中如何用代码来运行我们搭建的结构.
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 首先, 我们这次需要加载 tensorflow 和 numpy 两个模块, 并且使用 numpy
 来创建我们的数据.
@@ -27,8 +39,12 @@ x_data = np.random.rand(100).astype(np.float32)
 y_data = x_data*0.1 + 0.3
 ```
 
+
 接着, 我们用 `tf.Variable` 来创建描述 `y` 的参数. 我们可以把 `y_data = x_data*0.1 + 0.3`
 想象成 `y=Weights * x + biases`, 然后神经网络也就是学着把 Weights 变成 0.1, biases 变成 0.3.
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 Weights = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
@@ -37,11 +53,17 @@ biases = tf.Variable(tf.zeros([1]))
 y = Weights*x_data + biases
 ```
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 接着就是计算 `y` 和 `y_data` 的误差:
 
 ```python
 loss = tf.reduce_mean(tf.square(y-y_data))
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 反向传递误差的工作就教给`optimizer`了, 我们使用的误差传递方法是梯度下降法: `Gradient Descent`
 让后我们使用 `optimizer` 来进行参数的更新.
@@ -50,6 +72,9 @@ loss = tf.reduce_mean(tf.square(y-y_data))
 optimizer = tf.train.GradientDescentOptimizer(0.5)
 train = optimizer.minimize(loss)
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 到目前为止, 我们只是建立了神经网络的结构, 还没有使用这个结构. 在使用这个结构之前, 
 我们必须先初始化所有之前定义的`Variable`, 所以这一步是很重要的!

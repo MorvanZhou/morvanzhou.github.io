@@ -5,15 +5,19 @@ title: Why?
 description: Theano 也是一款 python 神经网络方面的模块, 相比起 Tensorflow 更为传统,更为学术化. 
 author: 缘
 chapter: 1
+post-headings:
+  - 为什么我们用theano？
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * Tensorflow [教程](/tutorials/machine-learing/tensorflow/)
   * Theano [官方网站](http://deeplearning.net/software/theano/)
 
 Theano 是神经网络python机器学习的模块，和 Tensowflow 类似。
 
-#### 为什么我们用theano？
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 1. tensowflow 目前只能在 MacOS 和 Linux， theano 不仅可以在前两个系统中运行, 还可以在 Windows 系统下运行;
 2. theano 可以使用 GPU 进行运算，用GPU运行比CPU快100倍左右，theano 是比较优秀的 python 模块。

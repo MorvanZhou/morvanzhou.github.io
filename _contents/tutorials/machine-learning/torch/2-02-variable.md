@@ -8,20 +8,21 @@ chapter: 2
 description: "在 Torch 中的 Variable 就是一个存放会变化的值的地理位置. 里面的值会不停的变化. 就像一个裝鸡蛋的篮子,
 鸡蛋数会不停变动. 那谁是里面的鸡蛋呢, 自然就是 Torch 的 Tensor 咯. 如果用一个 Variable 进行计算, 那返回的也是一个同类型的 Variable.
 我们定义一个 Variable:"
+post-headings:
+  - 什么是 Variable
+  - Variable 计算, 梯度
+  - 获取 Variable 里面的数据
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/202_variable.py)
   * [PyTorch 官网](http://pytorch.org/)
 
 
-#### 本节内容包括:
 
-* [什么是 Variable](#variable)
-* [Variable 计算, 梯度](#grad)
-* [获取 Variable 里面的数据](#data)
-
-<h4 class="tut-h4-pad" id="variable">什么是 Variable</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在 Torch 中的 Variable 就是一个存放会变化的值的地理位置. 里面的值会不停的变化. 就像一个裝鸡蛋的篮子,
 鸡蛋数会不停变动. 那谁是里面的鸡蛋呢, 自然就是 Torch 的 Tensor 咯. 如果用一个 Variable 进行计算, 那返回的也是一个同类型的 Variable.
@@ -55,7 +56,8 @@ Variable containing:
 
 
 
-<h4 class="tut-h4-pad" id="grad">Variable 计算, 梯度</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们再对比一下 tensor 的计算和 variable 的计算.
 
@@ -89,7 +91,8 @@ print(variable.grad)    # 初始 Variable 的梯度
 
 
 
-<h4 class="tut-h4-pad" id="data">获取 Variable 里面的数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 直接`print(variable)`只会输出 Variable 形式的数据, 在很多时候是用不了的(比如想要用 plt 画图),
 所以我们要转换一下, 将它变成 tensor 形式.

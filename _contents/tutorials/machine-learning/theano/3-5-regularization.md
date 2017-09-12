@@ -6,12 +6,23 @@ description: 机器学习中,我们常常会遇到 overfitting 的问题,使用 
 author: Alice
 chapter: 3
 date: 2016-11-3
+post-headings:
+  - 要点
+  - 导入模块并创建数据
+  - 建立模型
+  - 激活模型
+  - 训练模型
+  - 可视化结果
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization)
   * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
   * [什么是 L1/L2 正则化 短片]({% link _contents/tutorials/machine-learning/ML-intro/3-09-l1l2regularization.md %})
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 什么是 overfitting ？
 
@@ -26,16 +37,9 @@ date: 2016-11-3
 所以在实际运用时要尽量减小 overfitting。常用的方法有 L1，L2 正则化。
 
 
-#### 用 Theano 构建网络的步骤：
 
-1. [导入模块并创建数据](#data)
-2. [建立模型](#create)
-3. [激活模型](#compile)
-4. [训练模型](#train)
-5. [可视化结果](#plot)
-
-
-<h4 class="tut-h4-pad" id="data">导入模块并创建数据</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 引入需要使用的Python包：
 
@@ -81,7 +85,8 @@ y = T.dmatrix("y")
 ```
 
 
-<h4 class="tut-h4-pad" id="create">建立模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 建立两个神经层，`l1` 有 13 个属性，50 个神经元，激活函数是 `T.tanh`。
 `l2` 的输入值为前一层的输出，有 50 个，输出值为房价，只有 1 个。
@@ -107,7 +112,8 @@ gW1, gb1, gW2, gb2 = T.grad(cost, [l1.W, l1.b, l2.W, l2.b])
 
 
 
-<h4 class="tut-h4-pad" id="compile">激活模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 定义学习率，训练函数等。
 
@@ -124,7 +130,8 @@ compute_cost = theano.function(inputs=[x, y], outputs=cost)
 ```
 
 
-<h4 class="tut-h4-pad" id="train">训练模型</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 用 `train_err_list` 等来记录训练过程中产生的误差，方便后面可视化。
 训练 1000 次，每 10 步记录一次训练集和测试集的误差。
@@ -144,7 +151,8 @@ for i in range(1000):
         learning_time.append(i)
 ```
 
-<h4 class="tut-h4-pad" id="plot">可视化结果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 最后可视化两种误差，红色是训练集的，蓝色是测试集。
 

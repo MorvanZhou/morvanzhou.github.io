@@ -7,12 +7,25 @@ thumbnail: /static/thumbnail/rl/3 example.jpg
 publish-date: 2017-01-09
 description: "这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为."
+post-headings:
+  - 要点
+  - 预设值
+  - Q 表
+  - 定义动作
+  - 环境反馈 S_, R
+  - 环境更新
+  - 强化学习主循环
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/1_command_line_reinforcement_learning/treasure_on_right.py)
   * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为.
@@ -32,17 +45,9 @@ Q-learning 是一种记录行为值 (Q value) 的方法, 每种在一定状态�
 大家大概看看就行, 有个大概的 RL 概念就行, 知道 RL 的一些关键步骤就行, 这节的算法不用仔细研究.**
 
 
-#### 本节内容包括:
 
-* [预设值](#setting)
-* [Q 表](#qtable)
-* [定义动作](#action)
-* [环境反馈 S_, R](#env)
-* [环境更新](#env-update)
-* [强化学习主循环](#loop)
-
-<h4 class="tut-h4-pad" id="setting">预设值</h4>
-
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这一次需要的模块和参数设置:
 
@@ -60,8 +65,8 @@ MAX_EPISODES = 13   # 最大回合数
 FRESH_TIME = 0.3    # 移动间隔时间
 ```
 
-<h4 class="tut-h4-pad" id="qtable">Q 表</h4>
-
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 对于 tabular Q learning, 我们必须将所有的 Q values (行为值) 放在 `q_table` 中, 更新 `q_table` 也是在更新他的行为准则.
 `q_table` 的 index 是所有对应的 `state` (探索者位置), columns 是对应的 `action` (探索者行为).
 
@@ -85,7 +90,8 @@ def build_q_table(n_states, actions):
 """
 ```
 
-<h4 class="tut-h4-pad" id="action">定义动作</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着定义探索者是如何挑选行为的. 这是我们引入 `epsilon greedy` 的概念. 因为在初始阶段, 随机的探索环境,
 往往比固定的行为模式要好, 所以这也是累积经验的阶段, 我们希望探索者不会那么贪婪(greedy). 所以 `EPSILON` 就是用来控制贪婪程度的值.
@@ -103,7 +109,9 @@ def choose_action(state, q_table):
     return action_name
 ```
 
-<h4 class="tut-h4-pad" id="env">环境反馈 S_, R</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 做出行为后, 环境也要给我们的行为一个反馈, 反馈出下个 state (S_) 和 在上个 state (S) 做出 action (A) 所得到的 reward (R).
 这里定义的规则就是, 只有当 `o` 移动到了 `T`, 探索者才会得到唯一的一个奖励, 奖励值 R=1, 其他情况都没有奖励.
@@ -127,7 +135,8 @@ def get_env_feedback(S, A):
     return S_, R
 ```
 
-<h4 class="tut-h4-pad" id="env-update">环境更新</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接下来就是环境的更新了, 不用细看.
 
@@ -147,7 +156,8 @@ def update_env(S, episode, step_counter):
         time.sleep(FRESH_TIME)
 ```
 
-<h4 class="tut-h4-pad" id="loop">强化学习主循环</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 最重要的地方就在这里. 你定义的 RL 方法都在这里体现. 在之后的教程中, 我们会更加详细得讲解 RL 中的各种方法, 下面的内容,
 大家大概看看就行, 这节内容不用仔细研究.

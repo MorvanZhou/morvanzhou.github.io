@@ -7,28 +7,34 @@ thumbnail: "/static/thumbnail/torch/3-2 classification.jpg"
 chapter: 3
 description: "这次我们也是用最简单的途径来看看神经网络是怎么进行事物的分类.
 我们创建一些假数据来模拟真实的情况. 比如两个二次分布的数据, 不过他们的均值都不一样."
+post-headings:
+  - 要点
+  - 建立数据集
+  - 建立神经网络
+  - 训练网络
+  - 可视化训练过程
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/302_classification.py)
   * [用 Tensorflow 达到同样效果的代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/302_simple_classification.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这次我们也是用最简单的途径来看看神经网络是怎么进行事物的分类.
 
 <img class="course-image" src="/static/results/torch/1-1-3.gif">
 
 
-#### 本节内容包括:
-
-* [建立数据集](#data)
-* [建立神经网络](#nn)
-* [训练网络](#train)
-* [可视化训练过程](#plot)
 
 
-<h4 class="tut-h4-pad" id="data">建立数据集</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们创建一些假数据来模拟真实的情况. 比如两个二次分布的数据, 不过他们的均值都不一样.
 
@@ -60,7 +66,8 @@ plt.show()
 ```
 
 
-<h4 class="tut-h4-pad" id="nn">建立神经网络</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 建立一个神经网络我们可以直接运用 torch 中的体系. 先定义所有的层属性(`__init__()`), 然后再一层层搭建(`forward(x)`)层于层的关系链接.
 这个和我们在前面 regression 的时候的神经网络基本没差.
@@ -93,7 +100,8 @@ Net (
 """
 ```
 
-<h4 class="tut-h4-pad" id="train">训练网络</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 训练的步骤很简单, 如下:
 
@@ -115,7 +123,8 @@ for t in range(100):
 ```
 
 
-<h4 class="tut-h4-pad" id="plot">可视化训练过程</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 为了可视化整个训练的过程, 更好的理解是如何训练, 我们如下操作:
 

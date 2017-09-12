@@ -22,10 +22,12 @@
 
   <!-- assign url for next and previous -->
   {% if post_previous_url %}
-    <a class="prev" href="{{post_previous_url}}">&laquo; 上一个</a>
+  <a class="prev" href="{{post_previous_url}}">
+    <strong>&laquo;</strong> <i>{{ post_previous.title }}</i></a>
   {% endif %}
   {% if post_next_url %}
-    <a class="next" href="{{post_next_url}}">下一个 &raquo;</a>
+  <a class="next" href="{{post_next_url}}">
+    <i>{{ post_next.title }}</i> <strong>&raquo;</strong></a>
   {% endif %}
 </div>
 

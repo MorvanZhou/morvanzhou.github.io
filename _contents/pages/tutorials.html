@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: front-page
 title: "教程一览"
 permalink: /tutorials/
 tut-title: "Python 教程"
@@ -21,7 +21,7 @@ description: "关于 Python, 学习资料层出不穷, 在教学资料如山的�
 <ul id="recent-update">
   {% assign items = (site.contents | where: "sort-date", "true") %}
   {% assign sorted-items = (items | sort: "publish-date") | reverse %}
-  {% for item in sorted-items limit:6 %}
+  {% for item in sorted-items limit:30 %}
 
     <li><a href="{{item.url}}">
       <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">

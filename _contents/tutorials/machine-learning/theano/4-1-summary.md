@@ -6,8 +6,11 @@ description: 谢谢大家一贯的支持, 使用 theano 的神经网络教程就
 author: Alice
 chapter: 4
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [总结](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py)
   
 

@@ -6,8 +6,12 @@ description: 自编码 autoencoder 是一种什么码呢. 他是不是 条形码
 publish-date: 2016-11-04
 chapter: 2
 thumbnail: /static/thumbnail/ML-intro/autoencoder.png
+post-headings:
+  - 压缩与解压
+  - 编码器 Encoder
 ---
-* 学习资料: 
+
+学习资料:
   * Tensorflow Autoencoder [链接]({% link _contents/tutorials/machine-learning/tensorflow/5-11-autoencoder.md %})
   * PyTorch RNN [例子1]({% link _contents/tutorials/machine-learning/torch/4-04-autoencoder.md %})
   * Keras Autoencoder [链接]({% link _contents/tutorials/machine-learning/keras/2-6-autoencoder.md %})
@@ -24,7 +28,7 @@ thumbnail: /static/thumbnail/ML-intro/autoencoder.png
 自编码 autoencoder 是一种什么码呢. 他是不是 条形码? 二维码? 打码? 其中的一种呢? NONONONO. 和他们统统没有关系. 自编码是一种神经网络的形式.如果你一定要把他们扯上关系, 我想也只能这样解释啦.
 
 
-#### 压缩与解压
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/auto1.png">
 
@@ -41,7 +45,7 @@ thumbnail: /static/thumbnail/ML-intro/autoencoder.png
 
 
 
-#### 编码器 Encoder
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/auto4.png">
 

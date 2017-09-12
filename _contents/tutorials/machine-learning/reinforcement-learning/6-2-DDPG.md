@@ -11,9 +11,18 @@ Google DeepMind 提出的一种使用 Actor Critic 结构, 但是输出的不是
 因为 DDPG 和 DQN 还有 Actor Critic 很相关,
 所以最好这两者都了解下, 对于学习 DDPG 很有帮助. 我的教程链接都能在上面的学习资料中找到.
 下面是这节内容的效果提前看:"
+post-headings:
+  - 要点
+  - 算法
+  - 主结构
+  - Actor Critic
+  - 记忆库 Memory
+  - 每回合算法
+  - 简化版代码(录完视频后发现了小错误, 重写了代码)
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
   * [修改版代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py)
   * [什么是 Deep Deterministic Policy Gradient 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-09-DDPG.md %})
@@ -21,6 +30,9 @@ Google DeepMind 提出的一种使用 Actor Critic 结构, 但是输出的不是
   * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
   * [我的 DQN 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %})
   * [我的 Actor Critic 教程]({% link _contents/tutorials/machine-learning/reinforcement-learning/6-1-actor-critic.md %})
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **一句话概括 DDPG:**
 Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不是行为的概率, 而是具体的行为,
@@ -39,17 +51,10 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 </div>
 
 
-#### 本节内容包括:
-
-* [算法](#algorithm)
-* [主结构](#main-structure)
-* [Actor Critic](#AC)
-* [记忆库 Memory](#memory)
-* [每回合算法](#episode)
-* [简化版代码(录完视频后发现了小错误, 重写了代码)](#update)
 
 
-<h4 class="tut-h4-pad" id="algorithm">算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `DDPG` 的算法实际上就是一种 `Actor Critic`, 我在[上一篇]({% link _contents/tutorials/machine-learning/reinforcement-learning/6-1-actor-critic.md %})中简短地介绍了 `Actor Critic` 的算法.
 不太清楚的同学先去看看上一篇吧.
@@ -70,7 +75,8 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 那样切断相关性, 提高收敛性.
 
 
-<h4 class="tut-h4-pad" id="main-structure">主结构</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **注意, 录视频的时候代码有个地方有小错误, 以下部分和视频中有些地方不同, 特别是计算 `Actor` 更新的时候.
  所以请以文字描述中的为准.**
@@ -109,7 +115,8 @@ class Critic(object):
 
 
 
-<h4 class="tut-h4-pad" id="AC">Actor Critic</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 有了对 `Actor Critic` 每个里面各两个神经网络结构的了解, 我们再来具体看看他们是如何进行交流,
 传递信息的. 我们从 `Actor` 的学习更新方式开始说起.
@@ -167,7 +174,8 @@ actor.add_grad_to_graph(critic.a_grads) # 将 critic 产出的 dQ/da 加入到 A
 
 同样, 如果你觉得只看部分代码不舒服, [这里有全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py).
 
-<h4 class="tut-h4-pad" id="memory">记忆库 Memory</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 以下是关于类似于 `DQN` 中的记忆库代码, 我们用一个 `class` 来建立.
 关于 `Memory` 的详细算法, 请直接去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py) 中看, 这样更简单.
@@ -184,7 +192,8 @@ class Memory(object):
         """随即从记忆库中抽取 n 个记忆进行学习"""
 ```
 
-<h4 class="tut-h4-pad" id="episode">每回合算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这里的回合算法只提到了最重要的部分, 省掉了一些没必要的, 有助理解.
 如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
@@ -226,7 +235,8 @@ for i in range(MAX_EPISODES):
 </div>
 
 
-<h4 class="tut-h4-pad" id="update">简化版代码</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 后来我在回过头来看代码, 结果发现计算 `Actor` 更新时有点小问题, 所以就修改了之前的代码.
 但是修改后我觉得.. 代码变得累赘了, 所以我觉得再重写一个, 简化所有流程.

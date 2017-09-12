@@ -6,7 +6,9 @@ description: 在theano 中学会定义矩阵 matrix 和功能 function 是一个
 author: 缘
 chapter: 2
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano4_basic_usage.py)
   
 在 theano 中学会定义矩阵 `matrix` 和功能 `function` 是一个比较重要的事, 我们在这里简单的提及了一下在 theano 将要运用到的东西.  

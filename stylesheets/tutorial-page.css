@@ -11,6 +11,8 @@
 list-style-type: none;
 margin: 0 auto;
 line-height: 100px;
+height: 380px;
+overflow-y: scroll;
 }
 
 #recent-update li {
@@ -38,29 +40,11 @@ opacity:0.8;
 }
 
 
+
 /* ======= tutorial title ====== */
 .tut-title {
 margin: 0;
 padding: 1em 0 0.5em 0;
-}
-/* ====== video ===== */
-.video-container {
-z-index: 1;
-position: relative;
-padding-bottom: 56.25%;
-padding-top:0;
-margin: 0;
-
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-z-index: 1;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-box-shadow: 0px 0px 20px 0px #888888;
 }
 
 /* ======= ads ========= */
@@ -177,6 +161,60 @@ padding-bottom: 1.5em;
 padding: 0;
 }
 
+/* ======= tutorial two main parts ====== */
+main.tut-post {
+margin: 0 auto;
+background-color:#FAFAFA;
+box-shadow: 0px 0px 30px 5px  #888888;
+}
+
+.tut-main-content {
+width: 75%;
+display: inline-block;
+}
+
+.tut-main-content-pad {
+padding: 0 2em;
+}
+
+.tut-side-menu {
+display: inline-block;
+vertical-align:top;
+position: fixed;
+top: 5em;
+padding: 0 0.8em;
+}
+
+@media screen and (max-width: 40.5em) {
+  .tut-side-menu {
+  display: none;
+  width: 0;
+  }
+  .tut-main-content {
+  width: 95%;
+  padding: 2em 0;
+  margin: 0 auto;
+  display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main.tut-post {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main.tut-post {
+  max-width: 1200px;
+  }
+  main.tut-post .video-container, main.tut-post .video-container iframe, main.tut-post .video-container object, main.tut-post .video-container embed {
+  max-width: 1200px;
+  max-height: calc(1200/16*9)px;
+  margin: 0 auto;
+  }
+ }
+
+/* ======= video and next previous button ====== */
 .link-under-youtube {
 text-align: center;
 margin: 0;
@@ -193,9 +231,13 @@ display: block;
 color: white;
 background-color: #14b814;
 text-decoration: none;
-padding: 1em;
-margin: 1em 0;
+padding: 0.9em;
+margin: 0.5em 0;
 border-radius: 10px;
+}
+
+.PageNavigation i {
+font-size: 0.8em;
 }
 
 .PageNavigation a:hover {
@@ -210,31 +252,3 @@ float: left;
 float: right;
 text-align: right;
 }
-
-/* ======== comments section ======== */
-/*#ds-thread {
-padding: 1em 0;
-}
-
-.ds-avatar img {
-border-radius: 50% !important;
-box-shadow: 0px 0px 4px 1px  #888888 !important;
-}
-
-.ds-replybox form {
-margin: 0.5em !important;
-box-shadow: 0px 0px 8px 1px  #888888 !important;
-}
-
-.ds-post-button {
-background-color: #14b814 !important;
-}
-
-.ds-post-button:hover {
-background-color: #00e600 !important;
-}
-
-.ds-post-self {
-padding: 1em 0 !important;
-}
-*/

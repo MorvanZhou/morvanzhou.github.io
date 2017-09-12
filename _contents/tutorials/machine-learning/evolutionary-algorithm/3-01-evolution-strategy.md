@@ -9,12 +9,18 @@ description: "进化策略 (Evolution Strategy) 后面都简称 ES. 它和 遗�
 如果你对遗传算法也感兴趣, 前面几节内容都是有关于遗传算法的.
 要我用一句话概括ES: 在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝. 乍一听, 怎么和 GA 是完全一样的逻辑呢?
 没关系, 我们在接下来的内容中揭晓他们的不同."
+post-headings:
+  - 要点
+  - 和遗传算法的异同
+  - 进化啦
 ---
 
+学习资料:
 
-* 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py)
-  * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py)
+* [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %}Fƒ)是个很好的方式.
 
@@ -28,13 +34,8 @@ description: "进化策略 (Evolution Strategy) 后面都简称 ES. 它和 遗�
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-1-0.gif">
 
 
-#### 本节内容包括:
 
-* [和遗传算法的异同](#2GA)
-* [进化啦](#eval)
-
-
-<h4 class="tut-h4-pad" id="2GA">和遗传算法的异同</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 遗传算法 (后面简称 GA) 和 ES 真 TM 差不多. 导致很多朋友学习的时候, 都傻傻分不清.
 不过我具体的列出来, 方便看清楚.
@@ -58,7 +59,7 @@ DNA2=`0.1, 2.44, 5.112, 2.144`  可以理解为4个正态分布的4个标准差.
 所以这两条 DNA 都需要被 `crossover` 和 `mutate`.
 
 
-<h4 class="tut-h4-pad" id="eval">进化啦</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 写基础的 ES 算法其实很简单. 我总结起来, 其实就两个功能, `make_kid` 和 `kill_bad`
 

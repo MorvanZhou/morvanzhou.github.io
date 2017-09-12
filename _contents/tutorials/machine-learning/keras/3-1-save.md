@@ -7,22 +7,19 @@ author: Alice
 publish-date: 2016-10-30
 chapter: 3
 thumbnail: "/static/thumbnail/keras/10 save.jpg"
+post-headings:
+  - 训练模型
+  - 保存模型
+  - 导入模型并应用
 ---
-* 学习资料:
+
+学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/10-save.py)
   
 今天学习如何保存神经网络，这样以后想要用的时候直接提取就可以。
 
-#### 保存模型的步骤：
 
-
-1. [训练模型](#train)
-2. [保存模型](#save)
-3. [导入模型并应用](#load)
-
-
-
-<h4 class="tut-h4-pad" id="train">训练模型</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 下面的导入数据和训练模型用的是之前讲过的回归模型的例子，今天要做的是如何保存这个模型。
 
@@ -50,7 +47,7 @@ for step in range(301):
 
 
 
-<h4 class="tut-h4-pad" id="save">保存模型</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 训练完模型之后，可以打印一下预测的结果，接下来就保存模型。
 
@@ -71,7 +68,7 @@ test before save:  [[ 1.87243938] [ 2.20500779]]
 """
 ```
 
-<h4 class="tut-h4-pad" id="load">导入模型并应用</h4>
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 导入保存好的模型，再执行一遍预测，与之前预测的结果比较，可以发现结果是一样的。
 

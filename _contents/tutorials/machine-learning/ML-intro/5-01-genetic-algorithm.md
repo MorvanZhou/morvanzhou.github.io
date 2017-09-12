@@ -7,6 +7,12 @@ chapter: 5
 thumbnail: /static/thumbnail/ML-intro/genetic-algorithm.png
 description: "这次我们尝试踏足机器学习中的另外一个领域, 用进化理论来解决复杂的问题. 遗传算法是进化算法的一个分支. 它将达尔文的进化理论搬进了计算机.
 所以你会发现在程序中, 我们还时不时出现什么染色体, DNA, 遗传, DNA交叉, 变异 这些东西. 不过想想也能明白, 在自然界中, 优胜劣汰, 我们人类也是靠着这些手段一步步从猴子"
+post-headings:
+  - 进化算法
+  - 猴子的进化
+  - 种群的进化
+  - 电脑里的 DNA
+  - 别人的实验
 ---
 * 学习资料: 
   * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/)
@@ -15,7 +21,7 @@ description: "这次我们尝试踏足机器学习中的另外一个领域, 用�
 欢迎观看有趣的机器学习系列视频, 这次我们尝试踏足机器学习中的另外一个领域, 用进化理论来解决复杂的问题. 遗传算法是进化算法的一个分支. 它将达尔文的进化理论搬进了计算机.
 
 
-#### 进化算法
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm1.png">
 
@@ -26,7 +32,7 @@ description: "这次我们尝试踏足机器学习中的另外一个领域, 用�
 ~变成会敲键盘, 会唱歌, 会读书, 会干坏事的猴子了. 哈哈. 重点不是这些. 我们应该正儿八经地想想, 我们是怎么样一步一步变成后面这些猴子的.
 
 
-#### 猴子的进化
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm3.png">
 
@@ -34,7 +40,7 @@ description: "这次我们尝试踏足机器学习中的另外一个领域, 用�
 
 
 
-#### 种群的进化
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm4.png">
 
@@ -42,7 +48,7 @@ description: "这次我们尝试踏足机器学习中的另外一个领域, 用�
 
 
 
-#### 电脑里的 DNA
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm5.png">
 
@@ -52,7 +58,7 @@ description: "这次我们尝试踏足机器学习中的另外一个领域, 用�
 
 有了这些电脑能懂的 DNA 形式, 我们就能模拟生物中的繁衍后代了, 假设我们有两个来自父母的 DNA 信息. 我们只需要选取他们各自一段信息就能组成新的宝宝的DNA信息. 生物繁衍中, 还会存在时不时的变异, 我们也能从这套01 的系统中体现出来, 只要将某些地方将0变成1, 1变成0就好了. 有了这些遗传变异, 加上那一套适者生存,不适者淘汰的理论, 你的电脑里就能有一群渐渐成长壮大的小生物了.
 
-#### 别人的实验
+<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm7.png">
 

@@ -5,8 +5,11 @@ title: 神经网络在做什么
 description: Theano 能做的机器学习种类一般分两种, 一种是回归学习,一种是分类学习. 大家可以下载代码自己看看theano, 神经网络是如何进行分类学习的.
 author: 缘
 chapter: 1
+
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py)
   * [本例的代码讲解教程]({% link _contents/tutorials/machine-learning/theano/3-1-layer.md %})
   

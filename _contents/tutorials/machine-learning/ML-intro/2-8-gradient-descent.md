@@ -6,8 +6,13 @@ chapter: 2
 thumbnail: "/static/thumbnail/ML-intro/gradient_descent.png"
 publish-date: 2017-06-29
 description: "神经网络是当今为止最流行的一种深度学习框架, 他的基本原理也很简单, 就是一种梯度下降机制. 我们今天就来看看这神奇的优化模式吧.学习机器学习的同学们常会遇到这样的图像, 我了个天, 看上去好复杂, 哈哈, 不过还挺好看的. 这些和我们说的梯度下降又有什么关系呢? 原来这些图片展示出来了一个家族的历史, 这个家族的名字就是-”optimization” (优化问题). 优化能力是人类历史上的重大突破, 他解决了很多实际生活中的问题. 从而渐渐演化成了一个庞大的家族."
+post-headings:
+  - Optimization
+  - 梯度下降
+  - 全局 and 局部最优
 ---
-* 学习资料: 
+
+学习资料:
   * 神经网络 编程教程 Tensorflow [学习目录](/tutorials/machine-learning/tensorflow/)
   * 神经网络 编程教程 PyTorch [学习目录](/tutorials/machine-learning/torch/)
   * 神经网络 编程教程 Theano [学习目录](/tutorials/machine-learning/theano/)
@@ -15,7 +20,7 @@ description: "神经网络是当今为止最流行的一种深度学习框架, �
   
 欢迎观看有趣的机器学习系列视频, 神经网络是当今为止最流行的一种深度学习框架, 他的基本原理也很简单, 就是一种梯度下降机制. 我们今天就来看看这神奇的优化模式吧.
 
-#### Optimization
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/gd2.png">
 
@@ -23,7 +28,10 @@ description: "神经网络是当今为止最流行的一种深度学习框架, �
 
 比如说牛顿法 (Newton’s method), 最小二乘法(Least Squares method), 梯度下降法 (Gradient Descent) 等等. 而我们的神经网络就是属于梯度下降法这个分支中的一个. 提到梯度下降, 我们不得不说说大学里面学习过的求导求微分. 因为这就是传说中”梯度下降”里面的”梯度” (gradient)啦. 听到求导微分可别后怕, 因为这个短视频只是让你有一个直观上的理解, 并不会涉及太过复杂的东西.
 
-#### 梯度下降
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/gd3.png">
 
@@ -33,7 +41,11 @@ description: "神经网络是当今为止最流行的一种深度学习框架, �
 
 神经网络中的 W 可不止一个, 如果只有一个 W, 我们就能画出之前那样的误差曲线, 如果有两个 W 也简单, 我们可以用一个3D 图来展示, 可是超过3个 W, 我们可就没办法很好的可视化出来啦. 这可不是最要命的. 在通常的神经网络中, 误差曲线可没这么优雅.
 
-#### 全局/局部最优
+
+
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/gd5.png">
 

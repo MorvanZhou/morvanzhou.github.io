@@ -8,27 +8,32 @@ chapter: 3
 description: "训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
 我们用回归的神经网络举例实现保存提取. 我们快速地建造数据, 搭建网络:
 "
+post-headings:
+  - 要点
+  - 保存
+  - 提取网络
+  - 只提取网络参数
+  - 显示结果
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py)
   * [Tensorflow 的保存读取代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/303_save_reload.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
 我们用回归的神经网络举例实现保存提取.
 
 
-#### 本节内容包括:
-
-* [保存](#save)
-* [提取网络](#load-nn)
-* [只提取网络参数](#load-param)
-* [显示结果](#results)
 
 
-<h4 class="tut-h4-pad" id="save">保存</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们快速地建造数据, 搭建网络:
 
@@ -67,7 +72,8 @@ torch.save(net1, 'net.pkl')  # 保存整个网络
 torch.save(net1.state_dict(), 'net_params.pkl')   # 只保存网络中的参数 (速度快, 占内存少)
 ```
 
-<h4 class="tut-h4-pad" id="load-nn">提取网络</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这种方式将会提取整个神经网络, 网络大的时候可能会比较慢.
 
@@ -78,7 +84,8 @@ def restore_net():
     prediction = net2(x)
 ```
 
-<h4 class="tut-h4-pad" id="load-param">只提取网络参数</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这种方式将会提取所有的参数, 然后再放到你的新建网络中.
 
@@ -97,7 +104,8 @@ def restore_params():
 ```
 
 
-<h4 class="tut-h4-pad" id="results">显示结果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 调用上面建立的几个功能, 然后出图.
 

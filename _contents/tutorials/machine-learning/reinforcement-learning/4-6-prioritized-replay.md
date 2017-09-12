@@ -10,12 +10,23 @@ description: "这一次还是使用 MountainCar 来进行实验, 因为这次我
 比起之前 DQN 中, 这个 reward 定义更加准确. 如果使用这种 reward 定义方式,
 可以想象 Natural DQN 会花很久的时间学习, 因为记忆库中只有很少很少的 +10 reward 可以学习. 正负样本不一样.
 而使用 Prioritized replay, 就会重视这种少量的, 但值得学习的样本."
+post-headings:
+  - 要点
+  - Prioritized replay 算法
+  - SumTree 有效抽样
+  - Memory 类
+  - 更新方法
+  - 对比结果
 ---
+{% assign post-heading-count = -1 %}
 
-* 学习资料:
+学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.2_Prioritized_Replay_DQN)
   * [什么是 Prioritized Replay 短视频(即将制作)](#)
   * 论文 [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
 以下教程缩减了在 DQN 方面的介绍, 着重强调 DQN with Prioritized Replay 和 DQN 在代码上不同的地方.
@@ -36,15 +47,10 @@ description: "这一次还是使用 MountainCar 来进行实验, 因为这次我
 </video>
 </div>
 
-#### 本节内容包括:
 
-* [Prioritized replay 算法](#algorithm)
-* [SumTree 有效抽样](#sumtree)
-* [Memory 类](#memory)
-* [更新方法](#learn)
-* [对比结果](#result)
 
-<h4 class="tut-h4-pad" id="algorithm">Prioritized replay 算法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 <img class="course-image" src="/static/results/rl/4-6-1.png">
 
@@ -78,7 +84,8 @@ SumTree 是一种树形结构, 每片树叶存储每个样本的优先级 `p`, �
 并且将手中的值根据 `13` 修改一下, 变成 24-13 = 11. 接着拿着 11 和 `13` 左下角的 `12` 比, 结果 `12` 比 11 大,
 那我们就选 12 当做这次选到的 priority, 并且也选择 12 对应的数据.
 
-<h4 class="tut-h4-pad" id="sumtree">SumTree 有效抽样</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **注意: 下面的代码和视频中有一点点不同, 下面的代码是根据评论中讨论的进行了修改, 多谢大家的评论.**
 
@@ -113,7 +120,8 @@ class SumTree(object):
 
 
 
-<h4 class="tut-h4-pad" id="memory">Memory 类</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这个 Memory 类也是基于 [Jaromír Janisch 所写的 Memory](https://github.com/jaara/AI-blog/blob/master/Seaquest-DDQN-PER.py) 进行了修改和优化.
 
@@ -153,7 +161,8 @@ class Memory(object):
 还有代码中的 `alpha` 是一个决定我们要使用多少 ISweight 的影响, 如果 `alpha = 0`, 我们就没使用到任何 Importance Sampling.
 
 
-<h4 class="tut-h4-pad" id="learn">更新方法</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 基于之前的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py),
@@ -257,7 +266,8 @@ class DQNPrioritizedReplay:
 
 
 
-<h4 class="tut-h4-pad" id="result">对比结果</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 <img class="course-image" src="/static/results/rl/4-6-4.png">
 

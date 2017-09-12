@@ -6,7 +6,10 @@ chapter: 2
 title: 处理结构
 date: 2016-11-3
 author: 张乐
+post-headings:
 ---
+{% assign post-heading-count = -1 %}
+
 
 Tensorflow 首先要定义神经网络的结构,
 然后再把数据放入结构当中去运算和 training.

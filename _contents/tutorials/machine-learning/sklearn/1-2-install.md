@@ -5,8 +5,11 @@ description: 安装 Scikit-learn (sklearn) 最简单的方法就是使用 pip �
 chapter: 1
 title: 安装
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 官方安装 [教程](http://scikit-learn.org/stable/install.html)
   * Windows 使用 [Anaconda](https://www.continuum.io/downloads) 安装
   

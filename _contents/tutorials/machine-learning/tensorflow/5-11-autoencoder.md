@@ -5,11 +5,20 @@ description: Autoencoder 是神经网络的一种非监督学习 unsupervised le
 author: Hao
 chapter: 5
 title: 自编码 Autoencoder (非监督学习)
+post-headings:
+  - 要点
+  - Autoencoder
+  - Encoder
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf21_autoencoder)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * 机器学习-简介系列 [Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 **Autoencoder** 简单来说就是将有很多Feature的数据进行压缩，之后再进行解压的过程。
 本质上来说，它也是一个对数据的非监督学习，如果大家知道 **PCA** (Principal component analysis)，
@@ -25,14 +34,15 @@ title: 自编码 Autoencoder (非监督学习)
 - 第一，是通过Feature的压缩并解压，并将结果与原始数据进行对比，观察处理过后的数据是不是如预期跟原始数据很相像。（这里会用到MNIST数据）
 - 第二，我们只看 `encoder` 压缩的过程，使用它将一个数据集压缩到只有两个Feature时，将数据放入一个二维坐标系内，特征压缩的效果如下：
 
-  <img class="course-image" src="/static/results/tensorflow/5_11_2.png">
+ <img class="course-image" src="/static/results/tensorflow/5_11_2.png">
 
-  同样颜色的点，代表分到同一类的数据。（Lebel相同）
+ 同样颜色的点，代表分到同一类的数据。（Lebel相同）
 
 
-下面进入代码环节吧：
 
-#### 类型一: Autoencoder
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 ```python
 # Parameter
@@ -159,7 +169,9 @@ with tf.Session() as sess:
 
 上面一行是真实数据，下面一行是经过 `encoder` 和 `decoder` 之后的数据，如果继续进行训练，效果会更好。
 
-#### 类型二: Encoder
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在类型二中，我们只显示 `encoder` 之后的数据， 并画在一个二维直角坐标系内。做法很简单，我们将原有 784 Features 的数据压缩成仅剩 2 Features 的数据：
 

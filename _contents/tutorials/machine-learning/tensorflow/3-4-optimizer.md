@@ -6,8 +6,11 @@ author: 赵孔亚
 chapter: 3
 title: 优化器 optimizer
 date: 2016-11-3
+post-headings:
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+
+学习资料:
   * 各种 Optimizer 的对比 [链接](http://cs231n.github.io/neural-networks-3/)(英文)
   * 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html)
