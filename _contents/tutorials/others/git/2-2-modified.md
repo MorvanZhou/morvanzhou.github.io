@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0MjI5NTYwOA
 youtube_id: qSql8KDTEuY
-description: 
+description: "在 git 中, 每一次提交(commit)的修改, 都会被单独的保存起来.
+也可以说 git 的中的所有文件都是一次次修改累积起来的. 文件好比楼房, 每个 commit 记录
+了盖楼需添加或者拿走的材料. 整个施工过程也被记录了下来."
 chapter: 2
 title: 记录修改 (log & diff)
 publish-date: 2016-11-30

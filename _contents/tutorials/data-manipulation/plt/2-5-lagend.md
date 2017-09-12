@@ -2,8 +2,6 @@
 youku_id: XMTcxNjE5MzA0OA
 youtube_id: dGZyoX72iEg
 description: matplotlib 中的 legend 图例就是为了帮我们展示出每个数据对应的名称. 更好的让读者认识到你的数据结构.
-
-
 chapter: 2
 title: Legend 图例
 date: 2016-11-3

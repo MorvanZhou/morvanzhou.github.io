@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwMDg0ODg0MA
 youtube_id: BksasCVcJiY
-description: 
+description: "关于使用 python threading 的 join 功能, 基本应用"
 chapter: 1
 title: join 功能
 date: 2016-11-3

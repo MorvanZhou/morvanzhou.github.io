@@ -2,7 +2,7 @@
 youku_id: XMTYzMDE5ODc2OA
 youtube_id: BRps4z_EJO0
 title: Pandas 选择数据
-description: pandas 中选择数据的方法有很多种,一般我们会用到这几种.
+description: pandas 中选择数据或索引的方法有很多种,一般我们会用到这几种 (loc, iloc, ix).
 author: 张能波
 date: 2016-11-3
 chapter: 3

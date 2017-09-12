@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNDc3MjgxNg
 youtube_id: EFjEPeYSlYY
-description: 
+description: "这节我们学习如何定义共享内存。只有用共享内存才能让CPU之间有交流。"
 chapter: 1
 title: 共享内存 shared memory
 date: 2016-11-3

@@ -5,6 +5,11 @@ chapter: 4
 title: Double DQN (Tensorflow)
 publish-date: 2017-03-07
 thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
+description: "接下来我们说说为什么会有 Double DQN 这种算法.
+所以我们从 Double DQN 相对于 Natural DQN (传统 DQN) 的优势说起.
+一句话概括, DQN 基于 Q-learning, Q-Learning 中有 Qmax, Qmax
+会导致 Q现实 当中的过估计 (overestimate). 而 Double DQN 就是用来解决过估计的.
+在实际问题中, 如果你输出你的 DQN 的 Q 值, 可能就会发现, Q 值都超级大. 这就是出现了 overestimate."
 ---
 
 * 学习资料:

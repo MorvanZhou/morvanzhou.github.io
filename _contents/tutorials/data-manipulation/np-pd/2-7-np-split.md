@@ -2,7 +2,7 @@
 youku_id: XMTU4ODcyODMwMA
 youtube_id: o1j-biEc1Pc
 title: Numpy array 分割
-description: numpy array 同样是可以进行分割的, 包括横向和纵向分割.
+description: 关于 Numpy array 的分割运算, 包括横向和纵向分割的不同分割功能 (split).
 author: Bhan
 date: 2016-11-3
 chapter: 2

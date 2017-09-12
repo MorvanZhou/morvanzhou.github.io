@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNDExNTQ3Ng
 youtube_id: ECb8WKVepGw
-description: 
+description: "本节包括的内容有: 线程、进程的创建和使用"
 chapter: 1
 title: 添加进程 Process
 date: 2016-11-3

@@ -5,6 +5,12 @@ chapter: 3
 title: Sarsa-lambda
 thumbnail: "/static/thumbnail/rl/8 sarsa lambda.jpg"
 publish-date: 2017-01-13
+description: "Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
+如果说 Sarsa 和 Qlearning 都是每次获取到 reward, 只更新获取到 reward 的前一步.
+那 Sarsa-lambda 就是更新获取到 reward 的前 lambda 步. lambda 是在 [0, 1] 之间取值,
+如果 lambda = 0, Sarsa-lambda 就是 Sarsa, 只更新获取到 reward 前经历的最后一步.
+如果 lambda = 1, Sarsa-lambda 更新的是 获取到 reward 前所有经历的步.
+这样解释起来有点抽象, 还是建议大家观看我制作的 什么是 Sarsa-lambda 短视频"
 ---
 
 * 学习资料:

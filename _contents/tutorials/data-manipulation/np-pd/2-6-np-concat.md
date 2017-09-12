@@ -2,7 +2,7 @@
 youku_id: XMTU4ODcwNjI1Ng
 youtube_id: ttSUtDTjDyI
 title: Numpy array 合并
-description: 
+description: 关于 Numpy 多个的 array 的合并介绍. (stack, concatenate等)
 author: Sincejuly
 date: 2016-11-3
 chapter: 2

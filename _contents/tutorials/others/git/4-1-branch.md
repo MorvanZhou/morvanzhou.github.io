@@ -1,7 +1,10 @@
 ---
 youku_id: XMTg0NDIyODU0MA
 youtube_id: 68CMwz3wMRE
-description: 
+description: "很多时候我们需要给自己或者客户用一个稳定的版本库,
+然后同时还在开发另外一个升级版. 自然而然, 我们会想到把这两者分开处理, 用户使用稳定版,
+我们开发我们的开发版. 不过 git 的做法却不一样, 它把这两者融合成了一个文件, 使用不同的分支来管理.
+所以这一节我们来说说 git 中的 分支 Branch."
 chapter: 4
 title: 分支 (branch)
 publish-date: 2016-12-01

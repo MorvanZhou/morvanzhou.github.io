@@ -5,7 +5,10 @@ title: NEAT 强化学习
 publish-date:
 thumbnail: "/static/thumbnail/"
 chapter: 4
----
+description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
+有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)
+立杆子的机器人最后学习的效果提前看"
+------------------
 
 * 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym)

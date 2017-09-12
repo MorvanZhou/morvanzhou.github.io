@@ -2,7 +2,7 @@
 youku_id: XMTU4ODY1NDQwNA
 youtube_id: T9es_lniLl0
 title: Numpy 基础运算2 
-description: 
+description:  Numpy 的常用数学运算介绍, 矩阵运算等.
 author: Sincejuly
 date: 2016-11-3
 chapter: 2

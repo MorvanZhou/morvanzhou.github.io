@@ -1,7 +1,11 @@
 ---
 youku_id: XMTg0NDYzNjUzNg
 youtube_id: mqjAMciBrdU
-description: 
+description: "想想有天在开开心心地改进代码, 突然接到老板的一个电话说要改之前的一个程序.
+怎么办? 虽然还需要很久时间才能改进完自己的代码,
+可我有强迫症, 又不想把要改的程序和自己改进代码的部分一起 commit 了.
+这时 stash 就是我的救星了. 用 stash 能先将我的那改进的部分放在一边分隔开来.
+再另外单独处理老板的任务."
 chapter: 4
 title: 临时修改 (stash)
 publish-date: 2016-12-01

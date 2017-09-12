@@ -5,6 +5,9 @@ title: Dropout 缓解过拟合
 publish-date: 2017-05-27
 thumbnail: "/static/thumbnail/torch/5.3 dropout.jpg"
 chapter: 5
+description: "过拟合让人头疼, 明明训练时误差已经降得足够低, 可是测试的时候误差突然飙升. 这很有可能就是出现了过拟合现象.
+强烈推荐通过这个动画的形式短时间了解什么是过拟合, 怎么解决过拟合.
+下面动图就显示了我们成功缓解了过拟合现象."
 ---
 
 * 学习资料:

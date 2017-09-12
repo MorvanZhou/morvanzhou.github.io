@@ -1,7 +1,7 @@
 ---
 youku_id: XMTcyMTM2NTA2NA
 youtube_id: rqR9429ajg4
-description: 使用 matplotlib 展示图片 image 的方法.
+description: 使用 matplotlib 展示图片 image 的方法. 用最简单的例子来实现 image 的画图.
 author: Hao
 chapter: 3
 title: Image 图片

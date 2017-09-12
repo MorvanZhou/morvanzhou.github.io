@@ -1,7 +1,8 @@
 ---
 youku_id: XMTg0Mzg1MjE4OA
 youtube_id: QEuqlpMOL9E
-description: 
+description: "之前我们使用 reset 的时候是针对整个版本库, 回到版本库的某个过去.
+不过如果我们只想回到某个文件的过去, 又该怎么办呢?"
 chapter: 3
 title: 回到从前 (checkout 针对单个文件)
 publish-date: 2016-12-01

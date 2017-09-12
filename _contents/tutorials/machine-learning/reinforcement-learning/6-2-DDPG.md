@@ -5,6 +5,12 @@ chapter: 6
 title: Deep Deterministic Policy Gradient (DDPG) (Tensorflow)
 thumbnail: "/static/thumbnail/rl/16 DDPG.jpg"
 publish-date: 2017-04-22
+description: "一句话概括 DDPG:
+Google DeepMind 提出的一种使用 Actor Critic 结构, 但是输出的不是行为的概率, 而是具体的行为,
+用于连续动作 (continuous action) 的预测. DDPG 结合了之前获得成功的 DQN 结构, 提高了 Actor Critic 的稳定性和收敛性.
+因为 DDPG 和 DQN 还有 Actor Critic 很相关,
+所以最好这两者都了解下, 对于学习 DDPG 很有帮助. 我的教程链接都能在上面的学习资料中找到.
+下面是这节内容的效果提前看:"
 ---
 
 * 学习资料:

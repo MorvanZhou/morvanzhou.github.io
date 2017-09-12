@@ -5,6 +5,8 @@ title: 安装
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/1-2 install.jpg"
 chapter: 1
+description: "PyTorch 暂时只支持 MacOS, Linux.
+暂不支持 Windows! (可怜的 Windows 同学们.. 又被抛弃了). 不过说不定像 Tensorflow 一样, 因为 Windows 用户的强烈要求, 他们在某天就突然支持了."
 ---
 
 * 学习资料:

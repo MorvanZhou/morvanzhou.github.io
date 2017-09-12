@@ -5,6 +5,10 @@ title: RNN 循环神经网络 (分类)
 publish-date: 2017-05-10
 thumbnail: "/static/thumbnail/torch/4.2RNN classifier.jpg"
 chapter: 4
+description: "循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
+RNN 动画简介 和
+LSTM 动画简介能让你生动理解 RNN.
+接着我们就一步一步做一个分析手写数字 MNIST 的 RNN 吧."
 ---
 
 * 学习资料:

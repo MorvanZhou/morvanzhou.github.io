@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwMjMxODc3Mg
 youtube_id: DnTn3Yx-Nvg
-description: 
+description: "代码实现功能，将数据列表中的数据传入，使用四个线程处理，将结果保存在Queue中，线程执行完后，从Queue中获取存储的结果"
 chapter: 1
 title: 储存进程结果 Queue
 date: 2016-11-3

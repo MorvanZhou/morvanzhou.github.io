@@ -1,8 +1,7 @@
 ---
 youku_id: XMTcxNjEyMDY4MA
 youtube_id: 46EsDY8V6lQ
-description: 在 matplotlib 中如何设置坐标轴的范围, 单位长度, 替代文字等等.
-
+description: 在 matplotlib 中如何设置坐标轴(axis)的范围, 单位长度, 替代文字等等.
 author: 黄伟
 chapter: 2
 title: 设置坐标轴1

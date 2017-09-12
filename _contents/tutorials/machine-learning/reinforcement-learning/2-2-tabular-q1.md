@@ -5,6 +5,10 @@ chapter: 2
 title: Q-learning 算法更新
 thumbnail: /static/thumbnail/rl/4 qlearning 1.jpg
 publish-date: 2017-01-09
+description: "上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),
+黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
+Qlearning 是一个 off-policy 的算法, 因为里面的 max action 让 Q table 的更新可以不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).
+不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用."
 ---
 
 * 学习资料:

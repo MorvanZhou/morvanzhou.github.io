@@ -5,6 +5,9 @@ title: Batch Normalization 批标准化
 publish-date: 2017-05-27
 thumbnail: "/static/thumbnail/torch/5.4 batch normalization.jpg"
 chapter: 5
+description: "批标准化通俗来说就是对每一层神经网络进行标准化 (normalize) 处理, 我们知道对输入数据进行标准化能让机器学习有效率地学习.
+如果把每一层后看成这种接受输入数据的模式, 那我们何不 批标准化 所有的层呢? 具体而且清楚的解释请看到 我制作的 什么批标准化 动画简介(推荐).
+那我们就看看下面的两个动图, 这就是在每层神经网络有无 batch normalization 的区别啦."
 ---
 
 * 学习资料:

@@ -5,6 +5,10 @@ title: 进化策略
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail/evolutionary-algorithm/31es.jpg"
 chapter: 3
+description: "进化策略 (Evolution Strategy) 后面都简称 ES. 它和 遗传算法 GA 是好兄弟. 步骤和流程都非常相似.
+如果你对遗传算法也感兴趣, 前面几节内容都是有关于遗传算法的.
+要我用一句话概括ES: 在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝. 乍一听, 怎么和 GA 是完全一样的逻辑呢?
+没关系, 我们在接下来的内容中揭晓他们的不同."
 ---
 
 

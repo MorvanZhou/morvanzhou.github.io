@@ -1,7 +1,12 @@
 ---
 youku_id: XMTg0NDU3ODYwMA
 youtube_id: fLvr4BRoJ8I
-description: 
+description: "和上节内容一样, 不过我们今天来玩一个更高级的合并方式 rebase.
+同样是合并 rebase 的做法和 merge 不一样.
+假设共享的 branch 是 branch B, 而我在 branch A 上工作, 有一天我发现branch B已经有一些小更新,
+我也想试试我的程序和这些小更新兼不兼容, 我也我想合并, 这时就可以用 rebase 来补充我的分支branch B的内容.
+补充完以后, 和后面那张图的 merge 不同, 我还是继续在 C3 上工作, 不过此时的 C3 的本质却不一样了,
+因为吸收了那些小更新. 所以我们用 C3' 来代替."
 chapter: 4
 title: rebase 分支冲突
 comments: true

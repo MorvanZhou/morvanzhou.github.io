@@ -5,6 +5,10 @@ title: Torch 或 Numpy
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/2-1 torch or numpy.jpg"
 chapter: 2
+description: "Torch 自称为神经网络界的 Numpy, 因为他能将 torch 产生的 tensor 放在 GPU 中加速运算 (前提是你有合适的 GPU), 就像 Numpy 会把 array 放在 CPU 中加速运算.
+所以神经网络的话, 当然是用 Torch 的 tensor 形式数据最好咯. 就像 Tensorflow 当中的 tensor 一样.
+当然, 我们对 Numpy 还是爱不释手的, 因为我们太习惯 numpy 的形式了. 不过 torch 看出来我们的喜爱, 他把 torch 做的和 numpy 能很好的兼容.
+比如这样就能自由地转换 numpy array 和 torch tensor 了:"
 ---
 
 * 学习资料:

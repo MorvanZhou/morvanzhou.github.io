@@ -1,8 +1,7 @@
 ---
 youku_id: XMTcxNjE2MjkwMA
 youtube_id: w83mFG5tyW4
-description: 这次会说到在我们如何移动matplotlib 中 axis 坐标轴的位置.
-
+description: 这次会说到在我们如何移动 matplotlib 中 axis 坐标轴的位置. 实现多样化的坐标轴显示.
 author: 黄伟
 chapter: 2
 title: 设置坐标轴2

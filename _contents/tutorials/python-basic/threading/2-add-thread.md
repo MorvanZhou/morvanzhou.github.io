@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwMDE5MTQ4MA
 youtube_id: EeoFahm8FOE
-description: 
+description: "本节我们来学习threading模块的一些基本操作，如获取线程数，添加线程等。首先别忘了导入模块："
 chapter: 1
 title: 添加线程 Thread
 date: 2016-11-3

@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYwNDA2Mzg2NA
 youtube_id: LIF4tn5KVu4
-description: 
+description: "多进程 Multiprocessing 和多线程 threading 类似, 他们都是在 python 中用来并行运算的.
+不过既然有了 threading, 为什么 Python 还要出一个 multiprocessing 呢?
+原因很简单, 就是用来弥补 threading 的一些劣势"
 chapter: 1
 title: 什么是 Multiprocessing
 date: 2016-11-3

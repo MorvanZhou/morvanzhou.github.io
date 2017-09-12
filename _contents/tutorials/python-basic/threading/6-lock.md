@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwMjQ4Njk4OA
 youtube_id: -q4txLdUMBM
-description: 
+description: "threading 中有线程锁, 我们能锁住变量的更新, 让它按预定的方式进行更新和交流"
 chapter: 1
 title: 线程锁 Lock
 date: 2016-11-3

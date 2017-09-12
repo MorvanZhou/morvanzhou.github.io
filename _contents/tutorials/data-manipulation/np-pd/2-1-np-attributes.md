@@ -2,7 +2,7 @@
 youku_id: XMTU4NjU0MzE4NA
 youtube_id: mf7ktBLwaJs
 title: Numpy 属性
-description: 
+description: Numpy 的几种常用属性介绍 (shape, size, ndim).
 author: abner
 date: 2016-11-3
 chapter: 2

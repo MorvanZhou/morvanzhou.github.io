@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNDMwMTU5Mg
 youtube_id: w7SG9hhhwvI
-description: 
+description: "这次我们讲进程池Pool。 进程池就是我们将所要运行的东西，放到池子里，Python会自行解决多进程的问题"
 chapter: 1
 title: 进程池 Pool
 date: 2016-11-3

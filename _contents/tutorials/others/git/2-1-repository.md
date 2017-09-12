@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0MjE3NzE1Ng
 youtube_id: obbH1hGB5GI
-description: 
+description: "我们先要确定要把哪个文件夹里的文件进行管理. 比如说我桌面上的一个叫 gitTUT 的文件夹.
+然后在 Terminal (Windows 的 git bash) 中把当前目录调到这个文件夹 gitTUT,
+我的做法是这样"
 chapter: 2
 title: 第一个版本库 Repository
 publish-date: 2016-11-30

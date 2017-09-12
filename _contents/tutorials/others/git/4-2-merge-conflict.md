@@ -1,7 +1,10 @@
 ---
 youku_id: XMTg0NDMwNjUxNg
 youtube_id: gN0E9SQmySw
-description: 
+description: "今天的情况是这样, 想象不仅有人在做开发版 dev 的更新, 还有人在修改 master 中的一些 bug.
+当我们再 merge dev 的时候, 冲突就来了. 因为 git 不知道应该怎么处理 merge 时, 在 master
+和 dev 的不同修改.
+当创建了一个分支后, 我们同时对两个分支都进行了修改. "
 chapter: 4
 title: merge 分支冲突
 publish-date: 2016-12-01

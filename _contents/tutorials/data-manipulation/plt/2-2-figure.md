@@ -1,8 +1,7 @@
 ---
 youku_id: XMTcxNjA2OTM5Mg
 youtube_id: 5IuawGiZ7_0
-description: matplotlib 的 figure 就是一个 单独的 figure 小窗口, 小窗口里面还可以有更多的小图片. 
-
+description: matplotlib 的 figure 就是一个 单独的 figure 小窗口, 小窗口里面还可以有更多的小图片. 我们用一个简单的例子来练习一下.
 author: 黄伟
 chapter: 2
 title: figure 图像

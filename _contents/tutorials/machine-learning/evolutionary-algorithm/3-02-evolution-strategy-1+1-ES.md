@@ -5,6 +5,8 @@ title: (1+1)-ES
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail/evolutionary-algorithm/32es.jpg"
 chapter: 3
+description: "(1+1)-ES 是 ES 进化策略的一种形式, 也是众多形式中比较方便有效的一种. 接下来我们来细说他们的类别.
+如果要我用一句话来概括 (1+1)-ES: 一个爸爸和一个孩子的战争"
 ---
 
 

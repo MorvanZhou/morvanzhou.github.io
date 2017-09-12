@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYwNDE4NTQ5Ng
 youtube_id: _TNIlBlV5c0
-description: 
+description: "Queue的功能是将每个核或线程的运算结果放在队里中，
+等到每个线程或核运行完毕后再从队列中取出结果，
+继续加载运算。原因很简单, 多线程调用的函数不能有返回值, 所以使用Queue存储多个线程运算的结果"
 chapter: 1
 title: 存储进程输出 Queue
 date: 2016-11-3

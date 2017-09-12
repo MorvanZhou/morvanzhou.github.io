@@ -2,7 +2,8 @@
 youku_id: XMjI1NjY5MTk4OA
 youtube_id: AANzrFOQIiM
 title: Sarsa
-description:  
+description: "今天我们会来说说强化学习中一个和 Q learning 类似的算法, 叫做 Sarsa. 在强化学习中 Sarsa 和 Q learning 及其类似, 这节内容会基于之前我们所讲的 Q learning. 所以还不熟悉 Q learning 的朋友们, 请前往我制作的 Q learning 简介 (知乎专栏). 我们会对比 Q learning, 来看看 Sarsa 是特殊在哪些方面. 和上次一样, 我们还是使用写作业和看电视这个例子. 没写完作业去看电视被打, 写完了作业有糖吃.
+"
 publish-date: 2017-01-13
 chapter: 4
 thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png

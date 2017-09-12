@@ -4,7 +4,11 @@ youtube_id: o5fjkcM_lHs
 chapter: 1
 title: Why?
 publish-date: 2017-01-01
-thumbnail: /static/thumbnail/rl/1 why.jpg
+thumbnail: "/static/thumbnail/rl/1 why.jpg"
+description: "强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
+和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
+AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
+强化学习也是让你的程序从对当前环境完全陌生, 成长为一个在环境中游刃有余的高手."
 ---
 * 学习资料:
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)

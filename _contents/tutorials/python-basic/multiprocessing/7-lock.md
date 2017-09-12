@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNTMwMTcwOA
 youtube_id: VJBSkVhHX3g
-description: 
+description: "这次我们讲进程锁的运用。让我们看看没有加进程锁时会产生什么样的结果。"
 chapter: 1
 title: 进程锁 Lock
 date: 2016-11-3

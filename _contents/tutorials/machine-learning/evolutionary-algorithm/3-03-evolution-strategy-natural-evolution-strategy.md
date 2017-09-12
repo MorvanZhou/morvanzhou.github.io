@@ -5,6 +5,8 @@ title: Natural Evolution Strategy
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail/evolutionary-algorithm/33es.jpg"
 chapter: 3
+description: "Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下降法,
+如果要我用一句话来概括 NES: 生宝宝, 用好宝宝的梯度辅助找到前进的方向"
 ---
 
 
