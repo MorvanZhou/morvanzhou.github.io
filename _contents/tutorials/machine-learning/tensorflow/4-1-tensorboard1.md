@@ -14,8 +14,18 @@ author: 灰猫
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
 
+
+本节内容包括:
+
+* [效果](#result)
+* [搭建图纸](#graph)
+* [可能会遇到的问题](#problems)
+
 学会用 Tensorflow 自带的 tensorboard 去可视化我们所建造出来的神经网络是一个很好的学习理解方式.
 用最直观的流程图告诉你你的神经网络是长怎样,有助于你发现编程中间的问题和疑问.
+
+<h4 class="tut-h4-pad" id="result">效果</h4>
+
 
 好，我们开始吧。
 
@@ -32,6 +42,8 @@ author: 灰猫
 
 好，通过阅读代码和之前的图片我们大概知道了此处是有一个输入层（inputs），一个隐含层（layer），还有一个输出层（output）
 现在可以看看如何进行可视化.
+
+<h4 class="tut-h4-pad" id="graph">搭建图纸</h4>
 
 首先从 `Input` 开始：
 
@@ -192,13 +204,17 @@ tensorboard --logdir logs
 
 同时将终端中输出的网址复制到浏览器中，便可以看到之前定义的视图框架了。
 
+tensorboard 还有很多其他的参数，希望大家可以多多了解,
+可以使用 `tensorboard --help` 查看tensorboard的详细参数
+最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
+
+<h4 class="tut-h4-pad" id="problems">可能会遇到的问题</h4>
+
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
 
 **同时注意, 如果使用 `http://0.0.0.0:6006` 或者 tensorboard 中显示的网址打不开的朋友们,
 请使用 `http://localhost:6006`, 大多数朋友都是这个问题.**
 
-tensorboard 还有很多其他的参数，希望大家可以多多了解,
-可以使用 `tensorboard --help` 查看tensorboard的详细参数
-最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
+请确保你的 tensorboard 指令是在你的 logs 文件根目录执行的. 如果在其他目录下, 比如 `Desktop` 等, 可能不会成功看到图.
 
