@@ -2,7 +2,7 @@
 youku_id: XMjk3MDExOTUwNA
 youtube_id: 9ExCPd918Yk
 title: 遗传算法
-description: 使用 Python 来实现遗传算法的简单教学. 如果让我用一句话概括遗传算法: 在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝
+description: 使用 Python 来实现遗传算法的简单教学. 如果让我用一句话概括遗传算法, 在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝
 publish-date: 2017-08-12
 thumbnail: "/static/thumbnail/evolutionary-algorithm/21ga.jpg"
 chapter: 2

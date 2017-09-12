@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNzAwNTY0NA
 youtube_id: lVcM_V3KqOE
-description: 
+description: 使用 python 和 tkinter 来做简单的窗口程序. entry 和 text 练习.
 chapter: 2
 title: Entry & Text 输入, 文本框
 date: 2016-11-3
@@ -26,7 +26,7 @@ window = tk.Tk()
 window.title('my window')
 
 ##窗口尺寸
-window.geometry('200*200')
+window.geometry('200x200')
 
 ##显示出来
 windo.mainloop()

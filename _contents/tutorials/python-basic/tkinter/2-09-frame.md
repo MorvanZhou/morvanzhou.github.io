@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYxMDUyMDEyNA
 youtube_id: WoHYMSlRdrU
-description: 
+description: 使用 python 和 tkinter 来做简单的窗口程序. frame 练习.
 chapter: 2
 title: Frame 框架
 date: 2016-11-3

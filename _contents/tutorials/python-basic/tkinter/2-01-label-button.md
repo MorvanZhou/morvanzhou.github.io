@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYwNTc3OTE3Mg
 youtube_id: vMAK1oJAtkQ
-description: 
+description: 使用 python 和 tkinter 来做简单的窗口程序. label button 按钮 练习.
 chapter: 2
 title: Label & Button 标签和按钮
 date: 2016-11-3
