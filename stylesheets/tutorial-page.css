@@ -187,15 +187,15 @@ padding: 0 0.5em;
 top: 5em;
 background-color:#FAFAFA;
 z-index: 1;
-
+width: 19%;
 }
 
 .tut-side-menu .ads-container {
 position: absolute;
 top: 60em;
-background-color: black;
-width: 100%;
-display: none;
+width: 19%;
+height: 400px;
+z-index: 0;
 }
 
 @media screen and (max-width: 40.5em) {
