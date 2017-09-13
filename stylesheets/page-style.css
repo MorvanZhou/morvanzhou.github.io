@@ -360,7 +360,7 @@ padding: 3em 4em;
 
 /* ====== video ===== */
 .video-container {
-z-index: 1;
+z-index: 2;
 position: relative;
 padding-bottom: 56.25%;
 padding-top:0;
@@ -393,6 +393,7 @@ box-shadow: 0px 0px 20px 0px #888888;
 /* ======== bottom donation ======== */
 #bottom-donation-section {
 padding: 3em;
+clear: both;
 }
 
 #bottom-donation-title {

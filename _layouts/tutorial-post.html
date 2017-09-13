@@ -112,16 +112,18 @@ layout: with-nav
 
   <!-- page nav section -->
   <div class="tut-side-menu">
-    {% if page.post-headings %}
+    <div class="side-nav">
+      <hr>
+      {% if page.post-headings %}
       <strong>知道你想跳着看</strong>
       <ul>
         {% for heading in page.post-headings %}
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
-    {% endif %}
-
-    <hr>
+      {% endif %}
+      <hr>
+    </div>
 
     <!-- ads -->
     <div class="ads-container">
@@ -137,6 +139,7 @@ layout: with-nav
       </script>
     </div>
   </div>
+
 
 
 </main>

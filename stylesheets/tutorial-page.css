@@ -168,30 +168,34 @@ main.tut-post {
 margin: 0 auto;
 background-color:#FAFAFA;
 box-shadow: 0px 0px 30px 5px  #888888;
+display: flex;
+width: 100%;
 }
 
 .tut-main-content {
 width: 75%;
-display: inline-block;
 }
 
 .tut-main-content-pad {
 padding: 0 2em;
 }
 
-.tut-side-menu {
-display: inline-block;
+
+.side-nav {
 position: fixed;
-width: 19%;
-top: 8em;
-margin: 0 0.3em;
-padding: 0 0.3em;
+padding: 0 0.5em;
+top: 5em;
 background-color:#FAFAFA;
+z-index: 1;
+
 }
 
 .tut-side-menu .ads-container {
-padding: 2em 0;
-height: 400px;
+position: absolute;
+top: 60em;
+background-color: black;
+width: 100%;
+display: none;
 }
 
 @media screen and (max-width: 40.5em) {
@@ -210,16 +214,12 @@ height: 400px;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  main.tut-post {
-    width: 100%;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   main.tut-post {
   max-width: 1200px;
   }
-  ads-container, main.tut-post .video-container, main.tut-post .video-container iframe, main.tut-post .video-container object, main.tut-post .video-container embed {
+  main.tut-post {
   max-width: 1200px;
   max-height: calc(1200/16*9)px;
   margin: 0 auto;
