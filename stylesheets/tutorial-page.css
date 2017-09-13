@@ -190,7 +190,8 @@ background-color:#FAFAFA;
 }
 
 .tut-side-menu .ads-container {
-height: 300px;
+padding: 2em 0;
+height: 400px;
 }
 
 @media screen and (max-width: 40.5em) {
