@@ -7,7 +7,14 @@ title: 变量 variable
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - 创建主窗口
+  - 创建一个label用于显示
+  - 创建一个方法用于按钮的点击事件
+  - 创建一个按钮
+  - 创建一个Listbox和变量var2，并将var2的值赋给Listbox
 ---
+{% assign post-heading-count = -1 %}
 
 本节主要内容：
 

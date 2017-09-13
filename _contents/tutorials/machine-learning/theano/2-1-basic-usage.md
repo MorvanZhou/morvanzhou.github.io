@@ -5,12 +5,17 @@ title: 基本用法
 description: 在theano 中学会定义矩阵 matrix 和功能 function 是一个比较重要的事, 我们在这里简单的提及了一下在 theano 将要运用到的东西.  
 author: 缘
 chapter: 2
+post-headings:
+  - Theano 的基本用法
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano4_basic_usage.py)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 在 theano 中学会定义矩阵 `matrix` 和功能 `function` 是一个比较重要的事, 我们在这里简单的提及了一下在 theano 将要运用到的东西.  
 
 theano 和 tensorflow 类似，都是基于建立神经网络每个组件，在组件联系起来，数据放入组件，得到结果。

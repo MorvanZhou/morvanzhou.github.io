@@ -6,7 +6,8 @@ description: Numpy 的几种常用属性介绍 (shape, size, ndim).
 author: abner
 date: 2016-11-3
 chapter: 2
-
+post-headings:
+  - numpy 的几种属性
 ---
 {% assign post-heading-count = -1 %}
 
@@ -17,6 +18,7 @@ chapter: 2
 - `size`：元素个数
 
 使用`numpy`首先要导入模块
+
 ```python
 import numpy as np #为了方便使用numpy 采用np简写
 ```
@@ -30,6 +32,9 @@ array([[1, 2, 3],
        [2, 3, 4]])
 """
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着我们看看这几种属性的结果:
 

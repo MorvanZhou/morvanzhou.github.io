@@ -7,17 +7,20 @@ title: zip lambda map
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - zip
+  - lambda
+  - map
+
 ---
-
-本节主要内容：
-
-- [zip](#zip)
-- [lambda](#lambda)
-- [map](#map)
+{% assign post-heading-count = -1 %}
 
 
 
-<h4 class="tut-h4-pad" id="zip">zip</h4>
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `zip`函数接受任意多个（包括0个和1个）序列作为参数，**合并**后返回一个`tuple`列表,请看示例：
 
@@ -49,7 +52,9 @@ for i,j in zip(a,b):
 
 
 
-<h4 class="tut-h4-pad" id="lambda">lambda</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `lambda`定义一个简单的函数，实现简化代码的功能，看代码会更好理解。
 
@@ -68,7 +73,9 @@ y=6
 """
 ```
 
-<h4 class="tut-h4-pad" id="map">map</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `map`是把函数和参数绑定在一起。
 

@@ -7,7 +7,16 @@ title: 元组 列表
 date: 2016-11-3
 comments: true
 author: Hao
+post-headings:
+  - Tuple
+  - List
+  - 两者对比
 ---
+{% assign post-heading-count = -1 %}
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 叫做 `tuple`，用小括号、或者无括号来表述，是一连串有顺序的数字。
 
@@ -16,11 +25,19 @@ a_tuple = (12, 3, 5, 15 , 6)
 another_tuple = 12, 3, 5, 15 , 6
 ```
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 而`list`是以中括号来命名的:
 
 ```python
 a_list = [12, 3, 67, 7, 82]
 ```
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 他们的元素可以一个一个地被迭代、输出、运用、定位取值:
 

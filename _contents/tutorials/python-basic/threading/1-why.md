@@ -6,6 +6,12 @@ chapter: 1
 title: 什么是多线程 Threading
 date: 2016-11-3
 author: Jeff
+post-headings:
+  - 简短介绍
 ---
+{% assign post-heading-count = -1 %}
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 多线程是加速程序计算的有效方式，Python的多线程模块threading上手快速简单，从这节开始我们就教大家如何使用它。

@@ -7,6 +7,7 @@ chapter: 3
 title: 优化器 optimizer
 date: 2016-11-3
 post-headings:
+  - 各种不同的优化器
 ---
 {% assign post-heading-count = -1 %}
 
@@ -15,6 +16,9 @@ post-headings:
   * 机器学习-简介系列 [Optimizer]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 本次课程，我们会讲到`Tensorflow`里面的优化器。
 

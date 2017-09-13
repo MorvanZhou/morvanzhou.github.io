@@ -5,14 +5,18 @@ title: 神经网络在做什么
 description: Theano 能做的机器学习种类一般分两种, 一种是回归学习,一种是分类学习. 大家可以下载代码自己看看theano, 神经网络是如何进行分类学习的.
 author: 缘
 chapter: 1
-
+post-headings:
+  - 动画演示
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py)
   * [本例的代码讲解教程]({% link _contents/tutorials/machine-learning/theano/3-1-layer.md %})
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 今天我们会用图像呈现神经网络所做的事情.
 我们会让 theano 做出来的的神经网络拟合上这些数据点. 从中学习数据点的规律, 并能预测这些规律.
 很多时候, 我们遇到的会是一个数据拟合问题, 比如我们有这样一些数据点:

@@ -8,13 +8,21 @@ chapter: 1
 title: 存储进程输出 Queue
 date: 2016-11-3
 author: Leoliao
+post-headings:
+  - 把结果放在 Queue 里
+  - 主函数
+  - 完整的代码
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing3_queue.py)
 
 Queue的功能是将每个核或线程的运算结果放在队里中，
 等到每个线程或核运行完毕后再从队列中取出结果，
 继续加载运算。原因很简单, 多线程调用的函数不能有返回值, 所以使用Queue存储多个线程运算的结果
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 定义一个被多线程调用的函数，`q` 就像一个队列，用来保存每次函数运行的结果
 
@@ -27,7 +35,8 @@ def job(q):
     q.put(res)    #queue
 ```
 
-#### 主函数
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 定义一个多线程队列，用来存储结果
 
@@ -66,7 +75,9 @@ res2 = q.get()
 print(res1+res2)
 ```
 
-#### 完整的代码
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import multiprocessing as mp

@@ -7,6 +7,7 @@ chapter: 2
 title: Placeholder 传入值
 date: 2016-11-3
 post-headings:
+  - 简单运用
 ---
 {% assign post-heading-count = -1 %}
 
@@ -14,6 +15,8 @@ post-headings:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow8_feeds.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这一次我们会讲到 Tensorflow 中的 `placeholder` ,  `placeholder` 是 Tensorflow 中的占位符，暂时储存变量.
 

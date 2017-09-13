@@ -7,19 +7,17 @@ title: 安装
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - Mac 安装
+  - Windows 安装
+  - 检查安装是否成功
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容：
 
-- [Mac 安装](#mac)
 
-- [Windows 安装](#windows)
-
-- [检查安装是否成功？](#check)
-
-  ​
-
-<h4 class="tut-h4-pad" id="mac">Mac安装</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Mac用户安装 python会比较方便,直接到[官网](www.python.org)下载安装包，
 下载自己需要的版本，默认路径安装即可。之后的某节会讲到如何给Mac中的python安装其他模块，
@@ -27,7 +25,8 @@ Mac用户安装 python会比较方便,直接到[官网](www.python.org)下载安
 
 
 
-<h4 class="tut-h4-pad" id="windows">Windows 安装</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 请到[官网](www.python.org)下载需要的版本的安装包，
 下载所需(注意自己的系统是32位还是64位)，安装路径最好选择默认, 不然对于新手容易出现各种问题。
@@ -41,7 +40,8 @@ Windows 安装附加要点:
 pip3 设置环境变量: 
 `C:\Users\**你的用户名**\AppData\Local\Programs\Python\Python35-32\Scripts;`
 
-<h4 class="tut-h4-pad" id="check">检测安装是否成功？</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 打开`idle`, `print(1)` 如果系统输出`1`,则表明安装成功.
 

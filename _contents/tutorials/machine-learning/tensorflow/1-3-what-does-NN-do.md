@@ -7,11 +7,16 @@ title: 神经网络在干嘛
 date: 2016-11-3
 author: 张乐
 post-headings:
+  - 拟合曲线
+  - 拟合参数
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * 本节的代码会在 [这一节]({% link _contents/tutorials/machine-learning/tensorflow/3-1-add-layer.md %}) 中一一实现.
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 机器学习 其实就是让电脑不断的尝试模拟已知的数据.
 他能知道自己拟合的数据离真实的数据差距有多远,
@@ -27,7 +32,9 @@ post-headings:
 
 <img class='course-image' src='/static/results/tensorflow/1_3_2.png'>
 
-#### 举另外一个例子:
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 
 如果红色曲线的表达式为：`y = a*x + b`
 其中`x`代表`inputs`, 

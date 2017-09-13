@@ -6,8 +6,12 @@ chapter: 1
 title: 线程锁 Lock
 date: 2016-11-3
 author: Leoliao
+post-headings:
+  - 不使用 Lock 的情况
+  - 使用 Lock 的情况
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread6_lock.py)
 
 
@@ -17,7 +21,8 @@ author: Leoliao
 import threading
 ```
 
-#### 不使用 Lock 的情况
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 函数一：全局变量A的值每次加1，循环10次，并打印
 
@@ -108,7 +113,8 @@ job1 110
 可以看出，打印的结果非常混乱
 
 
-#### 使用Lock
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 lock在不同线程使用同一共享内存时，能够确保线程之间互不影响，使用lock的方法是，
 在每个线程执行运算修改共享内存之前，执行`lock.acquire()`将共享内存上锁，

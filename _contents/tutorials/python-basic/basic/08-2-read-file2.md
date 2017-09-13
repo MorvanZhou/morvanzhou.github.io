@@ -7,14 +7,16 @@ title: 读写文件 2
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - 给文件增加内容
+  - 总结
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容：
 
-* [给文件增加内容](#append)
-* [总结](#summary)
 
-<h4 class="tut-h4-pad" id="append">给文件增加内容</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们先保存一个已经有3行文字的 "my file.txt" 文件, 文件的内容如下:
 
@@ -41,7 +43,8 @@ This is appended file.
 #运行后再去打开文件，会发现会增加一行代码中定义的字符串
 ```
 
-<h4 class="tut-h4-pad" id="summary">总结</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 - 掌握 append 的用法 ：`open('my file.txt','a')` 打开类型为 `a` ，`a` 即表示 append
 - 可以思考，如果用 `w` 形式打开，运行后会发生什么呢？

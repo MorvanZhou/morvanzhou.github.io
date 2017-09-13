@@ -7,12 +7,15 @@ author: C.Cui
 chapter: 3
 date: 2016-11-3
 post-headings:
+  - matplotlib 可视化
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano10_regression_visualization)
   
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 接着上一节课的内容，这一小节，我们将要对我们建立的神经网络模型的输出结果在不同的训练阶段可视化（visualization）。
 建筑和训练神经网络的步骤和上次内容一样, 不同的是, 这次我们要有可视化的效果。 

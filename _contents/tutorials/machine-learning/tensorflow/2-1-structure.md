@@ -7,9 +7,14 @@ title: 处理结构
 date: 2016-11-3
 author: 张乐
 post-headings:
+  - 计算图纸
+  - Tensor 张量意义
 ---
 {% assign post-heading-count = -1 %}
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 Tensorflow 首先要定义神经网络的结构,
 然后再把数据放入结构当中去运算和 training.
@@ -25,10 +30,13 @@ Tensorflow 首先要定义神经网络的结构,
 即张量（tensor). 训练模型时tensor会不断的从数据流图中的一个节点flow到另一节点,
 这就是TensorFlow名字的由来.
 
-- 张量（tensor):
-  * 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 ```[1]``` 
-  * 一阶张量为 向量 (vector), 比如 一维的 ```[1, 2, 3]```
-  * 二阶张量为 矩阵 (matrix), 比如 二维的  ```[[1, 2, 3],[4, 5, 6],[7, 8, 9]]```
-  * 以此类推, 还有 三阶 三维的 ...
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+**张量（Tensor)**:
+* 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 ```[1]```
+* 一阶张量为 向量 (vector), 比如 一维的 ```[1, 2, 3]```
+* 二阶张量为 矩阵 (matrix), 比如 二维的  ```[[1, 2, 3],[4, 5, 6],[7, 8, 9]]```
+* 以此类推, 还有 三阶 三维的 ...
 
 

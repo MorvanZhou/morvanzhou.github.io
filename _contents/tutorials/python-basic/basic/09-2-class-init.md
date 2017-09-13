@@ -7,14 +7,17 @@ title: class 类 init 功能
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - init
+  - 总结
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容:
 
-- [init](#init)
-- [总结](#conclusion)
 
-<h4 class="tut-h4-pad" id="init">init</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `__init__`可以理解成初始化`class`的变量，取自英文中`initial` 最初的意思.可以在运行时，给初始值附值，
 
@@ -78,6 +81,8 @@ class Calculator:
 """"
 ```
 
-<h4 class="tut-h4-pad" id="conclusion">总结</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `def __init__(self,name,price,height,width,weight):`  注意，这里的下划线是双下划线

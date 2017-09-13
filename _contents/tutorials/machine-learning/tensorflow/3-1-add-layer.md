@@ -7,14 +7,17 @@ chapter: 3
 title: 例子3 添加层 def add_layer()
 date: 2016-11-3
 post-headings:
-
+  - 定义 add_layer()
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow10_def_add_layer.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 在 Tensorflow 里定义一个添加层的函数可以很容易的添加神经层,为之后的添加省下不少时间.
 
 神经层里常见的参数通常有`weights`、`biases`和激励函数。

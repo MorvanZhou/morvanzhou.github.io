@@ -8,15 +8,17 @@ date: 2016-11-3
 comments: true
 author: 高峰
 author-link: http://gaufung.info/
+post-headings:
+  - 基本使用
+  - 实例
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容：
-* [基本使用](#m1)
-* [实例](#m2)
 
 上一讲主要学习了 `if else` 内容，本讲将要学习最后一个语句 `elif`(`else if`)。
 
-<h4 class="tut-h4-pad" id="m1">基本使用</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 if condition1:
@@ -34,7 +36,8 @@ else:
 如果有多个判断条件，那可以通过 `elif` 语句添加多个判断条件，一旦某个条件为 `True`，那么将执行对应的 `expression`。
 并在之代码执行完毕后**跳出**该 `if-elif-else` 语句块，往下执行。
 
-<h4 class="tut-h4-pad" id="m2">实例</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 x = 4

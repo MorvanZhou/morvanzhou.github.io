@@ -7,8 +7,17 @@ title: list 列表
 date: 2016-11-3
 comments: true
 author: Hao
+post-headings:
+  - List 添加
+  - List 移除
+  - List 索引
+  - List 排序
 ---
+{% assign post-heading-count = -1 %}
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 列表是一系列有序的数列，有一系列自带的功能， 例如：
 
@@ -28,6 +37,10 @@ print(a)
 # [1, 0, 2, 3, 4, 1, 1, -1]
 ```
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 删除项：
 
 ```python
@@ -36,6 +49,10 @@ a.remove(2) # 删除列表中第一个出现的值为2的项
 print(a)
 # [1, 3, 4, 1, 1, -1]
 ```
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 显示特定位：
 
@@ -72,6 +89,10 @@ a = [4,1,2,3,4,1,1,-1]
 print(a.count(-1))
 # 1
 ```
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 对列表的项排序：
 

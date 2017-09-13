@@ -6,27 +6,36 @@ chapter: 1
 title: 添加进程 Process
 date: 2016-11-3
 author: Leoliao
+post-headings:
+  - 导入线程进程标准模块
+  - 定义一个被线程和进程调用的函数
+  - 创建线程和进程
+  - 完整的线程和进程创建使用对比代码
+  - 运用
 ---
+{% assign post-heading-count = -1 %}
 
 
-本节包括的内容有
-- 线程、进程的创建和使用
 
-#### 导入线程、进程标准模块
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import multiprocessing as mp
 import threading as td
 ```
 
-#### 定义一个被线程和进程调用的函数
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 def job(a,d):
     print('aaaaa')
 ```
 
-#### 创建线程和进程
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
 ```python
@@ -50,7 +59,8 @@ t1.join()
 p1.join()
 ```
 
-#### 完整的线程和进程创建使用对比代码
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 import multiprocessing as mp
@@ -68,7 +78,9 @@ p1.join()
 ```
 从上面的使用对比代码可以看出，线程和进程的使用方法相似
 
-#### 运用
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在运用时需要添加上一个定义main函数的语句
 

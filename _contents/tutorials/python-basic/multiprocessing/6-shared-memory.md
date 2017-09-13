@@ -6,14 +6,20 @@ chapter: 1
 title: 共享内存 shared memory
 date: 2016-11-3
 author: Ryan Gao
+post-headings:
+  - Shared Value
+  - Shared Array
+  - 参考数据形式
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * Python [C type code种类](https://docs.python.org/3.5/library/array.html)
 
 
 这节我们学习如何定义共享内存。只有用共享内存才能让CPU之间有交流。
 
-#### Value
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 我们可以通过使用`Value`数据存储在一个共享的内存表中。
 
@@ -26,7 +32,8 @@ value2 = mp.Value('d', 3.14)
 
 其中`d`和`i`参数用来设置数据类型的，`d`表示一个双精浮点类型，`i`表示一个带符号的整型。更多的形式请查看本页最后的表.
 
-#### Array
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 在Python的`mutiprocessing`中，有还有一个`Array`类，可以和共享内存交互，来实现在进程之间共享数据。
 
@@ -48,7 +55,8 @@ TypeError: an integer is required
 ```
 
 
-**附录**
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 各参数代表的数据类型
 

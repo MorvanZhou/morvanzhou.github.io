@@ -6,12 +6,17 @@ publish-date: 2016-10-29
 chapter: 1
 description: Keras 是一个兼容 Theano 和 Tensorflow 的神经网络高级包, 用他来组件一个神经网络非常的快速, 几条语句就搞定了. 而且广泛的兼容性能使 Keras 在 Windows 和 MacOS 或者 Linux 上穿梭自如.
 post-headings:
+  - Why?
 ---
+{% assign post-heading-count = -1 %}
 
 学习资料:
   * Tensorflow [教程](/tutorials/machine-learning/tensorflow/)
   * Theano [教程](/tutorials/machine-learning/theano/)
   * 机器学习-简介系列 [链接](/tutorials/machine-learning/ML-intro/)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果说 Tensorflow 或者 Theano 神经网络方面的巨人.
 那 Keras 就是站在巨人肩膀上的人. Keras 是一个兼容 Theano 和 Tensorflow 的神经网络高级包, 

@@ -7,12 +7,16 @@ title: 选择学习方法
 author: Alice
 date: 2016-11-3
 post-headings:
+  - 看图选方法
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * 选择模型 [流程图](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
-  
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 安装完 Sklearn 后，不要直接去用，先了解一下都有什么模型方法，然后选择适当的方法，来达到你的目标。
 
 Sklearn 官网提供了一个流程图，蓝色圆圈内是判断条件，绿色方框内是可以选择的算法：

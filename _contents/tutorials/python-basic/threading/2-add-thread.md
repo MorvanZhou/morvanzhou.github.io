@@ -6,9 +6,15 @@ chapter: 1
 title: 添加线程 Thread
 date: 2016-11-3
 author: Jeff
+post-headings:
+  - 添加线程
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread2_add_thread.py)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 本节我们来学习threading模块的一些基本操作，如获取线程数，添加线程等。首先别忘了导入模块：
 

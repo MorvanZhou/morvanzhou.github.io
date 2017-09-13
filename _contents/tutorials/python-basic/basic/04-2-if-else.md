@@ -8,16 +8,19 @@ date: 2016-11-3
 comments: true
 author: 高峰
 author-link: http://gaufung.info/
+post-headings:
+  - 基本使用
+  - 实例
+  - 高级主题
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容：
-* [基本使用](#m1)
-* [实例](#m2)
-* [高级主题](#m3)
 
 上一讲我们学习了 `if` 语句，这一样我们将要学习 `if else` 语句。
 
-<h4 class="tut-h4-pad" id="m1">基本使用</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 if condition:
@@ -29,7 +32,9 @@ else:
 当 `if` 判断条件为 `True`,执行 `true_expressions` 语句; 如果为 `False`，将执行 `else` 的内部的
 `false_expressions`。
 
-<h4 class="tut-h4-pad" id="m2">实例</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 x = 1
@@ -55,7 +60,9 @@ else:
 
 在这里，因为 `condition` 条件为 `True`, 那么将会输出 `x is greater than y`。
 
-<h4 class="tut-h4-pad" id="m3">高级主题</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 对于从其他编程语言转过来的同学一定非常想知道 python 语言中的三目操作符怎么使用，很遗憾的是 python
 中并没有类似 `condition ? value1 : value2 ` 三目操作符。然后现实中很多情况下我们只需要简单的判断

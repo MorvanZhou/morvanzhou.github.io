@@ -7,15 +7,17 @@ title: 基础数学运算
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - 基本的加减乘除
+  - ^ 与 **
+  - 取余数 %
 ---
+{% assign post-heading-count = -1 %}
 
-本节主要内容：
 
-- [基本的加减乘除](#basic)
-- ["^" 与 "**"](#square)
-- [取余数 “%”](#remainder)
 
-<h4 class="tut-h4-pad" id="basic">基本的加减乘除</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `python`可以直接运算数字，也可以加`print` 进行运算.
 
@@ -30,7 +32,8 @@ author: Huanyu Mao
 1.3333333333333333
 ```
 
-<h4 class="tut-h4-pad" id="square">"^" 与 "**"</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `python`当中`^`符号，区别于`Matlab`，在`python`中，`^`用两个`**`表示，如3的平方为`3**2` , `**3`表示立方，`**4`表示4次方，依次类推
 
@@ -50,7 +53,8 @@ author: Huanyu Mao
 
 ```
 
-<h4 class="tut-h4-pad" id="remainder">取余数 “%”</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 余数符号为`“%”`,见代码.
 

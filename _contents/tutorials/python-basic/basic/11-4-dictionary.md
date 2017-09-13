@@ -7,8 +7,15 @@ title: dictionary 字典
 date: 2016-11-3
 comments: true
 author: Hao
+post-headings:
+  - 创建字典
+  - 字典存储类型
 ---
+{% assign post-heading-count = -1 %}
 
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 如果说`List`是有顺序地输出输入的话，那么字典的存档形式则是无需顺序的， 我们来看一个例子：
 
@@ -32,6 +39,10 @@ print(d1)   # {'orange': 3, 'apple': 1}
 d1['b'] = 20
 print(d1)   # {'orange': 3, 'b': 20, 'pear': 2, 'apple': 1}
 ```
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 以上的例子可以对列表中的元素进行增减。在打印出整个列表时，可以发现各个元素并没有按规律打印出来，进一步验证了字典是一个无序的容器。
 

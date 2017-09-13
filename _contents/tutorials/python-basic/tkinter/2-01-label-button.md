@@ -5,12 +5,17 @@ description: 使用 python 和 tkinter 来做简单的窗口程序. label button
 chapter: 2
 title: Label & Button 标签和按钮
 date: 2016-11-3
+post-headings:
+  - 窗口主体框架
+  - 窗口内容
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk2_label_button.py)
 
 
-#### 窗口主体框架
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 每一个 tkinter 应用的主体框架都可以包含下面这部分. 定义 `window` 窗口 和 `window`的一些属性, 然后书写窗口内容, 最后执行`window.mainloop`让窗口活起来.
 
@@ -26,7 +31,8 @@ window.geometry('200x100')
 window.mainloop()
 ```
 
-#### 窗口内容
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这次我们会建立一个用来描述的标签 `tk.Label`, 比如:
 

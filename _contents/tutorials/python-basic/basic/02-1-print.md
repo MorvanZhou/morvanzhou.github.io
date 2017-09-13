@@ -7,18 +7,19 @@ title: print 功能
 date: 2016-11-3
 comments: true
 author: Huanyu Mao
+post-headings:
+  - print 字符串
+  - print 字符串叠加
+  - 简单运算
 ---
-
-
-本节主要内容：
-
-- [print 字符串](#string)
-- [print 字符串叠加](#combine)
-- [简单运算](#calculate)
+{% assign post-heading-count = -1 %}
 
 
 
-<h4 class="tut-h4-pad" id="string">print 字符串</h4>
+
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 `python` 中 `print` 字符串 要加`''`或者`""`
 
@@ -33,7 +34,8 @@ hello world 2
 '''
 ```
 
-<h4 class="tut-h4-pad" id="combine">print 字符串叠加</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 可以使用 `+` 将两个字符串链接起来, 如以下代码.
 
@@ -44,7 +46,8 @@ Hello world Hello Hong Kong
 """
 ```
 
-<h4 class="tut-h4-pad" id="calculate">简单运算</h4>
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 可以直接`print` 加法`+`,减法`-`,乘法`*`,除法`/`.  注意：字符串不可以直接和数字相加，否则出现错误。
 

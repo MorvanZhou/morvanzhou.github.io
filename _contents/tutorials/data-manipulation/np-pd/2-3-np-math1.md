@@ -6,7 +6,8 @@ description: Numpy 的基础数学运算介绍, 涉及到矩阵的加减等.
 date: 2016-11-3
 chapter: 2
 author: Sincejuly
-
+post-headings:
+  - numpy 的几种基本运算
 ---
 {% assign post-heading-count = -1 %}
 
@@ -18,6 +19,9 @@ import numpy as np
 a=np.array([10,20,30,40])   # array([10, 20, 30, 40])
 b=np.arange(4)              # array([0, 1, 2, 3])
 ```
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 上述代码中的 `a` 和 `b` 是两个属性为 array 也就是矩阵的变量，而且二者都是1行4列的矩阵，
 其中b矩阵中的元素分别是从0到3。

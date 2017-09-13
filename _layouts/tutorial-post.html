@@ -27,9 +27,8 @@ layout: with-nav
     <!-- video section -->
     {% include embedded-video.html %}
 
-
+    <!-- upper page navigation -->
     <div class="pad-main">
-      <!-- upper page navigation -->
       {% include prev-next-post.html %}
     </div>
 
@@ -47,7 +46,7 @@ layout: with-nav
       </script>
     </div>
 
-
+    <!-- main content -->
     <div class="tut-main-content-pad">
       <hr>
       <h1>{{page.title}}</h1>
@@ -58,6 +57,11 @@ layout: with-nav
           作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
         {% endif %}
         编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
+        {% if page.publish-date %}
+          {{page.publish-date}}
+        {% else %}
+          2016-11-03
+        {% endif %}
       </p>
 
       {{content}}
@@ -76,8 +80,8 @@ layout: with-nav
       <hr>
     </div>
 
+    <!-- lower page navigation -->
     <div class="pad-main">
-      <!-- lower page navigation -->
       {% include prev-next-post.html %}
     </div>
 
@@ -94,26 +98,46 @@ layout: with-nav
       </script>
     </div>
 
+    <!-- comment section -->
     <div class="pad-main">
-      <!-- comment section -->
       {% include comment-section.html %}
+    </div>
+
+    <!-- menu button -->
+    <div class="tut-content-menu">
+      <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
+        <img src="/static/img/icon/tutorial_contents_icon.png"></a>
     </div>
   </div>
 
+  <!-- page nav section -->
   <div class="tut-side-menu">
     {% if page.post-headings %}
-      知道你想跳着看:
+      <strong>知道你想跳着看</strong>
       <ul>
         {% for heading in page.post-headings %}
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
     {% endif %}
+
+    <hr>
+
+    <!-- ads -->
+    <div class="ads-container">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- tut-page-side -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="1501228408"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </div>
 
-  <div class="tut-content-menu">
-    <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
-      <img src="/static/img/icon/tutorial_contents_icon.png"></a>
-  </div>
+
 </main>
 

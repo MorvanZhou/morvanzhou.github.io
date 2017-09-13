@@ -7,12 +7,16 @@ chapter: 2
 title: Variable 变量
 date: 2016-11-3
 post-headings:
+  - 简单运用
 ---
 {% assign post-heading-count = -1 %}
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow7_variable.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这节课我们学习如何在 Tensorflow 中使用 `Variable` .
 

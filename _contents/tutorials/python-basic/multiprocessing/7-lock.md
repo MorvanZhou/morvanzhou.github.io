@@ -6,13 +6,18 @@ chapter: 1
 title: 进程锁 Lock
 date: 2016-11-3
 author: Ryan Gao
+post-headings:
+  - 不加进程锁
+  - 加进程锁
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing7_lock.py)
 
 这次我们讲进程锁的运用。
 
-#### 不加进程锁
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 让我们看看没有加进程锁时会产生什么样的结果。
 
@@ -60,7 +65,8 @@ if __name__ == '__main__':
 
 我们可以看到，进程1和进程2在相互抢着使用共享内存`v`。
 
-#### 进程锁
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 为了解决上述不同进程抢共享资源的问题，我们可以用加进程锁来解决。
 

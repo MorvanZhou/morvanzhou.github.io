@@ -6,18 +6,28 @@ chapter: 2
 title: Listbox 列表部件
 date: 2016-11-3
 author: 郭锡锋
+post-headings:
+  - 创建主窗口
+  - 创建一个label用于显示
+  - 创建一个方法用于按钮的点击事件
+  - 创建一个按钮
+  - 创建一个Listbox和变量var2，并将var2的值赋给Listbox
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk4_listbox.py)
 
-#### 创建主窗口
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
 ```python
 window = tk.Tk()
 window.title('my window')
 window.geometry('200x200')
 ```
 
-#### 创建一个label用于显示
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 var1 = tk.StringVar()    #创建变量
@@ -27,7 +37,8 @@ l.pack()
 
 <img class="course-image" src="/static/results/tkinter/2-03-01.png">
 
-#### 创建一个方法用于按钮的点击事件
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 def print_selection():
@@ -35,7 +46,8 @@ def print_selection():
     var1.set(value)     #为label设置值
 ```
 
-#### 创建一个按钮
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 b1 = tk.Button(window, text='print selection', width=15,
@@ -45,7 +57,8 @@ b1.pack()
 
 <img class="course-image" src="/static/results/tkinter/2-03-02.png">
 
-#### 创建一个Listbox和变量var2，并将var2的值赋给Listbox
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 var2 = tk.StringVar()

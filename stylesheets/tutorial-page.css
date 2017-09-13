@@ -51,7 +51,7 @@ padding: 1em 0 0.5em 0;
 .ads-container {
 display: block;
 width: 100%;
-z-index: 2;
+z-index: 1;
 margin: 0;
 padding:0;
 }
@@ -60,13 +60,15 @@ padding:0;
 .tut-content-menu {
 position: fixed;
 bottom: 2%;
-right: 2%;
+right: 30%;
+z-index: 0;
 }
 
 .tut-content-menu img {
 max-width: 4em;
 border-radius:50%;
 box-shadow: 0px 0px 10px #888888;
+
 }
 
 /* ====== switch video button ===== */
@@ -179,11 +181,16 @@ padding: 0 2em;
 
 .tut-side-menu {
 display: inline-block;
-vertical-align:top;
 position: fixed;
-width: 20%;
+width: 19%;
 top: 5em;
-padding: 0 0.8em;
+margin: 0 0.3em;
+padding: 0 0.3em;
+background-color:#FAFAFA;
+}
+
+.tut-side-menu .ads-container {
+height: 300px;
 }
 
 @media screen and (max-width: 40.5em) {
@@ -192,10 +199,13 @@ padding: 0 0.8em;
   width: 0;
   }
   .tut-main-content {
-  width: 95%;
+  width: 100%;
   padding: 2em 0;
   margin: 0 auto;
   display: block;
+  }
+  .tut-content-menu {
+  right:1em;
   }
 }
 

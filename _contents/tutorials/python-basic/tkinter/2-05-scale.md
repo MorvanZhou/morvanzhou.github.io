@@ -5,8 +5,11 @@ description: 使用 python 和 tkinter 来做简单的窗口程序. 拉动条 sc
 chapter: 2
 title: Scale 尺度
 date: 2016-11-3
+post-headings:
+
 ---
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk6_scale.py)
 
 {% include announcement.html %}

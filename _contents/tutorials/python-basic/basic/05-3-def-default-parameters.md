@@ -7,18 +7,20 @@ date: 2016-11-3
 comments: true
 author-link: http://gaufung.info/
 author: 高峰
+post-headings:
+  - 基本使用
+  - 实例
+  - 进阶
 ---
+{% assign post-heading-count = -1 %}
 
-
-本节主要内容：
-* [基本使用](#m1)
-* [实例](#m2)
-* [进阶](#m3)
 
 我们在定义函数时有时候有些参数在大部分情况下是相同的，只不过为了提高函数的适用性，提供了一些备选的参数，
 为了方便函数调用，我们可以将这些参数设置为默认参数，那么该参数在函数调用过程中可以不需要明确给出。
 
-<h4 class="tut-h4-pad" id="m1">基本使用</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 def function_name(para_1,...,para_n=defau_n,..., para_m=defau_m):
@@ -27,7 +29,9 @@ def function_name(para_1,...,para_n=defau_n,..., para_m=defau_m):
 
 函数声明只需要在需要默认参数的地方用 `=` 号给定即可, 但是要注意所有的默认参数都不能出现在非默认参数的前面。
 
-<h4 class="tut-h4-pad" id="m2">实例</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ```python
 def sale_car(price, color='red', brand='carmy', is_second_hand=True):
@@ -39,7 +43,9 @@ def sale_car(price, color='red', brand='carmy', is_second_hand=True):
 
 在这里定义了一个 `sale_car` 函数，参数为车的属性，但除了 `price` 之外，像 `color`, `brand` 和 `is_second_hand` 都是有默认值的，如果我们调用函数 `sale_car(1000)`, 那么与 `sale_car(1000, 'red', 'carmy', True)` 是一样的效果。当然也可以在函数调用过程中传入特定的参数用来修改默认参数。通过默认参数可以减轻我们函数调用的复杂度。
 
-<h4 class="tut-h4-pad" id="m3">进阶</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 ##### 3.1 自调用
 

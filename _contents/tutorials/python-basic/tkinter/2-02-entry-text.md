@@ -6,13 +6,18 @@ chapter: 2
 title: Entry & Text 输入, 文本框
 date: 2016-11-3
 author: 郭锡锋
+post-headings:
+  - 窗口主体框架
+  - 窗口内容（窗口上的控件）
+  - 测试一下
 ---
-
-* 学习资料:
+{% assign post-heading-count = -1 %}
+学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk3_entry_text.py)
 
 
-#### 窗口主体框架
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 每一个tkinter应用的主体框架都包含以下几部分：
 
@@ -32,7 +37,8 @@ window.geometry('200x200')
 windo.mainloop()
 ```
 
-#### 窗口内容（窗口上的控件）
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 创建按钮分别触发两种情况
 
@@ -74,7 +80,8 @@ def insert_end():
 
 <img class="course-image" src="/static/results/tkinter/2-02-01.png">
 
-#### 测试一下
+{% assign post-heading-count = post-heading-count | plus: 1 %}
+<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 第一次：在entry中输入`tkinter`，在text中输入`0000`并将光标定位在中间位置，点击`insert point`
 
