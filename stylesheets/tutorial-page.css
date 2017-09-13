@@ -183,7 +183,7 @@ padding: 0 2em;
 
 .side-nav {
 position: fixed;
-padding: 0 0.5em;
+padding: 1em 0.5em;
 top: 5em;
 background-color:#FAFAFA;
 z-index: 1;
