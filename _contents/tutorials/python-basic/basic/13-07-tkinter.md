@@ -11,5 +11,5 @@ post-headings:
 ---
 {% assign post-heading-count = -1 %}
 学习资料
-  * 全套[ tkinter 教程](/tutorials/python-basic/tkinter.html)
+  * 全套[ tkinter 教程](/tutorials/python-basic/tkinter)
 
