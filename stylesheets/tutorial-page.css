@@ -199,7 +199,6 @@ top: 64em;
 width: 19%;
 height: 800px;
 z-index: 0;
-overflow-y: scroll;
 }
 
 @media screen and (max-width: 40.5em) {
