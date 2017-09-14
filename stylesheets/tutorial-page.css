@@ -184,6 +184,7 @@ padding: 0 2em;
 .tut-side-menu {
 top: 1em;
 }
+
 .side-nav {
 position: fixed;
 padding: 1em 0.5em ;
@@ -198,6 +199,7 @@ top: 64em;
 width: 19%;
 height: 800px;
 z-index: 0;
+overflow-y: scroll;
 }
 
 @media screen and (max-width: 40.5em) {
