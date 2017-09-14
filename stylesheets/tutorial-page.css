@@ -1,6 +1,6 @@
 :root {
-  --c-tut-table: #419873;
-  --c-tut-table-hover: #398564;
+  --c-tut-table: var(--c-n);
+  --c-tut-table-hover: var(--c-n-mofan);
 }
 
 /* ===================== TUTORIAL PAGE ====================== */
@@ -83,13 +83,14 @@ background-color: var(--c-n);
 border: none;
 font-size: 1em;
 padding: 0.2em 2em;
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 box-shadow: 0px 0px 20px 2px #888888;
 border-radius:5px;
 }
 
 button#switch-video:hover {
 background-color: var(--c-n-mofan);
+color: var(--c-green-hover);
 }
 .collapse{
 display:none
@@ -103,14 +104,14 @@ display:block
 background-color: var(--c-tut-table);
 padding: 1em;
 border-radius: 20px;
-color: white;
+color: var(--c-green-no-hover);
 counter-reset: item;
 list-style-type: none;
 box-shadow: 0px 0px 20px 2px #888888;
 }
 
 .table-of-contents-ul h4 {
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 text-align: left;
 }
 
@@ -128,7 +129,7 @@ display: block;
 }
 
 .content-li a {
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 text-decoration: none;
 }
 
@@ -180,11 +181,12 @@ width: 75%;
 padding: 0 2em;
 }
 
-
+.tut-side-menu {
+top: 1em;
+}
 .side-nav {
 position: fixed;
-padding: 1em 0.5em;
-top: 5em;
+padding: 1em 0.5em ;
 background-color:#FAFAFA;
 z-index: 1;
 width: 19%;
@@ -240,8 +242,8 @@ overflow: hidden;
 
 .PageNavigation a {
 display: block;
-color: white;
-background-color: #14b814;
+color: var(--c-green-no-hover);
+background-color: var(--c-n);
 text-decoration: none;
 padding: 0.9em;
 margin: 0.5em 0;
@@ -253,7 +255,8 @@ font-size: 1em;
 }
 
 .PageNavigation a:hover {
-color: #303030;
+color: var(--c-green-hover);
+background-color: var(--c-n-mofan);
 }
 
 .PageNavigation .prev {
@@ -263,4 +266,35 @@ float: left;
 .PageNavigation .next {
 float: right;
 text-align: right;
+}
+
+/* ======== bottom donation ======== */
+#bottom-donation-section {
+padding: 1em;
+clear: both;
+}
+
+#bottom-donation-title {
+display: block;
+text-align: center;
+margin: 0;
+padding: 1em 0;
+}
+
+#bottom-donation-button {
+width: 50%;
+display: block;
+color: var(--c-green-no-hover);
+text-align: center;
+padding: 10px;
+background-color: var(--c-donation);
+margin: 1em auto 2em auto;
+text-decoration: none;
+border-radius: 20px;
+box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.7);
+}
+
+#bottom-donation-button:hover {
+background-color: var(--c-donation-hover);
+color: var(--c-green-hover);
 }

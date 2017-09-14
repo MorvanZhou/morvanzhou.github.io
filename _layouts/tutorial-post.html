@@ -55,8 +55,8 @@ layout: with-nav
       </p>
 
       <!-- donation -->
-      <div>
-        <a id="bottom-donation-button" href="{{site.baseurl}}/support/"><strong>点我 赞助 莫烦</strong></a>
+      <div id="bottom-donation-section">
+        {% include donate.html %}
       </div>
 
       <hr>
@@ -86,9 +86,11 @@ layout: with-nav
 
   <!-- page nav section -->
   <div class="tut-side-menu">
-    {% if page.post-headings %}
+
+
     <div class="side-nav">
       <hr>
+      {% if page.post-headings %}
       <strong>知道你想跳着看</strong>
       <ul>
         {% for heading in page.post-headings %}
@@ -96,21 +98,23 @@ layout: with-nav
         {% endfor %}
       </ul>
       <hr>
-    </div>
-    {% endif %}
+      {% endif %}
 
-    <!-- ads -->
-    <div class="ads-container">
-      <hr>
       {% include google-ads.html ad-slot=1501228408 %}
       <hr>
 
-      <div style="height:100px;"></div>
-
-      <hr>
-      {% include google-ads.html ad-slot=3642152498 %}
-      <hr>
     </div>
+
+
+    <!--<div class="ads-container">-->
+
+      <!--<div style="height:100px;"></div>-->
+
+      <!--<hr>-->
+      <!--ad-slot=3642152498-->
+      <!--<hr>-->
+    <!--</div>-->
+
 
 
 

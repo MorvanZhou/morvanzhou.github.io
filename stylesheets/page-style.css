@@ -1,12 +1,14 @@
 :root {
-  --c-n-mofan: #2c8e01;
-  --c-n: #34A203;
-  --c-n-hover: #2c8e01;
-  --c-n-drop: #2c8e01;
-  --c-donation: #34A203;
-  --c-n-drop-hover: #34A203;
-  --c-donation-hover: #2c8e01;
+  --c-n-mofan: #3d9667;
+  --c-n: #4cb07b;
+  --c-n-hover: var(--c-n-mofan);
+  --c-n-drop: var(--c-n);
+  --c-donation: var(--c-n);
+  --c-n-drop-hover: var(--c-n-mofan);
+  --c-donation-hover: var(--c-n-mofan);
   --c-about-table: #d8d8d8;
+  --c-green-no-hover: #191818;
+  --c-green-hover: #f2f2f2;
   --max-window-width: 800px;
 }
 
@@ -30,7 +32,7 @@ background-color:#F4F4F2;
 
 /* ====== Headings ====== */
 h1, h2, h3, h4, h5 {
-color: #00b359;
+color: var(--c-n);
 }
 
 h1 {
@@ -174,7 +176,7 @@ font-size: 130%;
 width: 100%;
 margin: 0;
 padding: 0;
-opacity: 0.95;
+opacity: 0.98;
 }
 
 #home-nav ul {
@@ -212,7 +214,7 @@ border: 5px solid var(--c-n);
 }
 
 #home-nav a {
-color: white;/*#DCDCDC;*/
+color: var(--c-green-no-hover);
 }
 
 #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited{
@@ -229,6 +231,7 @@ background-color: var(--c-n-mofan);
 #home-nav > ul > li > ul {     /* tutorial dropdown */
 max-height: 90%;
 overflow-y: scroll;
+overflow-x: hidden;
 position: fixed;
 display: none;
 top: 2.4em;
@@ -300,7 +303,7 @@ padding: 0.2em 0 0.2em 1em;
 
 #home-nav a:hover {
 background-color: var(--c-n-hover);
-color: #303030;
+color: var(--c-green-hover);
 }
 
 
@@ -406,7 +409,7 @@ padding: 1em 0;
 #bottom-donation-button {
 width: 50%;
 display: block;
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 text-align: center;
 padding: 10px;
 background-color: var(--c-donation);
@@ -425,7 +428,7 @@ color: #303030;
 
 footer {
 clear: both;
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 font-size: 0.8em;
 background-color: var(--c-n);
 padding: 0px;
@@ -437,7 +440,7 @@ width: 100%;
 }
 
 footer p{
-color: #DCDCDC;
+color: var(--c-green-no-hover);
 display: block;
 clear: left;
 margin: 10px 15px;
@@ -449,8 +452,12 @@ margin:0;
 list-style-type: none;
 }
 
-footer a{
-color: #DCDCDC;
+footer a, footer a:visited, footer a:link{
+color: var(--c-green-no-hover);
+}
+
+footer .icon {
+height: 25px;
 }
 
 footer li {
@@ -521,7 +528,7 @@ text-align: center;
 .support-SD-dropdown {
 display: none;
 position: absolute;
-bottom:14em;
+bottom:11em;
 max-width: 300px;
 }
 
