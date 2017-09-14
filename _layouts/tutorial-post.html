@@ -11,16 +11,7 @@ layout: with-nav
 
     <!-- top ads -->
     <div class="ads-container">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- video top -->
-      <ins class="adsbygoogle"
-           style="display:block;"
-           data-ad-client="ca-pub-4601203457616636"
-           data-ad-slot="5888750508"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      {% include google-ads.html ad-slot=5888750508 %}
     </div>
 
 
@@ -34,16 +25,7 @@ layout: with-nav
 
     <!-- video button ads -->
     <div class="ads-container">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- video button -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-4601203457616636"
-           data-ad-slot="7365483702"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      {% include google-ads.html ad-slot=7365483702 %}
     </div>
 
     <!-- main content -->
@@ -86,16 +68,8 @@ layout: with-nav
     </div>
 
     <div class="ads-container">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- comment top resize -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-4601203457616636"
-           data-ad-slot="4412017301"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      {% include google-ads.html ad-slot=4412017301 %}
+
     </div>
 
     <!-- comment section -->
@@ -112,48 +86,26 @@ layout: with-nav
 
   <!-- page nav section -->
   <div class="tut-side-menu">
+    {% if page.post-headings %}
     <div class="side-nav">
       <hr>
-      {% if page.post-headings %}
       <strong>知道你想跳着看</strong>
       <ul>
         {% for heading in page.post-headings %}
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
-      {% endif %}
       <hr>
     </div>
+    {% endif %}
 
     <!-- ads -->
     <div class="ads-container">
-      <div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- tut-page-side -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4601203457616636"
-             data-ad-slot="1501228408"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
+      {% include google-ads.html ad-slot=1501228408 %}
 
       <div style="height:100px;"></div>
 
-      <div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- tut-side2 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4601203457616636"
-             data-ad-slot="3642152498"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
+      {% include google-ads.html ad-slot=3642152498 %}
 
     </div>
 
