@@ -191,7 +191,8 @@ vertical-align: middle;
 .search-box {
 display: none;
 position: fixed;
-top:51px;
+top: 2.5em;
+left: 12em;
 }
 
 #home-nav .search-text {
@@ -318,7 +319,7 @@ color: var(--c-green-hover);
     left:0;
     }
   #home-nav .search-text {
-    font-size:1em;
+    font-size:1.2em;
     }
 }
 
