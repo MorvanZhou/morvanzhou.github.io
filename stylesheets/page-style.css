@@ -309,7 +309,7 @@ color: var(--c-green-hover);
 
 @media screen and (max-width: 40.5em) {
   #home-nav {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
       padding: 0.8em 0.5em;
