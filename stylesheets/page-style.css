@@ -113,8 +113,8 @@ color: #415849;
 
 /* ====== image ====== */
 .icon-image {
-height: 1.5em;
-/*width: 1.5em;*/
+max-height: 1.1em;
+width: 1.1em;
 padding-right: 0.4em;
 }
 
