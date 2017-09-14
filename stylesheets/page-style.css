@@ -153,26 +153,17 @@ padding: 1em 0;
 
 /* ================== DEFAULT FOR PAGES =================== */
 
-/* ====== blank fill ====== */
-#blank-fill {
-width:100;
-height:50px;
+#home-nav {
+height: 3.2em;
 }
-
-@media screen and (max-width: 40.5em) {
-  #blank-fill {
-    height:3.1em;
-  }
-}
-
 /* ====== navigation bar ====== */
 #home-nav > ul {
 position: fixed;
-z-index: 3;
+z-index: 4;
 top: 0;
 left: 0;
 list-style-type: none;
-font-size: 130%;
+font-size: 1.3em;
 width: 100%;
 margin: 0;
 padding: 0;
@@ -181,11 +172,7 @@ opacity: 0.98;
 
 #home-nav ul {
 background-color: var(--c-n);
-}
-
-#home-nav > ul > li {
 display: inline-block;
-margin: 0 0 -6px -7px;
 }
 
 #home-nav > ul > li > a {
@@ -240,7 +227,7 @@ text-decoration: none;
 list-style-type: none;
 margin: 0;
 padding: 0;
-box-shadow: 10px 4px 10px 0px rgba(0,0,0,0.4);
+box-shadow: -4px 4px 10px rgba(0,0,0,0.4);
 width: 40%;
 }
 
@@ -309,31 +296,29 @@ color: var(--c-green-hover);
 
 @media screen and (max-width: 40.5em) {
   #home-nav {
-    font-size: 0.9em;
+    height: 3.8em;
   }
+
   #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
-      padding: 0.8em 0.5em;
-      }
+    padding: 1.1em 0.3em;
+    font-size: 0.8em;
+  }
   #home-nav > ul > li > ul {
     width: 80%;
-  }
-  #home-nav > ul > li > ul > li > a,  #home-nav > ul > li > ul > li > ul > li > a, #home-nav > ul > li > ul > li > ul > li > ul {
-    font-size: 1.1em;
   }
   #home-nav > ul > li:last-child {       /* tutorial dropdown */
     float: none;
   }
-  #home-nav > ul > li > ul {
-    top:3.1em;
+  #home-nav > ul > li > ul, .search-box {
+    top:2.9em;
     }
   .search-box {
     display: none;
     position: fixed;
-    top:3.1em;
     left:0;
     }
   #home-nav .search-text {
-    font-size:1.3em;
+    font-size:1em;
     }
 }
 
@@ -433,7 +418,6 @@ font-size: 0.8em;
 background-color: var(--c-n);
 padding: 0px;
 margin: 0px;
-border: solid var(--c-n);
 z-index: 3;
 position: absolute;
 width: 100%;
