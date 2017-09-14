@@ -10,14 +10,17 @@
 #recent-update {
 list-style-type: none;
 margin: 0 auto;
-line-height: 100px;
-height: 380px;
+padding: 0;
+height: 350px;
 overflow-y: scroll;
+display: inline-block;
+text-align: center;
+width: 100%;
 }
 
 #recent-update li {
 padding: 0 5px 0 0;
-float: left;
+display: inline-block;
 }
 
 #recent-update img:hover {
@@ -25,17 +28,13 @@ background-color:#000;
 opacity:0.8;
 }
 
+#recent-update img {
+border: 1px solid black;
+}
+
 @media screen and (max-width: 40.5em) {
-  #recent-update li {
-    display: block;
-    padding: 0;
-    border: 1px solid black;
-    margin: 0 auto;
-    text-align:center;
-  }
   #recent-update {
-    list-style-type: none;
-    line-height: 0px;
+    height: 180px;
   }
 }
 
