@@ -161,7 +161,7 @@ height:50px;
 
 @media screen and (max-width: 40.5em) {
   #blank-fill {
-    height:3.2em;
+    height:3.1em;
   }
 }
 
@@ -324,12 +324,12 @@ color: var(--c-green-hover);
     float: none;
   }
   #home-nav > ul > li > ul {
-    top:3.3em;
+    top:3.1em;
     }
   .search-box {
     display: none;
     position: fixed;
-    top:3.3em;
+    top:3.1em;
     left:0;
     }
   #home-nav .search-text {
