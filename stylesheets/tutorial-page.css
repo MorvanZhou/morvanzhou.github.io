@@ -181,14 +181,10 @@ width: 75%;
 padding: 0 2em;
 }
 
-.tut-side-menu {
-top: 1em;
-}
-
 .side-nav {
 position: fixed;
-padding: 1em 0.5em ;
-background-color:#FAFAFA;
+padding: 1.5em 0.5em;
+max-height: 90%;
 z-index: 1;
 width: 19%;
 }
