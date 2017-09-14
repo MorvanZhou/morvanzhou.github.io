@@ -183,8 +183,9 @@ padding: 0 2em;
 
 .side-nav {
 position: fixed;
-padding: 1.5em 0.5em;
+padding: 0.5em;
 max-height: 90%;
+overflow-y: scroll;
 z-index: 1;
 width: 19%;
 }
@@ -229,6 +230,10 @@ z-index: 0;
 .link-under-youtube {
 text-align: center;
 margin: 0;
+}
+
+.pad-page-navigation {
+padding:3em 0.5em;
 }
 
 .PageNavigation {
