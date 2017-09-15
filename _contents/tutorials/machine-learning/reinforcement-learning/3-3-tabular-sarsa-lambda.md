@@ -41,12 +41,10 @@ Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到�
 
 这样解释起来有点抽象, 还是建议大家观看我制作的 [什么是 Sarsa-lambda 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-05-sarsa-lambda.md %}), 用动画展示具体的区别.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 

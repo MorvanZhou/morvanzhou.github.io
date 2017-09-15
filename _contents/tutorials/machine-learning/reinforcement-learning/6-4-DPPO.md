@@ -44,12 +44,10 @@ PPO 利用 New Policy 和 Old Policy 的比例, 限制了 New Policy 的更新�
 
 下面是这节内容的效果提前看:
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/Pendulum A3C.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 
@@ -58,12 +56,10 @@ PPO 利用 New Policy 和 Old Policy 的比例, 限制了 New Policy 的更新�
 
 OpenAI 的 [Demo](https://blog.openai.com/openai-baselines-ppo/#ppo):
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/6-4-demo_openai.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 DeepMind 的 [Demo](https://deepmind.com/blog/producing-flexible-behaviours-simulated-environments/):
 
@@ -268,9 +264,7 @@ Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _conten
 
 我也用这套 DPPO 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm).
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/experiment_arm.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>

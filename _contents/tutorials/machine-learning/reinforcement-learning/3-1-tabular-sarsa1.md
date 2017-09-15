@@ -30,12 +30,10 @@ post-headings:
 我们从这一个简称可以了解到, Sarsa 的整个循环都将是在一个路径上, 也就是 on-policy, 下一个 state_, 和下一个 action_ 将会变成他真正采取的 action 和 state.
 和 Qlearning 的不同之处就在这. Qlearning 的下个一个 state_ action_ 在算法更新的时候都还是不确定的 (off-policy). 而 Sarsa 的 state_, action_ 在这次算法更新的时候已经确定好了 (on-policy).
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/maze sarsa.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 

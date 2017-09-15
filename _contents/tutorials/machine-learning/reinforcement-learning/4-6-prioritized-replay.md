@@ -40,12 +40,10 @@ post-headings:
 可以想象 Natural DQN 会花很久的时间学习, 因为记忆库中只有很少很少的 +10 reward 可以学习. 正负样本不一样.
 而使用 Prioritized replay, 就会重视这种少量的, 但值得学习的样本.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 

@@ -35,12 +35,10 @@ post-headings:
 在 Youtube 上, 一搜就能搜到很多关于 Evolution Algorithm (之后简称为 EA) 的实验短片.
 我截取了几个给大家看看, 后面也附上他们的链接. 如果你能翻墙, 也能看看他们有趣的实验.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
  [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
@@ -72,12 +70,10 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 比如用 OpenAI gym 来[训练你的小机器人]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-04-evolution-strategy-reinforcement-learning.md %}).
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-4-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 用简单的代码, 可视化各种进化算法的本质. 比如[这个]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}).
 
@@ -89,12 +85,10 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 [配对句子]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-02-genetic-algorithm-match-phrase.md %})问题:
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/2-2-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 结合了梯度下降的原则的[进化算法]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-03-evolution-strategy-natural-evolution-strategy.md %}):
 

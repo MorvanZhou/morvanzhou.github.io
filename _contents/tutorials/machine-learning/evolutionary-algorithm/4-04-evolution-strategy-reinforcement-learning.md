@@ -32,12 +32,10 @@ post-headings:
 
 本节内容提前看:
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-4-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 

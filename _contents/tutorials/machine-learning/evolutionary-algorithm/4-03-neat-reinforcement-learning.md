@@ -31,12 +31,10 @@ post-headings:
 
 立杆子的机器人最后学习的效果提前看:
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-3-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 这个机器人的神经网络长这样:
 

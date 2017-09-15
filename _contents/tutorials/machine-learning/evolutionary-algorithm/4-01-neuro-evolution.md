@@ -33,12 +33,10 @@ post-headings:
 
 以下是我在 Youtube 中搜索看到大家都拿 Neuro Evolution 做的小实验. 看上去很高大上呀. 是不是又激情澎湃了.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/4-1-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
  [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))

@@ -226,6 +226,11 @@ z-index: 0;
  }
 
 /* ======= video and next previous button ====== */
+.tut-content-video {
+width: 60%;
+display: block;
+margin: 0 auto;
+}
 .link-under-youtube {
 text-align: center;
 margin: 0;

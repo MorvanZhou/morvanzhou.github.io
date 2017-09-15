@@ -27,12 +27,10 @@ post-headings:
 接着[上节对遗传算法的基本应用]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}),
 在这一节中, 我们用通过不同的编码 DNA 方式, 不同的 fitness 定义方式来让程序生成出自己设定的句子来.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/evolutionary-algorithm/2-2-0.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 

@@ -29,12 +29,10 @@ post-headings:
 上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.
 
-<div align="center">
-<video width="80%" controls loop autoplay muted>
+<video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/maze q.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-</div>
 
 
 
