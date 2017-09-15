@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc0NTg5Nzk3Ng
 youtube_id: wnKgOd3NdzA
-title: Why?
+title: Why Pytorch?
 description: "PyTorch 是 Torch 在 Python 上的衍生. 因为 Torch 是一个使用 Lua
 语言的神经网络库, Torch 很好用, 但是 Lua 又不是特别流行, 所有开发团队将 Lua 的 Torch 移植到了更流行的语言 Python 上.
 是的 PyTorch 一出生就引来了剧烈的反响. 为什么呢?

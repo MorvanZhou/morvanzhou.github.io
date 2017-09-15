@@ -3,7 +3,7 @@ youku_id: XMTg0MjA2MzU3Ng
 youtube_id: kQSzft2Jj8Y
 description: 
 chapter: 1
-title: Why?
+title: Why Git?
 publish-date: 2016-11-30
 comments: true
 thumbnail: /static/thumbnail/git/1-01.jpg

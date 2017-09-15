@@ -2,7 +2,7 @@
 youku_id: XMjUzMjA1NjY2NA
 youtube_id: 9m3DN2dyi8I
 chapter: 4
-title: OpenAI gym 环境库 (Tensorflow)
+title: OpenAI gym 环境库
 publish-date: 2017-02-26
 thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
 description: "手动编环境是一件很耗时间的事情, 所以如果有能力使用别人已经编好的环境, 可以节约我们很多时间. OpenAI gym 就是这样一个模块, 他提供了我们很多优秀的模拟环境.

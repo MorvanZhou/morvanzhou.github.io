@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc0NTk2NTgxNg
 youtube_id: JIGkxYmLPPY
-title: 安装
+title: Pytorch 安装
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail/torch/1-2 install.jpg"
 chapter: 1

@@ -1,7 +1,7 @@
 ---
 youku_id: XMTY1OTUyNjIzNg
 youtube_id: uefJFOaypj8
-title: 安装
+title: Theano 安装
 description: 安装介绍
 author: 缘
 chapter: 1

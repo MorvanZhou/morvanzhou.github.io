@@ -2,7 +2,7 @@
 youku_id: XMTg5MjM2ODgwOA
 youtube_id: o5fjkcM_lHs
 chapter: 1
-title: Why?
+title: 为什么用强化学习 Why?
 publish-date: 2017-01-01
 thumbnail: "/static/thumbnail/rl/1 why.jpg"
 description: "强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,

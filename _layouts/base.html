@@ -14,7 +14,7 @@
   <meta name="keywords" content="莫烦,python,tutorial,machine learning,{{ page.keywords }}">
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
   <meta name="thumbnail" content="{{ site.baseurl }}{{ page.thumbnail }}" />
-  <title>{{page.title}} - 莫烦Python</title>
+  <title>{% if page.title %}{{page.title}}{% endif %}{% if page.tut-title %} - {{page.tut-title}}{% endif %} - 莫烦Python</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
