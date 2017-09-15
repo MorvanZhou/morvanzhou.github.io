@@ -214,11 +214,25 @@ tensorboard 还有很多其他的参数，希望大家可以多多了解,
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-**注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
+(1) 而且与 tensorboard 兼容的浏览器是 "**Google Chrome**".
 使用其他的浏览器不保证所有内容都能正常显示.
 
-**同时注意, 如果使用 `http://0.0.0.0:6006` 或者 tensorboard 中显示的网址打不开的朋友们,
-请使用 `http://localhost:6006`, 大多数朋友都是这个问题.**
+(2) 同时注意, 如果使用 **`http://0.0.0.0:6006`** 网址打不开的朋友们,
+请使用 **`http://localhost:6006`**, 大多数朋友都是这个问题.
 
-请确保你的 tensorboard 指令是在你的 logs 文件根目录执行的. 如果在其他目录下, 比如 `Desktop` 等, 可能不会成功看到图.
+(3) 请确保你的 tensorboard 指令是在你的 logs 文件根目录执行的. 如果在其他目录下, 比如 `Desktop` 等, 可能不会成功看到图.
+比如在下面这个目录, 你要 cd 到 `project` 这个地方执行 `/project > tensorboard --logdir logs`
+
+```
+- project
+   - logs
+   model.py
+   env.py
+```
+
+(4) 讨论区的朋友使用 anaconda 下的 python3.5 的虚拟环境, 如果你输入 tensorboard 的指令, 出现报错:
+`"tensorboard" is not recognized as an internal or external command...`
+
+解决方法的关键就是需要激活TensorFlow. 管理员模式打开 Anaconda Prompt, 输入 activate tensorflow, 接着按照上面的流程执行 tensorboard 指令.
+
 
