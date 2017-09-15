@@ -32,6 +32,23 @@
     });
   });
   </script>
+
+  <!-- structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "{{ page.url }}",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "image": [
+      "{{ page.thumbnail }}",
+     ],
+    "author": {
+      "@type": "Person",
+      "name": "莫烦"
+    },
+    "description": "{{ page.description }}"
+  }
+  </script>
 </head>
 
 <body>
