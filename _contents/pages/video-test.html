@@ -32,7 +32,7 @@ youku_id: XMTg1MTYwNDg2OA
 <div class="video-container">
 	<iframe
 			width="560" height="315"
-			src="https://player.youku.com/embed/{{page.youku_id}}=="
+			src="//player.youku.com/embed/{{page.youku_id}}=="
 			frameborder="0"
 			allowfullscreen>
 		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
@@ -77,8 +77,8 @@ var currentlPlayingTime
 
 var src1 = "https://www.youtube.com/embed/{{page.youtube_id}}";
 
-// var src2 = "https://players.youku.com/embed/{{page.youku_id}}=="
-var src2 = "https://players.youku.com/player.php/sid/{{page.youku_id}}==/v.swf"
+// var src2 = "//players.youku.com/embed/{{page.youku_id}}=="
+var src2 = "//players.youku.com/player.php/sid/{{page.youku_id}}==/v.swf"
 
 function myFunction() {
     currentlPlayingTime = vid.currentTime;
