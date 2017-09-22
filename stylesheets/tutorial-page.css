@@ -182,6 +182,7 @@ padding: 0 2em;
 
 .side-nav {
 position: fixed;
+font-size: 0.8em;
 padding: 0.5em;
 max-height: 90%;
 overflow-y: scroll;
