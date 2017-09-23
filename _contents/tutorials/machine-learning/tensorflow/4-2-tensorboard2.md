@@ -29,18 +29,18 @@ post-headings:
 
 上一篇讲到了 如何可视化TesorBorad整个神经网络结构的过程。 其实tensorboard还可以可视化训练过程( biase变化过程) , 这节重点讲一下可视化训练过程的图标是如何做的 。请看下图,  这是如何做到的呢？
 
-<img class="course-image" src="/static/results/tensorflow/4_2_1.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 在histograms里面我们还可以看到更多的layers的变化:
 
-<img class="course-image" src="/static/results/tensorflow/4_2_2.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 （P.S. 灰猫使用的 tensorflow v1.1 显示的效果可能和视频中的不太一样， 但是 tensorboard 的使用方法的是一样的。）
 
 这里还有一个events , 在这次练习中我们会把 整个训练过程中的误差值（loss）在event里面显示出来, 甚至你可以显示更多你想要显示的东西.
 
-<img class="course-image" src="/static/results/tensorflow/4_2_3.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 好了, 开始练习吧, 本节内容包括:
 
@@ -70,7 +70,7 @@ import numpy as np
 
 输入源的问题解决之后, 我们开始制作对`Weights`和`biases`的变化图表吧. 我们期望可以做到如下的效果, 那么首先从 layer1/weight 做起吧
 
-<img class="course-image" src="/static/results/tensorflow/4_2_4.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_4.png" alt="{{ page.title }}{% increment image-count %}">
 
 这个效果是如何做到的呢,请看下一个标题
 
@@ -166,7 +166,7 @@ def add_layer(inputs ,
 
 修改之后的名称会显示在每个tensorboard中每个图表的上方显示,  如下图所示:
 
-<img class="course-image" src="/static/results/tensorflow/4_2_5.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_5.png" alt="{{ page.title }}{% increment image-count %}">
 
 由于我们对`addlayer` 添加了一个参数, 所以修改之前调用`addlayer()`函数的地方.
 对此处进行修改:
@@ -195,7 +195,7 @@ prediction= add_layer(l1, 10, 1, n_layer=2, activation_function=None)
 `Loss` 的变化图和之前设置的方法略有不同.  loss是在tesnorBorad 的event下面的, 这是由于我们使用的是`tf.scalar_summary()` 方法.
 
 
-<img class="course-image" src="/static/results/tensorflow/4_2_6.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_6.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 观看loss的变化比较重要. 当你的loss呈下降的趋势,说明你的神经网络训练是有效果的.
@@ -277,8 +277,8 @@ for i in range(1000):
 
 会有如下输出:
 
-<img class="course-image" src="/static/results/tensorflow/4_2_7.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_7.png" alt="{{ page.title }}{% increment image-count %}">
 
 将输出中显示的URL地址粘贴到浏览器中便可以查看. 最终的效果如下:
 
-<img class="course-image" src="/static/results/tensorflow/4_2_8.png">
+<img class="course-image" src="/static/results/tensorflow/4_2_8.png" alt="{{ page.title }}{% increment image-count %}">

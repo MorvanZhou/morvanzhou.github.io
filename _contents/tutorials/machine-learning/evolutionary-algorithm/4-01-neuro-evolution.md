@@ -57,7 +57,7 @@ post-headings:
 
 这种思路很简单, 我们有一个全连接神经网络, 像下图:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-1.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的. 在这方面, OpenAI 在2017年做出了一个[有贡献的研究](https://blog.openai.com/evolution-strategies/).
 他们将进化策略 (Evolution Strategy) 衍生到神经网络, 然后不断进化神经网络中的参数. 他们的实验结果都能够媲美很多强化学习方法, 比如 [Q-learning]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %}),
@@ -67,7 +67,7 @@ post-headings:
 
 这种变化更多, 除了参数, 形态也是能够改变的. 我们待会要提到的 NEAT 算法就是这样一种. 因为能够变化形态, 所以在 NEAT 中, 并不存在神经层这种东西.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-2.jpg">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-2.jpg" alt="{{ page.title }}{% increment image-count %}">
 
 
 对比这两种不同的方式, 我们可以想象肯定是越能变化的, 结果会越好啦. 因为它能够探索的形态结构越多, 找到好方法的机会就越大.
@@ -91,7 +91,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 我们再来具体看看他是怎么 搭建/交叉/变异 神经网络的. 之后的用图都是上面提到的 paper 中的.
 
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-3.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 上面的图你可以想象成就是我们如何通过 DNA (图中的 Genome) 来编译出神经网络的. `Node genes` 很简单就是神经网络每个节点的定义.
@@ -101,13 +101,13 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 通过上面的 Genome 我们就能搭建出那个神经网络了, 可以看出我们有一个 2-5 `DISAB` 的链接, 原因就是在2-5之间我们已经变异出了一个4节点.
 所以2-5 是通过 4 相链接的, 这样我们就需要将原来的 2-5 链接 disable 掉.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-4.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 关于变异呢. 我们可以有 `节点变异` 和 `链接变异`, 就和上图一样, 这个简单, 大家都看得出来. 但是要提的一点是,
 如果新加的节点像 6 那样, 是在原有链接上的突变节点, 那么原来的 3-5 链接就要被 disable 掉.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-5.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-5.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 再来就是 `crossover` 了, 两个神经网络 "交配" 啦. 这时你就发现原来 innovation number 在这里是这么重要.
@@ -133,7 +133,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 [下面的图](https://blog.openai.com/evolution-strategies/)是 OpenAI 用来诠释 ES 算法的精辟:
 
 <a href="https://blog.openai.com/evolution-strategies/">
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-6.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-1-6.png" alt="{{ page.title }}{% increment image-count %}">
 </a>
 
 如果机器学习就是为了找到图中最红的地方, 那么 ES 就是在自己周围随机繁殖后代, 然后有些后代会靠近红色的地方, 有些不会.

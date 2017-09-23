@@ -28,7 +28,7 @@ post-headings:
 
 这次我们也是用最简单的途径来看看神经网络是怎么进行事物的分类.
 
-<img class="course-image" src="/static/results/torch/1-1-3.gif">
+<img class="course-image" src="/static/results/torch/1-1-3.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -156,7 +156,7 @@ plt.ioff()  # 停止画图
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/torch/3-2-1.png">
+<img class="course-image" src="/static/results/torch/3-2-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/302_classification.py) 中的每一步的意义啦.
 

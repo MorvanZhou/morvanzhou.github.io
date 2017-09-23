@@ -163,7 +163,7 @@ RL.plot_cost()
 
 这是更为典型的 RL cost 曲线:
 
-<img class="course-image" src="/static/results/rl/4-4-1.png">
+<img class="course-image" src="/static/results/rl/4-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -232,7 +232,7 @@ RL.plot_cost()
 
 出来的 cost 曲线是这样:
 
-<img class="course-image" src="/static/results/rl/4-4-2.png">
+<img class="course-image" src="/static/results/rl/4-4-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 这两个都只是例子而已, 具体的实施你也可以大动手脚, 比如你的 reward 定义得更好, 你的神经网络结构更好, 使得他们学的更快.
 这些都是自己定义的.

@@ -68,4 +68,4 @@ ax2.set_ylabel('Y2 data', color='b')
 plt.show()
 ```
 
- <img class="course-image" src="/static/results/plt/4_4_1.png">
+ <img class="course-image" src="/static/results/plt/4_4_1.png" alt="{{ page.title }}{% increment image-count %}">

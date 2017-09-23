@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/data-manipulation/np-pd/
 tut-title: "Numpy & Pandas 教程系列"
 tut-permalink: /tutorials/data-manipulation/
@@ -14,16 +14,3 @@ description: "Numpy 和 Pandas 都是当下最重要的 Python 科学运算模�
 Numpy & Pandas 视频教程 包含的内容:
 Numpy 的一般使用; Pandas 的一般使用; 数据可视化等."
 ---
-
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

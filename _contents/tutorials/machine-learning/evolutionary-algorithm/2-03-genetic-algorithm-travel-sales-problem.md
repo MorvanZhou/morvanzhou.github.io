@@ -31,7 +31,7 @@ post-headings:
 如果计算每一条可行的路径, 就需要相当大的计算资源. 如果使用 GA, TSP 就能被当成一个非常典型的活学活用 GA 算法的问题.
 他的 DNA 编码会有不一样的故事.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-0.gif">
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-0.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -147,7 +147,7 @@ for generation in range(N_GENERATIONS):
 
 如果你还想多看一个例子, 我还有一个例子, 但是不会细说, 应为和上面的例子非常接近. 只要你懂了上面的, 就懂了接下来的例子了.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-1.gif">
+<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 这个例子中的 DNA 形式又不一样, 其实每条路线都是由 "左上, 右下, 右上..." 这样的移动顺序组成.
 所以整个路线 DNA 就是一连串的移动方向. 在移动方向上变异和交配, 就能找到比较好的路线了. 详细[代码在这](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Find%20Path.py).

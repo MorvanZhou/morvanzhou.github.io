@@ -35,7 +35,7 @@ x = np.arange(0, 2*np.pi, 0.01)
 line, = ax.plot(x, np.sin(x))
 ```
 
-<img class="course-image" src="/static/results/plt/5_1_1.png">
+<img class="course-image" src="/static/results/plt/5_1_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 接着，构造自定义动画函数`animate`，用来更新每一帧上各个`x`对应的`y`坐标值，参数表示第i帧：
 

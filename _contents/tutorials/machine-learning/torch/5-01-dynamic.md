@@ -39,7 +39,7 @@ post-headings:
 不动结构当然可以提高效率. 但是一旦计算流程不是静态的, 计算图要变动. 最典型的例子就是 RNN, 有时候 RNN 的 time step 不会一样, 或者在 training 和 testing 的时候, `batch_size` 和
 `time_step` 也不一样, 这时, Tensorflow 就头疼了, Tensorflow 的人也头疼了. 哈哈, 如果用一个动态计算图的 Torch, 我们就好理解多了, 写起来也简单多了.
 
-<img class="course-image" src="/static/results/rl/6-2-2.png">
+<img class="course-image" src="/static/results/rl/6-2-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 

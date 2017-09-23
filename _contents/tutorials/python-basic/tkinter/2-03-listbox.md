@@ -35,7 +35,7 @@ l =tk.Label(window,bg='yellow',width=4,textvariable=var1)
 l.pack()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-01.png">
+<img class="course-image" src="/static/results/tkinter/2-03-01.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -55,7 +55,7 @@ b1 = tk.Button(window, text='print selection', width=15,
 b1.pack()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-02.png">
+<img class="course-image" src="/static/results/tkinter/2-03-02.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -81,6 +81,6 @@ lb.pack()
 window.mainloop()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-03.png">
+<img class="course-image" src="/static/results/tkinter/2-03-03.png" alt="{{ page.title }}{% increment image-count %}">
 
 

@@ -31,7 +31,7 @@ Sklearn 本身就有很多数据库，可以用来练习。
 
 我们要用 分类器 去把四种类型的花分开。
 
-<img class="course-image" src="/static/results/sklearn/2_2_1.png">
+<img class="course-image" src="/static/results/sklearn/2_2_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 今天用 `KNN classifier`，就是选择几个临近点，综合它们做个平均来作为预测值。
 

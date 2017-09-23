@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/python-basic/multiprocessing/
 tut-title: "Python multiprocessing 多进程教程系列"
 tut-permalink: /tutorials/python-basic/
@@ -12,14 +12,3 @@ description: "我们在多线程 (Threading) 里提到过, 它是有劣势的, G
 能让电脑更有效率的分配任务给每一个处理器, 这种做法解决了多线程的弊端. 也能很好的提升效率."
 ---
 
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

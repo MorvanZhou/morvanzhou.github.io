@@ -157,4 +157,4 @@ plt.colorbar()
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/keras/2-6-1.png">
+<img class="course-image" src="/static/results/keras/2-6-1.png" alt="{{ page.title }}{% increment image-count %}">

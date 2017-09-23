@@ -34,8 +34,8 @@ post-headings:
 
 下面是一些例图:
 
-<img class= "course-image" src="/static/results/plt/1_1_1.png">
+<img class= "course-image" src="/static/results/plt/1_1_1.png" alt="{{ page.title }}{% increment image-count %}">
 
-<img class= "course-image" src="/static/results/plt/1_1_2.png">
+<img class= "course-image" src="/static/results/plt/1_1_2.png" alt="{{ page.title }}{% increment image-count %}">
 
-<img class= "course-image" src="/static/results/plt/1_1_3.png">
+<img class= "course-image" src="/static/results/plt/1_1_3.png" alt="{{ page.title }}{% increment image-count %}">

@@ -58,7 +58,7 @@ plt.legend(loc='upper right')
 
 参数 `loc='upper right'` 表示图例将添加在图中的右上角. 
 
-<img class= "course-image" src="/static/results/plt/2_5_1.png">
+<img class= "course-image" src="/static/results/plt/2_5_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -76,7 +76,7 @@ plt.legend(handles=[l1, l2], labels=['up', 'down'],  loc='best')
 
 最后我们得到带有图例信息的图片.
 
-<img class= "course-image" src="/static/results/plt/2_5_2.png">
+<img class= "course-image" src="/static/results/plt/2_5_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 其中'loc'参数有多种，'best'表示自动分配最佳位置，其余的如下：
 

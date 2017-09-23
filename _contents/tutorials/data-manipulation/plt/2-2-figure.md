@@ -46,7 +46,7 @@ plt.plot(x, y1)
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_2_1.png">
+<img class= "course-image" src="/static/results/plt/2_2_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 使用`plt.figure`定义一个图像窗口：编号为3；大小为(8, 5).
 使用`plt.plot`画(`x` ,`y2`)曲线.
@@ -60,7 +60,7 @@ plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--')
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_2_2.png">
+<img class= "course-image" src="/static/results/plt/2_2_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 

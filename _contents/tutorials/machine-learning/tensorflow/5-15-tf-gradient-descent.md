@@ -27,7 +27,7 @@ post-headings:
 
 这一次, 我们想要真正意义上的看到自己手中的模型是怎么样进行梯度下降 (gradient descent) 的. 打个比方就像下面这张图. 红色圆点就是最开始的参数误差.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_01.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_01.gif" alt="{{ page.title }}{% increment image-count %}">
 
 同时, 我们还可以扩展开来, 神经网络就是一种梯度下降的方法. 而梯度下降是一种最优化方法, 我们还能拿它来干点其它事. 比如说 **为公式调参**.
 我们会在下面具体讲解.
@@ -105,22 +105,22 @@ with tf.Session() as sess:
 
 首先我们先看看训练出来的预测线和数据的拟合度吧:
 
-<img class="course-image" src="/static/results/tensorflow/5_15_02.png">
+<img class="course-image" src="/static/results/tensorflow/5_15_02.png" alt="{{ page.title }}{% increment image-count %}">
 
 看起来非常完美, 成功的用一条直线预测出了规律. 那我们看看梯度下降的 3D 图,
 
-<img class="course-image" src="/static/results/tensorflow/5_15_03.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_03.gif" alt="{{ page.title }}{% increment image-count %}">
 
 看上去他从最开始的红点, 很顺利的滑落到了误差最小的地方. 梯度下降圆满完成.
 
 如果我们来尝试不同的学习效率呢, 比如调整最开始的 `LR=1`, 就会发生下面这样的事.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_04.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_04.gif" alt="{{ page.title }}{% increment image-count %}">
 
 貌似这时的梯度下降变得纠结起来, 梯度下不去了. 原来这就是因为学习效率过大的原因, 导致虽然学得快, 但是没办法收敛.
 我们也能从学习到的预测线看出来这样的现象, 现在下面的预测线没有办法预测出真实数据了. 所以切记, 当你的模型没办法收敛的时候, 试试调低学习率.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_05.png">
+<img class="course-image" src="/static/results/tensorflow/5_15_05.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
@@ -141,11 +141,11 @@ tf_y_fun = lambda a, b: a * x**3 + b * x**2
 
 好了, 如果你决定用梯度下降调参, 这份代码就是一种途径. 代码的其他部分不用过多更改. 我们直接来看效果吧. 首先看看数据点和拟合参数`a`, `b` 后的曲线.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_06.png">
+<img class="course-image" src="/static/results/tensorflow/5_15_06.png" alt="{{ page.title }}{% increment image-count %}">
 
 再来看看之前的梯度下降图:
 
-<img class="course-image" src="/static/results/tensorflow/5_15_07.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_07.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -164,20 +164,20 @@ tf_y_fun = lambda a, b: tf.sin(b*tf.cos(a*x))
 想象 `np.cos(a*x)` 是有激活的一层神经层, `np.sin(b*last_layer)` 是有激活的第二层. 那么这个方程就是最简单的一种两层神经网络了.
 如果使用的初始参数点是 `INIT_PARAMS=[2, 4.5]` 他的数据点和拟合曲线是下面这样:
 
-<img class="course-image" src="/static/results/tensorflow/5_15_08.png">
+<img class="course-image" src="/static/results/tensorflow/5_15_08.png" alt="{{ page.title }}{% increment image-count %}">
 
 他的梯度下降空间就是我们最开始看到的那个.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_01.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_01.gif" alt="{{ page.title }}{% increment image-count %}">
 
 从初始的 `INIT_PARAMS=[2, 4.5]` 这个点开始梯度下降, 我们就能成功的找到接近全局最优的 `a=1.2; b=2.5`,
 但是这个3D 图上有很多局部最优点, 如果我们换一个初始参数位置, 比如  `INIT_PARAMS=[5, 1]`. 那么就会下降到一个最靠近他的局部最优.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_09.gif">
+<img class="course-image" src="/static/results/tensorflow/5_15_09.gif" alt="{{ page.title }}{% increment image-count %}">
 
 这样, 我们的模型就只能止步在这, 而且并不能继续向前拟合数据点了. 所以可以看出参数的初始化位置的确很重要.
 
-<img class="course-image" src="/static/results/tensorflow/5_15_10.png">
+<img class="course-image" src="/static/results/tensorflow/5_15_10.png" alt="{{ page.title }}{% increment image-count %}">
 
 通常, 在初始化神经网络的参数时, 我们可以用到 Normal distribution 等方式, 并且多做几次初始化实验, 看看效果如何. 运气好的时候, 初始化很成功,
 带来的比较好的局部最优, 运气不好的时候.. 你懂的.. 继续做实验吧.

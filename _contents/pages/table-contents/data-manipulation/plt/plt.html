@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/data-manipulation/plt/
 tut-title: "Matplotlib 画图教程系列"
 tut-permalink: /tutorials/data-manipulation/
@@ -16,16 +16,3 @@ description: "Matplotlib 是我们的数据可视化好帮手, 他能呈现出2D
 Matplotlib 教程 主要内容包括: 基础语句; 线性图; 条形图(bar); 等高线图(contour); 图片(image);
 3D 图; 多图显示(subplot); 动画等."
 ---
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

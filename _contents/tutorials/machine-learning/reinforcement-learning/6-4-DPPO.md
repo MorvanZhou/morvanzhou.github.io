@@ -63,9 +63,9 @@ OpenAI 的 [Demo](https://blog.openai.com/openai-baselines-ppo/#ppo):
 
 DeepMind 的 [Demo](https://deepmind.com/blog/producing-flexible-behaviours-simulated-environments/):
 
-<img class="course-image" src="/static/results/rl/6-4-demo_google2.gif">
+<img class="course-image" src="/static/results/rl/6-4-demo_google2.gif" alt="{{ page.title }}{% increment image-count %}">
 
-<img class="course-image" src="/static/results/rl/6-4-demo_google1.gif">
+<img class="course-image" src="/static/results/rl/6-4-demo_google1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 看 Demo 他们都说 PPO 在复杂环境中有更好的表现. 那我也就提起性子, 把 papers 看了一遍.
 
@@ -83,11 +83,11 @@ PPO 的前生是 OpenAI 发表的 [Trust Region Policy Optimization](https://arx
 
 OpenAI PPO 论文里给出的算法... 写得也太简单了 (注意他们这个 PPO 算法应该算是单线程的):
 
-<img class="course-image" src="/static/results/rl/6-4-1.png">
+<img class="course-image" src="/static/results/rl/6-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 看了上面的主结构, 觉得少了很多东西. 这让我直接跑去 DeepMind 的 Paper 看他们总结 OpenAI conference 上的 PPO 的代码:
 
-<img class="course-image" src="/static/results/rl/6-4-2.png">
+<img class="course-image" src="/static/results/rl/6-4-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 总的来说 PPO 是一套 Actor-Critic 结构, Actor 想**最大化** `J_PPO`, Critic 想**最小化** `L_BL`.  Critic 的 loss 好说, 就是减小 TD error.
 而 Actor 的就是在 old Policy 上根据 Advantage (TD error) 修改 new Policy, advantage 大的时候, 修改幅度大, 让 new Policy 更可能发生.
@@ -105,7 +105,7 @@ OpenAI PPO 论文里给出的算法... 写得也太简单了 (注意他们这个
 
 我们用 Tensorflow 搭建神经网络, tensorboard 中可以看清晰的看到我们是如果搭建的:
 
-<img class="course-image" src="/static/results/rl/6-4-3.png">
+<img class="course-image" src="/static/results/rl/6-4-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 图中的 `pi` 就是我们的 Actor 了. 每次要进行 PPO 更新 Actor 和 Critic 的时候, 我们有需要将 `pi` 的参数复制给 `oldpi`.
 这就是 `update_oldpi` 这个 operation 在做的事. Critic 和 Actor 的内部结构, 我们不会打开细说了. 因为就是一堆的神经网络而已.
@@ -171,13 +171,13 @@ class PPO:
 
 在更新 Actor 的时候, 其实有两种方式, 一种是用之前提到的 KL penalty 来更新.
 
-<img class="course-image" src="/static/results/rl/6-4-4.png">
+<img class="course-image" src="/static/results/rl/6-4-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 我在代码中也写上的这种方式的计算图纸要怎么搭, 不过还有一种是 OpenAI 在 [PPO 这篇 paper](https://arxiv.org/abs/1707.06347) 中提到的 `clipped surrogate objective`,
 `surrogate objective` 就是这个 ![surrogate](/static/results/rl/6-4-5.png). 他们实验中得出的结论说: `clipped surrogate objective` 要比 `KL penalty` 形式好.
 那 `clipped surrogate objective` 到底是什么呢? 其实就是限制了 surrogate 的变化幅度, 和 `KL` 的规则差不多.
 
-<img class="course-image" src="/static/results/rl/6-4-6.png">
+<img class="course-image" src="/static/results/rl/6-4-6.png" alt="{{ page.title }}{% increment image-count %}">
 
 这里的 `r(theta)` 是 (New Policy/Old Policy) 的比例, 和前面的公式一样.
 我在代码中把这两种都写上了, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py).
@@ -231,7 +231,7 @@ class PPO:
 
 最后我们看一张学习的效果图:
 
-<img class="course-image" src="/static/results/rl/6-4-7.png">
+<img class="course-image" src="/static/results/rl/6-4-7.png" alt="{{ page.title }}{% increment image-count %}">
 
 好了这就是整个 PPO 的主要流程了, 其他的步骤都没那么重要了, 可以直接在我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py)
 中轻松弄懂. 接下来我们看看怎么样把这个单线程的 PPO 变到多线程去 (Distributed PPO).

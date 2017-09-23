@@ -69,7 +69,7 @@ train_data = torchvision.datasets.MNIST(
 )
 ```
 
-<img class="course-image" src="/static/results/torch/4-1-1.png">
+<img class="course-image" src="/static/results/torch/4-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 黑色的地方的值都是0, 白色的地方值大于0.
 

@@ -47,7 +47,7 @@ ax4.set_xlabel('ax4_x')
 ax4.set_ylabel('ax4_y')
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_1.png">
+<img class="course-image" src="/static/results/plt/4_2_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 <h4 class="tut-h4-pad" id="m2">Method 2: gridspec</h4>
 
@@ -77,7 +77,7 @@ ax9 = plt.subplot(gs[-1, 0])
 ax10 = plt.subplot(gs[-1, -2])
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_2.png">
+<img class="course-image" src="/static/results/plt/4_2_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 <h4 class="tut-h4-pad" id="m3">Method 3: subplots</h4>
 
@@ -101,4 +101,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_3.png">
+<img class="course-image" src="/static/results/plt/4_2_3.png" alt="{{ page.title }}{% increment image-count %}">

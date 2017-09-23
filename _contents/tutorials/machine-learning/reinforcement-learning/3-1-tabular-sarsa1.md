@@ -41,7 +41,7 @@ post-headings:
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 
-<img class="course-image" src="/static/results/rl/3-1-1.png">
+<img class="course-image" src="/static/results/rl/3-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 整个算法还是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
 不过于 Qlearning 不同之处:

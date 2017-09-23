@@ -128,4 +128,4 @@ $ git commit -m "create 1.py"
 
 整个上述过程可以被这张 git 官网上的流程图直观地表现:
 
-<img class="course-image" src="/static/results/git/2-1-1.png">
+<img class="course-image" src="/static/results/git/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">

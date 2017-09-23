@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/machine-learning/sklearn/
 tut-title: "Sklearn 通用机器学习 教程系列"
 tut-permalink: /tutorials/machine-learning/
@@ -16,15 +16,3 @@ sklearn 教程 包括: 介绍基本使用,
 如何选择合适的机器学习方法, 通用的训练模式等等."
 ---
 
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/machine-learning/keras/
 tut-title: "Keras 教程系列"
 tut-permalink: /tutorials/machine-learning/
@@ -18,14 +18,3 @@ Keras 教程 包含了很多内容, 是以例子为主体.
 在 Keras 教程中, 会要介绍如何搭建普通的分类和回归神经网络, CNN, RNN, Autoencoder 等."
 ---
 
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

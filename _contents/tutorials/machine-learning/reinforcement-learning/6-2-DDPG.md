@@ -57,7 +57,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 `DDPG` 的算法实际上就是一种 `Actor Critic`, 我在[上一篇]({% link _contents/tutorials/machine-learning/reinforcement-learning/6-1-actor-critic.md %})中简短地介绍了 `Actor Critic` 的算法.
 不太清楚的同学先去看看上一篇吧.
 
-<img class="course-image" src="/static/results/rl/6-2-0.png">
+<img class="course-image" src="/static/results/rl/6-2-0.png" alt="{{ page.title }}{% increment image-count %}">
 
 关于 `Actor` 部分, 他的参数更新同样会涉及到 `Critic`, 上面是关于 `Actor` 参数的更新,
 它的前半部分 `grad[Q]` 是从 `Critic` 来的, 这是在说: **这次 `Actor` 的动作要怎么移动, 才能获得更大的 `Q`**,
@@ -65,7 +65,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 所以两者合起来就是在说: **`Actor` 要朝着更有可能获取大 `Q` 的方向修改动作参数了**.
 
 
-<img class="course-image" src="/static/results/rl/6-2-1.png">
+<img class="course-image" src="/static/results/rl/6-2-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 上面这个是关于 `Critic` 的更新, 它借鉴了 `DQN` 和 `Double Q learning` 的方式,
 有两个计算 `Q` 的神经网络, `Q_target` 中依据下一状态, 用 `Actor` 来选择动作, 而这时的 `Actor`
@@ -81,12 +81,12 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 
 我们用 Tensorflow 搭建神经网络, 主结构可以见这个 tensorboard 的出来的图.
 
-<img class="course-image" src="/static/results/rl/6-2-2.png">
+<img class="course-image" src="/static/results/rl/6-2-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 看起来很复杂吧, 没关系, 我们一步步来, 拆开来看就容易了. 首先看看 `Actor`
 和 `Critic` 中各有什么结构.
 
-<img class="course-image" src="/static/results/rl/6-2-3.png">
+<img class="course-image" src="/static/results/rl/6-2-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 其搭建的代码部分在这 (如果想一次性看全部, 请去我的[Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)):
 
@@ -119,7 +119,7 @@ class Critic(object):
 有了对 `Actor Critic` 每个里面各两个神经网络结构的了解, 我们再来具体看看他们是如何进行交流,
 传递信息的. 我们从 `Actor` 的学习更新方式开始说起.
 
-<img class="course-image" src="/static/results/rl/6-2-4.png">
+<img class="course-image" src="/static/results/rl/6-2-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 这张图我们就能一眼看穿 `Actor` 的更新到底基于了哪些东西. 可以看出, 它使用了两个
 `eval_net`, 所以 `Actor` class 中用于 train 的代码我们这样写:
@@ -147,7 +147,7 @@ with tf.variable_scope('a_grad'):
 
 而在 `Critic` 中, 我们用的东西简单一点.
 
-<img class="course-image" src="/static/results/rl/6-2-5.png">
+<img class="course-image" src="/static/results/rl/6-2-5.png" alt="{{ page.title }}{% increment image-count %}">
 
 下面就是 `Critic` 更新时的代码了.
 

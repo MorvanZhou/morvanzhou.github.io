@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/machine-learning/evolutionary-algorithm/
 tut-title: "Python Evolutionary Strategies 进化算法教程"
 tut-permalink: /tutorials/machine-learning/
@@ -17,16 +17,5 @@ description: "进化算法 (Evolutionary Algorithm) 是机器学习的一个分�
 进化算法 教程 会介绍到主要的几个板块: 经典的遗传算法 (Genetic Algorithm),
 神经进化 (NeuroEvolution), 进化策略 (Evolution Strategy)"
 ---
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}
 

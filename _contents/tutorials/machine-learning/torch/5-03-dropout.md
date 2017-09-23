@@ -31,7 +31,7 @@ post-headings:
 强烈推荐通过[这个动画]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})的形式短时间了解什么是过拟合, 怎么解决过拟合.
 下面动图就显示了我们成功缓解了过拟合现象.
 
-<img class="course-image" src="/static/results/torch/5-3-1.gif">
+<img class="course-image" src="/static/results/torch/5-3-1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -41,7 +41,7 @@ post-headings:
 
 自己做一些伪数据, 用来模拟真实情况. 数据少, 才能凸显过拟合问题, 所以我们就做10个数据点.
 
-<img class="course-image" src="/static/results/torch/5-3-2.png">
+<img class="course-image" src="/static/results/torch/5-3-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 ```python
@@ -130,7 +130,7 @@ for t in range(500):
 在这个 `for` 循环里, 我们加上画测试图的部分. 注意在测试时, 要将网络改成 `eval()` 形式, 特别是 `net_dropped`, `net_overfitting` 改不改其实无所谓.
 画好图再改回 `train()` 模式.
 
-<img class="course-image" src="/static/results/torch/5-3-1.gif">
+<img class="course-image" src="/static/results/torch/5-3-1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 ```python
     ...
@@ -154,7 +154,7 @@ for t in range(500):
         net_dropped.train()
 ```
 
-<img class="course-image" src="/static/results/torch/5-3-3.png">
+<img class="course-image" src="/static/results/torch/5-3-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/503_dropout.py) 中的每一步的意义啦.

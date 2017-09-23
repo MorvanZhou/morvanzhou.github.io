@@ -61,7 +61,7 @@ plt.ylabel('I am y')
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_3_1.png">
+<img class= "course-image" src="/static/results/plt/2_3_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 使用`np.linspace`定义范围以及个数：范围是(-1,2);个数是5.
 使用`print`打印出新定义的范围.
@@ -82,4 +82,4 @@ plt.yticks([-2, -1.8, -1, 1.22, 3],[r'$really\ bad$', r'$bad$', r'$normal$', r'$
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_3_2.png">
+<img class= "course-image" src="/static/results/plt/2_3_2.png" alt="{{ page.title }}{% increment image-count %}">

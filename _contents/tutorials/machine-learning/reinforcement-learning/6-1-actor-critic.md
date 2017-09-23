@@ -67,7 +67,7 @@ post-headings:
 **`Actor` 修改行为时就像蒙着眼睛一直向前开车, `Critic` 就是那个扶方向盘改变 `Actor`
 开车方向的.**
 
-<img class="course-image" src="/static/results/rl/6-1-1.png">
+<img class="course-image" src="/static/results/rl/6-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 或者说详细点, 就是 `Actor` 在运用 Policy Gradient 的方法进行 Gradient ascent 的时候, 由
 `Critic` 来告诉他, 这次的 Gradient ascent 是不是一次正确的 ascent, 如果这次的得分不好,
@@ -78,7 +78,7 @@ post-headings:
 
 有了点理解, 我们来代码 (如果想一次性看所有代码, 请来我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py)):
 
-<img class="course-image" src="/static/results/rl/6-1-2.png">
+<img class="course-image" src="/static/results/rl/6-1-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 上图是 `Actor` 的神经网络结果, 代码结构在下面:
 
@@ -97,7 +97,7 @@ class Actor(object):
 ```
 
 
-<img class="course-image" src="/static/results/rl/6-1-3.png">
+<img class="course-image" src="/static/results/rl/6-1-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 上图是 `Critic` 的神经网络结果, 代码结构在下面:
 

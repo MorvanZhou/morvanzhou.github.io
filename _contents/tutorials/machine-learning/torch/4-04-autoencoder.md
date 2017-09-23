@@ -32,11 +32,11 @@ post-headings:
 
 这次我们还用 MNIST 手写数字数据来压缩再解压图片.
 
-<img class="course-image" src="/static/results/torch/4-4-1.gif">
+<img class="course-image" src="/static/results/torch/4-4-1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 然后用压缩的特征进行非监督分类.
 
-<img class="course-image" src="/static/results/torch/4-4-2.gif">
+<img class="course-image" src="/static/results/torch/4-4-2.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -72,7 +72,7 @@ train_data = torchvision.datasets.MNIST(
 )
 ```
 
-<img class="course-image" src="/static/results/torch/4-4-3.png">
+<img class="course-image" src="/static/results/torch/4-4-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 这就是一张我们要训练的手写数字 4.
 
@@ -123,7 +123,7 @@ autoencoder = AutoEncoder()
 比如这里我们用 `decoder` 的信息输出看和原图片的对比, 还能用 `encoder` 来看经过压缩后, 神经网络对原图片的理解.
 `encoder` 能将不同图片数据大概的分离开来. 这样就是一个无监督学习的过程.
 
-<img class="course-image" src="/static/results/torch/4-4-1.gif">
+<img class="course-image" src="/static/results/torch/4-4-1.gif" alt="{{ page.title }}{% increment image-count %}">
 
 ```python
 optimizer = torch.optim.Adam(autoencoder.parameters(), lr=LR)
@@ -143,13 +143,13 @@ for epoch in range(EPOCH):
         optimizer.step()                    # apply gradients
 ```
 
-<img class="course-image" src="/static/results/torch/4-4-4.png">
+<img class="course-image" src="/static/results/torch/4-4-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<img class="course-image" src="/static/results/torch/4-4-2.gif">
+<img class="course-image" src="/static/results/torch/4-4-2.gif" alt="{{ page.title }}{% increment image-count %}">
 
 3D 的可视化图挺有趣的, 还能挪动观看, 更加直观, 好理解.
 
@@ -173,7 +173,7 @@ ax.set_zlim(Z.min(), Z.max())
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/torch/4-4-5.png">
+<img class="course-image" src="/static/results/torch/4-4-5.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py) 中的每一步的意义啦.

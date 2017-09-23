@@ -80,7 +80,7 @@ plt.show()
 
 显示结果: 
 
-<img class="course-image" src="/static/results/theano/3_2_1.png">
+<img class="course-image" src="/static/results/theano/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>

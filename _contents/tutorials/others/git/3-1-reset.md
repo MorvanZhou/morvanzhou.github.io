@@ -75,10 +75,10 @@ $ git status -s
 在穿梭到过去的 `commit` 之前, 我们必须了解 git 是如何一步一步累加更改的.
 我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html)
 
-<img class="course-image" src="/static/results/git/2-2-1.png">
-<img class="course-image" src="/static/results/git/2-2-2.png">
-<img class="course-image" src="/static/results/git/2-2-3.png">
-<img class="course-image" src="/static/results/git/2-2-4.png">
+<img class="course-image" src="/static/results/git/2-2-1.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/git/2-2-2.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/git/2-2-3.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/git/2-2-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 每个 `commit` 都有自己的 `id` 数字号, `HEAD` 是一个指针, 
 指引当前的状态是在哪个 `commit`. 最近的一次 `commit` 在最右边, 我们如果要回到过去,

@@ -32,7 +32,7 @@ plt.show()
 
 散点图的结果为：
 
-<img class="course-image" src="/static/results/tensorflow/3_3_1.png">
+<img class="course-image" src="/static/results/tensorflow/3_3_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 接下来，我们来显示预测数据。
 
@@ -56,6 +56,6 @@ for i in range(1000):
 
 最后，机器学习的结果为：
 
-<img class="course-image" src="/static/results/tensorflow/3_3_2.png">
+<img class="course-image" src="/static/results/tensorflow/3_3_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 

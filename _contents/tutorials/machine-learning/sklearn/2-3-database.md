@@ -30,12 +30,12 @@ eg: boston 房价, 糖尿病, 数字, Iris 花。
 也可以生成虚拟的数据，例如用来训练线性回归模型的数据，可以用函数来生成。
 
 
-<img class="course-image" src="/static/results/sklearn/2_3_1.png">
+<img class="course-image" src="/static/results/sklearn/2_3_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 例如，点击进入 boston 房价的数据，可以看到 `sample` 的总数，属性，以及 `label` 等信息。
 
-<img class="course-image" src="/static/results/sklearn/2_3_2.png">
+<img class="course-image" src="/static/results/sklearn/2_3_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 如果是自己生成数据，按照函数的形式，输入 `sample，feature，target` 的个数等等。
 
@@ -114,7 +114,7 @@ plt.scatter(X, y)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/2_3_3.png">
+<img class="course-image" src="/static/results/sklearn/2_3_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -129,7 +129,7 @@ plt.scatter(X, y)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/2_3_4.png">
+<img class="course-image" src="/static/results/sklearn/2_3_4.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 

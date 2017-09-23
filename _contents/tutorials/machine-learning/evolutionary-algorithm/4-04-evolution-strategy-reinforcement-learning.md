@@ -41,7 +41,7 @@ post-headings:
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-1.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 简单来说, 这个算法就是在不断地试错, 然后每一次试错后, 让自己更靠近到那些返回更多奖励的尝试点. 如果大家对[强化学习的 Policy Gradient]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %})
 有了解的话, 我们就来在这里说说 Policy Gradient (PG) 和 Evolution Strategy (ES) 的不同之处.
@@ -81,7 +81,7 @@ for i in range(300):
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-1.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 安装 gym 的方式也很简单, 大家可以直接参考我在之前做 强化学习 Reinforcement learning 教程中的[这节内容]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-4-gym.md %}),
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
@@ -161,7 +161,7 @@ def train(net_shapes, net_params, pool):
 而是使用了 `utility` 这个东西. 简单来说, 就是将 `reward` 排序, `reward` 最大的那个, 对应上 `utility` 的第一个,
 反之, `reward` 最小的对应上 `utility` 最后一位. 而我们的 `utility` 长这样:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-2.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 OpenAI 的 paper 当中提到这样会促进学习, 我想这样的效果应该和 normalize reward 的效果差不多. 我们就按 OpenAI 提到的方法来.
 
@@ -189,7 +189,7 @@ def get_reward(shapes, params, env, ep_max_step, seed,):
 当中, 用了论文中提到的 `mirrored sampling` 这种方法 (论文名: [Mirrored Sampling and Sequential Selection for
 Evolution Strategies](https://hal.inria.fr/inria-00530202/document)). 下面是这个论文中的图.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-3.png">
+<img class="course-image" src="/static/results/evolutionary-algorithm/4-4-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 简单说, 我们会生成很多噪点, 与其完全随机, 还不如生成一些镜像的噪点. 那这些镜像噪点中,
 大多数情况都是其中一个比另一个好, 所以总会有比较好的那个一个噪点, 我们就利用镜像中比较好的噪点, 加大幅度更新.

@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 tut-title: "Python threading 多线程教程系列"
 permalink: /tutorials/python-basic/threading/
 tut-permalink: /tutorials/python-basic/
@@ -11,15 +11,3 @@ description: "多线程 Threading 是一种让程序拥有分身效果.
 能同时处理多件事情. 一般的程序只能从上到下一行行执行代码, 不过多线程 (Threading) 就能打破这种限制.
 让你的程序鲜活起来."
 ---
-
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

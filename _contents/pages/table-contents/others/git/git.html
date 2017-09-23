@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 tut-title: Git 版本管理 教程系列
 permalink: /tutorials/others/git/
 tut-permalink: /tutorials/others/
@@ -15,15 +15,3 @@ description: "Git 是分布式版本控制器 (VCS), 如果你正在为自己手
 或者想要探索更有效率的管理代码方式, Git 教程
 能帮你快速掌握一门绝技, 从此不再为目录中乱七八糟的文件烦恼了."
 ---
-
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

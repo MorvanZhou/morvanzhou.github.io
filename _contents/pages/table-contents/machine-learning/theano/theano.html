@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/machine-learning/theano/
 tut-title: "Theano 教程系列"
 tut-permalink: /tutorials/machine-learning/
@@ -19,15 +19,4 @@ Theano 教程
 然后再开始运用."
 ---
 
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

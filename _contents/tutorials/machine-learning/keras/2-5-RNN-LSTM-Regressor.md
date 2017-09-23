@@ -36,7 +36,7 @@ def get_batch():
     return [seq[:, :, np.newaxis], res[:, :, np.newaxis], xs]
 ```
 
-<img class="course-image" src="/static/results/keras/2-5-1.png">
+<img class="course-image" src="/static/results/keras/2-5-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
@@ -77,6 +77,6 @@ for step in range(501):
         print('train cost: ', cost)
 ```
        
-<img class="course-image" src="/static/results/keras/2-5-2.png">
+<img class="course-image" src="/static/results/keras/2-5-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 

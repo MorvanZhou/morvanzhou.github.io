@@ -95,4 +95,4 @@ model.fit(X_train, y_train, epoch=1, batch_size=32,)
 
 输出`test`的`loss`和`accuracy`结果
 
-<img class="course-image" src="/static/results/keras/2-3-1.png">
+<img class="course-image" src="/static/results/keras/2-3-1.png" alt="{{ page.title }}{% increment image-count %}">

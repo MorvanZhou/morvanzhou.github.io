@@ -35,7 +35,7 @@ plt.figure(num=1, figsize=(8, 5),)
 plt.plot(x, y,)
 ```
 
-<img class= "course-image" src="/static/results/plt/2_6_1.png">
+<img class= "course-image" src="/static/results/plt/2_6_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -53,7 +53,7 @@ ax.yaxis.set_ticks_position('left')
 ax.spines['left'].set_position(('data', 0))
 ```
 
-<img class= "course-image" src="/static/results/plt/2_6_2.png">
+<img class= "course-image" src="/static/results/plt/2_6_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 然后标注出点`(x0, y0)`的位置信息. 用`plt.plot([x0, x0,], [0, y0,], 'k--', linewidth=2.5)` 画出一条垂直于x轴的虚线.
 
@@ -65,7 +65,7 @@ plt.plot([x0, x0,], [0, y0,], 'k--', linewidth=2.5)
 plt.scatter([x0, ], [y0, ], s=50, color='b')
 ```
 
-<img class= "course-image" src="/static/results/plt/2_6_3.png">
+<img class= "course-image" src="/static/results/plt/2_6_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -82,7 +82,7 @@ plt.annotate(r'$2x+1=%s$' % y0, xy=(x0, y0), xycoords='data', xytext=(+30, -30),
 其中参数`xycoords='data'` 是说基于数据的值来选位置, `xytext=(+30, -30)` 和 `textcoords='offset points'` 对于标注位置的描述 和 xy 偏差值,
 `arrowprops`是对图中箭头类型的一些设置.
 
-<img class= "course-image" src="/static/results/plt/2_6_4.png">
+<img class= "course-image" src="/static/results/plt/2_6_4.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -95,4 +95,4 @@ plt.text(-3.7, 3, r'$This\ is\ the\ some\ text. \mu\ \sigma_i\ \alpha_t$',
 
 其中`-3.7, 3,`是选取text的位置, 空格需要用到转字符`\ `,`fontdict`设置文本字体.
 
-<img class= "course-image" src="/static/results/plt/2_6_5.png">
+<img class= "course-image" src="/static/results/plt/2_6_5.png" alt="{{ page.title }}{% increment image-count %}">

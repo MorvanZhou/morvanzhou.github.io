@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 permalink: /tutorials/machine-learning/ML-intro/
 tut-title: "有趣的机器学习系列"
 tut-permalink: /tutorials/machine-learning/
@@ -16,15 +16,4 @@ description: "有趣的机器学习 里的前半部分囊括了近些年来比�
 却还没有找到好方法去运用机器学习的同学们.
 介绍机器学习模式, 使用这些模式的方法技巧都将在这个简介系列中概括得通俗易懂."
 ---
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
 
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

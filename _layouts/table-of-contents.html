@@ -1,13 +1,22 @@
+---
+layout: front-page
+---
 
-<img class="course-summary-image" src="{{ include.tut-course-cover }}" alt="{{ include.tut-course-cover-alt }}">
+<!-- variables for this page -->
+{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
+
+<!-- for this page contents -->
+<img class="course-summary-image" src="{{ page.tut-course-cover }}" alt="{{ page.tut-course-cover-alt }}">
+
+<h1 style="display:none">{{ page.tut-title }}</h1>
 
 <div class="pad-main">
 	<ul class="table-of-contents-ul">
-		{% for chapter-name in {{include.tut-chapters}} %}
+		{% for chapter-name in page.tut-chapters %}
 			{% assign chapter-id = forloop.index %}
 			<li class="chapter-li"><h4>{{chapter-name}}</h4>
 				<ol>
-				{% assign tuts = ({{include.tut-category}} | where: "chapter", forloop.index) %}
+				{% assign tuts = ({{tut-category}} | where: "chapter", forloop.index) %}
 				{% assign tuts = tuts | sort: "id" %}
 			    {% for tut in tuts %}
 					{% assign section-id = forloop.index %}
@@ -22,4 +31,3 @@
 		{% endfor %}
 	</ul>
 </div>
-

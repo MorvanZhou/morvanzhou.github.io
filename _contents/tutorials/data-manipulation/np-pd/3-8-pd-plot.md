@@ -49,7 +49,7 @@ plt.show()
 就这么简单，熟悉 matplotlib 的朋友知道如果需要`plot`一个数据，我们可以使用 `plt.plot(x=, y=)`，把`x`,`y`的数据作为参数存进去，但是`data`本来就是一个数据，所以我们可以直接`plot`。
 生成的结果就是下图：
 
-<img class="course-image" src="/static/results/np-pd/3-8-1.png">
+<img class="course-image" src="/static/results/np-pd/3-8-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -69,7 +69,7 @@ data.plot()
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/np-pd/3-8-2.png">
+<img class="course-image" src="/static/results/np-pd/3-8-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 这个就是我们刚刚生成的4个`column`的数据，因为有4组数据，所以4组数据会分别`plot`出来。`plot` 可以指定很多参数，具体的用法大家可以自己查一下[这里](http://pandas.pydata.org/pandas-docs/version/0.18.1/visualization.html)
 
@@ -100,7 +100,7 @@ plt.show()
 
 下面就是我`plot`出来的图片
 
-<img class="course-image" src="/static/results/np-pd/3-8-3.png">
+<img class="course-image" src="/static/results/np-pd/3-8-3.png" alt="{{ page.title }}{% increment image-count %}">
 
 这就是我们今天讲的两种呈现方式，一种是线性的方式，一种是散点图。
 

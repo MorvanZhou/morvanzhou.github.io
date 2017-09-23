@@ -111,5 +111,5 @@ $ git log --oneline --graph
 回到这张图, 
 他也诠释了两个分支都有更改的时候的样子, 在这种情况下 `merge`, 我们就要使用上述的流程.
 
-<img class="course-image" src="/static/results/git/4-2-1.png">
+<img class="course-image" src="/static/results/git/4-2-1.png" alt="{{ page.title }}{% increment image-count %}">
 

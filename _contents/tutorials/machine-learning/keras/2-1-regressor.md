@@ -21,7 +21,7 @@ post-headings:
 
 神经网络可以用来模拟回归问题 (regression)，例如给下面一组数据，用一条线来对数据进行拟合，并可以预测新输入 `x` 的输出值。
 
-<img class="course-image" src="/static/results/keras/2-1-2.png">
+<img class="course-image" src="/static/results/keras/2-1-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
@@ -48,7 +48,7 @@ X_train, Y_train = X[:160], Y[:160]     # train 前 160 data points
 X_test, Y_test = X[160:], Y[160:]       # test 后 40 data points
 ```
 
-<img class="course-image" src="/static/results/keras/2-1-1.png">
+<img class="course-image" src="/static/results/keras/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
 
@@ -133,6 +133,6 @@ plt.plot(X_test, Y_pred)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/keras/2-1-2.png">
+<img class="course-image" src="/static/results/keras/2-1-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 

@@ -57,7 +57,7 @@ plt.plot([0,1],[0,4])
 plt.show()  # 展示
 ```
 
-<img class="course-image" src="/static/results/plt/4_1_1.png">
+<img class="course-image" src="/static/results/plt/4_1_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -97,6 +97,6 @@ plt.plot([0,1],[0,4])
 plt.show()  # 展示
 ```
 
-<img class="course-image" src="/static/results/plt/4_1_2.png">
+<img class="course-image" src="/static/results/plt/4_1_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 

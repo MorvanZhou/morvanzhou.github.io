@@ -75,7 +75,7 @@ class SarsaLambdaTable:
 
 算法的相应更改请参考这个:
 
-<img class="course-image" src="/static/results/rl/3-3-1.png">
+<img class="course-image" src="/static/results/rl/3-3-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -162,7 +162,7 @@ self.eligibility_trace.ix[s, a] = 1
 
 他们两的不同之处可以用这张图来概括:
 
-<img class="course-image" src="/static/results/rl/3-3-2.png">
+<img class="course-image" src="/static/results/rl/3-3-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 这是针对于一个 state-action 值按经历次数的变化.
 最上面是经历 state-action 的时间点, 第二张图是使用这种方式所带来的 "不可或缺性值":

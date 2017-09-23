@@ -1,5 +1,5 @@
 ---
-layout: front-page
+layout: table-of-contents
 tut-title: "Python 基础教程系列"
 permalink: /tutorials/python-basic/basic/
 tut-permalink: /tutorials/python-basic/
@@ -24,14 +24,3 @@ tut-chapters:
   - 其他
 ---
 
-<!-- variables for this page -->
-{% assign tut-category = site.contents | where: "category", page.tut-category-name %}
-
-<!-- include for this page contents -->
-
-{% include tutorial-contents.html
-tut-course-cover=page.tut-course-cover
-tut-course-cover-alt=page.tut-category-name
-tut-chapters=page.tut-chapters
-tut-category=tut-category
-%}

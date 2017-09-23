@@ -57,7 +57,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 我们知道 DQN 的神经网络部分可以看成一个 `最新的神经网络` + `老神经网络`,
 他们有相同的结构, 但内部的参数更新却有时差. 而它的 `Q现实` 部分是这样的:
 
-<img class="course-image" src="/static/results/rl/4-5-1.png">
+<img class="course-image" src="/static/results/rl/4-5-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 因为我们的神经网络预测 `Qmax` 本来就有误差, 每次也向着最大误差的 `Q现实` 改进神经网络,
 就是因为这个 `Qmax` 导致了 overestimate. 所以 Double DQN 的想法就是引入另一个神经网络来打消一些最大误差的影响.
@@ -72,7 +72,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _contents/tutorials/machine
 Double DQN 中的 `Q_next = Q_next(s', argmax(Q_eval(s', a_all)))`. 也可以表达成下面那样.
 
 
-<img class="course-image" src="/static/results/rl/4-5-2.png">
+<img class="course-image" src="/static/results/rl/4-5-2.png" alt="{{ page.title }}{% increment image-count %}">
 
 
 
@@ -105,8 +105,8 @@ class DoubleDQN:
 接着我们来修改 `learn()` 中的代码. 我们对比 Double DQN 和 Natural DQN 在 tensorboard 中的图,
 发现他们的结构并没有不同, 但是在计算 `q_target` 的时候, 方法是不同的.
 
-<a href="/static/results/rl/4-5-3.png">
-<img class="course-image" src="/static/results/rl/4-5-3.png">
+<a href="/static/results/rl/4-5-3.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/rl/4-5-3.png" alt="{{ page.title }}{% increment image-count %}">
 </a>
 
 ```python
@@ -253,7 +253,7 @@ plt.show()
 
 所以这个出来的图是这样:
 
-<img class="course-image" src="/static/results/rl/4-5-4.png">
+<img class="course-image" src="/static/results/rl/4-5-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 可以看出, Natural DQN 学得差不多后, 在立起来时, 大部分时间都是 估计的 Q值 要大于0, 这时就出现了
 overestimate, 而 Double DQN 的 Q值 就消除了一些 overestimate, 将估计值保持在 0 左右.

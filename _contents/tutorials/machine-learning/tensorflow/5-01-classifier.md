@@ -38,7 +38,7 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 MNIST库是手写体数字库，差不多是这样子的
 
-<img class="course-image" src="/static/results/tensorflow/5_01_1.png">
+<img class="course-image" src="/static/results/tensorflow/5_01_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 数据中包含55000张训练图片，每张图片的分辨率是28×28，所以我们的训练网络输入应该是28×28=784个像素数据。
 
@@ -64,7 +64,7 @@ prediction = add_layer(xs, 784, 10, activation_function=tf.nn.softmax)
 
 其中输入数据是784个特征，输出数据是10个特征，激励采用softmax函数，网络结构图是这样子的
 
-<img class="course-image" src="/static/results/tensorflow/5_01_2.png">
+<img class="course-image" src="/static/results/tensorflow/5_01_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -106,7 +106,7 @@ if i % 50 == 0:
 
 输出结果如下：
 
-<img class="course-image" src="/static/results/tensorflow/5_01_3.png">
+<img class="course-image" src="/static/results/tensorflow/5_01_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 有没有很惊讶啊，如此简单的神经网络结构竟然可以达到这样的图像识别精度，其实稍作改动后，识别的精度将大幅提高。
 请关注后续课程哦。

@@ -120,7 +120,7 @@ restore_net()
 restore_params()
 ```
 
-<img class="course-image" src="/static/results/torch/3-4-1.png">
+<img class="course-image" src="/static/results/torch/3-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 这样我们就能看出三个网络完全一模一样啦.
 

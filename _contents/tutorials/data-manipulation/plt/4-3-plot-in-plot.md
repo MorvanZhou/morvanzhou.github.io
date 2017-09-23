@@ -17,7 +17,7 @@ post-headings:
 
 这次我们来讲matplotlib里一个很有意思的功能，叫做图中图(plot in plot)，最后的效果如下：
 
- <img class="course-image" src="/static/results/plt/4_3_1.png">
+ <img class="course-image" src="/static/results/plt/4_3_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 可以看到，整个Figure 1包含了三个图，其中两个小图`title inside 1`和`title inside 2`又出现在大图`title`中。这是如何做到的呢？
 
@@ -61,7 +61,7 @@ ax1.set_title('title')
 
 效果如下：
 
- <img class="course-image" src="/static/results/plt/4_3_2.png">
+ <img class="course-image" src="/static/results/plt/4_3_2.png" alt="{{ page.title }}{% increment image-count %}">
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
@@ -79,7 +79,7 @@ ax2.set_title('title inside 1')
 
 效果如下：
 
- <img class="course-image" src="/static/results/plt/4_3_3.png">
+ <img class="course-image" src="/static/results/plt/4_3_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 最后，我们来绘制右下角的小图。这里我们采用一种更简单方法，即直接往plt里添加新的坐标系：
 
@@ -97,4 +97,4 @@ plt.title('title inside 2')
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/plt/4_3_1.png">
+<img class="course-image" src="/static/results/plt/4_3_1.png" alt="{{ page.title }}{% increment image-count %}">

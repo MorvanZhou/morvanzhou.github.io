@@ -50,7 +50,7 @@ post-headings:
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<img class="course-image" src="/static/results/rl/4-6-1.png">
+<img class="course-image" src="/static/results/rl/4-6-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 这一套算法重点就在我们 batch 抽样的时候并不是随机抽样, 而是按照 Memory 中的样本优先级来抽.
 所以这能更有效地找到我们需要学习的样本.
@@ -68,7 +68,7 @@ SumTree 是一种树形结构, 每片树叶存储每个样本的优先级 `p`, �
 最下面一层树叶存储样本的 `p`, 叶子上一层最左边的 13 = 3 + 10, 按这个规律相加, 顶层的 root 就是全部 `p` 的合了.
 
 <a href="https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/">
-<img class="course-image" src="/static/results/rl/4-6-2.png">
+<img class="course-image" src="/static/results/rl/4-6-2.png" alt="{{ page.title }}{% increment image-count %}">
 </a>
 
 抽样时, 我们会将 `p` 的总合 除以 batch size, 分成 batch size 那么多区间, (n=sum(p)/batch_size).
@@ -187,8 +187,8 @@ class DQNPrioritiedReplay:
             self.sess = sess
 ```
 
-<a href="/static/results/rl/4-6-3.png">
-<img class="course-image" src="/static/results/rl/4-6-3.png">
+<a href="/static/results/rl/4-6-3.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/rl/4-6-3.png" alt="{{ page.title }}{% increment image-count %}">
 </a>
 
 搭建神经网络时, 我们发现 DQN with Prioritized replay 只多了一个 `ISWeights`, 这个正是[刚刚算法中](/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/#algorithm)提到的
@@ -267,7 +267,7 @@ class DQNPrioritizedReplay:
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
-<img class="course-image" src="/static/results/rl/4-6-4.png">
+<img class="course-image" src="/static/results/rl/4-6-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/run_MountainCar.py),
 我们就不难发现, 我们都从两种方法最初拿到第一个 `R=+10` 奖励的时候算起, 看看经历过一次 `R=+10` 后, 他们有没有好好利用这次的奖励,

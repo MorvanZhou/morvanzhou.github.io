@@ -84,7 +84,7 @@ if step % 500 == 0:
         print('test cost: ', cost, 'test accuracy: ', accuracy)
 ```
 
-<img class="course-image" src="/static/results/keras/2-4-1.png">
+<img class="course-image" src="/static/results/keras/2-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 有兴趣的话可以修改`BATCH_SIZE`和`CELL_SIZE`的值，试试这两个参数对训练时间和精度的影响。
 

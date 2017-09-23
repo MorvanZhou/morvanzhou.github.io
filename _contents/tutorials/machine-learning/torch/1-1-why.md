@@ -31,7 +31,7 @@ post-headings:
 
 很简单, 我们就看看有谁在用 PyTorch 吧.
 
-<img class="course-image" src="/static/results/torch/1-1-1.png">
+<img class="course-image" src="/static/results/torch/1-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
 可见, 著名的 Facebook, twitter 等都在使用它, 这就说明 PyTorch 的确是好用的, 而且是值得推广.
 
@@ -43,11 +43,11 @@ post-headings:
 
 神经网络在学习拟合线条(回归):
 
-<img class="course-image" src="/static/results/torch/1-1-2.gif">
+<img class="course-image" src="/static/results/torch/1-1-2.gif" alt="{{ page.title }}{% increment image-count %}">
 
 神经网络在学习区分数据(分类):
 
-<img class="course-image" src="/static/results/torch/1-1-3.gif">
+<img class="course-image" src="/static/results/torch/1-1-3.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}

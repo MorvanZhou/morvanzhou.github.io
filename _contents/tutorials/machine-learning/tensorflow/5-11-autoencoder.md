@@ -27,14 +27,14 @@ post-headings:
 [Autoencoder]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %}) 那一集；
 如果对它已经有了一定的了解，那么便可以进行代码阶段的学习了。大概过程如下图所示：
 
-<img class="course-image" src="/static/results/tensorflow/5_11_1.png">
+<img class="course-image" src="/static/results/tensorflow/5_11_1.png" alt="{{ page.title }}{% increment image-count %}">
 
 今天的代码，我们会运用两个类型：
 
 - 第一，是通过Feature的压缩并解压，并将结果与原始数据进行对比，观察处理过后的数据是不是如预期跟原始数据很相像。（这里会用到MNIST数据）
 - 第二，我们只看 `encoder` 压缩的过程，使用它将一个数据集压缩到只有两个Feature时，将数据放入一个二维坐标系内，特征压缩的效果如下：
 
- <img class="course-image" src="/static/results/tensorflow/5_11_2.png">
+ <img class="course-image" src="/static/results/tensorflow/5_11_2.png" alt="{{ page.title }}{% increment image-count %}">
 
  同样颜色的点，代表分到同一类的数据。（Lebel相同）
 
@@ -165,7 +165,7 @@ with tf.Session() as sess:
 
 通过5个 Epoch 的训练，（通常情况下，想要得到好的的效果，我们应进行10 ~ 20个 Epoch 的训练）我们的结果如下：
 
-<img class="course-image" src="/static/results/tensorflow/5_11_3.png">
+<img class="course-image" src="/static/results/tensorflow/5_11_3.png" alt="{{ page.title }}{% increment image-count %}">
 
 上面一行是真实数据，下面一行是经过 `encoder` 和 `decoder` 之后的数据，如果继续进行训练，效果会更好。
 
@@ -249,4 +249,4 @@ def decoder(x):
 
 在输出图像时，我们只关心 `encoder` 压缩之后，即 `decoder` 解压之前的结果：
 
-<img class="course-image" src="/static/results/tensorflow/5_11_4.png">
+<img class="course-image" src="/static/results/tensorflow/5_11_4.png" alt="{{ page.title }}{% increment image-count %}">
