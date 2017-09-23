@@ -193,7 +193,7 @@ class PPO:
                 surr = ratio * self.tfadv   # surrogate objective
             if METHOD['name'] == 'kl_pen':      # 如果用 KL penatily
                 self.tflam = tf.placeholder(tf.float32, None, 'lambda')
-                kl = tf.stop_gradient(kl_divergence(oldpi, pi))
+                kl = kl_divergence(oldpi, pi)
                 self.kl_mean = tf.reduce_mean(kl)
                 self.aloss = -(tf.reduce_mean(surr - self.tflam * kl))
             else:                               # 如果用 clipping 的方式
