@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzA0MTMxNDcyOA
+youtube_id: x-svcNmIMBs
 title: Evolution Strategy 强化学习
-publish-date:
+publish-date: 2017-09-23
 thumbnail: "/static/thumbnail/evolutionary-algorithm/44 es.jpg"
 chapter: 4
 description: "上节内容里,
