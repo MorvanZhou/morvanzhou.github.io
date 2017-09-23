@@ -79,6 +79,7 @@ text-align: center;
 button#switch-video {
 display: inline;
 background-color: var(--c-n);
+filter: none !important;
 border: none;
 font-size: 1em;
 padding: 0.2em 2em;
@@ -89,6 +90,7 @@ border-radius:5px;
 
 button#switch-video:hover {
 background-color: var(--c-n-mofan);
+filter: none !important;
 color: var(--c-green-hover);
 }
 .collapse{
