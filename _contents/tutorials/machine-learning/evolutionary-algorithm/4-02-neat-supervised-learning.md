@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzA0MTAzMTM4OA
+youtube_id: uEzhTYiQdh8
 title: NEAT 监督学习
-publish-date:
+publish-date: 2017-09-23
 thumbnail: "/static/thumbnail/evolutionary-algorithm/42 neat.jpg"
 chapter: 4
 description: "我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
@@ -31,6 +31,8 @@ post-headings:
 接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}),
 我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
 我也尝试着纯手工编写 NEAT 算法. 可是... 尝试了几天过后, 因为太麻烦了, 我就放弃了. 我先总结下自己淌过的水, 如果你有能力解决下面提到的几点, 恭喜你, 你真的特别厉害.
+我想提一下,如果用 NEAT 或者遗传算法做监督学习, 这会比用梯度的神经网络慢, 所以如果你想做监督学习, 梯度神经网络是你的最爱. 不过这个教程只是为了学习如何使用 NEAT,
+之后我们再那它来做强化学习. 在强化学习上, NEAT 还是有优势的.
 
 难点 (1) 有效的储存编码的神经网络 (我用 numpy 解决了); (2) 有效的解码并生成一个可以正向传播的神经网络 (由于没有层结构, 不能方便地使用矩阵 dot 点乘.
 我查了很多方法, 但是觉得那些方法都有点复杂, 有的也没效率); (3) 可视化网络结构 (当然要可视化啦, 不可视化出来, 你怎么知道自己的神经网络长什么样, 不好 debug 了呀); (4)
@@ -56,7 +58,7 @@ $ pip install neat-python
 $ pip3 install neat-python
 ```
 
-目前的 neat 版本是 0.91, 如果之后安装不成功, 或者有所变化, 请参考这个[网页](http://neat-python.readthedocs.io/en/latest/installation.html).
+目前的 neat 版本是 0.92, 如果之后安装不成功, 或者有所变化, 请参考这个[网页](http://neat-python.readthedocs.io/en/latest/installation.html).
 
 好了, 这就安装好了主程序了, 接下来为了可视化的效果, 我们还要检查一下是否有安装 `graphviz` 模块. 如果在你电脑中没有这个模块, 如果是 MacOS, 请直接 同上面的步骤 使用 pip install 就好了.
 如果是 Linux, 使用 `sudo apt-get install graphviz` 就好.
@@ -131,10 +133,10 @@ winner = p.run(eval_genomes, 300)   # 输入计算 fitness 的方式和 generati
 
 ```python
 print('\nOutput:')
-    winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
-    for xi, xo in zip(xor_inputs, xor_outputs):
-        output = winner_net.activate(xi)
-        print("input {!r}, expected output {!r}, got {!r}".format(xi, xo, output))
+winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
+for xi, xo in zip(xor_inputs, xor_outputs):
+    output = winner_net.activate(xi)
+    print("input {!r}, expected output {!r}, got {!r}".format(xi, xo, output))
 ```
 
 我们通过这个来输出最后的 `winner` 神经网络预测结果, 不出意外, 你应该预测很准. 最后通过 `visualize.py` [文件的可视化功能](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/visualize.py), 我们就能生成几个图片,
