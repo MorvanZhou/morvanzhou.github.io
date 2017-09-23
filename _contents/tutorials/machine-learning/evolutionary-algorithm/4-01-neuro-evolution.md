@@ -1,9 +1,9 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzA0MDg2NTE5Mg
+youtube_id: 0wWajjm9xj8
 title: 神经进化
-publish-date:
-thumbnail: "/static/thumbnail/"
+publish-date: 2017-09-23
+thumbnail: "/static/thumbnail/evolutionary-algorithm/41es.jpg"
 chapter: 4
 description: "神经网络在当今是一种迅速发展的机器学习方式, 使用反向传播的神经网络更是被推向了一轮又一轮的高峰, 可是我们的视野请不要被反向传播的神经网络变得狭隘.
 因为使用神经网络的机器学习方法还有这么一种叫做: 神经进化 (NeuroEvolution). 这种神经网络个人认为是更接近于生物的神经网络系统, 因为他和生物神经网络一样,

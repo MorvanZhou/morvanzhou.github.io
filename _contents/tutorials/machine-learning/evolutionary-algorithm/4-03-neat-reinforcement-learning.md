@@ -3,7 +3,7 @@ youku_id:
 youtube_id:
 title: NEAT 强化学习
 publish-date:
-thumbnail: "/static/thumbnail/"
+thumbnail: "/static/thumbnail/evolutionary-algorithm/43 neat.jpg"
 chapter: 4
 description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
 有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)
