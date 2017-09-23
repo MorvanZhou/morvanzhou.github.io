@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzA0MTEzNzAzNg
+youtube_id: ZgFzC7uBShM
 title: NEAT 强化学习
-publish-date:
+publish-date: 2017-09-23
 thumbnail: "/static/thumbnail/evolutionary-algorithm/43 neat.jpg"
 chapter: 4
 description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
