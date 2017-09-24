@@ -87,7 +87,7 @@ for i in range(300):
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
 
 
-
+{% include google-in-article-ads.html %}
 
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
