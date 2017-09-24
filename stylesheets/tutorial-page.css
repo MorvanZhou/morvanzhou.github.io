@@ -234,6 +234,12 @@ width: 60%;
 display: block;
 margin: 0 auto;
 }
+
+@media screen and (max-width: 40.5em) {
+ .tut-content-video {
+  width: 90%;
+ }
+}
 .link-under-youtube {
 text-align: center;
 margin: 0;
