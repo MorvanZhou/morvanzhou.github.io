@@ -214,6 +214,9 @@ z-index: 0;
   .tut-content-menu {
   right:1em;
   }
+  .course-image {
+  max-width: 100%;
+  }
 }
 
 
@@ -237,7 +240,7 @@ margin: 0 auto;
 
 @media screen and (max-width: 40.5em) {
  .tut-content-video {
-  width: 90%;
+  width: 100%;
  }
 }
 .link-under-youtube {
