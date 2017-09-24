@@ -1,0 +1,59 @@
+---
+youku_id: XMzAwNzU0NzI1Ng
+youtube_id: tWoS8Td6biQ
+title: 什么是神经网络进化 (Neuro-Evolution)
+chapter: 4
+thumbnail: /static/thumbnail/ML-intro/NE_thumbnail.png
+description: "在进化算法这系列的内容中我做了很久铺垫, 现在总算到了最前沿最先进的技术了. 我们知道机器学习, 深度学习很多时候都和神经网络是分不开的. 那将进化和神经网络结合也在近些年有了突破.
+你大多数时候所见到的人工神经网络是一种计算机能理解的数学模型, 这个模型将观测到的信息通过类似电信号的方式正向传播, 获取深程度的理解, 然后输出自己的判断. 最后通过对比自己的判断和真是数据, 将误差反向传播, 更新自己的网络参数. 但是生物中的神经网络却没有这一套反向传播的系统, 它往往是只产生正向传播, 然后通过刺激产生新的神经联结, 用这些产生的联结理解事物. 这就是大家为什么都在说人工神经网络是和生物神经网络不同的原因之一. 但是早在二十一世纪初, 科学家们已经将生物神经网络的这套系统用程序给实现了, 我们就来看看他们是如何应用的, 他们的优势和劣势各是什么?如果用进化理论来实现神经网络的更新,"
+post-headings:
+  - 人工神经网络和生物神经网络
+  - 遗传算法 和 进化策略 加 神经网络
+  - 梯度 or 进化
+  - 局部 and 全局最优
+  - 并行强化学习
+---
+
+学习资料:
+  * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/)
+  * [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
+  * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
+  * [神经网络进化Python教程]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %})
+
+在进化算法这系列的内容中我做了很久铺垫, 现在总算到了最前沿最先进的技术了. 我们知道机器学习, 深度学习很多时候都和神经网络是分不开的. 那将进化和神经网络结合也在近些年有了突破.
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/NE1.png" alt="{{ page.title }}{% increment image-count %}">
+
+你大多数时候所见到的人工神经网络是一种计算机能理解的数学模型, 这个模型将观测到的信息通过类似电信号的方式正向传播, 获取深程度的理解, 然后输出自己的判断. 最后通过对比自己的判断和真是数据, 将误差反向传播, 更新自己的网络参数. 但是生物中的神经网络却没有这一套反向传播的系统, 它往往是只产生正向传播, 然后通过刺激产生新的神经联结, 用这些产生的联结理解事物. 这就是大家为什么都在说人工神经网络是和生物神经网络不同的原因之一. 但是早在二十一世纪初, 科学家们已经将生物神经网络的这套系统用程序给实现了, 我们就来看看他们是如何应用的, 他们的优势和劣势各是什么?如果用进化理论来实现神经网络的更新,
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/NE2.png" alt="{{ page.title }}{% increment image-count %}">
+
+我们之前提过了两种方式, 遗传算法 (Genetic Algorithm) 和 进化策略 (Evolution Strategy). 这两种方式的神经网络都有了突破性的发展. 像这部影片一样, 我也制作过[遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})和[进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})的短简介, 确保你已经观看过了以上两部简介视频, 因为在这部影片中, 我们会基于之前两部影片来理解. 不管是遗传算法还是进化策略, 他们都是采取了进化理论中的某些重要部分. 比如遗传算法中我们会有来自父母的两组神经网络, 通过将这两个神经网络交叉配对, 产生宝宝的神经网络, 然后将宝宝的神经网络变异, 来获取新的能力. 最后将所有宝宝们放入残酷的现实, 让他们适者生存不适者淘汰. 而如果使用进化策略, 我们更偏向于先固定神经网络的结构, 让这个结构蚕卵, 生出很多和原始神经网络结构相同, 但联结强度稍稍不同的网络. 这些宝宝网络中肯定有好有坏, 进化策略中有趣的一步就来了, 下一代的爸爸是所有宝宝的综合体, 这个综合体中, 好宝宝的联结会占有更多比例, 坏宝宝占有更少比例. 通过这种形式让好宝宝渐渐主宰这个生存环境. 我们知道, 反向传播, 靠计算梯度的神经网络非常适合做监督学习, 比如让计算机识别图片, 在这方面, 使用进化理论的神经网络的确暂时比不上这些梯度的神经网络. 原因很简单.
+
+{% include google-in-article-ads.html %}
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/NE3.png" alt="{{ page.title }}{% increment image-count %}">
+
+在梯度下降中, 我们需要的只是梯度, 让这个神经网络的参数滑到梯度躺平的地方就好了, 因为梯度给你指明了一个优化的方向, 所以如果是监督学习, 优化起来会非常快. 而神经网络的进化, 使用的却是另一种手段. 用原始的点创造出很多新的点, 然后通过新的点来确定下一代的起点在哪. 这样的循环再不断地继续. 可以想象, 如果在监督学习中, 我们需要不断产生非常多新的网络, 测试新的网络, 这将比梯度法慢很多. 但是不使用梯度的方法还有一个好处, 那就是有效避免局部最优.
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/NE4.png" alt="{{ page.title }}{% increment image-count %}">
+
+大家知道, 在梯度下降中, 神经网络很容易会走到一个局部最优, 但是如果是使用基于遗传算法的神经网络, 这个优化过程虽然慢, 我们的宝宝网络却可以随时跳出局部最优, 因为它完全不受梯度的限制. 而且除了监督学习, 我们还能用进化理论的神经网络做强化学习, 在这点上, 已经有最新的研究指出, 基于进化策略的神经网络完全有能力替代传统的基于梯度的强化学习方法.
+
+
+<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+
+<img class="course-image" src="/static/results/ML_intro/NE5.png" alt="{{ page.title }}{% increment image-count %}">
+
+因为涉及到了很多的宝宝, 我们大可将这些宝宝利用计算机强大的并行能力有效的计算. 研究指出, 如果合理的运用这种能力, 他们的训练效果可比传统的强化学习快多了. 或许当基于梯度的方法达到瓶颈后, 这些基于进化的方法能为我们打开另一扇窗.
