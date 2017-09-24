@@ -74,6 +74,8 @@ def make_kid(parent):
 但是还有注意的一点是, 在这一步我们还要对 `MUT_STRENGTH` 进行一点改变. 改变的方法遵循了 1/5 successful rule.
 这个方法是 ES 的开山鼻祖提出来的. 文献在这:
 
+{% include google-in-article-ads.html %}
+
 Rechenberg, I. 1973. Evolutionsstrategie – Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog.
 
 网上有个[课件"Tutorial: CMA-ES — Evolution Strategies and

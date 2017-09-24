@@ -64,6 +64,8 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 尤其是之后, 我们还会涉及到强化学习的内容. 如果大家有了解我做过的 [强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/),
 在后续教程中我们就来看看能挑战当今流行的强化学习的 "进化方法".
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="tutorial">这个教程的内容</h4>
 
 在这个教程中, 我们会用实践的方式, 手把手教你如何在电脑里进化. 让你也能动手实践, 更好的理解消化知识点.

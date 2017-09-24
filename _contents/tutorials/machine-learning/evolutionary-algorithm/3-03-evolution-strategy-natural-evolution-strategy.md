@@ -69,6 +69,8 @@ make_kid = mvn.sample(N_POP)
 这时的 `mvn` 就是这个多变量正态分布啦. 采样的时候呢, 我们就能用 `mvn.sample(N_POP)`.
 记住, `make_kid` 目前只是在计算图纸上的功能, 还没被运行, 之后调用的时候才被运行.
 
+{% include google-in-article-ads.html %}
+
 接下来搭建一些计算图纸上其他的东西, `tfkids_fit` 是将要被传入到计算图纸中的 fitness 值.
 `tfkids` 是之前 `make_kid` 采样出来的宝宝 DNA 们. 神经网络中有一个东西叫做误差, 有时候叫做 `loss` 或者 `cost`,
 通过误差反向传递, 我们就能更新前面的 `Variable` 变量了. 为了变成 tf 形式, 之前的算法中 (梯度*fitness),

@@ -70,6 +70,8 @@ class GA:
 # array([100,  97, 115, 100,  64], dtype=uint8)
 ```
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 如果 GA 用一个 class 代替, 那 select, mutate, crossover 都是 class 里的功能了.

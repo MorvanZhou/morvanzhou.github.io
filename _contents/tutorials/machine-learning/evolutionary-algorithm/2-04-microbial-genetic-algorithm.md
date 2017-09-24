@@ -44,6 +44,7 @@ Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. *
 通过这样的流程, 我们就不用担心有时候变异着变异着, 那些原本好的 pop 流失掉了, 有了这个 MGA 算法, `winner` 总是会被保留下来的.
 GA 中的 Elitism 问题通过这种方法巧妙解决了.
 
+{% include google-in-article-ads.html %}
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 

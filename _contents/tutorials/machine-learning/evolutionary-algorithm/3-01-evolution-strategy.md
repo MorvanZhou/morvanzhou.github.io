@@ -116,6 +116,9 @@ def make_kid(pop, n_kid):
     return kids
 ```
 
+
+{% include google-in-article-ads.html %}
+
 接下来到了惊心动魄的杀人时间. 根据适应度 `fitness` 选择适应度最靠前的一些人,
 抛弃掉那些适应度不佳的人. 这个很简单.
 

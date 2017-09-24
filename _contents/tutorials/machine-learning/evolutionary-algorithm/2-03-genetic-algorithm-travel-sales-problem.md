@@ -64,6 +64,7 @@ fitness0 = 1/total_distance
 fitness1 = np.exp(1/total_distance)
 ```
 
+{% include google-in-article-ads.html %}
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
