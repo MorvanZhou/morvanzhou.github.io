@@ -125,6 +125,8 @@ autoencoder.compile(optimizer='adam', loss='mse')
 ```
 
 
+{% include google-in-article-ads.html %}
+
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 

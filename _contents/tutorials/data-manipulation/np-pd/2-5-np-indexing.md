@@ -43,6 +43,8 @@ print(A[2])
 
 实际上这时的`A[2]`对应的就是矩阵`A`中第三行(从0开始算第一行)的所有元素。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

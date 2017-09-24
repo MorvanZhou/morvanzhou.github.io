@@ -76,6 +76,8 @@ train_data = torchvision.datasets.MNIST(
 
 这就是一张我们要训练的手写数字 4.
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

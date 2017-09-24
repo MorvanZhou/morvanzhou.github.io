@@ -38,6 +38,8 @@ $ sudo yum install git-all
 
 Linux 的更多 distribution 的安装, 请看[这里](https://git-scm.com/download/linux)
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

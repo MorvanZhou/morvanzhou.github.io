@@ -44,6 +44,8 @@ def sale_car(price, color='red', brand='carmy', is_second_hand=True):
 在这里定义了一个 `sale_car` 函数，参数为车的属性，但除了 `price` 之外，像 `color`, `brand` 和 `is_second_hand` 都是有默认值的，如果我们调用函数 `sale_car(1000)`, 那么与 `sale_car(1000, 'red', 'carmy', True)` 是一样的效果。当然也可以在函数调用过程中传入特定的参数用来修改默认参数。通过默认参数可以减轻我们函数调用的复杂度。
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

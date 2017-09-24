@@ -62,6 +62,8 @@ from sklearn.svm import SVC
 import matplotlib.pyplot as plt 
 ```
 
+{% include google-in-article-ads.html %}
+
 生成适合做Classification数据
 
 ```python

@@ -73,6 +73,8 @@ print(np.split(A, 3, axis=1))
 
 为了解决这种情况, 我们会有下面这种方式.
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

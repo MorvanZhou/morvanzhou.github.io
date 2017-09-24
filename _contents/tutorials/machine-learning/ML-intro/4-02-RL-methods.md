@@ -49,6 +49,8 @@ Model-free 中, 机器人只能按部就班, 一步一步等待真实世界的�
 比如在基于概率这边, 有 policy gradients, 在基于价值这边有 q learning, sarsa 等. 而且我们还能结合这两类方法的优势之处, 创造更牛逼的一种方法, 叫做 actor-critic, actor 会基于概率做出动作, 而 critic 会对做出的动作给出动作的价值, 这样就在原有的 policy gradients 上加速了学习过程.
 
 
+{% include google-in-article-ads.html %}
+
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 

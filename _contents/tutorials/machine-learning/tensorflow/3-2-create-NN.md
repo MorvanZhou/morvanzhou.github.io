@@ -72,6 +72,8 @@ ys = tf.placeholder(tf.float32, [None, 1])
 输出层和输入层的结构是一样的，所以我们的输出层也是只有一层。
 所以，我们构建的是——输入层1个、隐藏层10个、输出层1个的神经网络。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

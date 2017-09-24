@@ -60,6 +60,8 @@ print(A.shape(),D.shape())
 
 通过打印出的结果可以看出：`D`本身来源于`A`，`B`两个数列的左右合并，而且新生成的`D`本身也是一个含有6项元素的序列。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

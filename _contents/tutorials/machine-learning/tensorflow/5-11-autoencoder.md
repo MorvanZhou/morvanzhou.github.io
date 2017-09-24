@@ -170,6 +170,8 @@ with tf.Session() as sess:
 上面一行是真实数据，下面一行是经过 `encoder` 和 `decoder` 之后的数据，如果继续进行训练，效果会更好。
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

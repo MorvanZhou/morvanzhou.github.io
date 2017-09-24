@@ -64,6 +64,8 @@ model.add(Activation('softmax'))
 设置优化方法，`loss`函数和`metrics`方法之后就可以开始训练了。
 每次训练的时候并不是取所有的数据，只是取`BATCH_SIZE`个序列，或者称为`BATCH_SIZE`张图片，这样可以大大降低运算时间，提高训练效率。
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 ```python

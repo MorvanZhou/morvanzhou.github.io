@@ -63,6 +63,9 @@ Using Theano Backend
 }
 ```
 
+
+{% include google-in-article-ads.html %}
+
 但这样修改后，`import` 的时候会出现错误信息。
 
 解决的方法有几种:

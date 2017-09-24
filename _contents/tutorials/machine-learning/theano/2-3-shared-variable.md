@@ -95,6 +95,8 @@ print(state.get_value())
 `get_value， set_value` 这两种只能在 `Shared 变量` 的时候调用。
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

@@ -40,6 +40,8 @@ Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化�
 我们之前说到, 一般的遗传算法使用的 DNA 是二进制编码的, 爸妈的 DNA 通过交叉配对, 组成宝宝的 DNA, 宝宝也会通过一定的变异获得新的功能. 但一般的进化策略却有些不同.
 
 
+{% include google-in-article-ads.html %}
+
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 

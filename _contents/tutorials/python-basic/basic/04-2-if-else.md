@@ -61,6 +61,8 @@ else:
 在这里，因为 `condition` 条件为 `True`, 那么将会输出 `x is greater than y`。
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

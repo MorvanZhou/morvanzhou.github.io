@@ -64,6 +64,8 @@ model = Sequential()
 model.add(Dense(output_dim=1, input_dim=1))
 ```
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 接下来要激活神经网络，上一步只是定义模型。

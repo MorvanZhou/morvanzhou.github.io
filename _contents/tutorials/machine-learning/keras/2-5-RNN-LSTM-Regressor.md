@@ -58,6 +58,8 @@ model.add(LSTM(
 model.add(TimeDistributed(Dense(OUTPUT_SIZE)))
 ```
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 设置优化方法，`loss`函数和`metrics`方法之后就可以开始训练了。

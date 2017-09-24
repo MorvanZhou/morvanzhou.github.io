@@ -53,6 +53,8 @@ while condition < 10:
 等于 10 后，不满足 `condition < 10` 的条件（`False`），将不执行 while 内部的内容
 所以 `10` 不会被打印。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

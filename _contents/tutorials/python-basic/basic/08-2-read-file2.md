@@ -43,6 +43,8 @@ This is appended file.
 #运行后再去打开文件，会发现会增加一行代码中定义的字符串
 ```
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

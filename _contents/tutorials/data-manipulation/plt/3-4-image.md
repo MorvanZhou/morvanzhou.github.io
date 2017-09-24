@@ -45,6 +45,8 @@ plt.imshow(a, interpolation='nearest', cmap='bone', origin='lower')
 我们之前选cmap的参数时用的是：`cmap=plt.cmap.bone`，而现在，我们可以直接用单引号传入参数。
 `origin='lower'`代表的就是选择的原点的位置。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

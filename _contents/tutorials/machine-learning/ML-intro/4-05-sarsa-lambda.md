@@ -52,6 +52,8 @@ post-headings:
 
 
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/sl4.png" alt="{{ page.title }}{% increment image-count %}">

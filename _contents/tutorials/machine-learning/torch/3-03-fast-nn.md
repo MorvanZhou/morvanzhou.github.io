@@ -27,6 +27,8 @@ Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, �
 
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

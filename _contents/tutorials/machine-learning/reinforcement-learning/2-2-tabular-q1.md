@@ -46,6 +46,8 @@ Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q tab
 不过这一次的例子, 我们没有运用到 off-policy, 而是把 Qlearning 用在了 on-policy 上, 也就是现学现卖, 将现在经历的直接当场学习并运用.
 On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-policy)]({% link _contents/tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %}) 学习中见识到. 而之后的教程也会讲到一个 on-policy (Sarsa) 的形式, 我们之后再对比.
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

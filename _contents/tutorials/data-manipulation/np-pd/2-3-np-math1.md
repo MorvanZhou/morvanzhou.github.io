@@ -80,6 +80,8 @@ print(b)
 #       [2, 3]])
 ```
 
+{% include google-in-article-ads.html %}
+
 此时构造出来的矩阵`a`和`b`便是2行2列的，其中 `reshape` 操作是对矩阵的形状进行重构，
 其重构的形状便是括号中给出的数字。
 稍显不同的是，Numpy中的矩阵乘法分为两种，

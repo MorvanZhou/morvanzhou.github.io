@@ -46,6 +46,8 @@ post-headings:
 
 同样, 除了误差曲线, 我们可以看他的精确度曲线. 最好的精度是趋向于100%精确. 比如在神经网络的分类问题中, 100个样本中, 我有90张样本分类正确, 那就是说我的预测精确度是90%. 不过, 不知道大家有没有想过对于回归的问题呢? 怎样看预测值是连续数字的精确度? 这时, 我们可以引用 R2 分数在测量回归问题的精度 . R2给出的最大精度也是100%, 所以分类和回归就都有的统一的精度标准. 除了这些评分标准, 我们还有很多其他的标准, 比如 F1 分数 , 用于测量不均衡数据的精度. 由于时间有限, 我们会在今后的视频中继续详细讲解.
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
 
 <img class="course-image" src="/static/results/ML_intro/evaluate5.png" alt="{{ page.title }}{% increment image-count %}">

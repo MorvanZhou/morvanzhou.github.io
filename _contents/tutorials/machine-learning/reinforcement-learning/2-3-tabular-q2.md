@@ -64,6 +64,8 @@ class QLearningTable:
         self.q_table = pd.DataFrame(columns=self.actions)   # 初始 q_table
 ```
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count + 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

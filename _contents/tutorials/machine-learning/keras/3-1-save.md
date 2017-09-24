@@ -68,6 +68,8 @@ test before save:  [[ 1.87243938] [ 2.20500779]]
 """
 ```
 
+{% include google-in-article-ads.html %}
+
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 
 导入保存好的模型，再执行一遍预测，与之前预测的结果比较，可以发现结果是一样的。

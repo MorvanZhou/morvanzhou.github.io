@@ -58,6 +58,8 @@ print(res)
 
 仔细观察会发现结果的`index`是0, 1, 2, 0, 1, 2, 0, 1, 2，若要将`index`重置，请看**例子二**。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

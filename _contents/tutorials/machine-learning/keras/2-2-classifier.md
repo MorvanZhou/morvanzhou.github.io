@@ -124,6 +124,8 @@ model.compile(optimizer=rmsprop,
               metrics=['accuracy'])
 ```
 
+{% include google-in-article-ads.html %}
+
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
 

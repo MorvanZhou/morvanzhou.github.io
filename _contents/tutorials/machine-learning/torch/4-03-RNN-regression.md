@@ -115,6 +115,8 @@ def forward(self, x, h_state):
     outs = outs.view(-1, TIME_STEP, INPUT_SIZE)  # to 3D data
 ```
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

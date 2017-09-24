@@ -55,6 +55,8 @@ post-headings:
 为了验证在共享分支上使用 `rebase` 的危险性, 我们在下面的例子中也验证一下.
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

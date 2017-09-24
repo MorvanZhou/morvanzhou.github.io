@@ -68,6 +68,8 @@ print(model.intercept_)
 """
 ```
 
+{% include google-in-article-ads.html %}
+
 `model.get_params()` 也是功能，它可以取出之前定义的参数。
 
 ```python

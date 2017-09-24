@@ -39,6 +39,8 @@ post-headings:
 总而言之，激活函数的作用就是使重要的信息被激励，不重要或者反向的信息不被激励。传进来的值，经过这种变化，得到另一种结果，而这正是我们需要的。
 
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

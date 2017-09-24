@@ -65,6 +65,8 @@ MAX_EPISODES = 13   # 最大回合数
 FRESH_TIME = 0.3    # 移动间隔时间
 ```
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 对于 tabular Q learning, 我们必须将所有的 Q values (行为值) 放在 `q_table` 中, 更新 `q_table` 也是在更新他的行为准则.

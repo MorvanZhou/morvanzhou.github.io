@@ -66,6 +66,8 @@ prediction = add_layer(xs, 784, 10, activation_function=tf.nn.softmax)
 
 <img class="course-image" src="/static/results/tensorflow/5_01_2.png" alt="{{ page.title }}{% increment image-count %}">
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

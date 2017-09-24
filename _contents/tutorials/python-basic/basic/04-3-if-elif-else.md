@@ -36,6 +36,8 @@ else:
 如果有多个判断条件，那可以通过 `elif` 语句添加多个判断条件，一旦某个条件为 `True`，那么将执行对应的 `expression`。
 并在之代码执行完毕后**跳出**该 `if-elif-else` 语句块，往下执行。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

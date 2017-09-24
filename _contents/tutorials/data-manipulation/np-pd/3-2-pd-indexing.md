@@ -81,6 +81,8 @@ A   B   C   D
 
 如果`df[3:3]`将会是一个空对象。后者选择`20130102`到`20130104`标签之间的数据，并且包括这两个标签。
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

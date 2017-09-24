@@ -76,6 +76,8 @@ a = 1
 >>>>>>> dev
 ```
 
+{% include google-in-article-ads.html %}
+
 所以我们只要在 `1.py` 中手动合并一下两者的不同就 OK 啦. 我们将当前 `HEAD` (也就是`master`) 中的描述 和 `dev` 中的描述合并一下.
 
 ```python

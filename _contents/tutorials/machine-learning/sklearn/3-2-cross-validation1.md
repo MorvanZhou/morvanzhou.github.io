@@ -73,6 +73,8 @@ print(scores.mean())
 
 可以看到交叉验证的准确平均率为`0.973333333333`
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

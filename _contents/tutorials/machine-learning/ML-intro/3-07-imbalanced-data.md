@@ -52,6 +52,8 @@ post-headings:
 
 第三种方法是最简单粗暴的方法之一. 重新组合不均衡数据, 使之均衡. 方式一: 复制或者合成少数部分的样本, 使之和多数部分差不多数量. 方式二: 砍掉一些多数部分, 使两者数量差不多.
 
+{% include google-in-article-ads.html %}
+
 
 <h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
 

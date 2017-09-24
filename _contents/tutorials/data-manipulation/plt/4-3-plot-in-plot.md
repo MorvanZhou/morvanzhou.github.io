@@ -38,6 +38,8 @@ x = [1, 2, 3, 4, 5, 6, 7]
 y = [1, 3, 4, 2, 5, 8, 6]
 ```
 
+{% include google-in-article-ads.html %}
+
 {% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 

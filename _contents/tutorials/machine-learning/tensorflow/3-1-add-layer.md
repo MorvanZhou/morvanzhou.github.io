@@ -54,6 +54,8 @@ biases = tf.Variable(tf.zeros([1, out_size]) + 0.1)
 Wx_plus_b = tf.matmul(inputs, Weights) + biases
 ```
 
+{% include google-in-article-ads.html %}
+
 当`activation_function`——激励函数为`None`时，输出就是当前的预测值——`Wx_plus_b`，不为`None`时，就把`Wx_plus_b`传到`activation_function()`函数中得到输出。
 
 ```python
