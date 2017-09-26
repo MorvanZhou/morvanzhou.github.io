@@ -3,7 +3,7 @@ youku_id: XMTk3MTU4Njg2MA
 youtube_id: JafbuFHZPdc
 chapter: 2
 title: Q-learning 思维决策
-thumbnail: /static/thumbnail/rl/5 qlearning 2.jpg
+thumbnail: "/static/thumbnail/rl/2.3 qlearning 2.jpg"
 publish-date: 2017-01-09
 description: "接着上节内容, 我们来实现 RL_brain 的 QLearningTable 部分, 这也是 RL 的大脑部分, 负责决策和思考. 与上回不一样的地方是, 我们将要以一个 class 形式定义 Q learning, 并把这种 tabular q learning 方法叫做 QLearningTable"
 post-headings:

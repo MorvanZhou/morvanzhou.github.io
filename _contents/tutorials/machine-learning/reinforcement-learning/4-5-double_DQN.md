@@ -4,7 +4,7 @@ youtube_id: TjAEpfE8A64
 chapter: 4
 title: Double DQN (Tensorflow)
 publish-date: 2017-03-07
-thumbnail: "/static/thumbnail/rl/12_1 DDQN.jpg"
+thumbnail: "/static/thumbnail/rl/4.5 DDQN.jpg"
 description: "接下来我们说说为什么会有 Double DQN 这种算法.
 所以我们从 Double DQN 相对于 Natural DQN (传统 DQN) 的优势说起.
 一句话概括, DQN 基于 Q-learning, Q-Learning 中有 Qmax, Qmax

@@ -29,11 +29,11 @@
   <!-- structured data -->
   <script type="application/ld+json">
   {
-    "@context": "{{ page.url }}",
+    "@context": "{{ site.baseurl }}{{ page.url }}",
     "@type": "BlogPosting",
-    "headline": "{{ page.title }}",
+    "headline": "{{ site.baseurl }}{{ page.title }}",
     "image": [
-      "{{ page.thumbnail }}",
+      "{{ site.baseurl }}{{ page.thumbnail }}",
      ],
     "author": {
       "@type": "Person",

@@ -3,7 +3,7 @@ youku_id: XMjY1MzQ0MDI4NA
 youtube_id: A54GU_WqLmQ
 chapter: 5
 title: Policy Gradients 算法更新 (Tensorflow)
-thumbnail: "/static/thumbnail/rl/13 PG1.jpg"
+thumbnail: "/static/thumbnail/rl/5.1 PG1.jpg"
 publish-date: 2017-03-21
 description: "Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q learning, Sarsa), 但他也要接受环境信息 (observation),
 不同的是他要输出不是 action 的 value, 而是具体的那一个 action, 这样 policy gradient 就跳过了 value 这个阶段. 而且个人认为 Policy gradient

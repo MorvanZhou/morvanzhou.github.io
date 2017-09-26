@@ -3,7 +3,7 @@ youku_id: XMjY4NTE1MDY3Mg
 youtube_id: tvMu5oPYpsw
 chapter: 6
 title: Actor Critic (Tensorflow)
-thumbnail: "/static/thumbnail/rl/15 actor critic.jpg"
+thumbnail: "/static/thumbnail/rl/6.1 actor critic.jpg"
 publish-date: 2017-04-03
 description: "一句话概括 Actor Critic 方法:
 结合了 Policy Gradient (Actor) 和 Function Approximation (Critic) 的方法.

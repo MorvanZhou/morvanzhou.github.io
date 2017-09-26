@@ -3,7 +3,7 @@ youku_id: XMjI2Nzg3MTgxNg
 youtube_id: gXZ4AWgkrQE
 chapter: 3
 title: Sarsa-lambda
-thumbnail: "/static/thumbnail/rl/8 sarsa lambda.jpg"
+thumbnail: "/static/thumbnail/rl/3.3 sarsa lambda.jpg"
 publish-date: 2017-01-13
 description: "Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
 如果说 Sarsa 和 Qlearning 都是每次获取到 reward, 只更新获取到 reward 的前一步.

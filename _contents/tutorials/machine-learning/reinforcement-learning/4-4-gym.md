@@ -4,7 +4,7 @@ youtube_id: 9m3DN2dyi8I
 chapter: 4
 title: OpenAI gym 环境库
 publish-date: 2017-02-26
-thumbnail: "/static/thumbnail/rl/12 DQN4.jpg"
+thumbnail: "/static/thumbnail/rl/4.4 openai.jpg"
 description: "手动编环境是一件很耗时间的事情, 所以如果有能力使用别人已经编好的环境, 可以节约我们很多时间. OpenAI gym 就是这样一个模块, 他提供了我们很多优秀的模拟环境.
 我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 可能某一天就能支持了, 大家时不时查看下官网, 可能就有惊喜.
 是在等不及更新了, 也行用 tkinter 来手动编写一下环境.

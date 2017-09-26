@@ -3,7 +3,7 @@ youku_id: XMjI2NTY5NTczNg
 youtube_id: Sv6IB-Uu4ks
 chapter: 3
 title: Sarsa 算法更新
-thumbnail: "/static/thumbnail/rl/6 sarsa 1.jpg"
+thumbnail: "/static/thumbnail/rl/3.1 sarsa 1.jpg"
 publish-date: 2017-01-13
 description: "这次我们用同样的迷宫例子来实现 RL 中另一种和 Qlearning 类似的算法, 叫做 Sarsa (state-action-reward-state_-action_).
 我们从这一个简称可以了解到, Sarsa 的整个循环都将是在一个路径上, 也就是 on-policy, 下一个 state_, 和下一个 action_ 将会变成他真正采取的 action 和 state.

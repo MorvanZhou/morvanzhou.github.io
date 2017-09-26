@@ -3,7 +3,7 @@ youku_id: XMjcyMjMxNTI5Mg
 youtube_id: TQE4OLSz2BE
 chapter: 6
 title: Deep Deterministic Policy Gradient (DDPG) (Tensorflow)
-thumbnail: "/static/thumbnail/rl/16 DDPG.jpg"
+thumbnail: "/static/thumbnail/rl/6.2 DDPG.jpg"
 publish-date: 2017-04-22
 description: "一句话概括 DDPG:
 Google DeepMind 提出的一种使用 Actor Critic 结构, 但是输出的不是行为的概率, 而是具体的行为,
