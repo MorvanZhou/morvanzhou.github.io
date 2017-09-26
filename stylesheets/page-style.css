@@ -44,8 +44,8 @@ display: block;
 }
 
 h1.small-h1 {
-font-size: 1.5em;
-margin: 0.8em 0;
+font-size: 1.8em;
+margin: 1em 0;
 }
 
 h2 {
@@ -148,7 +148,7 @@ left: 0;
 }
 
 .large-top-bottom-padding {
-padding: 1em 0;
+padding: 1.3em 0;
 }
 
 @media screen and (max-width: 40.5em) {

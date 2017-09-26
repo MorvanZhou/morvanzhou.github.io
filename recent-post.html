@@ -1,0 +1,12 @@
+---
+layout: front-page
+title: "近期更新"
+description: "汇集所有精心制作的教学内容, 一览无遗"
+---
+
+{％ for post in paginator.posts ％}
+  <article>
+      <h2><a href="{{post.url}}"></a>{{post.title}}</h2>
+      <p>{{post.description}}</p>
+  </article>
+{％ endfor ％}

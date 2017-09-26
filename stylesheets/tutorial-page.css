@@ -38,12 +38,23 @@ border: 1px solid black;
   }
 }
 
+.tut-course-thumbnail {
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+display: inline-block;
+text-align: center;
+width: 100%;
+}
 
+.tut-course-thumbnail li {
+padding: 0 2px 0 0;
+display: inline-block;
+}
 
-/* ======= tutorial title ====== */
-.tut-title {
-margin: 0;
-padding: 1em 0 0.5em 0;
+.tut-course-thumbnail img:hover {
+background-color:#000;
+opacity:0.8;
 }
 
 /* ======= ads ========= */

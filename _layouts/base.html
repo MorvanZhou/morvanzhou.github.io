@@ -7,7 +7,7 @@
   <meta name="keywords" content="莫烦,python,tutorial,machine learning,{{ page.keywords }}">
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
   <meta name="thumbnail" content="{{ site.baseurl }}{{ page.thumbnail }}" />
-  <title>{% if page.title %}{{page.title}}{% endif %}{% if page.tut-title %} - {{page.tut-title}}{% endif %} - 莫烦Python</title>
+  <title>{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python</title>
   <script src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
@@ -34,6 +34,32 @@
       enable_page_level_ads: true
     });
   </script>
+
+  <!-- structured data -->
+  {% if layout.structured-type == BlogPosting %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "{{ site.url }}{{ page.url }}",
+      "headline": "{{ page.title }}",
+      "image": "{{ site.url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/static/img/description/mofanpython.png{% endif %}",
+      "author": {
+        "@type": "Person",
+        "name": "莫烦",
+        "email": "morvanzhou@hotmail.com"
+      },
+      "description": "{{ page.description }}",
+      "url": "{{ site.url }}{{ page.url }}",
+      "datePublished": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
+      "publisher": {
+    	"@type": "Organization",
+        "name":"莫烦Python",
+        "logo": "{{ site.url }}/static/img/description/tab_icon.png"
+     }
+    }
+    </script>
+  {% endif %}
 
 </head>
 

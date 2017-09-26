@@ -1,0 +1,24 @@
+---
+title: 数据处理
+icon-dir: /static/img/icon/data_icon.png
+tut-dir: /tutorials/data-manipulation/
+tut-course-detail:
+  - ["np-pd", "Numpy & Pandas 数据处理", "np_pd.jpg"]
+  - ["plt", "Matplotlib 画图", "plt.jpg"]
+---
+
+<ul class="tut-course-thumbnail">
+ {% for item in page.tut-course-detail %}
+ <li><a href="{{page.tut-dir}}{{item[0]}}/">
+  <img alt="{{item[1]}}" src="/static/img/course_cover/{{item[2]}}" height="120" >
+ </a></li>
+ {% endfor %}
+</ul>
+
+<p>
+  <a href="{{page.dir}}">数据处理</a> 教程方面,
+  这里汇集了在 Python 中最重要的数据处理,
+  科学计算模块: Numpy 和 Pandas. 而且还有数据可视化的利器:
+  Matplotlib. 使用它们能够更有效的处理你的数据, 呈现你的数据~
+</p>
+

@@ -3,7 +3,7 @@ markdown: kramdown
 
 highlighter: rouge
 permalink: pretty
-url: https://morvanzhou.github.io
+url: https://morvanzhou.github.io/
 baseurl:
 
 exclude: ['README.md']
@@ -12,8 +12,6 @@ exclude: ['README.md']
 # collection and their defaults
 
 collections:
-  tutorial_page_contents:
-    output: false
   contents:
     output: true
     permalink: /:path/
@@ -64,7 +62,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/ML-intro"
     values:
       layout: tutorial-post
-      tut-title: 有趣的机器学习
+      series: 有趣的机器学习
       tut-permalink: /tutorials/machine-learning/ML-intro/
       category: ML-intro
       keywords: 机器学习, 简介, 动画
@@ -73,7 +71,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/reinforcement-learning"
     values:
       layout: tutorial-post
-      tut-title: 强化学习 Reinforcement Learning
+      series: 强化学习 Reinforcement Learning
       tut-permalink: /tutorials/machine-learning/reinforcement-learning/
       category: reinforcement-learning
       keywords: reinforcement learning, 强化学习, tensorflow
@@ -82,7 +80,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/evolutionary-algorithm"
     values:
       layout: tutorial-post
-      tut-title: 进化算法
+      series: 进化算法 Evolutionary Algorithm
       tut-permalink: /tutorials/machine-learning/evolutionary-algorithm/
       category: evolutionary-algorithm
       keywords: evolutionary algorithm, 进化算法, 遗传算法, genetic algorithm, neuro evalution
@@ -91,7 +89,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/keras"
     values:
       layout: tutorial-post
-      tut-title: Keras
+      series: Keras
       tut-permalink: /tutorials/machine-learning/keras/
       category: keras
       keywords: keras, 神经网络, tensorflow, theano
@@ -100,7 +98,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/torch"
     values:
       layout: tutorial-post
-      tut-title: PyTorch
+      series: PyTorch
       tut-permalink: /tutorials/machine-learning/torch/
       category: torch
       keywords: Torch, pytorch, 神经网络
@@ -109,7 +107,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/sklearn"
     values:
       layout: tutorial-post
-      tut-title: Sklearn
+      series: Sklearn
       tut-permalink: /tutorials/machine-learning/sklearn/
       category: sklearn
       keywords: sklearn, scikit-learn, 机器学习
@@ -119,7 +117,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/tensorflow"
     values:
       layout: tutorial-post
-      tut-title: Tensorflow
+      series: Tensorflow
       tut-permalink: /tutorials/machine-learning/tensorflow/
       category: tensorflow
       keywords: tensorflow, tensorboard, 机器学习, 神经网络
@@ -128,7 +126,7 @@ defaults:
       path: "_contents/tutorials/machine-learning/theano"
     values:
       layout: tutorial-post
-      tut-title: Theano
+      series: Theano
       tut-permalink: /tutorials/machine-learning/theano/
       category: theano
       keywords: theano, 机器学习, 神经网络
@@ -137,7 +135,7 @@ defaults:
       path: "_contents/tutorials/data-manipulation/np-pd"
     values:
       layout: tutorial-post
-      tut-title: Numpy & Pandas
+      series: Numpy & Pandas
       tut-permalink: /tutorials/data-manipulation/np-pd/
       category: np-pd
       keywords: numpy, pandas, 数据, 处理
@@ -146,7 +144,7 @@ defaults:
       path: "_contents/tutorials/data-manipulation/plt"
     values:
       layout: tutorial-post
-      tut-title: Matplotlib
+      series: Matplotlib
       tut-permalink: /tutorials/data-manipulation/plt/
       category: plt
       keywords: matplotlib, plt, 数据可视化
@@ -155,7 +153,7 @@ defaults:
       path: "_contents/tutorials/python-basic/basic"
     values:
       layout: tutorial-post
-      tut-title: Python 基础
+      series: Python 基础
       tut-permalink: /tutorials/python-basic/basic/
       category: Python 基础
       keywords: python, 基础
@@ -164,7 +162,7 @@ defaults:
       path: "_contents/tutorials/python-basic/multiprocessing"
     values:
       layout: tutorial-post
-      tut-title: 多进程 Multiprocessing
+      series: 多进程 Multiprocessing
       tut-permalink: /tutorials/python-basic/multiprocessing/
       category: multiprocessing
       keywords: python, 基础, 多进程, multiprocessing
@@ -173,7 +171,7 @@ defaults:
       path: "_contents/tutorials/python-basic/threading"
     values:
       layout: tutorial-post
-      tut-title: 多线程 Threading
+      series: 多线程 Threading
       tut-permalink: /tutorials/python-basic/threading/
       category: threading
       keywords: python, 基础, 多线程, threading
@@ -183,7 +181,7 @@ defaults:
       path: "_contents/tutorials/python-basic/tkinter"
     values:
       layout: tutorial-post
-      tut-title: 窗口 Tkinter
+      series: 窗口 Tkinter
       tut-permalink: /tutorials/python-basic/tkinter/
       category: tkinter
       keywords: python, 基础, GUI, 窗口, tkinter, tk
@@ -192,7 +190,7 @@ defaults:
       path: "_contents/tutorials/python-basic/basic"
     values:
       layout: tutorial-post
-      tut-title: Python 基础
+      series: Python 基础
       tut-permalink: /tutorials/python-basic/basic/
       category: basic
       keywords: python, 基础
@@ -201,7 +199,7 @@ defaults:
       path: "_contents/tutorials/others/git"
     values:
       layout: tutorial-post
-      tut-title: Git 版本管理
+      series: Git 版本管理
       tut-permalink: /tutorials/others/git/
       category: git
       keywords: 其他, git, VCS

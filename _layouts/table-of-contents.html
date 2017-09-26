@@ -1,5 +1,6 @@
 ---
 layout: front-page
+structured-type: Course
 ---
 
 <!-- variables for this page -->
@@ -8,7 +9,7 @@ layout: front-page
 <!-- for this page contents -->
 <img class="course-summary-image" src="{{ page.tut-course-cover }}" alt="{{ page.tut-course-cover-alt }}">
 
-<h1 style="display:none">{{ page.tut-title }}</h1>
+<h1 style="display:none">{{ page.title }}</h1>
 
 <div class="pad-main">
 	<ul class="table-of-contents-ul">
@@ -16,7 +17,7 @@ layout: front-page
 			{% assign chapter-id = forloop.index %}
 			<li class="chapter-li"><h4>{{chapter-name}}</h4>
 				<ol>
-				{% assign tuts = ({{tut-category}} | where: "chapter", forloop.index) %}
+				{% assign tuts = tut-category | where: "chapter", forloop.index %}
 				{% assign tuts = tuts | sort: "id" %}
 			    {% for tut in tuts %}
 					{% assign section-id = forloop.index %}

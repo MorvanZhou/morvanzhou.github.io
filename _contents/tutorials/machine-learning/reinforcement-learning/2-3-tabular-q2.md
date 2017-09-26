@@ -45,7 +45,7 @@ class QLearningTable:
 ```
 
 
-{% assign post-heading-count = post-heading-count + 1 %}
+{% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 初始的参数意义不会在这里提及了, 请参考这个快速了解通道 [机器学习系列-Q learning](#)
@@ -66,7 +66,7 @@ class QLearningTable:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count + 1 %}
+{% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这里是定义如何根据所在的 state, 或者是在这个 state 上的 观测值 (observation) 来决策.
@@ -89,7 +89,7 @@ class QLearningTable:
         return action
 ```
 
-{% assign post-heading-count = post-heading-count + 1 %}
+{% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 同[上一个简单的 q learning 例子]({% link _contents/tutorials/machine-learning/reinforcement-learning/2-1-general-rl.md %})一样,
@@ -110,7 +110,7 @@ class QLearningTable:
         self.q_table.ix[s, a] += self.lr * (q_target - q_predict)  # 更新对应的 state-action 值
 ```
 
-{% assign post-heading-count = post-heading-count + 1 %}
+{% assign post-heading-count = post-heading-count | plus: 1 %}
 <h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
 
 这个功能就是检测 `q_table` 中有没有当前 state 的步骤了, 如果还没有当前 state, 那我我们就插入一组全 0 数据, 当做这个 state 的所有 action 初始 values.
