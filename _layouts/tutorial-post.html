@@ -1,6 +1,26 @@
 ---
 layout: with-nav
 ---
+<head>
+  <!-- structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "image": "{{ site.baseurl }}{{ page.thumbnail }}",
+    "author": {
+      "@type": "Person",
+      "name": "莫烦",
+      "email": "morvanzhou@hotmail.com",
+    },
+    "description": "{{ page.description }}",
+    "url": "https://morvanzhou.github.io/tutorials/",
+    "datePublished": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
+    "publisher": "莫烦Python",
+  }
+  </script>
+</head>
 
 <main class="tut-post">
 
@@ -94,7 +114,7 @@ layout: with-nav
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </div>
-      
+
       {% include comment-section.html %}
     </div>
 
