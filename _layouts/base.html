@@ -29,7 +29,7 @@
   <!-- structured data -->
   <script type="application/ld+json">
   {
-    "@context": "{{ site.baseurl }}{{ page.url }}",
+    "@context": "{{ site.baseurl }}/tutorials/",
     "@type": "BlogPosting",
     "headline": "{{ page.title }}",
     "image": "{{ site.baseurl }}{{ page.thumbnail }}",
@@ -37,7 +37,9 @@
       "@type": "Person",
       "name": "莫烦"
     },
-    "description": "{{ page.description }}"
+    "description": "{{ page.description }}",
+    "url": "{{site.baseurl}}/tutorials/",
+    "email": "morvanzhou@hotmail.com"
   }
   </script>
 
