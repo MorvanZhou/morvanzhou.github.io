@@ -36,7 +36,7 @@
   </script>
 
   <!-- structured data -->
-  {% if layout.structured-type == BlogPosting %}
+  {% if layout.structured-type == "BlogPosting" %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,6 +59,19 @@
      }
     }
     </script>
+  {% elsif layout.structured-type == "Course" %}
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Course",
+        "name": "{{ page.title }}",
+        "description": "{{ page.description }}",
+        "provider": {
+          "@type": "Organization",
+          "name": "莫烦Python"
+        }
+      }
+      </script>
   {% endif %}
 
 </head>
