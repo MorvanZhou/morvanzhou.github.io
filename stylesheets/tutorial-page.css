@@ -65,7 +65,7 @@ padding:0;
 .tut-content-menu {
 position: fixed;
 bottom: 2%;
-right: 30%;
+right: 34%;
 z-index: 0;
 }
 
@@ -172,43 +172,43 @@ padding: 0;
 }
 
 /* ======= tutorial two main parts ====== */
-main.tut-post {
-margin: 0 auto;
-background-color:#FAFAFA;
-box-shadow: 0px 0px 30px 5px  #888888;
-display: flex;
-width: 100%;
-}
-
-.tut-main-content {
-width: 75%;
-}
-
 .tut-main-content-pad {
 padding: 0 2em;
 }
 
-.side-nav {
-position: fixed;
-font-size: 0.8em;
-padding: 0.5em;
-z-index: 1;
-width: 19%;
+main.tut-post {
+margin: 0 auto;
 background-color:#FAFAFA;
+box-shadow: 0px 0px 30px 5px  #888888;
+width: 100%;
+}
+
+main.tut-post > div {
+display: inline-block;
+vertical-align: top;
+}
+
+.tut-main-content {
+width: 70%;
+margin: 0;
 }
 
 .tut-side-menu {
-overflow-y: none;
+width: 30%;
+font-size: 0.9em;
+margin: 0;
+overflow-y: hidden;
 }
 
+.side-nav {
+padding: 1em;
+}
 .tut-side-menu .ads-container {
-position: absolute;
-top: 12em;
-width: 20%;
-height: 800px;
-z-index: 0;
+padding-top: 2em;
 }
 
+.tut-side-menu .ads-container > div {
+height: 1000px}
 @media screen and (max-width: 40.5em) {
   .tut-side-menu {
   display: none;
@@ -229,13 +229,9 @@ z-index: 0;
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   main.tut-post {
-  max-width: 1200px;
-  }
-  main.tut-post {
-  max-width: 1200px;
-  max-height: calc(1200/16*9)px;
+  max-width: 1100px;
   margin: 0 auto;
   }
  }

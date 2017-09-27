@@ -5,21 +5,7 @@ structured-type: BlogPosting
 
 <main class="tut-post">
 
-  <div class="tut-main-content">
-    <!--&lt;!&ndash; top ads &ndash;&gt;-->
-    <!--<div class="ads-container">-->
-      <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-      <!--&lt;!&ndash; tut-page-side &ndash;&gt;-->
-      <!--<ins class="adsbygoogle"-->
-           <!--style="display:block; text-align:center;"-->
-           <!--data-ad-client="ca-pub-4601203457616636"-->
-           <!--data-ad-slot="5888750508"-->
-           <!--data-ad-format="auto"></ins>-->
-      <!--<script>-->
-      <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
-      <!--</script>-->
-    <!--</div>-->
-
+  <div id="tut-mainDiv" class="tut-main-content">
 
     <!-- video section -->
     {% include embedded-video.html %}
@@ -104,12 +90,8 @@ structured-type: BlogPosting
       <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
         <img src="/static/img/icon/tutorial_contents_icon.png" alt="{{ page.title }}{% increment image-count %}"></a>
     </div>
-  </div>
-
-  <!-- page nav section -->
-  <div class="tut-side-menu">
-
-
+  </div
+  ><div id="tut-sideDiv" class="tut-side-menu">
     <div class="side-nav">
       <hr>
       {% if page.post-headings %}
@@ -131,15 +113,15 @@ structured-type: BlogPosting
 
       {% include google-side-ads.html slot="3642152498" %}
 
+      {% include google-side-ads.html slot="7413826212" %}
+
       <hr>
     </div>
 
-
-
-
   </div>
-
-
 
 </main>
 
+<script type="text/javascript">
+    document.getElementById("tut-sideDiv").style.height = (document.getElementById("tut-mainDiv").clientHeight - 10) + "px";
+</script>
