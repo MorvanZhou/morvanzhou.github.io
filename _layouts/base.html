@@ -55,8 +55,12 @@
       "publisher": {
     	"@type": "Organization",
         "name":"莫烦Python",
-        "logo": "{{ site.url }}/static/img/description/tab_icon.png"
-     }
+        "logo": {
+        	"@type": "ImageObject",
+        	"url": "{{ site.url }}/static/img/description/tab_icon.png",
+        	"width": 100
+        	}
+       }
     }
     </script>
   {% elsif layout.structured-type == "Course" %}
