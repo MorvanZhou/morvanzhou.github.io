@@ -201,8 +201,8 @@ background-color:#FAFAFA;
 
 .tut-side-menu .ads-container {
 position: absolute;
-top: 64em;
-width: 19%;
+top: 12em;
+width: 20%;
 height: 800px;
 z-index: 0;
 }
