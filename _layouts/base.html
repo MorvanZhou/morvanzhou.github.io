@@ -51,7 +51,9 @@
       },
       "description": "{{ page.description }}",
       "url": "{{ site.url }}{{ page.url }}",
+      "mainEntityOfPage":"{{ site.url }}{{ page.tut-permalink }}",
       "datePublished": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
+      "dateModified": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
       "publisher": {
     	"@type": "Organization",
         "name":"莫烦Python",
