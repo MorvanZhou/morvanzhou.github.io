@@ -196,6 +196,7 @@ max-height: 90%;
 overflow-y: scroll;
 z-index: 1;
 width: 19%;
+background-color:#FAFAFA;
 }
 
 .tut-side-menu .ads-container {
