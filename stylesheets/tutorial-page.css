@@ -207,6 +207,9 @@ padding: 1em;
 padding-top: 2em;
 }
 
+.tut-side-menu .ads-container > div {
+height: 400px;
+}
 
 @media screen and (max-width: 40.5em) {
   .tut-side-menu {
