@@ -11,8 +11,6 @@
 list-style-type: none;
 margin: 0 auto;
 padding: 0;
-height: 350px;
-overflow-y: scroll;
 display: inline-block;
 text-align: center;
 width: 100%;
@@ -28,13 +26,10 @@ background-color:#000;
 opacity:0.8;
 }
 
-#recent-update img {
-border: 1px solid black;
-}
-
 @media screen and (max-width: 40.5em) {
   #recent-update {
     height: 180px;
+    overflow-y: scroll;
   }
 }
 

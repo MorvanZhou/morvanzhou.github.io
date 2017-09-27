@@ -477,6 +477,49 @@ padding: 20px;
 width: 350px;
 }
 
+/* ===================== RECENT POSTS PAGE ==================== */
+
+#recent-post-ul {
+list-style-type: none;
+padding: 0.3em;
+margin:0;
+display: inline-block;
+}
+#recent-post-ul li {
+padding: 0;
+float: left;
+display: flex;
+}
+
+#recent-post-ul img {
+height:130px;
+}
+.recent-post-text-div {
+padding: 0.1em 0.8em;
+display: block;
+}
+
+#recent-post-ul img:hover {
+background-color:#000;
+opacity:0.8;
+}
+
+#recent-post-ul a {
+color: #415849;
+}
+
+
+@media screen and (max-width: 40.5em) {
+  #recent-post-ul img {
+  height:90px;
+  }
+  .recent-post-description {
+  display: none;
+  }
+  .recent-post-title {
+  font-size: 0.9em;
+  }
+}
 
 /* ===================== ABOUT PAGE ==================== */
 #contact-table {

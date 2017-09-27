@@ -6,19 +6,19 @@ structured-type: BlogPosting
 <main class="tut-post">
 
   <div class="tut-main-content">
-    <!-- top ads -->
-    <div class="ads-container">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- tut-page-side -->
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-client="ca-pub-4601203457616636"
-           data-ad-slot="5888750508"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
+    <!--&lt;!&ndash; top ads &ndash;&gt;-->
+    <!--<div class="ads-container">-->
+      <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+      <!--&lt;!&ndash; tut-page-side &ndash;&gt;-->
+      <!--<ins class="adsbygoogle"-->
+           <!--style="display:block; text-align:center;"-->
+           <!--data-ad-client="ca-pub-4601203457616636"-->
+           <!--data-ad-slot="5888750508"-->
+           <!--data-ad-format="auto"></ins>-->
+      <!--<script>-->
+      <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+      <!--</script>-->
+    <!--</div>-->
 
 
     <!-- video section -->
@@ -122,33 +122,17 @@ structured-type: BlogPosting
       <hr>
       {% endif %}
 
-      <!-- side ads -->
-      <div style="padding-top: 1em;">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- tut-page-side -->
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-client="ca-pub-4601203457616636"
-             data-ad-slot="1501228408"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-
-      <hr>
-
     </div>
 
 
-    <!--<div class="ads-container">-->
+    <div class="ads-container">
+      <!-- side ads -->
+      {% include google-side-ads.html slot="1501228408" %}
 
-      <!--<div style="height:100px;"></div>-->
+      {% include google-side-ads.html slot="3642152498" %}
 
-      <!--<hr>-->
-      <!--ad-slot=3642152498-->
-      <!--<hr>-->
-    <!--</div>-->
+      <hr>
+    </div>
 
 
 

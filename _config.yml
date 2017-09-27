@@ -4,7 +4,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 url: https://morvanzhou.github.io/
-baseurl:
 
 exclude: ['README.md']
 

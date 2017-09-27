@@ -1,18 +1,20 @@
 <br style="clear: left; padding-bottom: 3em;">
 
 <h1 class="small-h1">近期更新</h1>
-<hr style="clear: left; width: 80%;">
 <ul id="recent-update">
-  {% assign items = (site.contents | where: "sort-date", "true") %}
-  {% assign sorted-items = (items | sort: "publish-date") | reverse %}
-  {% for item in sorted-items limit:15 %}
+  {% assign items = site.contents | where: "sort-date", "true" %}
+  {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 5 %}
+  {% for item in sorted-items %}
 
-    <li><a href="{{item.url}}">
-      <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">
-    </a></li>
+  <li><a href="{{item.url}}">
+    <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">
+  </a></li>
 
   {% endfor %}
+  <li><a href="/recent-posts/">
+    <img alt="More recent posts" src="/static/img/description/more_update.png" height="130">
+  </a></li>
+
 </ul>
 
-<hr style="clear: left; width: 80%;">
 <br style="clear: left; padding-bottom: 4em;">
