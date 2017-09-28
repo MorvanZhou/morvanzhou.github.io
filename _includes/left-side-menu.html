@@ -3,9 +3,9 @@
 <hr style="opacity:0.5; width:90%;">
 <ul class="tut-left-ul">
 	{% for item in items %}
-		{% if counter != item.chapter %}
-		{% assign counter = counter | plus: 1 %}
-		<hr style="opacity:0.5; width:90%;">
+		{% if counter < item.chapter %}
+			{% assign counter = counter | plus: 1 %}
+			<hr style="opacity:0.5;">
 		{% endif %}
 		<li class="tut-left-li">
 				<a href="{{item.url}}">{{ item.title }}</a>

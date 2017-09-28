@@ -11,23 +11,22 @@ structured-type: Course
 
 <h1 style="display:none">{{ page.title }}</h1>
 
-<div class="pad-main">
-	<ul class="table-of-contents-ul">
-		{% for chapter-name in page.tut-chapters %}
-			{% assign chapter-id = forloop.index %}
-			<li class="chapter-li"><h4>{{chapter-name}}</h4>
-				<ol>
-				{% assign tuts = category-tuts | where: "chapter", forloop.index %}
-		    {% for tut in tuts %}
-					{% assign section-id = forloop.index %}
-					{% if tut.title != "page default" %}
-			      <li class="content-li">
-			          <a href="{{site.baseurl}}{{ tut.url }}">{{chapter-id}}.{{section-id}} {{tut.title}}</a>
-			      </li>
-					{% endif %}
-			  {% endfor %}
-				</ol>
-			</li>
-		{% endfor %}
-	</ul>
-</div>
+
+<ul class="table-of-contents-ul">
+	{% for chapter-name in page.tut-chapters %}
+		{% assign chapter-id = forloop.index %}
+		<li class="chapter-li"><h4>{{chapter-name}}</h4>
+			<ol>
+			{% assign tuts = category-tuts | where: "chapter", forloop.index %}
+	    {% for tut in tuts %}
+				{% assign section-id = forloop.index %}
+				{% if tut.title != "page default" %}
+		      <li class="content-li">
+		          <a href="{{site.baseurl}}{{ tut.url }}">{{chapter-id}}.{{section-id}} {{tut.title}}</a>
+		      </li>
+				{% endif %}
+		  {% endfor %}
+			</ol>
+		</li>
+	{% endfor %}
+</ul>

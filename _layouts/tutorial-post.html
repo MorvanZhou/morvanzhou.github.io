@@ -29,18 +29,18 @@ structured-type: BlogPosting
     </div>
 
     <!-- video button ads -->
-    <div class="ads-container">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-layout="in-article"
-           data-ad-format="fluid"
-           data-ad-client="ca-pub-4601203457616636"
-           data-ad-slot="7340931768"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
+    <!--<div class="ads-container">-->
+      <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+      <!--<ins class="adsbygoogle"-->
+           <!--style="display:block; text-align:center;"-->
+           <!--data-ad-layout="in-article"-->
+           <!--data-ad-format="fluid"-->
+           <!--data-ad-client="ca-pub-4601203457616636"-->
+           <!--data-ad-slot="7340931768"></ins>-->
+      <!--<script>-->
+           <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+      <!--</script>-->
+    <!--</div>-->
 
     <!-- main content -->
     <div class="tut-main-content-pad">
@@ -113,7 +113,6 @@ structured-type: BlogPosting
 
   <div class="tut-right-side-menu">
     <div class="side-nav">
-      <hr style="opacity:0.5; width:90%;">
       {% if page.post-headings %}
       知道你想跳着看
       <ul>
@@ -121,17 +120,13 @@ structured-type: BlogPosting
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
-      <hr style="opacity:0.5; width:90%;">
       {% endif %}
     </div>
 
-    <div class="ads-container">
-      <!-- side ads -->
-      {% include google-side-ads.html slot="6954661218" %}
+    <!-- side ads -->
+    {% include google-side-ads.html slot="6954661218" %}
 
-      {% include google-side-ads.html slot="1501228408" %}
-
-    </div>
+    {% include google-side-ads.html slot="1501228408" %}
 
   </div>
 

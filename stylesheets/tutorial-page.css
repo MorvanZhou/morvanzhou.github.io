@@ -71,7 +71,7 @@ right: calc((100% - var(--max-window-width)) / 2 + 1.0em);
 .tut-content-menu img {
 max-width: 4em;
 border-radius:50%;
-box-shadow: 0px 0px 10px #888888;
+box-shadow: 0px 0px 5px #888888;
 }
 
 @media screen and (max-width: 800px) {
@@ -94,7 +94,7 @@ border: none;
 font-size: 1em;
 padding: 0.2em 2em;
 color: var(--c-green-no-hover);
-box-shadow: 0px 0px 20px 2px #888888;
+box-shadow: 0px 0px 5px #888888;
 border-radius:5px;
 }
 
@@ -114,11 +114,11 @@ display:block
 .table-of-contents-ul {
 background-color: var(--c-tut-table);
 padding: 1em;
-border-radius: 20px;
 color: var(--c-green-no-hover);
 counter-reset: item;
 list-style-type: none;
-box-shadow: 0px 0px 20px 2px #888888;
+box-shadow: 0px 0px 5px #888888;
+margin: 0.5em 0;
 }
 
 .table-of-contents-ul h4 {
@@ -154,7 +154,7 @@ padding: 0;
 display:block;
 margin: 0 auto;
 width: 100%;
-box-shadow: 0px 0px 20px 2px #888888;
+box-shadow: 0px 0px 5px #888888;
 }
 
 .course-image {
@@ -163,7 +163,7 @@ display:block;
 margin: 0 auto;
 max-width: 80%;
 max-height: 430px;
-box-shadow: 0px 0px 10px 2px #888888;
+box-shadow: 0px 0px 5px #888888;
 }
 
 h4.tut-h4-pad {
@@ -182,13 +182,11 @@ padding: 0 2em;
 
 .tut-right-side-menu, .tut-left-side-menu {
 position: fixed;
-top: 4.1em;
+top: 4.35em;
 font-size: 0.85em;
 margin: 0;
 height:100%;
-background-color:#FAFAFA;
 filter: none !important;
-box-shadow: 0px -4px 10px rgba(0,0,0,0.4);
 }
 
 
@@ -197,6 +195,7 @@ box-shadow: 0px -4px 10px rgba(0,0,0,0.4);
 left: 0%;
 width: calc((100% - var(--max-window-width)) / 2 - 0.5%);
 background-color: var(--c-tut-table);
+box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
 }
 
 .tut-left-side-menu p {
@@ -231,8 +230,14 @@ right: 0.5%;
 width: calc((100% - var(--max-window-width)) / 2 - 1%);
 }
 
+.tut-right-side-menu > div {
+background-color:#FAFAFA;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+padding: 1em;
+margin: 0 0 0.5em 0;
+}
+
 .side-nav {
-padding: 0 1em;
 text-align: right;
 }
 
@@ -246,19 +251,23 @@ padding:0;
 text-decoration: underline;
 }
 
-.tut-right-side-menu .ads-container {
-padding-top: 0.5em;
+@media screen and (max-width: 1020px) {
+  .tut-left-side-menu, .tut-right-side-menu {
+  display: none;
+  }
 }
 
-@media screen and (max-width: 1100px) {
-  .side-nav {
-  display: none;
+@media screen and (min-width: 1300px) {
+  .tut-left-side-menu, .tut-right-side-menu {
+  width: calc((1300px - var(--max-window-width)) / 2 - 0.5%);
   }
   .tut-left-side-menu {
-  display: none;
+  left: calc((100% - 1300px) / 2);
+  }
+  .tut-right-side-menu {
+  right: calc((100% - 1300px) / 2);
   }
 }
-
 
 @media screen and (max-width: 40.5em) {
   .tut-right-side-menu {
@@ -353,7 +362,7 @@ background-color: var(--c-donation);
 margin: 1em auto 2em auto;
 text-decoration: none;
 border-radius: 20px;
-box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.7);
+box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
 }
 
 #bottom-donation-button:hover {
