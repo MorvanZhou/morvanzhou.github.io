@@ -223,13 +223,10 @@ width: calc((100% - var(--max-window-width)) / 2 - 1%);
 height:100%;
 }
 
-.tut-right-side-menu > div {
-padding: 1em;
-}
-
 .side-nav {
 text-align: right;
 margin-top:0;
+padding: 1em;
 }
 
 .side-nav ul {
