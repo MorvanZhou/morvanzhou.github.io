@@ -58,7 +58,7 @@ opacity:0.8;
 z-index: 3;
 position:fixed;
 bottom: 2%;
-right: calc((100% - var(--max-window-width)) / 2 + 1.0em);
+right: calc((100% - 800px) / 2 + 1.0em);
 }
 
 .tut-content-menu img {
@@ -84,19 +84,23 @@ text-align: center;
 button#switch-video {
 display: inline;
 background-color: var(--c-n);
+background-color:#4cb07b;
 filter: none !important;
 border: none;
 font-size: 1em;
 padding: 0.2em 2em;
 color: var(--c-green-no-hover);
+color: #191818;
 box-shadow: 0px 0px 5px #888888;
 border-radius:5px;
 }
 
 button#switch-video:hover {
 background-color: var(--c-n-mofan);
+background-color: #3d9667;
 filter: none !important;
 color: var(--c-green-hover);
+color: #191818;
 }
 .collapse{
 display:none
@@ -108,8 +112,10 @@ display:block
 /* ======== table of contents ======== */
 .table-of-contents-ul {
 background-color: var(--c-tut-table);
+background-color:#4cb07b;
 padding: 1em;
 color: var(--c-green-no-hover);
+color: #191818;
 counter-reset: item;
 list-style-type: none;
 box-shadow: 0px 0px 5px #888888;
@@ -117,6 +123,7 @@ box-shadow: 0px 0px 5px #888888;
 
 .table-of-contents-ul h4 {
 color: var(--c-green-no-hover);
+color: #191818;
 text-align: left;
 }
 
@@ -135,11 +142,13 @@ display: block;
 
 .content-li a {
 color: var(--c-green-no-hover);
+color: #191818;
 text-decoration: none;
 }
 
 .content-li:hover {
 background-color: var(--c-tut-table-hover);
+background-color: #3d9667;
 }
 
 /* ======== inner page ======== */
@@ -186,8 +195,9 @@ filter: none !important;
 /* ======= tutorial left part ====== */
 .tut-left-side-menu {
 left: 0%;
-width: calc((100% - var(--max-window-width)) / 2 - 0.5%);
+width: calc((100% - 800px) / 2 - 0.5%);
 background-color: var(--c-tut-table);
+background-color: #4cb07b;
 height: calc(100% - 5em);
 overflow-y: scroll;
 }
@@ -213,12 +223,13 @@ padding: 0.3em 0;
 
 .tut-left-li:hover {
 background-color: var(--c-tut-table-hover);
+background-color: #3d9667;
 }
 
 /* ======= tutorial right part ====== */
 .tut-right-side-menu {
 right: 0.5%;
-width: calc((100% - var(--max-window-width)) / 2 - 1%);
+width: calc((100% - 800px) / 2 - 1%);
 height:100%;
 }
 
@@ -246,7 +257,7 @@ text-decoration: underline;
 
 @media screen and (min-width: 1300px) {
   .tut-left-side-menu, .tut-right-side-menu {
-  width: calc((1300px - var(--max-window-width)) / 2 - 0.5%);
+  width: calc((1300px - 800px) / 2 - 0.5%);
   }
   .tut-left-side-menu {
   left: calc((100% - 1300px) / 2);
@@ -301,7 +312,9 @@ overflow: hidden;
 .PageNavigation a {
 display: block;
 color: var(--c-green-no-hover);
+color: #191818;
 background-color: var(--c-n);
+background-color: #4cb07b;
 text-decoration: none;
 padding: 0.9em;
 margin: 0.5em 0;
@@ -314,7 +327,9 @@ font-size: 1em;
 
 .PageNavigation a:hover {
 color: var(--c-green-hover);
+color: #191818;
 background-color: var(--c-n-mofan);
+background-color: #3d9667;
 }
 
 .PageNavigation .prev {
@@ -343,9 +358,11 @@ padding: 1em 0;
 width: 50%;
 display: block;
 color: var(--c-green-no-hover);
+color: #191818;
 text-align: center;
 padding: 10px;
 background-color: var(--c-donation);
+background-color: #4cb07b;
 margin: 1em auto 2em auto;
 text-decoration: none;
 border-radius: 20px;
@@ -354,5 +371,7 @@ box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
 
 #bottom-donation-button:hover {
 background-color: var(--c-donation-hover);
+background-color: #3d9667;
 color: var(--c-green-hover);
+color: #191818;
 }
