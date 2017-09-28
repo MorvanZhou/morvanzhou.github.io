@@ -15,6 +15,14 @@ collections:
     output: true
     permalink: /:path/
 
+  whatever:
+    output: true
+    permalink: /whatever/:path/
+
+tipue_search:
+  include:
+    pages: true
+    collections: [whatever, contents]
 
 
 defaults:
@@ -50,7 +58,7 @@ defaults:
       author: 莫烦
       author-link: "#"
       autoplay: true
-      published: true
+      published: false
       comments: true
       sort-date: true
       keywords: 教学, 教程, 学习

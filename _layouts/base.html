@@ -14,6 +14,13 @@
   <link href="{{site.baseurl}}/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
   <link href="{{site.baseurl}}/stylesheets/syntax.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png" alt="{{ page.title }}{% increment image-count %}">
+  {% if page.tipue_search_active or layout.tipue_search_active %}
+  <link rel="stylesheet" href="{{ '/assets/tipuesearch/css/normalize.css' | relative_url }}">
+  <script src="{{ '/assets/tipuesearch/tipuesearch_content.js' | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/tipuesearch/css/tipuesearch.css' | relative_url }}">
+  <script src="{{ '/assets/tipuesearch/tipuesearch_set.js' | relative_url }}"></script>
+  <script src="{{ '/assets/tipuesearch/tipuesearch.min.js' | relative_url }}"></script>
+  {% endif %}
 
   <!-- click dropdown -->
   <script>
@@ -27,13 +34,13 @@
   </script>
 
   <!-- Google adsense -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-4601203457616636",
-      enable_page_level_ads: true
-    });
-  </script>
+  <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+  <!--<script>-->
+    <!--(adsbygoogle = window.adsbygoogle || []).push({-->
+      <!--google_ad_client: "ca-pub-4601203457616636",-->
+      <!--enable_page_level_ads: true-->
+    <!--});-->
+  <!--</script>-->
 
   <!-- structured data -->
   {% if layout.structured-type == "BlogPosting" %}

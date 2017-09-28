@@ -1,6 +1,7 @@
 ---
 layout: with-nav
 structured-type: BlogPosting
+tipue_search_active: true
 ---
 
 <main>
@@ -108,7 +109,7 @@ structured-type: BlogPosting
 
 
   <div class="tut-left-side-menu section">
-    <p><strong>{{ page.series }}</strong></p>
+    <a href="{{ page.tut-permalink }}"><p><strong>{{ page.series }}</strong></p></a>
     {% assign category-items = site.contents | where: "category", page.category  %}
     {% include left-side-menu.html items=category-items %}
   </div>
