@@ -7,12 +7,12 @@ structured-type: Course
 {% assign category-tuts = site.contents | where: "category", page.tut-category-name | sort: "id" %}
 
 <!-- for this page contents -->
-<div class="section">
+<div class="section ie-size">
 	<img class="course-summary-image" src="{{ page.tut-course-cover }}" alt="{{ page.title }}">
 	<h1 style="display:none">{{ page.title }}</h1>
 </div>
 
-<ul class="table-of-contents-ul section">
+<ul class="table-of-contents-ul section ie-size">
 	{% for chapter-name in page.tut-chapters %}
 		{% assign chapter-id = forloop.index %}
 		<li class="chapter-li"><h4>{{chapter-name}}</h4>

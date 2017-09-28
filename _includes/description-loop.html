@@ -3,7 +3,7 @@
 {% assign descriptions = site.contents | where: "content-for", words[-1] %}
 {% assign descriptions = descriptions | sort: "path" %}
 {% for description in descriptions %}
-<div class="section">
+<div class="section ie-size">
 	<div class="pad-main">
 	<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h1 class="small-h1">
 		<img class="icon-image" src="{{description.icon-dir}}">

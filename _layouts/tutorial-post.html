@@ -5,7 +5,7 @@ structured-type: BlogPosting
 
 <main>
   <!-- top ads -->
-  <div class="section">
+  <div class="section ie-size">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- tut-page-side -->
     <ins class="adsbygoogle"
@@ -18,7 +18,8 @@ structured-type: BlogPosting
     </script>
   </div>
 
-  <div class="section">
+  <!-- video section -->
+  <div class="section ie-size">
     <!-- video section -->
     {% include embedded-video.html %}
 
@@ -29,7 +30,7 @@ structured-type: BlogPosting
   </div>
 
   <!-- post main content -->
-  <div class="section">
+  <div class="section ie-size">
     <!-- video button ads -->
 
       <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
@@ -76,8 +77,8 @@ structured-type: BlogPosting
     </div>
   </div>
 
-  <!-- comment section -->
-  <div class="section">
+  <!-- comment ads section -->
+  <div class="section ie-size">
     <!-- comment ads -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
@@ -91,7 +92,8 @@ structured-type: BlogPosting
     </script>
   </div>
 
-  <div class="section">
+  <!-- comment section -->
+  <div class="section ie-size">
     {% include comment-section.html %}
 
     <!-- menu button -->
@@ -105,7 +107,7 @@ structured-type: BlogPosting
 
 
 
-
+  <!-- side section -->
   <div class="tut-left-side-menu section">
     <a href="{{ page.tut-permalink }}"><p><strong>{{ page.series }}</strong></p></a>
     {% assign category-items = site.contents | where: "category", page.category  %}

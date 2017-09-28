@@ -149,7 +149,8 @@
 
 /* ======= IE ====== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     .section {
+     .ie-size {
      width: 800px;
+     margin: 0 auto;
      }
 }
