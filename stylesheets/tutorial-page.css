@@ -56,24 +56,28 @@ opacity:0.8;
 .ads-container {
 display: block;
 width: 100%;
-z-index: 1;
 margin: 0;
 padding:0;
 }
 
 /* ======= tutorial content menu ========= */
 .tut-content-menu {
-position: fixed;
+z-index: 3;
+position:fixed;
 bottom: 2%;
-right: 34%;
-z-index: 0;
+right: calc((100% - var(--max-window-width)) / 2 + 1.0em);
 }
 
 .tut-content-menu img {
 max-width: 4em;
 border-radius:50%;
 box-shadow: 0px 0px 10px #888888;
+}
 
+@media screen and (max-width: 800px) {
+  .tut-content-menu {
+  right: 1em;
+  }
 }
 
 /* ====== switch video button ===== */
@@ -176,64 +180,54 @@ padding: 0;
 padding: 0 2em;
 }
 
-main.tut-post {
-margin: 0 auto;
-background-color:#FAFAFA;
-box-shadow: 0px 0px 30px 5px  #888888;
-width: 100%;
-}
-
-main.tut-post > div {
-display: inline-block;
-vertical-align: top;
-}
-
-.tut-main-content {
-width: 75%;
-margin: 0;
-}
-
 .tut-side-menu {
-width: 25%;
+position: fixed;
+top: 2.5em;
+right: 0.5%;
+width: calc((100% - var(--max-window-width)) / 2 - 1%);
+z-index: 1;
 font-size: 0.9em;
 margin: 0;
-overflow-y: hidden;
+height:100%;
+background-color:#FAFAFA;
+filter: none !important;
 }
 
 .side-nav {
 padding: 1em;
-}
-.tut-side-menu .ads-container {
-padding-top: 0.5em;
+text-align: right;
 }
 
+.side-nav ul {
+text-decoration: none;
+list-style-type: none;
+}
+
+.tut-side-menu .ads-container {
+padding-top: 0.5em;
+height: 80%;
+}
+
+@media screen and (max-width: 1100px) {
+  .side-nav {
+  display: none;
+  }
+}
 
 @media screen and (max-width: 40.5em) {
   .tut-side-menu {
   display: none;
   width: 0;
   }
-  .tut-main-content {
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  display: block;
-  }
-  .tut-content-menu {
-  right:1em;
-  }
   .course-image {
   max-width: 100%;
+  }
+  .tut-main-content-pad {
+  padding: 0 0.5em;
   }
 }
 
 
-@media screen and (min-width: 1000px) {
-  main.tut-post {
-  max-width: 1000px;
-  margin: 0 auto;
-  }
- }
 
 /* ======= video and next previous button ====== */
 .tut-content-video {

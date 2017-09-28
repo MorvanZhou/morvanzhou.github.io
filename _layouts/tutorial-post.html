@@ -3,9 +3,22 @@ layout: with-nav
 structured-type: BlogPosting
 ---
 
-<main class="tut-post">
+<main>
 
-  <div id="tut-mainDiv" class="tut-main-content">
+  <div class="tut-main-content">
+    <!-- top ads -->
+    <div class="ads-container">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- tut-page-side -->
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="5888750508"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
 
     <!-- video section -->
     {% include embedded-video.html %}
@@ -88,10 +101,11 @@ structured-type: BlogPosting
     <!-- menu button -->
     <div class="tut-content-menu">
       <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
-        <img src="/static/img/icon/tutorial_contents_icon.png" alt="{{ page.title }}{% increment image-count %}"></a>
+      <img src="/static/img/icon/tutorial_contents_icon.png" alt="{{ page.title }}{% increment image-count %}"></a>
     </div>
-  </div
-  ><div id="tut-sideDiv" class="tut-side-menu">
+  </div>
+
+  <div class="tut-side-menu">
     <div class="side-nav">
       <hr>
       {% if page.post-headings %}
@@ -101,27 +115,17 @@ structured-type: BlogPosting
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
+      <hr>
       {% endif %}
     </div>
 
     <div class="ads-container">
       <!-- side ads -->
-      {% include google-side-ads.html slot="6954661218" %}
 
       {% include google-side-ads.html slot="1501228408" %}
-
-      {% include google-side-ads.html slot="3642152498" %}
-
-      {% include google-side-ads.html slot="7413826212" %}
-
-      {% include google-side-ads.html slot="4723906083" %}
 
     </div>
 
   </div>
 
 </main>
-
-<script type="text/javascript">
-    document.getElementById("tut-sideDiv").style.height = (document.getElementById("tut-mainDiv").clientHeight - 10) + "px";
-</script>
