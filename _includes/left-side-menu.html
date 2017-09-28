@@ -1,14 +1,19 @@
 {% assign items = site.contents | where: "category", page.category  %}
-{% assign counter = 1 %}
+{% assign total-chapter = items[-1].chapter %}
+
 <hr style="opacity:0.5; width:90%;">
+
+{% for i in (1..total-chapter) %}
 <ul class="tut-left-ul">
-	{% for item in items %}
-		{% if counter < item.chapter %}
-			{% assign counter = counter | plus: 1 %}
-			<hr style="opacity:0.5;">
-		{% endif %}
+	{% assign chapter-items = items | where: "chapter", i %}
+	{% for item in chapter-items %}
+
 		<li class="tut-left-li">
 				<a href="{{item.url}}">{{ item.title }}</a>
 		</li>
 	{% endfor %}
 </ul>
+<hr style="opacity:0.5; width: 90%;">
+{% endfor %}
+
+
