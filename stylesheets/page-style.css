@@ -9,6 +9,7 @@
   --c-about-table: #d8d8d8;
   --c-green-no-hover: #191818;
   --c-green-hover: #f2f2f2;
+  --c-p: #415849;
   --max-window-width: 800px;
 }
 
@@ -91,7 +92,7 @@ p {
 line-height: 1.7em;
 padding: 0;
 text-align: justify;
-color: #415849;
+color: var(--c-p);
 }
 
 /* ====== anchor ====== */

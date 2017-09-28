@@ -105,17 +105,23 @@ structured-type: BlogPosting
     </div>
   </div>
 
-  <div class="tut-side-menu">
+  <div class="tut-left-side-menu">
+    <p><strong>{{ page.series }}</strong></p>
+    {% assign category-items = site.contents | where: "category", page.category  %}
+    {% include left-side-menu.html items=category-items %}
+  </div>
+
+  <div class="tut-right-side-menu">
     <div class="side-nav">
-      <hr>
+      <hr style="opacity:0.5; width:90%;">
       {% if page.post-headings %}
-      <strong>知道你想跳着看</strong>
+      知道你想跳着看
       <ul>
         {% for heading in page.post-headings %}
           <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
-      <hr>
+      <hr style="opacity:0.5; width:90%;">
       {% endif %}
     </div>
 

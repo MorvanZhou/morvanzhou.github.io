@@ -127,7 +127,7 @@ text-align: left;
 }
 
 .chapter-li {
-margin: 0 1.5em;
+margin: 0 1.2em;
 }
 
 .chapter-li ul {
@@ -175,46 +175,93 @@ padding-bottom: 1.5em;
 padding: 0;
 }
 
-/* ======= tutorial two main parts ====== */
+/* ======= tutorial main part ====== */
 .tut-main-content-pad {
 padding: 0 2em;
 }
 
-.tut-side-menu {
+.tut-right-side-menu, .tut-left-side-menu {
 position: fixed;
-top: 2.5em;
-right: 0.5%;
-width: calc((100% - var(--max-window-width)) / 2 - 1%);
-z-index: 1;
-font-size: 0.9em;
+top: 4.1em;
+font-size: 0.85em;
 margin: 0;
 height:100%;
 background-color:#FAFAFA;
 filter: none !important;
+box-shadow: 0px -4px 10px rgba(0,0,0,0.4);
+}
+
+
+/* ======= tutorial left part ====== */
+.tut-left-side-menu {
+left: 0%;
+width: calc((100% - var(--max-window-width)) / 2 - 0.5%);
+background-color: var(--c-tut-table);
+}
+
+.tut-left-side-menu p {
+color: black;
+text-align: center;
+font-size: 1.2em;
+}
+
+.tut-left-ul {
+padding: 0 0.5em 0 2em;
+overflow-y: scroll;
+text-decoration: none;
+height:79%;
+}
+
+.tut-left-ul a:visited, .tut-left-ul a:link {
+color: black;
+opacity:0.9;
+}
+
+.tut-left-li {
+padding: 0.3em 0;
+}
+
+.tut-left-li:hover {
+background-color: var(--c-tut-table-hover);
+}
+
+/* ======= tutorial right part ====== */
+.tut-right-side-menu {
+right: 0.5%;
+width: calc((100% - var(--max-window-width)) / 2 - 1%);
 }
 
 .side-nav {
-padding: 1em;
+padding: 0 1em;
 text-align: right;
 }
 
 .side-nav ul {
 text-decoration: none;
 list-style-type: none;
+padding:0;
 }
 
-.tut-side-menu .ads-container {
+.side-nav a:hover {
+text-decoration: underline;
+}
+
+.tut-right-side-menu .ads-container {
 padding-top: 0.5em;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1100px) {
   .side-nav {
+  display: none;
+  }
+  .tut-left-side-menu {
   display: none;
   }
 }
 
+
 @media screen and (max-width: 40.5em) {
-  .tut-side-menu {
+  .tut-right-side-menu {
   display: none;
   width: 0;
   }
