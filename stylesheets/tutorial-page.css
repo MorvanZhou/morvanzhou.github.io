@@ -26,12 +26,7 @@ background-color:#000;
 opacity:0.8;
 }
 
-@media all and (max-width: 40.5em) {
-  #recent-update {
-    height: 180px;
-    overflow-y: scroll;
-  }
-}
+
 
 .tut-course-thumbnail {
 list-style-type: none;
@@ -67,11 +62,7 @@ border-radius:50%;
 box-shadow: 0px 0px 5px #888888;
 }
 
-@media all and (max-width: 800px) {
-  .tut-content-menu {
-  right: 1em;
-  }
-}
+
 
 /* ====== switch video button ===== */
 .switch-video-div {
@@ -249,36 +240,6 @@ padding:0;
 text-decoration: underline;
 }
 
-@media all and (max-width: 1020px) {
-  .tut-left-side-menu, .tut-right-side-menu {
-  display: none;
-  }
-}
-
-@media all and (min-width: 1300px) {
-  .tut-left-side-menu, .tut-right-side-menu {
-  width: calc((1300px - 800px) / 2 - 0.5%);
-  }
-  .tut-left-side-menu {
-  left: calc((100% - 1300px) / 2);
-  }
-  .tut-right-side-menu {
-  right: calc((100% - 1300px) / 2);
-  }
-}
-
-@media all and (max-width: 40.5em) {
-  .tut-right-side-menu {
-  display: none;
-  width: 0;
-  }
-  .course-image {
-  max-width: 100%;
-  }
-  .tut-main-content-pad {
-  padding: 0 0.5em;
-  }
-}
 
 
 
@@ -289,11 +250,7 @@ display: block;
 margin: 0 auto;
 }
 
-@media all and (max-width: 40.5em) {
- .tut-content-video {
-  width: 100%;
- }
-}
+
 .link-under-youtube {
 text-align: center;
 margin: 0;

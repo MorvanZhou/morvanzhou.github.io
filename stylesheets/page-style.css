@@ -29,11 +29,7 @@ filter: none !important;
 margin: 0.5em 0;
 }
 
-@media all and (max-width: 40.5em) {
-  body {
-    font-size:14px;
-  }
-}
+
 
 
 /* ====== Headings ====== */
@@ -77,20 +73,6 @@ font-size: 1em;
 text-align: left;
 }
 
-@media all and (max-width: 40.5em) {
-  h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 1.2em;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-  h4 {
-    font-size: 1.1em;
-  }
-}
 
 /* ====== Paragraph ====== */
 p {
@@ -158,11 +140,6 @@ left: 0;
 padding: 1.3em 0;
 }
 
-@media all and (max-width: 40.5em) {
-  .large-top-bottom-padding {
-    padding: 0.5em 0;
-  }
-}
 
 /* ================== DEFAULT FOR PAGES =================== */
 
@@ -319,34 +296,6 @@ filter: none !important;
 }
 
 
-@media all and (max-width: 40.5em) {
-  #home-nav {
-    height: 3.8em;
-  }
-
-  #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
-    padding: 1.1em 0.3em;
-    font-size: 0.8em;
-  }
-  #home-nav > ul > li > ul {
-    width: 80%;
-  }
-  #home-nav > ul > li:last-child {       /* tutorial dropdown */
-    float: none;
-  }
-  #home-nav > ul > li > ul, .search-box {
-    top:2.9em;
-    }
-  .search-box {
-    display: none;
-    position: fixed;
-    left:0;
-    }
-  #home-nav .search-text {
-    font-size:1.4em;
-    }
-}
-
 /* ====== main body ====== */
 main {
 margin: 0 auto;
@@ -356,19 +305,6 @@ margin: 0 auto;
 padding: 3em 4em;
 }
 
-@media all and (max-width: 800px) {
-  main {
-    width: 100%;
-  }
-}
-@media all and  (max-width: 40.5em) {
-  .pad-main {
-    padding: 1em 0.5em;
-  }
-  main {
-  width: 100%;
-  }
-}
 
 /* ====== video ===== */
 .video-container {
@@ -390,16 +326,6 @@ box-shadow: 0px 0px 5px #888888;
 }
 
 
-@media all and  (min-width: 800px) {
-  main {
-  max-width: 800px;
-  }
-  main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
-  max-width: 800px;
-  max-height: calc(800px / 16 * 9);
-  margin: 0 auto;
-  }
-}
 
 /* ======== bottom donation ======== */
 #bottom-donation-section {
@@ -525,18 +451,6 @@ opacity:0.8;
 color: #415849;
 }
 
-
-@media all and  (max-width: 40.5em) {
-  #recent-post-ul img {
-  height:90px;
-  }
-  .recent-post-description {
-  display: none;
-  }
-  .recent-post-title {
-  font-size: 0.9em;
-  }
-}
 
 /* ===================== ABOUT PAGE ==================== */
 #contact-table {
