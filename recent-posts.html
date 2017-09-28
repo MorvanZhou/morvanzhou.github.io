@@ -9,8 +9,7 @@ permalink: /recent-posts/
   {% assign items = site.contents | where: "sort-date", "true" %}
   {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 70 %}
   {% for item in sorted-items %}
-    <hr style="width: 98%; opacity:0.5;">
-    <li>
+    <li class="section">
       <a href="{{item.url}}">
         <img alt="{{item.title}}" src="{{item.thumbnail}}">
       </a>

@@ -1,20 +1,22 @@
-<br style="clear: left; padding-bottom: 3em;">
+<div class="section">
+  <a class="non-underscore hover-move" href="/recent-posts/">
+    <h1 class="small-h1" style="padding-top:1em;margin-top:0;">
+    近期更新</h1>
+  </a>
 
-<h1 class="small-h1">近期更新</h1>
-<ul id="recent-update">
-  {% assign items = site.contents | where: "sort-date", "true" %}
-  {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 5 %}
-  {% for item in sorted-items %}
+  <ul id="recent-update" style="padding-bottom:2em;">
+    {% assign items = site.contents | where: "sort-date", "true" %}
+    {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 5 %}
+    {% for item in sorted-items %}
 
-  <li><a href="{{item.url}}">
-    <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">
-  </a></li>
+    <li><a href="{{item.url}}">
+      <img alt="{{item.title}}" src="{{item.thumbnail}}" height="130">
+    </a></li>
 
-  {% endfor %}
-  <li><a href="/recent-posts/">
-    <img alt="More recent posts" src="/static/img/description/more_update.png" height="130">
-  </a></li>
+    {% endfor %}
+    <li><a href="/recent-posts/">
+      <img alt="More recent posts" src="/static/img/description/more_update.png" height="130">
+    </a></li>
 
-</ul>
-
-<br style="clear: left; padding-bottom: 4em;">
+  </ul>
+</div>

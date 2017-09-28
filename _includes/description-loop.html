@@ -1,15 +1,14 @@
 
-<div class="pad-main">
-	{% assign words = include.url | split: '/' %}
-	{% assign descriptions = site.contents | where: "content-for", words[-1] %}
-	{% assign descriptions = descriptions | sort: "path" %}
-	{% for description in descriptions %}
-		<div class="large-top-bottom-padding">
-			<hr style="clear: left; width: 100%;">
-			<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h1 class="large-top-bottom-padding small-h1">
-				<img class="icon-image" src="{{description.icon-dir}}">
-					{{description.title}}</h1></a>
-			{{ description.content }}
-		</div>
-	{% endfor %}
+{% assign words = include.url | split: '/' %}
+{% assign descriptions = site.contents | where: "content-for", words[-1] %}
+{% assign descriptions = descriptions | sort: "path" %}
+{% for description in descriptions %}
+<div class="section">
+	<div class="pad-main">
+	<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h1 class="small-h1">
+		<img class="icon-image" src="{{description.icon-dir}}">
+			{{description.title}}</h1></a>
+	{{ description.content }}
+	</div>
 </div>
+{% endfor %}

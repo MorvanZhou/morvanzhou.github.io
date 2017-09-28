@@ -52,13 +52,6 @@ background-color:#000;
 opacity:0.8;
 }
 
-/* ======= ads ========= */
-.ads-container {
-display: block;
-width: 100%;
-margin: 0;
-padding:0;
-}
 
 /* ======= tutorial content menu ========= */
 .tut-content-menu {
@@ -81,11 +74,13 @@ box-shadow: 0px 0px 5px #888888;
 }
 
 /* ====== switch video button ===== */
-div#switch-video-div {
+.switch-video-div {
 display:block;
-margin: 1em auto;
+margin: 0 auto;
+padding: 1em 0;
 text-align: center;
 }
+
 button#switch-video {
 display: inline;
 background-color: var(--c-n);
@@ -118,7 +113,6 @@ color: var(--c-green-no-hover);
 counter-reset: item;
 list-style-type: none;
 box-shadow: 0px 0px 5px #888888;
-margin: 0.5em 0;
 }
 
 .table-of-contents-ul h4 {
@@ -182,10 +176,9 @@ padding: 0 2em;
 
 .tut-right-side-menu, .tut-left-side-menu {
 position: fixed;
-top: 4.35em;
+top: 4.5em;
 font-size: 0.85em;
 margin: 0;
-height:100%;
 filter: none !important;
 }
 
@@ -195,7 +188,8 @@ filter: none !important;
 left: 0%;
 width: calc((100% - var(--max-window-width)) / 2 - 0.5%);
 background-color: var(--c-tut-table);
-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+height: calc(100% - 5em);
+overflow-y: scroll;
 }
 
 .tut-left-side-menu p {
@@ -206,9 +200,7 @@ font-size: 1.2em;
 
 .tut-left-ul {
 padding: 0 0.5em 0 2em;
-overflow-y: scroll;
 text-decoration: none;
-height:74%;
 }
 
 .tut-left-ul a:visited, .tut-left-ul a:link {
@@ -228,17 +220,16 @@ background-color: var(--c-tut-table-hover);
 .tut-right-side-menu {
 right: 0.5%;
 width: calc((100% - var(--max-window-width)) / 2 - 1%);
+height:100%;
 }
 
 .tut-right-side-menu > div {
-background-color:#FAFAFA;
-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
 padding: 1em;
-margin: 0 0 0.5em 0;
 }
 
 .side-nav {
 text-align: right;
+margin-top:0;
 }
 
 .side-nav ul {
@@ -302,7 +293,7 @@ margin: 0;
 }
 
 .pad-page-navigation {
-padding: 3em 0.5em;
+padding: 2em 1em;
 }
 
 .PageNavigation {

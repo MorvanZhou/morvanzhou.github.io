@@ -25,6 +25,13 @@ background-color:#F4F4F2;
 filter: none !important;
 }
 
+.section {
+box-shadow: 0px 0px 5px #888888;
+background-color:#FAFAFA;
+filter: none !important;
+margin: 0.5em 0;
+}
+
 @media screen and (max-width: 40.5em) {
   body {
     font-size:14px;
@@ -161,7 +168,7 @@ padding: 1.3em 0;
 /* ================== DEFAULT FOR PAGES =================== */
 
 #home-nav {
-height: 3.7em;
+height: 3.3em;
 vertical-align:middle;
 }
 /* ====== navigation bar ====== */
@@ -337,10 +344,8 @@ filter: none !important;
 /* ====== main body ====== */
 main {
 margin: 0 auto;
-background-color:#FAFAFA;
-box-shadow: 0px 0px 5px #888888;
-filter: none !important;
 }
+
 .pad-main {
 padding: 3em 4em;
 }
@@ -481,13 +486,12 @@ width: 350px;
 
 #recent-post-ul {
 list-style-type: none;
-padding: 0.3em;
+padding: 0;
 margin:0;
 display: inline-block;
 }
 #recent-post-ul li {
 padding: 0;
-float: left;
 display: flex;
 }
 
