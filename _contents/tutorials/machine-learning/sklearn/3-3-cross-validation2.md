@@ -9,7 +9,7 @@ date: 2016-11-3
 post-headings:
   - Learning curve 检视过拟合
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk9_cross_validation2.py)
@@ -17,8 +17,7 @@ post-headings:
 `sklearn.learning_curve` 中的 learning curve 可以很直观的看出我们的 model 学习的进度,
 对比发现有没有 overfitting 的问题. 然后我们可以对我们的 model 进行调整, 克服 overfitting 的问题.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 加载对应模块:
 

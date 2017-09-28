@@ -10,12 +10,11 @@ post-headings:
   - 生成图形
   - 调整坐标
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt9_tick_visibility.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 当图片中的内容较多，相互遮盖时，我们可以通过设置相关内容的透明度来使图片更易于观察，也即是通过本节中的`bbox`参数设置来调节图像信息.
 
@@ -43,8 +42,7 @@ ax.spines['left'].set_position(('data', 0))
 
 <img class= "course-image" src="/static/results/plt/2_7_1.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 然后对被遮挡的图像调节相关透明度，本例中设置 x轴 和 y轴 的刻度数字进行透明度设置
 

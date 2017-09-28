@@ -12,21 +12,19 @@ post-headings:
   - DataFrame
   - DataFrame 的一些简单运用
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/11_pandas_intro.py)
   
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果用 python 的列表和字典来作比较, 那么可以说
 Numpy 是列表形式的，没有数值标签，而 Pandas 就是字典形式。Pandas是基于Numpy构建的，让Numpy为中心的应用变得更加简单。
 
 要使用pandas，首先需要了解他主要两个数据结构：Series和DataFrame。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 import pandas as pd
@@ -50,8 +48,7 @@ dtype: float64
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 dates = pd.date_range('20160101',periods=6)
@@ -74,8 +71,7 @@ print(df)
 
 我们可以根据每一个不同的索引来挑选数据, 比如挑选 `b` 的元素:
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 print(df['b'])

@@ -3,7 +3,7 @@ youku_id: XMjc0ODE5OTYyMA
 youtube_id: FIZgQuOXk8g
 title: Optimizer 优化器
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail/torch/3-6 optimizer.jpg"
+thumbnail: "/static/thumbnail/torch/3-6_optimizer.jpg"
 chapter: 3
 description: "这节内容主要是用 Torch 实践 这个 优化器 动画简介
 中起到的几种优化器, 这几种优化器具体的优势不会在这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.
@@ -15,7 +15,7 @@ post-headings:
   - 优化器 Optimizer
   - 训练/出图
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/306_optimizer.py)
@@ -24,8 +24,7 @@ post-headings:
   * [PyTorch 优化器网页](http://pytorch.org/docs/optim.html)
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这节内容主要是用 Torch 实践 [这个 优化器 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
 中起到的几种优化器, 这几种优化器具体的优势不会在这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.
@@ -39,8 +38,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 为了对比各种优化器的效果, 我们需要有一些数据, 今天我们还是自己编一些伪数据, 这批数据是这样的:
 
@@ -75,8 +73,7 @@ loader = Data.DataLoader(dataset=torch_dataset, batch_size=BATCH_SIZE, shuffle=T
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 为了对比每一种优化器, 我们给他们各自创建一个神经网络, 但这个神经网络都来自同一个 `Net` 形式.
 
@@ -101,8 +98,7 @@ net_Adam        = Net()
 nets = [net_SGD, net_Momentum, net_RMSprop, net_Adam]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来在创建不同的优化器, 用来训练不同的网络. 并创建一个 `loss_func` 用来计算误差.
 我们用几种常见的优化器, `SGD`, `Momentum`, `RMSprop`, `Adam`.
@@ -119,8 +115,7 @@ loss_func = torch.nn.MSELoss()
 losses_his = [[], [], [], []]   # 记录 training 时不同神经网络的 loss
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来训练和 loss 画图.
 

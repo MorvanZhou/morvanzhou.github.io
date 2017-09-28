@@ -41,7 +41,7 @@ post-headings:
 越复杂的神经网络 , 越多的数据 , 我们需要在训练神经网络的过程上花费的时间也就越多. 原因很简单, 就是因为计算量太大了. 可是往往有时候为了解决复杂的问题, 复杂的结构和大数据又是不能避免的, 所以我们需要寻找一些方法, 让神经网络聪明起来, 快起来.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/speedup2.png"  width="500px">
@@ -56,7 +56,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/speedup4.png"  width="500px">
 
@@ -70,7 +70,7 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/speedup6.png"  width="500px">
 
@@ -78,7 +78,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/speedup7.png"  width="500px">
 
@@ -86,7 +86,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/speedup8.png"  width="500px">
 

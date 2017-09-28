@@ -20,7 +20,7 @@ post-headings:
 
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 我们为什么要使用激励函数? 用简单的语句来概括. 就是因为, 现实并没有我们想象的那么美好, 它是残酷多变的. 哈哈, 开个玩笑, 不过激励函数也就是为了解决我们日常生活中 不能用线性方程所概括的问题. 好了,我知道你的问题来了. 什么是线性方程 (linear function)?
 
@@ -36,7 +36,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/active3.png" alt="{{ page.title }}{% increment image-count %}">
@@ -50,7 +50,7 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/active4.png" alt="{{ page.title }}{% increment image-count %}">
 

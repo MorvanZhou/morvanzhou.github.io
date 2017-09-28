@@ -10,7 +10,7 @@ post-headings:
   - 画等高线
   - 添加高度数字
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt12_contours.py)
 
@@ -18,8 +18,7 @@ post-headings:
 
 <img class="course-image" src="/static/results/plt/3_3_1.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 数据集即三维点 (x,y) 和对应的高度值，共有256个点。高度值使用一个 height function `f(x,y)` 生成。
@@ -57,8 +56,7 @@ C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=.5)
 
 <img  class="course-image" src="/static/results/plt/3_3_2.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 其中，8代表等高线的密集程度，这里被分为10个部分。如果是0，则图像被一分为二。
 

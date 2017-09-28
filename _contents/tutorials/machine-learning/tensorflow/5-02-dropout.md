@@ -12,15 +12,14 @@ post-headings:
   - 训练
   - 可视化结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf17_dropout)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Overfitting 也被称为过度学习，过度拟合。 它是机器学习中常见的问题。
 举个Classification（分类）的例子。
@@ -36,8 +35,7 @@ Overfitting 也被称为过度学习，过度拟合。 它是机器学习中常�
 第三条曲线存在overfitting问题，尽管它经过了所有的训练点，但是不能很好的反应数据的趋势，预测能力严重不足。
 TensorFlow提供了强大的dropout方法来解决overfitting问题。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 本次内容需要使用一下 sklearn 数据库当中的数据, 没有安装 sklearn 
 的同学可以参考一下[这个教程]({% link _contents/tutorials/machine-learning/sklearn/1-2-install.md %})
@@ -92,8 +90,7 @@ train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后开始train，总共训练500次。
 
@@ -102,8 +99,7 @@ sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 0.5})
 #sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 1})
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 训练中`keep_prob=1`时，就可以暴露出overfitting问题。`keep_prob=0.5`时，`dropout`就发挥了作用。

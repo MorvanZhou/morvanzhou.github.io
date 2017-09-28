@@ -19,7 +19,7 @@ post-headings:
 
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/overfitting1.png"  width="500px">
 
@@ -29,7 +29,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/overfitting2.png"  width="500px">
 
@@ -45,7 +45,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/overfitting4.png" alt="{{ page.title }}{% increment image-count %}">
 

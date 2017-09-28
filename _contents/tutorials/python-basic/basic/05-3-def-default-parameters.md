@@ -12,15 +12,14 @@ post-headings:
   - 实例
   - 进阶
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 我们在定义函数时有时候有些参数在大部分情况下是相同的，只不过为了提高函数的适用性，提供了一些备选的参数，
 为了方便函数调用，我们可以将这些参数设置为默认参数，那么该参数在函数调用过程中可以不需要明确给出。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 def function_name(para_1,...,para_n=defau_n,..., para_m=defau_m):
@@ -30,8 +29,7 @@ def function_name(para_1,...,para_n=defau_n,..., para_m=defau_m):
 函数声明只需要在需要默认参数的地方用 `=` 号给定即可, 但是要注意所有的默认参数都不能出现在非默认参数的前面。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 def sale_car(price, color='red', brand='carmy', is_second_hand=True):
@@ -46,8 +44,7 @@ def sale_car(price, color='red', brand='carmy', is_second_hand=True):
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ##### 3.1 自调用
 

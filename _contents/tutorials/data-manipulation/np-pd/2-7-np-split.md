@@ -14,10 +14,9 @@ post-headings:
   - 不等量的分割
   - 其他的分割方式
 ---
-{% assign post-heading-count = -1 %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 首先 `import` 模块
 
@@ -37,8 +36,7 @@ array([[ 0,  1,  2,  3],
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 print(np.split(A, 2, axis=1))
@@ -51,8 +49,7 @@ print(np.split(A, 2, axis=1))
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 print(np.split(A, 3, axis=0))
@@ -60,8 +57,7 @@ print(np.split(A, 3, axis=0))
 # [array([[0, 1, 2, 3]]), array([[4, 5, 6, 7]]), array([[ 8,  9, 10, 11]])]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 范例的Array只有4列，只能等量对分，因此输入以上程序代码后Python就会报错。
 
@@ -75,8 +71,7 @@ print(np.split(A, 3, axis=1))
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在机器学习时经常会需要将数据做不等量的分割，因此解决办法为`np.array_split()`
 
@@ -95,8 +90,7 @@ print(np.array_split(A, 3, axis=1))
 
 成功将Array不等量分割!
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在Numpy里还有`np.vsplit()`与横`np.hsplit()`方式可用。
 

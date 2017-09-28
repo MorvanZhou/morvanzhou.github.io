@@ -25,7 +25,7 @@ post-headings:
 强化学习是一个大家族, 发展历史也不短, 具有很多种不同方法. 比如说比较知名的控制方法 Q learning, Policy gradients, 还有基于对环境的理解的 model-based RL 等等. 接下来我们通过分类的方式来了解他们的区别.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/RLmtd1.png"  width="500px">
 
@@ -37,7 +37,7 @@ Model-free 中, 机器人只能按部就班, 一步一步等待真实世界的�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/RLmtd2.png"  width="500px">
@@ -52,7 +52,7 @@ Model-free 中, 机器人只能按部就班, 一步一步等待真实世界的�
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/RLmtd3.png"  width="500px">
 
@@ -62,7 +62,7 @@ Model-free 中, 机器人只能按部就班, 一步一步等待真实世界的�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/RLmtd4.png"  width="500px">
 

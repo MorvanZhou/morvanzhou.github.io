@@ -12,14 +12,13 @@ post-headings:
   - 创建数据
   - 建立模型－训练－预测
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk4_learning_pattern.py)
   
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 Sklearn 把所有机器学习的模式整合统一起来了，学会了一个模式就可以通吃其他不同类型的学习模式。
@@ -37,8 +36,7 @@ Sklearn 本身就有很多数据库，可以用来练习。
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 ```python
@@ -49,8 +47,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 加载 `iris` 的数据，把属性存在 `X`，类别标签存在 `y`：
@@ -97,8 +94,7 @@ print(y_train)
  """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 定义模块方式 `KNeighborsClassifier()`，

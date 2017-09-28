@@ -7,7 +7,7 @@ description: "使用 LSTM RNN 来预测一个 sin, cos 曲线. 这次我们使�
 publish-date: 2016-10-30
 author: Mark JingNB
 chapter: 2
-thumbnail: "/static/thumbnail/keras/08 RNN2.jpg"
+thumbnail: "/static/thumbnail/keras/08RNN2.jpg"
 post-headings:
   - 生成序列
   - 搭建模型
@@ -20,7 +20,7 @@ post-headings:
   * 机器学习-简介系列 [LSTM]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * Tensorflow [RNN教程]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 这次我们使用RNN来求解回归(Regression)问题.
 首先生成序列`sin(x)`,对应输出数据为`cos(x)`,设置序列步长为20，每次训练的`BATCH_SIZE`为50.
@@ -38,7 +38,7 @@ def get_batch():
 
 <img class="course-image" src="/static/results/keras/2-5-1.png" alt="{{ page.title }}{% increment image-count %}">
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 然后添加LSTM RNN层，输入为训练数据，输出数据大小由`CELL_SIZE`定义。因为每一个输入都对应一个输出，所以`return_sequences=True`。
 每一个点的当前输出都受前面所有输出的影响，BATCH之间的参数也需要记忆，故`stateful=True`
@@ -60,7 +60,7 @@ model.add(TimeDistributed(Dense(OUTPUT_SIZE)))
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 设置优化方法，`loss`函数和`metrics`方法之后就可以开始训练了。
 训练501次，调用matplotlib函数采用动画的方式输出结果。

@@ -27,14 +27,14 @@ Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会�
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan2.png" alt="{{ page.title }}{% increment image-count %}">
 
 神经网络分很多种, 有普通的前向传播神经网络 , 有分析图片的 CNN 卷积神经网络 , 有分析序列化数据, 比如语音的 RNN 循环神经网络 , 这些神经网络都是用来输入数据, 得到想要的结果, 我们看中的是这些神经网络能很好的将数据与结果通过某种关系联系起来.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan3.png" alt="{{ page.title }}{% increment image-count %}">
@@ -45,14 +45,14 @@ Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会�
 
 对, 你没听错, 我们就是用没有意义的随机数来生成有有意义的作品, 比如著名画作. 当然, 这还不是全部, 这只是一个 GAN 的一部分而已, 这一部分的神经网络我们可以想象成是一个新手画家.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan5.png" alt="{{ page.title }}{% increment image-count %}">
 
 画家作画都需要点灵感 , 他们都是依照自己的灵感来完成作品. 有了灵感不一定有用, 因为他的作画技术并没有我们想象得好,  画出来有可能是一团糟. 这可怎么办, 聪明的新手画家找到了自己的一个正在学鉴赏的好朋友 – 新手鉴赏家.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan6.png" alt="{{ page.title }}{% increment image-count %}">
@@ -61,7 +61,7 @@ Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会�
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan7.png" alt="{{ page.title }}{% increment image-count %}">
@@ -72,14 +72,14 @@ Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会�
 
 新手画家用随机灵感画画 , 新手鉴赏家会接收一些画作,  但是他不知道这是新手画家画的还是著名画家画的, 他说出他的判断,  你来纠正他的判断, 新手鉴赏家一边学如何判断,  一边告诉新手画家要怎么画才能画得更像著名画家, 新手画家就能学习到如何从自己的灵感画出更像著名画家的画了. GAN 也就这么回事.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[5] }}">{{ page.post-headings[5] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan9.png" alt="{{ page.title }}{% increment image-count %}">
 
 Generator 会根据随机数来生成有意义的数据 , Discriminator 会学习如何判断哪些是真实数据 , 哪些是生成数据, 然后将学习的经验反向传递给 Generator, 让 Generator 能根据随机数生成更像真实数据的数据. 这样训练出来的 Generator 可以有很多用途, 比如最近有人就拿它来生成各种卧室的图片.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[6] }}">{{ page.post-headings[6] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/gan10.png" alt="{{ page.title }}{% increment image-count %}">

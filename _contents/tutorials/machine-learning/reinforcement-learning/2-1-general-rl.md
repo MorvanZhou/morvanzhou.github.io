@@ -3,7 +3,7 @@ youku_id: XMTk2NzM1Mjk5Mg
 youtube_id: OkGFJE_XDzI
 chapter: 2
 title: 小例子
-thumbnail: "/static/thumbnail/rl/2.1 example.jpg"
+thumbnail: "/static/thumbnail/rl/2.1_example.jpg"
 publish-date: 2017-01-09
 description: "这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为."
@@ -16,7 +16,7 @@ post-headings:
   - 环境更新
   - 强化学习主循环
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/1_command_line_reinforcement_learning/treasure_on_right.py)
@@ -24,8 +24,7 @@ post-headings:
   * [什么是 Q Learning 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为.
@@ -46,8 +45,7 @@ Q-learning 是一种记录行为值 (Q value) 的方法, 每种在一定状态�
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这一次需要的模块和参数设置:
 
@@ -67,8 +65,7 @@ FRESH_TIME = 0.3    # 移动间隔时间
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 对于 tabular Q learning, 我们必须将所有的 Q values (行为值) 放在 `q_table` 中, 更新 `q_table` 也是在更新他的行为准则.
 `q_table` 的 index 是所有对应的 `state` (探索者位置), columns 是对应的 `action` (探索者行为).
 
@@ -92,8 +89,7 @@ def build_q_table(n_states, actions):
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接着定义探索者是如何挑选行为的. 这是我们引入 `epsilon greedy` 的概念. 因为在初始阶段, 随机的探索环境,
 往往比固定的行为模式要好, 所以这也是累积经验的阶段, 我们希望探索者不会那么贪婪(greedy). 所以 `EPSILON` 就是用来控制贪婪程度的值.
@@ -111,8 +107,7 @@ def choose_action(state, q_table):
     return action_name
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 做出行为后, 环境也要给我们的行为一个反馈, 反馈出下个 state (S_) 和 在上个 state (S) 做出 action (A) 所得到的 reward (R).
@@ -137,8 +132,7 @@ def get_env_feedback(S, A):
     return S_, R
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来就是环境的更新了, 不用细看.
 
@@ -158,8 +152,7 @@ def update_env(S, episode, step_counter):
         time.sleep(FRESH_TIME)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最重要的地方就在这里. 你定义的 RL 方法都在这里体现. 在之后的教程中, 我们会更加详细得讲解 RL 中的各种方法, 下面的内容,
 大家大概看看就行, 这节内容不用仔细研究.

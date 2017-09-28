@@ -16,13 +16,15 @@ post-headings:
 ---
 
 
+
 学习资料:
 
 * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 * [我制作的 什么是神经进化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
+
 
 
 "进化" Evolution, 可以说是人类历史上伟大的发现之一. 适者生存, 不适者淘汰, 达尔文的进化理论让我们见识到了自己是怎么来的.
@@ -30,7 +32,7 @@ post-headings:
 是不是很开心, 是不是很激动! 反正这就是我为什么会对这类算法特别感兴趣的原因之一了.
 
 
-<h4 class="tut-h4-pad" id="examples">大神们都拿它做了些什么</h4>
+{% include assign-heading.html %}
 
 在 Youtube 上, 一搜就能搜到很多关于 Evolution Algorithm (之后简称为 EA) 的实验短片.
 我截取了几个给大家看看, 后面也附上他们的链接. 如果你能翻墙, 也能看看他们有趣的实验.
@@ -48,7 +50,8 @@ post-headings:
 希望大家也能[支持我](https://morvanzhou.github.io/support/)做出更好, 更简单易懂的教程.
 如果没有大家之前的支持, 这一系列进化算法的教程也出不来~ 感谢~
 
-<h4 class="tut-h4-pad" id="algorithms">算法们</h4>
+{% include assign-heading.html %}
+
 
 EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达尔文的进化理论, 虽然有一些发展到后面, 有点偏离的这个轨道, 不过他们都是受这个的启蒙.
 在 [wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm)上, EA 包括了:
@@ -66,7 +69,7 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="tutorial">这个教程的内容</h4>
+{% include assign-heading.html %}
 
 在这个教程中, 我们会用实践的方式, 手把手教你如何在电脑里进化. 让你也能动手实践, 更好的理解消化知识点.
 

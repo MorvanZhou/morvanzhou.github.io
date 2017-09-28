@@ -3,7 +3,7 @@ youku_id: XMjY1MzQ0MDI4NA
 youtube_id: A54GU_WqLmQ
 chapter: 5
 title: Policy Gradients 算法更新 (Tensorflow)
-thumbnail: "/static/thumbnail/rl/5.1 PG1.jpg"
+thumbnail: "/static/thumbnail/rl/5.1_PG1.jpg"
 publish-date: 2017-03-21
 description: "Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q learning, Sarsa), 但他也要接受环境信息 (observation),
 不同的是他要输出不是 action 的 value, 而是具体的那一个 action, 这样 policy gradient 就跳过了 value 这个阶段. 而且个人认为 Policy gradient
@@ -14,7 +14,7 @@ post-headings:
   - 算法
   - 算法代码形式
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
@@ -24,8 +24,7 @@ post-headings:
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
   * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q learning, Sarsa), 但他也要接受环境信息 (observation),
 不同的是他要输出不是 action 的 value, 而是具体的那一个 action, 这样 policy gradient 就跳过了 value 这个阶段. 而且个人认为 Policy gradient
@@ -45,8 +44,7 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们介绍的 policy gradient 的第一个算法是一种基于 **整条回合数据** 的更新, 也叫 **REINFORCE** 方法.
 这种方法是 policy gradient 的最基本方法, 有了这个的基础, 我们再来做更高级的.
@@ -58,8 +56,7 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 拿到了一个 大的 `R`, 也就是 大的 `V`, 那 `-log(Policy(s, a))*V` 就更大, 表示更吃惊, (我选了一个不常选的动作, 却发现原来它能得到了一个好的 reward,
 那我就得对我这次的参数进行一个大幅修改). 这就是 `log(Policy)*V` 的物理意义啦.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 和以前类似, 我们先定义主更新的循环, 然后下节内容讲如何用 Tensorflow 定义 `PolicyGradient()` 的算法:
 

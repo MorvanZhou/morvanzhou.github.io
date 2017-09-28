@@ -3,7 +3,7 @@ youku_id: XMjI2NjIxODcyMA
 youtube_id: sqpuf7hCC4c
 chapter: 3
 title: Sarsa 思维决策
-thumbnail: "/static/thumbnail/rl/3.2 sarsa 2.jpg"
+thumbnail: "/static/thumbnail/rl/3.2_sarsa2.jpg"
 publish-date: 2017-01-13
 description: "接着上节内容, 我们来实现 RL_brain 的 SarsaTable 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 和之前定义 Qlearning 中的 QLearningTable 一样, 因为使用 tabular 方式的 Sarsa 和 Qlearning 的相似度极高,"
@@ -11,7 +11,7 @@ post-headings:
   - 代码主结构
   - 学习
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze)
@@ -23,8 +23,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 和之前定义 Qlearning 中的 `QLearningTable` 一样, 因为使用 tabular 方式的 `Sarsa` 和 `Qlearning` 的相似度极高,
@@ -84,8 +83,7 @@ class QLearningTable(RL):   # 继承了父类 RL
         self.q_table.ix[s, a] += self.lr * (q_target - q_predict)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 有了父类的 `RL`, 我们这次的编写就很简单, 只需要编写 `SarsaTable` 中 `learn` 这个功能就完成了. 因为其他功能都和父类是一样的.

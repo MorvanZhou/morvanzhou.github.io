@@ -12,18 +12,16 @@ post-headings:
   - 将资料存取成pickle
 
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/numpy%26pandas/15_read_to)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `pandas`可以读取与存取的资料格式有很多种，像`csv`、`excel`、`json`、`html`与`pickle`等…，
 详细请看[官方说明文件](http://pandas.pydata.org/pandas-docs/stable/io.html)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 示范档案下载 - [student.csv](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv)
 
@@ -39,8 +37,7 @@ print(data)
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 data.to_pickle('student.pickle')

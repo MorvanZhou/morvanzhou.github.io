@@ -12,7 +12,7 @@ post-headings:
   - Cross entropy loss
   - 训练
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf16_classification)
@@ -25,8 +25,7 @@ post-headings:
 定性输出是分类，或者说是离散变量预测。如预测房价这是一个回归任务；
 把东西分成几类, 比如猫狗猪牛，就是一个分类任务。 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 首先准备数据（MNIST库）
@@ -42,8 +41,7 @@ MNIST库是手写体数字库，差不多是这样子的
 
 数据中包含55000张训练图片，每张图片的分辨率是28×28，所以我们的训练网络输入应该是28×28=784个像素数据。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 ```python
@@ -68,8 +66,7 @@ prediction = add_layer(xs, 784, 10, activation_function=tf.nn.softmax)
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 loss函数（即最优化目标函数）选用交叉熵函数。交叉熵用来衡量预测值和真实值的相似程度，如果完全相同，它们的交叉熵等于零。
@@ -88,8 +85,7 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 现在开始train，每次只取100张图片，免得数据太多训练太慢。
 

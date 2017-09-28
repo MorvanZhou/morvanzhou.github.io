@@ -10,7 +10,7 @@ post-headings:
   - 使用 pickle 保存
   - 使用 joblib 保存
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk11_save.py)
@@ -20,8 +20,7 @@ post-headings:
 所以保存和读取我们的sklearn model也是同样重要的一步。这次主要介绍两种保存Model的模块`pickle`与`joblib`。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先简单建立与训练一个`SVC`Model。
 
@@ -56,8 +55,7 @@ with open('save/clf.pickle', 'rb') as f:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 `joblib`是`sklearn`的外部模块。

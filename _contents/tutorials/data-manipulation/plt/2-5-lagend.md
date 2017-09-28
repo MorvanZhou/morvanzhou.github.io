@@ -10,12 +10,11 @@ post-headings:
   - 添加图例
   - 调整位置和名称
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt7_legend.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 matplotlib 中的 `legend` 图例就是为了帮我们展示出每个数据对应的图像名称. 更好的让读者认识到你的数据结构.
 
@@ -60,8 +59,7 @@ plt.legend(loc='upper right')
 
 <img class= "course-image" src="/static/results/plt/2_5_1.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果我们想单独修改之前的 `label` 信息, 给不同类型的线条设置图例信息. 我们可以在 `plt.legend` 输入更多参数.
 如果以下面这种形式添加 legend, 我们需要确保, 在上面的代码 `plt.plot(x, y2, label='linear line')` 和 

@@ -13,15 +13,14 @@ post-headings:
   - 运行时间
   - 结果对比
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing4_efficiency_comparison.py)
 
 
 上篇讲了多进程/多核的运算，这次我们来对比下多进程，多线程和什么都不做时的消耗时间，看看哪种方式更有效率。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 和上节一样，首先`import multiprocessing`并定义要实现的`job()`，同时为了容易比较，我们将计算的次数增加到1000000
 
@@ -52,8 +51,7 @@ def multicore():
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来创建多线程程序，创建多线程和多进程有很多相似的地方。首先`import threading`然后定义`multithread()`完成同样的任务
 
@@ -73,8 +71,7 @@ def multithread():
     print('multithread:', res1 + res2)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后我们定义最普通的函数。注意，在上面例子中我们建立了两个进程或线程，均对`job()`进行了两次运算，所以在`normal()`中我们也让它循环两次
 
@@ -87,8 +84,7 @@ def normal():
     print('normal:', res)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后，为了对比各函数运行时间，我们需要`import time`， 然后依次运行定义好函数：
 
@@ -109,8 +105,7 @@ if __name__ == '__main__':
 
 大功告成，下面我们来看下实际运行对比。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 """

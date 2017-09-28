@@ -14,7 +14,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ann1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -23,7 +23,7 @@ post-headings:
 比如 Google 的收索引擎. 股票价格预测, 机器人学习, 围棋, 家庭助手, 等等等等, 从金融到仿生样样都能运用. 看起来人工神经网络的确很强大. 但, 是不是有这么一个问题一直在你脑海中环绕, 没有答案. “计算机领域的神经网络和我们自己身体里的神经网络究竟是一样的吗?” 科学家们通过长久的探索, 想让计算机像人一样思考, 所以研发了人工神经网络, 究竟和我们的神经网络有多像? 那我们就先来看看人的神经网络到底是什么.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ann2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -36,13 +36,13 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ann4.png" alt="{{ page.title }}{% increment image-count %}">
 
 首先, 替代掉生物神经网络的,  就是已经成体系的人工神经网络. 所有神经元之间的连接都是固定不可更换的, 这也就是说, 在人工神经网络里, 没有凭空产生新联结这回事. 人工神经网络典型的一种学习方式就是, 我已经知道吃到糖果时, 手会如何动, 但是我想让神经网络学着帮我做这件动动手的事情.  所以我预先准备好非常多吃糖的学习数据, 然后将这些数据一次次放入这套人工神经网络系统中,  糖的信号会通过这套系统传递到手. 然后通过对比这次信号传递后, 手的动作是不是”讨糖”动作, 来修改人工神经网络当中的神经元强度. 这种修改在专业术语中叫做”误差反向传递”,  也可以看作是再一次将传过来的信号传回去, 看看这个负责传递信号神经元对于”讨糖”的动作到底有没有贡献, 让它好好反思与改正, 争取下次做出更好的贡献. 这样看来, 人工神经网络和生物神经网络的确不是一回事.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ann5.png" alt="{{ page.title }}{% increment image-count %}">
 

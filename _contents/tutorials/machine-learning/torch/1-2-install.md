@@ -3,7 +3,7 @@ youku_id: XMjc0NTk2NTgxNg
 youtube_id: JIGkxYmLPPY
 title: Pytorch 安装
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail/torch/1-2 install.jpg"
+thumbnail: "/static/thumbnail/torch/1-2_install.jpg"
 chapter: 1
 description: "PyTorch 暂时只支持 MacOS, Linux.
 暂不支持 Windows! (可怜的 Windows 同学们.. 又被抛弃了). 不过说不定像 Tensorflow 一样, 因为 Windows 用户的强烈要求, 他们在某天就突然支持了."
@@ -11,21 +11,19 @@ post-headings:
   - 支持的系统
   - 安装
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [PyTorch 官网](http://pytorch.org/)
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 PyTorch 暂时只支持 MacOS, Linux.
 暂不支持 Windows! (可怜的 Windows 同学们.. 又被抛弃了). 不过说不定像 Tensorflow 一样, 因为 Windows 用户的强烈要求, 他们在某天就突然支持了.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 PyTorch 安装起来很简单, [它自家网页](http://pytorch.org/)上就有很方便的选择方式 (网页升级改版后可能和下图有点不同):
 

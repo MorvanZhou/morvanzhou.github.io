@@ -12,13 +12,12 @@ post-headings:
   - break
   - continue
 ---
-{% assign post-heading-count = -1 %}
 
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 `True` and `False` ,当输入`1`时，`a=False`时，会执行接下来的语句后再跳出这个循环。
 
@@ -46,8 +45,7 @@ finish run
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `break`用法，在循环语句中，使用 `break`, 当符合跳出条件时，会直接结束循环，这是 `break` 和 `True False` 的区别。
 
@@ -76,8 +74,7 @@ finish run
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在代码中，满足`b=1`的条件时，因为使用了 `continue` , `python` 不会执行 `else` 后面的代码，而会直接进入下一次循环。
 

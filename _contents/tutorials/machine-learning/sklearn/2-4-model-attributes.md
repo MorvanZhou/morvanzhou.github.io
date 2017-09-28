@@ -10,7 +10,7 @@ post-headings:
   - 训练和预测
   - 参数和分数
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py)
@@ -32,8 +32,7 @@ model = LinearRegression()
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 接下来 `model.fit` 和 `model.predict` 就属于 Model 的功能，用来训练模型，用训练好的模型预测。
@@ -48,8 +47,7 @@ print(model.predict(data_X[:4, :]))
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 然后，`model.coef_` 和 `model.intercept_ ` 属于 Model 的属性，
 例如对于 `LinearRegressor` 这个模型，这两个属性分别输出模型的斜率和截距（与y轴的交点）。

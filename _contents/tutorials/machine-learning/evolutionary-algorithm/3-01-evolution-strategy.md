@@ -20,7 +20,7 @@ post-headings:
 * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py)
 * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %}Fƒ)是个很好的方式.
 
@@ -35,7 +35,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 遗传算法 (后面简称 GA) 和 ES 真 TM 差不多. 导致很多朋友学习的时候, 都傻傻分不清.
 不过我具体的列出来, 方便看清楚.
@@ -59,7 +59,7 @@ DNA2=`0.1, 2.44, 5.112, 2.144`  可以理解为4个正态分布的4个标准差.
 所以这两条 DNA 都需要被 `crossover` 和 `mutate`.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 写基础的 ES 算法其实很简单. 我总结起来, 其实就两个功能, `make_kid` 和 `kill_bad`
 

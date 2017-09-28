@@ -23,7 +23,7 @@ post-headings:
 
 **注: 本文不会涉及数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/PG01.png" alt="{{ page.title }}{% increment image-count %}">
@@ -32,7 +32,7 @@ post-headings:
 强化学习是一个通过奖惩来学习正确行为的机制. 家族中有很多种不一样的成员,  有学习奖惩值, 根据自己认为的高价值选行为, 比如 Q learning, Deep Q Network, 也有不通过分析奖励值,  直接输出行为的方法, 这就是今天要说的 Policy Gradients 了.  甚至我们可以为 Policy  Gradients 加上一个神经网络来输出预测的动作. 对比起以值为基础的方法, Policy Gradients 直接输出动作的最大好处就是, 它能在一个连续区间内挑选动作, 而基于值的, 比如 Q-learning, 它如果在无穷多的动作中计算价值, 从而选择行为, 这, 它可吃不消.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/PG02.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -41,7 +41,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/PG03.png" alt="{{ page.title }}{% increment image-count %}">
 

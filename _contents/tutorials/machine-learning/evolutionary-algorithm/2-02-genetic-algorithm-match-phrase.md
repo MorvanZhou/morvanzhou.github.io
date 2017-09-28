@@ -15,11 +15,12 @@ post-headings:
 ---
 
 
+
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
@@ -34,7 +35,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 上次我们提到过 GA 中最重要的就是怎么定义 fitness function, 怎么给 DNA 编码. 这次我们来句另一个例子.
 比如我们有一个要生成的句子:
@@ -72,7 +73,7 @@ class GA:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+{% include assign-heading.html %}
 
 如果 GA 用一个 class 代替, 那 select, mutate, crossover 都是 class 里的功能了.
 

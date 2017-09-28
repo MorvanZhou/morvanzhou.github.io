@@ -4,7 +4,6 @@ structured-type: BlogPosting
 ---
 
 <main>
-
   <!-- top ads -->
   <div class="section">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -118,7 +117,8 @@ structured-type: BlogPosting
       {% if page.post-headings %}
       <ul>
         {% for heading in page.post-headings %}
-          <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
+        {% assign hid = heading | replace: " ", "" %}
+          <li><a href="{{ page.url }}#{{ hid }}">{{ heading }}</a> </li>
         {% endfor %}
       </ul>
       {% endif %}

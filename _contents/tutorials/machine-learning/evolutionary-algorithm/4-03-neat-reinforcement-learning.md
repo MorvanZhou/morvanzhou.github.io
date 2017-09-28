@@ -3,7 +3,7 @@ youku_id: XMzA0MTEzNzAzNg
 youtube_id: ZgFzC7uBShM
 title: NEAT 强化学习
 publish-date: 2017-09-23
-thumbnail: "/static/thumbnail/evolutionary-algorithm/43 neat.jpg"
+thumbnail: "/static/thumbnail/evolutionary-algorithm/43neat.jpg"
 chapter: 4
 description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
 有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)
@@ -23,7 +23,7 @@ post-headings:
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 [上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-02-neat-supervised-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
@@ -42,7 +42,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
@@ -54,7 +54,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 这次进化的框架系统大致是这样的:
 
@@ -150,7 +150,7 @@ def evaluation():
 如果是实线, 如 B->1, B->2, 说明这个链接是 Enabled 的. 如果是虚线(点线), 如 B->A XOR B 就说明这个链接是 Disabled 的.
 红色的线代表 weight <= 0, 绿色的线代表 weight > 0. 线的宽度和 weight 的大小有关.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 如果修改一下 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config)里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
 这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样. 不过这里的 recurrent 貌似是和我们一般见到的 Recurrent Neural Network 有所不同,

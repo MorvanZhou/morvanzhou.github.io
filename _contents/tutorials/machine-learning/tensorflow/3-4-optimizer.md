@@ -9,7 +9,7 @@ date: 2016-11-3
 post-headings:
   - 各种不同的优化器
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * 各种 Optimizer 的对比 [链接](http://cs231n.github.io/neural-networks-3/)(英文)
@@ -17,8 +17,7 @@ post-headings:
   * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 本次课程，我们会讲到`Tensorflow`里面的优化器。
 

@@ -9,14 +9,13 @@ post-headings:
   - 安装要求
   - 通用安装法
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [英文安装说明](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano2_install.py)
   * Windows 上的安装 [方法](http://deeplearning.net/software/theano/install_windows.html#install-windows)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 1. python 2 >=2.6 or python 3>=3.3
@@ -24,8 +23,7 @@ post-headings:
 3. Scipy >= 0.11
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 直接复制粘贴下面的命令, 然后在 terminal 当中运行. 如果要使用 GPU 加速运算, 要确保在你的电脑上有 NVIDIA 的 GPU 显卡, 而且能够使用 CUDA 模块.

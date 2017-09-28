@@ -8,7 +8,7 @@ description: "这里提到的是人工神经网路,是存在于计算机里的�
 post-headings:
   - 内容简介
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * 有网友根据我的 Tensorflow 系列做了一个很好的[文字笔记](http://www.jianshu.com/p/e112012a4b2d), 推荐阅读.
@@ -17,8 +17,7 @@ post-headings:
   * Theano [学习目录](/tutorials/machine-learning/theano/)
   * Keras [学习目录](/tutorials/machine-learning/keras/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这里提到的是人工神经网路,是存在于计算机里的神经系统.
 人工神经网络和自然神经网络的区别. 神经网络是什么,它是怎么工作的. 

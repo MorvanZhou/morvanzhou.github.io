@@ -3,7 +3,7 @@ youku_id: XMjk5NTA2NTQ4OA
 youtube_id: _B2oMdOVVJc
 chapter: 6
 title: Distributed Proximal Policy Optimization (DPPO) (Tensorflow)
-thumbnail: "/static/thumbnail/rl/6.4 PPO.jpg"
+thumbnail: "/static/thumbnail/rl/6.4_PPO.jpg"
 publish-date: 2017-08-28
 description: "根据 OpenAI 的官方博客, PPO 已经成为他们在强化学习上的默认算法.
 如果一句话概括 PPO:
@@ -20,7 +20,7 @@ post-headings:
   - 简单 PPO 的主结构
   - Distributed PPO
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/12_Proximal_Policy_Optimization)
@@ -30,8 +30,7 @@ post-headings:
   * OpenAI 的 PPO 论文 [Proximal Policy Optimization](https://arxiv.org/abs/1707.06347)
   * Google DeepMind 的 DPPO 论文 [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/abs/1707.02286)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 根据 OpenAI 的[官方博客](https://blog.openai.com/openai-baselines-ppo/), PPO 已经成为他们在强化学习上的默认算法.
 **如果一句话概括 PPO:
@@ -51,8 +50,7 @@ PPO 利用 New Policy 和 Old Policy 的比例, 限制了 New Policy 的更新�
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 OpenAI 的 [Demo](https://blog.openai.com/openai-baselines-ppo/#ppo):
 
@@ -70,8 +68,7 @@ DeepMind 的 [Demo](https://deepmind.com/blog/producing-flexible-behaviours-simu
 看 Demo 他们都说 PPO 在复杂环境中有更好的表现. 那我也就提起性子, 把 papers 看了一遍.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 PPO 的前生是 OpenAI 发表的 [Trust Region Policy Optimization](https://arxiv.org/abs/1502.05477),
 但是 Google DeepMind 看过 OpenAI 关于 Trust Region Policy Optimization 的 conference 后,
@@ -102,8 +99,7 @@ OpenAI PPO 论文里给出的算法... 写得也太简单了 (注意他们这个
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们用 Tensorflow 搭建神经网络, tensorboard 中可以看清晰的看到我们是如果搭建的:
 
@@ -238,8 +234,7 @@ class PPO:
 好了这就是整个 PPO 的主要流程了, 其他的步骤都没那么重要了, 可以直接在我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py)
 中轻松弄懂. 接下来我们看看怎么样把这个单线程的 PPO 变到多线程去 (Distributed PPO).
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _contents/tutorials/machine-learning/reinforcement-learning/6-3-A3C.md %})) 类似的并行 PPO 算法.
 看了他们 [paper](https://arxiv.org/abs/1707.02286) 中的这个 DPPO 算法后, 我觉得....不好编! 取而代之, 我觉得如果采用 OpenAI 的思路, 用他那个 "简陋" 伪代码, 但是弄成并行计算倒是好弄点.

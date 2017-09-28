@@ -10,11 +10,10 @@ date: 2016-11-3
 post-headings:
   - 和 threading 的比较
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 
 多进程 Multiprocessing 和多线程 threading 类似, 他们都是在 python 中用来并行运算的.

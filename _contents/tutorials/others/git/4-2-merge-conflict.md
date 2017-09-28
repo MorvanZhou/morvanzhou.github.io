@@ -13,10 +13,11 @@ thumbnail: /static/thumbnail/git/4-02.jpg
 post-headings:
   - merge 分支冲突
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-2.zip)
   
+{% include assign-heading.html %}
 
 今天的情况是这样, 想象不仅有人在做开发版 `dev` 的更新, 还有人在修改 `master` 中的一些 bug.
 当我们再 `merge dev` 的时候, 冲突就来了. 因为 git 不知道应该怎么处理 `merge` 时, 在 `master`

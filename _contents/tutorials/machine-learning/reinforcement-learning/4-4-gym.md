@@ -4,7 +4,7 @@ youtube_id: 9m3DN2dyi8I
 chapter: 4
 title: OpenAI gym 环境库
 publish-date: 2017-02-26
-thumbnail: "/static/thumbnail/rl/4.4 openai.jpg"
+thumbnail: "/static/thumbnail/rl/4.4_openai.jpg"
 description: "手动编环境是一件很耗时间的事情, 所以如果有能力使用别人已经编好的环境, 可以节约我们很多时间. OpenAI gym 就是这样一个模块, 他提供了我们很多优秀的模拟环境.
 我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 可能某一天就能支持了, 大家时不时查看下官网, 可能就有惊喜.
 是在等不及更新了, 也行用 tkinter 来手动编写一下环境.
@@ -17,7 +17,7 @@ post-headings:
   - CartPole 例子
   - MountainCar 例子
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym)
@@ -27,8 +27,7 @@ post-headings:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2OTQzNg==.html)
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM), [优酷](http://v.youku.com/v_show/id_XMTg3NTI3MDMzMg==.html)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 手动编环境是一件很耗时间的事情, 所以如果有能力使用别人已经编好的环境, 可以节约我们很多时间. OpenAI gym 就是这样一个模块, 他提供了我们很多优秀的模拟环境.
 我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 可能某一天就能支持了, 大家时不时查看下官网, 可能就有惊喜.
@@ -38,8 +37,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在 MacOS 和 Linux 系统下, 安装 gym 很方便, 首先确定你是 python 2.7 或者 python 3.5 版本.
 然后在你的 terminal 中复制下面这些. 但是 gym 暂时还不完全支持 Windows, 不过有些虚拟环境已经的到了支持, 想立杆子那个已经支持了.
@@ -83,8 +81,7 @@ $ pip3 install gym[all]
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
@@ -167,8 +164,7 @@ RL.plot_cost()
 
 <img class="course-image" src="/static/results/rl/4-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">

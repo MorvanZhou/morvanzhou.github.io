@@ -11,7 +11,7 @@ post-headings:
   - 搭建图纸
   - 可能会遇到的问题
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard)
@@ -25,8 +25,7 @@ post-headings:
 学会用 Tensorflow 自带的 tensorboard 去可视化我们所建造出来的神经网络是一个很好的学习理解方式.
 用最直观的流程图告诉你你的神经网络是长怎样,有助于你发现编程中间的问题和疑问.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 好，我们开始吧。
@@ -47,8 +46,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先从 `Input` 开始：
 
@@ -213,8 +211,7 @@ tensorboard 还有很多其他的参数，希望大家可以多多了解,
 可以使用 `tensorboard --help` 查看tensorboard的详细参数
 最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 (1) 而且与 tensorboard 兼容的浏览器是 "**Google Chrome**".
 使用其他的浏览器不保证所有内容都能正常显示.

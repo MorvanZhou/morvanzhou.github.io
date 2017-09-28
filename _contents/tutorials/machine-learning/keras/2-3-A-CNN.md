@@ -10,6 +10,7 @@ post-headings:
   - 流行的 CNN 结构
 ---
 
+
 学习资料:
   * Tensorflow CNN [教程1]({% link _contents/tutorials/machine-learning/tensorflow/5-03-CNN1.md %})
   * Tensorflow CNN [教程2]({% link _contents/tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
@@ -22,7 +23,7 @@ post-headings:
 
 卷积神经网络是近些年逐步兴起的一种人工神经网络结构, 因为利用卷积神经网络在图像和语音识别方面能够给出更优预测结果, 这一种技术也被广泛的传播可应用. 卷积神经网络最常被应用的方面是计算机的图像识别, 不过因为不断地创新, 它也被应用在视频分析, 自然语言处理, 药物发现, 等等. 近期最火的 Alpha Go, 让计算机看懂围棋, 同样也是有运用到这门技术.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/cnn2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -39,7 +40,7 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/cnn5.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -47,7 +48,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/cnn6.png" alt="{{ page.title }}{% increment image-count %}">
 

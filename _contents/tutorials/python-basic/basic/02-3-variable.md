@@ -11,13 +11,12 @@ post-headings:
   - 自变量命名规则
 
 ---
-{% assign post-heading-count = -1 %}
 
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 可以将一个数值，或者字符串串附值给自变量，如`apple=1` 中，`apple`为自变量的名称，`1`为自变量的值。 也可以将字符串赋值给自变量  `apple='iphone7 plus'`
 

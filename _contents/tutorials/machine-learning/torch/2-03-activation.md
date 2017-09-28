@@ -3,7 +3,7 @@ youku_id: XMjc0NjIxMDIxNg
 youtube_id: 6YnzemVHvIU
 title: 激励函数 (Activation)
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail/torch/2-3 activation.jpg"
+thumbnail: "/static/thumbnail/torch/2-3_activation.jpg"
 chapter: 2
 description: "一句话概括 Activation: 就是让神经网络可以描述非线性问题的步骤, 是神经网络变得更强大.
 如果还不是特别了解, 我有制作一个动画短片, 浅显易懂的阐述了激励函数的作用. 包懂. Torch 中的激励函数有很多, 不过我们平时要用到的就这几个. relu, sigmoid, tanh, softplus. 那我们就看看他们各自长什么样啦."
@@ -11,7 +11,7 @@ post-headings:
   - 什么是 Activation
   - Torch 中的激励函数
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/203_activation.py)
@@ -21,15 +21,13 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 一句话概括 Activation: 就是让神经网络可以描述非线性问题的步骤, 是神经网络变得更强大.
 如果还不是特别了解, 我有制作一个[动画短片]({% link _contents/tutorials/machine-learning/ML-intro/3-04-activation-function.md %}), 浅显易懂的阐述了激励函数的作用. 包懂.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Torch 中的激励函数有很多, 不过我们平时要用到的就这几个. `relu`, `sigmoid`, `tanh`, `softplus`. 那我们就看看他们各自长什么样啦.
 

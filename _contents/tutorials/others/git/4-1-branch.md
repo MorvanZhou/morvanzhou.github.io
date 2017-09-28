@@ -17,7 +17,7 @@ post-headings:
   - 在 dev 分支中修改
   - 将 dev 的修改推送到 master
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-1.zip)
 
@@ -28,14 +28,12 @@ post-headings:
 我们开发我们的开发版. 不过 git 的做法却不一样, 它把这两者融合成了一个文件, 使用不同的分支来管理.
 所以这一节我们来说说 git 中的 分支 Branch.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 之前我们说编辑的所有改变都是在一条主分支 `master` 上进行的. 通常我们会把 `master` 当作最终的版本, 
 而开发新版本或者新属性的时候, 在另外一个分支上进行, 这样就能使开发和使用互不干扰了. [图片网址](https://www.atlassian.com/git/tutorials/using-branches/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们之前的文件当中, 仅仅只有一条 `master` 分支, 我们可以通过 `--graph` 来观看分支:
 
@@ -48,8 +46,7 @@ $ git log --oneline --graph
 * 13be9a7 create 1.py
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接着我们建立另一个分支 `dev`, 并查看所有分支:
 
@@ -79,8 +76,7 @@ $ git branch
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用 `checkout -b` + 分支名, 就能直接创建和切换到新建的分支:
 
@@ -97,8 +93,7 @@ $ git branch
   master
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `dev` 分支中的 `1.py` 和 `2.py` 和 `master` 中的文件是一模一样的.
 因为当前的指针 `HEAD` 在 `dev` 分支上, 所以现在对文件夹中的文件进行修改将不会影响到 `master` 分支.
@@ -109,8 +104,7 @@ $ git branch
 $ git commit -am "change 3 in dev"  # "-am": add 所有改变 并直接 commit
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 好了, 我们的开发板 `dev` 已经更新好了, 我们要将 `dev` 中的修改推送到 `master` 中, 
 大家就能使用到正式版中的新功能了.

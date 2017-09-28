@@ -4,7 +4,7 @@ youtube_id: o5fjkcM_lHs
 chapter: 1
 title: 为什么用强化学习 Why?
 publish-date: 2017-01-01
-thumbnail: "/static/thumbnail/rl/1 why.jpg"
+thumbnail: "/static/thumbnail/rl/1_why.jpg"
 description: "强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
 和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
 AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
@@ -19,7 +19,7 @@ post-headings:
   * [什么是强化学习 短视频]({% link _contents/tutorials/machine-learning/ML-intro/4-01-RL.md %})
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
 和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
@@ -30,7 +30,7 @@ AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
 因为强化学习的复杂性, 多样性, 到现在还没有比较好的统一化模块.
 不过我们还是能用最基础的方法编出优秀的强化学习程序!
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 以下是我们将要在后续的课程中实现的牛逼的自学程序.
 

@@ -9,14 +9,13 @@ post-headings:
   - pip 安装
   - Windows 注意事项
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * 官方安装 [教程](http://scikit-learn.org/stable/install.html)
   * Windows 使用 [Anaconda](https://www.continuum.io/downloads) 安装
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 安装 Scikit-learn (sklearn) 最简单的方法就是使用 pip 安装它.
 
@@ -40,8 +39,7 @@ pip install -U scikit-learn
 pip3 install -U scikit-learn
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果你是 Windows 用户, 你也可以选择使用 `Anaconda` 来安装所有 python 的科学计算模块.
 [Anaconda的相关资料在这](https://www.continuum.io/downloads)

@@ -13,13 +13,12 @@ post-headings:
   - 搭建网络
   - 训练
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano9_regression_nn)
   
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在上一节课程中，我么学习了如何利用`Theano`定义神经网络的层类，我们设计了一个`Layer`类来规划神经网络层的信息。 
 
@@ -37,8 +36,7 @@ import matplotlib.pyplot as plt
 
 大家可以利用我的视频教程来学习或复习 Matplotlib 这个工具： [Matplotlib 数据可视化神器 Python](/tutorials/data-manipulation/plt/)。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来我们声明我们的Layer类。 对于神经网络的每个Layer， 
 它需要具备输入来源`input`，输入神经元维度`in_size`，输出神经元纬度`out_size`,
@@ -58,8 +56,7 @@ class Layer(object):
             self.outputs = self.activation_function(self.Wx_plus_b)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来，我们首先人工生成一个简单的带有白噪声的一维数据 `y = x^2 - 0.5 + noise`。
 
@@ -84,8 +81,7 @@ plt.show()
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 然后，我们定义神经网络的输入与目标；
 
@@ -147,8 +143,7 @@ train = theano.function(
 predict = theano.function(inputs=[x], outputs=l2.outputs)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后，我们就要开始真正的训练啦！我们要把神经网络训练1000次，同时呢每训练50次时就输出此时的误差（cost）：
 

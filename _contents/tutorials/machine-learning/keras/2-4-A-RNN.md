@@ -11,6 +11,7 @@ post-headings:
   - RNN 的应用
 ---
 
+
 学习资料:
   * Tensorflow RNN [例子1]({% link _contents/tutorials/machine-learning/tensorflow/5-07-RNN1.md %})
   * Tensorflow RNN [例子2]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
@@ -31,7 +32,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/rnn1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -39,7 +40,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/rnn2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -47,7 +48,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/rnn3.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -61,7 +62,7 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+{% include assign-heading.html %}
 
 RNN 的形式不单单这有这样一种, 他的结构形式很自由. 如果用于分类问题, 比如说一个人说了一句话, 这句话带的感情色彩是积极的还是消极的. 那我们就可以用只有最后一个时间点输出判断结果的RNN.
 

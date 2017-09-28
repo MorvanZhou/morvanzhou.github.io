@@ -3,7 +3,7 @@ youku_id: XMTk3MTU4Njg2MA
 youtube_id: JafbuFHZPdc
 chapter: 2
 title: Q-learning 思维决策
-thumbnail: "/static/thumbnail/rl/2.3 qlearning 2.jpg"
+thumbnail: "/static/thumbnail/rl/2.3_qlearning2.jpg"
 publish-date: 2017-01-09
 description: "接着上节内容, 我们来实现 RL_brain 的 QLearningTable 部分, 这也是 RL 的大脑部分, 负责决策和思考. 与上回不一样的地方是, 我们将要以一个 class 形式定义 Q learning, 并把这种 tabular q learning 方法叫做 QLearningTable"
 post-headings:
@@ -13,7 +13,7 @@ post-headings:
   - 学习
   - 检测 state 是否存在
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)
@@ -24,8 +24,7 @@ post-headings:
 接着上节内容, 我们来实现 `RL_brain` 的 `QLearningTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 与上回不一样的地方是, 我们将要以一个 class 形式定义 Q learning, 并把这种 tabular q learning 方法叫做 `QLearningTable`.
 
@@ -45,8 +44,7 @@ class QLearningTable:
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 初始的参数意义不会在这里提及了, 请参考这个快速了解通道 [机器学习系列-Q learning](#)
 
@@ -66,8 +64,7 @@ class QLearningTable:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这里是定义如何根据所在的 state, 或者是在这个 state 上的 观测值 (observation) 来决策.
 
@@ -89,8 +86,7 @@ class QLearningTable:
         return action
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 同[上一个简单的 q learning 例子]({% link _contents/tutorials/machine-learning/reinforcement-learning/2-1-general-rl.md %})一样,
 我们根据是否是 `terminal` state (回合终止符) 来判断应该如何更行 `q_table`. 更新的方式是不是很熟悉呢:
@@ -110,8 +106,7 @@ class QLearningTable:
         self.q_table.ix[s, a] += self.lr * (q_target - q_predict)  # 更新对应的 state-action 值
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这个功能就是检测 `q_table` 中有没有当前 state 的步骤了, 如果还没有当前 state, 那我我们就插入一组全 0 数据, 当做这个 state 的所有 action 初始 values.
 

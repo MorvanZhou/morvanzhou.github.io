@@ -3,7 +3,7 @@ youku_id: XMjI2NTY5NTczNg
 youtube_id: Sv6IB-Uu4ks
 chapter: 3
 title: Sarsa 算法更新
-thumbnail: "/static/thumbnail/rl/3.1 sarsa 1.jpg"
+thumbnail: "/static/thumbnail/rl/3.1_sarsa1.jpg"
 publish-date: 2017-01-13
 description: "这次我们用同样的迷宫例子来实现 RL 中另一种和 Qlearning 类似的算法, 叫做 Sarsa (state-action-reward-state_-action_).
 我们从这一个简称可以了解到, Sarsa 的整个循环都将是在一个路径上, 也就是 on-policy, 下一个 state_, 和下一个 action_ 将会变成他真正采取的 action 和 state.
@@ -14,7 +14,7 @@ post-headings:
   - 算法
   - 算法的代码形式
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze)
@@ -22,8 +22,7 @@ post-headings:
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=UKlQmGTNEo0), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NjQ0MA==.html)
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 这次我们用同样的迷宫例子来实现 RL 中另一种和 Qlearning 类似的算法, 叫做 Sarsa (state-action-reward-state_-action_).
@@ -37,8 +36,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/rl/3-1-1.png" alt="{{ page.title }}{% increment image-count %}">
@@ -56,8 +54,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先我们先 import 两个模块,  `maze_env` 是我们的环境模块, 已经编写好了, 大家可以直接在[这里下载](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/3_Sarsa_maze/maze_env.py),
 `maze_env` 模块我们可以不深入研究, 如果你对编辑环境感兴趣, 可以去看看如何使用 python 自带的简单 GUI 模块 `tkinter` 来编写虚拟环境.

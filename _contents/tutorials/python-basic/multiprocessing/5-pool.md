@@ -13,7 +13,7 @@ post-headings:
   - 用 apply_async() 输出多个结果
   - 总结
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing5_pool.py)
 
@@ -28,8 +28,7 @@ def job(x):
     return x*x
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 然后我们定义一个`Pool`
 
@@ -63,8 +62,7 @@ if __name__ == '__main__':
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们怎么知道`Pool`是否真的调用了多个核呢？我们可以把迭代次数增大些，然后打开CPU负载看下CPU运行情况 
 
@@ -79,8 +77,7 @@ def multicore():
     print(res)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `Pool`除了`map()`外，还有可以返回结果的方式，那就是`apply_async()`.
 
@@ -103,8 +100,7 @@ def multicore():
 4 # apply_async()
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 那么如何用`apply_async()`输出多个迭代呢？
 
@@ -160,8 +156,7 @@ def multicore():
 
 可以看出在apply用迭代器的得到的结果和用map得到的结果是一样的
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 1. `Pool`默认调用是CPU的核数，传入`processes`参数可自定义CPU核数
 2. `map()` 放入迭代参数，返回多个结果

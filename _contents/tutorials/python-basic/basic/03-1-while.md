@@ -14,14 +14,13 @@ post-headings:
   - 注意点
   - 高级主题
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 
 在 Python 语言中用来控制循环的主要有两个句法，`while` 和 `for` 语句，本讲将简单介绍 `while` 句法的使用。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 while 语句同其他编程语言中 while 的使用方式大同小异，主要结构如下
 
@@ -34,8 +33,7 @@ while condition:
 那么将执行 `exexpressions` 语句,否则将跳过该 while 语句块接着往下执行。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 比如要打印出 0 - 9 的所有数据,
 
@@ -55,8 +53,7 @@ while condition < 10:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在使用 while 句法的时候一定要注意在循环内部一定要修改判断条件的值，否则程序的 while 部分
 将**永远执行下去**。
@@ -69,8 +66,7 @@ while True:
 如果这样做的话，程序将一直打印出 `I'm True`, 要停止程序，使用 `ctrl` + `c` 终止程序。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在 Python 中除了常规比较操作
 + 小于（<)

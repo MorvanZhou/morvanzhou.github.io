@@ -11,13 +11,9 @@ post-headings:
   - init
   - 总结
 ---
-{% assign post-heading-count = -1 %}
 
 
-
-
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `__init__`可以理解成初始化`class`的变量，取自英文中`initial` 最初的意思.可以在运行时，给初始值附值，
 
@@ -82,7 +78,6 @@ class Calculator:
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `def __init__(self,name,price,height,width,weight):`  注意，这里的下划线是双下划线

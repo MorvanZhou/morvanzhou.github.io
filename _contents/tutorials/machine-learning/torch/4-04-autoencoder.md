@@ -3,7 +3,7 @@ youku_id: XMjc2MDUxNzUyOA
 youtube_id: V7VgLkEgXVY
 title: AutoEncoder (自编码/非监督学习)
 publish-date: 2017-05-11
-thumbnail: "/static/thumbnail/torch/4.4 autoencoder.jpg"
+thumbnail: "/static/thumbnail/torch/4.4_autoencoder.jpg"
 chapter: 4
 description: "神经网络也能进行非监督学习, 只需要训练数据, 不需要标签数据. 自编码就是这样一种形式.
 自编码能自动分类数据, 而且也能嵌套在半监督学习的上面, 用少量的有标签样本和大量的无标签样本学习.
@@ -15,7 +15,7 @@ post-headings:
   - 训练
   - 画3D图
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py)
@@ -23,8 +23,7 @@ post-headings:
   * [我制作的 自编码 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 神经网络也能进行非监督学习, 只需要训练数据, 不需要标签数据. 自编码就是这样一种形式.
 自编码能自动分类数据, 而且也能嵌套在半监督学习的上面, 用少量的有标签样本和大量的无标签样本学习.
@@ -43,8 +42,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 自编码只用训练集就好了, 而且只需要训练 training data 的 image, 不用训练 labels.
 
@@ -78,8 +76,7 @@ train_data = torchvision.datasets.MNIST(
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 AutoEncoder 形式很简单, 分别是 `encoder` 和 `decoder`, 压缩和解压, 压缩后得到压缩的特征值, 再从压缩的特征值解压成原图片.
 
@@ -118,8 +115,7 @@ class AutoEncoder(nn.Module):
 autoencoder = AutoEncoder()
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 训练, 并可视化训练的过程. 我们可以有效的利用 `encoder` 和 `decoder` 来做很多事,
 比如这里我们用 `decoder` 的信息输出看和原图片的对比, 还能用 `encoder` 来看经过压缩后, 神经网络对原图片的理解.
@@ -148,8 +144,7 @@ for epoch in range(EPOCH):
 <img class="course-image" src="/static/results/torch/4-4-4.png" alt="{{ page.title }}{% increment image-count %}">
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/torch/4-4-2.gif" alt="{{ page.title }}{% increment image-count %}">
 

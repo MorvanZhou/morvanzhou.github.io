@@ -3,7 +3,7 @@ youku_id: XMjc1NTczODY4OA
 youtube_id: 8SvB6B4JmfU
 title: RNN 循环神经网络 (分类)
 publish-date: 2017-05-10
-thumbnail: "/static/thumbnail/torch/4.2RNN classifier.jpg"
+thumbnail: "/static/thumbnail/torch/4.2RNN_classifier.jpg"
 chapter: 4
 description: "循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
 RNN 动画简介 和
@@ -15,7 +15,7 @@ post-headings:
   - RNN模型
   - 训练
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py)
@@ -24,8 +24,7 @@ post-headings:
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
 [RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %}) 和
@@ -36,8 +35,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 import torch
@@ -89,8 +87,7 @@ test_y = test_data.test_labels[:2000]
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 和以前一样, 我们用一个 class 来建立 RNN 模型. 这个 RNN 整体流程是
 
@@ -137,8 +134,7 @@ RNN (
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们将图片数据看成一个时间上的连续数据, 每一行的像素点都是这个时刻的输入, 读完整张图片就是从上而下的读完了每行的像素点.
 然后我们就可以拿出 RNN 在最后一步的分析值判断图片是哪一类了. 下面的代码省略了计算 `accuracy` 的部分, 你可以在我的 github 中看到全部代码.

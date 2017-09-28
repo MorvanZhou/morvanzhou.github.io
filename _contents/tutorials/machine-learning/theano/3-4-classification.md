@@ -11,7 +11,7 @@ post-headings:
   - 激活模型
   - 训练模型
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano11_classification_nn)
@@ -20,8 +20,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 引入需要使用的Python包：
 
@@ -60,8 +59,7 @@ D = (rng.randn(N, feats), rng.randint(size=N, low=0, high=2))
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来，定义神经网络。
 
@@ -107,8 +105,7 @@ gW, gb = T.grad(cost, [W, b])
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 接下来激活网络。
@@ -129,8 +126,7 @@ predict = theano.function(inputs=[x], outputs=prediction)
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来训练模型。
 用训练集的 feature 和 target 训练模型，输出预测值和损失 `pred, err`。

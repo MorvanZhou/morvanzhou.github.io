@@ -16,15 +16,14 @@ post-headings:
   - 什么是 rebase
   - 使用 rebase
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-3.zip)
   
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 和上节内容一样, 不过我们今天来玩一个更高级的合并方式 `rebase`.
 同样是合并 `rebase` 的做法和 `merge` 不一样. 
@@ -57,8 +56,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 初始的版本库还是和上回一样, 在 `master` 和 `dev` 分支中都有自己的独立修改.
 

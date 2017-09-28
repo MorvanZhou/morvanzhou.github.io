@@ -12,12 +12,11 @@ post-headings:
   - 按行读取 file.readline()
   - 读取所有行 file.readlines()
 ---
-{% assign post-heading-count = -1 %}
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 使用 `file.read()` 能够读取到文本的所有内容.
 
@@ -34,8 +33,7 @@ This is appended file.
 """"
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果想在文本中一行行的读取文本, 可以使用 `file.readline()`, `file.readline()` 读取的内容和你使用的次数有关,
 使用第二次的时候, 读取到的是文本的第二行, 并可以以此类推:
@@ -60,8 +58,7 @@ This is the second line.
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果想要读取所有行, 并可以使用像 `for` 一样的迭代器迭代这些行结果, 我们可以使用 `file.readlines()`, 将每一行的结果存储在 `list` 中, 方便以后迭代.
 

@@ -10,7 +10,7 @@ post-headings:
   - 什么是TensorFlow?
   - 为什么要使用TensorFlow?
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * Tensorflow [官网](https://www.tensorflow.org/)
@@ -20,16 +20,14 @@ post-headings:
 最近几年火起来的机器学习有没有让你动心呢?
 学习 google 开发定制的 tensorflow, 能让你成为机器学习, 神经网络的大牛,同时也会在海量的信息当中受益匪浅.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 TensorFlow是Google开发的一款神经网络的Python外部的结构包,
 也是一个采用数据流图来进行数值计算的开源软件库.TensorFlow 让我们可以先绘制计算结构图, 
 也可以称是一系列可人机交互的计算操作,
 然后把编辑好的Python文件 转换成 更高效的C++, 并在后端进行计算.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 TensorFlow 无可厚非地能被认定为 神经网络中最好用的库之一.
 它擅长的任务就是训练深度神经网络.通过使用TensorFlow我们就可以快速的入门神经网络,

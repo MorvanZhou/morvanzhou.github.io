@@ -21,7 +21,7 @@ post-headings:
 欢迎观看有趣的机器学习系列视频, 这次我们尝试踏足机器学习中的另外一个领域, 用进化理论来解决复杂的问题. 遗传算法是进化算法的一个分支. 它将达尔文的进化理论搬进了计算机.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -32,7 +32,7 @@ post-headings:
 ~变成会敲键盘, 会唱歌, 会读书, 会干坏事的猴子了. 哈哈. 重点不是这些. 我们应该正儿八经地想想, 我们是怎么样一步一步变成后面这些猴子的.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm3.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -42,7 +42,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm4.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -50,7 +50,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm5.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -60,7 +60,7 @@ post-headings:
 
 有了这些电脑能懂的 DNA 形式, 我们就能模拟生物中的繁衍后代了, 假设我们有两个来自父母的 DNA 信息. 我们只需要选取他们各自一段信息就能组成新的宝宝的DNA信息. 生物繁衍中, 还会存在时不时的变异, 我们也能从这套01 的系统中体现出来, 只要将某些地方将0变成1, 1变成0就好了. 有了这些遗传变异, 加上那一套适者生存,不适者淘汰的理论, 你的电脑里就能有一群渐渐成长壮大的小生物了.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/genetic-algorithm7.png" alt="{{ page.title }}{% increment image-count %}">
 

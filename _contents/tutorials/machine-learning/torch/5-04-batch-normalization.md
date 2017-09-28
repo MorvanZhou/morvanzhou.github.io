@@ -3,7 +3,7 @@ youku_id: XMjc4ODM5MzQyNA
 youtube_id: NGO0oxdz-zs
 title: Batch Normalization 批标准化
 publish-date: 2017-05-27
-thumbnail: "/static/thumbnail/torch/5.4 batch normalization.jpg"
+thumbnail: "/static/thumbnail/torch/5.4_batch_normalization.jpg"
 chapter: 5
 description: "批标准化通俗来说就是对每一层神经网络进行标准化 (normalize) 处理, 我们知道对输入数据进行标准化能让机器学习有效率地学习.
 如果把每一层后看成这种接受输入数据的模式, 那我们何不 批标准化 所有的层呢? 具体而且清楚的解释请看到 我制作的 什么批标准化 动画简介(推荐).
@@ -16,7 +16,7 @@ post-headings:
   - 画图
   - 对比结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py)
@@ -25,8 +25,7 @@ post-headings:
   * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 批标准化通俗来说就是对每一层神经网络进行标准化 (normalize) 处理, 我们知道对输入数据进行标准化能让机器学习有效率地学习.
 如果把每一层后看成这种接受输入数据的模式, 那我们何不 "批标准化" 所有的层呢? 具体而且清楚的解释请看到 [我制作的 什么批标准化 动画简介(推荐)]({% link _contents/tutorials/machine-learning/ML-intro/3-08-batch-normalization.md %}).
@@ -41,8 +40,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 自己做一些伪数据, 用来模拟真实情况. 而且 Batch Normalization (之后都简称BN) 还能有效的控制坏的参数初始化 (initialization),
 比如说 `ReLU` 这种激励函数最怕所有的值都落在附属区间, 那我们就将所有的参数都水平移动一个 -0.2 (`bias_initialization = -0.2`),
@@ -95,8 +93,7 @@ plt.show()
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这里就教你如何构建带有 BN 的神经网络的. BN 其实可以看做是一个 layer (`BN layer`).
 我们就像平时加层一样加 `BN layer` 就好了. 注意, 我还对输入数据进行了一个 BN 处理, 因为如果你把输入数据看出是
@@ -147,8 +144,7 @@ class Net(nn.Module):
 nets = [Net(batch_normalization=False), Net(batch_normalization=True)]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 训练的时候, 这两个神经网络分开训练. 训练的环境都一样.
 
@@ -171,8 +167,7 @@ for epoch in range(EPOCH):
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这个教程有几张图要画, 首先我们画训练时的动态图. 我单独定义了一个画动图的功能 `plot_histogram()`,
 因为不是重点, 所以代码的具体细节请看我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py),
@@ -209,8 +204,7 @@ for epoch in range(EPOCH):
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先来看看这次对比的两个激励函数是长什么样:
 

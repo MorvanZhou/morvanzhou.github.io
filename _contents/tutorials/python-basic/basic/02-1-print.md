@@ -12,14 +12,13 @@ post-headings:
   - print 字符串叠加
   - 简单运算
 ---
-{% assign post-heading-count = -1 %}
 
 
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 `python` 中 `print` 字符串 要加`''`或者`""`
 
@@ -34,8 +33,7 @@ hello world 2
 '''
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 可以使用 `+` 将两个字符串链接起来, 如以下代码.
 
@@ -48,8 +46,7 @@ Hello world Hello Hong Kong
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 可以直接`print` 加法`+`,减法`-`,乘法`*`,除法`/`.  注意：字符串不可以直接和数字相加，否则出现错误。
 

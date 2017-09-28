@@ -6,7 +6,7 @@ description: "使用 RNN 来对 mnist 数据集做分类. 这次我们用循环�
 author: Mark JingNB
 publish-date: 2016-10-30
 chapter: 2
-thumbnail: "/static/thumbnail/keras/07 RNN1.jpg"
+thumbnail: "/static/thumbnail/keras/07RNN1.jpg"
 post-headings:
   - 方法介绍
   - 搭建模型
@@ -18,7 +18,7 @@ post-headings:
   * 机器学习-简介系列 [RNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * Tensorflow [RNN教程]({% link _contents/tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 这次我们用循环神经网络(RNN, Recurrent Neural Networks)进行分类（classification），采用MNIST数据集，主要用到`SimpleRNN`层。
 
@@ -40,7 +40,7 @@ X_test = X_test.reshape(-1, 28, 28) / 255.        # normalize
 ```
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 首先添加RNN层，输入为训练数据，输出数据大小由`CELL_SIZE`定义。
 
@@ -66,7 +66,7 @@ model.add(Activation('softmax'))
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 ```python
 for step in range(4001):

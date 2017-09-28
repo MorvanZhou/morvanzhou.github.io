@@ -9,7 +9,7 @@ comments: true
 post-headings:
 
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 {% include announcement.html %}

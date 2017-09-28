@@ -10,7 +10,7 @@ post-headings:
   - 创建一个Series
   - Dataframe 可视化
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/18_plot.py)
@@ -28,8 +28,7 @@ import matplotlib.pyplot as plt
 今天我们主要是学习如何 plot data
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这是一个线性的数据，我们随机生成1000个数据，`Series` 默认的 `index` 就是从0开始的整数，但是这里我显式赋值以便让大家看的更清楚
 
@@ -55,8 +54,7 @@ plt.show()
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们生成一个1000*4 的`DataFrame`，并对他们累加
 

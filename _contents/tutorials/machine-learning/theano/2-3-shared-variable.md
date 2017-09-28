@@ -12,7 +12,7 @@ post-headings:
   - 临时使用
 
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano6_shared_variable.py)
@@ -23,8 +23,7 @@ post-headings:
 今天会学习如何定义和使用它。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 我们会用累加器来定义 `Shared 变量`，每一次向上面加一个值，每一次基于上面的变化，再加上另一个值，就这样不断地更新并保存这样的值。
@@ -58,8 +57,7 @@ inc = T.scalar('inc', dtype=state.dtype)
 accumulator = theano.function([inc], state, updates=[(state, state+inc)])
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 打印：
 不能直接用 `print(accumulator(10))`，因为这样输出的，第一次就是初始值 0，只能到下一次输出的时候，才会出现 10.
@@ -97,8 +95,7 @@ print(state.get_value())
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 有时只是想暂时使用 `Shared 变量`，并不需要把它更新：
 这时我们可以定义一个 `a` 来临时代替 `state`，注意定义 `a` 的时候也要统一 `dtype`。

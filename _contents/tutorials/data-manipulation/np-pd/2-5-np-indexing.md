@@ -10,11 +10,10 @@ post-headings:
   - 一维索引
   - 二维索引
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 我们都知道，在元素列表或者数组中，我们可以用如同`a[2]`一样的表示方法，同样的，在Numpy中也有相对应的表示方法：
 
@@ -45,8 +44,7 @@ print(A[2])
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果你想要表示具体的单个元素，可以仿照上述的例子：
 

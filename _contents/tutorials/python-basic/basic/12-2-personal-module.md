@@ -12,14 +12,13 @@ post-headings:
   - 调用自己的模块
   - 模块存储路径说明
 ---
-{% assign post-heading-count = -1 %}
 
 
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 这里和视频有点差别，我自己写了另外一个模块，是计算五年复利本息的模块,代码如下：模块写好后保存在默认文件夹：`balance.py`
 
@@ -36,8 +35,7 @@ print('your final year is',d)
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 新开一个脚本，`import balance`
 
@@ -59,7 +57,6 @@ your final year is 57309.12881905469
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在Mac系统中，下载的python模块会被存储到外部路径`site-packages`，同样，我们自己建的模块也可以放到这个路径，最后不会影响到自建模块的调用。

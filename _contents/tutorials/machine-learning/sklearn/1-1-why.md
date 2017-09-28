@@ -8,13 +8,12 @@ date: 2016-11-3
 post-headings:
   - 学习内容包括
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * sklearn [官网](http://scikit-learn.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Scikit learn 也简称 sklearn, 
 是机器学习领域当中最知名的 python 模块之一. 

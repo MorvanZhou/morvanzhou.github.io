@@ -6,13 +6,14 @@ description: "分类的代码我们用了很多不同的途径来完成同样的
 publish-date: 2016-10-29
 chapter: 2
 author: Alice
-thumbnail: "/static/thumbnail/keras/05 classifier.jpg"
+thumbnail: "/static/thumbnail/keras/05classifier.jpg"
 post-headings:
   - 数据预处理
   - 建立神经网络
   - 训练网络
   - 测试模型
 ---
+
 
 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/5-classifier_example.py)
@@ -23,7 +24,7 @@ post-headings:
 今天用 Keras 来构建一个分类神经网络，用到的数据集是 MNIST，就是 0 到 9 这几个数字的图片数据集。
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 Keras 自身就有 MNIST 这个数据包，再分成训练集和测试集。`x` 是一张张图片，`y` 是每张图片对应的标签，即它是哪个数字。
 
@@ -61,7 +62,7 @@ print(y_train[:3])
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 今天会讲到几种不同的方式来建立和训练模型。
 
@@ -127,7 +128,7 @@ model.compile(optimizer=rmsprop,
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+{% include assign-heading.html %}
 
 这里用到的是 `fit` 函数，把训练集的 `x` 和 `y` 传入之后，`nb_epoch` 表示把整个数据训练多少次，`batch_size` 每批处理32个。
 
@@ -145,7 +146,7 @@ Epoch 2/2
 """
 ```
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+{% include assign-heading.html %}
 
 接下来就是用测试集来检验一下模型，方法和回归网络中是一样的，运行代码之后，可以输出 `accuracy` 和 `loss`。
 

@@ -12,13 +12,12 @@ post-headings:
   - 基本使用
   - 实例
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 上一讲主要学习了 `if else` 内容，本讲将要学习最后一个语句 `elif`(`else if`)。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 if condition1:
@@ -38,8 +37,7 @@ else:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 x = 4

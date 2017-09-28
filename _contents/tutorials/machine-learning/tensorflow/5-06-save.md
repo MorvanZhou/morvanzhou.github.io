@@ -8,7 +8,7 @@ post-headings:
   - 保存
   - 提取
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf19_saver.py)
@@ -18,8 +18,7 @@ post-headings:
 那今天我们就来说说怎样用 Tensorflow 中的 saver 保存和加载吧.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `import`所需的模块, 然后建立神经网络当中的 `W` 和 `b`, 并初始化变量.
 
@@ -53,8 +52,7 @@ Save to path:  my_net/save_net.ckpt
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 提取时, 先建立零时的`W` 和 `b`容器. 找到文件目录, 并用`saver.restore()`我们放在这个目录的变量.
 

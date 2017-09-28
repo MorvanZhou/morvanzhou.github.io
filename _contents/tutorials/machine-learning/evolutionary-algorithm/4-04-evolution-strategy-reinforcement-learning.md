@@ -3,7 +3,7 @@ youku_id: XMzA0MTMxNDcyOA
 youtube_id: x-svcNmIMBs
 title: Evolution Strategy 强化学习
 publish-date: 2017-09-23
-thumbnail: "/static/thumbnail/evolutionary-algorithm/44 es.jpg"
+thumbnail: "/static/thumbnail/evolutionary-algorithm/44es.jpg"
 chapter: 4
 description: "上节内容里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.
@@ -24,7 +24,7 @@ post-headings:
   * [什么是进化策略]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * 论文 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://arxiv.org/abs/1703.03864)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 [上节内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-03-neat-reinforcement-learning.md %}) 里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.
@@ -39,7 +39,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/4-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -77,7 +77,7 @@ for i in range(300):
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
@@ -90,7 +90,7 @@ for i in range(300):
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 这次进化的框架系统大致是这样的:
 

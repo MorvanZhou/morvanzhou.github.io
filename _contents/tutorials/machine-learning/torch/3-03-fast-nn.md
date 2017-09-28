@@ -3,7 +3,7 @@ youku_id: XMjc0ODAxNDYwMA
 youtube_id: yqo9-lWTdOk
 title: 快速搭建法
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail/torch/3-3 nn fast.jpg"
+thumbnail: "/static/thumbnail/torch/3-3_nn_fast.jpg"
 chapter: 3
 description: "Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
 我们先看看之前写神经网络时用到的步骤. 我们用 net1 代表这种方式搭建的神经网络.
@@ -12,15 +12,14 @@ post-headings:
   - 要点
   - 快速搭建
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/303_build_nn_quickly.py)
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
 
@@ -29,8 +28,7 @@ Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, �
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们先看看之前写神经网络时用到的步骤. 我们用 `net1` 代表这种方式搭建的神经网络.
 

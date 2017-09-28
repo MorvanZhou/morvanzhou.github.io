@@ -9,7 +9,7 @@ date: 2016-11-3
 post-headings:
   - validation_curve 检视过拟合
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk10_cross_validation3.py)
@@ -21,8 +21,7 @@ post-headings:
 这也是可以让我们更好的选择参数的方法.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 继续上一节的例子，并稍作小修改即可画出图形。这次我们来验证`SVC`中的一个参数 `gamma` 在什么范围内能使 model 产生好的结果. 以及过拟合和 `gamma` 取值的关系.

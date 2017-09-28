@@ -11,11 +11,10 @@ post-headings:
   - 创建二维列表
   - 索引
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 一个一维的List是线性的List，多维List是一个平面的List：
 
@@ -28,8 +27,7 @@ multi_dim_a = [[1,2,3],
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在上面定义的List中进行搜索：
 

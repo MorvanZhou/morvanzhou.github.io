@@ -12,13 +12,12 @@ post-headings:
   - 指定数据 dtype
   - 创建特定数据
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * 创建 array 有很多 [形式](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 - `array`：创建数组
 - `dtype`：指定数据类型
@@ -28,8 +27,7 @@ post-headings:
 - `arrange`：按指定范围创建数据
 - `linspace`：创建线段
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 a = np.array([2,23,4])  # list 1d
@@ -37,8 +35,7 @@ print(a)
 # [2 23 4]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 a = np.array([2,23,4],dtype=np.int)
@@ -66,8 +63,7 @@ print(a.dtype)
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 a = np.array([[2,23,4],[2,32,4]])  # 2d 矩阵 2行3列

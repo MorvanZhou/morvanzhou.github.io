@@ -14,11 +14,12 @@ post-headings:
 ---
 
 
+
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py)
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦. **如果让我用一句话概括遗传算法: "在程序里生宝宝, 杀死不乖的宝宝, 让乖宝宝继续生宝宝".**
@@ -29,7 +30,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 所有的遗传算法 (Genetic Algorithm), 后面都简称 GA, 我们都需要一个评估好坏的方程,
 这个方程通常被称为 fitness. 在今天的问题中, 我们找到下面这个曲线当中的最高点.
@@ -44,7 +45,7 @@ def get_fitness(pred):
     return pred
 ```
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+{% include assign-heading.html %}
 
 在 GA 中有基因, 为了方便, 我们直接就称为 `DNA` 吧. GA 中第二重要的就是这 `DNA` 了, 如何编码和解码 `DNA`,
 就是你使用 GA 首先要想到的问题. 传统的 GA 中, `DNA` 我们能用一串二进制来表示, 比如:
@@ -68,7 +69,7 @@ def translateDNA(pop):
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+{% include assign-heading.html %}
 
 进化分三步:
 

@@ -19,7 +19,7 @@ post-headings:
   * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * 论文 [Natural evolution strategies](http://www.jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})是个很好的方式.
 
@@ -34,7 +34,7 @@ Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-3-1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -48,7 +48,7 @@ Tensorflow 来完成这种梯度下降的做法. 如果你对 Tensorflow 感兴�
 NES 的方法其实和强化学习中 [Policy Gradient]({% link _contents/tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}) 的方法非常接近.
 简单来概括一下它们的不同: 在行为的策略上, PG 是扰动 Action, 不同的 action 带来不同的 reward, 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 ES 是扰动 神经网络中的 Parameters, 不同的 parameters 带来不同的 reward, 通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 Tensorflow 是神经网络模块, 虽然我们今天不拿它来做神经网络, 但是首先还是需要搭建一个计算图纸,
 之后再往图纸里面灌数据. 不断自动梯度下降, 提升参数. 关于正态分布, 我们从 tf 中 import `MultivariateNormalFullCovariance`.

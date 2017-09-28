@@ -3,7 +3,7 @@ youku_id: XMjc4ODMxMDkxMg
 youtube_id: -VnZSJX4v64
 title: Dropout 缓解过拟合
 publish-date: 2017-05-27
-thumbnail: "/static/thumbnail/torch/5.3 dropout.jpg"
+thumbnail: "/static/thumbnail/torch/5.3_dropout.jpg"
 chapter: 5
 description: "过拟合让人头疼, 明明训练时误差已经降得足够低, 可是测试的时候误差突然飙升. 这很有可能就是出现了过拟合现象.
 强烈推荐通过这个动画的形式短时间了解什么是过拟合, 怎么解决过拟合.
@@ -15,7 +15,7 @@ post-headings:
   - 训练
   - 对比测试结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/503_dropout.py)
@@ -24,8 +24,7 @@ post-headings:
   * [我制作的 L1/L2 正规化 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/3-09-l1l2regularization.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 过拟合让人头疼, 明明训练时误差已经降得足够低, 可是测试的时候误差突然飙升. 这很有可能就是出现了过拟合现象.
 强烈推荐通过[这个动画]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})的形式短时间了解什么是过拟合, 怎么解决过拟合.
@@ -36,8 +35,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 自己做一些伪数据, 用来模拟真实情况. 数据少, 才能凸显过拟合问题, 所以我们就做10个数据点.
 
@@ -72,8 +70,7 @@ plt.ylim((-2.5, 2.5))
 plt.show()
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们在这里搭建两个神经网络, 一个没有 `dropout`, 一个有 `dropout`. 没有 `dropout` 的容易出现 过拟合, 那我们就命名为 `net_overfitting`,
 另一个就是 `net_dropped`. `torch.nn.Dropout(0.5)` 这里的 0.5 指的是随机有 50% 的神经元会被关闭/丢弃.
@@ -100,8 +97,7 @@ net_dropped = torch.nn.Sequential(
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 训练的时候, 这两个神经网络分开训练. 训练的环境都一样.
 
@@ -126,8 +122,7 @@ for t in range(500):
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在这个 `for` 循环里, 我们加上画测试图的部分. 注意在测试时, 要将网络改成 `eval()` 形式, 特别是 `net_dropped`, `net_overfitting` 改不改其实无所谓.
 画好图再改回 `train()` 模式.

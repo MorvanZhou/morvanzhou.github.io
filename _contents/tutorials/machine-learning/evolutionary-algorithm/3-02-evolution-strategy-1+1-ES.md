@@ -19,7 +19,7 @@ post-headings:
 * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1)-ES.py)
 * [我制作的 什么是进化策略 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 如果你想对进化策略有一个快速了解, [这个几分钟的短动画]({% link _contents/tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})是个很好的方式.
 
@@ -31,7 +31,7 @@ post-headings:
 <img class="course-image" src="/static/results/evolutionary-algorithm/3-2-0.gif" alt="{{ page.title }}{% increment image-count %}">
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 像上面看到的, 统一来说都是 (μ/ρ +, λ)-ES, (1+1)-ES 只是一种特殊形式.
 这里的 μ 是 population 的数量, ρ 是从 population 中选取的个数, 用来生成宝宝的.
@@ -48,7 +48,7 @@ post-headings:
 * 在爸爸和宝宝中选好的那个变成下一代爸爸.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 同[上节]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %})一样,
 这次我们还是两个功能, `make_kid` 和 `kill_bad`

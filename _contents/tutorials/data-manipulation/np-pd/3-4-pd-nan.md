@@ -13,13 +13,12 @@ post-headings:
   - pd.isnull()
 
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/14_nan.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 有时候我们导入或处理数据, 会产生一些空的或者是 `NaN` 数据,如何删除或者是填补这些 `NaN` 数据就是我们今天所要提到的内容. 
 
@@ -43,8 +42,7 @@ df.iloc[1,2] = np.nan
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果想直接去掉有 `NaN` 的行或列, 可以使用 `dropna`
 
@@ -62,8 +60,7 @@ df.dropna(
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果是将 `NaN` 的值用其他值代替, 比如代替成 `0`:
 
@@ -80,8 +77,7 @@ df.fillna(value=0)
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 判断是否有缺失数据 `NaN`, 为 `True` 表示缺失数据:
 

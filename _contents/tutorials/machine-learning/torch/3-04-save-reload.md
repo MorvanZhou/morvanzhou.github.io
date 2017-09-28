@@ -3,7 +3,7 @@ youku_id: XMjc0ODA2MDIzMg
 youtube_id: ZfmXTsaW3Lo
 title: 保存提取
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail/torch/3-4 save reload.jpg"
+thumbnail: "/static/thumbnail/torch/3-4_save_reload.jpg"
 chapter: 3
 description: "训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
 我们用回归的神经网络举例实现保存提取. 我们快速地建造数据, 搭建网络:
@@ -15,7 +15,7 @@ post-headings:
   - 只提取网络参数
   - 显示结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py)
@@ -23,8 +23,7 @@ post-headings:
   * [我制作的 什么是神经网络 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-1-NN.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
 我们用回归的神经网络举例实现保存提取.
@@ -32,8 +31,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们快速地建造数据, 搭建网络:
 
@@ -72,8 +70,7 @@ torch.save(net1, 'net.pkl')  # 保存整个网络
 torch.save(net1.state_dict(), 'net_params.pkl')   # 只保存网络中的参数 (速度快, 占内存少)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这种方式将会提取整个神经网络, 网络大的时候可能会比较慢.
 
@@ -86,8 +83,7 @@ def restore_net():
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这种方式将会提取所有的参数, 然后再放到你的新建网络中.
 
@@ -106,8 +102,7 @@ def restore_params():
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 调用上面建立的几个功能, 然后出图.
 

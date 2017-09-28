@@ -21,7 +21,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/norm1.png" alt="{{ page.title }}{% increment image-count %}">
@@ -29,7 +29,7 @@ post-headings:
 在说特征标准化之前, 我们先来说说现实生活中, 我们的数据是什么样的. 它们很可能来自不同的地方, 被不同的人采集, 有着不同的规格. 用最经典的房价预测例子来和大家说说. 我们用机器学习从房屋的各个层面来预测房价, 房屋的特征可能包括, 离市中心的距离, 房屋楼层, 房屋面积, 所在城市, 几室几厅等等. 这些数据的取值范围往往差距悬殊, 比如楼层一般在2-30层以内, 面积可能上百, 离市中心距离可以以千来记.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/norm2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -43,7 +43,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/norm4.png" alt="{{ page.title }}{% increment image-count %}">
 

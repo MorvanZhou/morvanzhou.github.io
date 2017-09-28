@@ -12,15 +12,14 @@ post-headings:
   - 基本使用
   - 实例
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 
 我们在使用的调用函数的时候，想要指定一些变量的值在函数中使用，那么这些变量就是函数的参数，函数调用的时候，
 传入即可。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 def function_name(parameters):
@@ -29,8 +28,7 @@ def function_name(parameters):
 
 `parameters` 的位置就是函数的参数，在调用的时候传入即可。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 def func(a, b):

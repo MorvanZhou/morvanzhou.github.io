@@ -24,7 +24,7 @@ post-headings:
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * OpenAI 的 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 神经网络在当今是一种迅速发展的机器学习方式, 使用反向传播的神经网络更是被推向了一轮又一轮的高峰, 可是我们的视野请不要被反向传播的神经网络变得狭隘.
@@ -48,7 +48,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 说到进化, 我们之前看到了在遗传算法 (Genetic Algorithm) 中, 种群 `Population` 是通过不同的 DNA 配对, DNA 变异来实现物种的多样性,
 然后通过自然选择 (Natural Selection), 繁衍下一代来实现 "适者生存, 不适者淘汰" 这条定律. 在神经网络中我们如何使用这种规律呢.
@@ -77,7 +77,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}), 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)),
 如果想偷懒, 这篇在 conference 上的浓缩版([Efficient evolution of neural network topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf))也是很好的阅读材料.
@@ -120,7 +120,7 @@ NEAT 是一种典型的[遗传算法]({% link _contents/tutorials/machine-learni
 
 好了, 通过上面的方式一步步进行, 好的神经网络被保留, 坏的杀掉. 我们的神经网络就能朝着正确的方形进化啦.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 [Evolution Strategy]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %}) 相比较于 [Genetic Algorithm]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})
 更加注重 mutation 的过程. 而且其中高度使用到了正态分布 (Normal distribution).

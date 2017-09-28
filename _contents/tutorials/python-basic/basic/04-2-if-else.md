@@ -13,14 +13,13 @@ post-headings:
   - 实例
   - 高级主题
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 上一讲我们学习了 `if` 语句，这一样我们将要学习 `if else` 语句。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 if condition:
@@ -33,8 +32,7 @@ else:
 `false_expressions`。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 x = 1
@@ -63,8 +61,7 @@ else:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 对于从其他编程语言转过来的同学一定非常想知道 python 语言中的三目操作符怎么使用，很遗憾的是 python
 中并没有类似 `condition ? value1 : value2 ` 三目操作符。然后现实中很多情况下我们只需要简单的判断

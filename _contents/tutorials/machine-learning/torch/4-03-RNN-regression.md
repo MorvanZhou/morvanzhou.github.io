@@ -3,7 +3,7 @@ youku_id: XMjc1NzYxMTg2MA
 youtube_id: CA27ONB8SQ4
 title: RNN 循环神经网络 (回归)
 publish-date: 2017-05-11
-thumbnail: "/static/thumbnail/torch/4.3RNN regressor.jpg"
+thumbnail: "/static/thumbnail/torch/4.3_RNN_regressor.jpg"
 chapter: 4
 description: "循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果.
 上次我们提到了用 RNN 的最后一个时间点输出来判断之前看到的图片属于哪一类, 这次我们来真的了, 用 RNN 来及时预测 sin 和 cos 的时间序列."
@@ -13,7 +13,7 @@ post-headings:
   - RNN模型
   - 训练
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/403_RNN_regressor.py)
@@ -22,8 +22,7 @@ post-headings:
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
 [RNN 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/2-3-RNN.md %}) 和
@@ -37,8 +36,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们要用到的数据就是这样的一些数据, 我们想要用 `sin` 的曲线预测出 `cos` 的曲线.
 
@@ -62,8 +60,7 @@ DOWNLOAD_MNIST = False  # set to True if haven't download the data
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这一次的 RNN, 我们对每一个 `r_out` 都得放到 `Linear` 中去计算出预测的 `output`, 所以我们能用一个 for loop 来循环计算.
 **这点是 Tensorflow 望尘莫及的!** 除了这点, 还有一些动态的过程都可以在[这个教程]({% link _contents/tutorials/machine-learning/torch/5-01-dynamic.md %})中查看, 看看我们的 PyTorch 和 Tensorflow 到底哪家强.
@@ -117,8 +114,7 @@ def forward(self, x, h_state):
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 下面的代码就能实现动图的效果啦~开心, 可以看出, 我们使用 `x` 作为输入的 `sin` 值,
 然后 `y` 作为想要拟合的输出, `cos` 值. 因为他们两条曲线是存在某种关系的, 所以我们就能用

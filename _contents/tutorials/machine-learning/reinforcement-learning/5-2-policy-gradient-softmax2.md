@@ -3,7 +3,7 @@ youku_id: XMjY1MzU2NTc2NA
 youtube_id: DwrGHh9Nkvg
 chapter: 5
 title: Policy Gradients 思维决策 (Tensorflow)
-thumbnail: "/static/thumbnail/rl/5.2 PG2.jpg"
+thumbnail: "/static/thumbnail/rl/5.2_PG2.jpg"
 publish-date: 2017-03-21
 description: "接着上节内容, 我们来实现 RL_brain 的 PolicyGradient 部分, 这也是 RL 的大脑部分, 负责决策和思考."
 post-headings:
@@ -14,7 +14,7 @@ post-headings:
   - 存储回合
   - 学习
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
@@ -30,8 +30,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 用基本的 Policy gradient 算法, 和之前的 value-based 算法看上去很类似.
 
@@ -56,8 +55,7 @@ class PolicyGradient:
     def _discount_and_norm_rewards(self):
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 初始化时, 我们需要给出这些参数, 并创建一个神经网络.
 
@@ -86,8 +84,7 @@ class PolicyGradient:
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这次我们要建立的神经网络是这样的:
 
@@ -137,8 +134,7 @@ class PolicyGradient:
             self.train_op = tf.train.AdamOptimizer(self.lr).minimize(loss)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这个行为不再是用 Q value 来选定的, 而是用概率来选定. 即使不用 epsilon-greedy, 也具有一定的随机性.
 
@@ -156,8 +152,7 @@ class PolicyGradient:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这一部很简单, 就是将这一步的 `observation`, `action`, `reward` 加到列表中去.
 因为本回合完毕之后要清空列表, 然后存储下一回合的数据, 所以我们会在 `learn()` 当中进行清空列表的动作.
@@ -176,8 +171,7 @@ class PolicyGradient:
         self.ep_rs.append(r)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 本节的 `learn()` 很简单, 首先我们要对这回合的所有 `reward` 动动手脚, 使他变得更适合被学习.
 第一就是随着时间推进, 用 `gamma` 衰减未来的 `reward`, 然后为了一定程度上减小 policy gradient 回合 variance,

@@ -16,7 +16,7 @@ post-headings:
   - 做其它任务
   - 恢复暂存
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_4-4.zip)
   
@@ -30,8 +30,7 @@ post-headings:
 这时 `stash` 就是我的救星了. 用 `stash` 能先将我的那改进的部分放在一边分隔开来. 
 再另外单独处理老板的任务.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 假设我们现在在 `dev` 分支上快乐地改代码:
 
@@ -58,8 +57,7 @@ On branch dev
 nothing to commit, working directory clean  # 干净得很
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 然后我们建立另一个 `branch` 用来完成老板的任务:
 
@@ -114,8 +112,7 @@ $ git log --oneline --graph
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 轻松了, 现在可以继续开心的在 `dev` 上刷代码了.
 

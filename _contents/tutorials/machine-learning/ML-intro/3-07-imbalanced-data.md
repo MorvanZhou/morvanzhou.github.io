@@ -20,7 +20,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance1.png"  width="500px">
 
@@ -32,21 +32,21 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance3.png"  width="500px">
 
 首先, 我们要想想, 自己还能不能获取到更多的数据. 有时候只是因为前段时期的数据多半呈现的是一种趋势, 等到后半时期趋势又不一样了. 如果没有获取后半时期的数据, 整体的预测可能就没有那么准确了.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance4.png"  width="500px">
 
 通常, 我们会用到 准确率 accuracy, 或者误差 cost来判断机器学习的成果. 可是这些评判方法在不均衡数据面前, 高的准确率和低的误差变得没那么重要. 所以我们得换一种方式评判. 通过 confusion matrix 来计算 precision 和 recall, 然后通过 precision 和 recall 再计算f1 分数.这种方式能成功地区分不均衡数据, 给出更好的评判分数. 因为时间关系, 具体的计算不过程就不会在这里提及.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance5.png"  width="500px">
 
@@ -55,14 +55,14 @@ post-headings:
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance6.png"  width="500px">
 
 如果使用的机器学习方法像神经网络等, 在面对不均衡数据时, 通常是束手无策. 不过有些机器学习方法, 像决策树, decision trees 就不会受到不均很数据的影响.
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[5] }}">{{ page.post-headings[5] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/imbalance7.png"  width="500px">
 

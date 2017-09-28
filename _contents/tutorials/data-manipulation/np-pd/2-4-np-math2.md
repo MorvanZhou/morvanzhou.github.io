@@ -9,7 +9,7 @@ chapter: 2
 post-headings:
   - numpy 的几种基本运算
 ---
-{% assign post-heading-count = -1 %}
+
 
 
 学习资料:
@@ -30,8 +30,7 @@ print(np.argmax(A))    # 11
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 其中的 `argmin()` 和 `argmax()` 两个函数分别对应着求矩阵中最小元素和最大元素的索引。相应的，在矩阵的12个元素中，最小值即2，对应索引0，最大值为13，对应索引为11。
 

@@ -3,7 +3,7 @@ youku_id: XMzA0MTAzMTM4OA
 youtube_id: uEzhTYiQdh8
 title: NEAT 监督学习
 publish-date: 2017-09-23
-thumbnail: "/static/thumbnail/evolutionary-algorithm/42 neat.jpg"
+thumbnail: "/static/thumbnail/evolutionary-algorithm/42neat.jpg"
 chapter: 4
 description: "我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
 我也尝试着纯手工编写 NEAT 算法. 可是... 尝试了几天过后, 因为太麻烦了, 我就放弃了. 我先总结下自己淌过的水, 如果你有能力解决下面提到的几点, 恭喜你, 你真的特别厉害.
@@ -26,7 +26,7 @@ post-headings:
   * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
   * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 接着[上节介绍了神经进化的内容]({% link _contents/tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}),
 我们这次就来实现 NEAT 的算法. 因为 NEAT 相比普通的反向传播神经网络更加复杂.
@@ -46,7 +46,7 @@ NEAT 的 Recurrent link/node 不是通常说的 RNN, 处理形式不同.
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 我们可以直接在 terminal 中输入:
 
@@ -71,7 +71,7 @@ $ pip3 install neat-python
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 接着我们来说说 neat-python 网页上的一个使用例子, 用 neat 来进化出一个神经网络预测 XOR 判断. 什么是 XOR 呢, 简单来说就是 OR 判断的改版.
 

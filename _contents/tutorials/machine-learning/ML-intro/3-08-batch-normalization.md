@@ -25,7 +25,7 @@ post-headings:
 **注: 本文不会涉及太多数学推导. 大家可以在很多其他地方找到优秀的数学推导文章.**
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/NB1.png"  width="500px">
@@ -34,7 +34,7 @@ Batch Normalization, 批标准化, 和普通的数据标准化类似, 是将分�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/NB2.png"  width="500px">
 
@@ -46,7 +46,7 @@ Batch Normalization, 批标准化, 和普通的数据标准化类似, 是将分�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/NB4.png"  width="500px">
 
@@ -56,7 +56,7 @@ Batch normalization 的 batch 是批数据, 把数据分成小批小批进行 st
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 Batch normalization 也可以被看做一个层面. 在一层层的添加神经网络的时候, 我们先有数据 X, 再添加全连接层, 全连接层的计算结果会经过 激励函数 成为下一层的输入, 接着重复之前的操作. Batch Normalization (BN) 就被添加在每一个全连接和激励函数之间.
 
@@ -70,7 +70,7 @@ Batch normalization 也可以被看做一个层面. 在一层层的添加神经�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[4] }}">{{ page.post-headings[4] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/NB7.png"  width="500px">
 

@@ -13,13 +13,12 @@ post-headings:
   - 保存模型
   - 提取模型
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [代码链接](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano13_save)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 今天学习如何保存神经网络，以方便日后可以直接提取使用。
 
@@ -34,8 +33,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在引入相关包时，需要用到 pickle， 这是 python 中用来储存文件的一个模块。
 
@@ -46,8 +44,7 @@ import theano.tensor as T
 import pickle
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来的 创建数据－建立模型－激活模型－训练模型 都和分类那节课的内容是一样的。
 
@@ -99,8 +96,7 @@ for i in range(500):
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 把所有的参数放入 `save` 文件夹中，命名文件为 `model.pickle`，以 `wb` 的形式打开并把参数写入进去。
 
@@ -129,8 +125,7 @@ accuracy: 1.0
 执行上述代码后可以看到 `save` 文件夹中生成了一个 `model.pickle` 的文件。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来提取模型时，提前把代码中 `# Training` 和 `# save model` 两部分注释掉，即相当于只是通过 创建数据－建立模型－激活模型 构建好了新的模型结构，下面要通过调用存好的参数来进行预测。
 

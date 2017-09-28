@@ -15,14 +15,13 @@ post-headings:
   - 训练数据
   - 在 tensorboard 中查看效果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf15_tensorboard)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
@@ -46,8 +45,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 由于这节我们观察训练过程中神经网络的变化, 所以首先要添一些模拟数据.
 Python 的 numpy 工具包可以帮助我们制造一些模拟数据. 所以我们先导入这个工具包:
@@ -77,8 +75,7 @@ import numpy as np
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 通过上图的观察我们发现每个 layer 后面有有一个数字: layer1 和layer2
@@ -190,8 +187,7 @@ prediction= add_layer(l1, 10, 1, n_layer=2, activation_function=None)
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 `Loss` 的变化图和之前设置的方法略有不同.  loss是在tesnorBorad 的event下面的, 这是由于我们使用的是`tf.scalar_summary()` 方法.
@@ -212,8 +208,7 @@ with tf.name_scope('loss'):
      tf.summary.scalar('loss', loss) # tensorflow >= 0.12
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 接下来， 开始合并打包。
@@ -235,8 +230,7 @@ sess.run(tf.global_variables_initializer())  # 替换成这样就好
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 假定给出了`x_data,y_data`并且训练1000次. 
@@ -266,8 +260,7 @@ for i in range(1000):
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 程序运行完毕之后, 会产生logs目录 , 使用命令 `tensorboard --logdir logs`
 

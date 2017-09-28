@@ -12,11 +12,10 @@ post-headings:
   - List
   - 两者对比
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 叫做 `tuple`，用小括号、或者无括号来表述，是一连串有顺序的数字。
 
@@ -26,8 +25,7 @@ another_tuple = 12, 3, 5, 15 , 6
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 而`list`是以中括号来命名的:
 
@@ -36,8 +34,7 @@ a_list = [12, 3, 67, 7, 82]
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 他们的元素可以一个一个地被迭代、输出、运用、定位取值:
 

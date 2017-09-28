@@ -12,7 +12,7 @@ post-headings:
   - 连接本地版本库
   - 推送修改
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_5-1.zip)
   
@@ -21,8 +21,7 @@ post-headings:
 github 是一个大家都积极贡献的地方, 你可以和各种人合作创作. 也是开源的天堂~
 只要你愿意, 任何人都能下载, 或修改你的杰作.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在 [github](https://github.com/) 注册一个 github 账户, 这个不用我多说, 大家都知道注册.
 
@@ -34,8 +33,7 @@ github 是一个大家都积极贡献的地方, 你可以和各种人合作创�
 
 <img class="course-image" src="/static/results/git/5-1-2.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用这节内容的初始例子文件, 然后将本地的版本库推送到网上:
 
@@ -56,8 +54,7 @@ $ git push -u origin dev        # 推送本地 dev  去 origin
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果在本地再进行修改, 比如在 `1.py` 文件中加上 `# happy github`,
 然后 `commit` 并推上去:

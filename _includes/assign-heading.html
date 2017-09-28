@@ -1,0 +1,10 @@
+{% if post-heading-count %}
+{% else %}
+  {% assign post-heading-count = 0 %}
+{% endif %}
+
+{% assign heading = page.post-headings[post-heading-count] %}
+{% assign hid = heading | replace: " ", "" %}
+<h4 class="tut-h4-pad" id="{{ hid }}">{{ heading }}</h4>
+
+{% assign post-heading-count = post-heading-count | plus: 1 %}

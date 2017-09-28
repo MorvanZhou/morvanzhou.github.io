@@ -28,7 +28,7 @@ post-headings:
 
 在强化学习中 Sarsa 和 Q learning 及其类似, 这节内容会基于之前我们所讲的 Q learning. 所以还不熟悉 Q learning 的朋友们, 请前往我制作的 Q learning 简介 (知乎专栏). 我们会对比 Q learning, 来看看 Sarsa 是特殊在哪些方面. 和上次一样, 我们还是使用写作业和看电视这个例子. 没写完作业去看电视被打, 写完了作业有糖吃.
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/s2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -36,7 +36,7 @@ Sarsa 的决策部分和 Q-learning 一模一样, 因为我们使用的是 Q 表
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/s3.png" alt="{{ page.title }}{% increment image-count %}">
@@ -47,7 +47,7 @@ Sarsa 的决策部分和 Q-learning 一模一样, 因为我们使用的是 Q 表
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/s4.png" alt="{{ page.title }}{% increment image-count %}">
 

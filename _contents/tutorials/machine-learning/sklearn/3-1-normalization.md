@@ -10,7 +10,7 @@ post-headings:
   - 数据标准化
   - 数据标准化对机器学习成效的影响
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk7_normalization.py)
@@ -19,8 +19,7 @@ post-headings:
 由于资料的**偏差**与**跨度**会影响机器学习的成效，因此正规化(标准化)数据可以提升机器学习的成效。首先由例子来讲解:
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 ```python
@@ -39,8 +38,7 @@ print(preprocessing.scale(a))
 #  [ 1.22474487  1.40357859  1.40351318]]
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 加载模块
 

@@ -4,7 +4,7 @@ youtube_id: OiEkaYpPHM0
 chapter: 4
 title: Dueling DQN (Tensorflow)
 publish-date: 2017-03-08
-thumbnail: "/static/thumbnail/rl/4.7 dueling DQN.jpg"
+thumbnail: "/static/thumbnail/rl/4.7_dueling_DQN.jpg"
 description: "只要稍稍修改 DQN 中神经网络的结构, 就能大幅提升学习效果, 加速收敛. 这种新方法叫做
 Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q 拆分成了 state 的 Value
 加上 每个动作的 Advantage."
@@ -14,15 +14,14 @@ post-headings:
   - 更新方法
   - 对比结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN)
   * [什么是 Dueling DQN 短视频(即将制作)](#)
   * 论文 [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 **本篇教程是基于 Deep Q network (DQN) 的选学教程.
 以下教程缩减了在 DQN 方面的介绍, 着重强调 Dueling DQN 和 DQN 在代码上不同的地方.
@@ -41,8 +40,7 @@ Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q �
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 上一个 Paper 中的经典解释图片, 上者是一般的 DQN 的 Q值 神经网络.
 下者就是 Dueling DQN 中的 Q值 神经网络了. 那具体是哪里不同了呢?
@@ -69,8 +67,7 @@ advantage 的影响. 发红的地方左右了自己车子的移动原则.
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 下面的修改都是基于我之前写的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py).
 这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN).
@@ -125,8 +122,7 @@ class DuelingDQN:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 对比的代码不在这里呈现, 如果想观看对比的详细代码, 请去往我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.3_Dueling_DQN/run_Pendulum.py).
 

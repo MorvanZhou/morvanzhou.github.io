@@ -11,12 +11,11 @@ post-headings:
   - input
   - input扩展
 ---
-{% assign post-heading-count = -1 %}
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 `variable=input()`  表示运行后，可以在屏幕中输入一个数字，该数字会赋值给自变量。看代码：
 
@@ -60,8 +59,7 @@ Good luck
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 用`input()`来判断成绩
 

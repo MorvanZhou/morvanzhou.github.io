@@ -9,13 +9,12 @@ date: 2016-11-3
 post-headings:
   - 总结
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [总结](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py)
   
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 前面我们已经了解了关于机器学习和神经网络的基础知识：
 

@@ -15,15 +15,14 @@ post-headings:
   - reset 回到 add 之前
   - reset 回到 commit 之前
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_3-1.zip)
   
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 有时候我们总会忘了什么, 比如已经提交了 `commit` 却发现在这个 `commit` 中忘了附上另一个文件.
 接下来我们模拟这种情况. 上节内容中, 我们最后一个 `commit` 是 `change 2`, 我们将要添加另外一个文件, 
@@ -41,8 +40,7 @@ c6762a1 change 1
 13be9a7 create 1.py
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 有时我们添加 `add` 了修改, 但是又后悔, 并想补充一些内容再 `add`. 这时,
 我们有一种方式可以回到 `add` 之前. 比如在 `1.py` 文件中添加这一行:
@@ -71,8 +69,7 @@ $ git status -s
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在穿梭到过去的 `commit` 之前, 我们必须了解 git 是如何一步一步累加更改的.
 我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html)

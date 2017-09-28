@@ -9,19 +9,15 @@ chapter: 1
 post-headings:
   - numpy 安装
   - pandas安装
-  - 搭建神经网络
-  - 训练
-  - 画图
-  - 对比结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * Windows 安装的英文说明 [链接](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat)
   * Visual studio [下载地址](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)  
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 Numpy 的安装文件地址是[这里](https://sourceforge.net/projects/numpy/files/NumPy/)。里面有不同版本，有开发者版本和稳定版本。同时根据不同的系统选择不同的版本进行下载。
 
@@ -54,8 +50,7 @@ sudo apt-get install python-numpy
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 安装 pandas 有各种的安装方式。
 

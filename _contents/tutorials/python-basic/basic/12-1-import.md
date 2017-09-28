@@ -10,7 +10,6 @@ author: Huanyu Mao
 post-headings:
   - import 的各种方法
 ---
-{% assign post-heading-count = -1 %}
 
 
 
@@ -18,8 +17,8 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 `import time`  指 import `time`  模块，这个模块可以python自带，也可以是自己安装的，比如以后会用到`numpy`这些模块,需要自己安装。
 

@@ -10,11 +10,10 @@ post-headings:
   - 计算图纸
   - Tensor 张量意义
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 Tensorflow 首先要定义神经网络的结构,
 然后再把数据放入结构当中去运算和 training.
@@ -30,8 +29,7 @@ Tensorflow 首先要定义神经网络的结构,
 即张量（tensor). 训练模型时tensor会不断的从数据流图中的一个节点flow到另一节点,
 这就是TensorFlow名字的由来.
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 **张量（Tensor)**:
 * 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 ```[1]```

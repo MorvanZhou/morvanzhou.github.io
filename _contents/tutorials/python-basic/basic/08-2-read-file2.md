@@ -11,12 +11,11 @@ post-headings:
   - 给文件增加内容
   - 总结
 ---
-{% assign post-heading-count = -1 %}
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 我们先保存一个已经有3行文字的 "my file.txt" 文件, 文件的内容如下:
 
@@ -45,8 +44,7 @@ This is appended file.
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 - 掌握 append 的用法 ：`open('my file.txt','a')` 打开类型为 `a` ，`a` 即表示 append
 - 可以思考，如果用 `w` 形式打开，运行后会发生什么呢？

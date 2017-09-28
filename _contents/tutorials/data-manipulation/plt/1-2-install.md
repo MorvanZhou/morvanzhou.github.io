@@ -10,14 +10,13 @@ post-headings:
   - MacOS
   - Windows
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * Windows 安装文件 [网址](https://pypi.python.org/pypi/matplotlib/)
 
 对于 [Linux](#linux), [MacOS](#mac), [Windows](#windows) 的安装方式各不相同. 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 打开 Terminal 窗口, 输入以下内容
@@ -30,8 +29,7 @@ $ sudo apt-get install python3-matplotlib
 $ sudo apt-get install python-matplotlib
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 打开 Terminal 窗口, 输入以下内容
@@ -46,8 +44,7 @@ $ pip install matplotlib
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 Windows 的安装最麻烦. 我们一步步来:

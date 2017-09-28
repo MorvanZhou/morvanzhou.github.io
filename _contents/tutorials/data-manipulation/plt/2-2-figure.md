@@ -9,12 +9,11 @@ date: 2016-11-3
 post-headings:
   - 简单的线条
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt4_figure.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 matplotlib 的 figure 就是一个 单独的 figure 小窗口, 
 小窗口里面还可以有更多的小图片. 

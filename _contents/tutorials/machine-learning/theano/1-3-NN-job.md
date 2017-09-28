@@ -8,14 +8,13 @@ chapter: 1
 post-headings:
   - 动画演示
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py)
   * [本例的代码讲解教程]({% link _contents/tutorials/machine-learning/theano/3-1-layer.md %})
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 今天我们会用图像呈现神经网络所做的事情.
 我们会让 theano 做出来的的神经网络拟合上这些数据点. 从中学习数据点的规律, 并能预测这些规律.

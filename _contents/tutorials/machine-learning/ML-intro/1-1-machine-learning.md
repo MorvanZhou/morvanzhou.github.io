@@ -14,10 +14,9 @@ chapter: 1
 post-headings:
   - 多种多样的机器学习
 ---
-{% assign post-heading-count = -1 %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 在这里我们介绍了什么是机器学习, 还有机器学习包含了哪些方法.
 通常来说, 机器学习的方法包括:

@@ -10,12 +10,11 @@ post-headings:
   - 不加 join() 的结果
   - 加入 join() 的结果
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread3_join.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们让 `T1` 线程工作的耗时增加.
 
@@ -50,8 +49,7 @@ all done
 T1 finish
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 线程任务还未完成便输出`all done`。如果要遵循顺序，可以在启动线程后对它调用`join`：
 

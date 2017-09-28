@@ -12,7 +12,7 @@ post-headings:
   - 以准确率(accuracy)判断
   - 以平均方差(Mean squared error)
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/sklearnTUT/sk8_cross_validation)
@@ -22,8 +22,7 @@ Sklearn 中的 Cross Validation (交叉验证)对于我们选择正确的 Model 
 有了他的帮助，我们能直观的看出不同 Model 或者参数对结构准确度的影响。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 
@@ -53,8 +52,7 @@ print(knn.score(X_test, y_test))
 
 可以看到基础验证的准确率为`0.973684210526`
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 from sklearn.cross_validation import cross_val_score # K折交叉验证模块
@@ -75,8 +73,7 @@ print(scores.mean())
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 一般来说`准确率(accuracy)`会用于判断分类(Classification)模型的好坏。
 
@@ -105,8 +102,7 @@ plt.show()
 
 从图中可以得知，选择`12~18`的`k`值最好。高过`18`之后，准确率开始下降则是因为过拟合(Over fitting)的问题。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 一般来说`平均方差(Mean squared error)`会用于判断回归(Regression)模型的好坏。
 

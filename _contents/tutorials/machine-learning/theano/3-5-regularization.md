@@ -14,15 +14,14 @@ post-headings:
   - 训练模型
   - 可视化结果
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization)
   * 机器学习-简介系列 [过拟合]({% link _contents/tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
   * [什么是 L1/L2 正则化 短片]({% link _contents/tutorials/machine-learning/ML-intro/3-09-l1l2regularization.md %})
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 什么是 overfitting ？
 
@@ -38,8 +37,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 引入需要使用的Python包：
 
@@ -87,8 +85,7 @@ y = T.dmatrix("y")
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 建立两个神经层，`l1` 有 13 个属性，50 个神经元，激活函数是 `T.tanh`。
 `l2` 的输入值为前一层的输出，有 50 个，输出值为房价，只有 1 个。
@@ -114,8 +111,7 @@ gW1, gb1, gW2, gb2 = T.grad(cost, [l1.W, l1.b, l2.W, l2.b])
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 定义学习率，训练函数等。
 
@@ -132,8 +128,7 @@ compute_cost = theano.function(inputs=[x, y], outputs=cost)
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 用 `train_err_list` 等来记录训练过程中产生的误差，方便后面可视化。
 训练 1000 次，每 10 步记录一次训练集和测试集的误差。
@@ -153,8 +148,7 @@ for i in range(1000):
         learning_time.append(i)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后可视化两种误差，红色是训练集的，蓝色是测试集。
 

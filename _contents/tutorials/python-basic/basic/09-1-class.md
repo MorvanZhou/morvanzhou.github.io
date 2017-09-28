@@ -11,12 +11,11 @@ post-headings:
   - class 定义一个类
   - 总结
 ---
-{% assign post-heading-count = -1 %}
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 `class` 定义一个类, 后面的类别首字母推荐以大写的形式定义，比如`Calculator`.
 `class`可以先定义自己的属性，比如该属性的名称可以写为 `name='Good Calculator'`.
@@ -59,7 +58,6 @@ Good Calculator
 """"
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 - 注意定义自变量`cal`等于`Calculator`要加括号“()” ,`cal=Calculator()`否则运行下面函数的时候会出现错误,导致无法调用.

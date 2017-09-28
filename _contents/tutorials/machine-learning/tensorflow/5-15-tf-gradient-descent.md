@@ -4,7 +4,7 @@ youtube_id: ugGkewcKk9Q
 chapter: 5
 title: 用 Tensorflow 可视化梯度下降
 publish-date: 2017-07-01
-thumbnail: "/static/thumbnail/tf/tf25 gradient descent.jpg"
+thumbnail: "/static/thumbnail/tf/tf25_gradient_descent.jpg"
 description: "这一次, 我们想要真正意义上的看到自己手中的模型是怎么样进行梯度下降 (gradient descent) 的. 打个比方就像下面这张图. 红色圆点就是最开始的参数误差.
 同时, 我们还可以扩展开来, 神经网络就是一种梯度下降的方法. 而梯度下降是一种最优化方法, 我们还能拿它来干点其它事. 比如说 **为公式调参**.
 我们会在下面具体讲解.
@@ -15,15 +15,14 @@ post-headings:
   - 为模型,公式调参
   - 局部最优,全局最优
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py)
   * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
   * [什么是梯度下降4分钟短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这一次, 我们想要真正意义上的看到自己手中的模型是怎么样进行梯度下降 (gradient descent) 的. 打个比方就像下面这张图. 红色圆点就是最开始的参数误差.
 
@@ -36,8 +35,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这次我们还是以代码的形式直观地展示我们要做的事情.
 为了可视化梯度下降的过程, 我们需要用到 Python 中的几个模块, `matplotlib`, `numpy`, `tensorflow`.
@@ -125,8 +123,7 @@ with tf.Session() as sess:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接下来我们看看 Tensorflow 的另一种用途, 为公式调参. 说到底, 神经网络就是用梯度下降, 而梯度下降就是一种优化模式 具体参考我制作的这个[短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %}).
 所以我们也可以使用 Tensorflow 的梯度下降机制来调参. 比如我们将上面的提到的 `y_fun` 和 `tf_y_fun` 改成下面这样 (其实上面也是在调参).
@@ -151,8 +148,7 @@ tf_y_fun = lambda a, b: a * x**3 + b * x**2
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在回到神经网络的话题中来, 多层的有激活神经网络必定有很多局部最优解的. 我在这个[短视频]({% link _contents/tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})中也提过什么是全局最优和局部最优.
 那么我们就来做一个有两个参数的简单神经网络吧. 同样, 我们至于要修改 `y_fun` 和 `tf_y_fun` 就好了:

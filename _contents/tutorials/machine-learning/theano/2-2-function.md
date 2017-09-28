@@ -12,7 +12,7 @@ post-headings:
   - function 的名字
   - 总结
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano5_function.py)
@@ -33,8 +33,7 @@ import theano.tensor as T
 import theano
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 使用activation function(激励函数)的例子。
@@ -63,8 +62,7 @@ print(logistic([[0,1],[-2,-3]]))
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 假定我们的 theano 函数中的输入值是两个，输出也是两个。
@@ -112,8 +110,7 @@ array([[ 1.,  0.],
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先，我们可以使用 `T.dscalars()` 里面同时定义三个纯量的容器。 以及输出值`z`
 
@@ -158,8 +155,7 @@ print (f(23,1,weights=4)) ##调用方式
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 这节中，我们介绍了function的三种方式：
 首先，一个theanod的function的简单用法;

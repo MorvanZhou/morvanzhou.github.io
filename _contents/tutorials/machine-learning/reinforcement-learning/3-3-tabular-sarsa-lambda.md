@@ -3,7 +3,7 @@ youku_id: XMjI2Nzg3MTgxNg
 youtube_id: gXZ4AWgkrQE
 chapter: 3
 title: Sarsa-lambda
-thumbnail: "/static/thumbnail/rl/3.3 sarsa lambda.jpg"
+thumbnail: "/static/thumbnail/rl/3.3_sarsa_lambda.jpg"
 publish-date: 2017-01-13
 description: "Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
 如果说 Sarsa 和 Qlearning 都是每次获取到 reward, 只更新获取到 reward 的前一步.
@@ -18,7 +18,7 @@ post-headings:
   - 检测 state 是否存在
   - 学习
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/4_Sarsa_lambda_maze)
@@ -26,8 +26,7 @@ post-headings:
   * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=0-odgVLZ5EQ&index=3&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2NzcyOA==.html)
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 
@@ -48,8 +47,7 @@ Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到�
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 使用 `SarsaLambdaTable` 在算法更新迭代的部分, 是和之前的 `SarsaTable` 一样的, 所以这一节, 我们没有算法更新部分, 直接变成 思维决策部分.
@@ -77,8 +75,7 @@ class SarsaLambdaTable:
 
 <img class="course-image" src="/static/results/rl/3-3-1.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在预设值当中, 我们添加了 `trace_decay=0.9` 这个就是 `lambda` 的值了. 这个值将会使得拿到 reward 前的每一步都有价值.
 如果还不太明白其他预设值的意思, 请查看我的 [关于强化学习的短视频列表]({% link _contents/pages/table-contents/machine-learning/ML-intro/ML-intro.html %})
@@ -95,8 +92,7 @@ class SarsaLambdaTable(RL): # 继承 RL class
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 `check_state_exist` 和之前的是高度相似的. 唯一不同的地方是我们考虑了 `eligibility_trace`,
 
@@ -118,8 +114,7 @@ class SarsaLambdaTable(RL): # 继承 RL class
             self.eligibility_trace = self.eligibility_trace.append(to_be_append)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 有了父类的 `RL`, 我们这次的编写就很简单, 只需要编写 `SarsaLambdaTable` 中 `learn` 这个功能就完成了. 因为其他功能都和父类是一样的.
 这就是我们所有的 `SarsaLambdaTable` 于父类 `RL` 不同之处的代码. 是不是很简单.

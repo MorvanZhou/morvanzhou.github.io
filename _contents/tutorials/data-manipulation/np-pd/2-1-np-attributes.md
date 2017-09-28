@@ -9,7 +9,7 @@ chapter: 2
 post-headings:
   - numpy 的几种属性
 ---
-{% assign post-heading-count = -1 %}
+
 
 这次我们会介绍几种 numpy 的属性:
 
@@ -33,8 +33,7 @@ array([[1, 2, 3],
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 接着我们看看这几种属性的结果:
 

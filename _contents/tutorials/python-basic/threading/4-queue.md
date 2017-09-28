@@ -12,7 +12,7 @@ post-headings:
   - 定义一个多线程函数
   - 完整的代码
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread4_queue.py)
 
@@ -20,8 +20,7 @@ post-headings:
 代码实现功能，将数据列表中的数据传入，使用四个线程处理，将结果保存在`Queue`中，线程执行完后，从`Queue`中获取存储的结果
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 import threading
@@ -29,8 +28,7 @@ import time
 from queue import Queue
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 函数的参数是一个列表l和一个队列`q`，函数的功能是，对列表的每个元素进行平方计算，将结果保存在队列中
 
@@ -42,8 +40,7 @@ def job(l,q):
 ```
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 在多线程函数中定义一个`Queue`，用来保存返回值，代替`return`，定义一个多线程列表，初始化一个多维数据列表，用来处理：
 
@@ -79,8 +76,7 @@ for _ in range(4):
 print(results)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 import threading

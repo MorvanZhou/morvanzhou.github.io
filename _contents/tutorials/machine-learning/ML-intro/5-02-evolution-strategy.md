@@ -20,7 +20,7 @@ post-headings:
 Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化是大自然赋予我们的礼物, 我们也能学习自然界的这份礼物, 将它放入计算机, 让计算机也能用进化来解决问题. 我们接着上回提到的遗传算法, 来说一说另一种使用进化理论的优化模式-进化策略 (Evolution Strategy).
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/ES1.png" alt="{{ page.title }}{% increment image-count %}">
@@ -32,7 +32,7 @@ Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化�
 然后通过适者生存, 不适者淘汰的这一套理论不断进化着. 我们的祖先, 通过不断变异, 生存淘汰, 从猴子变成人也就是这么回事.既然进化策略或遗传算法都用到了进化的原则, 他们到底有哪些不同呢? 他们各自又适用于哪些问题呢?
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML_intro/ES3.png" alt="{{ page.title }}{% increment image-count %}">
@@ -43,7 +43,7 @@ Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化�
 {% include google-in-article-ads.html %}
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ES4.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -51,7 +51,7 @@ Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化�
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[3] }}">{{ page.post-headings[3] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML_intro/ES5.png" alt="{{ page.title }}{% increment image-count %}">
 

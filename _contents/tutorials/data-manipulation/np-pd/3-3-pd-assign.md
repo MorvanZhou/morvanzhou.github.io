@@ -13,13 +13,12 @@ post-headings:
   - 按行或列设置
   - 添加数据
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/13_set_value.py)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们可以根据自己的需求, 用 pandas 进行更改数据里面的值, 或者加上一些空的,或者有数值的列.
 
@@ -40,8 +39,7 @@ df = pd.DataFrame(np.arange(24).reshape((6,4)),index=dates, columns=['A','B','C'
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们可以利用索引或者标签确定需要修改值的位置。
 
@@ -60,8 +58,7 @@ df.loc['20130101','B'] = 2222
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果现在的判断条件是这样, 我们想要更改`B`中的数, 而更改的位置是取决于 `A` 的. 对于`A`大于4的位置. 更改`B`在相应位置上的数为0.
 
@@ -80,8 +77,7 @@ df.B[df.A>4] = 0
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果对整列做批处理, 加上一列 'F', 并将 `F` 列全改为 `NaN`, 如下:
 
@@ -98,8 +94,7 @@ df['F'] = np.nan
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 用上面的方法也可以加上 `Series` 序列（但是长度必须对齐）。
 

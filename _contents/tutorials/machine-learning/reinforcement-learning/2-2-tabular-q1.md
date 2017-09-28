@@ -3,7 +3,7 @@ youku_id: XMTk2OTg5NDE0MA
 youtube_id: lfMICa9sEQE
 chapter: 2
 title: Q-learning 算法更新
-thumbnail: "/static/thumbnail/rl/2.2 qlearning 1.jpg"
+thumbnail: "/static/thumbnail/rl/2.2_qlearning1.jpg"
 publish-date: 2017-01-09
 description: "上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
@@ -14,7 +14,7 @@ post-headings:
   - 算法
   - 算法的代码形式
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze)
@@ -23,8 +23,7 @@ post-headings:
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 上次我们知道了 RL 之中的 Q-learning 方法是在做什么事, 今天我们就来说说一个更具体的例子. 让探索者学会走迷宫. 黄色的是天堂 (reward 1),
 黑色的地狱 (reward -1). 大多数 RL 是由 reward 导向的, 所以定义 reward 是 RL 中比较重要的一点.
@@ -36,8 +35,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/rl/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -48,8 +46,7 @@ On-policy 和 off-policy 的差别我们会在之后的 [Deep Q network (off-pol
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 首先我们先 import 两个模块,  `maze_env` 是我们的环境模块, 已经编写好了, 大家可以直接在[这里下载](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/2_Q_Learning_maze/maze_env.py),
 `maze_env` 模块我们可以不深入研究, 如果你对编辑环境感兴趣, 可以去看看如何使用 python 自带的简单 GUI 模块 `tkinter` 来编写虚拟环境.

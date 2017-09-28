@@ -4,7 +4,7 @@ youtube_id: fdwfd6VSNxs
 chapter: 1
 title: 课程要求
 publish-date: 2017-01-06
-thumbnail: "/static/thumbnail/rl/2 requirement.jpg"
+thumbnail: "/static/thumbnail/rl/2_requirement.jpg"
 description: "强化学习有一些现成的模块可以使用, 但是那些模块并不全面, 而且强化学习很依赖与你给予的学习环境.
 对于不同学习环境的强化学习, 可能 RL 的代码就不同. 所以我们要抱着以不变应万变的心态, 用基础的模块, 从基础学起.
 懂了原理, 再复杂的环境也不在话下.
@@ -21,7 +21,7 @@ post-headings:
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 强化学习有一些现成的模块可以使用, 但是那些模块并不全面, 而且强化学习很依赖与你给予的学习环境.
 对于不同学习环境的强化学习, 可能 RL 的代码就不同. 所以我们要抱着以不变应万变的心态, 用基础的模块, 从基础学起.
@@ -38,7 +38,7 @@ post-headings:
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 我也会制作每种强化学习对应的简介视频 (在这个学习列表里: [有趣的机器学习](/tutorials/machine-learning/ML-intro/)),
 大家可以只花很少的时间来观看了解这些学习方法的不同之处. 有了一定概念和基础,

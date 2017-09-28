@@ -12,6 +12,7 @@ post-headings:
   - 如何修改Backend
 ---
 
+
 学习资料:
   * backend [说明](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/3-backend.py)
 
@@ -21,7 +22,7 @@ post-headings:
 目前 Tensorflow 支持 Mac 和 Linux 系统，而 Theano 不但支持包括 Mac 和 Linux，还支持 Windows 系统，
 所以我们就可以选择自己可以用的 Backend 就可以。
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+{% include assign-heading.html %}
 
 每次当我们`import keras`的时候，就会看到屏幕显示当前使用的 Backend
 
@@ -35,7 +36,7 @@ Using Theano Backend
 
 这就说明现在使用的是Theano在作Backend。
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+{% include assign-heading.html %}
 
 ```python
 ~/.keras/keras.json

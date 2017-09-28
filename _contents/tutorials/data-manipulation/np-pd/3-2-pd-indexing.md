@@ -13,7 +13,7 @@ post-headings:
   - 根据混合的这两种 ix
   - 通过判断的筛选
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/12_selection.py)
@@ -37,8 +37,7 @@ df = pd.DataFrame(np.arange(24).reshape((6,4)),index=dates, columns=['A','B','C'
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 如果我们想选取`DataFrame`中的数据，下面描述了两种途径, 他们都能达到同一个目的：
 
@@ -83,8 +82,7 @@ A   B   C   D
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 同样我们可以使用标签来选择数据 `loc`, 本例子主要通过标签名字选择某一行数据，
 或者通过选择某行或者所有行（`:`代表所有行）然后选其中某一列或几列数据。:
@@ -118,8 +116,7 @@ Name: 2013-01-02 00:00:00, dtype: int64
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 另外我们可以采用位置进行选择 `iloc`, 在这里我们可以通过位置选择在不同情况下所需要的数据例如选某一个，连续选或者跨行选等操作。
 
@@ -146,8 +143,7 @@ print(df.iloc[[1,3,5],1:3])
 
 在这里我们可以通过位置选择在不同情况下所需要的数据, 例如选某一个，连续选或者跨行选等操作。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 当然我们可以采用混合选择 `ix`, 其中选择'A'和'C'的两列，并选择前三行的数据。
 
@@ -161,8 +157,7 @@ print(df.ix[:3,['A','C']])
 """
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 最后我们可以采用判断指令 (Boolean indexing) 进行选择. 我们可以约束某项条件然后选择出当前所有数据.
 

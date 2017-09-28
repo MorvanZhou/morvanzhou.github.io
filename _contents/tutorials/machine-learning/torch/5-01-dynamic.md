@@ -3,7 +3,7 @@ youku_id: XMjc4ODExNDYxMg
 youtube_id: 4IuaU08Wuq0
 title: 为什么 Torch 是动态的
 publish-date: 2017-05-27
-thumbnail: "/static/thumbnail/torch/5.1 dynamic.jpg"
+thumbnail: "/static/thumbnail/torch/5.1_dynamic.jpg"
 chapter: 5
 description: "听说过 Torch 的人都听说了 torch 是动态的, 那他的动态到底是什么呢? 我们用一个 RNN 的例子来展示一下动态计算到底长什么样.
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.
@@ -13,14 +13,13 @@ post-headings:
   - 动态?静态?
   - 动态RNN
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py)
   * [PyTorch 官网](http://pytorch.org/)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 听说过 Torch 的人都听说了 torch 是动态的, 那他的动态到底是什么呢? 我们用一个 RNN 的例子来展示一下动态计算到底长什么样.
 
@@ -28,8 +27,7 @@ post-headings:
 
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.
 下图是一种我在[强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)中的 Tensorflow 计算图.
@@ -45,8 +43,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 我们拿 [这一节内容的 RNN]({% link _contents/tutorials/machine-learning/torch/4-03-RNN-regression.md %})
 来解释动态计算图. 那节内容的[代码在这](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/11_RNN_regressor.py).

@@ -12,7 +12,7 @@ post-headings:
   - 导入数据－训练模型
   - 创建虚拟数据－可视化
 ---
-{% assign post-heading-count = -1 %}
+
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk5_datasets.py)
@@ -21,8 +21,7 @@ post-headings:
 今天来看 `Sklearn` 中的 `data sets`，很多而且有用，可以用来学习算法模型。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 eg: boston 房价, 糖尿病, 数字, Iris 花。
@@ -46,8 +45,7 @@ sklearn.datasets.make_regression(n_samples=100, n_features=100, n_informative=10
 接下来用代码练习一下。
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 导入 `datasets` 包，本文以 `Linear Regression` 为例。
@@ -61,8 +59,7 @@ import matplotlib.pyplot as plt
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 用 `datasets.load_boston()` 的形式加载数据，并给 `X` 和 `y` 赋值，这种形式在 `Sklearn` 中都是高度统一的。
@@ -97,8 +94,7 @@ print(data_y[:4])
 
 为了提高准确度，可以通过尝试不同的 `model`，不同的参数，不同的预处理等方法，入门的话可以直接用默认值。
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 下面是创造数据的例子。

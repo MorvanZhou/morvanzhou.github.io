@@ -11,15 +11,14 @@ post-headings:
   - gridspec
   - subplots
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt16_grid_subplot.py)
 
 matplotlib 的 subplot 还可以是分格的,这里介绍三种方法.
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`. 使用`plt.figure()`创建一个图像窗口
 
@@ -60,8 +59,7 @@ ax4.set_ylabel('ax4_y')
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用`import`导入`matplotlib.pyplot`模块, 并简写成`plt`.
 使用`import`导入`matplotlib.gridspec`, 并简写成`gridspec`.
@@ -91,8 +89,7 @@ ax10 = plt.subplot(gs[-1, -2])
 
 <img class="course-image" src="/static/results/plt/4_2_2.png" alt="{{ page.title }}{% increment image-count %}">
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用`plt.subplots`建立一个2行2列的图像窗口，`sharex=True`表示共享x轴坐标, `sharey=True`表示共享y轴坐标. 
 `((ax11, ax12), (ax13, ax14))`表示第1行从左至右依次放`ax11`和`ax12`, 第2行从左至右依次放`ax13`和`ax14`. 

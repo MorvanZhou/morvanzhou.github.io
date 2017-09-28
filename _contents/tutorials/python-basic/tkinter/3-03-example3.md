@@ -8,7 +8,7 @@ date: 2016-11-3
 post-headings:
 
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk15_login_example)
 

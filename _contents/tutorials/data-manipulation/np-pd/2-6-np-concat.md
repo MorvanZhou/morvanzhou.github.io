@@ -12,11 +12,10 @@ post-headings:
   - np.newaxis()
   - np.concatenate()
 ---
-{% assign post-heading-count = -1 %}
 
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+
+{% include assign-heading.html %}
 
 对于一个`array`的合并，我们可以想到按行、按列等多种方式进行合并。首先先看一个例子：
 
@@ -41,8 +40,7 @@ print(A.shape(),C.shape())
 # (3,) (2,3)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 利用`shape`函数可以让我们很容易地知道`A`和`C`的属性，从打印出的结果来看，`A`仅仅是一个拥有3项元素的数组（数列），而合并后得到的`C`是一个2行3列的矩阵。
 
@@ -62,8 +60,7 @@ print(A.shape(),D.shape())
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 说完了`array`的合并，我们稍稍提及一下前一节中转置操作，如果面对如同前文所述的`A`序列，
 转置操作便很有可能无法对其进行转置（因为`A`并不是矩阵的属性），此时就需要我们借助其他的函数操作进行转置：
@@ -109,8 +106,7 @@ print(A.shape,D.shape)
 # (3,1) (3,2)
 ```
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 当你的合并操作需要针对多个矩阵或序列时，借助`concatenate`函数可能会让你使用起来比前述的函数更加方便：
 

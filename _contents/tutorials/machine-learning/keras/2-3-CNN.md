@@ -7,7 +7,7 @@ description: "CNN 一般用来处理图片. 他在图片识别上有很多优势
 publish-date: 2016-10-30
 author: Mark JingNB
 chapter: 2
-thumbnail: "/static/thumbnail/keras/06 CNN.jpg"
+thumbnail: "/static/thumbnail/keras/06CNN.jpg"
 post-headings:
   - 搭建模型
   - 训练
@@ -18,7 +18,7 @@ post-headings:
   * 机器学习-简介系列 [CNN 简介]({% link _contents/tutorials/machine-learning/ML-intro/2-2-CNN.md %})
   * Tensorflow [CNN]({% link _contents/tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
   
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 这次我们主要讲CNN（Convolutional Neural Networks）卷积神经网络在 keras 上的代码实现。
 用到的数据集还是MNIST。不同的是这次用到的层比较多，导入的模块也相应增加了一些。
@@ -87,7 +87,7 @@ model.compile(optimizer=adam,
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 开始训练模型
 

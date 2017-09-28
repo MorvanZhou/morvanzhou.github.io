@@ -20,7 +20,7 @@ post-headings:
   * [我制作的 什么是遗传算法 动画简介]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * 论文 [The Microbial Genetic Algorithm ](https://pdfs.semanticscholar.org/b079/54447f861b074a54752b61af63d960862f92.pdf)
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[0] }}">{{ page.post-headings[0] }}</h4>
+ {% include assign-heading.html %}
 
 如果对遗传算法有兴趣的朋友, 强烈推荐先看看我制作的动画短片 [什么是遗传算法]({% link _contents/tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}), 在动画里有了基础的了解,
 在接下来的内容中, 你就如鱼得水啦.
@@ -33,7 +33,7 @@ Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. *
 
 
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[1] }}">{{ page.post-headings[1] }}</h4>
+ {% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/evolutionary-algorithm/2-4-1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -46,7 +46,7 @@ GA 中的 Elitism 问题通过这种方法巧妙解决了.
 
 {% include google-in-article-ads.html %}
 
-<h4 class="tut-h4-pad" id="{{ page.post-headings[2] }}">{{ page.post-headings[2] }}</h4>
+ {% include assign-heading.html %}
 
 这次我们还是通过之前那个找曲线中最大点的方式诠释 MGA 算法. class 中的结构框架基本没变, 只是少了 `select` 的功能.
 因为我们会将 `select` 功能写在 `evolve` 中. 这样方便点.

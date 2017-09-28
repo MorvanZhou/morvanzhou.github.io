@@ -10,13 +10,12 @@ post-headings:
   - 定义方程
   - 参数设置
 ---
-{% assign post-heading-count = -1 %}
+
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt19_animation.py)
   * [reference](http://matplotlib.org/examples/animation/simple_anim.html)
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 使用matplotlib做动画也是可以的，我们使用其中一种方式，function animation来说说，
 具体可参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html)。首先，我们做一些准备工作：
@@ -55,8 +54,7 @@ def init():
 
 {% include google-in-article-ads.html %}
 
-{% assign post-heading-count = post-heading-count | plus: 1 %}
-<h4 class="tut-h4-pad" id="{{ page.post-headings[post-heading-count] }}">{{ page.post-headings[post-heading-count] }}</h4>
+{% include assign-heading.html %}
 
 
 接下来，我们调用`FuncAnimation`函数生成动画。参数说明：
