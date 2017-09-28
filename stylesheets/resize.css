@@ -105,6 +105,9 @@
   .tut-content-menu {
   right: 1em;
   }
+  main {
+  width: 100%;
+  }
 }
 
 
@@ -112,9 +115,9 @@
 
 /* ===================== more than 800px ==================== */
 /* ====== video ===== */
-@media screen and  (min-width: 800px) {
+@media screen and (min-width: 800px) {
   main {
-  max-width: 800px;
+  width: 800px;
   }
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
   max-width: 800px;
