@@ -9,6 +9,23 @@ permalink: /recent-posts/
   {% assign items = site.contents | where: "sort-date", "true" %}
   {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 70 %}
   {% for item in sorted-items %}
+
+    {% assign index = forloop.index | modulo:10 %}
+    {% if index == 9 %}
+    <!-- ads -->
+    <li class="section">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="fluid"
+           data-ad-layout-key="-gt+8+1n-9c+ax"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="9829990588"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </li>
+    {% endif %}
     <li class="section">
       <a href="{{item.url}}">
         <img alt="{{item.title}}" src="{{item.thumbnail}}">
