@@ -434,7 +434,7 @@ padding: 0;
 display: flex;
 }
 
-#recent-post-ul img {
+#recent-post-ul img, .recent-update-img-a {
 height:130px;
 }
 .recent-post-text-div {
