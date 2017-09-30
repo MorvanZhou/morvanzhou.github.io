@@ -1,0 +1,63 @@
+---
+title: "赞助支持莫烦"
+permalink: /support/
+items:
+  - name: 支付宝
+    link: "/static/img/support/alipay.jpeg"
+    image-link: "/static/img/support/alipay.jpeg"
+  - name: 微信
+    link: "/static/img/support/Wechat.jpeg"
+    image-link: "/static/img/support/Wechat.jpeg"
+  - name: Patreon
+    link: "https://www.patreon.com/morvan"
+    image-link: "/static/img/support/patreon.jpg"
+  - name: Paypal
+    link: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=morvanzhou%40gmail%2ecom&amp;lc=C2&amp;item_name=MorvanPython&amp;currency_code=AUD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"
+    image-link: "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
+description: "正如这个教学网站, 如果没有大家的支持, 是做不起来的.
+本身自己并没有任何做网页的背景, 都是一步步学习,
+想尽力回报大家的支持, 体验更好的教学效果.
+所以我有了大家的支持, 也就有了一鼓动力, 再也不能好好偷懒了, 我要学习更多,
+用更好的效果来呈现给大家. 所以也希望大家可以继续助我一臂之力."
+---
+
+<div class="pad-main section ie-size">
+  <h1 class="page-title">为了更优秀</h1>
+
+
+  <p>
+      正如这个教学网站, 如果没有大家的支持, 是做不起来的.
+      本身自己并没有任何做网页的背景, 都是一步步学习,
+      想尽力回报大家的支持, 体验更好的教学效果.
+      所以我有了大家的支持, 也就有了一鼓动力, 再也不能好好偷懒了, 我要学习更多,
+      用更好的效果来呈现给大家. 所以也希望大家可以继续助我一臂之力.
+  </p>
+
+  <br>
+  <hr>
+  <div id="support-box">
+      <div id="support-box-wrapper">
+        {% for item in page.items %}
+          <div>
+            <h3>{{ item.name }}</h3>
+            <a href="{{ item.link }}">
+              <div class="support-dropdown">
+                <img style="{% if item.name != 'Paypal' %} border-radius: 10px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
+                     src="{{ item.image-link }}"
+                     alt="{{ item.name }}">
+
+                {% if item.name != 'Paypal' and item.name != 'Patreon' %}
+                  <div class="support-SD-dropdown">
+                    <img style="{% if item.name != 'Paypal' %} border-radius: 10px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
+                         src="{{ item.image-link }}"
+                         alt="{{ item.name }}">
+                  </div>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>
+

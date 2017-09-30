@@ -1,7 +1,7 @@
 
 <div class="PageNavigation">
   <!-- select url for next and previous -->
-  {% assign posts = site.contents | where: "category", page.category %}
+  {% assign posts = site.tutorials | where: "category", page.category %}
   {% assign posts = posts | sort: "id" %}
   {% for post in posts %}
     {% if post.id == page.id %}

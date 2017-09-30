@@ -4,7 +4,7 @@ structured-type: Course
 ---
 
 <!-- variables for this page -->
-{% assign category-tuts = site.contents | where: "category", page.tut-category-name | sort: "id" %}
+{% assign category-tuts = site.tutorials | where: "category", page.tut-category-name | sort: "id" %}
 
 <!-- for this page contents -->
 <div class="section ie-size">

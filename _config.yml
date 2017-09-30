@@ -2,71 +2,74 @@
 markdown: kramdown
 
 highlighter: rouge
-permalink: pretty
 url: https://morvanzhou.github.io/
-
 exclude: ['README.md']
 
 
 # collection and their defaults
 
 collections:
-  contents:
+  front-pages:
     output: true
-    permalink: /:path/
-
-  whatever:
+  loop-description:
+    output: false
+  tutorials:
     output: true
-    permalink: /whatever/:path/
-
-tipue_search:
-  include:
-    pages: true
-    collections: [whatever, contents]
+    permalink: /:collection/:path/
+  table-contents:
+    output: true
+    permalink: /tutorials/:path/
 
 
 defaults:
   - scope:
-      path: "_contents/pages/tutorial-home-page"
+      path: "_front-pages"
     values:
-      content-for: tutorials
+      layout: front-page
 
   - scope:
-      path: "_contents/pages/module-descriptions/python-basic"
+      path: "_table-contents"
     values:
-      content-for: python-basic
+      layout: table-of-contents
 
   - scope:
-      path: "_contents/pages/module-descriptions/data-manipulation"
+      path: "_tutorials"
+      type: posts
     values:
-      content-for: data-manipulation
-
-  - scope:
-      path: "_contents/pages/module-descriptions/machine-learning"
-    values:
-      content-for: machine-learning
-
-  - scope:
-      path: "_contents/pages/module-descriptions/others"
-    values:
-      content-for: others
-
-  - scope:
-      path: "_contents/tutorials"
-    values:
+      layout: tutorial-post
       editor: 莫烦
       author: 莫烦
       author-link: "#"
-      autoplay: true
-      published: true
       comments: true
-      sort-date: true
-      keywords: 教学, 教程, 学习
+      published: true
 
-  ### start of tutorials ###
-
+  # module descriptions
   - scope:
-      path: "_contents/tutorials/machine-learning/ML-intro"
+      path: "_loop-description/python-basic"
+    values:
+      module: python-basic
+  - scope:
+      path: "_loop-description/home"
+    values:
+      module: home
+  - scope:
+      path: "_loop-description/data-manipulation"
+    values:
+      module: data-manipulation
+  - scope:
+      path: "_loop-description/machine-learning"
+    values:
+      module: machine-learning
+  - scope:
+      path: "_loop-description/others"
+    values:
+      module: others
+
+
+
+  # tutorial default
+  - scope:
+      path: "_tutorials/machine-learning/ML-intro"
     values:
       layout: tutorial-post
       series: 有趣的机器学习
@@ -75,7 +78,7 @@ defaults:
       keywords: 机器学习, 简介, 动画
 
   - scope:
-      path: "_contents/tutorials/machine-learning/reinforcement-learning"
+      path: "_tutorials/machine-learning/reinforcement-learning"
     values:
       layout: tutorial-post
       series: 强化学习 Reinforcement Learning
@@ -84,7 +87,7 @@ defaults:
       keywords: reinforcement learning, 强化学习, tensorflow
 
   - scope:
-      path: "_contents/tutorials/machine-learning/evolutionary-algorithm"
+      path: "_tutorials/machine-learning/evolutionary-algorithm"
     values:
       layout: tutorial-post
       series: 进化算法 Evolutionary Algorithm
@@ -93,7 +96,7 @@ defaults:
       keywords: evolutionary algorithm, 进化算法, 遗传算法, genetic algorithm, neuro evalution
 
   - scope:
-      path: "_contents/tutorials/machine-learning/keras"
+      path: "_tutorials/machine-learning/keras"
     values:
       layout: tutorial-post
       series: Keras
@@ -102,7 +105,7 @@ defaults:
       keywords: keras, 神经网络, tensorflow, theano
 
   - scope:
-      path: "_contents/tutorials/machine-learning/torch"
+      path: "_tutorials/machine-learning/torch"
     values:
       layout: tutorial-post
       series: PyTorch
@@ -111,7 +114,7 @@ defaults:
       keywords: Torch, pytorch, 神经网络
 
   - scope:
-      path: "_contents/tutorials/machine-learning/sklearn"
+      path: "_tutorials/machine-learning/sklearn"
     values:
       layout: tutorial-post
       series: Sklearn
@@ -121,7 +124,7 @@ defaults:
 
 
   - scope:
-      path: "_contents/tutorials/machine-learning/tensorflow"
+      path: "_tutorials/machine-learning/tensorflow"
     values:
       layout: tutorial-post
       series: Tensorflow
@@ -130,7 +133,7 @@ defaults:
       keywords: tensorflow, tensorboard, 机器学习, 神经网络
 
   - scope:
-      path: "_contents/tutorials/machine-learning/theano"
+      path: "_tutorials/machine-learning/theano"
     values:
       layout: tutorial-post
       series: Theano
@@ -139,7 +142,7 @@ defaults:
       keywords: theano, 机器学习, 神经网络
 
   - scope:
-      path: "_contents/tutorials/data-manipulation/np-pd"
+      path: "_tutorials/data-manipulation/np-pd"
     values:
       layout: tutorial-post
       series: Numpy & Pandas
@@ -148,7 +151,7 @@ defaults:
       keywords: numpy, pandas, 数据, 处理
 
   - scope:
-      path: "_contents/tutorials/data-manipulation/plt"
+      path: "_tutorials/data-manipulation/plt"
     values:
       layout: tutorial-post
       series: Matplotlib
@@ -157,7 +160,7 @@ defaults:
       keywords: matplotlib, plt, 数据可视化
 
   - scope:
-      path: "_contents/tutorials/python-basic/basic"
+      path: "_tutorials/python-basic/basic"
     values:
       layout: tutorial-post
       series: Python 基础
@@ -166,7 +169,7 @@ defaults:
       keywords: python, 基础
 
   - scope:
-      path: "_contents/tutorials/python-basic/multiprocessing"
+      path: "_tutorials/python-basic/multiprocessing"
     values:
       layout: tutorial-post
       series: 多进程 Multiprocessing
@@ -175,7 +178,7 @@ defaults:
       keywords: python, 基础, 多进程, multiprocessing
 
   - scope:
-      path: "_contents/tutorials/python-basic/threading"
+      path: "_tutorials/python-basic/threading"
     values:
       layout: tutorial-post
       series: 多线程 Threading
@@ -185,7 +188,7 @@ defaults:
 
 
   - scope:
-      path: "_contents/tutorials/python-basic/tkinter"
+      path: "_tutorials/python-basic/tkinter"
     values:
       layout: tutorial-post
       series: 窗口 Tkinter
@@ -194,7 +197,7 @@ defaults:
       keywords: python, 基础, GUI, 窗口, tkinter, tk
 
   - scope:
-      path: "_contents/tutorials/python-basic/basic"
+      path: "_tutorials/python-basic/basic"
     values:
       layout: tutorial-post
       series: Python 基础
@@ -203,7 +206,7 @@ defaults:
       keywords: python, 基础
 
   - scope:
-      path: "_contents/tutorials/others/git"
+      path: "_tutorials/others/git"
     values:
       layout: tutorial-post
       series: Git 版本管理

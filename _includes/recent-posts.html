@@ -5,8 +5,7 @@
   </a>
 
   <ul id="recent-update" style="padding-bottom:2em;">
-    {% assign items = site.contents | where: "sort-date", "true" %}
-    {% assign sorted-items = items | sort: "publish-date" | reverse | slice: 0, 5 %}
+    {% assign sorted-items = site.tutorials | sort: "publish-date" | reverse | slice: 0, 5 %}
     {% for item in sorted-items %}
 
     <li><a href="{{item.url}}">

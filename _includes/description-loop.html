@@ -1,14 +1,27 @@
 
-{% assign words = include.url | split: '/' %}
-{% assign descriptions = site.contents | where: "content-for", words[-1] %}
-{% assign descriptions = descriptions | sort: "path" %}
+{% assign descriptions = site.loop-description | where: "module", page.module %}
 {% for description in descriptions %}
 <div class="section ie-size">
 	<div class="pad-main">
 	<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h1 class="small-h1">
 		<img class="icon-image" src="{{description.icon-dir}}">
 			{{description.title}}</h1></a>
-	{{ description.content }}
+
+		{% if description.tut-course-detail %}
+		<ul class="tut-course-thumbnail">
+	  {% for item in description.tut-course-detail %}
+	    <li><a href="{{ description.tut-dir }}{{ item[0] }}/">
+	     <img alt="{{ item[1] }}" src="/static/img/course_cover/{{ item[2] }}" height="120" >
+	    </a></li>
+	  {% endfor %}
+	  </ul>
+		<br>
+		{% endif %}
+
+		<p>
+		{{ description.excerpt }}
+		</p>
+
 	</div>
 </div>
 {% endfor %}
