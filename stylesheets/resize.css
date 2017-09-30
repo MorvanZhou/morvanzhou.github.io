@@ -2,8 +2,12 @@
 /* ===================== PHONE ==================== */
 @media screen and  (max-width: 40.5em) {
   /* =============== recent post ========== */
-  #recent-post-ul img, .recent-update-img-a {
-  height:90px;
+  .recent-update-img-div {
+  height: 90px;
+  }
+
+  #recent-post-ul img {
+  height:100%;
   }
   .recent-post-description {
   display: none;

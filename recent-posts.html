@@ -30,9 +30,11 @@ permalink: /recent-posts/
     {% endif %}
 
     <li class="section">
-      <a class="recent-update-img-a" href="{{item.url}}">
-        <img alt="{{item.title}}" src="{{item.thumbnail}}">
-      </a>
+      <div class="recent-update-img-div">
+        <a href="{{item.url}}">
+          <img alt="{{item.title}}" src="{{item.thumbnail}}">
+        </a>
+      </div>
       <div class="recent-post-text-div">
         <a href="{{item.url}}">
           <div class="recent-post-title" style="font-size:1em;"><strong>{{item.title}}</strong></div>

@@ -177,7 +177,8 @@ float: right;
 }
 
 #home-nav .search-img {
-max-height:1.3em;
+max-height:1.1em;
+vertical-align: middle;
 }
 
 .search-box {
@@ -197,6 +198,7 @@ border: 5px solid #4cb07b;
 #home-nav a {
 color: var(--c-green-no-hover);
 color: #191818;
+vertical-align: middle;
 }
 
 #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited{
@@ -427,19 +429,24 @@ width: 350px;
 list-style-type: none;
 padding: 0;
 margin:0;
-display: inline-block;
+display: block;
 }
+
 #recent-post-ul li {
 padding: 0;
 display: flex;
+width: 100%;
 }
 
-#recent-post-ul img, .recent-update-img-a {
-height:130px;
+.recent-update-img-div {
+height: 130px;
+}
+
+#recent-post-ul img {
+height:100%;
 }
 .recent-post-text-div {
 padding: 0.1em 0.8em;
-display: block;
 }
 
 #recent-post-ul img:hover {
