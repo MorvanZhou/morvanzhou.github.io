@@ -1,42 +1,47 @@
 ---
 layout: front-page
+title: test
 permalink: /test/
 youtube_id: Etj_gclFFFo
 youku_id: XMTg1MTYwNDg2OA
 ---
 
-<p>切视频测试1, iframe php</p>
-<div class="video-container">
-	<iframe
-			id="myVideo"
-			class="myvideo"
-			width="560" height="315"
-			src="https://www.youtube.com/embed/{{page.youtube_id}}"
-			frameborder="0"
-			allowfullscreen>
-		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
-	</iframe>
+<div class="section">
+	<p>切视频测试1, iframe php</p>
+	<div class="video-container">
+		<iframe
+				id="myVideo"
+				class="myvideo"
+				width="560" height="315"
+				src="https://www.youtube.com/embed/{{page.youtube_id}}"
+				frameborder="0"
+				allowfullscreen>
+		</iframe>
+	</div>
+
+	<div id="switch-video-div">
+		<button onclick="myFunction()" type="button" id="switch-video">切换成 优酷 视频</button>
+		(
+		<p style="display: inline; font-size: 0.8em; cursor: help;"
+		    title="优酷只支持 http 协议, 而本网站是 https, 所以会冲突">浏览器可能阻拦优酷, 请设置解除阻拦, 或
+		<a href="http://v.youku.com/v_show/id_{{page.youku_id}}=="
+		     target="_blank" >点击这里</a></p>
+		)
+	</div>
+
 </div>
 
-<div id="switch-video-div">
-	<button onclick="myFunction()" type="button" id="switch-video">切换成 优酷 视频</button>
-	(
-	<p style="display: inline; font-size: 0.8em; cursor: help;"
-	    title="优酷只支持 http 协议, 而本网站是 https, 所以会冲突">浏览器可能阻拦优酷, 请设置解除阻拦, 或
-	<a href="http://v.youku.com/v_show/id_{{page.youku_id}}=="
-	     target="_blank" >点击这里</a></p>
-	)
-</div>
 
-<p>测试2, iframe embed</p>
-<div class="video-container">
-	<iframe
-			width="560" height="315"
-			src="//player.youku.com/embed/{{page.youku_id}}=="
-			frameborder="0"
-			allowfullscreen>
-		[默认会播放 Youtube 视频, 如需切换优酷,请点下面绿色按钮. ^^]
-	</iframe>
+<div class="section">
+	<p>测试2, iframe embed</p>
+	<div class="video-container">
+		<iframe
+				width="560" height="315"
+				src="//player.youku.com/embed/{{page.youku_id}}=="
+				frameborder="0"
+				allowfullscreen>
+		</iframe>
+	</div>
 </div>
 
 <!--<p>测试 flash iframe https 方法</p>-->
@@ -61,7 +66,7 @@ youku_id: XMTg1MTYwNDg2OA
 
 <!--<p>测试 flash embed https 方法</p>-->
 <!--<embed-->
-		<!--src='https://players.youku.com/player.php/sid/{{page.youku_id}}==/v.swf'-->
+		<!--src='https://player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf'-->
 		<!--allowFullScreen='true' quality='high' width='480' height='400'-->
 		<!--align='middle' allowScriptAccess='always'-->
 		<!--type='application/x-shockwave-flash'>-->
