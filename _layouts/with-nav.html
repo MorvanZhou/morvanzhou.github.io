@@ -81,15 +81,22 @@ nav-items:
       <li><a href="{{site.baseurl}}/discuss/">大家说</a></li>
       <li><a href="{{site.baseurl}}/support/">赞助</a></li>
       <li><a href="{{site.baseurl}}/about/">About</a></li>
-
-      <!-- bing search -->
       <li>
+        <!-- 360 search -->
         <a class="search-bar clicker"><img class="search-img" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go"></a>
-        <form class="search-box dropdown-content" method="get" action="https://www.bing.com/search" target="_blank">
-          <input type="hidden" name="q1" value="site:morvanzhou.github.io" />
-          <input class="search-text" type="text" name="q" placeholder="Search.." size="20" value=""/>
-          <!-- <input class="search-img" type="image" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go" /> -->
+        <form class="search-box dropdown-content" action="https://www.so.com/s" target="_blank">
+          <input class="search-text" type="text" autocomplete="on" name="q" size="20" >
+          <input type="hidden" name="ie" value="utf8">
+          <input type="hidden" name="src" value="zz_morvanzhou.github.io">
+          <input type="hidden" name="site" value="morvanzhou.github.io">
+          <input type="hidden" name="rg" value="1">
         </form>
+
+        <!-- bing search -->
+        <!--<form class="search-box dropdown-content" method="get" action="https://www.bing.com/search" target="_blank">-->
+          <!--<input type="hidden" name="q1" value="site:morvanzhou.github.io" />-->
+          <!--<input class="search-text" type="text" name="q" placeholder="Search.." size="20" value=""/>-->
+        <!--</form>-->
       </li>
 
       <!-- tutorial navigation -->
