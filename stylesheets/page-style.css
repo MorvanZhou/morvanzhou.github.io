@@ -435,7 +435,6 @@ display: block;
 #recent-post-ul li {
 padding: 0;
 display: flex;
-width: 100%;
 }
 
 .recent-update-img-div {
