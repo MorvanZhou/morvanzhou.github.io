@@ -2,7 +2,7 @@
 /* ===================== PHONE ==================== */
 @media screen and  (max-width: 40.5em) {
   /* =============== recent post ========== */
-  #recent-post-ul img {
+  #recent-post-ul img, .recent-update-img-a {
   height:90px;
   }
   .recent-post-description {
