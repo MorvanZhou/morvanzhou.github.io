@@ -84,7 +84,7 @@
   }
 
   /* ======= tutorial right part ====== */
-  .tut-right-side-menu {
+  .tut-right-bar {
   display: none;
   width: 0;
   }
@@ -116,7 +116,7 @@
   main, main .tut-post-main {
   width: 100%;
   }
-  .tut-right-side-menu {
+  .tut-right-bar {
   display: none;
   }
 }
@@ -149,8 +149,11 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      .ie-size {
      width: 700px;
+     margin: 0.5em auto;
      }
-
+     .tut-right-bar {
+     width: calc(1000px - 700px - 1%);
+     }
      @media screen and  (max-width: 40.5em) {
      .ie-size {
      width: 100%;

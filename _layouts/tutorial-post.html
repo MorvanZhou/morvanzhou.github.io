@@ -99,7 +99,7 @@ structured-type: BlogPosting
 
 
   <!-- right side section -->
-  <div class="tut-right-side-menu">
+  <div class="tut-right-bar">
 
 
     <!-- table-content-nav side section -->
@@ -149,29 +149,29 @@ $(function () {
 
   var msie6 = $.browser == 'msie' && $.browser.version < 7;
 
-  if (!msie6 && $('.tut-right-side-menu').offset()!=null) {
-    var top = $('.tut-right-side-menu').offset().top - parseFloat($('.tut-right-side-menu').css('margin-top').replace(/auto/, 0));
-    var height = $('.tut-right-side-menu').height();
+  if (!msie6 && $('.tut-right-bar').offset()!=null) {
+    var top = $('.tut-right-bar').offset().top - parseFloat($('.tut-right-bar').css('margin-top').replace(/auto/, 0));
+    var height = $('.tut-right-bar').height();
     var winHeight = $(window).height();
-    var footerTop = $('footer').offset().top + 2000 - parseFloat($('footer').css('margin-top').replace(/auto/, 0));
-    var gap = 4;
+    var footerTop = $('footer').offset().top + 20 - parseFloat($('footer').css('margin-top').replace(/auto/, 0));
+    var gap = 3;
     $(window).scroll(function (event) {
       // what the y position of the scroll is
       var y = $(this).scrollTop();
 
       // whether that's below the form
-      if (y+winHeight >= top+ height+gap && y+winHeight<=footerTop) {
+      if (y + winHeight >= top + height+gap && y + winHeight <= footerTop) {
         // if so, ad the fixed class
-        $('.tut-right-side-menu').addClass('tut-right-side-menu-fixed').css('top',winHeight-height-gap +'px');
+        $('.tut-right-bar').addClass('tut-right-bar-fixed').css('top',winHeight-height-gap +'px');
       }
-      else if (y+winHeight>footerTop) {
+      else if (y+winHeight > footerTop) {
         // if so, ad the fixed class
-       $('.tut-right-side-menu').addClass('tut-right-side-menu-fixed').css('top',footerTop-height-y-gap+'px');
+       $('.tut-right-bar').addClass('tut-right-bar-fixed').css('top',footerTop-height-y-gap+'px');
       }
       else
       {
         // otherwise remove it
-        $('.tut-right-side-menu').removeClass('tut-right-side-menu-fixed').css('top','0px');
+        $('.tut-right-bar').removeClass('tut-right-bar-fixed').css('top','0px');
       }
     });
   }

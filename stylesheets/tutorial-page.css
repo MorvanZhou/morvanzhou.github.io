@@ -174,7 +174,7 @@ padding: 0;
 padding: 0 2em;
 }
 
-.tut-right-side-menu, .tut-post-main {
+.tut-right-bar, .tut-post-main {
 display: inline-block;
 vertical-align: top;
 top: 4.5em;
@@ -185,12 +185,10 @@ filter: none !important;
 width: 700px;
 }
 
-.tut-right-side-menu {
+.tut-right-bar {
 width: calc(100% - 700px - 1%);
 font-size: 0.85em;
 }
-
-/* ======= tutorial left part ====== */
 
 
 /* ======= tutorial right part ====== */
@@ -228,7 +226,7 @@ background-color: var(--c-tut-table-hover);
 background-color: #3d9667;
 }
 
-.tut-right-side-menu-fixed {
+.tut-right-bar-fixed {
   position: fixed;
   top: 0;
   margin-left: 5px;
