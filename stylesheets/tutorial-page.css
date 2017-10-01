@@ -188,7 +188,7 @@ width: 700px;
 .tut-right-bar {
 width: calc(100% - 700px - 1%);
 font-size: 0.85em;
-min-height: calc(500px + 700px);
+/*min-height: calc(500px + 700px);*/
 }
 
 
