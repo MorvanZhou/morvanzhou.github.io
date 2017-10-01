@@ -16,19 +16,9 @@
   <link href="/stylesheets/resize.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
 
-  <!-- click dropdown -->
-  <script>
-  $(document).ready(function(){
-    $('.clicker').on("click", function(e){
-      $(this).next('.dropdown-content').toggle();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-  });
-  </script>
-
-  <!-- structured data -->
   {% if layout.structured-type == "BlogPosting" %}
+    <!-- post page data -->
+    <script src="/js/side-lazy-load.js"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,6 +61,17 @@
       }
       </script>
   {% endif %}
+
+  <!-- click dropdown -->
+  <script>
+  $(document).ready(function(){
+    $('.clicker').on("click", function(e){
+      $(this).next('.dropdown-content').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
 
 </head>
 
