@@ -198,6 +198,8 @@ font-size: 0.85em;
 background-color: var(--c-tut-table);
 background-color: #4cb07b;
 margin-bottom: 0px;
+height: 500px;
+overflow-y: scroll;
 }
 
 .tut-table-content-nav p {
