@@ -154,6 +154,9 @@
      .tut-right-bar {
      width: calc(1000px - 700px - 1%);
      }
+     .tut-post-main {
+     margin-left:10%;
+     }
      @media screen and  (max-width: 40.5em) {
      .ie-size {
      width: 100%;
