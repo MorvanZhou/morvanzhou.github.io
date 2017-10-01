@@ -53,7 +53,7 @@ opacity:0.8;
 z-index: 3;
 position:fixed;
 bottom: 2%;
-right: calc((100% - 800px) / 2 + 1.0em);
+right: 2%;
 }
 
 .tut-content-menu img {
@@ -174,73 +174,64 @@ padding: 0;
 padding: 0 2em;
 }
 
-.tut-right-side-menu, .tut-left-side-menu {
-position: fixed;
+.tut-right-side-menu, .tut-post-main {
+display: inline-block;
+vertical-align: top;
 top: 4.5em;
-font-size: 0.85em;
-margin: 0;
 filter: none !important;
 }
 
-
-/* ======= tutorial left part ====== */
-.tut-left-side-menu {
-left: 0%;
-width: calc((100% - 800px) / 2 - 0.5%);
-background-color: var(--c-tut-table);
-background-color: #4cb07b;
-height: calc(100% - 5em);
-overflow-y: scroll;
+.tut-post-main {
+width: 700px;
 }
 
-.tut-left-side-menu p {
+.tut-right-side-menu {
+width: calc(100% - 700px - 1%);
+font-size: 0.85em;
+}
+
+/* ======= tutorial left part ====== */
+
+
+/* ======= tutorial right part ====== */
+.tut-table-content-nav {
+background-color: var(--c-tut-table);
+background-color: #4cb07b;
+margin-bottom: 0px;
+}
+
+.tut-table-content-nav p {
+margin:0;
+padding: 0.5em 0;
 color: black;
 text-align: center;
 font-size: 1.2em;
 }
 
-.tut-left-ul {
+.tut-table-content-nav-contents {
 padding: 0 0.5em 0 2em;
 }
 
-.tut-left-ul a:visited, .tut-left-ul a:link {
+.tut-table-content-nav-contents a:visited, .tut-table-content-nav-contents a:link {
 color: black;
-opacity:0.9;
+opacity:1;
 }
 
-.tut-left-li {
+.tut-table-content-nav-li {
 padding: 0.3em 0;
 }
 
-.tut-left-li:hover {
+.tut-table-content-nav-li:hover {
 background-color: var(--c-tut-table-hover);
 background-color: #3d9667;
 }
 
-/* ======= tutorial right part ====== */
-.tut-right-side-menu {
-right: 0.5%;
-width: calc((100% - 800px) / 2 - 1%);
-height:100%;
+.tut-right-side-menu-fixed {
+  position: fixed;
+  top: 0;
+  margin-left: 5px;
+  width: calc(1000px - 700px - 0.9%);
 }
-
-.side-nav {
-text-align: right;
-margin-top:0;
-padding: 1em;
-}
-
-.side-nav ul {
-text-decoration: none;
-list-style-type: none;
-padding:0;
-}
-
-.side-nav a:hover {
-text-decoration: underline;
-}
-
-
 
 
 /* ======= video and next previous button ====== */
