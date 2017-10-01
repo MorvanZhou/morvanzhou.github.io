@@ -65,6 +65,10 @@
     font-size:1.4em;
     }
 
+  #home-nav .search-img {
+    padding: 0 0.3em;
+  }
+
   /* =========== main body ===== */
   .pad-main {
     padding: 1em 0.5em;
