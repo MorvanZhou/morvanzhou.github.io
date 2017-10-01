@@ -34,7 +34,6 @@ defaults:
 
   - scope:
       path: "_tutorials"
-      type: posts
     values:
       layout: tutorial-post
       editor: 莫烦
@@ -70,7 +69,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/ML-intro"
     values:
-      layout: tutorial-post
       series: 有趣的机器学习
       tut-permalink: /tutorials/machine-learning/ML-intro/
       category: ML-intro
@@ -79,7 +77,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/reinforcement-learning"
     values:
-      layout: tutorial-post
       series: 强化学习 Reinforcement Learning
       tut-permalink: /tutorials/machine-learning/reinforcement-learning/
       category: reinforcement-learning
@@ -88,7 +85,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/evolutionary-algorithm"
     values:
-      layout: tutorial-post
       series: 进化算法 Evolutionary Algorithm
       tut-permalink: /tutorials/machine-learning/evolutionary-algorithm/
       category: evolutionary-algorithm
@@ -97,7 +93,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/keras"
     values:
-      layout: tutorial-post
       series: Keras
       tut-permalink: /tutorials/machine-learning/keras/
       category: keras
@@ -106,7 +101,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/torch"
     values:
-      layout: tutorial-post
       series: PyTorch
       tut-permalink: /tutorials/machine-learning/torch/
       category: torch
@@ -115,7 +109,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/sklearn"
     values:
-      layout: tutorial-post
       series: Sklearn
       tut-permalink: /tutorials/machine-learning/sklearn/
       category: sklearn
@@ -125,7 +118,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/tensorflow"
     values:
-      layout: tutorial-post
       series: Tensorflow
       tut-permalink: /tutorials/machine-learning/tensorflow/
       category: tensorflow
@@ -134,7 +126,6 @@ defaults:
   - scope:
       path: "_tutorials/machine-learning/theano"
     values:
-      layout: tutorial-post
       series: Theano
       tut-permalink: /tutorials/machine-learning/theano/
       category: theano
@@ -143,7 +134,6 @@ defaults:
   - scope:
       path: "_tutorials/data-manipulation/np-pd"
     values:
-      layout: tutorial-post
       series: Numpy & Pandas
       tut-permalink: /tutorials/data-manipulation/np-pd/
       category: np-pd
@@ -152,7 +142,6 @@ defaults:
   - scope:
       path: "_tutorials/data-manipulation/plt"
     values:
-      layout: tutorial-post
       series: Matplotlib
       tut-permalink: /tutorials/data-manipulation/plt/
       category: plt
@@ -161,7 +150,6 @@ defaults:
   - scope:
       path: "_tutorials/python-basic/basic"
     values:
-      layout: tutorial-post
       series: Python 基础
       tut-permalink: /tutorials/python-basic/basic/
       category: Python 基础
@@ -170,7 +158,6 @@ defaults:
   - scope:
       path: "_tutorials/python-basic/multiprocessing"
     values:
-      layout: tutorial-post
       series: 多进程 Multiprocessing
       tut-permalink: /tutorials/python-basic/multiprocessing/
       category: multiprocessing
@@ -179,7 +166,6 @@ defaults:
   - scope:
       path: "_tutorials/python-basic/threading"
     values:
-      layout: tutorial-post
       series: 多线程 Threading
       tut-permalink: /tutorials/python-basic/threading/
       category: threading
@@ -189,7 +175,6 @@ defaults:
   - scope:
       path: "_tutorials/python-basic/tkinter"
     values:
-      layout: tutorial-post
       series: 窗口 Tkinter
       tut-permalink: /tutorials/python-basic/tkinter/
       category: tkinter
@@ -198,7 +183,6 @@ defaults:
   - scope:
       path: "_tutorials/python-basic/basic"
     values:
-      layout: tutorial-post
       series: Python 基础
       tut-permalink: /tutorials/python-basic/basic/
       category: basic
@@ -207,7 +191,6 @@ defaults:
   - scope:
       path: "_tutorials/others/git"
     values:
-      layout: tutorial-post
       series: Git 版本管理
       tut-permalink: /tutorials/others/git/
       category: git

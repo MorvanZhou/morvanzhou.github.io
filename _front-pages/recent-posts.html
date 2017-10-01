@@ -5,6 +5,7 @@ permalink: /recent-posts/
 ---
 
 <ul id="recent-post-ul">
+  <h1 style="display: none;">{{page.title}}</h1>
   {% assign sorted-items = site.tutorials | sort: "publish-date" | reverse | slice: 0, 70 %}
   {% for item in sorted-items %}
 
