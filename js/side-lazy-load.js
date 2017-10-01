@@ -5,9 +5,9 @@ $(function () {
 
   if (!msie6 && $('.tut-right-bar').offset()!=null) {
     var top = $('.tut-right-bar').offset().top - parseFloat($('.tut-right-bar').css('margin-top').replace(/auto/, 0));
-    var height = $('.tut-right-bar').height();
+    var height = Math.max(1100, $('.tut-right-bar').height());
     var winHeight = $(window).height();
-    var footerTop = $('footer').offset().top + 20 - parseFloat($('footer').css('margin-top').replace(/auto/, 0));
+    var footerTop = $('footer').offset().top + 3000 - parseFloat($('footer').css('margin-top').replace(/auto/, 0));
     var gap = 4;
     $(window).scroll(function (event) {
       // what the y position of the scroll is
