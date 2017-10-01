@@ -128,8 +128,8 @@
 /* ====== video ===== */
 @media screen and (min-width: 800px) {
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
-  max-width: 700px;
-  max-height: calc(700px / 16 * 9);
+  max-width: 800px;
+  max-height: calc(800px / 16 * 9);
   margin: 0 auto;
   }
   main {
@@ -148,8 +148,7 @@
 /* ======= IE ====== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      .ie-size {
-     width: 800px;
-     margin: 0 auto;
+     width: 700px;
      }
      @media screen and  (max-width: 40.5em) {
      .ie-size {
