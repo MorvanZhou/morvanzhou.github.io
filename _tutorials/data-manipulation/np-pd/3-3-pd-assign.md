@@ -8,7 +8,7 @@ date: 2016-11-3
 chapter: 3
 post-headings:
   - 创建数据
-  - 根据位置设置 (loc, iloc)
+  - 根据位置设置 loc 和 iloc
   - 根据条件设置
   - 按行或列设置
   - 添加数据

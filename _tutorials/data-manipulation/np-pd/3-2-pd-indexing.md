@@ -9,7 +9,7 @@ chapter: 3
 post-headings:
   - 简单的筛选
   - 根据标签 loc
-  - 根据序列: iloc
+  - 根据序列 iloc
   - 根据混合的这两种 ix
   - 通过判断的筛选
 ---
