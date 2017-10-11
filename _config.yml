@@ -189,10 +189,18 @@ defaults:
       keywords: python, 基础
 
   - scope:
+      path: "_tutorials/others/linux-basic"
+    values:
+      series: Linux 简易教学
+      tut-permalink: /tutorials/others/linux-basic/
+      category: linux-basic
+      keywords: linux, 基础
+      published: true
+
+  - scope:
       path: "_tutorials/others/git"
     values:
       series: Git 版本管理
       tut-permalink: /tutorials/others/git/
       category: git
       keywords: 其他, git, VCS
-      published: true

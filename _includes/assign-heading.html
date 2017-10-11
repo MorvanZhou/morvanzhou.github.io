@@ -5,6 +5,6 @@
 
 {% assign heading = page.post-headings[post-heading-count] %}
 {% assign hid = heading | replace: " ", "" %}
-<h4 class="tut-h4-pad" id="{{ hid }}">{{ heading }}</h4>
+<h2 class="tut-h2-pad" id="{{ hid }}">{{ heading }}</h2>
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}
