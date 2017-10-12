@@ -25,6 +25,13 @@
 
   {% if layout.structured-type == "BlogPosting" %}
     <!-- post page data -->
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="{{ page.thumbnail }}"/>
+    <meta property="og:release_date" content="{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}"/>
+    <!--选填-->
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}" />
+
     <script src="/js/side-lazy-load.js"></script>
     <script type="application/ld+json">
     {
