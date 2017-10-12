@@ -1,4 +1,4 @@
-function videoGFW(src) {
+function videoChinaIP(src) {
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
         var request = new XMLHttpRequest();
@@ -7,14 +7,14 @@ function videoGFW(src) {
     {// code for IE6, IE5
         var request = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    request.open('GET', 'https://freegeoip.net/xml');
+    request.open('GET', '//freegeoip.net/xml/4.2.2.2');
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
             var xmlDoc = request.responseXML;
             var root = xmlDoc.documentElement;
             var element = root.getElementsByTagName("CountryName");
             var country = element[0].firstChild.nodeValue;
-            if (country != "China"){
+            if (country == "China"){
                 chooseVideo(src);
             }
         }
