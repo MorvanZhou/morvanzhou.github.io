@@ -26,57 +26,57 @@
   <script type="text/javascript" src="//s.union.360.cn/195005.js" async defer></script>
 
   {% if layout.structured-type == "BlogPosting" %}
-    <!-- post page data -->
-    <meta property="og:type" content="blog"/>
-    <meta property="og:image" content="{{ page.thumbnail }}"/>
-    <meta property="og:release_date" content="{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}"/>
-    <!--选填-->
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:author" content="{{ page.author }}"/>
-
-    <script src="/js/side-lazy-load.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "@id": "{{ site.url }}{{ page.url }}",
-      "headline": "{{ page.title }}",
-      "image": "{{ site.url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/static/img/description/mofanpython.png{% endif %}",
-      "author": {
-        "@type": "Person",
-        "name": "莫烦",
-        "email": "morvanzhou@hotmail.com"
-      },
-      "description": "{{ page.description }}",
-      "url": "{{ site.url }}{{ page.url }}",
-      "mainEntityOfPage":"{{ site.url }}{{ page.tut-permalink }}",
-      "datePublished": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
-      "dateModified": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
-      "publisher": {
-    	"@type": "Organization",
-        "name":"莫烦Python",
-        "logo": {
-        	"@type": "ImageObject",
-        	"url": "{{ site.url }}/static/img/description/tab_icon.png",
-        	"width": 100
-        	}
-       }
-    }
-    </script>
-  {% elsif layout.structured-type == "Course" %}
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Course",
-        "name": "{{ page.title }}",
-        "description": "{{ page.description }}",
-        "provider": {
-          "@type": "Organization",
-          "name": "莫烦Python"
+  <!-- 360 meta data-->
+  <meta property="og:type" content="blog"/>
+  <meta property="og:image" content="{{ page.thumbnail }}"/>
+  <meta property="og:release_date" content="{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}"/>
+  <!--选填-->
+  <meta property="og:title" content="{{ page.title }}"/>
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:author" content="{{ page.author }}"/>
+  <!-- post page data -->
+  <script src="/js/side-lazy-load.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "{{ site.url }}{{ page.url }}",
+    "headline": "{{ page.title }}",
+    "image": "{{ site.url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/static/img/description/mofanpython.png{% endif %}",
+    "author": {
+      "@type": "Person",
+      "name": "莫烦",
+      "email": "morvanzhou@hotmail.com"
+    },
+    "description": "{{ page.description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "mainEntityOfPage":"{{ site.url }}{{ page.tut-permalink }}",
+    "datePublished": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
+    "dateModified": "{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}",
+    "publisher": {
+    "@type": "Organization",
+      "name":"莫烦Python",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/static/img/description/tab_icon.png",
+        "width": 100
         }
+     }
+  }
+  </script>
+  {% elsif layout.structured-type == "Course" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Course",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "莫烦Python"
       }
-      </script>
+    }
+  </script>
   {% endif %}
 
   <!-- click dropdown -->
