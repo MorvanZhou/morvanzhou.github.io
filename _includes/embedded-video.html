@@ -19,9 +19,16 @@
 	<button class="switch-video-btn" onclick="chooseVideo(default_src)">
 		YouTube
 	</button>
-  <button class="switch-video-btn" onclick="chooseVideo(alternate_src)">
+  <button class="switch-video-btn" data-target="#youku-info" onclick="chooseVideo(alternate_src)">
     优酷
   </button>
+	<div class="collapse" id="youku-info">
+		<p style="display: inline; font-size: 0.8em; cursor: help;"
+		    title="优酷只支持 http 协议, 而本网站是 https, 所以会冲突">
+			(Chrome无法播放优酷? 网址框输入"chrome://settings/content/", 勾选允许 Flash Player. 实在不行? 请
+		<a href="http://v.youku.com/v_show/id_{{page.youku_id}}==.html"
+		     target="_blank" >点击这里</a>)</p>
+	</div>
 </div>
 
 
