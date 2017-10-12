@@ -72,7 +72,7 @@ padding: 1em 0;
 text-align: center;
 }
 
-button#switch-video {
+button.switch-video-btn {
 display: inline;
 background-color: var(--c-n);
 background-color:#4cb07b;
@@ -86,12 +86,12 @@ box-shadow: 0px 0px 5px #888888;
 border-radius:5px;
 }
 
-button#switch-video:hover {
+button.switch-video-btn:hover {
 background-color: var(--c-n-mofan);
 background-color: #3d9667;
 filter: none !important;
 color: var(--c-green-hover);
-color: #191818;
+color:white;
 }
 .collapse{
 display:none
@@ -140,6 +140,7 @@ text-decoration: none;
 .content-li:hover {
 background-color: var(--c-tut-table-hover);
 background-color: #3d9667;
+color: white;
 }
 
 /* ======== inner page ======== */
@@ -225,8 +226,7 @@ padding: 0.3em 0;
 }
 
 .tut-table-content-nav-li:hover {
-background-color: var(--c-tut-table-hover);
-background-color: #3d9667;
+color:white;
 }
 
 .tut-right-bar-fixed {
@@ -278,7 +278,7 @@ font-size: 1em;
 
 .PageNavigation a:hover {
 color: var(--c-green-hover);
-color: #191818;
+color:white;
 background-color: var(--c-n-mofan);
 background-color: #3d9667;
 }
@@ -324,5 +324,5 @@ box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
 background-color: var(--c-donation-hover);
 background-color: #3d9667;
 color: var(--c-green-hover);
-color: #191818;
+color:white;
 }
