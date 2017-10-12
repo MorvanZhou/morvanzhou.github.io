@@ -39,7 +39,7 @@ defaults:
       editor: 莫烦
       author: 莫烦
       author-link: "#"
-      published: true
+      published: false
 
   # module descriptions
   - scope:

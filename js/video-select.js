@@ -7,7 +7,7 @@ function videoGFW(src) {
     {// code for IE6, IE5
         var request = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    request.open('GET', 'http://freegeoip.net/xml');
+    request.open('GET', 'https://freegeoip.net/xml');
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
             var xmlDoc = request.responseXML;
