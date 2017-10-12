@@ -26,5 +26,5 @@ function chooseVideo(src)
 {
     var video = '<iframe id="myVideo" class="myvideo" width="560" height="315" src=' + src + ' frameborder="0" allowfullscreen></iframe>';
     $("#embededvideo").remove();
-    $("#videochinaip").append(video);
+    $("#videogfw").append(video);
 }
