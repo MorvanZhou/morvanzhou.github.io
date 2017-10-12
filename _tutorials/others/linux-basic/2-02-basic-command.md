@@ -26,14 +26,14 @@ description: "这次, 我们想要了解的是在 linux 中, 怎么样创建新�
 
 
 ```shell
-$ torch file2
+$ touch file2
 ```
 
 
 如果你想同时建立多个文件, 输入多个文件的名字, 以空格分开.
 
 ```shell
-$ torch file3 file4 file5
+$ touch file3 file4 file5
 ```
 
 
