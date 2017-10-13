@@ -62,7 +62,7 @@ User 一般就是指你, 这个正在使用电脑的人. Group 是一个 User �
 
 <img class="course-image" src="/static/results/linux-basic/03-01-03.png" alt="{{ page.title }}{% increment image-count %}">
 
-如果我双击这个 `t1.py` 下面就弹出这个说我们权限的窗口.
+如果我双击这个 `t1.py` 上面就弹出这个说我们权限的窗口.
 
 
 
