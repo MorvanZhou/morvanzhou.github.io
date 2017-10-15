@@ -11,7 +11,7 @@
 		<ul class="tut-course-thumbnail">
 	  {% for item in description.tut-course-detail %}
 	    <li><a href="{{ item[0] }}/">
-	     <img alt="{{ item[1] }}" src="{{ item[2] }}" height="120" >
+	     <img alt="{{ item[1] }}" src="{{ item[2] }}" title='{{ item[1] }}'>
 	    </a></li>
 	  {% endfor %}
 	  </ul>
