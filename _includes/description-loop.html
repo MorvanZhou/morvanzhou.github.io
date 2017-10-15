@@ -10,8 +10,8 @@
 		{% if description.tut-course-detail %}
 		<ul class="tut-course-thumbnail">
 	  {% for item in description.tut-course-detail %}
-	    <li><a href="{{ description.tut-dir }}{{ item[0] }}/">
-	     <img alt="{{ item[1] }}" src="/static/img/course_cover/{{ item[2] }}" height="120" >
+	    <li><a href="{{ item[0] }}/">
+	     <img alt="{{ item[1] }}" src="{{ item[2] }}" height="120" >
 	    </a></li>
 	  {% endfor %}
 	  </ul>

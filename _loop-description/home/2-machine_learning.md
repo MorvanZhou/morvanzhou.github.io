@@ -4,14 +4,14 @@ icon-dir: /static/img/icon/ML_icon.png
 tut-dir: /tutorials/machine-learning/
 description: 通往机器学习的快捷之路, 让你对机器学习的每种方法都有迅速地理解.
 tut-course-detail:
-  - ["ML-intro", "有趣的机器学习", "ML_intro.png"]
-  - ["reinforcement-learning", "强化学习 (Reinforcement Learning)", "rl.jpg"]
-  - ["evolutionary-algorithm", "进化算法 (Evolutionary Algorithm)", "EA.jpg"]
-  - ["tensorflow", "Tensorflow", "tf.jpg"]
-  - ["torch", "Pytorch", "torch.jpg"]
-  - ["theano", "Theano", "theano.jpg"]
-  - ["keras", "Keras", "keras.jpg"]
-  - ["sklearn", "SciKit-Learn", "sklearn.jpg"]
+  - ["/tutorials/machine-learning/ML-intro", "有趣的机器学习", "/static/img/course_cover/ML_intro.png"]
+  - ["/tutorials/machine-learning/reinforcement-learning", "强化学习 (Reinforcement Learning)", "/static/img/course_cover/rl.jpg"]
+  - ["/tutorials/machine-learning/evolutionary-algorithm", "进化算法 (Evolutionary Algorithm)", "/static/img/course_cover/EA.jpg"]
+  - ["/tutorials/machine-learning/tensorflow", "Tensorflow", "/static/img/course_cover/tf.jpg"]
+  - ["/tutorials/machine-learning/torch", "Pytorch", "/static/img/course_cover/torch.jpg"]
+  - ["/tutorials/machine-learning/theano", "Theano", "/static/img/course_cover/theano.jpg"]
+  - ["/tutorials/machine-learning/keras", "Keras", "/static/img/course_cover/keras.jpg"]
+  - ["/tutorials/machine-learning/sklearn", "SciKit-Learn", "/static/img/course_cover/sklearn.jpg"]
 ---
 
 

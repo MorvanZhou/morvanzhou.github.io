@@ -139,7 +139,10 @@ class Memory(object):
 
 具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L89-L129)
 下面有很多朋友经常问的一个问题, 这个 ISweight 到底怎么算. 需要提到的一点是, 代码中的计算方法是经过了简化的, 将 paper 中的步骤合并了一些.
-比如 `prob = p / self.tree.total_p; ISWeights = np.power(prob/max_prob, -self.beta)`
+比如 `prob = p / self.tree.total_p; ISWeights = np.power(prob/min_prob, -self.beta)`
+
+<img class="course-image" src="/static/results/rl/4-6-5.png" alt="{{ page.title }}{% increment image-count %}">
+
 
 下面是我的推导, 如果有不正确还请指出. 在paper 中, `ISWeight = (N*Pj)^(-beta) / maxi_wi` 里面的 `maxi_wi` 是为了 normalize ISWeight, 所以我们先把他放在一边.
 所以单纯的 importance sampling 就是 `(N*Pj)^(-beta)`, 那 `maxi_wi = maxi[(N*Pi)^(-beta)]`.
@@ -148,9 +151,11 @@ class Memory(object):
 
 `ISWeight = (N*Pj)^(-beta) / maxi[ (N*Pi)^(-beta) ]`
 
+而且如果将 `maxi[ (N*Pi)^(-beta) ]` 中的 (-beta) 提出来, 这就变成了 `mini[ (N*Pi) ] ^ (-beta)`
+
 看出来了吧, 有的东西可以抵消掉的. 最后
 
-`ISWeight = (Pj / maxi[Pi])^(-beta)`
+`ISWeight = (Pj / mini[Pi])^(-beta)`
 
 这样我们就有了代码中的样子.
 
