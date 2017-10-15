@@ -57,6 +57,9 @@ s.pack()
 {% include assign-heading.html %}
 
 ```python
+l = tk.Label(window, bg='yellow', width=20, text='empty')
+l.pack()
+
 def print_selection(v):
     l.config(text='you have selected ' + v)
 ```
