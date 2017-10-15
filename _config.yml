@@ -39,7 +39,6 @@ defaults:
       editor: 莫烦
       author: 莫烦
       author-link: "#"
-      publish-date: 2016-11-03
       published: true
 
   # module descriptions

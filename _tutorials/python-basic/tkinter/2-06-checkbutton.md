@@ -69,5 +69,5 @@ def print_selection():
 相对于前面学过的 `print_selection`，这一段比较长，其实功能差不多，只不过加了`if...elif...else`来选择控制而已即如代码注释，`config`在前面已经讲过就是将参数`text`的值显示，这里的`var1.get() == 1`
 就是前面所说的var1获得的变量`onvalue=1`，`var1.get() == 0`即是`var1`获得的变量`offvalu=0`同理`var2`也是如此。
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk7_checkbutton.py),
 整个框架的全部代码就完美了.

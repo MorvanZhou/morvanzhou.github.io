@@ -1,4 +1,4 @@
-# TODO: check published in _config.yml
+# TOD: check published in _config.yml
 
 import os
 import datetime
