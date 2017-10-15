@@ -45,8 +45,8 @@ plt.yticks([-2, -1.8, -1, 1.22, 3],
 
 ```python
 # set line syles
-l1, = plt.plot(x, y2, label='linear line')
-l2, = plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--', label='square line')
+l1, = plt.plot(x, y1, label='linear line')
+l2, = plt.plot(x, y2, color='red', linewidth=1.0, linestyle='--', label='square line')
 ```
 
 `legend`将要显示的信息来自于上面代码中的 `label`. 所以我们只需要简单写下一下代码, plt 就能自动的为我们添加图例.

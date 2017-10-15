@@ -138,7 +138,7 @@ def add_layer(inputs ,
               activation_function=None):
     ## add one more layer and return the output of this layer
     layer_name='layer%s'%n_layer
-    with tf.name_scope('layer'):
+    with tf.name_scope(layer_name):
          with tf.name_scope('weights'):
               Weights= tf.Variable(tf.random_normal([in_size, out_size]),name='W')
               # tf.histogram_summary(layer_name+'/weights',Weights)
