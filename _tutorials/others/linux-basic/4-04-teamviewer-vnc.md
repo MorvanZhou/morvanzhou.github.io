@@ -60,6 +60,7 @@ Teamviewer 其实已经发展得很成熟了. 它是一个跨平台的远程操�
 {% include assign-heading.html %}
 
 其实 VNC 是一种软件的统称. 只要你的 Linux 架设好了一个服务器 (Server) 的 VNC, 客户端, 比如你的 Mac, 手机, 只要安装任何一种 VNC 客户端软件就能链接上服务器端的电脑啦.
+如果你手头有一个 Raspberry Pi (树莓派), 会用 VNC 对你很实用.
 那么首先, 我们就来设置这个服务器端的 VNC 吧. 打开你的 Linux 电脑, 打开 Terminal. 输入:
 
 ```shell
