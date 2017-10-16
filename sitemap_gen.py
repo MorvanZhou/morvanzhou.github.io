@@ -48,3 +48,5 @@ for root, dirs, files in os.walk("./_site"):
 
 with open('./sitemap.xml', 'w') as sitemap:
     sitemap.writelines(sm)
+
+print("Generate sitemap for %i pages" % (len(sm)-2))

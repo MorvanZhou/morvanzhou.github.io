@@ -116,7 +116,7 @@ inner_func()
 ```
 
 接着我们要做的就是将这两个文件先复制去 Linux 云端, 然后在云端运行 `a.py`. 下面所有的操作都是在本地执行的, 我们没有跑去云端打代码.
-输入 `scp` (secure copy), 加密传输复制 `~/Desktop/{a,b}.py` 在我做面上的 `a.py` 和 `b.py` 两个文件到 云端`morvan@192.168.0.114`的桌面
+输入 `scp` (secure copy), 加密传输复制 `~/Desktop/{a,b}.py` 在我桌面上的 `a.py` 和 `b.py` 两个文件到 云端`morvan@192.168.0.114`的桌面
 `~/Desktop`
 
 ```shell
