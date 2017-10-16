@@ -16,6 +16,14 @@ description: Linux 是一个开放式的系统, 而且最重要的是! 它是免
 首先我想提一下我为什么做 Linux 的教程. 网站是"莫烦 Python", 按理说应该是做和 Python 有关的东西, 不过 Linux 是所有程序员应该了解的一个系统.
 如果你做机器学习什么的, 很多时候你会发现, 一些模块, 比如 Tensorflow, Pytorch, 都是 Linux 支持最好. 为什么呢? 下面就有介绍啦.
 
+而且我更想把这个 Linux 教程做成一个为机器学习方面的辅助. 因为很多时候, 机器学习的开发是基于 Linux 的, 所以 Linux 的一些使用技巧就必不可少.
+在这个教程中, 我将提到 Linux 的一些基本使用原则和如何用它来辅助你训练机器学习, 神经网络, 强化学习. 下面就是我日常中使用 Mac 远程操控 Linux 的一个 demo.
+
+<video class="tut-content-video" controls loop autoplay muted>
+  <source src="/static/results/linux-basic/04-01-01.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
 
 
 {% include assign-heading.html %}
