@@ -11,6 +11,8 @@ exclude: ['README.md']
 collections:
   front-pages:
     output: true
+  modules-intro:
+    output: true
   loop-description:
     output: false
   tutorials:
@@ -24,6 +26,11 @@ collections:
 defaults:
   - scope:
       path: "_front-pages"
+    values:
+      layout: front-page
+
+  - scope:
+      path: "_modules-intro"
     values:
       layout: front-page
 

@@ -18,6 +18,7 @@ description: Linux 是一个开放式的系统, 而且最重要的是! 它是免
 
 而且我更想把这个 Linux 教程做成一个为机器学习方面的辅助. 因为很多时候, 机器学习的开发是基于 Linux 的, 所以 Linux 的一些使用技巧就必不可少.
 在这个教程中, 我将提到 Linux 的一些基本使用原则和如何用它来辅助你训练机器学习, 神经网络, 强化学习. 下面就是我日常中使用 Mac 远程操控 Linux 的一个 demo.
+至于为什么要弄远程呢, 原因很简单, 因为 Linux 的硬件比 Mac 好, 用 Mac 来编写文件, Linux 来训练, 合理分配资源.
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/linux-basic/04-01-01.mp4" type="video/mp4">
