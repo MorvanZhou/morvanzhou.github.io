@@ -1,5 +1,6 @@
 
 <a href="/static/results/{{ page.category }}/{{ include.image-name }}">
-<img class="course-image" src="/static/results/{{ page.category }}/{{ include.image-name }}"
+<img class="course-image"
+     src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.image-name}}{% endif %}"
      alt="{{ page.title }}{% increment image-count %}">
 </a>
