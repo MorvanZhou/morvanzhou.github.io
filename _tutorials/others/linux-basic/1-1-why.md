@@ -29,8 +29,7 @@ Linux 是一个开放式的系统, 而且最重要的是! 它是
 最重要的事说三遍. 正因为他的免费, 开源, 大量的牛逼程序员涌入了 Linux, 他们在使用 Linux 的同时共同维护和更新着这个系统.
 所以 Linux 的精髓就是, **永远开源** (哈哈, 和我做教程有着异曲同工之处, 这也是我为什么开始用 Linux 的原因).
 
-
-<img class="course-image" src="/static/results/linux-basic/01-01-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-01-01.png" %}
 
 
 相比 MacOS, 你得买一台昂贵的 Apple 电脑才能拥有, 或者 Windows 系统, 他每次升级你都得另掏腰包. 何必呢?
@@ -46,7 +45,7 @@ Linux 是一个开放式的系统, 而且最重要的是! 它是
 
 为什么一个开源的系统会更安全? 为什么一个大家都能修改的系统会比一个封锁的系统更安全?
 
-<img class="course-image" src="/static/results/linux-basic/01-01-02.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-01-02.jpg" %}
 
 我们就从新闻说起, 你听说过一些比较著名的病毒吧, 比如[熊猫烧香病毒](https://baike.baidu.com/item/%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99), [WannaCry](https://baike.baidu.com/item/WannaCry/20797421?fromtitle=%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92&fromid=16623990)吧.
 他们都针对哪种电脑? 没错, 是 Windows! 为什么? 原因很简单, 太多人用 Windows 了, 企业, 政府, 银行等等. 做一个 Windows 的病毒往往比其他的有赚头多了.
@@ -65,7 +64,7 @@ Linux 是一个开放式的系统, 而且最重要的是! 它是
 随着时代的更新, 你是不是发现你身边的老电脑多了起来? 大一入学一台, 工作以后一台, 这样都有两台了. 旧电脑往往很多新程序带不起, 或者运行慢.
 我们何不装个 Linux 让它重新活起来. 特别是想想, 家里的老人是不是不太懂电脑, 用电脑也不会做些什么事情, 上上网看看剧就好了, 给他们装个 Linux 多好. 简单好用.
 
-<img class="course-image" src="/static/results/linux-basic/01-01-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-01-03.png" %}
 
 Linux 的内核文件相对是算少的, 所以整个系统不用占你多少空间. 我就有这么一台大一入学的笔记本, 到现在已经有8年了. 原本 Windows 7 系统, 可是一运行就卡.
 我装上了个 Ubuntu (一种比较流行的 Linux 分支), 电脑瞬间运行"光速", 上网什么都不卡了. (很多大学妹子不是觉得上网看剧卡嘛, 给她装个 Linux, 还显得你高大上了).
@@ -74,7 +73,7 @@ Linux 的内核文件相对是算少的, 所以整个系统不用占你多少空
 
 {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/linux-basic/01-01-04.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-01-04.jpg" %}
 
 Linux 的安装非常简单, 只要你有一台电脑, 不管它是不是笔记本或台式, 或者以前运行的是 Windows, 现在你都能给他装上 Linux.
 你甚至都能装一个双系统, 保留以前的老系统, 开机的时候切换 Windows 和 Linux 来挑选你要使用的系统.
