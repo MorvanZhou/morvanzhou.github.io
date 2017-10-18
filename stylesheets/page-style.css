@@ -113,11 +113,6 @@ width: 1.1em;
 padding-right: 0.4em;
 }
 
-/* ====== image loading ====== */
-img {
-  background: url('/static/img/description/loading.gif') no-repeat;
-  background-position: 50% 50%;
-}
 
 /* ====== others ====== */
 .white {
