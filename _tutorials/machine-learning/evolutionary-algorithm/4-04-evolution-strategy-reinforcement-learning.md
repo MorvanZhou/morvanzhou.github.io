@@ -138,7 +138,7 @@ def build_net():
 ```python
 def train(net_shapes, net_params, pool):
     # 生成噪点的 seed
-    noise_seed = np.random.randint(0, 2 ** 32 - 1, size=N_KID)
+    noise_seed = np.random.randint(0, 2 ** 32 - 1, size=N_KID, dtype=np.uint32) # 限制 seed 的范围.
 
     # 用多进程完成 get_reward 功能
     jobs = [pool.apply_async(get_reward, (这里是get_reward需要的数据, 比如 seed))
