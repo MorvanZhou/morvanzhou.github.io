@@ -200,16 +200,13 @@ position: fixed;
 margin-left: 0.5em;
 }
 
-.side-ads {
-height:300px;
-}
 
 /* ======= tutorial right part ====== */
 .tut-table-content-nav {
 background-color: var(--c-tut-table);
 background-color: #4cb07b;
 margin-bottom: 0px;
-height: 400px;
+height: 350px;
 overflow-y: scroll;
 }
 
