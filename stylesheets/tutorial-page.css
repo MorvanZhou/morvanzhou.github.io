@@ -210,12 +210,6 @@ height: 400px;
 overflow-y: scroll;
 }
 
-.tut-right-bar .adsbygoogle {
-width: 300px;
-max-height: 300px;
-height: 100%;
-}
-
 .tut-table-content-nav p {
 margin:0;
 padding: 0.5em 0;
