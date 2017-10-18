@@ -194,18 +194,24 @@ width: 700px;
 }
 
 .tut-right-bar {
-width: calc(100% - 700px - 1%);
+width: calc(1000px - 700px);
 font-size: 0.85em;
+position: fixed;
+margin-left: 0.5em;
 }
 
+.side-ads {
+height:300px;
+}
 
 /* ======= tutorial right part ====== */
 .tut-table-content-nav {
 background-color: var(--c-tut-table);
 background-color: #4cb07b;
 margin-bottom: 0px;
-height: 500px;
+height: 400px;
 overflow-y: scroll;
+margin-top: 0;
 }
 
 .tut-table-content-nav p {
@@ -233,12 +239,12 @@ padding: 0.3em 0;
 color:white;
 }
 
-.tut-right-bar-fixed {
+/*.tut-right-bar-fixed {
   position: fixed;
   top: 0;
   margin-left: 5px;
   width: calc(1000px - 700px - 0.8%);
-}
+}*/
 
 
 /* ======= video and next previous button ====== */
