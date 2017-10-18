@@ -62,7 +62,7 @@ DNA2 = [1, 0, 1, 1, 0, 1, 1]
 
 ```python
 def translateDNA(pop):
-    return pop.dot(2 ** np.arange(DNA_SIZE)[::-1]) / (2**DNA_SIZE-1) * X_BOUND[1]
+    return pop.dot(2 ** np.arange(DNA_SIZE)[::-1]) / float(2**DNA_SIZE-1) * X_BOUND[1]
 ```
 
 注意, 这里的 `pop` 是一个储存二进制 `DNA` 的矩阵, 他的 shape 是这样 (pop_size, DNA_size).
