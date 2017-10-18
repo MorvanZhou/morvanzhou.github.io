@@ -110,7 +110,7 @@ structured-type: BlogPosting
       {% assign items = site.tutorials | where: "category", page.category  %}
       {% assign total-chapter = items[-1].chapter %}
 
-      <hr style="opacity:0.5; width:90%;">
+      <hr style="opacity:0.5; width:90%; margin: 0.2em auto;">
 
       {% for i in (1..total-chapter) %}
       <ul class="tut-table-content-nav-contents">
@@ -134,7 +134,7 @@ structured-type: BlogPosting
           </li>
         {% endfor %}
       </ul>
-      <hr style="opacity:0.5; width: 90%;">
+      <hr style="opacity:0.5; width: 90%; margin: 0.2em auto;">
       {% endfor %}
     </div>
 

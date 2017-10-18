@@ -195,7 +195,7 @@ width: 700px;
 
 .tut-right-bar {
 width: calc(1000px - 700px);
-font-size: 0.85em;
+font-size: 0.75em;
 position: fixed;
 margin-left: 0.5em;
 }
@@ -224,6 +224,7 @@ font-size: 1.2em;
 
 .tut-table-content-nav-contents {
 padding: 0 0.5em 0 2em;
+margin: 0.1em 0;
 }
 
 .tut-table-content-nav-contents a:visited, .tut-table-content-nav-contents a:link {
@@ -232,19 +233,12 @@ opacity:1;
 }
 
 .tut-table-content-nav-li {
-padding: 0.3em 0;
+padding: 0.2em 0;
 }
 
 .tut-table-content-nav-li:hover {
 color:white;
 }
-
-/*.tut-right-bar-fixed {
-  position: fixed;
-  top: 0;
-  margin-left: 5px;
-  width: calc(1000px - 700px - 0.8%);
-}*/
 
 
 /* ======= video and next previous button ====== */
