@@ -152,7 +152,7 @@
      margin: 0.5em auto;
      }
      .tut-right-bar {
-     width: calc(1000px - 700px - 1%);
+     width: calc(1000px - 700px);
      }
      .tut-post-main {
      margin-left:10%;

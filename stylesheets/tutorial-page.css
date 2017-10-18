@@ -206,8 +206,13 @@ margin-left: 0.5em;
 background-color: var(--c-tut-table);
 background-color: #4cb07b;
 margin-bottom: 0px;
-height: 350px;
+height: 400px;
 overflow-y: scroll;
+}
+
+.tut-right-bar .adsbygoogle {
+width: 300px;
+height: 200px;
 }
 
 .tut-table-content-nav p {
