@@ -80,5 +80,5 @@ def do_job():
 
 这里的功能就是没触发一次命令，counter就会+1，在label上的显示就会从
 do 0 ,do 1 , do 2...
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk9_menubar.py),
 整个框架的全部代码就完美了.
