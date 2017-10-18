@@ -213,6 +213,7 @@ overflow-y: scroll;
 .tut-right-bar .adsbygoogle {
 width: 300px;
 max-height: 300px;
+height: 100%;
 }
 
 .tut-table-content-nav p {
