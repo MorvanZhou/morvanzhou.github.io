@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzA5OTU1MzY3Mg
+youtube_id: c8STJnGZPLQ
 chapter: 1
 title: Why Linux?
 publish-date: 2017-10-11
