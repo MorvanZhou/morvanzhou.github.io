@@ -23,8 +23,8 @@ post-headings:
 监督学习 supervised learning;
 非监督学习 unsupervised learning;
 半监督学习 semi-supervised learning;
-强化学习 reinforcement learning;
-遗传算法 genetic algorithm.
+[强化学习 reinforcement learning]({% link _tutorials/machine-learning/ML-intro/4-01-RL.md %});
+[遗传算法 genetic algorithm]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %}).
 
 大家就在影片中看看这些方法究竟都有哪些不同吧.
 

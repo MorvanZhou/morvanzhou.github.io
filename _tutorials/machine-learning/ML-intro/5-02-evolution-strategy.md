@@ -20,19 +20,19 @@ post-headings:
 Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化是大自然赋予我们的礼物, 我们也能学习自然界的这份礼物, 将它放入计算机, 让计算机也能用进化来解决问题. 我们接着上回提到的遗传算法, 来说一说另一种使用进化理论的优化模式-进化策略 (Evolution Strategy).
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML-intro/ES1.png" alt="{{ page.title }}{% increment image-count %}">
 
-遗传算法和进化策略共享着一些东西. 他们都用遗传信息, 比如 DNA 染色体, 一代代传承, 变异. 来获取上一代没有的东西.
+[遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})和进化策略共享着一些东西. 他们都用遗传信息, 比如 DNA 染色体, 一代代传承, 变异. 来获取上一代没有的东西.
 
 <img class="course-image" src="/static/results/ML-intro/ES2.png" alt="{{ page.title }}{% increment image-count %}">
 
 然后通过适者生存, 不适者淘汰的这一套理论不断进化着. 我们的祖先, 通过不断变异, 生存淘汰, 从猴子变成人也就是这么回事.既然进化策略或遗传算法都用到了进化的原则, 他们到底有哪些不同呢? 他们各自又适用于哪些问题呢?
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 
 <img class="course-image" src="/static/results/ML-intro/ES3.png" alt="{{ page.title }}{% increment image-count %}">
@@ -40,10 +40,12 @@ Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化�
 我们之前说到, 一般的遗传算法使用的 DNA 是二进制编码的, 爸妈的 DNA 通过交叉配对, 组成宝宝的 DNA, 宝宝也会通过一定的变异获得新的功能. 但一般的进化策略却有些不同.
 
 
+
+
 {% include google-in-article-ads.html %}
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/ES4.png" alt="{{ page.title }}{% increment image-count %}">
 

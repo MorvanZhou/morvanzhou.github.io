@@ -36,24 +36,30 @@ post-headings:
 
 我们之前提过了两种方式, 遗传算法 (Genetic Algorithm) 和 进化策略 (Evolution Strategy). 这两种方式的神经网络都有了突破性的发展. 像这部影片一样, 我也制作过[遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})和[进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})的短简介, 确保你已经观看过了以上两部简介视频, 因为在这部影片中, 我们会基于之前两部影片来理解. 不管是遗传算法还是进化策略, 他们都是采取了进化理论中的某些重要部分. 比如遗传算法中我们会有来自父母的两组神经网络, 通过将这两个神经网络交叉配对, 产生宝宝的神经网络, 然后将宝宝的神经网络变异, 来获取新的能力. 最后将所有宝宝们放入残酷的现实, 让他们适者生存不适者淘汰. 而如果使用进化策略, 我们更偏向于先固定神经网络的结构, 让这个结构蚕卵, 生出很多和原始神经网络结构相同, 但联结强度稍稍不同的网络. 这些宝宝网络中肯定有好有坏, 进化策略中有趣的一步就来了, 下一代的爸爸是所有宝宝的综合体, 这个综合体中, 好宝宝的联结会占有更多比例, 坏宝宝占有更少比例. 通过这种形式让好宝宝渐渐主宰这个生存环境. 我们知道, 反向传播, 靠计算梯度的神经网络非常适合做监督学习, 比如让计算机识别图片, 在这方面, 使用进化理论的神经网络的确暂时比不上这些梯度的神经网络. 原因很简单.
 
+
+
+
+
+
+
 {% include google-in-article-ads.html %}
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/NE3.png" alt="{{ page.title }}{% increment image-count %}">
 
 在梯度下降中, 我们需要的只是梯度, 让这个神经网络的参数滑到梯度躺平的地方就好了, 因为梯度给你指明了一个优化的方向, 所以如果是监督学习, 优化起来会非常快. 而神经网络的进化, 使用的却是另一种手段. 用原始的点创造出很多新的点, 然后通过新的点来确定下一代的起点在哪. 这样的循环再不断地继续. 可以想象, 如果在监督学习中, 我们需要不断产生非常多新的网络, 测试新的网络, 这将比梯度法慢很多. 但是不使用梯度的方法还有一个好处, 那就是有效避免局部最优.
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/NE4.png" alt="{{ page.title }}{% increment image-count %}">
 
 大家知道, 在梯度下降中, 神经网络很容易会走到一个局部最优, 但是如果是使用基于遗传算法的神经网络, 这个优化过程虽然慢, 我们的宝宝网络却可以随时跳出局部最优, 因为它完全不受梯度的限制. 而且除了监督学习, 我们还能用进化理论的神经网络做强化学习, 在这点上, 已经有最新的研究指出, 基于进化策略的神经网络完全有能力替代传统的基于梯度的强化学习方法.
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/NE5.png" alt="{{ page.title }}{% increment image-count %}">
 

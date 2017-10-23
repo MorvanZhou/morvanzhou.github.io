@@ -22,7 +22,12 @@ post-headings:
 
 卷积神经网络是近些年逐步兴起的一种人工神经网络结构, 因为利用卷积神经网络在图像和语音识别方面能够给出更优预测结果, 这一种技术也被广泛的传播可应用. 卷积神经网络最常被应用的方面是计算机的图像识别, 不过因为不断地创新, 它也被应用在视频分析, 自然语言处理, 药物发现, 等等. 近期最火的 Alpha Go, 让计算机看懂围棋, 同样也是有运用到这门技术.
 
- {% include assign-heading.html %}
+
+
+
+
+
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/cnn2.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -36,10 +41,16 @@ post-headings:
 
 我们截取一段 google 介绍卷积神经网络的视频, 具体说说图片是如何被卷积的. 下面是一张猫的图片, 图片有长, 宽, 高 三个参数. 对! 图片是有高度的! 这里的高指的是计算机用于产生颜色使用的信息. 如果是黑白照片的话, 高的单位就只有1, 如果是彩色照片, 就可能有红绿蓝三种颜色的信息, 这时的高度为3. 我们以彩色照片为例子.  过滤器就是影像中不断移动的东西, 他不断在图片收集小批小批的像素块, 收集完所有信息后, 输出的值, 我们可以理解成是一个高度更高,长和宽更小的”图片”. 这个图片里就能包含一些边缘信息. 然后以同样的步骤再进行多次卷积, 将图片的长宽再压缩, 高度再增加, 就有了对输入图片更深的理解. 将压缩,增高的信息嵌套在普通的分类神经层上,我们就能对这种图片进行分类了.
 
+
+
+
+
+
+
+
 {% include google-in-article-ads.html %}
 
-
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/cnn5.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -47,7 +58,12 @@ post-headings:
 
 
 
- {% include assign-heading.html %}
+
+
+
+
+
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/cnn6.png" alt="{{ page.title }}{% increment image-count %}">
 

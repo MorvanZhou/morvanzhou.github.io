@@ -15,7 +15,7 @@ post-headings:
 
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/ann1.png" alt="{{ page.title }}{% increment image-count %}">
 
@@ -34,16 +34,29 @@ post-headings:
 
 包着尿布的我们什么都不知道, 神经元并没有形成系统和网络. 可能只是一些分散的细胞而已,  一端连着嘴巴的味觉感受器, 一端连着手部的肌肉. 小时候, 世界上有一种神奇的东西叫做 – 糖果,  当我们第一次品尝它的时候,  美妙的感觉, 让我们发现活着是多么有意义的事情. 这时候神经元开始产生联结 , 记忆形成, 但是形成的新联结怎么样变成记忆, 仍然是科学界的一个迷. 不过现在, 我们的手和嘴产生了某种特定的搭配. 每次发现有糖果的时候, 某种生物信号就会从我们的嘴,通过之前形成的神经联结, 传递到手上, 让手的动作变得有意义, 比如这样, 然后爸妈就会再给我们一颗糖果啦~ 哈哈, 吃糖的目的达成. 现在我们来看看人工神经网络要怎样达到这个目的.
 
+
+
+
+
+
+
+
 {% include google-in-article-ads.html %}
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/ann4.png" alt="{{ page.title }}{% increment image-count %}">
 
 首先, 替代掉生物神经网络的,  就是已经成体系的人工神经网络. 所有神经元之间的连接都是固定不可更换的, 这也就是说, 在人工神经网络里, 没有凭空产生新联结这回事. 人工神经网络典型的一种学习方式就是, 我已经知道吃到糖果时, 手会如何动, 但是我想让神经网络学着帮我做这件动动手的事情.  所以我预先准备好非常多吃糖的学习数据, 然后将这些数据一次次放入这套人工神经网络系统中,  糖的信号会通过这套系统传递到手. 然后通过对比这次信号传递后, 手的动作是不是”讨糖”动作, 来修改人工神经网络当中的神经元强度. 这种修改在专业术语中叫做”误差反向传递”,  也可以看作是再一次将传过来的信号传回去, 看看这个负责传递信号神经元对于”讨糖”的动作到底有没有贡献, 让它好好反思与改正, 争取下次做出更好的贡献. 这样看来, 人工神经网络和生物神经网络的确不是一回事.
 
- {% include assign-heading.html %}
+
+
+
+
+
+
+{% include assign-heading.html %}
 
 <img class="course-image" src="/static/results/ML-intro/ann5.png" alt="{{ page.title }}{% increment image-count %}">
 

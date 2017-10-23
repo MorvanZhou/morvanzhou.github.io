@@ -7,20 +7,12 @@ description: "这里提到的是人工神经网路,是存在于计算机里的�
 都会在影片里一一提到."
 post-headings:
   - 内容简介
+ref-path: _tutorials/machine-learning/ML-intro/2-1-NN.md
 ---
 
 
-学习资料:
-  * 有网友根据我的 Tensorflow 系列做了一个很好的[文字笔记](http://www.jianshu.com/p/e112012a4b2d), 推荐阅读.
-  * Tensorflow [学习目录](/tutorials/machine-learning/tensorflow/)
-  * PyTorch [学习目录](/tutorials/machine-learning/torch/)
-  * Theano [学习目录](/tutorials/machine-learning/theano/)
-  * Keras [学习目录](/tutorials/machine-learning/keras/)
+{% assign post = site.tutorials | where: "category", "ML-intro" | where: "path", page.ref-path %}
 
-{% include assign-heading.html %}
-
-这里提到的是人工神经网路,是存在于计算机里的神经系统.
-人工神经网络和自然神经网络的区别. 神经网络是什么,它是怎么工作的. 
-都会在影片里一一提到.
+{{ post[0].content }}
 
 

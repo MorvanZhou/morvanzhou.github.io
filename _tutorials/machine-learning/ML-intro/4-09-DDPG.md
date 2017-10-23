@@ -33,7 +33,10 @@ post-headings:
 <img class="course-image" src="/static/results/ML-intro/ddpg1.png" alt="{{ page.title }}{% increment image-count %}">
 
 
-它吸收了 Actor critic 让 Policy gradient 单步更新的精华, 而且还吸收让计算机学会玩游戏的 DQN 的精华, 合并成了一种新算法, 叫做 Deep Deterministic Policy Gradient. 那 DDPG 到底是什么样的算法呢, 我们就拆开来分析,  我们将 DDPG 分成 ‘Deep’  和 ‘Deterministic Policy Gradient’, 然后 ‘Deterministic Policy Gradient’ 又能被细分为  ‘Deterministic’ 和 ‘Policy Gradient’, 接下来, 我们就开始一个个分析啦.
+它吸收了 [Actor-Critic]({% link _tutorials/machine-learning/ML-intro/4-08-AC.md %}) 让
+[Policy gradient]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %}) 单步更新的精华,
+而且还吸收让计算机学会玩游戏的 [DQN]({% link _tutorials/machine-learning/ML-intro/4-06-DQN.md %}) 的精华,
+合并成了一种新算法, 叫做 Deep Deterministic Policy Gradient. 那 DDPG 到底是什么样的算法呢, 我们就拆开来分析,  我们将 DDPG 分成 ‘Deep’  和 ‘Deterministic Policy Gradient’, 然后 ‘Deterministic Policy Gradient’ 又能被细分为  ‘Deterministic’ 和 ‘Policy Gradient’, 接下来, 我们就开始一个个分析啦.
 
 
  {% include assign-heading.html %}
