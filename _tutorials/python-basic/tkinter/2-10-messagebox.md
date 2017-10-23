@@ -13,7 +13,6 @@ author: 潘雨 (Mr_Pan)
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk11_msgbox.py)
 
-author: 你的名字:潘雨  （Mr_Pan)
 
 
 {% include assign-heading.html %}
