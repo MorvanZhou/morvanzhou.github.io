@@ -33,7 +33,7 @@ post-headings:
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/ML_intro/rnn1.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/ML-intro/rnn1.png" alt="{{ page.title }}{% increment image-count %}">
 
 现在请你看着这个名字. 不出意外, 你应该可以脱口而出. 因为你很可能就用了他们家的一款产品 . 那么现在, 请抛开这个产品, 只想着斯蒂芬乔布斯这个名字 , 请你再把他逆序念出来. 斯布乔(*#&, 有点难吧. 这就说明, 对于预测, 顺序排列是多么重要. 我们可以预测下一个按照一定顺序排列的字, 但是打乱顺序, 我们就没办法分析自己到底在说什么了.
 
@@ -41,7 +41,7 @@ post-headings:
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/ML_intro/rnn2.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/ML-intro/rnn2.png" alt="{{ page.title }}{% increment image-count %}">
 
 我们想象现在有一组序列数据 data 0,1,2,3. 在当预测 result0 的时候,我们基于的是 data0, 同样在预测其他数据的时候, 我们也都只单单基于单个的数据. 每次使用的神经网络都是同一个 NN. 不过这些数据是有关联 顺序的 , 就像在厨房做菜, 酱料 A要比酱料 B 早放, 不然就串味了. 所以普通的神经网络结构并不能让 NN 了解这些数据之间的关联.
 
@@ -49,11 +49,11 @@ post-headings:
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/ML_intro/rnn3.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/ML-intro/rnn3.png" alt="{{ page.title }}{% increment image-count %}">
 
 那我们如何让数据间的关联也被 NN 加以分析呢? 想想我们人类是怎么分析各种事物的关联吧, 最基本的方式,就是记住之前发生的事情. 那我们让神经网络也具备这种记住之前发生的事的能力. 再分析 Data0 的时候, 我们把分析结果存入记忆. 然后当分析 data1的时候, NN会产生新的记忆, 但是新记忆和老记忆是没有联系的. 我们就简单的把老记忆调用过来, 一起分析. 如果继续分析更多的有序数据 , RNN就会把之前的记忆都累积起来, 一起分析.
 
-<img class="course-image" src="/static/results/ML_intro/rnn4.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/ML-intro/rnn4.png" alt="{{ page.title }}{% increment image-count %}">
 
 我们再重复一遍刚才的流程, 不过这次是以加入一些数学方面的东西. 每次 RNN 运算完之后都会产生一个对于当前状态的描述 , state. 我们用简写 S( t) 代替, 然后这个 RNN开始分析 x(t+1) , 他会根据 x(t+1)产生s(t+1), 不过此时 y(t+1) 是由 s(t) 和 s(t+1) 共同创造的. 所以我们通常看到的 RNN 也可以表达成这种样子.
 
