@@ -180,7 +180,7 @@ with tf.name_scope('loss'):
 
 这句话就是“绘制” loss了， 如下：
 
-<img class="course-image" src="/static/results/tensorflow/4_1_4.png" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="/static/results/tensorflow/4_1_5.png" alt="{{ page.title }}{% increment image-count %}">
 
 使用`with tf.name_scope()`再次对`train_step`部分进行编辑,如下：
 
