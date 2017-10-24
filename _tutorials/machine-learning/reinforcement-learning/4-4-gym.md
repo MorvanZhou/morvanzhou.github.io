@@ -84,7 +84,7 @@ $ pip3 install gym[all]
 {% include assign-heading.html %}
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/cartpole dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -167,7 +167,7 @@ RL.plot_cost()
 {% include assign-heading.html %}
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 

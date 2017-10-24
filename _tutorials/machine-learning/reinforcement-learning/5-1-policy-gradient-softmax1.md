@@ -32,12 +32,12 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 而 policy gradient 可以在一个连续分布上选取 action.
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/cartpole policy gradient softmax.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/cartpole policy gradient softmax.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/mountaincar policy gradient softmax.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/mountaincar policy gradient softmax.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 

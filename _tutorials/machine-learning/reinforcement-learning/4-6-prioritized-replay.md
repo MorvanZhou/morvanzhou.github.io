@@ -40,7 +40,7 @@ post-headings:
 而使用 Prioritized replay, 就会重视这种少量的, 但值得学习的样本.
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -189,7 +189,7 @@ class DQNPrioritiedReplay:
             self.sess = sess
 ```
 
-<a href="/static/results/rl/4-6-3.png" alt="{{ page.title }}{% increment image-count %}">
+<a href="/static/results/reinforcement-learning/4-6-3.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-6-3.png" %}
 </a>
 

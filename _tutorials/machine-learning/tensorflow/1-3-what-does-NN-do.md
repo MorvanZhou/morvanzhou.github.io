@@ -24,12 +24,12 @@ post-headings:
 本例中蓝色离散点是我们的数据点,
 红线是通过神经网络算法拟合出来的曲线,
 
-{% include tut-image.html global-path='/static/results/tensorflow/1_3_1.png' %}
+{% include tut-image.html image-name="1_3_1.png" %}
 
 它是对我们数据点的一个近似表达. 可以看出, 在开始阶段, 红线的表达能力不强, 误差很大.
 不过通过不断的学习, 预测误差将会被降低. 所以学习到后来. 红线也能近似表达出数据的样子.
 
-{% include tut-image.html global-path='/static/results/tensorflow/1_3_2.png' %}
+{% include tut-image.html image-name="1_3_2.png" %}
 
 {% include assign-heading.html %}
 

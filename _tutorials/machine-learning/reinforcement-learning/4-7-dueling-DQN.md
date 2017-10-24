@@ -34,7 +34,7 @@ Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q �
 加上 每个动作的 Advantage.
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/Pendulum DQN.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/Pendulum DQN.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -72,7 +72,7 @@ advantage 的影响. 发红的地方左右了自己车子的移动原则.
 下面的修改都是基于我之前写的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py).
 这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN).
 
-<a href="/static/results/rl/4-7-4.png" alt="{{ page.title }}{% increment image-count %}">
+<a href="/static/results/reinforcement-learning/4-7-4.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-7-4.png" %}
 </a>
 
@@ -129,7 +129,7 @@ class DuelingDQN:
 这次我们看看累积奖励 reward, 杆子立起来的时候奖励 = 0, 其他时候都是负值,
 所以当累积奖励没有在降低时, 说明杆子已经被成功立了很久了.
 
-<a href="/static/results/rl/4-7-5.png" alt="{{ page.title }}{% increment image-count %}">
+<a href="/static/results/reinforcement-learning/4-7-5.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-7-5.png" %}
 </a>
 

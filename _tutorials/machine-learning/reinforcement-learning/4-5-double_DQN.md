@@ -44,7 +44,7 @@ OpenAI 的话, 这里有[我的一个教程]({% link _tutorials/machine-learning
 以下就是这次的结果, 先睹为快.
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/Pendulum DQN.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/Pendulum DQN.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -102,7 +102,7 @@ class DoubleDQN:
 接着我们来修改 `learn()` 中的代码. 我们对比 Double DQN 和 Natural DQN 在 tensorboard 中的图,
 发现他们的结构并没有不同, 但是在计算 `q_target` 的时候, 方法是不同的.
 
-<a href="/static/results/rl/4-5-3.png" alt="{{ page.title }}{% increment image-count %}">
+<a href="/static/results/reinforcement-learning/4-5-3.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-5-3.png" %}
 </a>
 

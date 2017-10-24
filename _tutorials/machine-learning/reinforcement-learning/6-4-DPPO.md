@@ -44,7 +44,7 @@ PPO 利用 New Policy 和 Old Policy 的比例, 限制了 New Policy 的更新�
 下面是这节内容的效果提前看:
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/Pendulum A3C.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/Pendulum A3C.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -55,7 +55,7 @@ PPO 利用 New Policy 和 Old Policy 的比例, 限制了 New Policy 的更新�
 OpenAI 的 [Demo](https://blog.openai.com/openai-baselines-ppo/#ppo):
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/6-4-demo_openai.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/6-4-demo_openai.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -172,7 +172,7 @@ class PPO:
 {% include tut-image.html image-name="6-4-4.png" %}
 
 我在代码中也写上的这种方式的计算图纸要怎么搭, 不过还有一种是 OpenAI 在 [PPO 这篇 paper](https://arxiv.org/abs/1707.06347) 中提到的 `clipped surrogate objective`,
-`surrogate objective` 就是这个 ![surrogate](/static/results/rl/6-4-5.png). 他们实验中得出的结论说: `clipped surrogate objective` 要比 `KL penalty` 形式好.
+`surrogate objective` 就是这个 ![surrogate](/static/results/reinforcement-learning/6-4-5.png). 他们实验中得出的结论说: `clipped surrogate objective` 要比 `KL penalty` 形式好.
 那 `clipped surrogate objective` 到底是什么呢? 其实就是限制了 surrogate 的变化幅度, 和 `KL` 的规则差不多.
 
 {% include tut-image.html image-name="6-4-6.png" %}
@@ -205,7 +205,7 @@ class PPO:
 
 好了, 接下来就是最重要的更新 PPO 时间了, 同样, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py).
 注意的是, 这个 `update` 的步骤里, 我们用 `for loop` 更新了很多遍 Actor 和 Critic, 在 loop 之前, `pi` 和 `old pi` 是一样的,
-每次 loop 的之后, `pi` 会变动, 而 `old pi` 不变, 这样这个 surrogate ![surrogate](/static/results/rl/6-4-5.png) 就会开始变动了. 这就是 PPO 的精辟.
+每次 loop 的之后, `pi` 会变动, 而 `old pi` 不变, 这样这个 surrogate ![surrogate](/static/results/reinforcement-learning/6-4-5.png) 就会开始变动了. 这就是 PPO 的精辟.
 
 ```python
 class PPO:
@@ -262,6 +262,6 @@ Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _tutori
 我也用这套 DPPO 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm).
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/experiment_arm.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/experiment_arm.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>

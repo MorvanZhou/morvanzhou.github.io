@@ -49,7 +49,7 @@ post-headings:
 下面是基于 Actor Critic 的 Gym Cartpole 实验:
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/cartpole actor critic.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/cartpole actor critic.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 

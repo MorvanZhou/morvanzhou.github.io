@@ -47,19 +47,19 @@ Youtube 的模拟视频都在这里:
 * Maze
 
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/maze sarsa_lambda.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/maze sarsa_lambda.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 
 * Cartpole
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/cartpole dqn.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/cartpole dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 * Mountain car
 <video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/rl/mountaincar dqn.mp4" type="video/mp4">
+  <source src="/static/results/reinforcement-learning/mountaincar dqn.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
