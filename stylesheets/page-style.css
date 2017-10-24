@@ -484,6 +484,16 @@ display: table-cell;
 padding-left: 0.3em;
 }
 
+.my-background-table {
+font-size:0.9em;
+border-collapse: collapse;
+}
+
+.my-background-table tr {
+  border: solid #cecece;
+  border-width: 1px 0;
+}
+
 /* ===================== DONATION PAGE ==================== */
 #support-box {
 padding: 4px;
