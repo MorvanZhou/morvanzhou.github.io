@@ -45,18 +45,18 @@ Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q �
 上一个 Paper 中的经典解释图片, 上者是一般的 DQN 的 Q值 神经网络.
 下者就是 Dueling DQN 中的 Q值 神经网络了. 那具体是哪里不同了呢?
 
-<img class="course-image" src="/static/results/rl/4-7-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-7-1.png" %}
 
 下面这个公式解释了不同之处. 原来 DQN 神经网络直接输出的是每种动作的 Q值,
 而 Dueling DQN 每个动作的 Q值 是有下面的公式确定的.
 
-<img class="course-image" src="/static/results/rl/4-7-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-7-2.png" %}
 
 它分成了这个 state 的值, 加上每个动作在这个 state 上的 advantage.
 因为有时候在某种 state, 无论做什么动作, 对下一个 state 都没有多大影响. 比如 paper 中的这张图.
 
 
-<img class="course-image" src="/static/results/rl/4-7-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-7-3.png" %}
 
 这是开车的游戏, 左边是 state value, 发红的部分证明了 state value 和前面的路线有关,
 右边是 advantage, 发红的部分说明了 advantage 很在乎旁边要靠近的车子, 这时的动作会受更多
@@ -73,7 +73,7 @@ advantage 的影响. 发红的地方左右了自己车子的移动原则.
 这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN).
 
 <a href="/static/results/rl/4-7-4.png" alt="{{ page.title }}{% increment image-count %}">
-<img class="course-image" src="/static/results/rl/4-7-4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-7-4.png" %}
 </a>
 
 ```python
@@ -130,7 +130,7 @@ class DuelingDQN:
 所以当累积奖励没有在降低时, 说明杆子已经被成功立了很久了.
 
 <a href="/static/results/rl/4-7-5.png" alt="{{ page.title }}{% increment image-count %}">
-<img class="course-image" src="/static/results/rl/4-7-5.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-7-5.png" %}
 </a>
 
 我们发现当可用动作越高, 学习难度就越大, 不过 Dueling DQN 还是会比 Natural DQN 学习得更快. 收敛效果更好.

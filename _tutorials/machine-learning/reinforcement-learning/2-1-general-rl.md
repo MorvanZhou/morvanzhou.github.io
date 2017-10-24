@@ -157,7 +157,7 @@ def update_env(S, episode, step_counter):
 最重要的地方就在这里. 你定义的 RL 方法都在这里体现. 在之后的教程中, 我们会更加详细得讲解 RL 中的各种方法, 下面的内容,
 大家大概看看就行, 这节内容不用仔细研究.
 
-<img class="course-image" src="/static/results/rl/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-1.png" %}
 
 ```python
 def rl():

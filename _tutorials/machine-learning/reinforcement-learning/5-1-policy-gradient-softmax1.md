@@ -49,7 +49,7 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 我们介绍的 policy gradient 的第一个算法是一种基于 **整条回合数据** 的更新, 也叫 **REINFORCE** 方法.
 这种方法是 policy gradient 的最基本方法, 有了这个的基础, 我们再来做更高级的.
 
-<img class="course-image" src="/static/results/rl/5-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-1.png" %}
 
 `log(Policy(s,a))*V` 中的 `log(Policy(s,a))` 表示在 状态 `s` 对所选动作 `a` 的吃惊度,
 如果 `Policy(s,a)` 概率越小, 反向的 `log(Policy(s,a))` (即 `-log(P)`) 反而越大. 如果在 `Policy(s,a)` 很小的情况下,

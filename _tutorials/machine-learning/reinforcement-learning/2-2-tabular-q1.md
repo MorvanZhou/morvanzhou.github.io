@@ -37,7 +37,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/rl/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-1.png" %}
 
 整个算法就是一直不断更新 Q table 里的值, 然后再根据新的值来判断要在某个 state 采取怎样的 action.
 Qlearning 是一个 off-policy 的算法, 因为里面的 `max` action 让 Q table 的更新可以不基于正在经历的经验(可以是现在学习着很久以前的经验,甚至是学习他人的经验).

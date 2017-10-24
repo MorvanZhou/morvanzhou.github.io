@@ -81,8 +81,7 @@ for i in range(300):
 
 [OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/4-3-1.png" alt="{{ page.title }}{% increment image-count %}">
-
+{% include tut-image.html image-name="4-3-1.png" %}
 安装 gym 的方式也很简单, 大家可以直接参考我在之前做 强化学习 Reinforcement learning 教程中的[这节内容]({% link _tutorials/machine-learning/reinforcement-learning/4-4-gym.md %}),
 简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
 

@@ -88,7 +88,7 @@ class PolicyGradient:
 
 这次我们要建立的神经网络是这样的:
 
-<img class="course-image" src="/static/results/rl/5-2-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-2-1.png" %}
 
 因为这是强化学习, 所以神经网络中并没有我们熟知的监督学习中的 y label. 取而代之的是我们选的 action.
 
@@ -216,7 +216,7 @@ if i_episode == 0:
 
 我们看看这一段的输出, `vt` 也就是 `discounted_ep_rs_norm`, 看他是怎么样诱导我们的 gradient descent.
 
-<img class="course-image" src="/static/results/rl/5-2-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-2-2.png" %}
 
 可以看出, 左边一段的 `vt` 有较高的值, 右边较低, 这就是 `vt` 在说:
 
@@ -233,7 +233,7 @@ if i_episode == 0:
 
 如果你玩了下 `MountainCar` 的模拟程序, 你会发现 `MountainCar` 模拟程序中的 `vt` 长这样:
 
-<img class="course-image" src="/static/results/rl/5-2-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-2-3.png" %}
 
 这张图在说: **"请重视我这回合最后的一系列动作, 因为这一系列动作让我爬上了山.
 而且请惩罚我开始的一系列动作, 因为这些动作没能让我爬上山".**

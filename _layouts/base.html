@@ -90,42 +90,42 @@
   </script>
 
   <!-- lazy load image -->
-  <script>
-  var images = document.images;
-  for (var i=0; i<images.length; i++) {
-    var downloadingImage = new Image();
-    downloadingImage.onload = function(){
-        images[i].src = this.src;
-    };
-    if (images[i].getAttribute('data-src')) {
-      downloadingImage.src = images[i].data-src;
-    }
-  }
-
-  </script>
-
   <!--<script>-->
-  <!--if (window.addEventListener) {-->
-    <!--window.addEventListener('load', function(){-->
-      <!--var allimages= document.getElementsByClassName('lazy-img');-->
-      <!--for (var i=0; i<allimages.length; i++) {-->
-          <!--if (allimages[i].getAttribute('data-src')) {-->
-              <!--allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));-->
-          <!--}-->
-      <!--}-->
-    <!--}, false);-->
-  <!--} else {-->
-    <!--// it's IE!-->
-    <!--window.attachEvent('load', function() {-->
-      <!--var allimages= document.getElementsByClassName('lazy-img');-->
-      <!--for (var i=0; i<allimages.length; i++) {-->
-          <!--if (allimages[i].getAttribute('data-src')) {-->
-              <!--allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));-->
-          <!--}-->
-      <!--}-->
-    <!--}, false);-->
+  <!--var images = document.images;-->
+  <!--for (var i=0; i<images.length; i++) {-->
+    <!--var downloadingImage = new Image();-->
+    <!--downloadingImage.onload = function(){-->
+        <!--images[i].src = this.src;-->
+    <!--};-->
+    <!--if (images[i].getAttribute('data-src')) {-->
+      <!--downloadingImage.src = images[i].data-src;-->
+    <!--}-->
   <!--}-->
+
   <!--</script>-->
+
+  <script>
+  if (window.addEventListener) {
+    window.addEventListener('load', function(){
+      var allimages= document.getElementsByClassName('lazy-img');
+      for (var i=0; i<allimages.length; i++) {
+          if (allimages[i].getAttribute('data-src')) {
+              allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+          }
+      }
+    }, false);
+  } else {
+    // it's IE!
+    window.attachEvent('load', function() {
+      var allimages= document.getElementsByClassName('lazy-img');
+      for (var i=0; i<allimages.length; i++) {
+          if (allimages[i].getAttribute('data-src')) {
+              allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+          }
+      }
+    }, false);
+  }
+  </script>
 </head>
 
 <body>
