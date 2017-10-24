@@ -8,22 +8,19 @@
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
   <meta name="thumbnail" content="{{ site.baseurl }}{{ page.thumbnail }}" />
   <title>{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python</title>
-  <script src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="/js/video-select.js"></script>
+
   <link href="/stylesheets/page-style.css" type="text/css" rel="stylesheet">
   <link href="/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
   <link href="/stylesheets/syntax.css" type="text/css" rel="stylesheet">
   <link href="/stylesheets/resize.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
 
-  <!-- 360 analysis -->
-  <!--<script type="text/javascript" src="//s.union.360.cn/195005.js" async defer></script>-->
-
   <!-- qq analysis -->
   <script type="text/javascript" src="//tajs.qq.com/stats?sId=63906388" charset="UTF-8"></script>
+  <script src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/video-select.js"></script>
 
-  {% if layout.structured-type == "BlogPosting" %}
   <!-- 360 meta data-->
   <meta property="og:type" content="blog"/>
   <meta property="og:image" content="{{ page.thumbnail }}"/>
@@ -33,6 +30,10 @@
   <meta property="og:description" content="{{ page.description }}" />
   <meta property="og:author" content="{{ page.author }}"/>
 
+  <!-- 360 analysis -->
+  <!--<script type="text/javascript" src="//s.union.360.cn/195005.js" async defer></script>-->
+
+  {% if layout.structured-type == "BlogPosting" %}
   <!-- google post page data -->
   <script type="application/ld+json">
   {
