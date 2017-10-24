@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt12_contours.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt12_contours.py){:target="_blank"}
 
 本节讲解如何用`matplotlib`生成等高线图。今天的结果如下图所示：
 

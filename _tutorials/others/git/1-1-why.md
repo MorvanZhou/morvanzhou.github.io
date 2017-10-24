@@ -13,7 +13,7 @@ post-headings:
   - 什么文件不能被 Git 管理?
 ---
 学习资料:
-  * [Git 官网](https://git-scm.com/)
+  * [Git 官网](https://git-scm.com/){:target="_blank"}
 
 Git 是一个分布式版本控制系统. 它的灵活性, 优越性使得它从2005年发布以来. 
 获得了越来越多的使用和支持.

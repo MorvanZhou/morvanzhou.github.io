@@ -11,7 +11,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk11_msgbox.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk11_msgbox.py){:target="_blank"}
 
 
 
@@ -65,5 +65,5 @@ def hit_me():
     print(tk.messagebox.askretrycancel())#返回true和false
 ```
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk11_msgbox.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk11_msgbox.py){:target="_blank"},
 整个框架的全部代码就完美了.

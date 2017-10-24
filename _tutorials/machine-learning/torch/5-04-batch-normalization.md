@@ -19,11 +19,11 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py)
-  * [Tensorflow 的70行 批标准化代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/502_batch_normalization.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py){:target="_blank"}
+  * [Tensorflow 的70行 批标准化代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/502_batch_normalization.py){:target="_blank"}
   * [我制作的 什么批标准化 动画简介]({% link _tutorials/machine-learning/ML-intro/3-08-batch-normalization.md %})
-  * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
-  * [PyTorch 官网](http://pytorch.org/)
+  * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167){:target="_blank"}
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -170,7 +170,7 @@ for epoch in range(EPOCH):
 {% include assign-heading.html %}
 
 这个教程有几张图要画, 首先我们画训练时的动态图. 我单独定义了一个画动图的功能 `plot_histogram()`,
-因为不是重点, 所以代码的具体细节请看我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py),
+因为不是重点, 所以代码的具体细节请看我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py){:target="_blank"},
 
 {% include tut-image.html image-name="5-4-2.gif" %}
 
@@ -199,7 +199,7 @@ for epoch in range(EPOCH):
 ```
 
 后面还有两张图, 一张是预测曲线, 一张是误差变化曲线, 具体代码不在这里呈现, 想知道如何画图的朋友,
-请参考我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py)
+请参考我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py){:target="_blank"}
 
 
 
@@ -234,6 +234,6 @@ for epoch in range(EPOCH):
 收拢的数据再放入激励函数就能很好地利用激励函数的非线性. 而且可以看出没有 BN 的数据让激活后的结果都分布在 `tanh` 的两端,
 而这两端的梯度又非常的小, 是的后面的误差都不能往前传, 导致神经网络死掉了.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py){:target="_blank"} 中的每一步的意义啦.
 
 

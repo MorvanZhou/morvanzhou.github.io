@@ -17,13 +17,13 @@ post-headings:
 
 学习资料:
   * [什么是神经网络 短视频]({% link _tutorials/machine-learning/ML-intro/2-1-NN.md %})
-  * [PyTorch 官网](http://pytorch.org/)
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 
 
 {% include assign-heading.html %}
 
-[PyTorch](http://pytorch.org/) 是 [Torch](http://torch.ch/) 在 Python 上的衍生. 因为 [Torch](http://torch.ch/) 是一个使用 [Lua](https://www.lua.org/)
+[PyTorch](http://pytorch.org/){:target="_blank"} 是 [PyTorch](http://pytorch.org/){:target="_blank"} 在 Python 上的衍生. 因为 [PyTorch](http://pytorch.org/){:target="_blank"} 是一个使用 [PyTorch](http://pytorch.org/){:target="_blank"}
 语言的神经网络库, Torch 很好用, 但是 Lua 又不是特别流行, 所有开发团队将 Lua 的 Torch 移植到了更流行的语言 Python 上.
 是的 PyTorch 一出生就引来了剧烈的反响. 为什么呢?
 
@@ -33,7 +33,7 @@ post-headings:
 
 可见, 著名的 Facebook, twitter 等都在使用它, 这就说明 PyTorch 的确是好用的, 而且是值得推广.
 
-而且如果你知道 [Numpy](http://www.numpy.org/), PyTorch 说他就是在神经网络领域可以用来替换 numpy 的模块.
+而且如果你知道 [Numpy](http://www.numpy.org/){:target="_blank"}, PyTorch 说他就是在神经网络领域可以用来替换 numpy 的模块.
 
 
 {% include assign-heading.html %}

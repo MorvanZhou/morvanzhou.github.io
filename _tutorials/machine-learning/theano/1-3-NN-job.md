@@ -11,7 +11,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano3_what_does_ML_do.py){:target="_blank"}
   * [本例的代码讲解教程]({% link _tutorials/machine-learning/theano/3-1-layer.md %})
 
 {% include assign-heading.html %}

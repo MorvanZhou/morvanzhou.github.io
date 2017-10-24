@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano13_save)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano13_save){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -28,7 +28,7 @@ post-headings:
 下一次再定义 weights 和 bias 的时候，可以直接把保存好的值放到 shared variable 中去。
 
 
-本文以 [Classification 分类学习](https://morvanzhou.github.io/tutorials/machine-learning/theano/3-4-classification/) 那节的代码为例。
+本文以 [Classification 分类学习](https://morvanzhou.github.io/tutorials/machine-learning/theano/3-4-classification/){:target="_blank"} 那节的代码为例。
 
 
 

@@ -17,12 +17,12 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
   * [什么是 Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 本节内容的模拟视频效果:
-    * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
-    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
-  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
+    * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0){:target="_blank"}
+    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg){:target="_blank"}
+  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf){:target="_blank"}
 
 
 接着上节内容, 我们来实现 `RL_brain` 的 `PolicyGradient` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
@@ -175,7 +175,7 @@ class PolicyGradient:
 
 本节的 `learn()` 很简单, 首先我们要对这回合的所有 `reward` 动动手脚, 使他变得更适合被学习.
 第一就是随着时间推进, 用 `gamma` 衰减未来的 `reward`, 然后为了一定程度上减小 policy gradient 回合 variance,
-我们标准化回合的 state-action value [依据在 Andrej Karpathy 的 blog](http://karpathy.github.io/2016/05/31/rl/).
+我们标准化回合的 state-action value [依据在 Andrej Karpathy 的 blog](http://karpathy.github.io/2016/05/31/rl/){:target="_blank"}.
 
 ```python
 class PolicyGradient:
@@ -268,5 +268,5 @@ class PolicyGradient:
         return discounted_ep_rs
 ```
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
 

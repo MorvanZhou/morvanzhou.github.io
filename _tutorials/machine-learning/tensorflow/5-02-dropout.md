@@ -16,8 +16,8 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf17_dropout)
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf17_dropout){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
   * 机器学习-简介系列 [过拟合]({% link _tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
 
 {% include assign-heading.html %}
@@ -131,5 +131,5 @@ sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 0.5})
 {% include assign-heading.html %}
 
 由于评论区中讨论了很多这份代码的问题, 我在此说明一下. 因为 Tensorflow 升级改版了, 原本视频中可以执行的代码可能会遇到一些问题.
-强烈推荐看看我2017年根据新版本的 Tensorflow 写的[升级版, 简化版代码](https://github.com/MorvanZhou/Tensorflow-Tutorial),
+强烈推荐看看我2017年根据新版本的 Tensorflow 写的[升级版, 简化版代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"},
 比旧版本的更容易懂, 而且可视化效果做得更好. 里面也有 Dropout 这节内容.

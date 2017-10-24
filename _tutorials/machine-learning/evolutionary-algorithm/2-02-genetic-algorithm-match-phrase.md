@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py){:target="_blank"}
   * [我制作的 什么是遗传算法 动画简介]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
 {% include assign-heading.html %}
@@ -55,7 +55,7 @@ class GA:
         return match_count
 ```
 
-而 DNA 呢, 可以都用数字, 而且可以用 [ASCII 编码](http://www.asciitable.com/).
+而 DNA 呢, 可以都用数字, 而且可以用 [ASCII 编码](http://www.asciitable.com/){:target="_blank"}.
 将数字转化成字符, 或者字符转数字都可以, 我们为了统一, DNA 都用数字形式.
 
 ```python
@@ -87,7 +87,7 @@ class GA:
 ```
 
 上面这三个功能的算法和[上节内容]({% link _tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})差不多.
-所以不会再详细说明了. 你也可以去我的 [github 看全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py).
+所以不会再详细说明了. 你也可以去我的 [github 看全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py){:target="_blank"}.
 但是这个 class 中还有一个功能来将上面的三个功能联系起来. 其实这就是上节内容里面的 forloop 中的内容.
 
 ```python
@@ -102,7 +102,7 @@ class GA:
         self.pop = pop
 ```
 
-有了上面定义的这些功能, 再将其他的[小部分](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py)补全.
+有了上面定义的这些功能, 再将其他的[小部分](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py){:target="_blank"}补全.
 我们就能很容易的使用这个 `GA` class 了.
 
 ```python
@@ -132,6 +132,6 @@ Gen 181 :  You get it!
 """
 ```
 
-赶紧试试这套github的[全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py).
+赶紧试试这套github的[全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Match%20Phrase.py){:target="_blank"}.
 
 接下来几节内容, 我们就来看看在不同的情况中如何根据不同的标准选择 fitness 和 DNA 编码.

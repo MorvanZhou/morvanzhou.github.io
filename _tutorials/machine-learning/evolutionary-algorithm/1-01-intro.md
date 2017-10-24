@@ -42,19 +42,19 @@ post-headings:
   Your browser does not support HTML5 video.
 </video>
 
-这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
- [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
+这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44){:target="_blank"}, [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44){:target="_blank"},
+ [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58){:target="_blank"})
 
 如果你提起兴趣了, 恭喜你, 你离学会这些又进了一步. 接着看看我为大家尽心准备的教程,
 相信大家就能迅速上手. 如果大家觉得真的学习到了东西, 我做的东西对你的学习生活有所帮助.
-希望大家也能[支持我](https://morvanzhou.github.io/support/)做出更好, 更简单易懂的教程.
+希望大家也能[支持我](https://morvanzhou.github.io/support/){:target="_blank"}做出更好, 更简单易懂的教程.
 如果没有大家之前的支持, 这一系列进化算法的教程也出不来~ 感谢~
 
 {% include assign-heading.html %}
 
 
 EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达尔文的进化理论, 虽然有一些发展到后面, 有点偏离的这个轨道, 不过他们都是受这个的启蒙.
-在 [wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm)上, EA 包括了:
+在 [wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm){:target="_blank"}上, EA 包括了:
 
 * 遗传算法 (Genetic Algorithm)
 * 进化策略 (Evolution strategy)
@@ -64,7 +64,7 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 在这一系列的教程中我们会着重讲解比较著名的 遗传算法 (Genetic Algorithm), 进化策略 (Evolution strategy) 和
 神经进化 (Neuroevolution). 看看在多种多样的问题中, 他们是如何自由穿梭.
-尤其是之后, 我们还会涉及到强化学习的内容. 如果大家有了解我做过的 [强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/),
+尤其是之后, 我们还会涉及到强化学习的内容. 如果大家有了解我做过的 [强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/){:target="_blank"},
 在后续教程中我们就来看看能挑战当今流行的强化学习的 "进化方法".
 
 {% include google-in-article-ads.html %}

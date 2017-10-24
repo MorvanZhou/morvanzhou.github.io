@@ -16,8 +16,8 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py)
-  * [PyTorch 官网](http://pytorch.org/)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py){:target="_blank"}
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -30,7 +30,7 @@ post-headings:
 {% include assign-heading.html %}
 
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.
-下图是一种我在[强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)中的 Tensorflow 计算图.
+下图是一种我在[强化学习教程](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/){:target="_blank"}中的 Tensorflow 计算图.
 也就是说, 大部分时候, 用 Tensorflow 是先搭建好这样一个计算系统, 一旦搭建好了, 就不能改动了 (也有例外, 比如`dynamic_rnn()`,
 但是总体来说他还是运用了一个静态思维),
 所有的计算都会在这种图中流动, 当然很多情况, 这样就够了, 我们不需要改动什么结构.
@@ -46,7 +46,7 @@ post-headings:
 {% include assign-heading.html %}
 
 我们拿 [这一节内容的 RNN]({% link _tutorials/machine-learning/torch/4-03-RNN-regression.md %})
-来解释动态计算图. 那节内容的[代码在这](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/11_RNN_regressor.py).
+来解释动态计算图. 那节内容的[代码在这](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/11_RNN_regressor.py){:target="_blank"}.
 
 ```python
 ...
@@ -96,6 +96,6 @@ for i in range(60):
 
 经过这样的折腾, torch 还能 handle 住, 已经很不容易啦. 所以当你想要处理这些动态计算图的时候, Torch 还是你首选的神经网络模块.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/501_why_torch_dynamic_graph.py){:target="_blank"} 中的每一步的意义啦.
 
 

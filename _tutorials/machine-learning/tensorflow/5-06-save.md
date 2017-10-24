@@ -11,8 +11,8 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf19_saver.py)
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf19_saver.py){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
 
 我们搭建好了一个神经网络, 训练好了, 肯定也想保存起来, 用于再次加载. 
 那今天我们就来说说怎样用 Tensorflow 中的 saver 保存和加载吧.

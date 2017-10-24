@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py){:target="_blank"}
   
   
 上次学了  `Sklearn` 中的 `data sets`，今天来看 Model 的属性和功能。
@@ -79,7 +79,7 @@ print(model.get_params())
 """
 ```
 
-`model.score(data_X, data_y)` 它可以对 Model 用 `R^2` 的方式进行打分，输出精确度。关于 `R^2 coefficient of determination` 可以查看 [wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination)
+`model.score(data_X, data_y)` 它可以对 Model 用 `R^2` 的方式进行打分，输出精确度。关于 `R^2 coefficient of determination` 可以查看 [wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination){:target="_blank"}
 
 ```python
 print(model.score(data_X, data_y)) # R^2 coefficient of determination

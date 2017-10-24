@@ -19,7 +19,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py){:target="_blank"}
   * [我制作的 什么是遗传算法 动画简介]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
 {% include assign-heading.html %}
@@ -84,7 +84,7 @@ class GA:
 ```
 
 上面这几个功能的算法在[这节内容]({% link _tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %})中有详细介绍.
-所以不会再详细说明了. 你也可以去我的 [github 看全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py).
+所以不会再详细说明了. 你也可以去我的 [github 看全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py){:target="_blank"}.
 不过我们要注意的是在 `crossover` 和 `mutate` 的时候有一点点不一样, 因为对于路径点, 我们不能随意变化. 比如
 如果按平时的 `crossover`, 可能会是这样的结果:
 
@@ -134,7 +134,7 @@ for point in range(self.DNA_size):
 ```
 
 在 GA class 中, 其他的部分就和以前的例子非常相近了, 为了不显得累赘, 我也不会细说了, 可以参考我之前的教程,
-也可以在我 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py) 中查看整套代码.
+也可以在我 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Travel%20Sales%20Person.py){:target="_blank"} 中查看整套代码.
 
 最后的循环主框架还是没变, 就像下面这么简单.
 
@@ -153,4 +153,4 @@ for generation in range(N_GENERATIONS):
 {% include tut-image.html image-name="2-3-1.gif" %}
 
 这个例子中的 DNA 形式又不一样, 其实每条路线都是由 "左上, 右下, 右上..." 这样的移动顺序组成.
-所以整个路线 DNA 就是一连串的移动方向. 在移动方向上变异和交配, 就能找到比较好的路线了. 详细[代码在这](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Find%20Path.py).
+所以整个路线 DNA 就是一连串的移动方向. 在移动方向上变异和交配, 就能找到比较好的路线了. 详细[代码在这](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Find%20Path.py){:target="_blank"}.

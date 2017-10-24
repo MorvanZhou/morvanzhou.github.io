@@ -19,9 +19,9 @@ post-headings:
 
 学习资料:
   * [强化学习教程]({% link _table-contents/machine-learning/reinforcement-learning.html %})
-  * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
+  * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}
   * [DDPG Python 教程]({% link _tutorials/machine-learning/reinforcement-learning/6-2-DDPG.md %})
-  * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
+  * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971){:target="_blank"}
 
 今天我们会来说说强化学习中的一种actor critic 的提升方式 Deep Deterministic Policy Gradient (DDPG), DDPG 最大的优势就是能够在连续动作上更有效地学习.
 

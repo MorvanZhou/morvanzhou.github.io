@@ -14,7 +14,7 @@ post-headings:
   - 总结
 ---
 学习资料:
-  * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/)
+  * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/){:target="_blank"}
   * [进化策略Python教程]({% link _tutorials/machine-learning/evolutionary-algorithm/3-01-evolution-strategy.md %})
 
 Hello 大家好, 欢迎观看这一次的机器学习简介系列视频, 进化是大自然赋予我们的礼物, 我们也能学习自然界的这份礼物, 将它放入计算机, 让计算机也能用进化来解决问题. 我们接着上回提到的遗传算法, 来说一说另一种使用进化理论的优化模式-进化策略 (Evolution Strategy).

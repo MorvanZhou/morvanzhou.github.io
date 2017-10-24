@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk11_save.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk11_save.py){:target="_blank"}
 
 
 总算到了最后一次的课程了,我们训练好了一个Model 以后总需要保存和再次预测,

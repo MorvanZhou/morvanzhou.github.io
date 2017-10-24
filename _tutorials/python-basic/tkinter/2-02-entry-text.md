@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk3_entry_text.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk3_entry_text.py){:target="_blank"}
 
 
 {% include assign-heading.html %}

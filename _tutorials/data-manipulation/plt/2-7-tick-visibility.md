@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt9_tick_visibility.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt9_tick_visibility.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

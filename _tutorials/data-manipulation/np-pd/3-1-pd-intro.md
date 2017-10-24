@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/11_pandas_intro.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/11_pandas_intro.py){:target="_blank"}
   
 {% include assign-heading.html %}
 

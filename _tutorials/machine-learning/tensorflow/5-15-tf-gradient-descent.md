@@ -18,8 +18,8 @@ post-headings:
 
 
 学习资料:
-  * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py)
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+  * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
   * [什么是梯度下降4分钟短视频]({% link _tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})
 
 {% include assign-heading.html %}
@@ -39,7 +39,7 @@ post-headings:
 
 这次我们还是以代码的形式直观地展示我们要做的事情.
 为了可视化梯度下降的过程, 我们需要用到 Python 中的几个模块, `matplotlib`, `numpy`, `tensorflow`.
-如果对画图感兴趣的朋友们, 可以来看看我的 [python 画图教程](https://morvanzhou.github.io/tutorials/data-manipulation/plt/).
+如果对画图感兴趣的朋友们, 可以来看看我的 [python 画图教程](https://morvanzhou.github.io/tutorials/data-manipulation/plt/){:target="_blank"}.
 
 ```python
 import tensorflow as tf
@@ -99,7 +99,7 @@ with tf.Session() as sess:
 
 接着我们就开始训练, 并时刻记录训练时的 `a,b` 参数 以及 误差 变化.
 
-最后可视化他们, 因为可视化代码不是重点, 所以想仔细看代码的朋友, 欢迎来我的 [Github 中看全套代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py).
+最后可视化他们, 因为可视化代码不是重点, 所以想仔细看代码的朋友, 欢迎来我的 [Github 中看全套代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}.
 
 首先我们先看看训练出来的预测线和数据的拟合度吧:
 
@@ -136,7 +136,7 @@ tf_y_fun = lambda a, b: a * x**3 + b * x**2
 
 现在有点像一个经验公式了吧. 其实很多时候, 人们总结出来的经验公式其实是很有用的, 我们没必要大费周章来使用神经网络处理所有问题, 首先遇到一个问题, 你要想的是,
 在这个问题中, 是否以前有人提出过什么经验公式的, 那我来对这个经验公式调调参. 这可比神经网络方便多了. 而且梯度下降调参只是调参中的一种方式, 还有很多种调参方式,
-具体可以看看和使用 python 的另一个模块 `scipy` 中的 `optimization` [链接](https://docs.scipy.org/doc/scipy-0.19.0/reference/optimize.html).
+具体可以看看和使用 python 的另一个模块 `scipy` 中的 `optimization` [链接](https://docs.scipy.org/doc/scipy-0.19.0/reference/optimize.html){:target="_blank"}.
 
 好了, 如果你决定用梯度下降调参, 这份代码就是一种途径. 代码的其他部分不用过多更改. 我们直接来看效果吧. 首先看看数据点和拟合参数`a`, `b` 后的曲线.
 

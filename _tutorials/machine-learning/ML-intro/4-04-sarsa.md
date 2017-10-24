@@ -15,10 +15,10 @@ post-headings:
 
 学习资料:
   * [强化学习教程]({% link _table-contents/machine-learning/reinforcement-learning.html %})
-  * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_)
+  * [强化学习模拟程序](https://www.youtube.com/watch?v=G5BDgzxfLvA&list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}
   * [Q-learning 简介视频]({% link _tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * [Sarsa Python 教程]({% link _tutorials/machine-learning/reinforcement-learning/3-1-tabular-sarsa1.md %})
-  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf)
+  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf){:target="_blank"}
 
 
 

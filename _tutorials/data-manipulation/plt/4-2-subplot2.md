@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt16_grid_subplot.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt16_grid_subplot.py){:target="_blank"}
 
 matplotlib 的 subplot 还可以是分格的,这里介绍三种方法.
 

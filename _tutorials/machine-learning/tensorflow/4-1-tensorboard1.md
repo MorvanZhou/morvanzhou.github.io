@@ -14,8 +14,8 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard)
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT/tf14_tensorboard){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
 
 **注意:** 本节内容会用到浏览器, 而且与 tensorboard 兼容的浏览器是 "Google Chrome". 
 使用其他的浏览器不保证所有内容都能正常显示.
@@ -32,7 +32,7 @@ post-headings:
 
 这次我们会介绍如何可视化神经网络。因为很多时候我们都是做好了一个神经网络，但是没有一个图像可以展示给大家看。这一节会介绍一个TensorFlow的可视化工具 --- tensorboard :)
 通过使用这个工具我们可以很直观的看到整个神经网络的结构、框架。
-以前几节的代码为例：[相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/for_you_to_practice.py)
+以前几节的代码为例：[相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/for_you_to_practice.py){:target="_blank"}
 通过tensorflow的工具大致可以看到，今天要显示的神经网络差不多是这样子的
 
 {% include tut-image.html image-name="4_1_1.png" %}
@@ -209,7 +209,7 @@ tensorboard --logdir logs
 
 tensorboard 还有很多其他的参数，希望大家可以多多了解,
 可以使用 `tensorboard --help` 查看tensorboard的详细参数
-最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py)
+最终的[全部代码在这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf14_tensorboard/full_code.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

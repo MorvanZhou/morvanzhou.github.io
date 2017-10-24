@@ -16,7 +16,7 @@ post-headings:
 ---
 
 学习资料:
-  * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/)
+  * [进化算法教程系列](https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/){:target="_blank"}
   * [什么是遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * [神经网络进化Python教程]({% link _tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %})

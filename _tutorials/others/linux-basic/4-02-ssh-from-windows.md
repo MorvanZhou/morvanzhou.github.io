@@ -34,7 +34,7 @@ description: "使用 ssh 远程操作 Linux 我觉得是我用得最多的一种
 
 
 首先强调一点, 这套"远程"操控的方法实际上也不是真正的远程. 这节的教程教你的方法是在一个局域网内远程操控电脑 (在一个路由器下).
-你当然可以把它做成在互联网中的远程操控, 不过技术难度上加了一个等级, 如果你想是想人在公司, 却要操控家里的 Linux, 有一个方便免费的软件 ([TeamViewer](https://www.teamviewer.com)) 可以提供你参考.
+你当然可以把它做成在互联网中的远程操控, 不过技术难度上加了一个等级, 如果你想是想人在公司, 却要操控家里的 Linux, 有一个方便免费的软件 ([TeamViewer](https://www.teamviewer.com){:target="_blank"}) 可以提供你参考.
 
 在家中同一个路由器下, 我们完全可以使用 VNC 或者 SSH 来实现远程操控 (VNC 就是一个将你 Linux 屏幕输出到另一台电脑上的软件, SSH 则是将你现在电脑的 Terminal 链接上 Linux Terminal, 用代码控制 Linux).
 使用 SSH 将会更加顺畅 (VNC 输出桌面图像会卡), 所以如果你有能力, 那就尽量使用 SSH 吧. 这节内容, 我们来说说怎么样使用 SSH. 之后的内容我们接着说 VNC 和 TeamViewer.
@@ -65,7 +65,7 @@ $ sudo apt-get install openssh-server
 在 Windows 上, SSH 不像 Linux 和 MacOS 那样常用, 而且 Windows 的系统内核也和 Linux 不太一样.
 所以我们用一个软件来实现 SSH 比较合适. PuTTY 是一个开源, 免费, 而且常被使用的 SSH 软件. 首先, 我们得下载这个软件.
 
-[PuTTY 下载页面](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+[PuTTY 下载页面](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){:target="_blank"}
 
 在这个下载界面中, 你会看到类似这样的界面, 确认你 Windows 电脑是多少位的 (32-bit 或 64-bit), 然后选择一个适合你电脑的 `.msi` 安装包.
 

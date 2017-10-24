@@ -15,8 +15,8 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk5_datasets.py)
-  * 更多可用数据 [网址](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk5_datasets.py){:target="_blank"}
+  * 更多可用数据 [网址](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets){:target="_blank"}
   
 今天来看 `Sklearn` 中的 `data sets`，很多而且有用，可以用来学习算法模型。
 

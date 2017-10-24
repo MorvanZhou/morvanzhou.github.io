@@ -15,9 +15,9 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/305_batch_train.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/305_batch_train.py){:target="_blank"}
   * [我制作的 训练优化器 动画简介]({% link _tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
-  * [PyTorch 官网](http://pytorch.org/)
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -97,6 +97,6 @@ Epoch:  2 | Step:  1 | batch x:  [ 1.  5.] | batch y:  [ 10.   6.]
 
 这时, 在 `step=1` 就只给你返回这个 epoch 中剩下的数据就好了.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/305_batch_train.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/305_batch_train.py){:target="_blank"} 中的每一步的意义啦.
 
 

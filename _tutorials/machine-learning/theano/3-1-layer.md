@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano8_Layer_class.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano8_Layer_class.py){:target="_blank"}
   
 在学习了如何利用`Theano`定义神经网络的激活函数后，我们用一个`class`类来规划神经网络层的信息，这样会比较方便的我们之后的编程应用.   
 
@@ -42,7 +42,7 @@ l2 = Layer(l1.outputs, 10, 1, None)
 
 其中，第一层网络我们命名为`l1`, 输入变量为`inputs`, 输入为1维，输出为10维，也就是说`l`, 含有10个神经元或节点；
 激活函数为`theano.tensor.nnet.relu`函数, 当然我们也可以针对不同的问题选用别的函数, 
-例如`theano.tensor.nnet.nnet.sigmoid`, 详情请见[Theano官方文档](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html)。
+例如`theano.tensor.nnet.nnet.sigmoid`, 详情请见[Theano官方文档](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html){:target="_blank"}。
 
 第二层网络的输入是第一层网络的输出`l1.outputs`, 所以输入的维度是10，输出是1维，激活函数我们采用`one`,也就是说我们采用默认的线形激活函数，
 `l2`层含有1个神经元，也就是网络的输出神经元。

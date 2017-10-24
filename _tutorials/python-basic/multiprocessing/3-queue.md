@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing3_queue.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing3_queue.py){:target="_blank"}
 
 Queue的功能是将每个核或线程的运算结果放在队里中，
 等到每个线程或核运行完毕后再从队列中取出结果，

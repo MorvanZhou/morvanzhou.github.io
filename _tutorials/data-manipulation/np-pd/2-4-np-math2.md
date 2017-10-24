@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [Numpy官方英文教材](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+  * [Numpy官方英文教材](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html){:target="_blank"}
 
 通过上一节的学习，我们可以了解到一部分矩阵中元素的计算和查找操作。然而在日常使用中，对应元素的索引也是非常重要的。依然，让我们先从一个脚本开始 ：
 
@@ -137,4 +137,4 @@ print(np.clip(A,5,9))
 
 这个函数的格式是`clip(Array,Array_min,Array_max)`，顾名思义，`Array`指的是将要被执行用的矩阵，而后面的最小值最大值则用于让函数判断矩阵中元素是否有比最小值小的或者比最大值大的元素，并将这些指定的元素转换为最小值或者最大值。
 
-实际上每一个Numpy中大多数函数均具有很多变量可以操作，你可以指定行、列甚至某一范围中的元素。更多具体的使用细节请记得查阅[Numpy官方英文教材](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)。
+实际上每一个Numpy中大多数函数均具有很多变量可以操作，你可以指定行、列甚至某一范围中的元素。更多具体的使用细节请记得查阅[Numpy官方英文教材](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html){:target="_blank"}。

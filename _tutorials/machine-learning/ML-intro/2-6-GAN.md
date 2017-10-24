@@ -18,8 +18,8 @@ post-headings:
 
 学习资料:
   * [PyTorch GAN 教程]({% link _tutorials/machine-learning/torch/4-06-GAN.md %})
-  * [Tensorflow 50行 GAN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py)
-  * [论文 Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)
+  * [Tensorflow 50行 GAN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}
+  * [论文 Generative Adversarial Networks](https://arxiv.org/abs/1406.2661){:target="_blank"}
 
 
 Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会来说说现在最流行的一种生成网络, 叫做 GAN, 又称生成对抗网络, 也是 Generative Adversarial Nets 的简称. 完全没有听懂, GAN 是什么鬼.. 不急, 我们慢慢来解释.

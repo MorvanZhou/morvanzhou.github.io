@@ -23,11 +23,11 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
-  * [修改版代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py){:target="_blank"}
+  * [修改版代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py){:target="_blank"}
   * [什么是 Deep Deterministic Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-09-DDPG.md %})
   * [什么是 Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %})
-  * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
+  * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971){:target="_blank"}
   * [我的 DQN 教程]({% link _tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %})
   * [我的 Actor Critic 教程]({% link _tutorials/machine-learning/reinforcement-learning/6-1-actor-critic.md %})
 
@@ -85,7 +85,7 @@ Google DeepMind 提出的一种使用 `Actor Critic` 结构, 但是输出的不�
 
 {% include tut-image.html image-name="6-2-3.png" %}
 
-其搭建的代码部分在这 (如果想一次性看全部, 请去我的[Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)):
+其搭建的代码部分在这 (如果想一次性看全部, 请去我的[Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py){:target="_blank"}):
 
 ```python
 class Actor(object):
@@ -168,12 +168,12 @@ critic = Critic(..., actor.a, actor.a_)  # 将 actor 同它的 eval_net/target_n
 actor.add_grad_to_graph(critic.a_grads) # 将 critic 产出的 dQ/da 加入到 Actor 的 Graph 中去
 ```
 
-同样, 如果你觉得只看部分代码不舒服, [这里有全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py).
+同样, 如果你觉得只看部分代码不舒服, [这里有全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py){:target="_blank"}.
 
 {% include assign-heading.html %}
 
 以下是关于类似于 `DQN` 中的记忆库代码, 我们用一个 `class` 来建立.
-关于 `Memory` 的详细算法, 请直接去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py) 中看, 这样更简单.
+关于 `Memory` 的详细算法, 请直接去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py){:target="_blank"} 中看, 这样更简单.
 
 ```python
 class Memory(object):
@@ -190,7 +190,7 @@ class Memory(object):
 {% include assign-heading.html %}
 
 这里的回合算法只提到了最重要的部分, 省掉了一些没必要的, 有助理解.
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py)
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py){:target="_blank"}
 
 ```python
 var = 3  # 这里初始化一个方差用于增强 actor 的探索性
@@ -219,7 +219,7 @@ for i in range(MAX_EPISODES):
             break
 ```
 
-我也用这套 DDPG 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm).
+我也用这套 DDPG 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm){:target="_blank"}.
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/reinforcement-learning/experiment_arm.mp4" type="video/mp4">
@@ -232,4 +232,4 @@ for i in range(MAX_EPISODES):
 后来我在回过头来看代码, 结果发现计算 `Actor` 更新时有点小问题, 所以就修改了之前的代码.
 但是修改后我觉得.. 代码变得累赘了, 所以我觉得再重写一个, 简化所有流程.
 能看到这一个板块的朋友们有没有感到绝望(MD 看了那么久上面的代码, 结果有个更简单的). 哈哈,没关系.
-学习代码和技术不要嫌多. 所以[代码就直接看](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py)吧, 相信有了上面的了解, 看这份代码会比较容易.
+学习代码和技术不要嫌多. 所以[代码就直接看](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py){:target="_blank"}吧, 相信有了上面的了解, 看这份代码会比较容易.

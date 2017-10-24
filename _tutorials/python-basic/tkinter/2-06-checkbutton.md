@@ -12,7 +12,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk7_checkbutton.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk7_checkbutton.py){:target="_blank"}
 
 
 运行之后的效果将会像下面的图片一样，此时不作任何操作.
@@ -69,5 +69,5 @@ def print_selection():
 相对于前面学过的 `print_selection`，这一段比较长，其实功能差不多，只不过加了`if...elif...else`来选择控制而已即如代码注释，`config`在前面已经讲过就是将参数`text`的值显示，这里的`var1.get() == 1`
 就是前面所说的var1获得的变量`onvalue=1`，`var1.get() == 0`即是`var1`获得的变量`offvalu=0`同理`var2`也是如此。
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk7_checkbutton.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk7_checkbutton.py){:target="_blank"},
 整个框架的全部代码就完美了.

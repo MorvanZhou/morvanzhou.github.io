@@ -18,7 +18,7 @@ post-headings:
 ---
 
 
-**这原本是我写在[知乎上的一篇文章](https://zhuanlan.zhihu.com/p/28626431), 觉得还是转到这个网站上作为一个教程比较好**
+**这原本是我写在[知乎上的一篇文章](https://zhuanlan.zhihu.com/p/28626431){:target="_blank"}, 觉得还是转到这个网站上作为一个教程比较好**
 
 
 最近在写代码, 编一个 Python 模拟器, 做 simulation, 好不容易用传说中 Python 里速度最快的计算模块 "Numpy" 的写好了, 结果运行起来, 出奇的慢! 因为一次simulation要一个小时, 要不停测试, 所以自己受不了了.. 首先, 我的脑海中的问题, 渐渐浮现出来.
@@ -26,7 +26,7 @@ post-headings:
 * 我知道 Pandas 要比 Numpy 慢, 所以我尽量避免用 Pandas. 但是 Numpy (速度怪兽), 为什么还是这么慢?
 
 带有写代码洁癖的我好好给 google 了一番. 第一个出现在我眼前的就是这个文章,
-[Getting the Best Performance out of NumPy](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/). 所以我也将自己从这个文章中学到的诀窍分享给大家, 并补充一些内容.
+[Getting the Best Performance out of NumPy](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/){:target="_blank"}. 所以我也将自己从这个文章中学到的诀窍分享给大家, 并补充一些内容.
 
 
 
@@ -44,7 +44,7 @@ b=1; a=b/0.5
 ```
 
 这个运算看似简单, 但是在计算机内部, b 首先要从一个整数 `integer` 转换成浮点数 `float`, 才能进行后面的 `b/0.5`, 因为得到的要是一个小数. 还有很多其他的原因和详细说明 (比如 Python 对内存的调用) 在这里能够找到:
-[Why Python is Slow: Looking Under the Hood](http://link.zhihu.com/?target=https%3A//jakevdp.github.io/blog/2014/05/09/why-python-is-slow/)
+[Why Python is Slow: Looking Under the Hood](http://link.zhihu.com/?target=https%3A//jakevdp.github.io/blog/2014/05/09/why-python-is-slow/){:target="_blank"}
 
 提到 Numpy, 它就是一个 Python 的救星. 能把简单好用的 Python 和高性能的 C 语言合并在一起. 当你调用 Numpy 功能的时候, 他其实调用了很多 C 语言而不是纯 Python. 这就是为什么大家都爱用 Numpy 的原因.
 
@@ -54,7 +54,7 @@ b=1; a=b/0.5
 {% include assign-heading.html %}
 
 其实 Numpy 就是 C 的逻辑, 创建存储容器 "Array" 的时候是寻找内存上的一连串区域来存放, 而 Python 存放的时候则是不连续的区域, 这使得 Python 在索引这个容器里的数据时不是那么有效率. Numpy 只需要再这块固定的连续区域前后走走就能不费吹灰之力拿到数据. 下图是来自
-[Why Python is Slow: Looking Under the Hood](http://link.zhihu.com/?target=https%3A//jakevdp.github.io/blog/2014/05/09/why-python-is-slow/), 他很好的解释了这一切.
+[Why Python is Slow: Looking Under the Hood](http://link.zhihu.com/?target=https%3A//jakevdp.github.io/blog/2014/05/09/why-python-is-slow/){:target="_blank"}, 他很好的解释了这一切.
 
 {% include tut-image.html image-name="4-1-2.png" %}
 
@@ -74,7 +74,7 @@ b=1; a=b/0.5
 {% include tut-image.html image-name="4-1-4.png" %}
 
 
-[这篇 Blog](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/)的图显示. 在我们看来的 2D Array, 如果追溯到计算机内存里, 它其实是储存在一个连续空间上的. 而对于这个连续空间, 我们如果创建 Array 的方式不同, 在这个连续空间上的排列顺序也有不同. 这将影响之后所有的事情! 我们后面会用 Python 进行运算时间测试.
+[这篇 Blog](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/){:target="_blank"}的图显示. 在我们看来的 2D Array, 如果追溯到计算机内存里, 它其实是储存在一个连续空间上的. 而对于这个连续空间, 我们如果创建 Array 的方式不同, 在这个连续空间上的排列顺序也有不同. 这将影响之后所有的事情! 我们后面会用 Python 进行运算时间测试.
 
 在 Numpy 中, 创建 2D Array 的默认方式是 "C-type" 以 row 为主在内存中排列, 而如果是 "Fortran" 的方式创建的, 就是以 column 为主在内存中排列.
 
@@ -151,7 +151,7 @@ a[:, indices]     # 0.000006
 {% include assign-heading.html %}
 
 
-在 Numpy 中, 有两个很重要的概念, `copy` 和 `view`. `copy` 顾名思义, 会将数据 copy 出来存放在内存中另一个地方, 而 `view` 则是不 copy 数据, 直接取源数据的索引部分. 下图来自 [Understanding SettingwithCopyWarning in pandas](http://link.zhihu.com/?target=https%3A//www.dataquest.io/blog/settingwithcopywarning/)
+在 Numpy 中, 有两个很重要的概念, `copy` 和 `view`. `copy` 顾名思义, 会将数据 copy 出来存放在内存中另一个地方, 而 `view` 则是不 copy 数据, 直接取源数据的索引部分. 下图来自 [Understanding SettingwithCopyWarning in pandas](http://link.zhihu.com/?target=https%3A//www.dataquest.io/blog/settingwithcopywarning/){:target="_blank"}
 
 {% include tut-image.html image-name="4-1-5.png" %}
 
@@ -203,7 +203,7 @@ print('%f' % ((t1-t0)/N))     # f1: 0.000837
 print('%f' % ((t2-t1)/N))     # f2: 0.001346
 ```
 
-对于 view 还有一点要提, 你是不是偶尔有时候要把一个矩阵展平, 用到 `np.flatten()` 或者 `np.ravel()`. 他俩是不同的! ravel 返回的是一个 view (谢谢知乎上评论的提醒, [官方说](http://link.zhihu.com/?target=https%3A//docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html)如果用 ravel, 需要 copy 的时候才会被 copy , 我想这个时候可能是把 ravel 里面 order 转换的时候, 如 'C-type' -> 'Fortran'), 而 flatten 返回的总是一个 copy. 现在你知道谁在拖你的后腿了吧! 下面的测试证明, 相比于 flatten, ravel 是神速.
+对于 view 还有一点要提, 你是不是偶尔有时候要把一个矩阵展平, 用到 `np.flatten()` 或者 `np.ravel()`. 他俩是不同的! ravel 返回的是一个 view (谢谢知乎上评论的提醒, [官方说](http://link.zhihu.com/?target=https%3A//docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html){:target="_blank"}如果用 ravel, 需要 copy 的时候才会被 copy , 我想这个时候可能是把 ravel 里面 order 转换的时候, 如 'C-type' -> 'Fortran'), 而 flatten 返回的总是一个 copy. 现在你知道谁在拖你的后腿了吧! 下面的测试证明, 相比于 flatten, ravel 是神速.
 
 ```python
 def f1(a):
@@ -250,7 +250,7 @@ a_copy5 = a[np.isnan(a), :]  # fancy indexing
 
 Numpy 给了我们很多很自由的方式选择数据, 这些虽然都很方便, 但是如果你可以尽量避免这些操作, 你的速度可以飞起来.
 
-在上面提到的 [blog](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/) 里面, 他提到了, 如果你还是喜欢这种 fancy indexing 的形式, 我们也是可以对它加点速的. 那个 blog 中指出了两种方法
+在上面提到的 [blog](http://link.zhihu.com/?target=http%3A//ipython-books.github.io/featured-01/){:target="_blank"} 里面, 他提到了, 如果你还是喜欢这种 fancy indexing 的形式, 我们也是可以对它加点速的. 那个 blog 中指出了两种方法
 
 1.使用 `np.take()`, 替代用 index 选数据的方法.
 
@@ -315,7 +315,7 @@ a += 1                 # 0.011219
 np.add(a, 1, out=a)    # 0.008843
 ```
 
-带有 out 的 numpy 功能都在这里:[Universal functions](http://link.zhihu.com/?target=https%3A//docs.scipy.org/doc/numpy/reference/ufuncs.html%23available-ufuncs). 所以只要是已经存在了一个 placeholder (比如 a), 我们就没有必要去再创建一个, 用 out 方便又有效.
+带有 out 的 numpy 功能都在这里:[Universal functions](http://link.zhihu.com/?target=https%3A//docs.scipy.org/doc/numpy/reference/ufuncs.html%23available-ufuncs){:target="_blank"}. 所以只要是已经存在了一个 placeholder (比如 a), 我们就没有必要去再创建一个, 用 out 方便又有效.
 
 
 
@@ -357,7 +357,7 @@ print('%f' % ((t1-t0)/N))    # 0.000003
 print('%f' % ((t2-t1)/N))    # 0.000508
 ```
 
-可以看出来, numpy 明显比 pandas 快很多. 如果需要使用到不同数据形式, numpy 也是可以胜任的, 并且在还保持了快速的计算速度. 至于 pandas 为什么比 numpy 慢, 因为 pandas data 里面还有很多七七八八的数据, 记录着这个 data 的种种其他的特征. 这里还有更全面的对比: [Numpy Vs Pandas Performance Comparison](http://link.zhihu.com/?target=http%3A//gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html)
+可以看出来, numpy 明显比 pandas 快很多. 如果需要使用到不同数据形式, numpy 也是可以胜任的, 并且在还保持了快速的计算速度. 至于 pandas 为什么比 numpy 慢, 因为 pandas data 里面还有很多七七八八的数据, 记录着这个 data 的种种其他的特征. 这里还有更全面的对比: [Numpy Vs Pandas Performance Comparison](http://link.zhihu.com/?target=http%3A//gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html){:target="_blank"}
 
 
 

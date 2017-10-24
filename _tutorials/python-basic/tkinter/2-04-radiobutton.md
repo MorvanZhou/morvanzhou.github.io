@@ -12,7 +12,7 @@ author: 潘雨（Mr_Pan）
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py){:target="_blank"}
 
 
 这一次的效果将会像下面的图片一样.
@@ -63,7 +63,7 @@ def print_selection():
 举个例子就是我们一开始所做的将选项 "option A" 选中时的值以 "A" 放入 `var` 中，
 所以获取的也就是A 即如果我们这时候选中 "option A" 选项，label显示的值则是 "you have selected A".
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk5_radiobutton.py){:target="_blank"},
 整个框架的全部代码就完美了.
 
 

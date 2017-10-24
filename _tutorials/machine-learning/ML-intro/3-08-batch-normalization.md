@@ -17,7 +17,7 @@ post-headings:
 学习资料:
   * [Tensorflow 使用 Batch normalization]({% link _tutorials/machine-learning/tensorflow/5-13-BN.md %})
   * [PyTorch 使用 Batch normalization]({% link _tutorials/machine-learning/torch/5-04-batch-normalization.md %})
-  * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
+  * 论文 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167){:target="_blank"}
 
 
 今天我们会来聊聊批标准化 Batch Normalization.

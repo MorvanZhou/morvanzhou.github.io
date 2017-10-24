@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/8-RNN_LSTM_Regressor_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/8-RNN_LSTM_Regressor_example.py){:target="_blank"}
   * 机器学习-简介系列 [RNN]({% link _tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * 机器学习-简介系列 [LSTM]({% link _tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * Tensorflow [RNN教程]({% link _tutorials/machine-learning/tensorflow/5-08-RNN2.md %})

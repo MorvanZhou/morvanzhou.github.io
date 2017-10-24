@@ -10,7 +10,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread5_GIL.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread5_GIL.py){:target="_blank"}
   * 多进程 [教程](/tutorials/python-basic/multiprocessing/)
 
 {% include announcement.html %}

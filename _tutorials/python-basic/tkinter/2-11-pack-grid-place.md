@@ -10,6 +10,6 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk12_position.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk12_position.py){:target="_blank"}
 
 {% include announcement.html %}

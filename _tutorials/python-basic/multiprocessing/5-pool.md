@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing5_pool.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/multiprocessingTUT/multiprocessing5_pool.py){:target="_blank"}
 
 这次我们讲进程池`Pool`。 进程池就是我们将所要运行的东西，放到池子里，Python会自行解决多进程的问题
 

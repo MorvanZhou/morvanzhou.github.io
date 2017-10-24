@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk4_listbox.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk4_listbox.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

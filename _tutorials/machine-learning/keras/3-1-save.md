@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/10-save.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/10-save.py){:target="_blank"}
   
 今天学习如何保存神经网络，这样以后想要用的时候直接提取就可以。
 

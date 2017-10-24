@@ -12,7 +12,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk10_cross_validation3.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk10_cross_validation3.py){:target="_blank"}
 
 
 连续三节的交叉验证(cross validation)让我们知道在机器学习中验证是有多么的重要,

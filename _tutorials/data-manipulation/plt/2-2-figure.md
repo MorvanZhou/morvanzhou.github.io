@@ -11,7 +11,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt4_figure.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt4_figure.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

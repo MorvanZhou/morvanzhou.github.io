@@ -18,7 +18,7 @@ post-headings:
 ---
 
 学习资料:
-  * 英文学习[资料](http://sebastianruder.com/optimizing-gradient-descent/)
+  * 英文学习[资料](http://sebastianruder.com/optimizing-gradient-descent/){:target="_blank"}
   * [PyTorch 可视化优化器]({% link _tutorials/machine-learning/torch/3-06-optimizer.md %})
 
 

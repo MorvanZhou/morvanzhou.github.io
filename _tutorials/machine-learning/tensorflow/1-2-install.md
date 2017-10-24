@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * 官方关于 Tensorflow 安装的 [说明](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
+  * 官方关于 Tensorflow 安装的 [说明](https://www.tensorflow.org/versions/master/get_started/os_setup.html){:target="_blank"}
 
 安装 Tensorflow 时需要注意的几点:
 
@@ -29,11 +29,11 @@ post-headings:
 
 Tensorflow 的安装方式很多. 比如官网提供的:
 
-* [Pip 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#pip-installation)
-* [Virtualenv 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#virtualenv-installation)
-* [Anaconda 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#anaconda-installation)
-* [Docker 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#docker-installation)
-* [从安装源 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#installing-from-sources)
+* [Pip 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#pip-installation){:target="_blank"}
+* [Virtualenv 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#virtualenv-installation){:target="_blank"}
+* [Anaconda 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#anaconda-installation){:target="_blank"}
+* [Docker 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#docker-installation){:target="_blank"}
+* [从安装源 安装](https://www.tensorflow.org/versions/master/get_started/os_setup.html#installing-from-sources){:target="_blank"}
 
 这节内容使用 pip 在每个系统的安装方式:
 
@@ -121,7 +121,7 @@ $ sudo pip3 install --upgrade $TF_BINARY_URL
 
 {% include assign-heading.html %}
 
-tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows)
+tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows){:target="_blank"}
 
 安装前的检查:
 
@@ -147,7 +147,7 @@ please exit the tensorflow source tree, and relaunch your python interpreter
 from there.
 ```
 
-不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/).
+不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/){:target="_blank"}.
 就能解决这个问题.
 
 {% include assign-heading.html %}

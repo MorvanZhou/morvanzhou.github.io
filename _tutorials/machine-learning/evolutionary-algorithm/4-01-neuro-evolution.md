@@ -21,8 +21,8 @@ post-headings:
   * [我制作的 什么是神经进化 动画简介]({% link _tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
-  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
-  * OpenAI 的 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/)
+  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf){:target="_blank"})
+  * OpenAI 的 [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/){:target="_blank"}
 
  {% include assign-heading.html %}
 
@@ -38,8 +38,8 @@ post-headings:
   Your browser does not support HTML5 video.
 </video>
 
-这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44), [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
- [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58))
+这些是上面实验的部分链接 ( [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44){:target="_blank"}, [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44){:target="_blank"},
+ [微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58){:target="_blank"})
 
 具体来说, Neuro Evolution 其实可以在很多方面来处理问题.
 比如用它来做监督学习 (不过在这点上一般没有反向传播的神经网络学得快, 我们在下节内容里会做一个简单的监督学习例子),
@@ -59,7 +59,7 @@ post-headings:
 
 {% include tut-image.html image-name="4-1-1.png" %}
 
-通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的. 在这方面, OpenAI 在2017年做出了一个[有贡献的研究](https://blog.openai.com/evolution-strategies/).
+通过不断尝试变异, 修改链接中间的 weight, 改变神经网络的预测结果, 保留预测结果更准确的, 淘汰不那么准确的. 在这方面, OpenAI 在2017年做出了一个[有贡献的研究](https://blog.openai.com/evolution-strategies/){:target="_blank"}.
 他们将进化策略 (Evolution Strategy) 衍生到神经网络, 然后不断进化神经网络中的参数. 他们的实验结果都能够媲美很多强化学习方法, 比如 [Q-learning]({% link _tutorials/machine-learning/ML-intro/4-03-q-learning.md %}),
 [Policy Gradient]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %}).
 
@@ -79,8 +79,8 @@ post-headings:
 
  {% include assign-heading.html %}
 
-NEAT 是一种典型的[遗传算法]({% link _tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}), 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)),
-如果想偷懒, 这篇在 conference 上的浓缩版([Efficient evolution of neural network topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf))也是很好的阅读材料.
+NEAT 是一种典型的[遗传算法]({% link _tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}), 的算法详细解说可以参考这篇原始的 paper ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf){:target="_blank"}),
+如果想偷懒, 这篇在 conference 上的浓缩版([Efficient evolution of neural network topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf){:target="_blank"})也是很好的阅读材料.
 
 简单来说, NEAT 有几个关键步骤,
 
@@ -132,7 +132,7 @@ NEAT 是一种典型的[遗传算法]({% link _tutorials/machine-learning/evolut
 * 使用扰动的网络在环境中收集奖励;
 * 用奖励 (reward) 或者 效用 (utility) 来诱导参数更新幅度;
 
-[下面的图](https://blog.openai.com/evolution-strategies/)是 OpenAI 用来诠释 ES 算法的精辟:
+[下面的图](https://blog.openai.com/evolution-strategies/){:target="_blank"}是 OpenAI 用来诠释 ES 算法的精辟:
 
 <a href="https://blog.openai.com/evolution-strategies/">
 {% include tut-image.html image-name="4-1-6.png" %}

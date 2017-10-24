@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/12_selection.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/12_selection.py){:target="_blank"}
 
 
 

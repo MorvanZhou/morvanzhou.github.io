@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/7-RNN_Classifier_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/7-RNN_Classifier_example.py){:target="_blank"}
   * 机器学习-简介系列 [RNN 简介]({% link _tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * Tensorflow [RNN教程]({% link _tutorials/machine-learning/tensorflow/5-08-RNN2.md %})
   

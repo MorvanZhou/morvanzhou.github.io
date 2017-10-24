@@ -12,13 +12,13 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt19_animation.py)
-  * [reference](http://matplotlib.org/examples/animation/simple_anim.html)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt19_animation.py){:target="_blank"}
+  * [reference](http://matplotlib.org/examples/animation/simple_anim.html){:target="_blank"}
 
 {% include assign-heading.html %}
 
 使用matplotlib做动画也是可以的，我们使用其中一种方式，function animation来说说，
-具体可参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html)。首先，我们做一些准备工作：
+具体可参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html){:target="_blank"}。首先，我们做一些准备工作：
 
 ```python
 from matplotlib import pyplot as plt
@@ -81,7 +81,7 @@ plt.show()
 ```
 
 当然，你也可以将动画以mp4格式保存下来，但首先要保证你已经安装了`ffmpeg` 或者`mencoder`，
-更多信息参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html)：
+更多信息参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html){:target="_blank"}：
 
 ```python
 anim.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])

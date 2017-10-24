@@ -36,11 +36,11 @@ AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.
 
 Youtube 的模拟视频都在这里:
 
-[https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_).
+[https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}.
 
 优酷的模拟视频在这里:
 
-[http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1](http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1)
+[http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1](http://list.youku.com/albumlist/show?id=27485743&ascending=1&page=1){:target="_blank"}
 
 下面是其中一些模拟视频:
 

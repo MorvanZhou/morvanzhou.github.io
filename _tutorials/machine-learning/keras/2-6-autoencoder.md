@@ -18,7 +18,7 @@ post-headings:
 ---
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/9-Autoencoder_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/9-Autoencoder_example.py){:target="_blank"}
   * 机器学习-简介系列 [自编码 Autoencoder]({% link _tutorials/machine-learning/ML-intro/2-5-autoencoder.md %})
 
 自编码，简单来说就是把输入数据进行一个压缩和解压缩的过程。

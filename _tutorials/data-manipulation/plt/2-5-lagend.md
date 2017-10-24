@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt7_legend.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt7_legend.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

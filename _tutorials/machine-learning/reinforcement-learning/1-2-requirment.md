@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [OpenAI gym 官网](https://gym.openai.com/)
+  * [OpenAI gym 官网](https://gym.openai.com/){:target="_blank"}
   * [我的 Tensorflow 快速入门教程](/tutorials/machine-learning/tensorflow/)
   * [我的 numpy pandas 快速入门教程](/tutorials/data-manipulation/np-pd/)
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
@@ -33,7 +33,7 @@ post-headings:
 * [Matplotlib](/tutorials/data-manipulation/plt/) (可学), 偶尔会用来呈现误差曲线什么的
 * [Tkinter](/tutorials/python-basic/tkinter/) (可学), 你可以自己用它来编写模拟环境
 * [Tensorflow](/tutorials/machine-learning/tensorflow/) (可学), 后面实现神经网络与强化学习结合的时候用到
-* [OpenAI gym](https://gym.openai.com/) (可学), 提供了很多现成的模拟环境
+* [OpenAI gym](https://gym.openai.com/){:target="_blank"} (可学), 提供了很多现成的模拟环境
 
 
 

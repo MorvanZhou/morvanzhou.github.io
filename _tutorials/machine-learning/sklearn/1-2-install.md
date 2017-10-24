@@ -12,8 +12,8 @@ post-headings:
 
 
 学习资料:
-  * 官方安装 [教程](http://scikit-learn.org/stable/install.html)
-  * Windows 使用 [Anaconda](https://www.continuum.io/downloads) 安装
+  * 官方安装 [教程](http://scikit-learn.org/stable/install.html){:target="_blank"}
+  * Windows 使用 [Anaconda](https://www.continuum.io/downloads){:target="_blank"} 安装
 
 {% include assign-heading.html %}
 
@@ -42,5 +42,5 @@ pip3 install -U scikit-learn
 {% include assign-heading.html %}
 
 如果你是 Windows 用户, 你也可以选择使用 `Anaconda` 来安装所有 python 的科学计算模块.
-[Anaconda的相关资料在这](https://www.continuum.io/downloads)
+[Anaconda的相关资料在这](https://www.continuum.io/downloads){:target="_blank"}
 

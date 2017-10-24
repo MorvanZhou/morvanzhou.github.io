@@ -18,8 +18,8 @@ post-headings:
 
 学习资料:
   * [这节例子的初始文件](/static/results/git/initial-files/for_gitTUT_2-2.zip)
-  * [log 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
-  * [diff 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Viewing-Your-Staged-and-Unstaged-Changes)
+  * [log 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History){:target="_blank"}
+  * [diff 的详细参数](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Viewing-Your-Staged-and-Unstaged-Changes){:target="_blank"}
   
 本节内容分为:
 

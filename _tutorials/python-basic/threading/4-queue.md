@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread4_queue.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread4_queue.py){:target="_blank"}
 
 
 代码实现功能，将数据列表中的数据传入，使用四个线程处理，将结果保存在`Queue`中，线程执行完后，从`Queue`中获取存储的结果

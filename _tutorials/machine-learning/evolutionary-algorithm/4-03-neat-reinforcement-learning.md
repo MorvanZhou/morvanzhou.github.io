@@ -16,12 +16,12 @@ post-headings:
 ---
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym){:target="_blank"}
   * [我制作的 什么是神经进化 动画简介]({% link _tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
-  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
-  * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
+  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf){:target="_blank"})
+  * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html){:target="_blank"}
 
  {% include assign-heading.html %}
 
@@ -44,13 +44,13 @@ post-headings:
 
  {% include assign-heading.html %}
 
-[OpenAI gym](https://gym.openai.com/) 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
+[OpenAI gym](https://gym.openai.com/){:target="_blank"} 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
 {% include tut-image.html image-name="4-3-1.png" %}
 
 
 安装 gym 的方式也很简单, 大家可以直接参考我在之前做 强化学习 Reinforcement learning 教程中的[这节内容]({% link _tutorials/machine-learning/reinforcement-learning/4-4-gym.md %}),
-简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation)或许能够找到答案.
+简单的介绍了如何安装 Gym. 如果还是遇到了问题, [这里](https://github.com/openai/gym#installation){:target="_blank"}或许能够找到答案.
 
 {% include google-in-article-ads.html %}
 
@@ -69,7 +69,7 @@ def evaluation():
     # 我们挑选出最好的个体进行可视化测试
 ```
 
-在 neat 的 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config)中, 我想提到的几个地方是:
+在 neat 的 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config){:target="_blank"}中, 我想提到的几个地方是:
 
 ```shell
 fitness_criterion     = max     # 按照适应度最佳的模式选个体
@@ -124,7 +124,7 @@ def run():
     pop.run(eval_genomes, 10)       # train 10 generations
 ```
 
-那些可视化种群进化图的代码, 请在我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/run_cartpole.py) 中看全套代码吧.
+那些可视化种群进化图的代码, 请在我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/run_cartpole.py){:target="_blank"} 中看全套代码吧.
 
 最后我们挑选一下保存的 `checkpoint` 文件, 展示出最强神经网络的样子吧.
 
@@ -152,7 +152,7 @@ def evaluation():
 
  {% include assign-heading.html %}
 
-如果修改一下 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config)里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
+如果修改一下 `config` [文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT_gym/config){:target="_blank"}里面的参数, 比如下面的 `feed_forward = True` 改成 `False`, 我们就允许网络能产生 recurrent 节点或者链接.
 这样的设置能使网络产生记忆功能. 就像循环神经网络那样. 神经网络的形式结构就能更加多种多样. 不过这里的 recurrent 貌似是和我们一般见到的 Recurrent Neural Network 有所不同,
 我们通常说的 RNN 是通过一个 hidden state 来传递记忆, 而 NEAT 中的 Recurrent 是通过一种 "延迟刷新的形式" (不知道这样说对不对, 我是细看了一遍 NEAT-python 的底层代码发现的),
 每一个时间点每个节点只接收这一时刻传来的信息. 比如下面第一张图中, 现在所有节点都为0, 如果我先更新 `node3`, 由于接收到了 `act2=0`,  `node3` 还是会为0. 但是如果是先更新 `act2`, 等 `act2` 有值了再更新 `node3`,
@@ -178,7 +178,7 @@ net = neat.nn.RecurrentNetwork.create(genome, config)
 
 
 最后, 在这里提一下, 还有一些根据 NEAT 改良的算法. 比如
-* [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf), 使用 NEAT 形式生成 CPPN 的网络, 用 CPPN 进行 indirect encoding 生成更大更复杂的神经网络, 但是后者的网络结构的 capacity 不能改变;
-* [ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf), 解决上面提到的网络结构 capacity 不可变问题.
+* [HyperNEAT (A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks)](http://axon.cs.byu.edu/Dan/778/papers/NeuroEvolution/stanley3**.pdf){:target="_blank"}, 使用 NEAT 形式生成 CPPN 的网络, 用 CPPN 进行 indirect encoding 生成更大更复杂的神经网络, 但是后者的网络结构的 capacity 不能改变;
+* [ES-HyperNEAT (An Enhanced Hypercube-Based Encoding for Evolving the Placement, Density and Connectivity of Neurons)](http://eplex.cs.ucf.edu/papers/risi_alife12.pdf){:target="_blank"}, 解决上面提到的网络结构 capacity 不可变问题.
 
 [下一节]({% link _tutorials/machine-learning/evolutionary-algorithm/4-04-evolution-strategy-reinforcement-learning.md %})我们会关注使用 Evolution Strategy 来做大规模强化学习.

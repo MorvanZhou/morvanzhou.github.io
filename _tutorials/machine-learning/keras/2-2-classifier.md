@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/5-classifier_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/5-classifier_example.py){:target="_blank"}
   * 机器学习-简介系列 [特征标准化]({% link _tutorials/machine-learning/ML-intro/3-02-normalization.md %})
   * 机器学习-简介系列 [加速训练]({% link _tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
 

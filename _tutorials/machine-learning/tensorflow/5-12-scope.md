@@ -16,10 +16,10 @@ post-headings:
 
 
 学习资料:
-  * 不同 scope [对比代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_scope.py)
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial)
-  * reuse variable [RNN 代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py)
-  * sharing variable [tensorflow 官网介绍](https://www.tensorflow.org/versions/master/how_tos/variable_scope/index.html)
+  * 不同 scope [对比代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_scope.py){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
+  * reuse variable [RNN 代码](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py){:target="_blank"}
+  * sharing variable [tensorflow 官网介绍](https://www.tensorflow.org/versions/master/how_tos/variable_scope/index.html){:target="_blank"}
 
 scope 能让你命名变量的时候轻松很多. 同时也会在 reusing variable 代码中常常见到. 所以今天我们会来讨论下 tensorflow 当中的两种定义 scope 的方式. 
 最后并附加一个 RNN 运用 reuse variable 的例子.
@@ -89,7 +89,7 @@ with tf.Session() as sess:
 
 {% include assign-heading.html %}
 
-RNN 例子的代码在[这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py), 整个 RNN 的结构已经在这里定义好了.
+RNN 例子的代码在[这里](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf22_scope/tf22_RNN_scope.py){:target="_blank"}, 整个 RNN 的结构已经在这里定义好了.
 在 training RNN 和 test RNN 的时候, RNN 的 `time_steps` 会有不同的取值, 这将会影响到整个 RNN 的结构, 所以导致在 test 的时候, 不能单纯地使用 training 时建立的那个 RNN. 
 但是 training RNN 和 test RNN 又必须是有同样的 weights biases 的参数. 所以, 这时, 就是使用 reuse variable 的好时机.
 

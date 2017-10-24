@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * 创建 array 有很多 [形式](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+  * 创建 array 有很多 [形式](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html){:target="_blank"}
 
 {% include assign-heading.html %}
 

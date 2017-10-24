@@ -20,12 +20,12 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym){:target="_blank"}
   * [什么是 DQN 短视频]({% link _tutorials/machine-learning/ML-intro/4-06-DQN.md %})
-  * [OpenAI gym 官网](https://gym.openai.com/)
+  * [OpenAI gym 官网](https://gym.openai.com/){:target="_blank"}
   * 本节内容的模拟视频效果:
-    * CartPole: [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo), [优酷](http://v.youku.com/v_show/id_XMTg3NTI2OTQzNg==.html)
-    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM), [优酷](http://v.youku.com/v_show/id_XMTg3NTI3MDMzMg==.html)
+    * CartPole: [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo){:target="_blank"}
+    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -33,7 +33,7 @@ post-headings:
 我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 可能某一天就能支持了, 大家时不时查看下官网, 可能就有惊喜.
 是在等不及更新了, 也行用 tkinter 来手动编写一下环境.
 这里有我制作的很好的 [tkinter 入门教程]({% link _table-contents/python-basic/tkinter.html %}), 之前的 maze 环境也是用 tkinter
-编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/maze_env.py)编写就 ok 啦.
+编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/maze_env.py){:target="_blank"}编写就 ok 啦.
 
 
 
@@ -53,9 +53,9 @@ $ pip3 install gym
 
 如果没有报错, 恭喜你, 这样你就装好了 gym 的最基本款, 可以开始玩以下游戏啦:
 
-* [algorithmic](https://gym.openai.com/envs#algorithmic)
-* [toy_text](https://gym.openai.com/envs#toy_text)
-* [classic_control](https://gym.openai.com/envs#classic_control) (这个需要 pyglet 模块)
+* [algorithmic](https://gym.openai.com/envs#algorithmic){:target="_blank"}
+* [toy_text](https://gym.openai.com/envs#toy_text){:target="_blank"}
+* [classic_control](https://gym.openai.com/envs#classic_control){:target="_blank"} (这个需要 pyglet 模块)
 
 如果在安装中遇到问题. 可能是缺少了一些必要模块, 可以使用下面语句来安装这些模块(安装时间可能有点久):
 

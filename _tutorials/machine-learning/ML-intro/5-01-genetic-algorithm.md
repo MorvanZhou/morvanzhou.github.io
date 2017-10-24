@@ -66,6 +66,6 @@ post-headings:
 
 我们来看看别人都在拿电脑里喂养了哪些生物吧. 比如进化出会自己闯关的马里奥, 自动驾驶的汽车, 还能模拟微生物的行为. 看上去是不是真有那么一回事. 我会将这些视频的链接附在我”莫烦Python”的网页中, 有兴趣的朋友们可以观看一下.
 
-视频里别人的实验: [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44)
-, [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s),
-[微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58).
+视频里别人的实验: [马里奥](https://www.youtube.com/watch?v=qv6UVOQ0F44){:target="_blank"}
+, [自动驾驶](https://www.youtube.com/watch?v=5lJuEW-5vr8&t=109s){:target="_blank"},
+[微生物进化](https://www.youtube.com/watch?v=2kupe2ZKK58){:target="_blank"}.

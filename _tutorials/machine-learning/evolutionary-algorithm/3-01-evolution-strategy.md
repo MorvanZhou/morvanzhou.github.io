@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
 
-* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py)
+* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py){:target="_blank"}
 * [我制作的 什么是进化策略 动画简介]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
  {% include assign-heading.html %}
@@ -136,7 +136,7 @@ def kill_bad(pop, kids):
     return pop
 ```
 
-这样我们就完成了最一般的 ES 算法的主体. 还有一些零散的, 可视化的代码都可以在我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py) 中找到.
+这样我们就完成了最一般的 ES 算法的主体. 还有一些零散的, 可视化的代码都可以在我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Evolution%20Strategy%20Basic.py){:target="_blank"} 中找到.
 这里就不细说了.
 
 [下次]({% link _tutorials/machine-learning/evolutionary-algorithm/3-02-evolution-strategy-1+1-ES.md %})我们会总结基础的 ES 算法类型. 并且看看一种比较流行的 ES 算法.

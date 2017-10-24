@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * [PyTorch 官网](http://pytorch.org/)
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 
 {% include assign-heading.html %}
@@ -25,7 +25,7 @@ PyTorch 暂时只支持 MacOS, Linux.
 
 {% include assign-heading.html %}
 
-PyTorch 安装起来很简单, [它自家网页](http://pytorch.org/)上就有很方便的选择方式 (网页升级改版后可能和下图有点不同):
+PyTorch 安装起来很简单, [它自家网页](http://pytorch.org/){:target="_blank"}上就有很方便的选择方式 (网页升级改版后可能和下图有点不同):
 
 <a href="http://pytorch.org/">
 {% include tut-image.html image-name="1-2-1.png" %}
@@ -42,5 +42,5 @@ $ pip install torchvision
 
 注意, 我安装的是0.1.11版本的 torch, 你需要去他们网站上看是否有新版本的.
 安装 PyTorch 会安装两个模块, 一个是 torch, 一个 torchvision, torch 是主模块, 用来搭建神经网络的,
-torchvision 是辅模块, 有数据库, 还有一些已经训练好的神经网络等着你直接用, 比如 ([VGG, AlexNet, ResNet](http://pytorch.org/docs/torchvision/models.html)).
+torchvision 是辅模块, 有数据库, 还有一些已经训练好的神经网络等着你直接用, 比如 ([VGG, AlexNet, ResNet](http://pytorch.org/docs/torchvision/models.html){:target="_blank"}).
 

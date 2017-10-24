@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * Matplotlib [官网](http://matplotlib.org/)
+  * Matplotlib [官网](http://matplotlib.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 

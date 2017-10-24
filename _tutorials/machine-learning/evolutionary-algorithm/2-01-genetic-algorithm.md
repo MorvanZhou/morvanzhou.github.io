@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py){:target="_blank"}
   * [我制作的 什么是遗传算法 动画简介]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
 
 {% include assign-heading.html %}
@@ -136,6 +136,6 @@ def mutate(child):
 ```
 
 有了这些规则, `select`, `crossover`, `mutate`, 我们就能在程序里上演进化论啦.
-赶紧运行一下我在github的[这套全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py).
+赶紧运行一下我在github的[这套全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Genetic%20Algorithm%20Basic.py){:target="_blank"}.
 
 接下来几节内容, 我们就来看看在不同的情况中如何根据不同的标准选择 fitness 和 DNA 编码.

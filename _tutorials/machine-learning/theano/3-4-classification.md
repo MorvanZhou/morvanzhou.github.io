@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano11_classification_nn)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano11_classification_nn){:target="_blank"}
 
 
 

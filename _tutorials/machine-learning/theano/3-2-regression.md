@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano9_regression_nn)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano9_regression_nn){:target="_blank"}
   
 {% include assign-heading.html %}
 

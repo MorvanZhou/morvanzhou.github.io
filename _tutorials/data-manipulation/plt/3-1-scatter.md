@@ -11,7 +11,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt10_scatter.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt10_scatter.py){:target="_blank"}
 
 
 本节我们将讲述各种不同的plot的方式。之前我们讲到了如何plot线，今天我们讲述如何plot散点图。
@@ -21,7 +21,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-首先，先引入`matplotlib.pyplot`简写作`plt`,再引入模块`numpy`用来产生一些随机数据。生成1024个呈[标准正态分布](https://zh.wikipedia.org/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83)的二维数据组 (平均数是0，方差为1) 作为一个数据集，并图像化这个数据集。每一个点的颜色值用`T`来表示：
+首先，先引入`matplotlib.pyplot`简写作`plt`,再引入模块`numpy`用来产生一些随机数据。生成1024个呈[标准正态分布](https://zh.wikipedia.org/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83){:target="_blank"}的二维数据组 (平均数是0，方差为1) 作为一个数据集，并图像化这个数据集。每一个点的颜色值用`T`来表示：
 
 ```python
 import matplotlib.pyplot as plt

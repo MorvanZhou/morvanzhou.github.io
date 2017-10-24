@@ -12,7 +12,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk8_canvas.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk8_canvas.py){:target="_blank"}
   * [需要的图片地址](/static/results/tkinter/ins.gif)
 
 
@@ -83,5 +83,5 @@ def moveit():
 就是我们每点一次`button` 矩形就会移动这里`canvas.move(rect, 0, 2)`的参数`(rect,0,2)`就是移动`rect`这个变量，即我们看到的矩形
 后面的0和2，也就是横坐标移动0个单位，纵坐标移动2个单位，简单的说就是每次点击，横向不动，纵向移动两个单位。
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk8_canvas.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk8_canvas.py){:target="_blank"},
 整个框架的全部代码就完美了.

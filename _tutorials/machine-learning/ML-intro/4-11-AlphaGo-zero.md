@@ -16,7 +16,7 @@ post-headings:
 
 学习资料:
   * [强化学习教程]({% link _table-contents/machine-learning/reinforcement-learning.html %})
-  * 论文 [Mastering the game of Go without human knowledge](https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html)
+  * 论文 [Mastering the game of Go without human knowledge](https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html){:target="_blank"}
 
 
 {% include tut-image.html image-name="alphago2.png" %}

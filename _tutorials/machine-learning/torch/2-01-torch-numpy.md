@@ -16,9 +16,9 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/201_torch_numpy.py)
-  * [PyTorch 官网](http://pytorch.org/)
-  * [PyTorch 中的常用数学计算](http://pytorch.org/docs/torch.html#math-operations)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/201_torch_numpy.py){:target="_blank"}
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
+  * [PyTorch 中的常用数学计算](http://pytorch.org/docs/torch.html#math-operations){:target="_blank"}
 
 
 {% include assign-heading.html %}
@@ -49,7 +49,7 @@ print(
 {% include assign-heading.html %}
 
 其实 torch 中 tensor 的运算和 numpy array 的如出一辙, 我们就以对比的形式来看.
-如果想了解 torch 中其它更多有用的运算符, [API就是你要去的地方](http://pytorch.org/docs/torch.html#math-operations).
+如果想了解 torch 中其它更多有用的运算符, [API就是你要去的地方](http://pytorch.org/docs/torch.html#math-operations){:target="_blank"}.
 
 ```python
 # abs 绝对值计算

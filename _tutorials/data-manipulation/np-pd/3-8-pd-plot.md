@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/18_plot.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/18_plot.py){:target="_blank"}
 
 
 这次我们讲如何将数据可视化. 
@@ -71,7 +71,7 @@ plt.show()
 
 {% include tut-image.html image-name="3-8-2.png" %}
 
-这个就是我们刚刚生成的4个`column`的数据，因为有4组数据，所以4组数据会分别`plot`出来。`plot` 可以指定很多参数，具体的用法大家可以自己查一下[这里](http://pandas.pydata.org/pandas-docs/version/0.18.1/visualization.html)
+这个就是我们刚刚生成的4个`column`的数据，因为有4组数据，所以4组数据会分别`plot`出来。`plot` 可以指定很多参数，具体的用法大家可以自己查一下[这里](http://pandas.pydata.org/pandas-docs/version/0.18.1/visualization.html){:target="_blank"}
 
 除了`plot`，我经常会用到还有`scatter`，这个会显示散点图，首先给大家说一下在 pandas 中有多少种方法
 

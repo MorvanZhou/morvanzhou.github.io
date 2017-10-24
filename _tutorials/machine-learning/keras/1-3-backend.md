@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * backend [说明](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/3-backend.py)
+  * backend [说明](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/3-backend.py){:target="_blank"}
 
 我们来介绍 Keras 的两个 Backend，也就是Keras基于什么东西来做运算。Keras 可以基于两个Backend，一个是 Theano，一个是 Tensorflow。如果我们选择Theano作为Keras的Backend，
 那么Keras就用 Theano 在底层搭建你需要的神经网络；同样，如果选择 Tensorflow 的话呢，Keras 就使用 Tensorflow 在底层搭建神经网络。

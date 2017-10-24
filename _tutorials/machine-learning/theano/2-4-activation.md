@@ -14,8 +14,8 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano7_activation_function.py)
-  * Theano 激励函数选择 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html#theano.tensor.nnet.nnet.sigmoid)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano7_activation_function.py){:target="_blank"}
+  * Theano 激励函数选择 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html#theano.tensor.nnet.nnet.sigmoid){:target="_blank"}
   * 机器学习-简介系列 [激励函数]({% link _tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
 
 
@@ -42,7 +42,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-Theano 中可以用的激励函数可以在这个 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html) 中找到。
+Theano 中可以用的激励函数可以在这个 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html){:target="_blank"} 中找到。
 进入这个链接，以 `theano.tensor.nnet.nnet.sigmoid(x)` 为例。
 `Sigmoid` 函数就是可以做到，当输入值小于 0 并且越小时，输出值就会越接近 0， 当输入值大于 0 并且越大时，输出值就会越接近 1。常被用于分类问题中。
 还有其他几种拓展函数，例如 `softplus()`，当输入值小于 0 时，输出值接近 0， 当输入值大于 0 时，输出值是非线性的上升关系。可以很好地处理具有非线性的逻辑关系的输入值。

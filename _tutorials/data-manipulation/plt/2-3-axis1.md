@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt5_ax_setting1.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt5_ax_setting1.py){:target="_blank"}
   
 在 matplotlib 中如何设置坐标轴的范围, 单位长度, 替代文字等等.
 

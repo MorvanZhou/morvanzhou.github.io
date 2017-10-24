@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/6-CNN_example.py){:target="_blank"}
   * 机器学习-简介系列 [CNN 简介]({% link _tutorials/machine-learning/ML-intro/2-2-CNN.md %})
   * Tensorflow [CNN]({% link _tutorials/machine-learning/tensorflow/5-04-CNN2.md %})
   

@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * Windows 安装文件 [网址](https://pypi.python.org/pypi/matplotlib/)
+  * Windows 安装文件 [网址](https://pypi.python.org/pypi/matplotlib/){:target="_blank"}
 
 对于 [Linux](#linux), [MacOS](#mac), [Windows](#windows) 的安装方式各不相同. 
 
@@ -50,7 +50,7 @@ $ pip install matplotlib
 Windows 的安装最麻烦. 我们一步步来:
 
 * 确保你有安装 Visual Studio;
-* 去这个网址: [https://pypi.python.org/pypi/matplotlib/](https://pypi.python.org/pypi/matplotlib/)
+* 去这个网址: [https://pypi.python.org/pypi/matplotlib/](https://pypi.python.org/pypi/matplotlib/){:target="_blank"}
 * 找到一个适合你自己 python 版本的 wheel (.whl) 文件. (如下图) 
 
 {% include tut-image.html image-name="1_2_1.png" %}

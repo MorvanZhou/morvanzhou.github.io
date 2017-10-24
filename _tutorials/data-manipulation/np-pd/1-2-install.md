@@ -13,13 +13,13 @@ post-headings:
 
 
 学习资料:
-  * Windows 安装的英文说明 [链接](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat)
-  * Visual studio [下载地址](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
+  * Windows 安装的英文说明 [链接](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat){:target="_blank"}
+  * Visual studio [下载地址](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx){:target="_blank"}
 
 
 {% include assign-heading.html %}
 
-Numpy 的安装文件地址是[这里](https://sourceforge.net/projects/numpy/files/NumPy/)。里面有不同版本，有开发者版本和稳定版本。同时根据不同的系统选择不同的版本进行下载。
+Numpy 的安装文件地址是[这里](https://sourceforge.net/projects/numpy/files/NumPy/){:target="_blank"}。里面有不同版本，有开发者版本和稳定版本。同时根据不同的系统选择不同的版本进行下载。
 
 也可以通过命令安装：
 
@@ -37,7 +37,7 @@ pip install numpy
 
 **Windows**
 
-可能会遇到各种问题，可以查看一下这个[安装说明](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat)。
+可能会遇到各种问题，可以查看一下这个[安装说明](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat){:target="_blank"}。
 
 **Linux Ubuntu & Debian**
 

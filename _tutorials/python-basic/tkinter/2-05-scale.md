@@ -12,7 +12,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk6_scale.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk6_scale.py){:target="_blank"}
 
 
 这一次的效果将会像下面的图片一样.
@@ -66,5 +66,5 @@ def print_selection(v):
 
 这里相比前面多了参数`v`，这里的参数`v`即将滚动条定位的数据，即如效果图中最开始，定位到5.00，`label`中显示you have selected 5.00
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk6_scale.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk6_scale.py){:target="_blank"},
 整个框架的全部代码就完美了.

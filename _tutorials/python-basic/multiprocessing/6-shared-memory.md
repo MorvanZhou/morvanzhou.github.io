@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * Python [C type code种类](https://docs.python.org/3.5/library/array.html)
+  * Python [C type code种类](https://docs.python.org/3.5/library/array.html){:target="_blank"}
 
 
 这节我们学习如何定义共享内存。只有用共享内存才能让CPU之间有交流。
@@ -75,4 +75,4 @@ TypeError: an integer is required
 | `'d'`     | double             | float             | 8                     |
 ```
 
-(来源：[https://docs.python.org/3/library/array.html](https://docs.python.org/3/library/array.html)）
+(来源：[https://docs.python.org/3/library/array.html](https://docs.python.org/3/library/array.html){:target="_blank"}）

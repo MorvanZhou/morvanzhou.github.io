@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano12_regularization){:target="_blank"}
   * 机器学习-简介系列 [过拟合]({% link _tutorials/machine-learning/ML-intro/3-05-overfitting.md %})
   * [什么是 L1/L2 正则化 短片]({% link _tutorials/machine-learning/ML-intro/3-09-l1l2regularization.md %})
 

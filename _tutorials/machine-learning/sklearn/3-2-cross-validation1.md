@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/sklearnTUT/sk8_cross_validation)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/sklearnTUT/sk8_cross_validation){:target="_blank"}
   
 
 Sklearn 中的 Cross Validation (交叉验证)对于我们选择正确的 Model 和 Model 的参数是非常有帮助的，

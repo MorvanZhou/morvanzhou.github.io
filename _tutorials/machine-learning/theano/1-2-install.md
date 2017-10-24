@@ -12,8 +12,8 @@ post-headings:
 
 
 学习资料:
-  * [英文安装说明](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano2_install.py)
-  * Windows 上的安装 [方法](http://deeplearning.net/software/theano/install_windows.html#install-windows)
+  * [英文安装说明](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano2_install.py){:target="_blank"}
+  * Windows 上的安装 [方法](http://deeplearning.net/software/theano/install_windows.html#install-windows){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -40,8 +40,8 @@ pip3 install theano
 
 更详细的Theano安装步骤:
 
-* [Linux ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html#install-ubuntu)
-* [Windows](http://deeplearning.net/software/theano/install_windows.html#install-windows)
+* [Linux ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html#install-ubuntu){:target="_blank"}
+* [Windows](http://deeplearning.net/software/theano/install_windows.html#install-windows){:target="_blank"}
 
 
 

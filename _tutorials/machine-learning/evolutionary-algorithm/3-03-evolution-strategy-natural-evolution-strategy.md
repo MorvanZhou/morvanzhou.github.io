@@ -15,9 +15,9 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES){:target="_blank"}.py)
   * [我制作的 什么是进化策略 动画简介]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
-  * 论文 [Natural evolution strategies](http://www.jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf)
+  * 论文 [Natural evolution strategies](http://www.jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf){:target="_blank"}
 
  {% include assign-heading.html %}
 
@@ -43,7 +43,7 @@ Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下
 所以之后的宝宝们就会越来越多的下降到最优点啦. 那么我们要梯度下降的参数则是那些正态分布的均值和均方差.
 
 提到梯度下降, 哈哈, 那么那些 scipy, Tensorflow 都可以考虑用一用. 这个教程中将会使用到
-Tensorflow 来完成这种梯度下降的做法. 如果你对 Tensorflow 感兴趣, 我也有[一套 Tensorflow 的教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/)哦~
+Tensorflow 来完成这种梯度下降的做法. 如果你对 Tensorflow 感兴趣, 我也有[一套 Tensorflow 的教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/){:target="_blank"}哦~
 
 NES 的方法其实和强化学习中 [Policy Gradient]({% link _tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %}) 的方法非常接近.
 简单来概括一下它们的不同: 在行为的策略上, PG 是扰动 Action, 不同的 action 带来不同的 reward, 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 ES 是扰动 神经网络中的 Parameters, 不同的 parameters 带来不同的 reward, 通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
@@ -99,8 +99,8 @@ for g in range(N_GENERATION):
     sess.run(train_op, {tfkids_fit: kids_fit, tfkids: kids})    # update distribution parameters
 ```
 
-这节内容如果看不太懂的话, 应该是还不是很了解 Tensorflow 的使用方法, 强烈推荐看看我的 [Tensorflow 教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/), 简单明了.
+这节内容如果看不太懂的话, 应该是还不是很了解 Tensorflow 的使用方法, 强烈推荐看看我的 [Tensorflow 教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/){:target="_blank"}, 简单明了.
 
-可视化的代码我没有在文章中体现, 如果想详细看看如何可视化, 请看到我的 [Github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py).
+可视化的代码我没有在文章中体现, 如果想详细看看如何可视化, 请看到我的 [Github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES){:target="_blank"}.py).
 
 下次我们来看看[遗传算法和进化策略+神经网络的牛逼应用]({% link _tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}).

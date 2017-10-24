@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * Tensorflow [官网](https://www.tensorflow.org/)
+  * Tensorflow [官网](https://www.tensorflow.org/){:target="_blank"}
   * 机器学习-简介系列: [什么是神经网络]({% link _tutorials/machine-learning/ML-intro/2-1-NN.md %})
 
 

@@ -14,9 +14,9 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/203_activation.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/203_activation.py){:target="_blank"}
   * [我制作的 激励函数 动画简介]({% link _tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
-  * [PyTorch 官网](http://pytorch.org/)
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 
 

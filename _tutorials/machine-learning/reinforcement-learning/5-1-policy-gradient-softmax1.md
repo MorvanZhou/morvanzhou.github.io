@@ -17,12 +17,12 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
   * [什么是 Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 本节内容的模拟视频效果:
-    * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
-    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg), [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html)
-  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
+    * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0){:target="_blank"}
+    * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg){:target="_blank"}
+  * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -125,5 +125,5 @@ for i_episode in range(3000):
         observation = observation_
 ```
 
-另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax/run_MountainCar.py),
+另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax/run_MountainCar.py){:target="_blank"},
 和上面那些代码类似, 只改动了一些大写的参数.

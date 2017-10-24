@@ -72,7 +72,7 @@ $ git status -s
 {% include assign-heading.html %}
 
 在穿梭到过去的 `commit` 之前, 我们必须了解 git 是如何一步一步累加更改的.
-我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html)
+我们截取网上的一些图片 [http://bramus.github.io/ws2-sws-course-materials/xx.git.html](http://bramus.github.io/ws2-sws-course-materials/xx.git.html){:target="_blank"}
 
 {% include tut-image.html image-name="2-2-1.png" %}
 {% include tut-image.html image-name="2-2-2.png" %}

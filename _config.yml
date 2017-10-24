@@ -46,7 +46,7 @@ defaults:
       editor: 莫烦
       author: 莫烦
       author-link: "#"
-      published: true
+      published: true  #TOD: change back to true
 
   # module descriptions
   - scope:
@@ -153,14 +153,6 @@ defaults:
       tut-permalink: /tutorials/data-manipulation/plt/
       category: plt
       keywords: matplotlib, plt, 数据可视化
-
-  - scope:
-      path: "_tutorials/python-basic/basic"
-    values:
-      series: Python 基础
-      tut-permalink: /tutorials/python-basic/basic/
-      category: Python 基础
-      keywords: python, 基础
 
   - scope:
       path: "_tutorials/python-basic/multiprocessing"

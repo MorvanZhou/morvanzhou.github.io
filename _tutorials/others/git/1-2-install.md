@@ -13,13 +13,13 @@ post-headings:
   - Windows 系统
 ---
 学习资料:
-  * [Git 官网安装说明](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  * [Git 官网安装说明](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){:target="_blank"}
 
 安装 git 的方式在每种系统中各不相同, 所以我们分开来说:
 
 
 图个方便, 也可以直接上 git 的下载页面, 让网站自动识别你的系统, 并提供可用的下载文件:
-[https://git-scm.com/downloads](https://git-scm.com/downloads)
+[https://git-scm.com/downloads](https://git-scm.com/downloads){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -34,19 +34,19 @@ $ sudo apt-get install git-all
 $ sudo yum install git-all
 ```
 
-Linux 的更多 distribution 的安装, 请看[这里](https://git-scm.com/download/linux)
+Linux 的更多 distribution 的安装, 请看[这里](https://git-scm.com/download/linux){:target="_blank"}
 
 {% include google-in-article-ads.html %}
 
 {% include assign-heading.html %}
 
-Git 已经为 Mac 用户做好了一个安装包, 我们可以在这里下载并安装 [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
+Git 已经为 Mac 用户做好了一个安装包, 我们可以在这里下载并安装 [https://git-scm.com/download/mac](https://git-scm.com/download/mac){:target="_blank"}
 
 {% include tut-image.html image-name="1-2-1.png" %}
 
 {% include assign-heading.html %}
 
-Git 也为 Windows 系统提供了简易的 `.exe` 安装包, 直接从这里下载并安装就可以了: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+Git 也为 Windows 系统提供了简易的 `.exe` 安装包, 直接从这里下载并安装就可以了: [https://git-scm.com/download/win](https://git-scm.com/download/win){:target="_blank"}
 
 推荐使用默认安装参数, 然后一路`下一步`到底. 
 安装好之后, 在你的所有程序中, 将会出现 git 的文件夹, 而且里面会有一个程序叫做

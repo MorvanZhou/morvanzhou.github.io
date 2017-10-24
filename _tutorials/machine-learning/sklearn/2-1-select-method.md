@@ -12,7 +12,7 @@ post-headings:
 
 
 学习资料:
-  * 选择模型 [流程图](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+  * 选择模型 [流程图](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html){:target="_blank"}
 
 {% include assign-heading.html %}
 

@@ -19,12 +19,12 @@ post-headings:
 ---
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/tree/master/tutorial-contents/Using%20Neural%20Nets/NEAT){:target="_blank"}
   * [我制作的 什么是神经进化 动画简介]({% link _tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
-  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf))
-  * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html)
+  * NEAT 论文 ([Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf){:target="_blank"})
+  * NEAT [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html){:target="_blank"}
 
  {% include assign-heading.html %}
 
@@ -38,7 +38,7 @@ post-headings:
 我查了很多方法, 但是觉得那些方法都有点复杂, 有的也没效率); (3) 可视化网络结构 (当然要可视化啦, 不可视化出来, 你怎么知道自己的神经网络长什么样, 不好 debug 了呀); (4)
 NEAT 的 Recurrent link/node 不是通常说的 RNN, 处理形式不同.
 
-如果不能, 其实也没关系, 有高手已经写好了 NEAT 的 [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html), 我们直接调用就行.
+如果不能, 其实也没关系, 有高手已经写好了 NEAT 的 [Python 模块](http://neat-python.readthedocs.io/en/latest/neat_overview.html){:target="_blank"}, 我们直接调用就行.
 下图就是使用 NEAT 模块生成的一个神经网络, 看起来很优雅吧.
 
 {% include tut-image.html image-name="4-2-0.png" %}
@@ -58,7 +58,7 @@ $ pip install neat-python
 $ pip3 install neat-python
 ```
 
-目前的 neat 版本是 0.92, 如果之后安装不成功, 或者有所变化, 请参考这个[网页](http://neat-python.readthedocs.io/en/latest/installation.html).
+目前的 neat 版本是 0.92, 如果之后安装不成功, 或者有所变化, 请参考这个[网页](http://neat-python.readthedocs.io/en/latest/installation.html){:target="_blank"}.
 
 好了, 这就安装好了主程序了, 接下来为了可视化的效果, 我们还要检查一下是否有安装 `graphviz` 模块. 如果在你电脑中没有这个模块, 如果是 MacOS, 请直接 同上面的步骤 使用 pip install 就好了.
 如果是 Linux, 使用 `sudo apt-get install graphviz` 就好.
@@ -102,8 +102,8 @@ def eval_genomes(genomes, config):
 ```
 
 每一个 neat 的程序里有需要有这样的评分标准. 接着我们创建一个 config 的文件, 用来给定所有运行参数.
-这个 config 文件要分开存储, 而且文件里要有一下几个方面的参数预设. 对于每个方面具体的预设值请参考我在 github 中的[config-forward](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/config-feedforward)这个文件.
-对于每个方面的解释, 不太明白的话, 请参考[这里](http://neat-python.readthedocs.io/en/latest/config_file.html)
+这个 config 文件要分开存储, 而且文件里要有一下几个方面的参数预设. 对于每个方面具体的预设值请参考我在 github 中的[config-forward](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/config-feedforward){:target="_blank"}这个文件.
+对于每个方面的解释, 不太明白的话, 请参考[这里](http://neat-python.readthedocs.io/en/latest/config_file.html){:target="_blank"}
 
 ```shell
 [NEAT]
@@ -131,7 +131,7 @@ p = neat.Population(config)
 winner = p.run(eval_genomes, 300)   # 输入计算 fitness 的方式和 generation 的次数
 ```
 
-最主要的过程就完啦, 简单吧. 在这个[例子脚本](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/run_xor.py)中的其他代码都是现实结果的代码, 大家随便看看就知道了.
+最主要的过程就完啦, 简单吧. 在这个[例子脚本](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/run_xor.py){:target="_blank"}中的其他代码都是现实结果的代码, 大家随便看看就知道了.
 
 ```python
 print('\nOutput:')
@@ -141,7 +141,7 @@ for xi, xo in zip(xor_inputs, xor_outputs):
     print("input {!r}, expected output {!r}, got {!r}".format(xi, xo, output))
 ```
 
-我们通过这个来输出最后的 `winner` 神经网络预测结果, 不出意外, 你应该预测很准. 最后通过 `visualize.py` [文件的可视化功能](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/visualize.py), 我们就能生成几个图片,
+我们通过这个来输出最后的 `winner` 神经网络预测结果, 不出意外, 你应该预测很准. 最后通过 `visualize.py` [文件的可视化功能](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/NEAT/visualize.py){:target="_blank"}, 我们就能生成几个图片,
 使用浏览器打开 `speciation.svg` 看看不同种群的变化趋势, `avg_fitness.svg` 看看 fitness 的变化曲线, `Digraph.gv.svg` 看这个生成的神经网络长怎样.
 
 {% include tut-image.html image-name="4-2-1.png" %}

@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt11_bar.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt11_bar.py){:target="_blank"}
   
 
 本节我们介绍一下用`matplotib`来制作一个柱状图，今天的结果如下图：
@@ -23,7 +23,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-向上向下分别生成12个数据，X为 0 到 11 的整数 ，Y是相应的[均匀分布](https://en.wikipedia.org/wiki/Uniform_distribution)的随机数据。
+向上向下分别生成12个数据，X为 0 到 11 的整数 ，Y是相应的[均匀分布](https://en.wikipedia.org/wiki/Uniform_distribution){:target="_blank"}的随机数据。
 使用的函数是`plt.bar`，参数为X和Y：
 
 ```python

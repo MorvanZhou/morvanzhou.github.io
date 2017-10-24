@@ -14,16 +14,16 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/numpy%26pandas/15_read_to)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/numpy%26pandas/15_read_to){:target="_blank"}
 
 {% include assign-heading.html %}
 
 `pandas`可以读取与存取的资料格式有很多种，像`csv`、`excel`、`json`、`html`与`pickle`等…，
-详细请看[官方说明文件](http://pandas.pydata.org/pandas-docs/stable/io.html)
+详细请看[官方说明文件](http://pandas.pydata.org/pandas-docs/stable/io.html){:target="_blank"}
 
 {% include assign-heading.html %}
 
-示范档案下载 - [student.csv](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv)
+示范档案下载 - [student.csv](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv){:target="_blank"}
 
 ```python
 import pandas as pd #加载模块

@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt13_image.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt13_image.py){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -48,12 +48,12 @@ plt.imshow(a, interpolation='nearest', cmap='bone', origin='lower')
 
 {% include assign-heading.html %}
 
-我们在这个[链接](http://matplotlib.org/examples/images_contours_and_fields/interpolation_methods.html)
+我们在这个[链接](http://matplotlib.org/examples/images_contours_and_fields/interpolation_methods.html){:target="_blank"}
 可以看到**matplotlib**官网上对于内插法的不同方法的描述。下图是一个示例：
 
 {% include tut-image.html image-name="3_4_2.png" %}
 
-这里我们使用的是内插法中的 [Nearest-neighbor](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation) 的方法，其他的方式也都可以随意取选。
+这里我们使用的是内插法中的 [Nearest-neighbor](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation){:target="_blank"} 的方法，其他的方式也都可以随意取选。
 
 {% include assign-heading.html %}
 

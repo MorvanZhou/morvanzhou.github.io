@@ -48,7 +48,7 @@ def sale_car(price, color='red', brand='carmy', is_second_hand=True):
 
 ##### 3.1 自调用
 
-如果想要在执行脚本的时候执行一些代码，比如[单元测试](https://en.wikipedia.org/wiki/Unit_testing)，可以在脚本最后加上单元测试
+如果想要在执行脚本的时候执行一些代码，比如[单元测试](https://en.wikipedia.org/wiki/Unit_testing){:target="_blank"}，可以在脚本最后加上单元测试
 代码，但是该脚本作为一个模块对外提供功能的时候单元测试代码也会执行，这些往往我们不想要的，我们可以把这些代码放入脚本最后：
 
 ```python

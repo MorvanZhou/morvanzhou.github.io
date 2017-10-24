@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano6_shared_variable.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano6_shared_variable.py){:target="_blank"}
 
 今天讲 `Shared 变量`，意思是这些变量可以在运算过程中，不停地进行交换和更新值。
 在定义 `weights 和 bias` 的情况下，会需要用到这样的变量。

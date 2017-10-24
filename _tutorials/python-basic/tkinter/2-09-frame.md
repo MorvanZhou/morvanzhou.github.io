@@ -11,7 +11,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk10_frame.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk10_frame.py){:target="_blank"}
 
 
 这一次的效果将会像下面的图片一样.
@@ -51,6 +51,6 @@ tk.Label(frm_l, text='on the frm_l2').pack()##这个`label`长在`frm_l`上，�
 tk.Label(frm_r, text='on the frm_r1').pack()##这个`label`长在`frm_r`上，显示为`on the frm_r1`
 ```
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk10_frame.py),
+再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk10_frame.py){:target="_blank"},
 整个框架的全部代码就完美了.
 

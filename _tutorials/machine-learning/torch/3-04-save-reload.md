@@ -18,10 +18,10 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py)
-  * [Tensorflow 的保存读取代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/303_save_reload.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py){:target="_blank"}
+  * [Tensorflow 的保存读取代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/303_save_reload.py){:target="_blank"}
   * [我制作的 什么是神经网络 动画简介]({% link _tutorials/machine-learning/ML-intro/2-1-NN.md %})
-  * [PyTorch 官网](http://pytorch.org/)
+  * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -121,6 +121,6 @@ restore_params()
 
 这样我们就能看出三个网络完全一模一样啦.
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py) 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/304_save_reload.py){:target="_blank"} 中的每一步的意义啦.
 
 

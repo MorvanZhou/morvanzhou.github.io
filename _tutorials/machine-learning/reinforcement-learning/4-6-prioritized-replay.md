@@ -21,9 +21,9 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.2_Prioritized_Replay_DQN)
+  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.2_Prioritized_Replay_DQN){:target="_blank"}
   * [什么是 Prioritized Replay 短视频(即将制作)](#)
-  * 论文 [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+  * 论文 [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -58,11 +58,11 @@ post-headings:
 
 有了 `TD-error` 就有了优先级 `p`, 那我们如何有效地根据 `p` 来抽样呢?
 如果每次抽样都需要针对 `p` 对所有样本排序, 这将会是一件非常消耗计算能力的事.
-好在我们还有其他方法, 这种方法不会对得到的样本进行排序. 这就是这篇 [paper](https://arxiv.org/abs/1511.05952)
+好在我们还有其他方法, 这种方法不会对得到的样本进行排序. 这就是这篇 [paper](https://arxiv.org/abs/1511.05952){:target="_blank"}
 中提到的 `SumTree`.
 
 SumTree 是一种树形结构, 每片树叶存储每个样本的优先级 `p`, 每个树枝节点只有两个分叉, 节点的值是两个分叉的合,
-所以 SumTree 的顶端就是所有 `p` 的合. 正如下面[图片(来自Jaromír Janisch)](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/),
+所以 SumTree 的顶端就是所有 `p` 的合. 正如下面[图片(来自Jaromír Janisch)](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/){:target="_blank"},
 最下面一层树叶存储样本的 `p`, 叶子上一层最左边的 13 = 3 + 10, 按这个规律相加, 顶层的 root 就是全部 `p` 的合了.
 
 <a href="https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/">
@@ -84,7 +84,7 @@ SumTree 是一种树形结构, 每片树叶存储每个样本的优先级 `p`, �
 
 **注意: 下面的代码和视频中有一点点不同, 下面的代码是根据评论中讨论的进行了修改, 多谢大家的评论.**
 
-首先要提的是, 这个 SumTree 的算法是对于 [Jaromír Janisch 写的 Sumtree](https://github.com/jaara/AI-blog/blob/master/SumTree.py) 的修改版.
+首先要提的是, 这个 SumTree 的算法是对于 [Jaromír Janisch 写的 Sumtree](https://github.com/jaara/AI-blog/blob/master/SumTree.py){:target="_blank"} 的修改版.
 Jaromír Janisch 的代码在更新 sumtree 的时候和抽样的时候多次用到了 recursive 递归结构, 我使用的是 while 循环, 测试要比递归结构运行快.
 在 class 中的功能也比它的代码少几个, 我优化了一下.
 
@@ -110,7 +110,7 @@ class SumTree(object):
 ```
 
 具体的抽要和更新值的规则和上面说的类似.
-具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L18-L86)
+具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L18-L86){:target="_blank"}
 
 
 
@@ -119,7 +119,7 @@ class SumTree(object):
 
 {% include assign-heading.html %}
 
-这个 Memory 类也是基于 [Jaromír Janisch 所写的 Memory](https://github.com/jaara/AI-blog/blob/master/Seaquest-DDQN-PER.py) 进行了修改和优化.
+这个 Memory 类也是基于 [Jaromír Janisch 所写的 Memory](https://github.com/jaara/AI-blog/blob/master/Seaquest-DDQN-PER.py){:target="_blank"} 进行了修改和优化.
 
 ```python
 class Memory(object):
@@ -137,7 +137,7 @@ class Memory(object):
 
 ```
 
-具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L89-L129)
+具体的代码在这里呈现的话比较累赘, 详细代码请去往我的 [Github对应的位置](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/RL_brain.py#L89-L129){:target="_blank"}
 下面有很多朋友经常问的一个问题, 这个 ISweight 到底怎么算. 需要提到的一点是, 代码中的计算方法是经过了简化的, 将 paper 中的步骤合并了一些.
 比如 `prob = p / self.tree.total_p; ISWeights = np.power(prob/min_prob, -self.beta)`
 
@@ -165,7 +165,7 @@ class Memory(object):
 {% include assign-heading.html %}
 
 
-基于之前的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py),
+基于之前的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py){:target="_blank"},
 我们做出以下修改. 我们将 class 的名字改成 `DQNPrioritiedReplay`, 为了对比 Natural DQN,
 我们也保留原来大部分的 DQN 的代码. 我们在 `__init__` 中加一个 `prioritized` 参数来表示 DQN 是否具备 prioritized 能力.
 为了对比的需要, 我们的 `tf.Session()` 也单独传入. 并移除原本在 DQN 代码中的这一句:
@@ -233,7 +233,7 @@ class DQNPrioritizedReplay:
             self.memory_counter += 1
 ```
 
-接下来是相对于 [Natural DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py),
+接下来是相对于 [Natural DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py){:target="_blank"},
 我们在 `learn()` 改变的部分也在如下展示.
 
 ```python
@@ -270,7 +270,7 @@ class DQNPrioritizedReplay:
 
 {% include tut-image.html image-name="4-6-4.png" %}
 
-运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/run_MountainCar.py),
+运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/run_MountainCar.py){:target="_blank"},
 我们就不难发现, 我们都从两种方法最初拿到第一个 `R=+10` 奖励的时候算起, 看看经历过一次 `R=+10` 后, 他们有没有好好利用这次的奖励,
 可以看出, 有 Prioritized replay 的可以高效的利用这些不常拿到的奖励, 并好好学习他们. 所以 Prioritized replay 会更快结束每个 episode, 很快就到达了小旗子.
 

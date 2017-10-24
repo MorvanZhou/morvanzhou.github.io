@@ -18,7 +18,7 @@ post-headings:
 
 
 学习资料:
-  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py)
+  * [代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py){:target="_blank"}
   * 机器学习-简介系列 [什么是神经网络]({% link _tutorials/machine-learning/ML-intro/2-1-NN.md %})
 
 神经网络可以用来模拟回归问题 (regression)，例如给下面一组数据，用一条线来对数据进行拟合，并可以预测新输入 `x` 的输出值。

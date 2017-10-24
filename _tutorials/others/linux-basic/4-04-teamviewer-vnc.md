@@ -36,7 +36,7 @@ Teamviewer 其实已经发展得很成熟了. 它是一个跨平台的远程操�
 * [从 Windows 远程 ssh 控制 Linux]({% link _tutorials/others/linux-basic/4-02-ssh-from-windows.md %})
 * [从手机远程 ssh Linux]({% link _tutorials/others/linux-basic/4-03-ssh-from-phone.md %})
 
-如果要用图像化的方式控制电脑, 首先我们从最方便的说起. [TeamViewer 的官网](https://www.teamviewer.com)提供了很多下载安装方式.
+如果要用图像化的方式控制电脑, 首先我们从最方便的说起. [TeamViewer 的官网](https://www.teamviewer.com){:target="_blank"}提供了很多下载安装方式.
 
 {% include tut-image.html image-name="04-04-02.png" %}
 
@@ -120,11 +120,11 @@ $ x11vnc -usepw
 而有很多软件可以实现 VNC client 这个功能.
 我在下面列举一些:
 
-* [TightVNC](http://www.tightvnc.com/) (免费)
-* [RealVNC](https://www.realvnc.com/) (免费)
+* [TightVNC](http://www.tightvnc.com/){:target="_blank"} (免费)
+* [RealVNC](https://www.realvnc.com/){:target="_blank"} (免费)
 
-RealVNC 有两种选项, 一个是 [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/), 用来做 client 端的(控制).
-一个是 [VNC connect](https://www.realvnc.com/en/connect/download/vnc/), 用来做 server 端的(被控制).
+RealVNC 有两种选项, 一个是 [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){:target="_blank"}, 用来做 client 端的(控制).
+一个是 [VNC connect](https://www.realvnc.com/en/connect/download/vnc/){:target="_blank"}, 用来做 server 端的(被控制).
 
 Client 端的 VNC 操作流程都很简单. 只要求要一个 server 端的 IP 和他的密码就好.
 

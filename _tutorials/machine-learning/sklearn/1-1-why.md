@@ -11,7 +11,7 @@ post-headings:
 
 
 学习资料:
-  * sklearn [官网](http://scikit-learn.org/)
+  * sklearn [官网](http://scikit-learn.org/){:target="_blank"}
 
 {% include assign-heading.html %}
 

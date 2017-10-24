@@ -28,10 +28,10 @@ description: "其实 Linux 不只是一个系统, 他是很多系统的集合, �
 所以实际上要使用的不是 Linux 本身, 而是 Linux 下面的各种 "UI".
 而像 Android 那样, 他也有很多 "UI". 比如:
 
-* [CentOS](https://www.centos.org/)
-* [Debian](https://www.debian.org/)
-* [Mint](https://linuxmint.com/)
-* [Ubuntu](https://www.ubuntu.com/)
+* [CentOS](https://www.centos.org/){:target="_blank"}
+* [Debian](https://www.debian.org/){:target="_blank"}
+* [Mint](https://linuxmint.com/){:target="_blank"}
+* [Ubuntu](https://www.ubuntu.com/){:target="_blank"}
 * 等等等等
 
 {% include tut-image.html image-name="01-02-01.jpg" %}
@@ -47,11 +47,11 @@ description: "其实 Linux 不只是一个系统, 他是很多系统的集合, �
 {% include assign-heading.html %}
 
 首先要做的事, 当然就是跑去人家官网下载啦. 在这里我推荐使用英文版的 Ubuntu, 因为学习 Linux, 我们基本上都是和英文打交道.
-所以如果系统本来就是英文的, 将会方便很多. 如果你实在喜欢中文的, 有一款中文的 [Ubuntu 麒麟](http://www.ubuntukylin.com/)系统可以推荐你.
+所以如果系统本来就是英文的, 将会方便很多. 如果你实在喜欢中文的, 有一款中文的 [Ubuntu 麒麟](http://www.ubuntukylin.com/){:target="_blank"}系统可以推荐你.
 下面是你需要的下载链接:
 
-* [Ubuntu 英文系统](https://www.ubuntu.com/download/desktop) (推荐)
-* 或者 [Ubuntu 麒麟 中文系统](http://www.ubuntukylin.com/downloads/)
+* [Ubuntu 英文系统](https://www.ubuntu.com/download/desktop){:target="_blank"} (推荐)
+* 或者 [Ubuntu 麒麟 中文系统](http://www.ubuntukylin.com/downloads/){:target="_blank"}
 
 我推荐英文的, 所以接下来会基于英文的说. 点开链接, 你会看到这个下载页面. 上面写着一些下载要求(通常被忽略). 点击 Download 他通常会带你去一个 donation 的界面.
 如果你支持开源, 可以大方地赞助他们, 就像你点击"莫烦 Python"上面的[赞助](/support/)链接一样~
@@ -72,16 +72,16 @@ description: "其实 Linux 不只是一个系统, 他是很多系统的集合, �
 
 {% include assign-heading.html %}
 
-如果你想练习英文能力, 这里是 [Ubuntu 的官方 USB 安装教程](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows?_ga=2.242174530.1746861324.1507700161-1586045268.1507700161#0),
+如果你想练习英文能力, 这里是 [Ubuntu 的官方 USB 安装教程](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows?_ga=2.242174530.1746861324.1507700161-1586045268.1507700161#0){:target="_blank"},
 我下面的 USB 安装说明也是基于他们的解说.
 
 USB安装要求:
 * 有一个 2GB 或更大的 USB (或移动盘), **注意:你的USB 应该会被清空, 请备份里面的文件**
 * 从 Windows 变成 Ubuntu 的比较多, 所以我们准备工作基于 Windows
-* 官方推荐 [Rufus](https://rufus.akeo.ie/), 一个将 Ubuntu OS 转到 USB 的免费软件
+* 官方推荐 [Rufus](https://rufus.akeo.ie/){:target="_blank"}, 一个将 Ubuntu OS 转到 USB 的免费软件
 * 上面已下载好的 Ubuntu 镜像文件
 
-所以我们直接点 [Rufus](https://rufus.akeo.ie/), 然后找到下面的下载链接.
+所以我们直接点 [Rufus](https://rufus.akeo.ie/){:target="_blank"}, 然后找到下面的下载链接.
 
 {% include tut-image.html image-name="01-02-03.png" %}
 

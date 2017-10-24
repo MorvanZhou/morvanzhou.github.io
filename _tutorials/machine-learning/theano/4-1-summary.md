@@ -12,7 +12,7 @@ post-headings:
 
 
 学习资料:
-  * [总结](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py)
+  * [总结](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py){:target="_blank"}
   
 {% include assign-heading.html %}
 
@@ -24,8 +24,8 @@ post-headings:
 
 使用 Theano 还可以做更多事情, 比如这些高级的应用:
 
-* 例如 GPU 加速，可以通过这个[教程链接](http://deeplearning.net/software/theano/tutorial/using_gpu.html)去学习。
-* 还有图像分析中很有优势的卷积神经网络 CNN，可以去学习[相关教程](http://deeplearning.net/tutorial/lenet.html)。
-* RNN 循环神经网络 在处理文字信息时应用很广，也可以通过下面的[链接](http://deeplearning.net/tutorial/rnnslu.html)去学习。
+* 例如 GPU 加速，可以通过这个[教程链接](http://deeplearning.net/software/theano/tutorial/using_gpu.html){:target="_blank"}去学习。
+* 还有图像分析中很有优势的卷积神经网络 CNN，可以去学习[相关教程](http://deeplearning.net/tutorial/lenet.html){:target="_blank"}。
+* RNN 循环神经网络 在处理文字信息时应用很广，也可以通过下面的[链接](http://deeplearning.net/tutorial/rnnslu.html){:target="_blank"}去学习。
 
 

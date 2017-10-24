@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/13_set_value.py)
+  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/13_set_value.py){:target="_blank"}
 
 {% include assign-heading.html %}
 
