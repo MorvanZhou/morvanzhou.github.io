@@ -17,23 +17,23 @@ author: 潘雨 (Mr_Pan)
 
 运行之后的效果将会像下面的图片一样，此时不作任何操作.
 
-<img class="course-image" src="/static/results/tkinter/2-06-01.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-06-01.jpg" %}
 
 如果只选中第一个选项，即图中的python, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-06-02.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-06-02.jpg" %}
 
 如果只选中第二个选项，即图中的c++, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-06-03.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-06-03.jpg" %}
 
 如果两个选项都选中, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-06-04.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-06-04.jpg" %}
 
 如果两个选项都不选中, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-06-05.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-06-05.jpg" %}
 
 
 {% include assign-heading.html %}

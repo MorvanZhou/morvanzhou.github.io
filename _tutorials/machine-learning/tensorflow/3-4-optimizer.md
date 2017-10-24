@@ -25,7 +25,7 @@ Tensorflow 中的优化器会有很多不同的种类。最基本, 也是最常�
 
 在Google搜索中输入“tensorflow optimizer"可以看到`Tensorflow`提供了7种优化器：[链接](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html)
 
-<img class="course-image" src="/static/results/tensorflow/3_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_4_1.png" %}
 
 更多关系 Optimizer 的解释, 请参考我制作的 机器学习-简介系列 [Optimizer]({% link _tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
 

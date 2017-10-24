@@ -26,11 +26,11 @@ Git 是一个分布式版本控制系统. 它的灵活性, 优越性使得它从
 
 你是想要这样的文件夹:
 
-<img class="course-image" src="/static/results/git/1-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-1-1.png" %}
 
 还是这样的文件夹:
 
-<img class="course-image" src="/static/results/git/1-1-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-1-2.png" %}
 
 
 {% include assign-heading.html %}

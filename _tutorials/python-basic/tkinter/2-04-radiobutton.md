@@ -17,13 +17,13 @@ author: 潘雨（Mr_Pan）
 
 这一次的效果将会像下面的图片一样.
 
-<img class="course-image" src="/static/results/tkinter/2-04-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-04-01.png" %}
 
 如果选择了某个选项, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-04-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-04-02.png" %}
 
-<img class="course-image" src="/static/results/tkinter/2-04-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-04-03.png" %}
 
 
 {% include assign-heading.html %}

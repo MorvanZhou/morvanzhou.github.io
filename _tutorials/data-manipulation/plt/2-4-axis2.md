@@ -80,7 +80,7 @@ ax.spines['top'].set_color('none')
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_4_1.png" %}
 
 {% include assign-heading.html %}
 
@@ -99,7 +99,7 @@ ax.spines['bottom'].set_position(('data', 0))
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_4_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_4_2.png" %}
 
 使用`.yaxis.set_ticks_position`设置y坐标刻度数字或名称的位置：`left`.（所有位置：`left`，`right`，`both`，`default`，`none`）
 
@@ -117,4 +117,4 @@ ax.spines['left'].set_position(('data',0))
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_4_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_4_3.png" %}

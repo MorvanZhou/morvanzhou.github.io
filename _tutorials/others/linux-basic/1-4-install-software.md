@@ -20,7 +20,7 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如已经有火狐浏览器(Firefox), 可替代 Windows Office 的办公套件 (LibreOffice) 等等.
 不过你仍然可以继续安装你需要的软件 app.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-01.png" %}
 
 
 
@@ -28,16 +28,16 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 {% include assign-heading.html %}
 
 
-<img class="course-image" src="/static/results/linux-basic/01-04-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-02.png" %}
 
 你可以直接在左上角的图标中搜索 "software", 就能找到 Ubuntu 自带的一个 App store. 这可跟 MacOS 的 App store 像极了!
 闲着没事无聊, 你就能在里面找找需要的软件. 大多数主流的 App 都能找到, 比如 Google Chrome.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-03.png" %}
 
 下图是 Apple 的 App store, 有木有! 像不像! 以前用 Apple, 现在是无缝转接 Linux 呀.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-04.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-04.png" %}
 
 所以你缺什么软件, 直接上 App store 先找找, 安装就好了.
 
@@ -50,11 +50,11 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 我们用的是中文, 所以有时候还得有个中文输入法就好. 这个你可以在 Setting 中进行设置.
 如果想直接使用系统里面的中文输入, 你要做的就是在 `Language support` 里添加一个中文输入就行.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-05.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-05.png" %}
 
 接着在 `Language Support` 旁边的 `Text Entry` 里的 "input method" 或 "input sources to use" 添加一个 Chinese 就好了.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-06.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-06.png" %}
 
 
 然后使用的时候, 在左面右上角的菜单栏里面就可以选择不同的输入法了.
@@ -74,7 +74,7 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 所以有时候你在 Ubuntu 的 App store 找不到合适的软件, 但是网上却有非官方的, 但是你需要的软件. 很多情况下, 你会使用 Terminal, 用代码来安装 App.
 找到 Terminal 的方式很简单, 直接在左上角搜 "Terminal" 就好了.
 
-<img class="course-image" src="/static/results/linux-basic/01-04-07.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="01-04-07.png" %}
 
 然后在窗口里输入这么一句话:
 

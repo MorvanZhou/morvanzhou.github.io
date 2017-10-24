@@ -53,7 +53,7 @@ Windows 的安装最麻烦. 我们一步步来:
 * 去这个网址: [https://pypi.python.org/pypi/matplotlib/](https://pypi.python.org/pypi/matplotlib/)
 * 找到一个适合你自己 python 版本的 wheel (.whl) 文件. (如下图) 
 
-<img class= "course-image" src="/static/results/plt/1_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1_2_1.png" %}
 
 ```
     matplotlib-1.5.3-cp35-cp35m-win32.whl (md5)

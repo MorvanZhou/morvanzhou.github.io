@@ -55,7 +55,7 @@ ax4.set_xlabel('ax4_x')
 ax4.set_ylabel('ax4_y')
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4_2_1.png" %}
 
 {% include google-in-article-ads.html %}
 
@@ -87,7 +87,7 @@ ax9 = plt.subplot(gs[-1, 0])
 ax10 = plt.subplot(gs[-1, -2])
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4_2_2.png" %}
 
 {% include assign-heading.html %}
 
@@ -111,4 +111,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/plt/4_2_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4_2_3.png" %}

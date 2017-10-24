@@ -69,7 +69,7 @@ $ sudo apt-get install openssh-server
 
 在这个下载界面中, 你会看到类似这样的界面, 确认你 Windows 电脑是多少位的 (32-bit 或 64-bit), 然后选择一个适合你电脑的 `.msi` 安装包.
 
-<img class="course-image" src="/static/results/linux-basic/04-02-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="04-02-01.png" %}
 
 安装好之后, 在开始菜单中找到 PuTTY, 并打开 PuTTY, 你会看到下面这样. 然后在 "Host name (or IP address)" 那填上被控制的 Linux 的 IP.
 获取被控制 Linux IP 的方法就是在这台 Linux 的 terminal 上输入:
@@ -81,17 +81,17 @@ $ ifconfig
 然后找和 `inet addr` 有关的那一串 IP 地址. 之后将这个 IP 地址输入到你的 PuTTY 的 "Host name (or IP address)" 位置.
 默认情况下, 是不用修改 port 的数值的.
 
-<img class="course-image" src="/static/results/linux-basic/04-02-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="04-02-02.png" %}
 
 点击 Open 按钮, 你就能登录 Linux 啦, 它还会跳出一个小窗, 让你确认这台电脑是不是你要链接的电脑. 如果你在自己家的局域网内,就不用担心安全问题,
 直接点 Yes 就好.
 
-<img class="course-image" src="/static/results/linux-basic/04-02-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="04-02-03.png" %}
 
 最后你需要输入 Linux 的用户密码作为确认. 然后就能顺利开始在 Windows 上操控 Linux 啦.
 这里我用 Windows 操控了一下我的 Raspberry Pi, 树莓派. 一个微型电脑的 Terminal.
 
-<img class="course-image" src="/static/results/linux-basic/04-02-04.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="04-02-04.png" %}
 
 
 

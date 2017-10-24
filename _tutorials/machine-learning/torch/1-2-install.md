@@ -28,7 +28,7 @@ PyTorch 暂时只支持 MacOS, Linux.
 PyTorch 安装起来很简单, [它自家网页](http://pytorch.org/)上就有很方便的选择方式 (网页升级改版后可能和下图有点不同):
 
 <a href="http://pytorch.org/">
-<img class="course-image" src="/static/results/torch/1-2-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-2-1.png" %}
 </a>
 
 所以根据你的情况选择适合你的安装方法, 我已自己为例, 我使用的是 MacOS, 想用 pip 安装, 我的 Python 是 3.5 版的, 我没有 GPU 加速, 那我就按上面的选:

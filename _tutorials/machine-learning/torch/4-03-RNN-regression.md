@@ -29,7 +29,7 @@ post-headings:
 [LSTM 动画简介]({% link _tutorials/machine-learning/ML-intro/2-4-LSTM.md %}) 能让你生动理解 RNN.
 上次我们提到了用 RNN 的最后一个时间点输出来判断之前看到的图片属于哪一类, 这次我们来真的了, 用 RNN 来及时预测时间序列.
 
-<img class="course-image" src="/static/results/torch/4-3-1.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-1.gif" %}
 
 
 
@@ -40,7 +40,7 @@ post-headings:
 
 我们要用到的数据就是这样的一些数据, 我们想要用 `sin` 的曲线预测出 `cos` 的曲线.
 
-<img class="course-image" src="/static/results/torch/4-3-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-2.png" %}
 
 ```python
 import torch
@@ -121,7 +121,7 @@ def forward(self, x, h_state):
 `sin` 来预测 `cos`. `rnn` 会理解他们的关系, 并用里面的参数分析出来这个时刻 `sin` 曲线上的点如何对应上
 `cos` 曲线上的点.
 
-<img class="course-image" src="/static/results/torch/4-3-1.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-1.gif" %}
 
 
 ```python
@@ -150,7 +150,7 @@ for step in range(60):
     optimizer.step()                    # apply gradients
 ```
 
-<img class="course-image" src="/static/results/torch/4-3-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-3.png" %}
 
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/403_RNN_regressor.py) 中的每一步的意义啦.

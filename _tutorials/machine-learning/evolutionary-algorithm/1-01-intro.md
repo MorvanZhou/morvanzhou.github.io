@@ -82,11 +82,11 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 用简单的代码, 可视化各种进化算法的本质. 比如[这个]({% link _tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm.md %}).
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-0.gif" %}
 
 旅行商人的[最短路劲]({% link _tutorials/machine-learning/evolutionary-algorithm/2-03-genetic-algorithm-travel-sales-problem.md %})问题:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-3-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-3-0.gif" %}
 
 [配对句子]({% link _tutorials/machine-learning/evolutionary-algorithm/2-02-genetic-algorithm-match-phrase.md %})问题:
 
@@ -97,6 +97,6 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 结合了梯度下降的原则的[进化算法]({% link _tutorials/machine-learning/evolutionary-algorithm/3-03-evolution-strategy-natural-evolution-strategy.md %}):
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-3-0.gif" %}
 
 等等等等. 我们就来慢慢理解消化啦~

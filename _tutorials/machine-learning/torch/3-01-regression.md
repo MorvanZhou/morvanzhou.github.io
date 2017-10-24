@@ -26,7 +26,7 @@ post-headings:
 
 我会这次会来见证神经网络是如何通过简单的形式将一群数据用一条线条来表示. 或者说, 是如何在数据当中找到他们的关系, 然后用神经网络模型来建立一个可以代表他们关系的线条.
 
-<img class="course-image" src="/static/results/torch/1-1-2.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-1-2.gif" %}
 
 
 
@@ -133,7 +133,7 @@ for t in range(100):
         plt.pause(0.1)
 ```
 
-<img class="course-image" src="/static/results/torch/3-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-1-1.png" %}
 
 所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/301_regression.py) 中的每一步的意义啦.
 

@@ -16,7 +16,7 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk5_datasets.py)
-  * 更多可用数据 [网址](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)  
+  * 更多可用数据 [网址](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)
   
 今天来看 `Sklearn` 中的 `data sets`，很多而且有用，可以用来学习算法模型。
 
@@ -29,12 +29,12 @@ eg: boston 房价, 糖尿病, 数字, Iris 花。
 也可以生成虚拟的数据，例如用来训练线性回归模型的数据，可以用函数来生成。
 
 
-<img class="course-image" src="/static/results/sklearn/2_3_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_3_1.png" %}
 
 
 例如，点击进入 boston 房价的数据，可以看到 `sample` 的总数，属性，以及 `label` 等信息。
 
-<img class="course-image" src="/static/results/sklearn/2_3_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_3_2.png" %}
 
 如果是自己生成数据，按照函数的形式，输入 `sample，feature，target` 的个数等等。
 
@@ -112,7 +112,7 @@ plt.scatter(X, y)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/2_3_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_3_3.png" %}
 
 
 
@@ -127,7 +127,7 @@ plt.scatter(X, y)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/2_3_4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_3_4.png" %}
 
 
 

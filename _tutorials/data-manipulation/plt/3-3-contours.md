@@ -16,7 +16,7 @@ post-headings:
 
 本节讲解如何用`matplotlib`生成等高线图。今天的结果如下图所示：
 
-<img class="course-image" src="/static/results/plt/3_3_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_3_1.png" %}
 
 {% include assign-heading.html %}
 
@@ -54,7 +54,7 @@ plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)
 C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=.5)
 ```
 
-<img  class="course-image" src="/static/results/plt/3_3_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_3_2.png" %}
 
 {% include assign-heading.html %}
 
@@ -70,7 +70,7 @@ plt.yticks(())
 
 最终结果即：
 
-<img  class="course-image" src="/static/results/plt/3_3_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_3_1.png" %}
 
 
 

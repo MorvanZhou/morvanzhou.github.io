@@ -20,7 +20,7 @@ post-headings:
 
 Sklearn 官网提供了一个流程图，蓝色圆圈内是判断条件，绿色方框内是可以选择的算法：
 
-<img class="course-image" src="/static/results/sklearn/2_1_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_1_1.png" %}
 
 从 START 开始，首先看数据的样本是否 `>50`，小于则需要收集更多的数据。
 

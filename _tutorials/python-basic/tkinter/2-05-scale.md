@@ -17,13 +17,13 @@ author: 潘雨 (Mr_Pan)
 
 这一次的效果将会像下面的图片一样.
 
-<img class="course-image" src="/static/results/tkinter/2-05-01.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-05-01.jpg" %}
 
 如果拖动滚动条, 效果就会如下.
 
-<img class="course-image" src="/static/results/tkinter/2-05-02.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-05-02.jpg" %}
 
-<img class="course-image" src="/static/results/tkinter/2-05-03.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-05-03.jpg" %}
 
 
 
@@ -44,12 +44,12 @@ s.pack()
 * 参数`resolution=0.01`这里我们可以借助数学题来理解，我们做的很多数学题都会让我们来保留几位小数，此处的0.01就是保留2位小数，即效果图中的5.00 9.00等等后面的两位小数，如果保留一位就是`resolution=0.1`
 这里的`showvalue`就是设置在滚动条上方的显示。`showvalue=0`显示的就是效果图，上方无结果显示，如果改为`showvalue=1`，则会显示为：
 
-<img class="course-image" src="/static/results/tkinter/2-05-04.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-05-04.jpg" %}
 
 参数`tickinterval`设置的就是坐标的间隔，此处为`tickinterval=2`，显示的即为效果图中的5.00 7.00 9.00 11.00 如果改为`tickinterval=3`则为5.00 8.00 11.00：
 
 
-<img class="course-image" src="/static/results/tkinter/2-05-05.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-05-05.jpg" %}
 
 
 

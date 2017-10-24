@@ -25,13 +25,13 @@ post-headings:
 Overfitting 也被称为过度学习，过度拟合。 它是机器学习中常见的问题。
 举个Classification（分类）的例子。
 
-<img class="course-image" src="/static/results/tensorflow/5_02_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5_02_1.png" %}
 
 图中黑色曲线是正常模型，绿色曲线就是overfitting模型。尽管绿色曲线很精确的区分了所有的训练数据，但是并没有描述数据的整体特征，对新测试数据的适应性较差。
 
 举个Regression (回归)的例子，
 
-<img class="course-image" src="/static/results/tensorflow/5_02_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5_02_2.png" %}
 
 第三条曲线存在overfitting问题，尽管它经过了所有的训练点，但是不能很好的反应数据的趋势，预测能力严重不足。
 TensorFlow提供了强大的dropout方法来解决overfitting问题。
@@ -112,11 +112,11 @@ sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 0.5})
 当`keep_prob=1`时，模型对训练数据的适应性优于测试数据，存在overfitting，输出如下：
 红线是 `train` 的误差, 蓝线是 `test` 的误差.
 
-<img class="course-image" src="/static/results/tensorflow/5_02_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5_02_3.png" %}
 
 当`keep_prob=0.5`时效果好了很多，输出如下：
 
-<img class="course-image" src="/static/results/tensorflow/5_02_4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5_02_4.png" %}
 
 程序中用到了Tensorboard输出结果，可以参考前面教程:
 

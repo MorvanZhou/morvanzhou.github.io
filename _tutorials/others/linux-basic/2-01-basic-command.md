@@ -16,7 +16,7 @@ description: "Linux 的深度玩家, 基本上都是用 Terminal 和指令 (comm
 Linux 的深度玩家, 基本上都是用 Terminal 和指令 (command) 来超控电脑的.
 有些时候甚至你的电脑没有屏幕, 也只能用指令来超控. 比如服务器, 树莓派(raspberry pi).
 
-<img class="course-image" src="/static/results/linux-basic/02-01-01.jpg" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-01-01.jpg" %}
 
 
 如果你只是为了想 "轻度使用" Linux, 前面的教程就已经够了, 不过如果你想要 "重度使用", 哈哈, 就接着看吧.
@@ -33,7 +33,7 @@ Linux 的深度玩家, 基本上都是用 Terminal 和指令 (command) 来超控
 然后他默认跳出来是在你的用户目录 (Home). Terminal 中的 `~ $` 就是说你输入指令将在 `~` 这个目录下执行.
 而 `~` 这个符号代表的是你的 Home 目录. 如果在文件管理器中可视化出来, 就是下面图中那样.
 
-<img class="course-image" src="/static/results/linux-basic/02-01-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-01-02.png" %}
 
 使用 `cd` 指令, 我们能在 Terminal 中轻松切换到不同的文件夹. 想从 Home 去 `Documents` 这个文件夹?
 输入下面的命令就可以了.
@@ -106,7 +106,7 @@ Linux 的深度玩家, 基本上都是用 Terminal 和指令 (command) 来超控
 我在 Documents 目录里放了个文件夹(`folder1`)和文件(`file1`). 我们将目录导去 Documents,
 然后使用 `ls` (list 的简写) 看看这里面的东西.
 
-<img class="course-image" src="/static/results/linux-basic/02-01-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-01-03.png" %}
 
 
 ```shell

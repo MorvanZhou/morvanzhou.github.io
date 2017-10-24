@@ -44,7 +44,7 @@ l = tk.Label(window,
 l.pack()    # 固定窗口位置
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-01-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-01-01.png" %}
 
 我们也可以通过变量的形式控制标签的显示, 这时我们引入按钮 `tk.Button` 的概念, 没点一次按钮, 标签变化一次. 用一下内容替换上面的标签. 并把需要变化的文字存成变量 `var`:
 
@@ -82,15 +82,15 @@ def hit_me():
 
 没有点击时: 
 
-<img class="course-image" src="/static/results/tkinter/2-01-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-01-02.png" %}
 
 点击第一次:
 
-<img class="course-image" src="/static/results/tkinter/2-01-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-01-03.png" %}
 
 点击第二次:
 
-<img class="course-image" src="/static/results/tkinter/2-01-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-01-02.png" %}
 
 
 

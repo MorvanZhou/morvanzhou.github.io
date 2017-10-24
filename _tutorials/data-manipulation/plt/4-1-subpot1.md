@@ -56,7 +56,7 @@ plt.plot([0,1],[0,4])
 plt.show()  # 展示
 ```
 
-<img class="course-image" src="/static/results/plt/4_1_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4_1_1.png" %}
 
 {% include google-in-article-ads.html %}
 
@@ -97,6 +97,6 @@ plt.plot([0,1],[0,4])
 plt.show()  # 展示
 ```
 
-<img class="course-image" src="/static/results/plt/4_1_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4_1_2.png" %}
 
 

@@ -76,14 +76,14 @@ def insert_end():
 
 窗口界面
 
-<img class="course-image" src="/static/results/tkinter/2-02-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-02-01.png" %}
 
 {% include assign-heading.html %}
 
 第一次：在entry中输入`tkinter`，在text中输入`0000`并将光标定位在中间位置，点击`insert point`
 
-<img class="course-image" src="/static/results/tkinter/2-02-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-02-02.png" %}
 
 第二次：点击`insert end`
 
-<img class="course-image" src="/static/results/tkinter/2-02-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-02-03.png" %}

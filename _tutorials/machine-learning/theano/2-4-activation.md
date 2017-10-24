@@ -31,7 +31,7 @@ post-headings:
 如下图，在这三个中间层中，有激活函数，相当于过滤器或者激活器，作用就是会使一些特征被激活 Activate，同时另一些特征不被激活 Deactivate，
 例如，当猫的图片数据传递到第一个隐藏层时，在这个激励函数作用下，大于 0 的数据乘以 1 保持原样，小于 0 的数据乘以 0 变为 0，被 `Deactivate`。
 
-<img class="course-image" src="/static/results/theano/2_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_4_1.png" %}
 
 有多种激活函数，例如，当传递进来的值越小时，作用后就会越接近 0， 当传递进来的值越大时，作用后就会越接近 1。
 还有可以计算线性或者非线性关系的，或者可以计算概率的激活函数。

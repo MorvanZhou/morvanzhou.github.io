@@ -26,7 +26,7 @@ description: "这次, 我们想要了解的是在 linux 中, 怎么样创建新�
 $ mkdir folder2
 ```
 
-<img class="course-image" src="/static/results/linux-basic/02-03-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-03-01.png" %}
 
 如果你想在这个目录给 `folder2` 里面再建一个文件夹也是 Ok.
 

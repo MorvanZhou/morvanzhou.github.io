@@ -14,7 +14,7 @@ post-headings:
 
 学习资料:
   * Windows 安装的英文说明 [链接](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat)
-  * Visual studio [下载地址](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)  
+  * Visual studio [下载地址](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
 
 
 {% include assign-heading.html %}

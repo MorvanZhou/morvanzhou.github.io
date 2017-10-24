@@ -28,7 +28,7 @@ Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下
 
 本节要实践的内容提前看:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-3-0.gif" %}
 
 
 
@@ -36,7 +36,7 @@ Natural ES 后面简称 NES, 应该就是算一种用适应度诱导的梯度下
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-3-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-3-1.png" %}
 
 宝宝们的梯度是这个 ![gradient](/static/results/evolutionary-algorithm/3-3-2.png)
 加上这些宝宝们的 fitness ![fitness](/static/results/evolutionary-algorithm/3-3-3.png), 用梯度乘以 fitness 就是说, 加大力度往带来好 fitness 的梯度下降.

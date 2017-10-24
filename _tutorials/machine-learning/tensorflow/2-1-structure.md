@@ -18,7 +18,7 @@ post-headings:
 Tensorflow 首先要定义神经网络的结构,
 然后再把数据放入结构当中去运算和 training.
 
-<img class="course-image" src="/static/results/tensorflow/1_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1_4_1.png" %}
 
 <p style="text-align: center; font-size: 0.8em;">(动图效果请点击<a href="https://www.tensorflow.org/images/tensors_flowing.gif" alt="{{ page.title }}{% increment image-count %}">这里</a>)</p>
 

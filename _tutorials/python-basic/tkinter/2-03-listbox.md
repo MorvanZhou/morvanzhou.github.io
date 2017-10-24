@@ -33,7 +33,7 @@ l =tk.Label(window,bg='yellow',width=4,textvariable=var1)
 l.pack()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-03-01.png" %}
 
 {% include assign-heading.html %}
 
@@ -51,7 +51,7 @@ b1 = tk.Button(window, text='print selection', width=15,
 b1.pack()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-03-02.png" %}
 
 {% include assign-heading.html %}
 
@@ -76,6 +76,6 @@ lb.pack()
 window.mainloop()
 ```
 
-<img class="course-image" src="/static/results/tkinter/2-03-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-03-03.png" %}
 
 

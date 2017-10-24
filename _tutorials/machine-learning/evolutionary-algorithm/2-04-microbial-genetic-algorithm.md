@@ -29,13 +29,13 @@ post-headings:
 Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. **一句话来概括: 在袋子里抽两个球, 对比两个球, 把球大的放回袋子里, 把球小的变一下再放回袋子里**,
 这样在这次选着中, 大球不会被改变任何东西, 就被放回了袋子, 当作下一代的一部分.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-4-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-4-0.gif" %}
 
 
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-4-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-4-1.png" %}
 
 像最开始说的那样, 我们有一些 `population`, 每次在进化的时候, 我们会从这个 `pop` 中随机抽 2 个 DNA 出来,
 然后对比一下他们的 `fitness`, 我们将 `fitness` 高的定义成 `winner`, 反之是 `loser`. 我们不会去动任何 `winner` 的 DNA,

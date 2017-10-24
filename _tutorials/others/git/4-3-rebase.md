@@ -33,20 +33,20 @@ post-headings:
 补充完以后, 和后面那张图的 `merge` 不同, 我还是继续在 `C3` 上工作, 不过此时的 `C3` 的本质却不一样了, 
 因为吸收了那些小更新. 所以我们用 `C3'` 来代替.
 
-<img class="course-image" src="/static/results/git/4-3-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-1.png" %}
 
-<img class="course-image" src="/static/results/git/4-3-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-2.png" %}
 
-<img class="course-image" src="/static/results/git/4-3-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-3.png" %}
 
-<img class="course-image" src="/static/results/git/4-3-4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-3-4.png" %}
 
 可以看出 `rebase` 改变了 `C3` 的属性, `C3` 已经不是从 `C1` 衍生而来的了. 
 这一点和 `merge` 不一样. `merge` 在合并的时候创建了一个新的 `C5` `commit`. 
 这一点不同, 使得在共享分支中使用 `rebase` 变得危险.
 如果是共享分支的历史被改写. 别人之前共享内容的 `commit` 就被你的 `rebase` 修改掉了. 
 
-<img class="course-image" src="/static/results/git/4-2-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="4-2-1.png" %}
 
 所以需要强调的是 **!!! 只能在你自己的分支中使用 rebase, 和别人共享的部分是不能用 !!!**. 
 如果你不小心弄错了. 没事, 我们还能用在 [reset 这一节]({% link _tutorials/others/git/3-1-reset.md %})

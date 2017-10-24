@@ -40,7 +40,7 @@ ax.yaxis.set_ticks_position('left')
 ax.spines['left'].set_position(('data', 0))
 ```
 
-<img class= "course-image" src="/static/results/plt/2_7_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_7_1.png" %}
 
 {% include assign-heading.html %}
 
@@ -56,6 +56,6 @@ plt.show()
 其中`label.set_fontsize(12)`重新调节字体大小，`bbox`设置目的内容的透明度相关参，`facecolor`调节 `box` 前景色，`edgecolor` 设置边框，
 本处设置边框为无，`alpha`设置透明度. 最终结果如下:
 
-<img class= "course-image" src="/static/results/plt/2_7_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_7_2.png" %}
 
 

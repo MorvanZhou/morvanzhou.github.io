@@ -42,7 +42,7 @@ Linux 的更多 distribution 的安装, 请看[这里](https://git-scm.com/downl
 
 Git 已经为 Mac 用户做好了一个安装包, 我们可以在这里下载并安装 [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
 
-<img class="course-image" src="/static/results/git/1-2-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-2-1.png" %}
 
 {% include assign-heading.html %}
 
@@ -53,4 +53,4 @@ Git 也为 Windows 系统提供了简易的 `.exe` 安装包, 直接从这里下
 `git bash`. 这个 `git bash` 是 git 在 Windows 上为了方便使用所设置的一个 Unix 的环境.
 如果你是 Windows 用户, 之后的教程你也能用这个来学习使用 git.
 
-<img class="course-image" src="/static/results/git/1-2-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="1-2-2.png" %}

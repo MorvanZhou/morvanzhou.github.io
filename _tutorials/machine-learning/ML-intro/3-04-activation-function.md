@@ -24,11 +24,11 @@ post-headings:
 
 我们为什么要使用激励函数? 用简单的语句来概括. 就是因为, 现实并没有我们想象的那么美好, 它是残酷多变的. 哈哈, 开个玩笑, 不过激励函数也就是为了解决我们日常生活中 不能用线性方程所概括的问题. 好了,我知道你的问题来了. 什么是线性方程 (linear function)?
 
-<img class="course-image" src="/static/results/ML-intro/active1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="active1.png" %}
 
 说到线性方程, 我们不得不提到另外一种方程, 非线性方程 (nonlinear function). 我们假设, 女生长得越漂亮, 越多男生爱. 这就可以被当做一个线性问题. 但是如果我们假设这个场景是发生在校园里. 校园里的男生数是有限的, 女生再漂亮, 也不可能会有无穷多的男生喜欢她. 所以这就变成了一个非线性问题.再说..女生也不可能是无穷漂亮的. 这个问题我们以后有时间私下讨论.
 
-<img class="course-image" src="/static/results/ML-intro/active2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="active2.png" %}
 
 然后我们就可以来讨论如何在神经网络中达成我们描述非线性的任务了. 我们可以把整个网络简化成这样一个式子. Y = Wx, W 就是我们要求的参数, y 是预测值, x 是输入值. 用这个式子, 我们很容易就能描述刚刚的那个线性问题, 因为 W 求出来可以是一个固定的数. 不过这似乎并不能让这条直线变得扭起来 , 激励函数见状, 拔刀相助, 站出来说道: “让我来掰弯它!”.
 
@@ -39,7 +39,7 @@ post-headings:
  {% include assign-heading.html %}
 
 
-<img class="course-image" src="/static/results/ML-intro/active3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="active3.png" %}
 
 这里的 AF 就是指的激励函数. 激励函数拿出自己最擅长的”掰弯利器”, 套在了原函数上 用力一扭, 原来的 Wx 结果就被扭弯了.
 
@@ -52,7 +52,7 @@ post-headings:
 
  {% include assign-heading.html %}
 
-<img class="course-image" src="/static/results/ML-intro/active4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="active4.png" %}
 
 想要恰当使用这些激励函数, 还是有窍门的. 比如当你的神经网络层只有两三层, 不是很多的时候, 对于隐藏层, 使用任意的激励函数, 随便掰弯是可以的, 不会有特别大的影响. 不过, 当你使用特别多层的神经网络, 在掰弯的时候, 玩玩不得随意选择利器. 因为这会涉及到梯度爆炸, 梯度消失的问题. 因为时间的关系, 我们可能会在以后来具体谈谈这个问题.
 

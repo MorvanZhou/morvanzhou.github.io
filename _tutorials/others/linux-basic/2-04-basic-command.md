@@ -22,7 +22,7 @@ description: "这次, 我们想要了解的是在 linux 中, 怎么样观看和�
 `nano` 是 linux 的一款文字编辑工具. 我们可以拿它来做最基本的 terminal 端的文本编辑, 甚至可以写代码~
 下面我们用 `touch` 创建一个 Python 脚本. 如果大家不懂 Python 也没关系, 你就知道我们可以拿 `nano` 来编辑文字或者脚本就好了.
 
-<img class="course-image" src="/static/results/linux-basic/02-04-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-04-01.png" %}
 
 然后用 `nano` 执行这个 `t.py` 文件.
 
@@ -32,7 +32,7 @@ $ nano t.py
 
 他就会变成一个文本编辑器, 你在里面可以打上一些脚本, 比如像我这样.
 
-<img class="course-image" src="/static/results/linux-basic/02-04-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-04-02.png" %}
 
 然后按 "Ctrl + x" 来保存和退出. 如果提示你保存, 你就按一下 "y" 键, 然后回车, 你的文件就被保存下来了.
 

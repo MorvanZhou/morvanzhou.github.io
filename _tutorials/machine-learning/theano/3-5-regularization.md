@@ -25,7 +25,7 @@ post-headings:
 
 什么是 overfitting ？
 
-<img class="course-image" src="/static/results/theano/3_5_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_5_1.png" %}
 
 我们在用机器学习模型时，会把数据集分为训练集和测试集，训练集用来学习模型，测试集相当于新数据，用来检验模型的效果。
 
@@ -161,9 +161,9 @@ plt.show()
 
 没有正则化时，训练集的误差会逐渐变小，但是测试集的误差越来越大，这就是有 overfitting 。
 
-<img class="course-image" src="/static/results/theano/3_5_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_5_2.png" %}
 
 用 `L2` 正则化时，比上一个好很多，测试集的误差也在不断减小。
 
-<img class="course-image" src="/static/results/theano/3_5_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_5_3.png" %}
 

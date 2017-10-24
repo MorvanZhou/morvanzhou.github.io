@@ -117,7 +117,7 @@ restore_net()
 restore_params()
 ```
 
-<img class="course-image" src="/static/results/torch/3-4-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-4-1.png" %}
 
 这样我们就能看出三个网络完全一模一样啦.
 

@@ -31,7 +31,7 @@ post-headings:
 
 本节要实践的内容提前看:
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/3-1-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-1-0.gif" %}
 
 
 
@@ -73,7 +73,7 @@ def kill_bad(pop, kids):
 
 对于今天的问题, 我们就是要找这张图中的最高点.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-1.png" %}
 
 而这个点只有一个, 所以我们的 DNA 的长度就只有一个. 我们用一个 python 字典来存这两种 DNA 的信息.
 这里 `DNA` 存的是均值, `mut_strength` 存的是标准差.

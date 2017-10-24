@@ -31,7 +31,7 @@ post-headings:
 
 下图就是这节内容对比各种优化器的效果:
 
-<img class="course-image" src="/static/results/torch/3-6-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-6-2.png" %}
 
 
 
@@ -42,7 +42,7 @@ post-headings:
 
 为了对比各种优化器的效果, 我们需要有一些数据, 今天我们还是自己编一些伪数据, 这批数据是这样的:
 
-<img class="course-image" src="/static/results/torch/3-6-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-6-1.png" %}
 
 
 ```python
@@ -136,7 +136,7 @@ for epoch in range(EPOCH):
             l_his.append(loss.data[0])     # loss recoder
 ```
 
-<img class="course-image" src="/static/results/torch/3-6-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3-6-2.png" %}
 
 `SGD` 是最普通的优化器, 也可以说没有加速效果, 而 `Momentum` 是 `SGD` 的改良版, 它加入了动量原则.
 后面的 `RMSprop` 又是 `Momentum` 的升级版. 而 `Adam` 又是 `RMSprop` 的升级版.

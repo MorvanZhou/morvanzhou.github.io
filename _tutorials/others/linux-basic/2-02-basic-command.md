@@ -22,7 +22,7 @@ description: "这次, 我们想要了解的是在 linux 中, 怎么样创建新�
 `touch` 的使用很简单, 我们先去往 Documents 的文件夹, 里面已经有了 `folder1` 和 `file1`,
 如果我们想新建一个 `file2` 使用下面的语句就好. 一个空文件就建立好了.
 
-<img class="course-image" src="/static/results/linux-basic/02-01-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-01-03.png" %}
 
 
 ```shell
@@ -58,7 +58,7 @@ $ cp 老文件 新文件
 $ cp file1 file1copy
 ```
 
-<img class="course-image" src="/static/results/linux-basic/02-02-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="02-02-01.png" %}
 
 2 `-i` (interactive) **注意: 如果 file1copy 已经存在, 它将会直接覆盖已存在的 file1copy**, 如果要避免直接覆盖, 我们在 cp 后面加一个选项.
 

@@ -27,11 +27,11 @@ github 是一个大家都积极贡献的地方, 你可以和各种人合作创�
 
 然后添加你的一个 online 版本库 repository:
  
-<img class="course-image" src="/static/results/git/5-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-1.png" %}
 
 添加好了以后, 会出现下面的介绍, 你可以选择红框里的代码链接上你的本地版本库.
 
-<img class="course-image" src="/static/results/git/5-1-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-2.png" %}
 
 {% include assign-heading.html %}
 
@@ -45,11 +45,11 @@ $ git push -u origin dev        # 推送本地 dev  去 origin
 
 现在网上就已经有了你推上去的版本库了.
 
-<img class="course-image" src="/static/results/git/5-1-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-3.png" %}
 
 你甚至能在这里观看之前有哪些 `commit` 和 `commit` 具体做了什么:
 
-<img class="course-image" src="/static/results/git/5-1-4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-4.png" %}
 
 
 {% include google-in-article-ads.html %}
@@ -66,6 +66,6 @@ $ git push -u origin master
 
 github 中就会查到这个:
 
-<img class="course-image" src="/static/results/git/5-1-5.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-1-5.png" %}
 
 这样就有更多的人可以看到你的杰出作品啦~

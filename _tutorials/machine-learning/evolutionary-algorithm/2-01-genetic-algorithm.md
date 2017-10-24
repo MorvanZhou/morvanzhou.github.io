@@ -26,7 +26,7 @@ post-headings:
 
 在这一节中, 我们的 "乖宝宝" 就是图中更高的点, 用遗传算法, 我们就能轻松找到 "最乖的宝宝".
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-0.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-0.gif" %}
 
 
 
@@ -36,7 +36,7 @@ post-headings:
 这个方程通常被称为 fitness. 在今天的问题中, 我们找到下面这个曲线当中的最高点.
 那么这个 fitness 方程就很好定, 越高的点, fitness 越高.
 
-<img class="course-image" src="/static/results/evolutionary-algorithm/2-1-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-1-1.png" %}
 
 如果这个曲线上任一点的 y 值是 `pred` 的话, 我们的 fitness 就是下面这样:
 

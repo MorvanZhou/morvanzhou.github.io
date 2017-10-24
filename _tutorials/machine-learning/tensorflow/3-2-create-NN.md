@@ -138,6 +138,6 @@ for i in range(1000):
 
 在电脑上运行本次代码的结果为：
 
-<img class="course-image" src="/static/results/tensorflow/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_1.png" %}
 
 通过上图可以看出，误差在逐渐减小，这说明机器学习是有积极的效果的。

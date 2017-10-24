@@ -77,7 +77,7 @@ plt.show()
 
 显示结果: 
 
-<img class="course-image" src="/static/results/theano/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_1.png" %}
 
 {% include google-in-article-ads.html %}
 

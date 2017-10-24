@@ -54,7 +54,7 @@ for i in range(1000):
 
 你大概会得到以下的类似结果：
 
-<img class="course-image" src="/static/results/theano/3_3_1.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_3_1.gif" %}
 
 结果显示我们的神经网络在一点一点的逼近我们的目标函数, 换句话说也就是说 神经网络在逐步的学习样本的原始分布。
 

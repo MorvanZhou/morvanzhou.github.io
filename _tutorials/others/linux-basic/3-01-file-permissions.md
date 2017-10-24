@@ -29,7 +29,7 @@ description: "在 Linux 中, 权限是一个非常重要的东西. 无时无刻�
 查看文件权限的方法很简单, 其实之前我们就已经看到过这样的内容了, 如果你还记得. 我们在说 `ls` 指令的时候, 提到过权限问题,
 不过到了这节内容我们仔细说说权限. 如果你在 Terminal 中输入图片中的指令.
 
-<img class="course-image" src="/static/results/linux-basic/03-01-01.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="03-01-01.png" %}
 
 1 在 Terminal 中查看文件的权限
 
@@ -45,7 +45,7 @@ total 16
 在这里, 像`-rw-rw-r--`这种, 就是权限的说明. 细节展示在下面的图中. 在下图中,
 这串字符得拆成4个部分,
 
-<img class="course-image" src="/static/results/linux-basic/03-01-02.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="03-01-02.png" %}
 
 * `Type`: 很多种 (最常见的是 `-` 为文件, `d` 为文件夹, 其他的还有`l`, `n` ... 这种东西, 真正自己遇到了, 网上再搜就好, 一次性说太多记不住的).
 * `User`: 后面跟着的三个空是使用 User 的身份能对这个做什么处理 (`r` 能读; `w` 能写; `x` 能执行; `-` 不能完成某个操作).
@@ -60,7 +60,7 @@ User 一般就是指你, 这个正在使用电脑的人. Group 是一个 User �
 我们可以将 `----rw-r--` 拆成 `-` (这是文件), `---`(这个 user 没有任何权限), `rw-` (这个 Group 里可以读,写), `r--` (其他人只能读).
 
 
-<img class="course-image" src="/static/results/linux-basic/03-01-03.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="03-01-03.png" %}
 
 如果我双击这个 `t1.py` 上面就弹出这个说我们权限的窗口.
 

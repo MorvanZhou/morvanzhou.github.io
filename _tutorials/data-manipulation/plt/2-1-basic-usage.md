@@ -41,4 +41,4 @@ plt.plot(x, y)
 plt.show()
 ```
 
-<img class= "course-image" src="/static/results/plt/2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2_1.png" %}

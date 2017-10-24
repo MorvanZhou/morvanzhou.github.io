@@ -17,7 +17,7 @@ post-headings:
 本节我们将讲述各种不同的plot的方式。之前我们讲到了如何plot线，今天我们讲述如何plot散点图。
 今天用到的例子最终呈现的结果如下图：
 
-<img class="course-image" src="/static/results/plt/3_1_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_1_1.png" %}
 
 {% include assign-heading.html %}
 
@@ -37,7 +37,7 @@ T = np.arctan2(Y,X) # for color value
 
 数据集生成完毕，现在来用`scatter`plot这个点集，鼠标点上去，可以看到这个函数的各个parameter的描述，如下图：
 
-<img class="course-image" src="/static/results/plt/3_1_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_1_2.png" %}
 
 
 

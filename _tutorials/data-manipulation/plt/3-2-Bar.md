@@ -17,7 +17,7 @@ post-headings:
 
 本节我们介绍一下用`matplotib`来制作一个柱状图，今天的结果如下图：
 
-<img class="course-image" src="/static/results/plt/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_1.png" %}
 
 今天的柱状图分成上下两部分，每一个柱体上都有相应的数值标注，并且取消坐标轴的显示。
 
@@ -49,7 +49,7 @@ plt.show()
 
 这样我们就生成了下图所示的柱状图基本框架：
 
-<img class="course-image" src="/static/results/plt/3_2_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_2.png" %}
 
 {% include assign-heading.html %}
 
@@ -63,7 +63,7 @@ plt.bar(X, -Y2, facecolor='#ff9999', edgecolor='white')
 
 现在的结果呈现：
 
-<img class="course-image" src="/static/results/plt/3_2_3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_3.png" %}
 
 接下来我们用函数`plt.text`分别在柱体上方（下方）加上数值，用`%.2f`保留两位小数，横向居中对齐`ha='center'`，纵向底部（顶部）对齐`va='bottom'`：
 
@@ -81,6 +81,6 @@ for x, y in zip(X, Y2):
 
 最终的结果就像开始一样：
 
-<img class="course-image" src="/static/results/plt/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_1.png" %}
 
 

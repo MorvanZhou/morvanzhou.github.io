@@ -56,7 +56,7 @@ y_softplus = F.softplus(x).data.numpy()
 
 接着我们开始画图, 画图的代码也在下面:
 
-<img class="course-image" src="/static/results/torch/2-3-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="2-3-1.png" %}
 
 ```python
 import matplotlib.pyplot as plt  # python 的可视化模块, 我有教程 (https://morvanzhou.github.io/tutorials/data-manipulation/plt/)

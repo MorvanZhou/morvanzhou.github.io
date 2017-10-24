@@ -32,9 +32,9 @@ post-headings:
 
 那我们就看看下面的两个动图, 这就是在每层神经网络有无 batch normalization 的区别啦.
 
-<img class="course-image" src="/static/results/torch/5-4-1.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-1.gif" %}
 
-<img class="course-image" src="/static/results/torch/5-4-2.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-2.gif" %}
 
 
 
@@ -46,7 +46,7 @@ post-headings:
 比如说 `ReLU` 这种激励函数最怕所有的值都落在附属区间, 那我们就将所有的参数都水平移动一个 -0.2 (`bias_initialization = -0.2`),
 来看看 BN 的实力.
 
-<img class="course-image" src="/static/results/torch/5-4-3.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-3.png" %}
 
 
 ```python
@@ -172,7 +172,7 @@ for epoch in range(EPOCH):
 这个教程有几张图要画, 首先我们画训练时的动态图. 我单独定义了一个画动图的功能 `plot_histogram()`,
 因为不是重点, 所以代码的具体细节请看我的 [github](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/504_batch_normalization.py),
 
-<img class="course-image" src="/static/results/torch/5-4-2.gif" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-2.gif" %}
 
 ```python
 f, axs = plt.subplots(4, N_HIDDEN+1, figsize=(10, 5))
@@ -208,15 +208,15 @@ for epoch in range(EPOCH):
 
 首先来看看这次对比的两个激励函数是长什么样:
 
-<img class="course-image" src="/static/results/torch/5-4-8.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-8.png" %}
 
 然后我们来对比使用不同激励函数的结果.
 
-<img class="course-image" src="/static/results/torch/5-4-1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-1.png" %}
 
-<img class="course-image" src="/static/results/torch/5-4-4.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-4.png" %}
 
-<img class="course-image" src="/static/results/torch/5-4-5.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-5.png" %}
 
 上面是使用 `relu` 激励函数的结果, 我们可以看到, 没有使用 BN 的误差要高, 线条不能拟合数据,
 原因是我们有一个 "Bad initialization", 初始 `bias = -0.2`, 这一招, 让 `relu` 无法捕捉到在负数区间的输入值.
@@ -224,11 +224,11 @@ for epoch in range(EPOCH):
 
 
 
-<img class="course-image" src="/static/results/torch/5-4-2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-2.png" %}
 
-<img class="course-image" src="/static/results/torch/5-4-6.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-6.png" %}
 
-<img class="course-image" src="/static/results/torch/5-4-7.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="5-4-7.png" %}
 
 上面结果是使用 `tanh` 作为激励函数的结果, 可以看出, 不好的初始化, 让输入数据在激活前分散得非常离散, 而有了 BN, 数据都被收拢了.
 收拢的数据再放入激励函数就能很好地利用激励函数的非线性. 而且可以看出没有 BN 的数据让激活后的结果都分布在 `tanh` 的两端,

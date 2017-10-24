@@ -31,7 +31,7 @@ a = np.array([0.313660827978, 0.365348418405, 0.423733120134,
 
 今天做出的图像就是这个样子：
 
-<img class="course-image" src="/static/results/plt/3_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_4_1.png" %}
 
 三行三列的格子，**a**代表每一个值，图像右边有一个注释，白色代表值最大的地方，颜色越深值越小。
 
@@ -51,7 +51,7 @@ plt.imshow(a, interpolation='nearest', cmap='bone', origin='lower')
 我们在这个[链接](http://matplotlib.org/examples/images_contours_and_fields/interpolation_methods.html)
 可以看到**matplotlib**官网上对于内插法的不同方法的描述。下图是一个示例：
 
-<img class="course-image" src="/static/results/plt/3_4_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_4_2.png" %}
 
 这里我们使用的是内插法中的 [Nearest-neighbor](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation) 的方法，其他的方式也都可以随意取选。
 
@@ -69,7 +69,7 @@ plt.show()
 
 这样我们2D图像就创建完毕了。
 
-<img class="course-image" src="/static/results/plt/3_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_4_1.png" %}
 
 
 

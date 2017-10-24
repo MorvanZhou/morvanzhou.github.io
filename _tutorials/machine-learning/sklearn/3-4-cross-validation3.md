@@ -61,7 +61,7 @@ plt.legend(loc="best")
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/3_4_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_4_1.png" %}
 
 由图中可以明显看到gamma值大于`0.001`，模型就会有过拟合(Overfitting)的问题。
 

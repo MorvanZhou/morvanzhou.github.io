@@ -77,7 +77,7 @@ plt.scatter(X[:, 0], X[:, 1], c=y)
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/3_1_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_1_1.png" %}
 
 数据标准化前
 
@@ -95,7 +95,7 @@ print(clf.score(X_test, y_test))
 
 数据的单位发生了变化, `X` 数据也被压缩到差不多大小范围.
 
-<img class="course-image" src="/static/results/sklearn/3_1_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_1_2.png" %}
 
 标准化后的预测准确率提升至`0.9`
 

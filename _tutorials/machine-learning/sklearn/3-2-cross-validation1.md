@@ -98,7 +98,7 @@ plt.ylabel('Cross-Validated Accuracy')
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/3_2_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_1.png" %}
 
 从图中可以得知，选择`12~18`的`k`值最好。高过`18`之后，准确率开始下降则是因为过拟合(Over fitting)的问题。
 
@@ -121,6 +121,6 @@ plt.ylabel('Cross-Validated MSE')
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/3_2_2.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_2_2.png" %}
 
 由图可以得知，平均方差越低越好，因此选择`13~18`左右的`K`值会最好。

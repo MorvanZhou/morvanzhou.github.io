@@ -66,4 +66,4 @@ plt.legend(loc="best")
 plt.show()
 ```
 
-<img class="course-image" src="/static/results/sklearn/3_3_1.png" alt="{{ page.title }}{% increment image-count %}">
+{% include tut-image.html image-name="3_3_1.png" %}
