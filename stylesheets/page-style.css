@@ -113,6 +113,9 @@ width: 1.1em;
 padding-right: 0.4em;
 }
 
+.cycle-img {
+border-radius:50%;
+}
 
 /* ====== others ====== */
 .white {
