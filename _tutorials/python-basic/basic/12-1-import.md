@@ -12,7 +12,8 @@ post-headings:
 ---
 
 
-
+学习资料:
+* 全套[代码](https://github.com/MorvanZhou/tutorials/blob/master/basic/25_import.py){:target="_blank"}
 
 
 

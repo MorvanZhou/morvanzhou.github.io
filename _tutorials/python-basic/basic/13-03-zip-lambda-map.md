@@ -15,7 +15,8 @@ post-headings:
 ---
 
 
-
+学习资料:
+* 全套[代码](https://github.com/MorvanZhou/tutorials/blob/master/basic/29_zip_lambda_map.py){:target="_blank"}
 
 
 
