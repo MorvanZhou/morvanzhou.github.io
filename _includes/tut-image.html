@@ -9,7 +9,8 @@
   <img class="course-image lazy-img"
   data-src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.image-name}}{% endif %}"
   src="/static/img/description/loading.gif"
-  alt="{{ page.title }}-{{ str-count }}">
+  alt="{{ page.title }}-{{ str-count }}"
+  title="{{ page.title }}-{{ str-count }}">
 </a>
 
 {% assign post-img-count = post-img-count | plus: 1 %}
