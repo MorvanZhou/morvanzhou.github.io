@@ -27,7 +27,7 @@ print("这是代码块")
 
 如果需要插入图片, 请插入一行如下代码. 需要更改的部分只有 `src=""` 里面的图片名, 之后我会基于这个修改.
 
-<img class="course-image" src="这里是你图片名" alt="{{ page.title }}{% increment image-count %}">
+<img class="course-image" src="这里是你图片名" alt="{{ page.title }}">
 
 
 ## 主题 4

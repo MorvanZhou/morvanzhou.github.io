@@ -9,6 +9,7 @@ thumbnail: /static/thumbnail/ML-intro/autoencoder.png
 post-headings:
   - 压缩与解压
   - 编码器 Encoder
+  - 解码器 Decoder
 ---
 
 学习资料:
@@ -47,7 +48,7 @@ post-headings:
 
 {% include google-in-article-ads.html %}
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 {% include tut-image.html image-name="auto4.png" %}
 
@@ -56,3 +57,15 @@ post-headings:
 {% include tut-image.html image-name="auto5.png" %}
 
 这是一个通过自编码整理出来的数据, 他能从原数据中总结出每种类型数据的特征, 如果把这些特征类型都放在一张二维的图片上, 每种类型都已经被很好的用原数据的精髓区分开来. 如果你了解 PCA 主成分分析, 再提取主要特征时, 自编码和它一样,甚至超越了 PCA. 换句话说, 自编码 可以像 PCA 一样 给特征属性降维.
+
+
+
+{% include assign-heading.html %}
+
+至于解码器 Decoder, 我们也能那它来做点事情. 我们知道, 解码器在训练的时候是要将精髓信息解压成原始信息, 那么这就提供了一个解压器的作用, 甚至我们可以认为是一个生成器
+(类似于[GAN]({% link _tutorials/machine-learning/ML-intro/2-6-GAN.md %})).
+那做这件事的一种特殊自编码叫做 variational autoencoders, 你能在[这里](http://kvfrans.com/variational-autoencoders-explained/){:target="_blank"}找到他的具体说明.
+
+有一个例子就是让它能模仿并生成手写数字.
+
+{% include tut-image.html image-name="auto6.jpg" %}

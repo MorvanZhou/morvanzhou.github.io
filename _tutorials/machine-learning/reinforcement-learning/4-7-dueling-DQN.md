@@ -72,9 +72,8 @@ advantage 的影响. 发红的地方左右了自己车子的移动原则.
 下面的修改都是基于我之前写的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py){:target="_blank"}.
 这次修改的部分比较少. 我们把它们写在一块. 如果想直接看全部代码, [请戳这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN){:target="_blank"}.
 
-<a href="/static/results/reinforcement-learning/4-7-4.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-7-4.png" %}
-</a>
+
 
 ```python
 class DuelingDQN:
@@ -129,9 +128,7 @@ class DuelingDQN:
 这次我们看看累积奖励 reward, 杆子立起来的时候奖励 = 0, 其他时候都是负值,
 所以当累积奖励没有在降低时, 说明杆子已经被成功立了很久了.
 
-<a href="/static/results/reinforcement-learning/4-7-5.png" alt="{{ page.title }}{% increment image-count %}">
 {% include tut-image.html image-name="4-7-5.png" %}
-</a>
 
 我们发现当可用动作越高, 学习难度就越大, 不过 Dueling DQN 还是会比 Natural DQN 学习得更快. 收敛效果更好.
 

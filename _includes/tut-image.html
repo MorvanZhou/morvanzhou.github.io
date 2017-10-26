@@ -1,7 +1,15 @@
+{% if post-img-count %}
+{% else %}
+  {% assign post-img-count = 0 %}
+{% endif %}
+
+{% assign str-count = post-img-count | downcase %}
 
 <a href="/static/results/{{ page.category }}/{{ include.image-name }}">
-<img class="course-image lazy-img"
-     data-src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.image-name}}{% endif %}"
-     src="/static/img/description/loading.gif"
-     alt="{{ page.title }}{% increment image-count %}">
+  <img class="course-image lazy-img"
+  data-src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.image-name}}{% endif %}"
+  src="/static/img/description/loading.gif"
+  alt="{{ page.title }}-{{ str-count }}">
 </a>
+
+{% assign post-img-count = post-img-count | plus: 1 %}
