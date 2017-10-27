@@ -77,7 +77,13 @@ $ ssh [要控制的用户名]@[它的IP地址]
 $ ifconfig
 ```
 
-接着找到以 inet 开头的字样, 这就是你在这个路由下的 ip 地址了. 比如我现在的 ip 是 `192.168.0.114`
+如果它提示你没有安装 `ifconfig`, 你就按它的要求安装就好. 输入下面指令就能安装.
+
+```shell
+$ sudo apt install net-tools
+```
+
+确保 `ifconfig` 能用后, 输入 `ifconfig`, 接着找到以 inet 开头的字样, 这就是你在这个路由下的 ip 地址了. 比如我现在的 ip 是 `192.168.0.114`
 
 ```
 inet addr:192.168.0.114
@@ -93,7 +99,28 @@ $ ssh morvan@192.168.0.114
 morvan@192.168.0.114's password:
 ```
 
-输入, 确认密码后, 你在操控电脑的 terminal 就会瞬间变成被操控电脑的 terminal 啦. 他会显示这样一些信息证明你登录成功.
+**有可能你在尝试这样直接 ssh 的方式失败. 像我, 刚从16版的 Ubuntu 升级到 17 版, 我的 Mac 由于某些原因不让我 ssh 去 17 版的 Ubuntu,
+显示了下面的报错, 后来查了一下, 找到了一个解决方式.**
+
+```shell
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ERROR: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+........
+ERROR: ECDSA host key for 192.168.0.114 has changed and you have requested strict checking.
+ERROR: Host key verification failed.
+```
+
+如果你也看到上面这种报错, 直接在你的电脑上 (我的 Mac 上) 的 terminal 运行下面这个:
+
+```shell
+$ ssh-keygen -R 要 ssh 去的 ip 比如下面这样
+$ ssh-keygen -R 192.168.0.114
+```
+
+恢复正常后, 接着再按上面的步骤 ssh 去 Ubuntu. 输入, 确认密码后, 你在操控电脑的 terminal 就会瞬间变成被操控电脑的 terminal 啦. 他会显示这样一些信息证明你登录成功.
 现在你就能自由的运用之前所学的 Linux 的指令, 在你的电脑上远程操控 Linux 电脑啦.
 
 ```shell

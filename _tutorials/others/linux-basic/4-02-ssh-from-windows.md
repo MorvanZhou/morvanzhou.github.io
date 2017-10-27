@@ -78,7 +78,13 @@ $ sudo apt-get install openssh-server
 $ ifconfig
 ```
 
-然后找和 `inet addr` 有关的那一串 IP 地址. 之后将这个 IP 地址输入到你的 PuTTY 的 "Host name (or IP address)" 位置.
+如果它提示你没有安装 `ifconfig`, 你就按它的要求安装就好. 输入下面指令就能安装.
+
+```shell
+$ sudo apt install net-tools
+```
+
+确保 `ifconfig` 能用后, 输入 `ifconfig`, 然后找和 `inet addr` 有关的那一串 IP 地址. 之后将这个 IP 地址输入到你的 PuTTY 的 "Host name (or IP address)" 位置.
 默认情况下, 是不用修改 port 的数值的.
 
 {% include tut-image.html image-name="04-02-02.png" %}

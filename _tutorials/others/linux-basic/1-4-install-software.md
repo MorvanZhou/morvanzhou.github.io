@@ -48,16 +48,17 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 {% include assign-heading.html %}
 
 我们用的是中文, 所以有时候还得有个中文输入法就好. 这个你可以在 Setting 中进行设置.
-如果想直接使用系统里面的中文输入, 你要做的就是在 `Language support` 里添加一个中文输入就行.
+如果想直接使用系统里面的中文输入, 你要做的就是在 `Region & Language` 里添加一个中文输入就行.
 
 {% include tut-image.html image-name="01-04-05.png" %}
+{% include tut-image.html image-name="01-04-051.png" %}
+{% include tut-image.html image-name="01-04-052.png" %}
 
-接着在 `Language Support` 旁边的 `Text Entry` 里的 "input method" 或 "input sources to use" 添加一个 Chinese 就好了.
+接着在 `Region & Language` 下面有一个 `Manage Installed Languages` 里的 "install/remove language" 添加一个 Chinese 就好了.
 
 {% include tut-image.html image-name="01-04-06.png" %}
 
-
-然后使用的时候, 在左面右上角的菜单栏里面就可以选择不同的输入法了.
+然后使用的时候, 在右上角的菜单栏里面就可以选择不同的输入法了 (切换方法 Home+space, 或者按 linux 的说法 super+space).
 
 在国内, 很多人喜欢搜狗输入法(我也喜欢), 所以我这里有个搜狗输入法的[下载链接](https://pinyin.sogou.com/linux/?r=pinyin){:target="_blank"}.
 还有这里的[官方安装说明](https://pinyin.sogou.com/linux/help.php){:target="_blank"}.

@@ -87,7 +87,30 @@ Password written to: /home/morvan/.vnc/passwd
 $ x11vnc -usepw
 ```
 
+**如果你使用的是 17+ 的 Ubuntu, 截止至目前 (2017年10月27日) 对于 VNC 还有一个 bug 没有修复.
+所以 17+ 版本的 Ubuntu 如果你尝试上面的方式发生下面这种问题, 你就要尝试一下我接下来说的方法了.**
 
+```shell
+X Error of failed request: BadMatch (invalid parameter attributes)
+  Major opcode of failed request: 73 (X_GetImage)
+  Serial number of failed request: 41
+  Current serial number in output stream: 41
+```
+
+首先这个问题, 我查了很久, 最后发现是新版 ubuntu 的桌面显示升级了, 好像是变成3D, 然后以前的 2D 形式的 x11vnc 都不支持.
+所以我们要换一种形式的桌面. 首先要做的就是 logout 你的电脑. 在桌面右上角, 选着你的用户, 然后 logout.
+
+{% include tut-image.html image-name="04-04-031.png" %}
+
+然后再选择不同的桌面方式 (Xorg) 登录 ubuntu. 这样一来, 如果再重复上面的 x11vnc 启动方式, 你就不会报错了.
+
+{% include tut-image.html image-name="04-04-032.jpeg" %}
+
+最后, 如果出现频繁跳出 x11vnc 的现象, 尝试在开启 x11vnc 的时候直接输入这个参数, 让它永远运行.
+
+```shell
+$ x11vnc -usepw -forever
+```
 
 
 
