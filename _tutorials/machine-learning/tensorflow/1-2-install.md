@@ -125,17 +125,17 @@ tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get
 
 安装前的检查:
 
-* 目前只支持 **Python 3.5 (64bit)** 版本
+* 目前只支持 **Python 3.5/3.6 (64bit)** 版本
 * 你有安装 numpy (没有的话,请看这里[numpy 安装教程]({% link _tutorials/data-manipulation/np-pd/1-2-install.md %}))
 
 接下来惊心动魄啦! 在 command 窗口中执行
 
 ```shell
 # CPU 版的
-C:\> pip install tensorflow
+C:\> pip3 install tensorflow
 
 # GPU 版的
-C:\> pip install tensorflow-gpu
+C:\> pip3 install tensorflow-gpu
 ```
 
 **注意** Windows 运行 Tensorflow 如果遇到这个报错:
@@ -149,6 +149,18 @@ from there.
 
 不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/){:target="_blank"}.
 就能解决这个问题.
+
+或者在 Windows 运行的时候出现了如下报错, 你需要安装 [Windows 的 Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/confirmation.aspx?id=48145){:target="_blank"} 就能成功解决问题.
+
+```
+ImportError: No module named '_pywrap_tensorflow_internal'
+```
+
+
+
+
+
+
 
 {% include assign-heading.html %}
 
