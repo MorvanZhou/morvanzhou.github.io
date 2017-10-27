@@ -87,8 +87,8 @@ Password written to: /home/morvan/.vnc/passwd
 $ x11vnc -usepw
 ```
 
-**如果你使用的是 17+ 的 Ubuntu, 截止至目前 (2017年10月27日) 对于 VNC 还有一个 bug 没有修复.
-所以 17+ 版本的 Ubuntu 如果你尝试上面的方式发生下面这种问题, 你就要尝试一下我接下来说的方法了.**
+**如果你使用的是 ubuntu 17.10, 截止至目前 (2017年10月27日) 对于 VNC 还有一个 bug 没有修复.
+所以 17.10 版本的 Ubuntu 如果你尝试上面的方式发生下面这种问题, 你就要尝试一下我接下来说的方法了.**
 
 ```shell
 X Error of failed request: BadMatch (invalid parameter attributes)
