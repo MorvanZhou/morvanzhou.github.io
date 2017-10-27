@@ -46,7 +46,7 @@ defaults:
       editor: 莫烦
       author: 莫烦
       author-link: "#"
-      published: true  #TOD: change back to true
+      published: ture  #TODO: change back to true
 
   # module descriptions
   - scope:

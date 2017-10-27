@@ -73,10 +73,12 @@ description: "其实 Linux 不只是一个系统, 他是很多系统的集合, �
 {% include assign-heading.html %}
 
 如果你想练习英文能力, 这里是 [Ubuntu 的官方 USB 安装教程](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows?_ga=2.242174530.1746861324.1507700161-1586045268.1507700161#0){:target="_blank"},
-我下面的 USB 安装说明也是基于他们的解说.
+我下面的 USB 安装说明也是基于他们的解说. 你可以从 Linux, MacOS 或者 Windows 将制作一个 USB 安装盘, 方便地使用 USB 安装.
+因为大部分朋友都是 Windows 转 Ubuntu, 所以下面的解说都是基于 Windows 的. 如果你是 Ubuntu, 请参考这个[教程](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0){:target="_blank"},
+如果你从 MacOS 导入 USB, 请参考这个[教程](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos){:target="_blank"}.
 
 USB安装要求:
-* 有一个 2GB 或更大的 USB (或移动盘), **注意:你的USB 应该会被清空, 请备份里面的文件**
+* 有一个 2GB 或更大的 USB (或移动盘), **注意:你的 USB 会被清空, 请备份里面的文件**
 * 从 Windows 变成 Ubuntu 的比较多, 所以我们准备工作基于 Windows
 * 官方推荐 [Rufus](https://rufus.akeo.ie/){:target="_blank"}, 一个将 Ubuntu OS 转到 USB 的免费软件
 * 上面已下载好的 Ubuntu 镜像文件
@@ -95,7 +97,7 @@ USB安装要求:
 {% include tut-image.html image-name="01-02-04.png" %}
 
 在 *Partition scheme and target system type* 选 **MBR partition scheme for UEFI**.
-然后在 *Create a bootable disk using* 后面点击那个图标, 选择你下载好的类似于这样 `ubuntu-16.04.3-desktop-amd64.iso` 的文件.
+然后在 *Create a bootable disk using* 后面点击那个图标, 选择你下载好的类似于这样 `ubuntu-17.10-desktop-amd64.iso` 的文件.
 
 
 {% include tut-image.html image-name="01-02-05.png" %}
