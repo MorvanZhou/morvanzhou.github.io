@@ -2,7 +2,7 @@
 youku_id:
 youtube_id:
 chapter: 2
-title: Linux 基本指令 'nano' 和 'cat'
+title: Linux 基本指令 nano 和 cat
 publish-date: 2017-10-12
 thumbnail: /static/thumbnail/linux-basic/2-04.jpg
 post-headings:

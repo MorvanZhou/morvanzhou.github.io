@@ -2,7 +2,7 @@
 youku_id: XMzExNzE1MDgyNA
 youtube_id: 9sIbn9xVdlk
 chapter: 2
-title: Linux 基本指令 'ls' 和 'cd'
+title: Linux 基本指令 ls 和 cd
 publish-date: 2017-10-11
 thumbnail: /static/thumbnail/linux-basic/2-01.jpg
 post-headings:

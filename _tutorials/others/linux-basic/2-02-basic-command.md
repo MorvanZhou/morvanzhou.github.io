@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzExNzIzNzc2NA
+youtube_id: 9BtAjh5s1Fw
 chapter: 2
-title: Linux 基本指令 'touch', 'cp' 和 'mv'
+title: Linux 基本指令 touch, cp 和 mv
 publish-date: 2017-10-12
 thumbnail: /static/thumbnail/linux-basic/2-02.jpg
 post-headings:

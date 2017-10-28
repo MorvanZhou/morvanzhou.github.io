@@ -2,7 +2,7 @@
 youku_id:
 youtube_id:
 chapter: 2
-title: Linux 基本指令 'mkdir', 'rmdir' 和 'rm'
+title: Linux 基本指令 mkdir, rmdir 和 rm
 publish-date: 2017-10-12
 thumbnail: /static/thumbnail/linux-basic/2-03.jpg
 post-headings:
