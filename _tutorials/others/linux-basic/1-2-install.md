@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzExNjczNDYwOA
+youtube_id: tA9OKOZqjdg
 chapter: 1
 title: 安装 Ubuntu
 publish-date: 2017-10-11
