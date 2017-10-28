@@ -121,7 +121,9 @@ C:\> pip3 install --upgrade tensorflow
 C:\> pip3 install --upgrade tensorflow-gpu
 ```
 
-**注意** Windows 运行 Tensorflow 如果遇到这个报错:
+**注意**
+
+* Windows 运行 Tensorflow 如果遇到这个报错:
 
 ```
 Error importing tensorflow.  Unless you are using bazel,
@@ -133,7 +135,7 @@ from there.
 不要惊慌, 尝试下载安装 [Windows 的 Microsoft Visual C++ 2015 redistributable update 3 64 bit](https://www.visualstudio.com/downloads/){:target="_blank"}.
 就能解决这个问题.
 
-或者在 Windows 运行的时候出现了如下报错, 你需要安装 [Windows 的 Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/confirmation.aspx?id=48145){:target="_blank"} 就能成功解决问题.
+* 或者在 Windows 运行的时候出现了如下报错, 你需要安装 [Windows 的 Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/confirmation.aspx?id=48145){:target="_blank"} 就能成功解决问题.
 
 ```
 ImportError: No module named '_pywrap_tensorflow_internal'
