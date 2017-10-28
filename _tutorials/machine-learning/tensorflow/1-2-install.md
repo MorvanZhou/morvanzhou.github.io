@@ -42,20 +42,20 @@ Tensorflow 的安装方式很多. 比如官网提供的:
 
 本文将提到第一种最简单的安装方式, pip 安装.
 使用 pip 安装的时候要确保你的 pip 已经存在于你的电脑中. 如果还没有安装 pip. 
-你可以在 Terminal 窗口中运行这个:
+你可以在 Terminal 窗口中运行这个, 升级必要的组件:
 
 ```shell
 # Ubuntu/Linux 64-位 系统的执行代码:
 $ sudo apt-get install python-pip python-dev
 
 # Mac OS X 系统的执行代码:
-$ sudo easy_install pip
+$ sudo easy_install --upgrade pip
 $ sudo easy_install --upgrade six
 ```
 
 <h5 id="LM-CPU">CPU 版</h5>
 
-激动人心的时刻到了, Tensorflow (0.12) 刚刚做了更新, 绕过了复杂的安装步骤, 如果你只需要安装
+激动人心的时刻到了, Tensorflow (0.12之后) 做了更新, 绕过了复杂的安装步骤, 如果你只需要安装
 CPU 版本的 Tensorflow, 运行下面这个就好了:
 
 ```shell
@@ -70,58 +70,41 @@ $ pip3 install tensorflow
 
 <h5 id="LM-GPU">GPU 版</h5>
 
-但是 如果你想安装 GPU 版的 Tensorflow, 你要在下面找一个适合你版本的安装文件, 并在 terminal 中执行: 
+Tensorflow 已经不再支持 mac 的 GPU 版了, 下面是 Linux 安装 GPU 版的说明.
+说先安装 NVIDIA CUDA 必要组建.
 
 ```shell
-# Ubuntu/Linux 64-bit, CPU only, Python 2.7
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp27-none-linux_x86_64.whl
-
-# Ubuntu/Linux 64-bit, GPU enabled, Python 2.7
-# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp27-none-linux_x86_64.whl
-
-# Mac OS X, CPU only, Python 2.7:
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py2-none-any.whl
-
-# Mac OS X, GPU enabled, Python 2.7:
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py2-none-any.whl
-
-# Ubuntu/Linux 64-bit, CPU only, Python 3.4
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
-
-# Ubuntu/Linux 64-bit, GPU enabled, Python 3.4
-# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
-
-# Ubuntu/Linux 64-bit, CPU only, Python 3.5
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
-
-# Ubuntu/Linux 64-bit, GPU enabled, Python 3.5
-# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
-
-# Mac OS X, CPU only, Python 3.4 or 3.5:
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py3-none-any.whl
-
-# Mac OS X, GPU enabled, Python 3.4 or 3.5:
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py3-none-any.whl
+$ sudo apt-get install libcupti-dev
 ```
 
-最后, 根据自己的 python 版本, 在 terminal 中执行以下语句:
+然后确保你的 linux 上 pip 是可用的, 接着我们可以直接通过pip 安装:
 
 ```shell
-# 如果你是 Python 2, 请复制下面
-$ sudo pip install --upgrade $TF_BINARY_URL
-
-# 如果你是 Python 3, 请复制下面
-$ sudo pip3 install --upgrade $TF_BINARY_URL
+$ sudo apt-get install python-pip python-dev   # for Python 2.7
+$ sudo apt-get install python3-pip python3-dev # for Python 3.n
 ```
+
+然后选择你想要cpu 或者 gpu 版本.
+
+```shell
+$ pip install tensorflow      # Python 2.7; CPU support (no GPU support)
+$ pip3 install tensorflow     # Python 3.n; CPU support (no GPU support)
+$ pip install tensorflow-gpu  # Python 2.7;  GPU support
+$ pip3 install tensorflow-gpu # Python 3.n; GPU support
+```
+
+
+
+
 
 {% include google-in-article-ads.html %}
 
 {% include assign-heading.html %}
 
-tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#pip-installation-on-windows){:target="_blank"}
+tf 在 windows 的官方[安装说明](https://www.tensorflow.org/install/install_windows){:target="_blank"}
+, 其实就简单的方法就是装个 [Anaconda](https://www.continuum.io/downloads){:target="_blank"}, 省了你安装这安装那, 不知道还有什么没安装的烦恼.
+如果你喜欢用 pip 安装, 通过西面这个途径就好了.
+
 
 安装前的检查:
 
@@ -132,10 +115,10 @@ tf 0.12 版的英文[安装说明](https://www.tensorflow.org/versions/r0.12/get
 
 ```shell
 # CPU 版的
-C:\> pip3 install tensorflow
+C:\> pip3 install --upgrade tensorflow
 
 # GPU 版的
-C:\> pip3 install tensorflow-gpu
+C:\> pip3 install --upgrade tensorflow-gpu
 ```
 
 **注意** Windows 运行 Tensorflow 如果遇到这个报错:
