@@ -1,8 +1,8 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzExNjk0ODg4NA
+youtube_id: HeA0K-hzRpw
 chapter: 1
-title: 快速了解 Ubuntu 基本界面
+title: 快速了解 Ubuntu 17.10 基本界面
 publish-date: 2017-10-11
 thumbnail: /static/thumbnail/linux-basic/1-03.jpg
 post-headings:

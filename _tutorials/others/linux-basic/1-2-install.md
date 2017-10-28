@@ -2,7 +2,7 @@
 youku_id: XMzExNjczNDYwOA
 youtube_id: tA9OKOZqjdg
 chapter: 1
-title: 安装 Ubuntu
+title: 安装 Ubuntu 17.10
 publish-date: 2017-10-11
 thumbnail: /static/thumbnail/linux-basic/1-02.jpg
 post-headings:
