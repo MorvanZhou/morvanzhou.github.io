@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzExNzE1MDgyNA
+youtube_id: 9sIbn9xVdlk
 chapter: 2
 title: Linux 基本指令 'ls' 和 'cd'
 publish-date: 2017-10-11
