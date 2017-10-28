@@ -56,7 +56,8 @@ Linux 是一个开放式的系统, 而且最重要的是! 它是
 
 {% include tut-image.html image-name="01-01-02.jpg" %}
 
-我们就从新闻说起, 你听说过一些比较著名的病毒吧, 比如[熊猫烧香病毒](https://baike.baidu.com/item/%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99){:target="_blank"}, [熊猫烧香病毒](https://baike.baidu.com/item/%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99){:target="_blank"}吧.
+我们就从新闻说起, 你听说过一些比较著名的病毒吧, 比如[熊猫烧香病毒](https://baike.baidu.com/item/%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99){:target="_blank"},
+[WannaCry](https://baike.baidu.com/item/WannaCry){:target="_blank"}吧.
 他们都针对哪种电脑? 没错, 是 Windows! 为什么? 原因很简单, 太多人用 Windows 了, 企业, 政府, 银行等等. 做一个 Windows 的病毒往往比其他的有赚头多了.
 
 而 Linux 的病毒, 非常少. 而且依赖于内部的一些安全机制, 使得 Linux 成为一个比较好的 "抗病毒" 系统. 如果想要详细了解的话, 这里有一个[知乎问答](https://www.zhihu.com/question/20656827){:target="_blank"}.
