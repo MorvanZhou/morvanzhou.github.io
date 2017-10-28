@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzExNzAzODg5Ng
+youtube_id: 04xmnJT5dcE
 chapter: 1
 title: 给你的 Ubuntu 安装软件
 publish-date: 2017-10-11
@@ -31,7 +31,7 @@ description: "其实在 Ubuntu 上, 已经有很多安装好的 app 了. 比如�
 {% include tut-image.html image-name="01-04-02.png" %}
 
 你可以直接在左上角的图标中搜索 "software", 就能找到 Ubuntu 自带的一个 App store. 这可跟 MacOS 的 App store 像极了!
-闲着没事无聊, 你就能在里面找找需要的软件. 大多数主流的 App 都能找到, 比如 Google Chrome.
+闲着没事无聊, 你就能在里面找找需要的软件. 大多数主流的 App 都能找到.
 
 {% include tut-image.html image-name="01-04-03.png" %}
 
