@@ -22,7 +22,7 @@ post-headings:
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym){:target="_blank"}
   * [什么是 DQN 短视频]({% link _tutorials/machine-learning/ML-intro/4-06-DQN.md %})
-  * [OpenAI gym 官网](https://gym.openai.com/){:target="_blank"}
+  * [OpenAI gym 官网](https://gym.openai.com/envs/){:target="_blank"}
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=qlqqezju0xo){:target="_blank"}
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=r1mNIDN3zNM){:target="_blank"}
@@ -30,7 +30,7 @@ post-headings:
 {% include assign-heading.html %}
 
 手动编环境是一件很耗时间的事情, 所以如果有能力使用别人已经编好的环境, 可以节约我们很多时间. OpenAI gym 就是这样一个模块, 他提供了我们很多优秀的模拟环境.
-我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 可能某一天就能支持了, 大家时不时查看下官网, 可能就有惊喜.
+我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 已经支持, 但是听说还没有全面支持, 大家时不时查看下官网, 可能就有惊喜.
 是在等不及更新了, 也行用 tkinter 来手动编写一下环境.
 这里有我制作的很好的 [tkinter 入门教程]({% link _table-contents/python-basic/tkinter.html %}), 之前的 maze 环境也是用 tkinter
 编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/maze_env.py){:target="_blank"}编写就 ok 啦.
