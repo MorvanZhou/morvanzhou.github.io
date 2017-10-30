@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzEyMTE0MzY2NA
+youtube_id: Jo9OlO5cvn0
 chapter: 4
 title: 怎么样从 MacOS 或 Linux 通过 SSH 远程 Linux
 publish-date: 2017-10-16
