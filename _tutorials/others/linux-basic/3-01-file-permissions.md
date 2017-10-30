@@ -148,7 +148,7 @@ This is a Python script!
 如果你天天要运行这个脚本, 每次运行的时候少几个字还是挺好的. 如果你决定要这样做, 你在这个 Python 脚本的开头还需要加一句话.
 
 ```python
-#!/usr/bin/python3.5        # 这句话是为了告诉你的电脑执行这个文件的时候用什么来加载
+#!/usr/bin/python3        # 这句话是为了告诉你的电脑执行这个文件的时候用什么来加载
 
 print("This is a Python script!")
 ```

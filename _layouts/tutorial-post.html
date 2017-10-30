@@ -109,13 +109,13 @@ structured-type: BlogPosting
     <div class="tut-table-content-nav section">
       <a href="{{ page.tut-permalink }}"><p><strong>{{ page.series }}</strong></p></a>
       {% assign items = site.tutorials | where: "category", page.category  %}
-      {% assign total-chapter = items[-1].chapter %}
+      {% assign tut-chapters = site.data.table-chapters[page.category] %}
 
-      <hr style="opacity:0.5; width:90%; margin: 0.2em auto;">
-
-      {% for i in (1..total-chapter) %}
+      {% for chapter-name in tut-chapters.chapter-names %}
+		  {% assign i = forloop.index %}
       <ul class="tut-table-content-nav-contents">
         {% assign chapter-items = items | where: "chapter", i %}
+        <p style="text-align: right; padding:0; margin:0; color: white; font-size:1.1em; background-color: #44a371;">{{ chapter-name }}</p>
         {% for item in chapter-items %}
 
           <li class="tut-table-content-nav-li">
@@ -135,7 +135,6 @@ structured-type: BlogPosting
           </li>
         {% endfor %}
       </ul>
-      <hr style="opacity:0.5; width: 90%; margin: 0.2em auto;">
       {% endfor %}
     </div>
 

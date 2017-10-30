@@ -1,0 +1,125 @@
+np-pd:
+  chapter-names:
+    - Numpy & Pandas 简介
+    - Numpy 学习
+    - Pandas 学习
+    - 附加内容
+
+plt:
+  chapter-names:
+    - Matplotlib 简介
+    - 基本使用
+    - 画图种类
+    - 多图合并显示
+    - 动画
+
+evolutionary-algorithm:
+  chapter-names:
+    - 算法简介
+    - 遗传算法 (Genetic Algorithm)
+    - 进化策略 (Evolution Strategy)
+    - 神经进化 (NeuroEvolution)
+
+keras:
+  chapter-names:
+    - Keras 简介
+    - 如何搭建各种神经网络
+    - 其他应用
+
+ML-intro:
+  chapter-names:
+    - 机器学习方法
+    - 神经网络
+    - 神经网络技巧
+    - 强化学习
+    - 进化算法
+
+reinforcement-learning:
+  chapter-names:
+    - 简介
+    - Q-learning
+    - Sarsa
+    - Deep Q Network
+    - Policy Gradient
+    - Actor Critic
+    - Model Based RL
+
+
+sklearn:
+  chapter-names:
+    - Sklearn 简介
+    - 一般使用
+    - 高级使用
+
+
+tensorflow:
+  chapter-names:
+    - Tensorflow 简介
+    - Tensorflow 基础构架
+    - 建造我们第一个神经网络
+    - 可视化好助手 Tensorboard
+    - 高阶内容
+
+
+theano:
+  chapter-names:
+    - Theano 简介
+    - Theano 基础构架
+    - 搭建自己的神经网络
+    - 总结
+
+torch:
+  chapter-names:
+    - PyTorch 简介
+    - PyTorch 神经网络基础
+    - 建造第一个神经网络
+    - 高级神经网络结构
+    - 高阶内容
+
+git:
+  chapter-names:
+    - 介绍
+    - 创建/修改 版本库
+    - 回到从前
+    - 分支管理
+    - Github
+
+linux-basic:
+  chapter-names:
+    - 介绍
+    - 和文件打交道
+    - 文件权限
+    - 远程操控
+    - 云端机器学习
+
+basic:
+  chapter-names:
+    - 安装
+    - 基本使用
+    - while 和 for 循环
+    - if 判断
+    - 定义功能
+    - 变量形式
+    - 模块安装
+    - 文件读取
+    - class 类
+    - input 输入
+    - 元组, 列表, 字典
+    - 模块
+    - 其他
+
+
+multiprocessing:
+  chapter-names:
+    - 多进程
+
+
+threading:
+  chapter-names:
+    - 多线程
+
+tkinter:
+  chapter-names:
+    - 什么是 tkinter 窗口
+    - tkinter 的窗口部件
+    - 登录窗口例子
