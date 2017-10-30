@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzEyMTA2ODY5Mg
+youtube_id: bOx-SA5ONqI
 chapter: 3
 title: Linux 文件权限
 publish-date: 2017-10-13
