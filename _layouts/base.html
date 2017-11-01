@@ -78,6 +78,16 @@
   });
   </script>
 
+</head>
+
+<body>
+
+  {{content}}
+
+  <footer>
+    {% include footer.html %}
+  </footer>
+
   <!-- lazy load image -->
   <script>
   var allimages = document.getElementsByClassName("lazy-img");
@@ -90,16 +100,6 @@
     }
   }
   </script>
-
-</head>
-
-<body>
-
-  {{content}}
-
-  <footer>
-    {% include footer.html %}
-  </footer>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108653085-1"></script>
@@ -120,6 +120,7 @@
   document.write('<script src="' + src + '" id="sozz"><\/script>');
   })();
   </script>
+
 </body>
 </html>
 
