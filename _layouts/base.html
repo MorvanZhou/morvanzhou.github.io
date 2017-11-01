@@ -19,15 +19,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/js/video-select.js"></script>
 
-  <!-- 360 meta data-->
-  <meta property="og:type" content="blog"/>
-  <meta property="og:image" content="{{ page.thumbnail }}"/>
-  <meta property="og:release_date" content="{% if page.publish-date %}{{ page.publish-date }}{% else %} 2016-11-11 {% endif %}"/>
-  <!--选填-->
-  <meta property="og:title" content="{{ page.title }}"/>
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:author" content="{{ page.author }}"/>
-
   <!-- 360 analysis -->
   <!--<script type="text/javascript" src="//s.union.360.cn/195005.js" async defer></script>-->
 
@@ -87,20 +78,6 @@
   });
   </script>
 
-
-</head>
-
-<body>
-  <!-- qq analysis -->
-  <script type="text/javascript" src="//tajs.qq.com/stats?sId=63906388" charset="UTF-8"></script>
-
-  {{content}}
-
-  <footer>
-    {% include footer.html %}
-  </footer>
-
-
   <!-- lazy load image -->
   <script>
   var allimages = document.getElementsByClassName("lazy-img");
@@ -114,6 +91,18 @@
   }
   </script>
 
+</head>
+
+<body>
+  <!-- qq analysis -->
+  <script type="text/javascript" src="//tajs.qq.com/stats?sId=63906388" charset="UTF-8"></script>
+
+  {{content}}
+
+  <footer>
+    {% include footer.html %}
+  </footer>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108653085-1"></script>
   <script>
@@ -124,6 +113,12 @@
     gtag('config', 'UA-108653085-1');
   </script>
 
+  <!-- 360 auto push -->
+  <script>(function(){
+  var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?15c1a90956b86adbe31c1e8dab7d4c32":"https://jspassport.ssl.qhimg.com/11.0.1.js?15c1a90956b86adbe31c1e8dab7d4c32";
+  document.write('<script src="' + src + '" id="sozz"><\/script>');
+  })();
+  </script>
 </body>
 </html>
 
