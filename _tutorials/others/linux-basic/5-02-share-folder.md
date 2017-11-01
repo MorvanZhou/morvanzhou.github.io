@@ -8,6 +8,7 @@ thumbnail: /static/thumbnail/linux-basic/5-02.jpg
 post-headings:
   - 设置分享文件夹
   - Mac 找到云端的分享文件夹
+  - Windows 找到云端的分享文件
   - 其他电脑上编辑/运行云端文件
 description: "云端计算固然方便, 如果让你的电脑上直接显示云端的文件, 是不是更方便呢? 哈哈, 这次我就来探讨一下可行的方式."
 ---
@@ -80,6 +81,25 @@ $ sudo smbpasswd -a morvan
 {% include google-in-article-ads.html %}
 
 {% include assign-heading.html %}
+
+
+Windows 找到共享的文件也非常简单, 只需要找到你的局域网电脑们就好了. 当你打开文件浏览器. 找到 "网络", 或者是"网上邻居"
+然后找到你的 Linux 电脑, 输入之前设置的账号密码. 就能查看你共享的 Linux 文件夹啦.
+
+{% include tut-image.html image-name="05-02-08.jpg" %}
+
+
+
+
+
+
+
+
+
+
+
+{% include assign-heading.html %}
+
 
 我们已经设置好的云端的共享文件. 接着就是在其他电脑上找到这个共享文件. 我用 MacOS 来演示一遍.
 首先你需要找到这个共享的地方. 打开你的 `Finder` 文件管理器, 然后在上面的菜单中找到 `Go`, 点击 `Network`,
