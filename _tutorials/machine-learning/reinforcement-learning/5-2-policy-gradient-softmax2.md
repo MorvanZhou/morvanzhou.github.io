@@ -139,7 +139,7 @@ class PolicyGradient:
 简单来说, 上面提到了两种形式来计算 `neg_log_prob`, 这两种形式是一模一样的, 只是第二个是第一个的展开形式. 如果你仔细看第一个形式, 这不就是在神经网络分类问题中的 cross-entropy 嘛!
 使用 softmax 和神经网络的最后一层 logits 输出和真实标签 (`self.tf_acts`) 对比的误差. 并将神经网络的参数按照这个真实标签改进.
 这显然和一个分类问题没有太多区别. 我们能将这个 `neg_log_prob` 理解成 cross-entropy 的分类误差. 分类问题中的标签是真实 x 对应的 y,
-而我们 Policy gradient 中, x 是 state, y 就是它按照这个 x 所做的动作号码. 所以也可以理解成, 它按照 x 做的动作永远是对的 (出来的动作永远是真确标签),
+而我们 Policy gradient 中, x 是 state, y 就是它按照这个 x 所做的动作号码. 所以也可以理解成, 它按照 x 做的动作永远是对的 (出来的动作永远是正确标签),
 它也永远会按照这个 "正确标签" 修改自己的参数. 可是事实却不是这样, 他的动作不一定都是 "正确标签", 这就是强化学习(Policy gradient)和监督学习(classification)的不同.
 
 为了确保这个动作真的是 "正确标签", 我们的 loss 在原本的 cross-entropy 形式上乘以 `vt`, 用 `vt` 来告诉这个 cross-entropy 算出来的梯度是不是一个值得信任的梯度.
