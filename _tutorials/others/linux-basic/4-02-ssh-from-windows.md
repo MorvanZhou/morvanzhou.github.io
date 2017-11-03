@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzEzMDkxMTUyNA
+youtube_id: RkqVvzlY6V0
 chapter: 4
 title: 怎么样从 Windows 通过 SSH 远程 Linux
 publish-date: 2017-10-16
