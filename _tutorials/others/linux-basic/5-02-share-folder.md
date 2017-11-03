@@ -2,7 +2,7 @@
 youku_id: XMzEzMTIyNDg0NA
 youtube_id: ud1N7P25ZMI
 chapter: 5
-title: 自己的云计算, 分享你云端文件
+title: 自己的云计算, 多电脑共享你云端文件
 publish-date: 2017-10-30
 thumbnail: /static/thumbnail/linux-basic/5-02.jpg
 post-headings:
