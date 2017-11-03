@@ -1,7 +1,7 @@
 ---
 youku_id: XMjYxMTE2NTEzNg
 youtube_id: 9gQl-TkmA80
-bilibili_id:
+bilibili_id: 15990292
 chapter: 4
 title: Prioritized Experience Replay (DQN) (Tensorflow)
 publish-date: 2017-03-07

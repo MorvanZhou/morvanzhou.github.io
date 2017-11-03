@@ -1,7 +1,7 @@
 ---
 youku_id: XMjY4NTE1MDY3Mg
 youtube_id: tvMu5oPYpsw
-bilibili_id:
+bilibili_id: 15990821
 chapter: 6
 title: Actor Critic (Tensorflow)
 thumbnail: "/static/thumbnail/rl/6.1_actor_critic.jpg"

@@ -1,7 +1,7 @@
 ---
 youku_id: XMjcyMjMxNTI5Mg
 youtube_id: TQE4OLSz2BE
-bilibili_id:
+bilibili_id: 15991621
 chapter: 6
 title: Deep Deterministic Policy Gradient (DDPG) (Tensorflow)
 thumbnail: "/static/thumbnail/rl/6.2_DDPG.jpg"
