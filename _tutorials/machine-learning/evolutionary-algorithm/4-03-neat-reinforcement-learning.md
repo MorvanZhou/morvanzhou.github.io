@@ -1,6 +1,7 @@
 ---
 youku_id: XMzA0MTEzNzAzNg
 youtube_id: ZgFzC7uBShM
+bilibili_id: 15986215
 title: NEAT 强化学习
 publish-date: 2017-09-23
 thumbnail: "/static/thumbnail/evolutionary-algorithm/43neat.jpg"

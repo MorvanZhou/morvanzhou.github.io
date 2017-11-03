@@ -1,6 +1,7 @@
 ---
 youku_id: XMjk3MDg3MDc5Ng
 youtube_id: QuIHneWL8pw
+bilibili_id: 15983670
 title: 例子 旅行商人问题 (Travel Sales Problem)
 publish-date: 2017-08-12
 description: "我们在上几节内容中说道 遗传算法 (GA) 算法最主要的就是我们要想明白什么是他的 DNA 和怎么样对个体进行评估 (他们的 Fitness).
