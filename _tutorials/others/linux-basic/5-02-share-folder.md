@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzEzMTIyNDg0NA
+youtube_id: ud1N7P25ZMI
 chapter: 5
 title: 自己的云计算, 分享你云端文件
 publish-date: 2017-10-30

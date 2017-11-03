@@ -1,5 +1,5 @@
 ---
-youku_id:
+youku_id: XMzEzMTEzNjg4NA
 youtube_id: p3HfHK3lCzk
 chapter: 4
 title: 怎么样从手机 (Android安卓/IOS苹果) 通过 SSH 远程 Linux
@@ -62,7 +62,7 @@ $ sudo apt-get install openssh-server
 {% include tut-image.html image-name="04-03-02.png" %}
 
 下一步中, 我们唯一需要的就是你要连接去, ssh 去的 IP 地址. 在你的 Linux terminal 中输入 `ifconfig`
-获得你现在的 IP 地址, 一个以 `inet` 开头的地址, 通常是 192.168.0....
+获得你现在的 IP 地址, 一个以 `inet` 开头的地址, 通常是 192.168.0.xxx
 如果你的 `ifconfig` 指令不管用, 说明你还没有安装一个东西,
 所以在 terminal 下输入 `sudo apt install net-tools` 就能使用 ifconfig 了.
 然后将找到的 ip 地址原封不动的放在 "Address" 这一栏中. 接着点击右上角的那个勾确定添加这个连接.
