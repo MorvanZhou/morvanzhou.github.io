@@ -13,7 +13,7 @@ description: "像下面这个 Demo 一样, 如果有时候身边没有第二台�
 ---
 
 像下面这个 Demo 一样, 如果有时候身边没有第二台电脑, 我们完全可以用一台手机来控制你的 Linux. 不管是 iPhone 还是 Android 安卓.
-他们都会有很多 SSH 的 app 提供下载. 有了这些. 我们躺在床上都能控制电脑啦~
+他们都会有很多 SSH 的 app 提供下载. 有了这些. 我们躺在床上都能轻松控制电脑啦~
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/linux-basic/04-01-02.mp4" type="video/mp4">
