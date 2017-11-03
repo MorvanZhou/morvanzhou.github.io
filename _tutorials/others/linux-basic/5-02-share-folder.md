@@ -1,6 +1,7 @@
 ---
 youku_id: XMzEzMTIyNDg0NA
 youtube_id: ud1N7P25ZMI
+bilibili_id: 15982562
 chapter: 5
 title: 自己的云计算, 多电脑共享你云端文件
 publish-date: 2017-10-30

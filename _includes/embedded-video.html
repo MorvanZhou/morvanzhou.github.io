@@ -3,17 +3,18 @@
 
 <div id="videogfw" class="video-container">
 <script type="text/javascript">
-    var default_src = "//www.youtube.com/embed/{{page.youtube_id}}"
-    var alternate_src = "//player.youku.com/embed/{{page.youku_id}}=="
+    var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}"
+    var youku_src = "//player.youku.com/embed/{{page.youku_id}}=="
+    var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}&page=1"
     // var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
 
     // the default video source you wanna play
-    chooseVideo(default_src);
+    chooseVideo(youtube_src);
 
    // Uncomment the following line if you want
    // it automatically select the video source
    // according to ip address:
-    videoChinaIP(alternate_src);
+    videoChinaIP(youku_src);
 </script>
 </div>
 
@@ -22,15 +23,33 @@
 	<button class="switch-video-btn" onclick="chooseVideo(default_src)">
 		YouTube
 	</button>
-  <button class="switch-video-btn" data-toggle="collapse" data-target="#youku-info" onclick="chooseVideo(alternate_src)">
+  <button class="switch-video-btn" data-toggle="collapse" data-target="#youku-info" onclick="chooseVideo(youku_src)">
     优酷
   </button>
+
+	{% if page.bilibili_id %}
+	<button class="switch-video-btn" data-toggle="collapse" data-target="#bilibili-info" onclick="chooseVideo(bilibili_src)">
+    Bilibili
+  </button>
+	{% endif %}
+
+	{% if page.youku_id %}
 	<div class="collapse" id="youku-info">
 		<p style="display: inline; font-size: 0.8em; cursor: help;"
 		    title="优酷只支持 http 协议, 而本网站是 https, 所以会冲突">
 			(优酷无法播放? 请 <a href="http://v.youku.com/v_show/id_{{page.youku_id}}==.html" target="_blank" >点击这里</a> 跳转至优酷站内)
 		</p>
 	</div>
+	{% endif %}
+
+	{% if page.bilibili_id %}
+	<div class="collapse" id="bilibili-info">
+		<p style="display: inline; font-size: 0.8em; cursor: help;">
+			(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av{{page.bilibili_id}}/" target="_blank" >点击这里</a> 跳转至B站内)
+		</p>
+	</div>
+	{% endif %}
+
 </div>
 
 

@@ -1,6 +1,7 @@
 ---
 youku_id: XMzExNzIzNzc2NA
 youtube_id: 9BtAjh5s1Fw
+bilibili_id: 15981253
 chapter: 2
 title: Linux 基本指令 touch, cp 和 mv
 publish-date: 2017-10-12

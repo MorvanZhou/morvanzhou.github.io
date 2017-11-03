@@ -1,6 +1,7 @@
 ---
 youku_id: XMzExNjczNDYwOA
 youtube_id: tA9OKOZqjdg
+bilibili_id: 15980728
 chapter: 1
 title: 安装 Ubuntu 17.10
 publish-date: 2017-10-11

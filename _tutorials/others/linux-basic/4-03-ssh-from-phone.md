@@ -1,6 +1,7 @@
 ---
 youku_id: XMzEzMTEzNjg4NA
 youtube_id: p3HfHK3lCzk
+bilibili_id: 15982077
 chapter: 4
 title: 怎么样从手机 (Android安卓/IOS苹果) 通过 SSH 远程 Linux
 publish-date: 2017-10-16

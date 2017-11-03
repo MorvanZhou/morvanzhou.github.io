@@ -1,6 +1,7 @@
 ---
 youku_id: XMzEyMDk5MDEwMA
 youtube_id: L5YgJbgufPc
+bilibili_id: 15981402
 chapter: 2
 title: Linux 基本指令 mkdir, rmdir 和 rm
 publish-date: 2017-10-12
