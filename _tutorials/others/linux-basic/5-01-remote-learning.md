@@ -1,6 +1,6 @@
 ---
-youku_id:
-youtube_id:
+youku_id: XMzEzMTEzMDI3Ng
+youtube_id: SST5xl4SVA8
 chapter: 5
 title: 自己的云计算, 把 Linux 当成你的云计算平台
 publish-date: 2017-10-16
