@@ -1,6 +1,7 @@
 ---
 youku_id: XMTkyMjE2OTcwOA
 youtube_id: fdwfd6VSNxs
+bilibili_id: 15987411
 chapter: 1
 title: 课程要求
 publish-date: 2017-01-06

@@ -1,6 +1,7 @@
 ---
 youku_id: XMjI2Nzg3MTgxNg
 youtube_id: gXZ4AWgkrQE
+bilibili_id:
 chapter: 3
 title: Sarsa-lambda
 thumbnail: "/static/thumbnail/rl/3.3_sarsa_lambda.jpg"

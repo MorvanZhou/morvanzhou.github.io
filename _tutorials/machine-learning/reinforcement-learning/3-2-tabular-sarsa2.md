@@ -1,6 +1,7 @@
 ---
 youku_id: XMjI2NjIxODcyMA
 youtube_id: sqpuf7hCC4c
+bilibili_id: 15988485
 chapter: 3
 title: Sarsa 思维决策
 thumbnail: "/static/thumbnail/rl/3.2_sarsa2.jpg"

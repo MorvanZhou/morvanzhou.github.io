@@ -1,6 +1,7 @@
 ---
 youku_id: XMTk2NzM1Mjk5Mg
 youtube_id: OkGFJE_XDzI
+bilibili_id: 15987894
 chapter: 2
 title: 小例子
 thumbnail: "/static/thumbnail/rl/2.1_example.jpg"
