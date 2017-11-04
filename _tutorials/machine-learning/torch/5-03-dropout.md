@@ -1,6 +1,7 @@
 ---
 youku_id: XMjc4ODMxMDkxMg
 youtube_id: -VnZSJX4v64
+bilibili_id: 16000055
 title: Dropout 缓解过拟合
 publish-date: 2017-05-27
 thumbnail: "/static/thumbnail/torch/5.3_dropout.jpg"
