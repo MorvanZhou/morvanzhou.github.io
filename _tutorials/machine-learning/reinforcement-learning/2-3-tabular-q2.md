@@ -60,7 +60,7 @@ class QLearningTable:
         self.lr = learning_rate # 学习率
         self.gamma = reward_decay   # 奖励衰减
         self.epsilon = e_greedy     # 贪婪度
-        self.q_table = pd.DataFrame(columns=self.actions)   # 初始 q_table
+        self.q_table = pd.DataFrame(columns=self.actions, dtype=np.float64)   # 初始 q_table
 ```
 
 {% include google-in-article-ads.html %}
