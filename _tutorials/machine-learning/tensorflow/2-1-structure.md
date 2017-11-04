@@ -1,6 +1,7 @@
 ---
 youku_id: XMTYxMzQ1NzUwOA
 youtube_id: 9l_c5260JQ8
+bilibili_id: 16002144
 description: Tensorflow 首先要定义神经网络的结构, 然后再把数据放入结构当中去运算和 training.
 chapter: 2
 title: 处理结构

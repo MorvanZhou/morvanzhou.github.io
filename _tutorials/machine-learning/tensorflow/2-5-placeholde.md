@@ -1,6 +1,7 @@
 ---
 youku_id: XMTYxMzY5NzI4MA
 youtube_id: fCWbRboJ4Rs
+bilibili_id: 16002665
 description: "Tensorflow 如果想要从外部传入data, 那就需要用到 tf.placeholder(), 然后在之后 sess.run(***, feed_dict={input: **})的时候传入要输入的值."
 author : 商晋
 chapter: 2

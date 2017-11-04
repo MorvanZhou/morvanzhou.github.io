@@ -1,6 +1,7 @@
 ---
 youku_id: XMjg2MTQxNjQyNA
 youtube_id: ugGkewcKk9Q
+bilibili_id: 16008624
 chapter: 5
 title: 用 Tensorflow 可视化梯度下降
 publish-date: 2017-07-01

@@ -1,6 +1,7 @@
 ---
 youku_id: XMTU5OTA5NDI1Mg
 youtube_id: S9wBMi2B4Ss
+bilibili_id: 16004165
 description: 这次提到了怎样建造一个完整的神经网络,包括添加神经层,计算误差,训练步骤,判断是否在学习.
 author: 赵孔亚
 chapter: 3
