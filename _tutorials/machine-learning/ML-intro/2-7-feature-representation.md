@@ -1,6 +1,7 @@
 ---
 youku_id: XMjgxNTY1NzQwOA
 youtube_id: Yp29JqL_dd4
+bilibili_id: 16000257
 title: "科普: 神经网络的黑盒不黑"
 thumbnail: "/static/thumbnail/ML-intro/feature_representation.png"
 publish-date: 2017-06-10
