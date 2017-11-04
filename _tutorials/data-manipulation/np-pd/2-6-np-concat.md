@@ -35,7 +35,7 @@ print(np.vstack((A,B)))    # vertical stack
 
 ```python
 C = np.vstack((A,B))      
-print(A.shape(),C.shape())    
+print(A.shape,C.shape)
 
 # (3,) (2,3)
 ```
@@ -52,7 +52,7 @@ D = np.hstack((A,B))       # horizontal stack
 print(D)
 # [1,1,1,2,2,2]
 
-print(A.shape(),D.shape())    
+print(A.shape,D.shape)
 # (3,) (6,)
 ```
 
