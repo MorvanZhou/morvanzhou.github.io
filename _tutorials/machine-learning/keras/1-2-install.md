@@ -1,6 +1,7 @@
 ---
 youku_id: XMTc3ODk5NjUyNA
 youtube_id: glcqKUzr1ZM
+bilibili_id: 16014300
 title: Keras 安装
 publish-date: 2016-10-29
 chapter: 1

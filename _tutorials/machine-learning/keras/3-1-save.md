@@ -1,6 +1,7 @@
 ---
 youku_id: XMTc4MDI4NjIyNA
 youtube_id: e-ICAuGXw7k
+bilibili_id: 16014874
 title: Save & reload 保存提取
 description: "保存 Keras model 的时候需要安装h5py这个模块. 不然会不成功. 今天学习如何保存神经网络，这样以后想要用的时候直接提取就可以。"
 author: Alice

@@ -1,6 +1,7 @@
 ---
 youku_id: XMTc3ODk2NjY5Mg
 youtube_id: AoK4zpsQN7M
+bilibili_id: 16014392
 title: Why Keras?
 publish-date: 2016-10-29
 chapter: 1
