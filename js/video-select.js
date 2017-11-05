@@ -7,7 +7,7 @@ function videoChinaIP(src) {
     {// code for IE6, IE5
         var request = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    request.open('GET', '//freegeoip.net/xml/4.2.2.2');
+    request.open('GET', '//freegeoip.net/xml/');
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
             var xmlDoc = request.responseXML;
