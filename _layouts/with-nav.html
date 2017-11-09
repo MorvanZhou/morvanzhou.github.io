@@ -1,6 +1,9 @@
 ---
 layout: base
 nav-items:
+  - top-name: "推荐学习顺序"
+    tut-path: "learning-steps/"
+    icon-path: "learning-steps.png"
   - top-name: "Python基础 ▾"
     tut-path: "python-basic/"
     icon-path: "python_icon.png"
@@ -108,10 +111,11 @@ nav-items:
         <ul class="dropdown-content">
           {% for item in layout.nav-items %}
             <li class="dropbtn">
-              <a class="clicker">
+              <a class="{% if item.tut-path != 'learning-steps/' %}clicker{% endif %}" href="{% if item.tut-path == 'learning-steps/' %}/{{item.tut-path}}{% endif %}">
                 <img class="icon-image" src="/static/img/icon/{{ item.icon-path }}">
                 {{ item.top-name }}
               </a>
+              {% if item.tut-path != 'learning-steps/' %}
               <ul class="dropdown-content">
                 {% for sub-item in item.drop-contents %}
                   {% if sub-item.has-cont == "yes" %}
@@ -130,6 +134,7 @@ nav-items:
                   {% endif %}
                 {% endfor %}
               </ul>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>

@@ -1,0 +1,27 @@
+---
+title: "推荐学习顺序"
+permalink: /learning-steps/
+description: "学习机器学习得有个步骤, 下面我们就是大家就能按照自己所需, 来探索这个网页."
+---
+
+
+{% assign items = site.data.learning-steps %}
+<div class="section ie-size" >
+	<div class="pad-main">
+		<h1>{{page.title}}</h1>
+		<p>学习机器学习得有个步骤, 下面我们就是大家就能按照自己所需, 来探索这个网页.</p>
+		<ol>
+		  {% for item in items %}
+			<li><a href="{{item.h1[1]}}">{{item.h1[0]}}</a></li>
+				{% if item.h2 %}
+				<ol>
+					{% for h2 in item.h2 %}
+					<li><a href="{{h2[1]}}">{{h2[0]}}</a></li>
+					{% endfor %}
+				</ol>
+				{% endif %}
+			{% endfor %}
+		</ol>
+	</div>
+
+</div>

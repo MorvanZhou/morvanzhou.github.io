@@ -1,0 +1,20 @@
+- h1: ["在机器学习前 - (零基础)", "/tutorials/python-basic/"]
+  h2:
+    - ["Python基础语法", "/tutorials/python-basic/basic/"]
+    - ["了解数据结构 (Numpy & Pandas)", "/tutorials/data-manipulation/np-pd/", ]
+    - ["学会展示数据 (Matplotlib)", "/tutorials/data-manipulation/plt/",]
+- h1: ["了解机器学习方法 (*可跳)", "/tutorials/machine-learning/ML-intro/", ]
+- h1: ["神经网络", "", ]
+  h2:
+    - ["Tensorflow (Google开发, 社区大)", "/tutorials/machine-learning/tensorflow/", ]
+    - ["PyTorch (Facebook开发, 方便debug)", "/tutorials/machine-learning/torch/", ]
+    - ["Keras (类似Tensorflow, 推荐直接学Tensorflow)", "/tutorials/machine-learning/keras/", ]
+    - ["Theano (类似Tensorflow, 推荐直接学Tensorflow)", "/tutorials/machine-learning/theano/",]
+- h1: ["有监督/无监督/半监督/降维多功能包 (Sklearn *可跳)", "/tutorials/machine-learning/sklearn/",]
+- h1: ["机器人无师自通 (强化学习)", "/tutorials/machine-learning/reinforcement-learning/",]
+- h1: ["使用进化论的机器学习 (进化算法 *可跳)", "/tutorials/machine-learning/evolutionary-algorithm/",]
+- h1: ["效率工具", "/tutorials/others/",]
+  h2:
+    - ["代码管理维护 (Git)", "/tutorials/others/git/",]
+    - ["远程/云端计算 (Linux基础)", "/tutorials/others/linux-basic/", ]
+
