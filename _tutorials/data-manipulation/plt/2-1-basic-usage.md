@@ -1,6 +1,7 @@
 ---
 youku_id: XMTcxNjA0MjM2MA
 youtube_id: 4Y7f0znUT6E
+bilibili_id: 16378407
 description: 使用 matplotlib 做一个简单的画图练习, 熟悉最基础的用法.
 author: 黄伟
 chapter: 2

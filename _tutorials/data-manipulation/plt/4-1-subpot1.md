@@ -1,6 +1,7 @@
 ---
 youku_id: XMTcyMTM3NjU2MA
 youtube_id: Zm1cDw7DnUA
+bilibili_id: 16378629
 description: matplotlib 是可以组合许多的小图,放在一张大图里面显示的. 使用到的方法叫作 subplot.
 author: Wayne
 chapter: 4
