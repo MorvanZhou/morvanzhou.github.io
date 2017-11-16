@@ -1,6 +1,7 @@
 ---
 youku_id: XMTU4ODc2ODUwOA
 youtube_id: lXmiDyktnCA
+bilibili_id:
 title: Numpy copy & deep copy
 description: 在 numpy 中的复制功能介绍. 如果直接把 numpy array 赋值给另一个变量, 改变任意的一个变量都会影响到其他变量.
 author: Bhan

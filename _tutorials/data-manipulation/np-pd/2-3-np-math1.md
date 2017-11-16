@@ -1,6 +1,7 @@
 ---
 youku_id: XMTU4ODI0OTQ1Ng
 youtube_id: 4QgQaNtuZLA
+bilibili_id: 16379032
 title: Numpy 基础运算1
 description: Numpy 的基础数学运算介绍, 涉及到矩阵的加减等.
 date: 2016-11-3

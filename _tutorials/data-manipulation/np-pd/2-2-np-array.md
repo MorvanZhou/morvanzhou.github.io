@@ -1,6 +1,7 @@
 ---
 youku_id: XMTU4NzUzNDE0MA
 youtube_id: 2TkMujKoDPI
+bilibili_id: 16379006
 title: Numpy 的创建 array
 description:  Numpy array 数组的几种常用属性和功能介绍 (dtype, zeros, ones, empty, arrange, linspace)
 author: abner
