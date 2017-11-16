@@ -1,6 +1,7 @@
 ---
 youku_id: XMTg0MjkzMDkwOA
 youtube_id: RhJLfEJV36w
+bilibili_id: 16378112
 description: "有时候我们总会忘了什么, 比如已经提交了 commit 却发现在这个 commit 中忘了附上另一个文件.
 接下来我们模拟这种情况. 上节内容中, 我们最后一个 commit 是 change 2, 我们将要添加另外一个文件,
 将这个修改也 commit 进 change 2. 所以我们复制 1.py 这个文件, 改名为 2.py.
