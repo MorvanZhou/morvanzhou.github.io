@@ -15,7 +15,14 @@
    // Uncomment the following line if you want
    // it automatically select the video source
    // according to ip address:
+   if ({{page.bilibili_id}})
+   {
     videoChinaIP(bilibili_src);
+   }
+   else
+   {
+    videoChinaIP(youku_src);
+   }
 </script>
 </div>
 
