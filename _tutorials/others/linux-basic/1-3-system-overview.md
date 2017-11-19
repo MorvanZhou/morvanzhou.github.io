@@ -26,7 +26,7 @@ description: "安装好了 Linux 的 Ubuntu, 我们就来简单熟悉一下该�
 
 {% include tut-image.html image-name="01-03-01.png" %}
 
-主界面里就显示了你的左面信息, 和 Windows, MacOS 里的桌面是一个意思.
+主界面里就显示了你的桌面信息, 和 Windows, MacOS 里的桌面是一个意思.
 重启/关机/睡眠, 系统设置, 用户信息, 系统信息等都能在右上角找到.
 
 {% include tut-image.html image-name="01-03-02.png" %}
