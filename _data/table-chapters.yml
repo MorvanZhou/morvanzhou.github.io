@@ -78,7 +78,7 @@ torch:
 
 ML-practice:
   chapter-names:
-    - 机器人手臂
+    - 强化学习机器人手臂
 
 
 git:
