@@ -17,4 +17,7 @@
   h2:
     - ["代码管理维护 (Git)", "/tutorials/others/git/",]
     - ["远程/云端计算 (Linux基础)", "/tutorials/others/linux-basic/", ]
+- h1: ["实战", "/tutorials/machine-learning/ML-practice/"]
+  h2:
+    - ["从头做一个机器人手臂", "/tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1/"]
 

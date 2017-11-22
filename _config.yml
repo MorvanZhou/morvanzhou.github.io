@@ -146,6 +146,15 @@ defaults:
       thumbnail: /static/img/course_cover/theano.jpg
 
   - scope:
+      path: "_tutorials/machine-learning/ML-practice"
+    values:
+      series: 机器学习实战
+      tut-permalink: /tutorials/machine-learning/ML-practice/
+      category: ML-practice
+      keywords: 从头开始, 实战, 机器学习, 神经网络
+      thumbnail: /static/img/course_cover/ML-practice.jpg
+
+  - scope:
       path: "_tutorials/data-manipulation/np-pd"
     values:
       series: Numpy & Pandas

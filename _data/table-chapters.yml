@@ -76,6 +76,11 @@ torch:
     - 高级神经网络结构
     - 高阶内容
 
+ML-practice:
+  chapter-names:
+    - 从头做一个机器人手臂
+
+
 git:
   chapter-names:
     - 介绍
