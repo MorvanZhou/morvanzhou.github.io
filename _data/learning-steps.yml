@@ -10,9 +10,9 @@
     - ["PyTorch (Facebook开发, 方便debug)", "/tutorials/machine-learning/torch/", ]
     - ["Keras (类似Tensorflow, 推荐直接学Tensorflow)", "/tutorials/machine-learning/keras/", ]
     - ["Theano (类似Tensorflow, 推荐直接学Tensorflow)", "/tutorials/machine-learning/theano/",]
-- h1: ["有监督/无监督/半监督/降维多功能包 (Sklearn *可跳)", "/tutorials/machine-learning/sklearn/",]
+- h1: ["有监督/无监督/半监督/降维多功能包 (Sklearn)", "/tutorials/machine-learning/sklearn/",]
 - h1: ["机器人无师自通 (强化学习)", "/tutorials/machine-learning/reinforcement-learning/",]
-- h1: ["使用进化论的机器学习 (进化算法 *可跳)", "/tutorials/machine-learning/evolutionary-algorithm/",]
+- h1: ["使用进化论的机器学习 (进化算法)", "/tutorials/machine-learning/evolutionary-algorithm/",]
 - h1: ["效率工具", "/tutorials/others/",]
   h2:
     - ["代码管理维护 (Git)", "/tutorials/others/git/",]
