@@ -28,6 +28,7 @@ post-headings:
   * [什么是 Actor-Critic 短视频]({% link _tutorials/machine-learning/ML-intro/4-08-AC.md %})
   * [我的 A3C Python 教程]({% link _tutorials/machine-learning/reinforcement-learning/6-3-A3C.md %})
   * [我的 Python Threading 多线程教程](https://morvanzhou.github.io/tutorials/python-basic/threading/){:target="_blank"}
+  * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
   * OpenAI 的 PPO 论文 [Proximal Policy Optimization](https://arxiv.org/abs/1707.06347){:target="_blank"}
   * Google DeepMind 的 DPPO 论文 [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/abs/1707.02286){:target="_blank"}
 

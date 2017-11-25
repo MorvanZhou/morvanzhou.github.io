@@ -23,6 +23,7 @@ post-headings:
   * 本节内容的模拟视频效果:
     * CartPole: [Youtube](https://www.youtube.com/watch?v=z2-hn7iCjP0){:target="_blank"}, [优酷](http://v.youku.com/v_show/id_XMTg5NzgzNTk0NA==.html?f=27485743){:target="_blank"}
     * Mountain Car: [Youtube](https://www.youtube.com/watch?v=A8hXNykR0Fg){:target="_blank"}, [优酷](http://v.youku.com/v_show/id_XMTg5NzgzODQwNA==.html?f=27485743){:target="_blank"}
+  * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
   * 论文 [Policy gradient methods for reinforcement learning with function approximation.](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf){:target="_blank"}
 
 

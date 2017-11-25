@@ -18,6 +18,7 @@ post-headings:
 学习资料:
   * [有趣的机器学习 播放列表](/tutorials/machine-learning/ML-intro/)
   * [什么是强化学习 短视频]({% link _tutorials/machine-learning/ML-intro/4-01-RL.md %})
+  * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
 
 
  {% include assign-heading.html %}

@@ -19,7 +19,7 @@ post-headings:
 
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/5.3_Dueling_DQN){:target="_blank"}
-  * [什么是 Dueling DQN 短视频(即将制作)](#)
+  * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
   * 论文 [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581){:target="_blank"}
 
 {% include assign-heading.html %}

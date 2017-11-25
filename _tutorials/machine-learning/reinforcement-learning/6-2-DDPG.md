@@ -31,6 +31,7 @@ post-headings:
   * 论文 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971){:target="_blank"}
   * [我的 DQN 教程]({% link _tutorials/machine-learning/reinforcement-learning/4-1-DQN1.md %})
   * [我的 Actor Critic 教程]({% link _tutorials/machine-learning/reinforcement-learning/6-1-actor-critic.md %})
+  * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
 
 {% include assign-heading.html %}
 
