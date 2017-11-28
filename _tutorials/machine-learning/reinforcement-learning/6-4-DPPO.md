@@ -267,3 +267,6 @@ Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _tutori
   <source src="/static/results/reinforcement-learning/experiment_arm.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+
+有很多人留言说想要我做一个关于这个机器手臂的教程, 不负众望, 你可以在[这里]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
+看到我怎么从零开始, 手写环境, debug 测试, 来制作一个强化学习的机器手臂.
