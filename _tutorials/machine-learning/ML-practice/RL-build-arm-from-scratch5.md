@@ -151,6 +151,11 @@ class ArmEnv(object):
   Your browser does not support HTML5 video.
 </video>
 
+如果我们给一个观看指标, 比如到达 `goal` 所用的时间步, 如果这个时间步越长, 就说明还没学好, 越短说明学得越来越好. 如果将这个可视化出来, 就是下面这样.
+我们发现在开始阶段, 基本上都是200步, 但是后来, 慢慢缩短至50-70步, 像使用 reward 来观看一样, 这个步长也能作为一个观测收敛的指标.
+
+{% include tut-image.html image-name="arm5-2.png" %}
+
 这个教程没有对神经网络方面进行讲解. 有时候神经网络也是需要好好测试的. [rl.py](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part5/rl.py){:target="_blank"}
 中的几个全局参数, 还有神经网络的层数, 神经元数都是可以好好把玩的.
 
