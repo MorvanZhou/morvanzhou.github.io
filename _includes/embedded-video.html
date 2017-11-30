@@ -54,7 +54,12 @@
 	{% if page.bilibili_id %}
 	<div class="collapse" id="bilibili-info">
 		<p style="display: inline; font-size: 0.8em; cursor: help;">
-			(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av{{page.bilibili_id}}/" target="_blank" >点击这里</a> 跳转至B站内)
+			{% if page.bilibili_id contains "page" %}
+				{% assign words = page.bilibili_id | split: "&page=" %}
+				(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av{{words[0]}}/#page={{words[1]}}" target="_blank" >点击这里</a> 跳转至B站内)
+			{% else %}
+				(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av{{page.bilibili_id}}" target="_blank" >点击这里</a> 跳转至B站内)
+			{% endif %}
 		</p>
 	</div>
 	{% endif %}

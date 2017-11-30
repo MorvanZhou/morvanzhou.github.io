@@ -1,7 +1,7 @@
 ---
-youku_id:
-youtube_id:
-bilibili_id:
+youku_id: XMzE5NTA1Nzc4NA
+youtube_id: n2v_yLShjE4
+bilibili_id: 16797357&page=4
 title: 从头开始做一个机器手臂4 加入强化学习算法
 description: "在上节中,
 我们的环境已经基本建设完成了, 现在我们需要的就是一个强化学习的学习方法. 学习方法有很多, 而且也分很多类型.

@@ -1,7 +1,7 @@
 ---
-youku_id:
-youtube_id:
-bilibili_id:
+youku_id: XMzE5NTE5MTk5Ng
+youtube_id: inRN6p6IOWI
+bilibili_id: 16797357&page=5
 title: 从头开始做一个机器手臂5 完善测试
 description: "上节我们加上了强化学习的方法, 来测试了一下整个学习的流程.
 不过也发现了一些问题, 而这种发现问题的方式也肯定会出现在你的强化学习项目中. 这次我们来看看我是怎么解决自己发现的问题的."
