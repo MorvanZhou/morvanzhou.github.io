@@ -13,6 +13,8 @@ post-headings:
   - 重复匹配
   - 分组
   - findall
+  - replace
+  - split
   - compile
   - 小抄
 description: "正则表达式 (Regular Expression) 又称 RegEx, 是用来匹配字符的一种工具. 在一大串字符中寻找你需要的内容.
@@ -254,6 +256,32 @@ print(re.findall(r"(run|ran)", "run ran ren")) # ['run', 'ran']
 ```
 
 
+
+
+
+
+
+{% include assign-heading.html %}
+我们还能通过正则表达式匹配上一些形式的字符串然后再替代掉这些字符串.
+使用这种匹配 `re.sun()`, 将会比 python 自带的 `string.replace()` 要灵活多变.
+
+```python
+print(re.sub(r"r[au]ns", "catches", "dog runs to cat"))     # dog catches to cat
+```
+
+
+
+
+
+{% include assign-heading.html %}
+
+再来我们 Python 中有个字符串的分割功能, 比如想获取一句话中所有的单词.
+比如 `"a is b".split(" ")`, 这样它就会产生一个列表来保存所有单词.
+但是在正则中, 这种普通的分割也可以做的淋漓精致.
+
+```python
+print(re.split(r"[,;\.]", "a;b,c.d;e"))             # ['a', 'b', 'c', 'd', 'e']
+```
 
 
 
