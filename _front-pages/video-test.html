@@ -3,7 +3,6 @@ title: test
 permalink: /test/
 youtube_id: Etj_gclFFFo
 youku_id: XMTg1MTYwNDg2OA
-bilibili_id: 12556478
 ---
 
 <div class="section">
@@ -33,11 +32,23 @@ bilibili_id: 12556478
 
 
 <div class="section">
-	<p>测试2, iframe embed</p>
+	<p>bilibili iframe h5: //www.bilibili.com/blackboard/html5player.html?aid=12556478&cid=27444433&&as_wide=1</p>
 	<div class="video-container">
 		<iframe
 				width="560" height="315"
-				src="//www.bilibili.com/blackboard/player.html?aid={{page.bilibili_id}}&page=5&as_wide=1"
+				src="//www.bilibili.com/blackboard/html5player.html?aid=12556478&cid=27444433&as_wide=1"
+				frameborder="0"
+				allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<div class="section">
+	<p>bilibili iframe h5: /www.bilibili.com/blackboard/player.html?aid=12556478&page=5&as_wide=1</p>
+	<div class="video-container">
+		<iframe
+				width="560" height="315"
+				src="//www.bilibili.com/blackboard/player.html?aid=12556478&page=5&as_wide=1"
 				frameborder="0"
 				allowfullscreen>
 		</iframe>
@@ -46,7 +57,7 @@ bilibili_id: 12556478
 
 
 <div class="section">
-	<p>测试3, iframe embed</p>
+	<p>测试3, bilibili iframe flash</p>
 	<iframe
 			class="myvideo" width="560" height="410"
 			src="https://static.hdslb.com/miniloader.swf?aid=16797357&page=1"
