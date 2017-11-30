@@ -5,7 +5,7 @@
 
 {% assign str-count = post-img-count | downcase %}
 
-<a href="/static/results/{{ page.category }}/{{ include.image-name }}">
+<a href="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{ page.category }}/{{ include.image-name }}{% endif %}">
   <img class="course-image lazy-img"
   data-src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.image-name}}{% endif %}"
   src="/static/img/description/loading.gif"
