@@ -24,7 +24,16 @@ function videoChinaIP(src) {
 
 function chooseVideo(src)
 {
-    var video = '<iframe id="myVideo" class="myvideo" width="560" height="315" src=' + src + ' frameborder="0" allowfullscreen></iframe>';
+    if (src.includes("hdslb")) {
+        document.getElementById('videogfw').style.paddingBottom = "70%";
+    }
+    else if (src.includes("bilibili")) {
+        document.getElementById('videogfw').style.paddingBottom = "58%";
+    }
+    else {
+        document.getElementById('videogfw').style.paddingBottom = "56.25%";
+    }
+    var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
     $("#myVideo").remove();
     $("#videogfw").append(video);
 }
