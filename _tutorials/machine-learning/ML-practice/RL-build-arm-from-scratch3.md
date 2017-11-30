@@ -1,7 +1,7 @@
 ---
-youku_id:
-youtube_id:
-bilibili_id:
+youku_id: XMzE5NDgxNjIwOA
+youtube_id: T5QlePZ4s3U
+bilibili_id: 16797357&page=3
 title: 从头开始做一个机器手臂3 写动态环境
 description: "上次我们搭建好了一个静态的环境, 整个环境还没有动起来.
 这次我们结合手臂的运动部分和手臂的成像部分来写全整个手臂的摆动规则. 并且通过不断地可视化来测试是否写错."

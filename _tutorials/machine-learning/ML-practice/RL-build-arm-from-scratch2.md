@@ -1,7 +1,7 @@
 ---
-youku_id:
-youtube_id:
-bilibili_id:
+youku_id: XMzE5NDcwNzIxNg
+youtube_id: d8d8M_RO6AU
+bilibili_id: 16797357&page=2
 title: 从头开始做一个机器手臂2 写静态环境
 description: "上次我们已经搭建好了三个主要部分, 包括
 main.py, rl.py, env.py. 强化学习最重要的部分之一就是怎样定义你的环境. 做出来一个可视化的模拟环境能大大减轻不可见的负担. 有一个机器人在你屏幕上跑来跑去,
