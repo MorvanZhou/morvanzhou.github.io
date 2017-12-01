@@ -130,35 +130,28 @@
 
 /* ===================== more than 800px ==================== */
 /* ====== video ===== */
-@media screen and (min-width: 800px and max-width: 1000px) {
+@media screen and (min-width: 800px) {
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
   max-width: 800px;
   margin: 0 auto;
   }
   main {
     width: 800px;
-  }
-  main.tut-main {
-    width: 100%;
   }
   .tut-content-menu {
   display: none;
   }
 }
 
+@media screen and (min-width: 800px and max-width: 1000px) {
+  main.tut-main {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1000px) {
-  main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
-  max-width: 800px;
-  margin: 0 auto;
-  }
-  main {
-    width: 800px;
-  }
   main.tut-main {
     width: 1000px;
-  }
-  .tut-content-menu {
-  display: none;
   }
 }
 
