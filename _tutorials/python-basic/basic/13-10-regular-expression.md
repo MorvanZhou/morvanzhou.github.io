@@ -263,7 +263,7 @@ print(re.findall(r"(run|ran)", "run ran ren")) # ['run', 'ran']
 
 {% include assign-heading.html %}
 我们还能通过正则表达式匹配上一些形式的字符串然后再替代掉这些字符串.
-使用这种匹配 `re.sun()`, 将会比 python 自带的 `string.replace()` 要灵活多变.
+使用这种匹配 `re.sub()`, 将会比 python 自带的 `string.replace()` 要灵活多变.
 
 ```python
 print(re.sub(r"r[au]ns", "catches", "dog runs to cat"))     # dog catches to cat
