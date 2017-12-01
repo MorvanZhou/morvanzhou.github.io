@@ -57,8 +57,9 @@ youku_id: XMTg1MTYwNDg2OA
 
 
 <div class="section">
-	<p>测试3, bilibili iframe flash</p>
+	<p id="check3">测试3, bilibili iframe flash</p>
 	<iframe
+			id="myVideoTest"
 			class="myvideo" width="560" height="410"
 			src="https://static.hdslb.com/miniloader.swf?aid=16797357&page=1"
 			frameborder="0" allowfullscreen></iframe>
@@ -124,5 +125,13 @@ function myFunction() {
 </script>
 
 <!--var src2 = "http://player.youku.com/embed/{{page.youku_id}}==";-->
+
+<script type="text/javascript">
+	if(!FlashDetect.installed){
+		alert("No Flash");
+		$("#myVideoTest").remove();
+	}
+
+</script>
 
 

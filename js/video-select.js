@@ -22,18 +22,46 @@ function videoChinaIP(src) {
     request.send(null);
 }
 
-function chooseVideo(src)
+function chooseVideo(src, src_name, vid)
 {
-    if (src.includes("hdslb")) {
+    if (src.includes("swf")) {
         document.getElementById('videogfw').style.paddingBottom = "70%";
+        var vai = document.getElementById("video-alrt-info");
+        vai.style.display = "block";
+        if (vid.includes("&page=")) {
+          var words = vid.split("&page=");
+          var vid = words[0] +"/#page=" + words[1];
+        }
+        vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid + '" target="_blank" >点击这里</a> 跳转至B站内)';
     }
     else if (src.includes("bilibili")) {
         document.getElementById('videogfw').style.paddingBottom = "58%";
+        var vai = document.getElementById("video-alrt-info");
+        vai.style.display = "block";
+        vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
     }
     else {
         document.getElementById('videogfw').style.paddingBottom = "56.25%";
+        if (src_name == "youku") {
+            var vai = document.getElementById("video-alrt-info");
+            vai.style.display = "block";
+            var aid = src.split("embed/")[1];
+            vai.innerHTML = '(优酷无法播放? 请 <a href="http://v.youku.com/v_show/id_' + vid +'==.html" target="_blank" >点击这里</a> 跳转至优酷站内)';
+        }
     }
-    var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
-    $("#myVideo").remove();
-    $("#videogfw").append(video);
+    if (src.includes("swf") && (!FlashDetect.installed)){
+        $("#myVideo").remove();
+        velem = document.getElementById('videogfw');
+        velem.style.paddingBottom = "0";
+        velem.style.lineHeight = "90px";
+        velem.style.textAlign = "center";
+        velem.style.fontSize = "2.5em";
+        velem.innerHTML = "您的浏览器不支持 Flash 播放器, <a href='https://www.bilibili.com/video/av" + vid +"' target='_blank'>点击这里</a> 查看视频";
+    }
+    else {
+        var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
+        $("#myVideo").remove();
+        $("#videogfw").append(video);
+    }
+
 }

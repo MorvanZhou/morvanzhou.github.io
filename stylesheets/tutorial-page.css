@@ -97,12 +97,7 @@ filter: none !important;
 color: var(--c-green-hover);
 color:white;
 }
-.collapse{
-display:none
-}
-.collapse.in{
-display:block
-}
+
 
 /* ======== table of contents ======== */
 .table-of-contents-ul {
