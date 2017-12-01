@@ -24,34 +24,48 @@ function videoChinaIP(src) {
 
 function chooseVideo(src, src_name, vid)
 {
-    if (src.includes("swf")) {
-        document.getElementById('videogfw').style.paddingBottom = "70%";
-        var vai = document.getElementById("video-alrt-info");
+    var velem = document.getElementById('videogfw');
+    var vai = document.getElementById("video-alrt-info");
+
+    // bilibili
+    if (src_name == "bilibili") {
+      if (src.includes("hdslb")) {
+        velem.style.paddingBottom = "70%";
         vai.style.display = "block";
         if (vid.includes("&page=")) {
           var words = vid.split("&page=");
           var vid = words[0] +"/#page=" + words[1];
         }
         vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid + '" target="_blank" >点击这里</a> 跳转至B站内)';
-    }
-    else if (src.includes("bilibili")) {
-        document.getElementById('videogfw').style.paddingBottom = "58%";
-        var vai = document.getElementById("video-alrt-info");
+      }
+      else if (src.includes("bilibili")) {
+        velem.style.paddingBottom = "58%";
         vai.style.display = "block";
         vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
+      }
     }
-    else {
-        document.getElementById('videogfw').style.paddingBottom = "56.25%";
-        if (src_name == "youku") {
-            var vai = document.getElementById("video-alrt-info");
-            vai.style.display = "block";
-            var aid = src.split("embed/")[1];
-            vai.innerHTML = '(优酷无法播放? 请 <a href="http://v.youku.com/v_show/id_' + vid +'==.html" target="_blank" >点击这里</a> 跳转至优酷站内)';
-        }
+    // youku
+    else if (src_name == "youku") {
+      velem.style.paddingBottom = "56.25%";
+      velem.style.lineHeight = "0";
+      velem.style.fontSize = "0";
+      vai.style.display = "block";
+      var aid = src.split("embed/")[1];
+      vai.innerHTML = '(优酷无法播放? 请 <a href="http://v.youku.com/v_show/id_' + vid +'==.html" target="_blank" >点击这里</a> 跳转至优酷站内)';
     }
+
+    else {  // youtube
+      velem.style.paddingBottom = "56.25%";
+      velem.style.lineHeight = "0";
+      velem.style.fontSize = "0";
+      if (vai) {
+        vai.style.display = "none";
+      }
+    }
+
+
     if (src.includes("swf") && (!FlashDetect.installed)){
         $("#myVideo").remove();
-        velem = document.getElementById('videogfw');
         velem.style.paddingBottom = "0";
         velem.style.lineHeight = "90px";
         velem.style.textAlign = "center";

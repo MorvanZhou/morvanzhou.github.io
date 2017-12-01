@@ -139,7 +139,7 @@
     width: 800px;
   }
   main.tut-main {
-    width: 1000px;
+    width: 100%;
   }
   .tut-content-menu {
   display: none;
