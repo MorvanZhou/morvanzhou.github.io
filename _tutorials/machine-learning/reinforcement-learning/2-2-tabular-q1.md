@@ -1,7 +1,7 @@
 ---
 youku_id: XMTk2OTg5NDE0MA
 youtube_id: lfMICa9sEQE
-bilibili_id: 15987893
+bilibili_id: 16921335&page=7
 chapter: 2
 title: Q-learning 算法更新
 thumbnail: "/static/thumbnail-small//rl/2.2_qlearning1.jpg"

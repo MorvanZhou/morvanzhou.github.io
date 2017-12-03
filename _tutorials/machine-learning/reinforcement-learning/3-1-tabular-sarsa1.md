@@ -1,7 +1,7 @@
 ---
 youku_id: XMjI2NTY5NTczNg
 youtube_id: Sv6IB-Uu4ks
-bilibili_id: 15988187
+bilibili_id: 16921335&page=10
 chapter: 3
 title: Sarsa 算法更新
 thumbnail: "/static/thumbnail-small//rl/3.1_sarsa1.jpg"

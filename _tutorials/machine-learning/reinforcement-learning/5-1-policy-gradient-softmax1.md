@@ -1,7 +1,7 @@
 ---
 youku_id: XMjY1MzQ0MDI4NA
 youtube_id: A54GU_WqLmQ
-bilibili_id: 15990409
+bilibili_id: 16921335&page=23
 chapter: 5
 title: Policy Gradients 算法更新 (Tensorflow)
 thumbnail: "/static/thumbnail-small//rl/5.1_PG1.jpg"

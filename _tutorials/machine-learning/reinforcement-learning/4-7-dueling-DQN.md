@@ -1,7 +1,7 @@
 ---
 youku_id: XMjYxMTI2NTU2NA
 youtube_id: OiEkaYpPHM0
-bilibili_id: 15990095
+bilibili_id: 16921335&page=21
 chapter: 4
 title: Dueling DQN (Tensorflow)
 publish-date: 2017-03-08

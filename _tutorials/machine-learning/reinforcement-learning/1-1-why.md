@@ -1,7 +1,7 @@
 ---
 youku_id: XMTg5MjM2ODgwOA
 youtube_id: o5fjkcM_lHs
-bilibili_id: 15987274
+bilibili_id: 16921335&page=3
 chapter: 1
 title: 为什么用强化学习 Why?
 publish-date: 2017-01-01
