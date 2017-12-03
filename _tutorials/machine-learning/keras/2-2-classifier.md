@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc3OTE4NDc0OA
 youtube_id: 3mpDXAXFkfg
-bilibili_id: 16015171
+bilibili_id: 16014392&page=9
 title: Classifier 分类
 description: "分类的代码我们用了很多不同的途径来完成同样的事情. 今天用 Keras 来构建一个分类神经网络，用到的数据集是 MNIST，就是 0 到 9 这几个数字的图片数据集。"
 publish-date: 2016-10-29
