@@ -1,7 +1,7 @@
 ---
 youku_id: XMTU4ODY1NDQwNA
 youtube_id: T9es_lniLl0
-bilibili_id: 16379047
+bilibili_id: 16378934&page=6
 title: Numpy 基础运算2 
 description:  Numpy 的常用数学运算介绍, 矩阵运算等.
 author: Sincejuly

@@ -1,7 +1,7 @@
 ---
 youku_id: XMTYzMDIzODI4OA
 youtube_id: HuGMmE97LnY
-bilibili_id: 16379209
+bilibili_id: 16378934&page=13
 title: Pandas 设置值
 description: 我们可以根据自己的需求, 用 pandas 进行更改数据里面的值, 或者加上一些空的,或者有数值的列.
 author: 张能波

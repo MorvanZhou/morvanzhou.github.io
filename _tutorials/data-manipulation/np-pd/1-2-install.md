@@ -1,7 +1,7 @@
 ---
 youku_id: XMTU4NjM5NzgyNA
 youtube_id: JauGYB-Bzuw
-bilibili_id: 16378954
+bilibili_id: 16378934&page=2
 title: Numpy 和 Pandas 安装
 description: 简单易懂的Numpy 和 Pandas 的安装教学 (Windows, MacOS, Linux)
 author: abner
