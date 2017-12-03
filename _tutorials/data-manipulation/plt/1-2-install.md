@@ -1,7 +1,7 @@
 ---
 youku_id: XMTcxNjAxMDAxNg
 youtube_id: F2K5hqLiBi0
-bilibili_id: 16378382
+bilibili_id: 16378354&page=2
 description: 对于 Windows, MacOS, Linux, matplotlib 的安装方式各不相同, 我们看看如何安装 matplotlib 吧.
 chapter: 1
 title: Matplotlib 安装

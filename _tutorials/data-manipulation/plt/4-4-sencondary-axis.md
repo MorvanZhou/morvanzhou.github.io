@@ -1,7 +1,7 @@
 ---
 youku_id: XMTcyMTQ1OTkzMg
 youtube_id: cFO72oNbmZo
-bilibili_id: 16378714
+bilibili_id: 16378354&page=18
 description: 有时候我们会要用到次坐标轴, 在一种图上两个 y 轴. 同样可以用 matplotlib 做到,而且很简单.
 author: Jeff
 chapter: 4

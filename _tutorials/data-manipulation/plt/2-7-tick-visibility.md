@@ -1,7 +1,7 @@
 ---
 youku_id: XMTcxNjI5NzEyMA
 youtube_id: zj-tXbuFY_4
-bilibili_id: 16378529
+bilibili_id: 16378354&page=9
 description: 有时候数据多也是挺烦人的. 比如数据可能会挡道一些重要的东西. 那我们就可以设置 bbox 来解决被挡住的问题.
 chapter: 2
 title: tick 能见度
