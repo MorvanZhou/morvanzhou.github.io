@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc0NjI5MTEyNA
 youtube_id: psE63sPbIeI
-bilibili_id: 15998037
+bilibili_id: 15997678&page=11
 title: 关系拟合 (回归)
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail-small//torch/3-1_regression.jpg"

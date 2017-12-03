@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc3MzA3OTM0NA
 youtube_id: lAaCeiqE6CE
-bilibili_id: 15997699
+bilibili_id: 15997678&page=1
 title: "科普: 人工神经网络 VS 生物神经网络"
 thumbnail: "/static/thumbnail-small//ML-intro/ANN_and_NN.png"
 chapter: 1

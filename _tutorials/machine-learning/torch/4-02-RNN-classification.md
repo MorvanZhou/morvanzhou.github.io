@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc1NTczODY4OA
 youtube_id: 8SvB6B4JmfU
-bilibili_id: 15998840
+bilibili_id: 15997678&page=22
 title: RNN 循环神经网络 (分类)
 publish-date: 2017-05-10
 thumbnail: "/static/thumbnail-small//torch/4.2_RNN_classifier.jpg"

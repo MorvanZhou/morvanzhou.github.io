@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc1NzYxMTg2MA
 youtube_id: CA27ONB8SQ4
-bilibili_id: 15998910
+bilibili_id: 15997678&page=23
 title: RNN 循环神经网络 (回归)
 publish-date: 2017-05-11
 thumbnail: "/static/thumbnail-small//torch/4.3_RNN_regressor.jpg"

@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc0ODEzMjQ4MA
 youtube_id: 6k2hp7-5vkc
-bilibili_id: 15998180
+bilibili_id: 15997678&page=15
 title: 批训练
 publish-date: 2017-05-06
 thumbnail: "/static/thumbnail-small//torch/3-5_train_batch.jpg"

@@ -1,7 +1,7 @@
 ---
 youku_id: XMjc0NjIxMDIxNg
 youtube_id: 6YnzemVHvIU
-bilibili_id: 15998057
+bilibili_id: 15997678&page=10
 title: 激励函数 (Activation)
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail-small//torch/2-3_activation.jpg"
