@@ -9,7 +9,7 @@ chapter: 2
 title: 记录修改 (log & diff)
 publish-date: 2016-11-30
 
-thumbnail: /static/thumbnail/git/2-02.jpg
+thumbnail: /static/thumbnail-small/git/2-02.jpg
 post-headings:
   - 修改记录 log
   - 查看 unstaged

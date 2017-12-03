@@ -10,7 +10,7 @@ chapter: 3
 title: 回到从前 (reset)
 publish-date: 2016-11-30
 
-thumbnail: /static/thumbnail/git/3-01.jpg
+thumbnail: /static/thumbnail-small/git/3-01.jpg
 post-headings:
   - 修改已 commit 的版本
   - reset 回到 add 之前

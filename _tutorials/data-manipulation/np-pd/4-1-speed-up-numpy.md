@@ -8,7 +8,7 @@ description: "最近在写代码, 编一个 Python 模拟器, 做 simulation, �
 带有写代码洁癖的我好好给 google 了一番. 第一个出现在我眼前的就是这个文章, Getting the Best Performance out of NumPy. 所以我也将自己从这个文章中学到的诀窍分享给大家, 并补充一些内容."
 publish-date: 2017-08-22
 chapter: 4
-thumbnail: "/static/thumbnail/np-pd/4-1-why-slow.jpg"
+thumbnail: "/static/thumbnail-small//np-pd/4-1-why-slow.jpg"
 post-headings:
   - 为什么用 Numpy?
   - 创建 Numpy Array 的结构

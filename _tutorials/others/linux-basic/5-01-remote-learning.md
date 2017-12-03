@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=14
 chapter: 5
 title: 自己的云计算, 把 Linux 当成你的云计算平台
 publish-date: 2017-10-16
-thumbnail: /static/thumbnail/linux-basic/5-01.jpg
+thumbnail: /static/thumbnail-small/linux-basic/5-01.jpg
 post-headings:
   - 搭建 Linux 系统
   - 云端运行

@@ -4,7 +4,7 @@ youtube_id: Qm3zzq-xeDI
 bilibili_id: 15998064
 title: 区分类型 (分类)
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail/torch/3-2_classification.jpg"
+thumbnail: "/static/thumbnail-small//torch/3-2_classification.jpg"
 chapter: 3
 description: "这次我们也是用最简单的途径来看看神经网络是怎么进行事物的分类.
 我们创建一些假数据来模拟真实的情况. 比如两个二次分布的数据, 不过他们的均值都不一样."

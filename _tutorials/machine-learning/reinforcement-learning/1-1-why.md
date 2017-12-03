@@ -5,7 +5,7 @@ bilibili_id: 15987274
 chapter: 1
 title: 为什么用强化学习 Why?
 publish-date: 2017-01-01
-thumbnail: "/static/thumbnail/rl/1_why.jpg"
+thumbnail: "/static/thumbnail-small//rl/1_why.jpg"
 description: "强化学习 (Reinforcement Learning) 是一个机器学习大家族中的分支, 由于近些年来的技术突破,
 和深度学习 (Deep Learning) 的整合, 使得强化学习有了进一步的运用. 比如让计算机学着玩游戏,
 AlphaGo 挑战世界围棋高手, 都是强化学习在行的事.

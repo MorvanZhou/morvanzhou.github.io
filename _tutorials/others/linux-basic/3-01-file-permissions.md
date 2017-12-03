@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=9
 chapter: 3
 title: Linux 文件权限
 publish-date: 2017-10-13
-thumbnail: /static/thumbnail/linux-basic/3-01.jpg
+thumbnail: /static/thumbnail-small/linux-basic/3-01.jpg
 post-headings:
   - ls 查看权限
   - chmod 修改权限

@@ -5,7 +5,7 @@ bilibili_id:
 chapter: 13
 title: 正则表达式
 publish-date: 2017-11-29
-thumbnail: /static/thumbnail/basic/13-10.jpg
+thumbnail: /static/thumbnail-small/basic/13-10.jpg
 post-headings:
   - 简单的匹配
   - 灵活匹配

@@ -7,7 +7,7 @@ description: "分类的代码我们用了很多不同的途径来完成同样的
 publish-date: 2016-10-29
 chapter: 2
 author: Alice
-thumbnail: "/static/thumbnail/keras/05classifier.jpg"
+thumbnail: "/static/thumbnail-small//keras/05classifier.jpg"
 post-headings:
   - 数据预处理
   - 建立神经网络

@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=5
 chapter: 2
 title: Linux 基本指令 ls 和 cd
 publish-date: 2017-10-11
-thumbnail: /static/thumbnail/linux-basic/2-01.jpg
+thumbnail: /static/thumbnail-small/linux-basic/2-01.jpg
 post-headings:
   - cd 指令
   - ls 指令

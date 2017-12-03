@@ -9,7 +9,7 @@ chapter: 2
 title: 第一个版本库 Repository
 publish-date: 2016-11-30
 
-thumbnail: /static/thumbnail/git/2-01.jpg
+thumbnail: /static/thumbnail-small/git/2-01.jpg
 post-headings:
   - 创建版本库 (init)
   - 添加文件管理 (add)

@@ -4,7 +4,7 @@ youtube_id: 8SvB6B4JmfU
 bilibili_id: 15998840
 title: RNN 循环神经网络 (分类)
 publish-date: 2017-05-10
-thumbnail: "/static/thumbnail/torch/4.2_RNN_classifier.jpg"
+thumbnail: "/static/thumbnail-small//torch/4.2_RNN_classifier.jpg"
 chapter: 4
 description: "循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果. 如果你对循环神经网络还没有特别了解, 请观看几分钟的短动画,
 RNN 动画简介 和

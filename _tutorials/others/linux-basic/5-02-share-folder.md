@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=15
 chapter: 5
 title: 自己的云计算, 多电脑共享你云端文件
 publish-date: 2017-10-30
-thumbnail: /static/thumbnail/linux-basic/5-02.jpg
+thumbnail: /static/thumbnail-small/linux-basic/5-02.jpg
 post-headings:
   - 设置分享文件夹
   - Mac 找到云端的分享文件夹

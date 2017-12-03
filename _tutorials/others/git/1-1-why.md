@@ -7,7 +7,7 @@ chapter: 1
 title: Why Git?
 publish-date: 2016-11-30
 
-thumbnail: /static/thumbnail/git/1-01.jpg
+thumbnail: /static/thumbnail-small/git/1-01.jpg
 post-headings:
   - 什么时候需要用 Git?
   - 什么文件可以被 Git 管理?

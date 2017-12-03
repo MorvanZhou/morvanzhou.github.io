@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=4
 chapter: 1
 title: 给你的 Ubuntu 安装软件
 publish-date: 2017-10-11
-thumbnail: /static/thumbnail/linux-basic/1-04.jpg
+thumbnail: /static/thumbnail-small/linux-basic/1-04.jpg
 post-headings:
   - 使用 Ubuntu 自带的 app 管理器
   - 中文输入

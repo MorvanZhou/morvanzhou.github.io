@@ -7,7 +7,7 @@ description: "了解强化学习中常用到的几种方法,以及他们的区�
 强化学习是一个大家族, 发展历史也不短, 具有很多种不同方法. 比如说比较知名的控制方法 Q learning, Policy gradients, 还有基于对环境的理解的 model-based RL 等等. 接下来我们通过分类的方式来了解他们的区别."
 publish-date: 2017-01-06
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/RL_methods.png
+thumbnail: /static/thumbnail-small/ML-intro/RL_methods.png
 post-headings:
   - Model-free 和 Model-based
   - 基于概率 和 基于价值

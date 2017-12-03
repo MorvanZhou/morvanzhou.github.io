@@ -9,7 +9,7 @@ description: "今天我们会来说说强化学习中的一种强大武器, Deep
 合并, 升级. 而我们今天所要探讨的强化学习则是这么一种融合了神经网络和
 Q learning 的方法, 名字叫做 Deep Q Network."
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/DQN_thumbnail.png
+thumbnail: /static/thumbnail-small/ML-intro/DQN_thumbnail.png
 post-headings:
   - 强化学习与神经网络
   - 神经网络的作用

@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=6
 chapter: 2
 title: Linux 基本指令 touch, cp 和 mv
 publish-date: 2017-10-12
-thumbnail: /static/thumbnail/linux-basic/2-02.jpg
+thumbnail: /static/thumbnail-small/linux-basic/2-02.jpg
 post-headings:
   - touch 新建
   - cp 复制

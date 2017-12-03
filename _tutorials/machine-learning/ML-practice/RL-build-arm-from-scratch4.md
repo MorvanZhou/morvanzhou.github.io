@@ -7,7 +7,7 @@ description: "在上节中,
 我们的环境已经基本建设完成了, 现在我们需要的就是一个强化学习的学习方法. 学习方法有很多, 而且也分很多类型.
 我们需要按照自己环境的要求挑选适合于这个环境的学习方法."
 publish-date: 2017-11-22
-thumbnail: "/static/thumbnail/ML-practice/arm4.jpg"
+thumbnail: "/static/thumbnail-small//ML-practice/arm4.jpg"
 chapter: 1
 post-headings:
   - 选择RL方法

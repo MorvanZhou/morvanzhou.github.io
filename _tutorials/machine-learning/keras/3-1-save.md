@@ -7,7 +7,7 @@ description: "保存 Keras model 的时候需要安装h5py这个模块. 不然�
 author: Alice
 publish-date: 2016-10-30
 chapter: 3
-thumbnail: "/static/thumbnail/keras/10save.jpg"
+thumbnail: "/static/thumbnail-small//keras/10save.jpg"
 post-headings:
   - 训练模型
   - 保存模型

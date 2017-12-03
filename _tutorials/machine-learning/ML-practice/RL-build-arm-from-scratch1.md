@@ -7,7 +7,7 @@ description: "做这个实践的主要目的就是让我们活学活用, 从0开
 了解了各种算法应该怎样运用, 从最简单的 Q-Learning 到结合神经网络的 DQN, 再到做连续动作的DDPG以及分布式训练的 A3C 和 DPPO. 但是我们却没有真正意义上的实践过一次, 因为在那个系列中大多数时候我们只关注了算法本身.
 但是搭建模拟环境, 调整参数也同样重要. 所以我们在这个系列中将会做到这些, 让你真正意义上入门了强化学习."
 publish-date: 2017-11-22
-thumbnail: "/static/thumbnail/ML-practice/arm1.jpg"
+thumbnail: "/static/thumbnail-small//ML-practice/arm1.jpg"
 chapter: 1
 post-headings:
   - 为什么做这个实践

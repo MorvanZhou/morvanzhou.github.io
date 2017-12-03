@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=12
 chapter: 4
 title: 怎么样从手机 (Android安卓/IOS苹果) 通过 SSH 远程 Linux
 publish-date: 2017-10-16
-thumbnail: /static/thumbnail/linux-basic/4-03.jpg
+thumbnail: /static/thumbnail-small/linux-basic/4-03.jpg
 post-headings:
   - 给 Linux 安装 OpenSSH
   - 手机 SSH 的 app

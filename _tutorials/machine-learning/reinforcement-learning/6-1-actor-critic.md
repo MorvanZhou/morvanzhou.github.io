@@ -4,7 +4,7 @@ youtube_id: tvMu5oPYpsw
 bilibili_id: 15990821
 chapter: 6
 title: Actor Critic (Tensorflow)
-thumbnail: "/static/thumbnail/rl/6.1_actor_critic.jpg"
+thumbnail: "/static/thumbnail-small//rl/6.1_actor_critic.jpg"
 publish-date: 2017-04-03
 description: "一句话概括 Actor Critic 方法:
 结合了 Policy Gradient (Actor) 和 Function Approximation (Critic) 的方法.

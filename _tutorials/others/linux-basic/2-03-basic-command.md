@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=7
 chapter: 2
 title: Linux 基本指令 mkdir, rmdir 和 rm
 publish-date: 2017-10-12
-thumbnail: /static/thumbnail/linux-basic/2-03.jpg
+thumbnail: /static/thumbnail-small/linux-basic/2-03.jpg
 post-headings:
   - mkdir 建立文件夹
   - rmdir 移除文件夹

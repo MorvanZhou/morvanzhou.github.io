@@ -10,7 +10,7 @@ chapter: 4
 title: merge 分支冲突
 publish-date: 2016-12-01
 
-thumbnail: /static/thumbnail/git/4-02.jpg
+thumbnail: /static/thumbnail-small/git/4-02.jpg
 post-headings:
   - merge 分支冲突
 ---

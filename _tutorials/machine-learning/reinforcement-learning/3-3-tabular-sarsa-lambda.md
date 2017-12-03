@@ -4,7 +4,7 @@ youtube_id: gXZ4AWgkrQE
 bilibili_id: 15988888
 chapter: 3
 title: Sarsa-lambda
-thumbnail: "/static/thumbnail/rl/3.3_sarsa_lambda.jpg"
+thumbnail: "/static/thumbnail-small//rl/3.3_sarsa_lambda.jpg"
 publish-date: 2017-01-13
 description: "Sarsa-lambda 是基于 Sarsa 方法的升级版, 他能更有效率地学习到怎么样获得好的 reward.
 如果说 Sarsa 和 Qlearning 都是每次获取到 reward, 只更新获取到 reward 的前一步.

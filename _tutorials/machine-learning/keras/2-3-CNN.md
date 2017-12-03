@@ -8,7 +8,7 @@ description: "CNN 一般用来处理图片. 他在图片识别上有很多优势
 publish-date: 2016-10-30
 author: Mark JingNB
 chapter: 2
-thumbnail: "/static/thumbnail/keras/06CNN.jpg"
+thumbnail: "/static/thumbnail-small//keras/06CNN.jpg"
 post-headings:
   - 搭建模型
   - 训练

@@ -7,7 +7,7 @@ description: "今天我们会来说说强化学习中一个和 Q learning 类似
 "
 publish-date: 2017-01-13
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/Sarsa_thumbnail.png
+thumbnail: /static/thumbnail-small/ML-intro/Sarsa_thumbnail.png
 post-headings:
   - Sarsa 决策
   - Sarsa 更新行为准则

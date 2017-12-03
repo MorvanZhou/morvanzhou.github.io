@@ -8,7 +8,7 @@ description: "name_scope 和 variable_scope 的不同还有使用方法.scope �
 chapter: 5
 title: scope 命名方法
 publish-date: 2016-11-25
-thumbnail: /static/thumbnail/tf/tf22_scope.jpg
+thumbnail: /static/thumbnail-small/tf/tf22_scope.jpg
 post-headings:
   - tf.name_scope()
   - tf.variable_scope()

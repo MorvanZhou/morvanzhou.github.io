@@ -6,7 +6,7 @@ description: 安装 Tensorflow 时需要注意的几点
 chapter: 1
 title: Tensorflow 安装
 publish-date: 2016-11-30
-thumbnail: /static/thumbnail/tf/tf2-install.jpg
+thumbnail: /static/thumbnail-small/tf/tf2-install.jpg
 date: 2016-11-3
 post-headings:
   - 多种安装途径

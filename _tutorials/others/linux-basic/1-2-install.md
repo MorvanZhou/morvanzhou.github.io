@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=2
 chapter: 1
 title: 安装 Ubuntu 17.10
 publish-date: 2017-10-11
-thumbnail: /static/thumbnail/linux-basic/1-02.jpg
+thumbnail: /static/thumbnail-small/linux-basic/1-02.jpg
 post-headings:
   - 选一个 Linux distribution
   - 下载 Ubuntu

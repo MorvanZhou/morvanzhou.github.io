@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=3
 chapter: 1
 title: 快速了解 Ubuntu 17.10 基本界面
 publish-date: 2017-10-11
-thumbnail: /static/thumbnail/linux-basic/1-03.jpg
+thumbnail: /static/thumbnail-small/linux-basic/1-03.jpg
 post-headings:
   - 主界面
   - 文件管理器

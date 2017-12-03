@@ -8,7 +8,7 @@ chapter: 3
 title: 回到从前 (checkout 针对单个文件)
 publish-date: 2016-12-01
 
-thumbnail: /static/thumbnail/git/3-02.jpg
+thumbnail: /static/thumbnail-small/git/3-02.jpg
 post-headings:
   - 改写文件 checkout
 ---

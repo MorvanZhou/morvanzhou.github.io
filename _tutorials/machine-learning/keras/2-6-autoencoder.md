@@ -9,7 +9,7 @@ description: "Keras 的 autoencoder自编码 也很好编辑, 类加上几个 la
 author: Alice
 publish-date: 2016-10-30
 chapter: 2
-thumbnail: "/static/thumbnail/keras/09autoencoder.jpg"
+thumbnail: "/static/thumbnail-small//keras/09autoencoder.jpg"
 post-headings:
   - 导入模块并创建数据
   - 建立模型

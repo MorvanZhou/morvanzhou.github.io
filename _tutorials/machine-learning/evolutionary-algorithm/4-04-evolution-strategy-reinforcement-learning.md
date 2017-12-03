@@ -4,7 +4,7 @@ youtube_id: x-svcNmIMBs
 bilibili_id: 15986593
 title: Evolution Strategy 强化学习
 publish-date: 2017-09-23
-thumbnail: "/static/thumbnail/evolutionary-algorithm/44es.jpg"
+thumbnail: "/static/thumbnail-small//evolutionary-algorithm/44es.jpg"
 chapter: 4
 description: "上节内容里,
 我们见到了使用 NEAT 来进化出一个会立杆子的机器人. 这次, 我们使用另一种进化算法 Evolution Strategy (后面都用简称 ES 代替) 来实现大规模强化学习.

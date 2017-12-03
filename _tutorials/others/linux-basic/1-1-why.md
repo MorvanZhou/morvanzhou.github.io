@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=1
 chapter: 1
 title: Why Linux?
 publish-date: 2017-10-11
-thumbnail: /static/thumbnail/linux-basic/1-01.jpg
+thumbnail: /static/thumbnail-small/linux-basic/1-01.jpg
 post-headings:
   - 为什么 Linux 是免费的
   - 比 Windows 更安全

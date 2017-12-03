@@ -10,7 +10,7 @@ description: "今天我们会来说说强化学习中的一种actor critic 的�
 接下来, 我们就开始一个个分析啦."
 publish-date: 2017-04-08
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/DDPG.png
+thumbnail: /static/thumbnail-small/ML-intro/DDPG.png
 post-headings:
   - 拆分细讲
   - Deep 和 DQN

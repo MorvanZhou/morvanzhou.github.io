@@ -6,7 +6,7 @@ title: 例子 配对句子
 description: "使用遗传算法的 Python 教学. 接着上节对遗传算法的基本应用,
 在这一节中, 我们用通过不同的编码 DNA 方式, 不同的 fitness 定义方式来让程序生成出自己设定的句子来."
 publish-date: 2017-08-12
-thumbnail: "/static/thumbnail/evolutionary-algorithm/22ga.jpg"
+thumbnail: "/static/thumbnail-small//evolutionary-algorithm/22ga.jpg"
 chapter: 2
 post-headings:
   - 要点

@@ -4,8 +4,8 @@ icon-dir: /static/img/icon/others_icon.png
 tut-dir: /tutorials/others/
 description: ""
 tut-course-detail:
-  - ["/tutorials/others/git", "Git 版本管理", "/static/img/course_cover/git.jpg"]
-  - ["/tutorials/others/linux-basic", "Linux 简易教学", "/static/img/course_cover/linux.jpg"]
+  - ["/tutorials/others/git", "Git 版本管理", "/static/img/course_cover-small/git.jpg"]
+  - ["/tutorials/others/linux-basic", "Linux 简易教学", "/static/img/course_cover-small/linux.jpg"]
 ---
 
 

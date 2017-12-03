@@ -8,7 +8,7 @@ description: "我们在上几节内容中说道 遗传算法 (GA) 算法最主�
 这次的旅行商人问题 (之后简称 TSP), 商人需要经过某几个城市, 但是城市之间的距离不一, 我们怎么规划路径, 成了一个复杂的问题.
 如果计算每一条可行的路径, 就需要相当大的计算资源. 如果使用 GA, TSP 就能被当成一个非常典型的活学活用 GA 算法的问题.
 他的 DNA 编码会有不一样的故事."
-thumbnail: "/static/thumbnail/evolutionary-algorithm/23ga.jpg"
+thumbnail: "/static/thumbnail-small//evolutionary-algorithm/23ga.jpg"
 chapter: 2
 post-headings:
   - 要点

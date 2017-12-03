@@ -7,7 +7,7 @@ description: "2016 年, AlphaGo 第一版发表在了 Nature 自然杂志上, �
 AlphaGo 战胜过欧洲冠军樊麾, 韩国九段棋手李世石, 近期的比赛中又赢了世界冠军柯洁, 种种迹象表明, 人类已经失守最拿手的围棋了. 这些围棋高手一个个都表示 AlphaGo 走到了他们想不到的地方, 战胜了人类的生物极限, 不会感觉疲惫等等. 的确, 这就是机器相比人类的一个绝大优势. 那 AlphaGo 又是怎么在策略上战胜人类的呢? 很简单, 它会做计划."
 publish-date: 2017-10-23
 chapter: 4
-thumbnail: /static/thumbnail/ML-intro/alphago.png
+thumbnail: /static/thumbnail-small/ML-intro/alphago.png
 post-headings:
   - AlphaGo 引发轰动
   - 蒙特卡洛树搜索

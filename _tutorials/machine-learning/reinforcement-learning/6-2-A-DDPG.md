@@ -9,7 +9,7 @@ description: "今天我们会来说说强化学习中的一种actor critic 的�
 我们将 DDPG 分成 Deep  和 Deterministic Policy Gradient, 然后 Deterministic Policy Gradient 又能被细分为 Deterministic 和 Policy Gradient,
 接下来, 我们就开始一个个分析啦."
 chapter: 6
-thumbnail: /static/thumbnail/ML-intro/DDPG.png
+thumbnail: /static/thumbnail-small/ML-intro/DDPG.png
 post-headings:
   - 拆分细讲
   - Deep 和 DQN

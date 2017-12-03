@@ -7,7 +7,7 @@ chapter: 1
 title: Git 安装
 publish-date: 2016-11-30
 
-thumbnail: /static/thumbnail/git/1-02.jpg
+thumbnail: /static/thumbnail-small/git/1-02.jpg
 post-headings:
   - Linux 系统
   - MacOS 系统

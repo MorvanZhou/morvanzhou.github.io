@@ -6,7 +6,7 @@ description: github 是一个大家都积极贡献的地方, 你可以和各种�
 chapter: 5
 title: Github 在线代码管理
 publish-date: 2016-12-02
-thumbnail: /static/thumbnail/git/5-01.jpg
+thumbnail: /static/thumbnail-small/git/5-01.jpg
 post-headings:
   - 建立 github 版本库
   - 连接本地版本库

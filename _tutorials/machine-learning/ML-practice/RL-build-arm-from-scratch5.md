@@ -6,7 +6,7 @@ title: 从头开始做一个机器手臂5 完善测试
 description: "上节我们加上了强化学习的方法, 来测试了一下整个学习的流程.
 不过也发现了一些问题, 而这种发现问题的方式也肯定会出现在你的强化学习项目中. 这次我们来看看我是怎么解决自己发现的问题的."
 publish-date: 2017-11-22
-thumbnail: "/static/thumbnail/ML-practice/arm5.jpg"
+thumbnail: "/static/thumbnail-small//ML-practice/arm5.jpg"
 chapter: 1
 post-headings:
   - 解决甩手问题

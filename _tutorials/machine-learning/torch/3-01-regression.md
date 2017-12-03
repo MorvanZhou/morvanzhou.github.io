@@ -4,7 +4,7 @@ youtube_id: psE63sPbIeI
 bilibili_id: 15998037
 title: 关系拟合 (回归)
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail/torch/3-1_regression.jpg"
+thumbnail: "/static/thumbnail-small//torch/3-1_regression.jpg"
 chapter: 3
 description: "我会这次会来见证神经网络是如何通过简单的形式将一群数据用一条线条来表示. 或者说, 是如何在数据当中找到他们的关系, 然后用神经网络模型来建立一个可以代表他们关系的线条.
 我们创建一些假数据来模拟真实的情况. 比如一个一元二次函数"

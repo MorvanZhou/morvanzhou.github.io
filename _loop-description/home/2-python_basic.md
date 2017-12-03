@@ -4,10 +4,10 @@ icon-dir: /static/img/icon/python_icon.png
 tut-dir: /tutorials/python-basic/
 description: Python 的基础教程, 零基础, 起步快, 瞬间找到学习 Python 的诀窍.
 tut-course-detail:
-  - ["/tutorials/python-basic/basic", "最基础使用方法", "/static/img/course_cover/python_basic.jpg"]
-  - ["/tutorials/python-basic/tkinter", "窗口视窗的编辑 (Tkinter)", "/static/img/course_cover/tkinter.jpg"]
-  - ["/tutorials/python-basic/threading", "多线程 (threading)", "/static/img/course_cover/threading.jpg"]
-  - ["/tutorials/python-basic/multiprocessing", "多进程 (multiprocessing)", "/static/img/course_cover/multiprocessing.jpg"]
+  - ["/tutorials/python-basic/basic", "最基础使用方法", "/static/img/course_cover-small/python_basic.jpg"]
+  - ["/tutorials/python-basic/tkinter", "窗口视窗的编辑 (Tkinter)", "/static/img/course_cover-small/tkinter.jpg"]
+  - ["/tutorials/python-basic/threading", "多线程 (threading)", "/static/img/course_cover-small/threading.jpg"]
+  - ["/tutorials/python-basic/multiprocessing", "多进程 (multiprocessing)", "/static/img/course_cover-small/multiprocessing.jpg"]
 ---
 
 <a href="{{page.tut-dir}}">Python基础</a> 非常适合刚入门,

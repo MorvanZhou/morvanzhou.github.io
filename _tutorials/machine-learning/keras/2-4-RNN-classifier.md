@@ -7,7 +7,7 @@ description: "使用 RNN 来对 mnist 数据集做分类. 这次我们用循环�
 author: Mark JingNB
 publish-date: 2016-10-30
 chapter: 2
-thumbnail: "/static/thumbnail/keras/07RNN1.jpg"
+thumbnail: "/static/thumbnail-small//keras/07RNN1.jpg"
 post-headings:
   - 方法介绍
   - 搭建模型

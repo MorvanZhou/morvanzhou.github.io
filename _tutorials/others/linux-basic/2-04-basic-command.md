@@ -5,7 +5,7 @@ bilibili_id: 15976434&page=8
 chapter: 2
 title: Linux 基本指令 nano 和 cat
 publish-date: 2017-10-12
-thumbnail: /static/thumbnail/linux-basic/2-04.jpg
+thumbnail: /static/thumbnail-small/linux-basic/2-04.jpg
 post-headings:
   - nano
   - cat

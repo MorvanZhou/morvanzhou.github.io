@@ -5,7 +5,7 @@ bilibili_id: 15990095
 chapter: 4
 title: Dueling DQN (Tensorflow)
 publish-date: 2017-03-08
-thumbnail: "/static/thumbnail/rl/4.7_dueling_DQN.jpg"
+thumbnail: "/static/thumbnail-small//rl/4.7_dueling_DQN.jpg"
 description: "只要稍稍修改 DQN 中神经网络的结构, 就能大幅提升学习效果, 加速收敛. 这种新方法叫做
 Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q 拆分成了 state 的 Value
 加上 每个动作的 Advantage."

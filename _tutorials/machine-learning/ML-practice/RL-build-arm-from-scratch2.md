@@ -7,7 +7,7 @@ description: "上次我们已经搭建好了三个主要部分, 包括
 main.py, rl.py, env.py. 强化学习最重要的部分之一就是怎样定义你的环境. 做出来一个可视化的模拟环境能大大减轻不可见的负担. 有一个机器人在你屏幕上跑来跑去,
 你能看见它, 根据他的行为来调整程序, 比看不见任何东西, 不知道是哪除了问题要好得多. 所以做一个可视化的环境变得重要起来. "
 publish-date: 2017-11-22
-thumbnail: "/static/thumbnail/ML-practice/arm2.jpg"
+thumbnail: "/static/thumbnail-small//ML-practice/arm2.jpg"
 chapter: 1
 post-headings:
   - 做一个 Viewer

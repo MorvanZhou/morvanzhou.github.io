@@ -11,7 +11,7 @@ chapter: 4
 title: 临时修改 (stash)
 publish-date: 2016-12-01
 
-thumbnail: /static/thumbnail/git/4-04.jpg
+thumbnail: /static/thumbnail-small/git/4-04.jpg
 post-headings:
   - 暂存修改
   - 做其它任务

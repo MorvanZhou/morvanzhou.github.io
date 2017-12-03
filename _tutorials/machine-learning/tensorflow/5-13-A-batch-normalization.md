@@ -5,7 +5,7 @@ bilibili_id: 16001891&page=39
 title: 什么是批标准化 (Batch Normalization)
 description: Batch Normalization, 批标准化, 和普通的数据标准化类似, 是将分散的数据统一的一种做法, 也是优化神经网络的一种方法. 在之前 Normalization 的简介视频中我们一提到, 具有统一规格的数据, 能让机器学习更容易学习到数据之中的规律.
 chapter: 5
-thumbnail: /static/thumbnail/ML-intro/BN.png
+thumbnail: /static/thumbnail-small/ML-intro/BN.png
 post-headings:
   - 普通数据标准化
   - 每层都做标准化

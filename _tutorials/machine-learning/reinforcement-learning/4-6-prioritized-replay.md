@@ -5,7 +5,7 @@ bilibili_id: 15990292
 chapter: 4
 title: Prioritized Experience Replay (DQN) (Tensorflow)
 publish-date: 2017-03-07
-thumbnail: "/static/thumbnail/rl/4.6_prioritized_replay.jpg"
+thumbnail: "/static/thumbnail-small//rl/4.6_prioritized_replay.jpg"
 description: "这一次还是使用 MountainCar 来进行实验, 因为这次我们不需要重度改变他的 reward 了.
 所以只要是没有拿到小旗子, reward=-1, 拿到小旗子时, 我们定义它获得了 +10 的 reward.
 比起之前 DQN 中, 这个 reward 定义更加准确. 如果使用这种 reward 定义方式,

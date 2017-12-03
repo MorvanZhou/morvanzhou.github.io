@@ -4,7 +4,7 @@ youtube_id: 6YnzemVHvIU
 bilibili_id: 15998057
 title: 激励函数 (Activation)
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail/torch/2-3_activation.jpg"
+thumbnail: "/static/thumbnail-small//torch/2-3_activation.jpg"
 chapter: 2
 description: "一句话概括 Activation: 就是让神经网络可以描述非线性问题的步骤, 是神经网络变得更强大.
 如果还不是特别了解, 我有制作一个动画短片, 浅显易懂的阐述了激励函数的作用. 包懂. Torch 中的激励函数有很多, 不过我们平时要用到的就这几个. relu, sigmoid, tanh, softplus. 那我们就看看他们各自长什么样啦."
