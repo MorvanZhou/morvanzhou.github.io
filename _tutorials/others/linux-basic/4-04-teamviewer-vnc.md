@@ -1,7 +1,7 @@
 ---
 youku_id: XMzEzMTAyOTEyNA
 youtube_id: ap8wCYPwz6c
-bilibili_id: 15982670
+bilibili_id: 15976434&page=13
 chapter: 4
 title: 怎么样用 TeamViewer 和 VNC 从远程控制电脑
 publish-date: 2017-10-16

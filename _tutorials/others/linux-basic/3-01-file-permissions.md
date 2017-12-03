@@ -1,7 +1,7 @@
 ---
 youku_id: XMzEyMTA2ODY5Mg
 youtube_id: bOx-SA5ONqI
-bilibili_id: 15982080
+bilibili_id: 15976434&page=9
 chapter: 3
 title: Linux 文件权限
 publish-date: 2017-10-13

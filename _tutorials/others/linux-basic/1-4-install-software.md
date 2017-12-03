@@ -1,7 +1,7 @@
 ---
 youku_id: XMzExNzAzODg5Ng
 youtube_id: 04xmnJT5dcE
-bilibili_id: 15980889
+bilibili_id: 15976434&page=4
 chapter: 1
 title: 给你的 Ubuntu 安装软件
 publish-date: 2017-10-11

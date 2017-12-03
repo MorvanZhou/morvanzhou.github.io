@@ -1,7 +1,7 @@
 ---
 youku_id: XMzEyMTE0MzY2NA
 youtube_id: Jo9OlO5cvn0
-bilibili_id: 15981900
+bilibili_id: 15976434&page=10
 chapter: 4
 title: 怎么样从 MacOS 或 Linux 通过 SSH 远程 Linux
 publish-date: 2017-10-16
