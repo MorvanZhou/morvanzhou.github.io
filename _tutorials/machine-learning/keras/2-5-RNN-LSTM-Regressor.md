@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc4MDIxNTkwNA
 youtube_id: x5jjul-vLv4
-bilibili_id: 16014392&page=15
+bilibili_id: 16910214&page=15
 title: RNN Regressor 循环神经网络
 description: "使用 LSTM RNN 来预测一个 sin, cos 曲线. 这次我们使用RNN来求解回归(Regression)问题.
 首先生成序列 sin(x), 对应输出数据为cos(x), 设置序列步长为20，每次训练的 BATCH_SIZE 为50."

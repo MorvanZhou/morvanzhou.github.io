@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc4MDE4MDE4OA
 youtube_id: Zhy8NWAMT14
-bilibili_id: 16014392&page=14
+bilibili_id: 16910214&page=14
 title: RNN Classifier 循环神经网络
 description: "使用 RNN 来对 mnist 数据集做分类. 这次我们用循环神经网络(RNN, Recurrent Neural Networks)进行分类（classification），采用MNIST数据集，主要用到 SimpleRNN 层。"
 author: Mark JingNB
