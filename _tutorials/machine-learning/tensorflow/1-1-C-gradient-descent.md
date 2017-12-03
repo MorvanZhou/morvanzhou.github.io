@@ -1,7 +1,7 @@
 ---
 youku_id: XMjg1NzQwNDc4OA
 youtube_id: 9sJG7LjGCnI
-bilibili_id: 15999975
+bilibili_id: 16001891&page=3
 title: 神经网络 梯度下降
 chapter: 1
 thumbnail: "/static/thumbnail/ML-intro/gradient_descent.png"
