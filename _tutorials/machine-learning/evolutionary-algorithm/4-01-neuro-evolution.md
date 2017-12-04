@@ -1,7 +1,7 @@
 ---
 youku_id: XMzA0MDg2NTE5Mg
 youtube_id: 0wWajjm9xj8
-bilibili_id: 15985500
+bilibili_id: 16926245&page=12
 title: 神经进化
 publish-date: 2017-09-23
 thumbnail: "/static/thumbnail-small//evolutionary-algorithm/41es.jpg"

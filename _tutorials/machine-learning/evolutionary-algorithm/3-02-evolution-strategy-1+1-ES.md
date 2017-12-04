@@ -1,7 +1,7 @@
 ---
 youku_id: XMjk5NDYxNTQ0OA
 youtube_id: AcTeLqukgkA
-bilibili_id: 15984779
+bilibili_id: 16926245&page=9
 title: (1+1)-ES
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail-small//evolutionary-algorithm/32es.jpg"

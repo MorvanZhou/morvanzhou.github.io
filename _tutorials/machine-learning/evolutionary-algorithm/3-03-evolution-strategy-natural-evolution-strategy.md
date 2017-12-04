@@ -1,7 +1,7 @@
 ---
 youku_id: XMjk5NDcxNDcyOA
 youtube_id: ozSdqrN-kFQ
-bilibili_id: 15985546
+bilibili_id: 16926245&page=10
 title: Natural Evolution Strategy
 publish-date: 2017-08-28
 thumbnail: "/static/thumbnail-small//evolutionary-algorithm/33es.jpg"

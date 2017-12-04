@@ -2,7 +2,7 @@
 ref-path: _tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md
 youku_id: XMzAwNzU0NzI1Ng
 youtube_id: tWoS8Td6biQ
-bilibili_id: 15983148
+bilibili_id: 16926245&page=11
 title: 什么是神经网络进化 (Neuro-Evolution)
 chapter: 4
 thumbnail: /static/thumbnail-small/ML-intro/NE_thumbnail.png

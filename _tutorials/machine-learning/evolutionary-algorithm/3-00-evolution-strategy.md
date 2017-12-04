@@ -2,7 +2,7 @@
 ref-path: _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md
 youku_id: XMjk3OTcyMTU1Mg
 youtube_id: Etj_gclFFFo
-bilibili_id: 15983100
+bilibili_id: 16926245&page=7
 title: 什么是进化策略 (Evolution Strategy)
 chapter: 3
 thumbnail: /static/thumbnail-small/ML-intro/ES_thumbnail.png
