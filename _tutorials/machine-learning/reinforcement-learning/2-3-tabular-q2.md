@@ -19,7 +19,7 @@ post-headings:
 学习资料:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/2_Q_Learning_maze){:target="_blank"}
   * [什么是 Q Learning 短视频]({% link _tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
-  * 本节内容的模拟视频效果[Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA){:target="_blank"}, [Youtube](https://www.youtube.com/watch?v=G5BDgzxfLvA){:target="_blank"}
+  * 模拟视频效果[Youtube](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}, [Youku](http://list.youku.com/albumlist/show/id_27485743){:target="_blank"}
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf){:target="_blank"}
 
 接着上节内容, 我们来实现 `RL_brain` 的 `QLearningTable` 部分, 这也是 RL 的大脑部分, 负责决策和思考.
