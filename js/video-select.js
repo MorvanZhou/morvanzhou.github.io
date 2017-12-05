@@ -70,7 +70,7 @@ function chooseVideo(src, src_name, vid)
         velem.style.lineHeight = "90px";
         velem.style.textAlign = "center";
         velem.style.fontSize = "2.5em";
-        velem.innerHTML = "您的浏览器不支持 Flash 播放器, <a href='https://www.bilibili.com/video/av" + vid +"' target='_blank'>点击这里</a> 查看视频";
+        velem.innerHTML = "您的浏览器不支持 Flash 播放器, 请前往<a href='https://www.bilibili.com/video/av" + vid +"' target='_blank'>B站内</a>观看或切换视频源";
     }
     else {
         var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
