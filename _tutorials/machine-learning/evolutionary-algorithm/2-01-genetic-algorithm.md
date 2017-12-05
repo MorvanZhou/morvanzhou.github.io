@@ -82,7 +82,7 @@ def translateDNA(pop):
 
 ```python
 # 种群 DNA
-pop = np.random.randint(0, 2, (1, DNA_SIZE)).repeat(POP_SIZE, axis=0)
+pop = np.random.randint(2, size=(POP_SIZE, DNA_SIZE))
 
 F_values = F(translateDNA(pop))
 fitness = get_fitness(F_values)
