@@ -1,4 +1,5 @@
 ---
+bilibili_id: 17003173&page=7
 youku_id: XMTYxNjU3MTQzMg
 youtube_id: d2BMirIToF4
 description: sklearn 的 model 属性和功能都是高度统一的. 你可以运用到这些属性查看 model 的参数和值等等.
