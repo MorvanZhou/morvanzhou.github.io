@@ -8,8 +8,8 @@ publish-date: 2017-10-30
 thumbnail: /static/thumbnail-small/linux-basic/5-02.jpg
 post-headings:
   - 设置分享文件夹
-  - Mac 找到云端的分享文件夹
   - Windows 找到云端的分享文件
+  - Mac 找到云端的分享文件夹
   - 其他电脑上编辑/运行云端文件
 description: "云端计算固然方便, 如果让你的电脑上直接显示云端的文件, 是不是更方便呢? 哈哈, 这次我就来探讨一下可行的方式."
 ---
