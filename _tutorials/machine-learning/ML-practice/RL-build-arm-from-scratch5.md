@@ -178,7 +178,7 @@ class ArmEnv(object):
 
 上面的简单测试已经可以圆满完成了, 接着我们可以做一些难度更大的, 比如随机初始化 goal 的地点, 让手臂更加 robust.
 我基于上面代码[修改了一下](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/final){:target="_blank"},
-添加上了 goal 的初始位置随机化, 加上了可以让你用鼠标控制 goal 的位置. 在神经网络方面, 我增加了神经元数 (100->200) 和记忆库 (10000->20000),
+添加上了 goal 的初始位置随机化, 加上了可以让你用鼠标控制 goal 的位置. 在神经网络方面, 我增加了神经元数 (100->300) 和记忆库 (10000->30000),
 这样你就能自己用鼠标和手臂互动了, 有没有很开心!
 
 <video class="tut-content-video" controls loop autoplay muted>
