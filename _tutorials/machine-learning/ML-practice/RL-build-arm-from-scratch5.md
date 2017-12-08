@@ -12,6 +12,7 @@ post-headings:
   - 解决甩手问题
   - Reward Engineering
   - Feature Engineering
+  - 加大难度
 ---
 
 学习资料:
@@ -168,6 +169,22 @@ class ArmEnv(object):
 最后, 我想你还可以对这个程序进行加工, 比如随机初始化 goal 的位置, 让这个手臂更加 robust. 相应的, 你 training 这种 case 的时间肯定会更长.
 
 
+
+
+
+
+
+{% include assign-heading.html %}
+
+上面的简单测试已经可以圆满完成了, 接着我们可以做一些难度更大的, 比如随机初始化 goal 的地点, 让手臂更加 robust.
+我基于上面代码[修改了一下](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/final){:target="_blank"},
+添加上了 goal 的初始位置随机化, 加上了可以让你用鼠标控制 goal 的位置. 在神经网络方面, 我增加了神经元数 (100->200) 和记忆库 (10000->20000),
+这样你就能自己用鼠标和手臂互动了, 有没有很开心!
+
+<video class="tut-content-video" controls loop autoplay muted>
+  <source src="/static/results/reinforcement-learning/experiment_arm.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
 
 
