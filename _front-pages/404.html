@@ -9,9 +9,13 @@ description: "这里没有你所需要的页面哦"
 
 	<div class="pad-main">
 		<h1 style="font-size:5em; display:none;">404</h1>
-		<p style="text-align:center;">没有找到您的页面, 请检查网址是否正确, 或返回 <a href="/"><strong>莫烦Python</strong></a> 首页</p>
+		<p id="p-not-found" style="text-align:center;"></p>
+		<p style="text-align:center;">请检查网址是否正确, 或返回 <a href="/"><strong>莫烦Python</strong></a> 首页</p>
 	</div>
 
 </div>
 
+<script>
+	document.getElementById("p-not-found").innerHTML = "页面神秘消失: " + window.location.href;
+</script>
 
