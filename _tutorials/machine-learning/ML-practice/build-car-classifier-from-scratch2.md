@@ -99,9 +99,9 @@ sess.run(tf.group(tf.global_variables_initializer(), tf.local_variables_initiali
 {% include assign-heading.html %}
 
 搭建好图, 然后通过 tensorboard 检查一下有没有错误, 最后就能开始训练啦.
-通过4000次循环, 这里我们使用 Mini-batch update, 先随机生成 batch 的索引, 然后在 train_data 中选择数据当做这次的 batch.
-这样比较快. 还有更快的方式, 比如使用 epoch 在每次 epoch 的时候 shuffle 一次数据, 然后在这个 shuffle 完的数据中按先后索引 batch 数据.
-这都是使用 numpy 的经验之谈了.
+通过4000次循环, 这里我们使用 Mini-batch update, 先随机生成 batch 的索引, 然后在 train_data 中选择数据当作这次的 batch.
+这样运算起来比较快. 还有更快的方式, 比如使用 epoch 在每次 epoch 的时候 shuffle 一次数据, 然后在这个 shuffle 完的数据中按先后索引 batch 数据.
+这都是使用 numpy 进行 mini-batch 运行速度上的经验之谈了.
 
 ```python
 for t in range(4000):
@@ -123,7 +123,7 @@ for t in range(4000):
 {% include assign-heading.html %}
 
 可视化的代码, 我不在这里呈现了, 想看代码的朋友来我的 [github](https://github.com/MorvanZhou/train-classifier-from-scratch/blob/master/model.py){:target="_blank"}.
-这个可视化展示的是在整个训练过程中, 原本 target 有多少这种类型的数据, 我们发现, 其实每中车状况的数据量还是不同的,
+这个可视化展示的是在整个训练过程中, 原本 target 有多少这种类型的数据, 我们发现, 其实每种车状况的数据量还是不同的,
 虽然有点 [imbalance 的问题]({% link _tutorials/machine-learning/ML-intro/3-07-imbalanced-data.md %}),
 但是貌似模型没有被这种 imbalance 问题给带偏. 这是好事. 要不然, 我们还要对这套模型或者数据做手脚, 来解决 imbalance 问题.
 
