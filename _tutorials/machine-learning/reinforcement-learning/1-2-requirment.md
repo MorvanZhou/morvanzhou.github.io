@@ -5,7 +5,7 @@ bilibili_id: 16921335&page=4
 chapter: 1
 title: 课程要求
 publish-date: 2017-01-06
-thumbnail: "/static/thumbnail-small//rl/2_requirement.jpg"
+thumbnail: "/static/thumbnail-small/rl/2_requirement.jpg"
 description: "强化学习有一些现成的模块可以使用, 但是那些模块并不全面, 而且强化学习很依赖与你给予的学习环境.
 对于不同学习环境的强化学习, 可能 RL 的代码就不同. 所以我们要抱着以不变应万变的心态, 用基础的模块, 从基础学起.
 懂了原理, 再复杂的环境也不在话下.

@@ -4,7 +4,7 @@ youtube_id: 4IuaU08Wuq0
 bilibili_id: 15997678&page=30
 title: 为什么 Torch 是动态的
 publish-date: 2017-05-27
-thumbnail: "/static/thumbnail-small//torch/5.1_dynamic.jpg"
+thumbnail: "/static/thumbnail-small/torch/5.1_dynamic.jpg"
 chapter: 5
 description: "听说过 Torch 的人都听说了 torch 是动态的, 那他的动态到底是什么呢? 我们用一个 RNN 的例子来展示一下动态计算到底长什么样.
 对比静态动态, 我们就得知道谁是静态的. 在流行的神经网络模块中, Tensorflow 就是最典型的静态计算模块.

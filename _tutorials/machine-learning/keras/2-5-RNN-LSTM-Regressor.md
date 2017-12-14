@@ -8,7 +8,7 @@ description: "使用 LSTM RNN 来预测一个 sin, cos 曲线. 这次我们使�
 publish-date: 2016-10-30
 author: Mark JingNB
 chapter: 2
-thumbnail: "/static/thumbnail-small//keras/08RNN2.jpg"
+thumbnail: "/static/thumbnail-small/keras/08RNN2.jpg"
 post-headings:
   - 生成序列
   - 搭建模型

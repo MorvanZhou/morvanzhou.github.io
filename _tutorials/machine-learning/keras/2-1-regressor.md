@@ -7,7 +7,7 @@ description: "用简单的几句语句就能搭建好 keras 的一个神经网�
 author: Alice
 publish-date: 2016-10-29
 chapter: 2
-thumbnail: "/static/thumbnail-small//keras/04regressor.jpg"
+thumbnail: "/static/thumbnail-small/keras/04regressor.jpg"
 post-headings:
   - 导入模块并创建数据
   - 建立模型

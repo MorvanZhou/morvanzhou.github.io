@@ -4,7 +4,7 @@ youtube_id: 6k2hp7-5vkc
 bilibili_id: 15997678&page=15
 title: 批训练
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail-small//torch/3-5_train_batch.jpg"
+thumbnail: "/static/thumbnail-small/torch/3-5_train_batch.jpg"
 chapter: 3
 description: "Torch 中提供了一种帮你整理你的数据结构的好东西, 叫做 DataLoader, 我们能用它来包装自己的数据,
 进行批训练. 而且批训练可以有很多种途径, 详情请见 我制作的 训练优化器 动画简介.

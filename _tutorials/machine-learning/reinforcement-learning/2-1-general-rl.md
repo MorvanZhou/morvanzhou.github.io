@@ -4,7 +4,7 @@ youtube_id: OkGFJE_XDzI
 bilibili_id: 16921335&page=5
 chapter: 2
 title: 小例子
-thumbnail: "/static/thumbnail-small//rl/2.1_example.jpg"
+thumbnail: "/static/thumbnail-small/rl/2.1_example.jpg"
 publish-date: 2017-01-09
 description: "这一次我们会用 tabular Q-learning 的方法实现一个小例子, 例子的环境是一个一维世界, 在世界的右边有宝藏,
 探索者只要得到宝藏尝到了甜头, 然后以后就记住了得到宝藏的方法, 这就是他用强化学习所学习到的行为."

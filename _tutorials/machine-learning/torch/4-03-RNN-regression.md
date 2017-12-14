@@ -4,7 +4,7 @@ youtube_id: CA27ONB8SQ4
 bilibili_id: 15997678&page=23
 title: RNN 循环神经网络 (回归)
 publish-date: 2017-05-11
-thumbnail: "/static/thumbnail-small//torch/4.3_RNN_regressor.jpg"
+thumbnail: "/static/thumbnail-small/torch/4.3_RNN_regressor.jpg"
 chapter: 4
 description: "循环神经网络让神经网络有了记忆, 对于序列话的数据,循环神经网络能达到更好的效果.
 上次我们提到了用 RNN 的最后一个时间点输出来判断之前看到的图片属于哪一类, 这次我们来真的了, 用 RNN 来及时预测 sin 和 cos 的时间序列."

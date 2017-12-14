@@ -4,7 +4,7 @@ youtube_id: _B2oMdOVVJc
 bilibili_id: 16921335&page=31
 chapter: 6
 title: Distributed Proximal Policy Optimization (DPPO) (Tensorflow)
-thumbnail: "/static/thumbnail-small//rl/6.4_PPO.jpg"
+thumbnail: "/static/thumbnail-small/rl/6.4_PPO.jpg"
 publish-date: 2017-08-28
 description: "根据 OpenAI 的官方博客, PPO 已经成为他们在强化学习上的默认算法.
 如果一句话概括 PPO:

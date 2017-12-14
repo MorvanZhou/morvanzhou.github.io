@@ -4,7 +4,7 @@ youtube_id: 9yuL-vuiOO0
 bilibili_id: 16926245&page=8
 title: 进化策略
 publish-date: 2017-08-28
-thumbnail: "/static/thumbnail-small//evolutionary-algorithm/31es.jpg"
+thumbnail: "/static/thumbnail-small/evolutionary-algorithm/31es.jpg"
 chapter: 3
 description: "进化策略 (Evolution Strategy) 后面都简称 ES. 它和 遗传算法 GA 是好兄弟. 步骤和流程都非常相似.
 如果你对遗传算法也感兴趣, 前面几节内容都是有关于遗传算法的.

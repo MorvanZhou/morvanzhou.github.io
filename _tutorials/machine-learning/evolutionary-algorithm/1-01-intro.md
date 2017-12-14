@@ -7,7 +7,7 @@ description: "进化 Evolution, 可以说是人类历史上伟大的发现之一
 那, 现在想象一下, 如果你的程序也能进化, 也用适者生存, 不适者淘汰的原则生长出一个牛逼的物种,
 是不是很开心, 是不是很激动! 反正这就是我为什么会对这类算法特别感兴趣的原因之一了."
 publish-date: 2017-08-12
-thumbnail: "/static/thumbnail-small//evolutionary-algorithm/11ea.jpg"
+thumbnail: "/static/thumbnail-small/evolutionary-algorithm/11ea.jpg"
 chapter: 1
 post-headings:
   - 要点

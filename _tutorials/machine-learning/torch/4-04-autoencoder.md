@@ -4,7 +4,7 @@ youtube_id: V7VgLkEgXVY
 bilibili_id: 15997678&page=25
 title: AutoEncoder (自编码/非监督学习)
 publish-date: 2017-05-11
-thumbnail: "/static/thumbnail-small//torch/4.4_autoencoder.jpg"
+thumbnail: "/static/thumbnail-small/torch/4.4_autoencoder.jpg"
 chapter: 4
 description: "神经网络也能进行非监督学习, 只需要训练数据, 不需要标签数据. 自编码就是这样一种形式.
 自编码能自动分类数据, 而且也能嵌套在半监督学习的上面, 用少量的有标签样本和大量的无标签样本学习.

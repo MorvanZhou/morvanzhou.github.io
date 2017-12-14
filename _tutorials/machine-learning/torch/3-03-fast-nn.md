@@ -4,7 +4,7 @@ youtube_id: yqo9-lWTdOk
 bilibili_id: 15997678&page=13
 title: 快速搭建法
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail-small//torch/3-3_nn_fast.jpg"
+thumbnail: "/static/thumbnail-small/torch/3-3_nn_fast.jpg"
 chapter: 3
 description: "Torch 中提供了很多方便的途径, 同样是神经网络, 能快则快, 我们看看如何用更简单的方式搭建同样的回归神经网络.
 我们先看看之前写神经网络时用到的步骤. 我们用 net1 代表这种方式搭建的神经网络.

@@ -8,7 +8,7 @@ description: "PyTorch 是 Torch 在 Python 上的衍生. 因为 Torch 是一个�
 是的 PyTorch 一出生就引来了剧烈的反响. 为什么呢?
 很简单, 我们就看看有谁在用 PyTorch 吧."
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail-small//torch/1_why.jpg"
+thumbnail: "/static/thumbnail-small/torch/1_why.jpg"
 chapter: 1
 post-headings:
   - 为什么用 PyTorch

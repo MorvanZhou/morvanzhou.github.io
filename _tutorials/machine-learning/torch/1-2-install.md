@@ -4,7 +4,7 @@ youtube_id: JIGkxYmLPPY
 bilibili_id: 15997678&page=6
 title: Pytorch 安装
 publish-date: 2017-05-05
-thumbnail: "/static/thumbnail-small//torch/1-2_install.jpg"
+thumbnail: "/static/thumbnail-small/torch/1-2_install.jpg"
 chapter: 1
 description: "PyTorch 暂时只支持 MacOS, Linux.
 暂不支持 Windows! (可怜的 Windows 同学们.. 又被抛弃了). 不过说不定像 Tensorflow 一样, 因为 Windows 用户的强烈要求, 他们在某天就突然支持了."

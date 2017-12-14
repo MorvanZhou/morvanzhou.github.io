@@ -4,7 +4,7 @@ youtube_id: ZfmXTsaW3Lo
 bilibili_id: 15997678&page=14
 title: 保存提取
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail-small//torch/3-4_save_reload.jpg"
+thumbnail: "/static/thumbnail-small/torch/3-4_save_reload.jpg"
 chapter: 3
 description: "训练好了一个模型, 我们当然想要保存它, 留到下次要用的时候直接提取直接用, 这就是这节的内容啦.
 我们用回归的神经网络举例实现保存提取. 我们快速地建造数据, 搭建网络:

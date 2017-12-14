@@ -4,7 +4,7 @@ youtube_id: 9sJG7LjGCnI
 bilibili_id: 15999975
 title: 神经网络 梯度下降
 chapter: 2
-thumbnail: "/static/thumbnail-small//ML-intro/gradient_descent.png"
+thumbnail: "/static/thumbnail-small/ML-intro/gradient_descent.png"
 publish-date: 2017-06-29
 description: "神经网络是当今为止最流行的一种深度学习框架, 他的基本原理也很简单, 就是一种梯度下降机制. 我们今天就来看看这神奇的优化模式吧.学习机器学习的同学们常会遇到这样的图像, 我了个天, 看上去好复杂, 哈哈, 不过还挺好看的. 这些和我们说的梯度下降又有什么关系呢? 原来这些图片展示出来了一个家族的历史, 这个家族的名字就是-”optimization” (优化问题). 优化能力是人类历史上的重大突破, 他解决了很多实际生活中的问题. 从而渐渐演化成了一个庞大的家族."
 post-headings:

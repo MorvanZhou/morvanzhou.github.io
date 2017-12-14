@@ -5,7 +5,7 @@ bilibili_id: 16001891&page=42
 chapter: 5
 title: 用 Tensorflow 可视化梯度下降
 publish-date: 2017-07-01
-thumbnail: "/static/thumbnail-small//tf/tf25_gradient_descent.jpg"
+thumbnail: "/static/thumbnail-small/tf/tf25_gradient_descent.jpg"
 description: "这一次, 我们想要真正意义上的看到自己手中的模型是怎么样进行梯度下降 (gradient descent) 的. 打个比方就像下面这张图. 红色圆点就是最开始的参数误差.
 同时, 我们还可以扩展开来, 神经网络就是一种梯度下降的方法. 而梯度下降是一种最优化方法, 我们还能拿它来干点其它事. 比如说 **为公式调参**.
 我们会在下面具体讲解.

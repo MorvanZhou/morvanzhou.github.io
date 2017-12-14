@@ -4,7 +4,7 @@ youtube_id: FIZgQuOXk8g
 bilibili_id: 15997678&page=17
 title: Optimizer 优化器
 publish-date: 2017-05-06
-thumbnail: "/static/thumbnail-small//torch/3-6_optimizer.jpg"
+thumbnail: "/static/thumbnail-small/torch/3-6_optimizer.jpg"
 chapter: 3
 description: "这节内容主要是用 Torch 实践 这个 优化器 动画简介
 中起到的几种优化器, 这几种优化器具体的优势不会在这个节内容中说了, 所以想快速了解的话, 上面的那个动画链接是很好的去处.

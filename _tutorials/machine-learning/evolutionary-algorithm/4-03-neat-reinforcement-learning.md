@@ -4,7 +4,7 @@ youtube_id: ZgFzC7uBShM
 bilibili_id: 16926245&page=14
 title: NEAT 强化学习
 publish-date: 2017-09-23
-thumbnail: "/static/thumbnail-small//evolutionary-algorithm/43neat.jpg"
+thumbnail: "/static/thumbnail-small/evolutionary-algorithm/43neat.jpg"
 chapter: 4
 description: "我们见到了使用 NEAT 来进化出一个类似于监督学习中的神经网络, 这次我们用 NEAT 来做强化学习 (Reinforcement Learning), 这个强化学习可是没有反向传播的神经网络哦,
 有的只是一个不断进化 (还可能进化到主宰人类) 的神经网络!! (哈哈, 骗你的, 因为每次提到在电脑里进化, 联想到科幻片, 我就激动!)

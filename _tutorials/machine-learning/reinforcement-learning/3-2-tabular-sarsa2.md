@@ -4,7 +4,7 @@ youtube_id: sqpuf7hCC4c
 bilibili_id: 16921335&page=11
 chapter: 3
 title: Sarsa 思维决策
-thumbnail: "/static/thumbnail-small//rl/3.2_sarsa2.jpg"
+thumbnail: "/static/thumbnail-small/rl/3.2_sarsa2.jpg"
 publish-date: 2017-01-13
 description: "接着上节内容, 我们来实现 RL_brain 的 SarsaTable 部分, 这也是 RL 的大脑部分, 负责决策和思考.
 和之前定义 Qlearning 中的 QLearningTable 一样, 因为使用 tabular 方式的 Sarsa 和 Qlearning 的相似度极高,"

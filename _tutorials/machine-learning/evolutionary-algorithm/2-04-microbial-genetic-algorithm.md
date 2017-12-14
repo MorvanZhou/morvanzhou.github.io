@@ -4,7 +4,7 @@ youtube_id: jPt6-e_OiWE
 bilibili_id: 16926245&page=6
 title: Microbial Genetic Algorithm
 publish-date: 2017-08-12
-thumbnail: "/static/thumbnail-small//evolutionary-algorithm/24ga.jpg"
+thumbnail: "/static/thumbnail-small/evolutionary-algorithm/24ga.jpg"
 chapter: 2
 description: "说到遗传算法 (GA), 有一点不得不提的是如何有效保留好的父母 (Elitism), 让好的父母不会消失掉. 这也是永远都给自己留条后路的意思.
 Microbial GA (后面统称 MGA) 就是一个很好的保留 Elitism 的算法. 一句话来概括: 在袋子里抽两个球, 对比两个球, 把球大的放回袋子里, 把球小的变一下再放回袋子里,
