@@ -119,7 +119,6 @@ for t in range(4000):
 
 
 
-{% include google-in-article-ads.html %}
 
 {% include assign-heading.html %}
 
@@ -132,6 +131,8 @@ for t in range(4000):
   <source src="/static/results/ML-practice/car_classifier1-1.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+
+{% include google-in-article-ads.html %}
 
 好啦, 我们现在就已经成功的走过了一遍分类器的实践. 我们发现, 在机器学习中, 搭建模型和训练并不一定是最难的地方,
 很多时候处理和分析数据也是很麻烦很繁琐的. 我们需要把握数据的规律, 寻找数据的正确表达形式. 好让神经网络比较容易接受.
