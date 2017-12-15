@@ -73,11 +73,11 @@ post-headings:
 class DDPG(object):
     def save(self):     # 保存功能
         saver = tf.train.Saver()
-        saver.save(self.sess, 'params', write_meta_graph=False)
+        saver.save(self.sess, './params', write_meta_graph=False)
 
     def restore(self):  # 提取功能
         saver = tf.train.Saver()
-        saver.restore(self.sess, 'params')
+        saver.restore(self.sess, './params')
 ```
 
 使用的时候我们可以对应上在 `main.py` 中的 training 和 test 时段分别进行. 比如 training 完了我们保存网络, 开始 test 的时候提取保存过的网络.
