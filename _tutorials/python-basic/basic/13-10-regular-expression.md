@@ -188,7 +188,7 @@ print(re.search(r"^I", string, flags=re.M))     # <_sre.SRE_Match object; span=(
 具体可以分为这三种:
 
 * `*` : 重复零次或多次
-* `.` : 重复一次或多次
+* `+` : 重复一次或多次
 * `{n, m}` : 重复 n 至 m 次
 * `{n}` : 重复 n 次
 
