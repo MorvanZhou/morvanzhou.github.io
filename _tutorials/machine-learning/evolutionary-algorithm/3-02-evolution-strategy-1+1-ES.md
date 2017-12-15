@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
 
-* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1){:target="_blank"}-ES.py)
+* [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/(1%2B1)-ES.py){:target="_blank"}
 * [我制作的 什么是进化策略 动画简介]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
 
  {% include assign-heading.html %}
