@@ -14,6 +14,9 @@ post-headings:
   - 两者区别总结
 ---
 
+学习资料:
+* Python 做神经网络 [Tensorflow 教程](/tutorials/machine-learning/tensorflow/)
+* Python 做神经网络 [Pytorch 教程](/tutorials/machine-learning/torch/)
 
 
 {% include assign-heading.html %}

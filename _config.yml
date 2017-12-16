@@ -28,6 +28,7 @@ defaults:
       path: "_front-pages"
     values:
       layout: front-page
+      enable_ads: true
 
   - scope:
       path: "_modules-intro"
@@ -46,6 +47,7 @@ defaults:
       editor: 莫烦
       author: 莫烦
       author-link: "#"
+      enable_ads: true
       published: true  #TOD: change back to true
 
   # module descriptions
