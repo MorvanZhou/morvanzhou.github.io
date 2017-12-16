@@ -29,12 +29,17 @@
 
 <div class="switch-video-div">
 	视频源：
+	{% if page.youtube_id %}
 	<button class="switch-video-btn" onclick="chooseVideo(youtube_src, 'youtube', '{{page.youtube_id}}')">
 		YouTube
 	</button>
+	{% endif %}
+
+	{% if page.youku_id %}
   <button class="switch-video-btn" onclick="chooseVideo(youku_src, 'youku', '{{page.youku_id}}')">
     优酷
   </button>
+	{% endif %}
 
 	{% if page.bilibili_id %}
 	<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}')">
