@@ -78,8 +78,8 @@ torch:
 
 ML-practice:
   chapter-names:
-    - 汽车状态分类器
     - 强化学习机器人手臂
+    - 汽车状态分类器
 
 
 git:

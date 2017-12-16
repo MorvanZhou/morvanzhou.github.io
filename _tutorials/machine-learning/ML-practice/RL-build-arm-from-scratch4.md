@@ -8,7 +8,7 @@ description: "在上节中,
 我们需要按照自己环境的要求挑选适合于这个环境的学习方法."
 publish-date: 2017-11-22
 thumbnail: "/static/thumbnail-small/ML-practice/arm4.jpg"
-chapter: 2
+chapter: 1
 post-headings:
   - 选择RL方法
   - 保存提取网络

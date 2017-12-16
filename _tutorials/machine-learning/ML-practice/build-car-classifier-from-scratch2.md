@@ -7,7 +7,7 @@ description: "上次我们已经处理好了需要用到的数据, 这就已经�
 大多数人都感叹, 如果搭建模型训练花了10分钟, 那处理数据就得花一天. 哈哈哈. 你已经攻克了最难的地方了. 这节内容, 就是非常容易, 我们搭建一个模型, 训练, 并可视化它."
 publish-date: 2017-12-14
 thumbnail: "/static/thumbnail-small/ML-practice/car_classifier2.jpg"
-chapter: 1
+chapter: 2
 post-headings:
   - 导入数据
   - 搭建网络

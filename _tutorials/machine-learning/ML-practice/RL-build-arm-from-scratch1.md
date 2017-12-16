@@ -8,7 +8,7 @@ description: "做这个实践的主要目的就是让我们活学活用, 从0开
 但是搭建模拟环境, 调整参数也同样重要. 所以我们在这个系列中将会做到这些, 让你真正意义上入门了强化学习."
 publish-date: 2017-11-22
 thumbnail: "/static/thumbnail-small/ML-practice/arm1.jpg"
-chapter: 2
+chapter: 1
 post-headings:
   - 为什么做这个实践
   - 要做成怎样

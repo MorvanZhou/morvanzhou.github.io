@@ -7,7 +7,7 @@ description: "上次我们搭建好了一个静态的环境, 整个环境还没�
 这次我们结合手臂的运动部分和手臂的成像部分来写全整个手臂的摆动规则. 并且通过不断地可视化来测试是否写错."
 publish-date: 2017-11-22
 thumbnail: "/static/thumbnail-small/ML-practice/arm3.jpg"
-chapter: 2
+chapter: 1
 post-headings:
   - 建立手臂信息
   - 矩形手臂的点坐标
