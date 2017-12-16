@@ -1,5 +1,5 @@
 ---
-youku_id:
+youku_id: XMzIzNjE5OTE3Mg
 youtube_id: 7__jPfjFuR4
 bilibili_id: 17310310&page=1
 title: "从头开始做一个汽车状态分类器1: 分析数据"
