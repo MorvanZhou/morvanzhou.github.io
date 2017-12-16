@@ -31,8 +31,6 @@
   <!-- mathjax supported -->
   <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>-->
 
-  <!-- 360 analysis -->
-  <!--<script type="text/javascript" src="//s.union.360.cn/195005.js" async defer></script>-->
 
   {% if layout.structured-type == "BlogPosting" %}
   <!-- google post page data -->
@@ -80,7 +78,7 @@
   {% endif %}
 
   <!-- click dropdown -->
-  <script>
+  <script type="text/javascript">
   $(document).ready(function(){
     $('.clicker').on("click", function(e){
       $(this).next('.dropdown-content').toggle();
@@ -101,7 +99,7 @@
   </footer>
 
   <!-- lazy load image (must at the end) -->
-  <script>
+  <script type="text/javascript">
   var allimages = document.getElementsByClassName("lazy-img");
 
   for (var i=0; i<allimages.length; i++) {
@@ -115,8 +113,8 @@
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108653085-1"></script>
-  <script>
+  <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-108653085-1"></script>
+  <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -128,7 +126,7 @@
   <script type="text/javascript" src="//tajs.qq.com/stats?sId=63906388" charset="UTF-8"></script>
 
   <!-- FB -->
-  <script>
+  <script type="text/javascript">
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '2053270218284962',

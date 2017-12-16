@@ -47,19 +47,35 @@ youku_id: XMTg1MTYwNDg2OA
 	<p>bilibili iframe h5: http://www.bilibili.com/blackboard/player.html?aid=16944429&page=1&as_wide=1</p>
 	<div class="video-container">
 		<iframe
-				width="780" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+				width="780" height="480" frameborder="0" allowfullscreen
 				src="https://www.bilibili.com/blackboard/player.html?aid=16944429&page=1&as_wide=1">
 		</iframe>
 	</div>
 </div>
 
+<div class="section">
+	<p>bilibili iframe h5: https://www.bilibili.com/blackboard/html5player.html?aid=3521416&cid=6041635</p>
+	<div class="video-container">
+		<iframe
+				frameborder="0" allowfullscreen
+				src="https://www.bilibili.com/blackboard/html5player.html?aid=3521416&cid=6041635">
+		</iframe>
+	</div>
+</div>
 
+
+<script type="text/javascript">
+	if(!FlashDetect.installed){
+		$("#myVideoTest").remove();
+		alert("No Flash");
+	}
+</script>
 
 <div class="section">
 	<p id="check3">测试3, bilibili iframe flash</p>
 	<iframe
 			id="myVideoTest"
-			class="myvideo" width="560" height="410"
+			class="myvideo" width="780" height="480"
 			src="https://static.hdslb.com/miniloader.swf?aid=16797357&page=1"
 			frameborder="0" allowfullscreen></iframe>
 </div>
@@ -97,11 +113,5 @@ function myFunction() {
 
 <!--var src2 = "http://player.youku.com/embed/{{page.youku_id}}==";-->
 
-<script type="text/javascript">
-	if(!FlashDetect.installed){
-		alert("No Flash");
-		$("#myVideoTest").remove();
-	}
-</script>
 
 
