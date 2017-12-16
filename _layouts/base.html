@@ -6,8 +6,15 @@
   <meta name="description" content="{{ page.description }}">
   <meta name="keywords" content="莫烦,python,tutorial,machine learning,{{ page.keywords }}">
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
-  <meta name="thumbnail" content="{{ site.baseurl }}{{ page.thumbnail }}" />
+  <meta name="thumbnail" content="{{ page.thumbnail }}" />
   <title>{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python</title>
+
+  <meta property="og:site_name" content="莫烦Python"/>
+  <meta property="og:title" content='{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python' />
+  <meta property="og:description" content="{{ page.description }}"/>
+  <meta property="og:image" content="{{ page.thumbnail }}">
+  <meta property="og:url" content="{{page.url}}">
+  <meta property="og:type" content="blog"/>
 
   <link href="/stylesheets/page-style.css" type="text/css" rel="stylesheet">
   <link href="/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
