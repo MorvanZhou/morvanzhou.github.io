@@ -1,6 +1,5 @@
 ---
 enable_ads: false
-published: true
 youku_id:
 youtube_id:
 bilibili_id:
@@ -9,7 +8,7 @@ description: "学习爬虫, 首先要懂的是网页. 支撑起各种光鲜亮�
 这种代码我们称之为 HTML, HTML 是一种浏览器(Chrome, Safari, IE, Firefox等)看得懂的语言, 浏览器能将这种语言转换成我们用肉眼看到的网页.
 所以 HTML 里面必定存在着很多规律, 我们的爬虫就能按照这样的规律来爬取你需要的信息."
 publish-date:
-thumbnail: "/static/thumbnail-small/data-manipulation/"
+thumbnail: "/static/thumbnail-small/data-manipulation/1-1 html.jpg"
 chapter: 1
 post-headings:
   - 网络基本组成部分
