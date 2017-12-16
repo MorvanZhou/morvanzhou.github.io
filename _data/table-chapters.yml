@@ -13,6 +13,10 @@ plt:
     - 多图合并显示
     - 动画
 
+scraping:
+  chapter-names:
+    - 爬虫简介
+
 evolutionary-algorithm:
   chapter-names:
     - 算法简介
