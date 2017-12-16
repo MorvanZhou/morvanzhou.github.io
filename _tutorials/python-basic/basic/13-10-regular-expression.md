@@ -25,6 +25,7 @@ description: "正则表达式 (Regular Expression) 又称 RegEx, 是用来匹配
 学习资料:
 * [本节全部代码](https://github.com/MorvanZhou/tutorials/blob/master/basic/36_RegEx.py){:target="_blank"}
 * [代码的 notebook 形式](https://github.com/MorvanZhou/tutorials/blob/master/basic/36_regex.ipynb){:target="_blank"}
+* [网页爬虫教程](/tutorials/data-manipulation/scraping/)
 
 正则表达式 (Regular Expression) 又称 RegEx, 是用来匹配字符的一种工具. 在一大串字符中寻找你需要的内容.
 它常被用在很多方面, 比如网页爬虫, 文稿整理, 数据筛选等等. 最简单的一个例子, 比如我需要爬取网页中每一页的标题.
