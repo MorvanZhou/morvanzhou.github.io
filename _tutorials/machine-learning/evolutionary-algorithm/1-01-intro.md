@@ -85,7 +85,7 @@ EA 包括了很多种类的算法, 但是这些算法的精髓都是围绕着达
 
 {% include tut-image.html image-name="2-1-0.gif" %}
 
-旅行商人的[最短路劲]({% link _tutorials/machine-learning/evolutionary-algorithm/2-03-genetic-algorithm-travel-sales-problem.md %})问题:
+旅行商人的[最短路径]({% link _tutorials/machine-learning/evolutionary-algorithm/2-03-genetic-algorithm-travel-sales-problem.md %})问题:
 
 {% include tut-image.html image-name="2-3-0.gif" %}
 

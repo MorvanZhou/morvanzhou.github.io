@@ -60,7 +60,7 @@ post-headings:
 
 计算 fitness 的时候, 我们只要将 DNA 中这几个城市连成线, 计算一下总路径的长度, 根据长度,
 我们定下规则, 越短的总路径越好, 下面的 `fitness0` 就用来计算 fitness 啦.
-因为越短的路劲我们更要价大幅度选择, 所以这里我用到了 `fitness1` 这种方式.
+因为越短的路径我们更要价大幅度选择, 所以这里我用到了 `fitness1` 这种方式.
 
 ```python
 fitness0 = 1/total_distance

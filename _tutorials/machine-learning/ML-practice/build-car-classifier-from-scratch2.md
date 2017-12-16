@@ -34,7 +34,9 @@ post-headings:
 
 {% include assign-heading.html %}
 
-我们使用 tensorflow 搭建神经网络, 使用 matplotlib 可视化学习过程, 使用之前写好的 data_processing 来导入, 加工数据.
+我们使用 tensorflow 搭建神经网络 ([Tensorflow 教程]({% link _tutorials/machine-learning/tensorflow/1-1-why.md %})),
+其实你也可以按我的 [Pytorch 教程]({% link _tutorials/machine-learning/torch/1-1-why.md %})
+使用 Pytorch 来编写这个网络, 没太多差别. 然后使用 matplotlib 可视化学习过程, 使用之前写好的 data_processing 来导入, 加工数据.
 因为我们的数据都是类别数据, 所以我们将要使用的数据都是 onehot 形式的数据.
 
 ```python
