@@ -321,3 +321,11 @@ background-color: #44a371;
 color: var(--c-green-hover);
 color:white;
 }
+
+/* ======== ads ======== */
+#under-title-ads {
+float: right;
+height: 250px;
+width:250px;
+margin: 0 0 1em 1em;
+}
