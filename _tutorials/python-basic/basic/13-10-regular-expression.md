@@ -304,7 +304,7 @@ print(compiled_re.search("dog ran to cat"))  # <_sre.SRE_Match object; span=(4, 
 
 {% include assign-heading.html %}
 
-为了大家方便记忆, 我很久以前在网上找到了一份小抄, 我将小抄复制在这里, 但是我不记得小抄是从哪来的了,
-所以如果你知道这个的原出处, 可以转告我, 我附一个链接.
+为了大家方便记忆, 我很久以前在网上找到了一份小抄, 这个小抄的原出处应该是[这里](https://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html){:target="_blank"}.
+ 小抄很有用, 不记得的时候回头方便看.
 
 {% include tut-image.html image-name="13-10-01.png" %}
