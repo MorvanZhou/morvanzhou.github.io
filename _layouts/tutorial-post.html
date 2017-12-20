@@ -38,19 +38,28 @@ structured-type: BlogPosting
       <div class="tut-main-content-pad">
         <br>
         <h1>{{page.title}}</h1>
-        <p style="text-align: center;">
+        <div style="text-align: center;">
+          作者:
+          <span class="author" >
           {% if page.author-link != "#" %}
-            作者: <a href="{{page.author-link}}" target="_blank"><strong>{{page.author}}</strong></a> &nbsp;&nbsp;
+            <a href="{{page.author-link}}" target="_blank">{{page.author}}</a>
           {% else %}
-            作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+            {{page.author}}
           {% endif %}
-          编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
+          </span>
+          编辑:
+          <span class="editor">
+            {{page.editor}}
+          </span>
+          <span class="publish-date">
           {% if page.publish-date %}
             {{page.publish-date}}
           {% else %}
             2016-11-03
           {% endif %}
-        </p>
+          </span>
+
+        </div>
 
         {% if page.enable_ads %}
         <!-- under title ads -->

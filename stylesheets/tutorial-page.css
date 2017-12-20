@@ -195,6 +195,11 @@ position: fixed;
 margin-left: 0.5em;
 }
 
+.author, .editor, .publish-date {
+font-weight: bold;
+padding: 0 1em 0 0;
+}
+
 
 /* ======= tutorial right part ====== */
 .tut-table-content-nav {
