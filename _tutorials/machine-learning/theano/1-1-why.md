@@ -12,7 +12,7 @@ post-headings:
 
 
 学习资料:
-  * Tensorflow [教程](/tutorials/machine-learing/tensorflow/)
+  * Tensorflow [教程](/tutorials/machine-learning/tensorflow/)
   * Theano [官方网站](http://deeplearning.net/software/theano/){:target="_blank"}
 
 Theano 是神经网络python机器学习的模块，和 Tensowflow 类似。
