@@ -7,8 +7,8 @@ title: 了解网页结构
 description: "学习爬虫, 首先要懂的是网页. 支撑起各种光鲜亮丽的网页的不是别的, 全都是一些代码.
 这种代码我们称之为 HTML, HTML 是一种浏览器(Chrome, Safari, IE, Firefox等)看得懂的语言, 浏览器能将这种语言转换成我们用肉眼看到的网页.
 所以 HTML 里面必定存在着很多规律, 我们的爬虫就能按照这样的规律来爬取你需要的信息."
-publish-date:
-thumbnail: "/static/thumbnail-small/data-manipulation/1-1 html.jpg"
+publish-date: 2017-12-29
+thumbnail: "/static/thumbnail-small/scraping/1-1 html.jpg"
 chapter: 1
 post-headings:
   - 网络基本组成部分
@@ -17,7 +17,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](#){:target="_blank"}
+  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/1-1-urllib.ipynb){:target="_blank"}
   * 本节使用的爬虫[测试网页](/static/scraping/basic-structure.html)
 
 
@@ -48,7 +48,8 @@ CSS 和 JavaScript 会在后期简单介绍一下. 因为爬网页的时候多�
 
 {% include tut-image.html image-name="1-1-1.png" %}
 
-想问我是如何看到 HTML 的 source code 的? 其实很简单, 在你的浏览器中, 显示网页的地方, 点击鼠标右键,
+想问我是如何看到 HTML 的 source code 的? 其实很简单, 在你的浏览器中 (我用的是 [Google Chrome](https://www.google.com.au/chrome/browser/desktop/){:target="_blank"}),
+显示网页的地方, 点击鼠标右键,
 大多数浏览器都会有类似这样一个选项 "View Page Source". 点击它就能看到页面的源码了.
 
 {% include tut-image.html image-name="1-1-2.png" %}
@@ -168,4 +169,14 @@ print("\nAll links: ", res)
 ```
 
 
-下次我们就来看看为了图方面, 我们如何使用 BeautifulSoup.
+[下次]({% link _tutorials/data-manipulation/scraping/2-01-beautifulsoup-basic.md %})我们就来看看为了图方面, 我们如何使用 BeautifulSoup.
+
+
+
+*相关教程*
+
+* *[了解网页结构]({% link _tutorials/data-manipulation/scraping/1-01-understand-website.md %})*
+* *[BeautifulSoup 解析网页: 基础]({% link _tutorials/data-manipulation/scraping/2-01-beautifulsoup-basic.md %})*
+* *[BeautifulSoup 解析网页: CSS]({% link _tutorials/data-manipulation/scraping/2-02-beautifulsoup-css.md %})*
+* *[BeautifulSoup 解析网页: 正则表达]({% link _tutorials/data-manipulation/scraping/2-03-beautifulsoup-regex.md %})*
+* *[小练习: 爬百度百科]({% link _tutorials/data-manipulation/scraping/2-04-practice-baidu-baike.md %})*

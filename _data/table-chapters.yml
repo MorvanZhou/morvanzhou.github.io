@@ -16,6 +16,10 @@ plt:
 scraping:
   chapter-names:
     - 爬虫简介
+    - BeautifulSoup 解析网页
+    - 更多请求/下载方式
+    - 加速你的爬虫
+    - 高级爬虫
 
 evolutionary-algorithm:
   chapter-names:
