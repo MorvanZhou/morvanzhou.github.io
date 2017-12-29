@@ -9,9 +9,7 @@ publish-date:
 thumbnail: "/static/thumbnail-small/scraping/3-1 requests.jpg"
 chapter: 3
 post-headings:
-  - 安装
-  - 用 Python 登录网页
-  - 匹配网页内容
+  - 1
 ---
 
 学习资料:
@@ -24,17 +22,15 @@ post-headings:
 
 
 
-{% include assign-heading.html %}
+<!-- {% include assign-heading.html %} -->
 
-安装, pip install requests
+<!-- 安装, pip install requests -->
 
-{% include tut-image.html image-name="1-1-1.png" %}
-
-
-
-{% include google-in-article-ads.html %}
+<!-- {% include tut-image.html image-name="1-1-1.png" %} -->
 
 
+
+<!-- {% include google-in-article-ads.html %} -->
 
 
 
@@ -42,11 +38,13 @@ post-headings:
 
 
 
-{% include assign-heading.html %}
+
+
+<!-- {% include assign-heading.html %} -->
 
 
 
-{% include assign-heading.html %}
+<!-- {% include assign-heading.html %} -->
 
 
 

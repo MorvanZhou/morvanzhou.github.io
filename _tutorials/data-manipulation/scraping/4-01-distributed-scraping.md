@@ -9,9 +9,7 @@ publish-date:
 thumbnail: "/static/thumbnail-small/scraping/4-1 distributed.jpg"
 chapter: 4
 post-headings:
-  - 网络基本组成部分
-  - 用 Python 登录网页
-  - 匹配网页内容
+  - 1
 ---
 
 学习资料:
@@ -24,29 +22,29 @@ post-headings:
 
 
 
-{% include assign-heading.html %}
+<!-- {% include assign-heading.html %} -->
 
 
 
-{% include tut-image.html image-name="1-1-1.png" %}
+<!-- {% include tut-image.html image-name="1-1-1.png" %} -->
 
 
 
-{% include google-in-article-ads.html %}
-
-
-
-
+<!-- {% include google-in-article-ads.html %} -->
 
 
 
 
 
-{% include assign-heading.html %}
 
 
 
-{% include assign-heading.html %}
+
+<!-- {% include assign-heading.html %} -->
+
+
+
+<!-- {% include assign-heading.html %} -->
 
 
 

@@ -9,10 +9,7 @@ publish-date:
 thumbnail: "/static/thumbnail-small/data-manipulation/5-1 selenium.jpg"
 chapter: 5
 post-headings:
-  - Asyncio 库
-  - 基本用法
-  - aiohttp
-  - 和多进程分布式爬虫对比
+  - 1
 ---
 
 学习资料:
@@ -22,29 +19,29 @@ post-headings:
 
 
 
-{% include assign-heading.html %}
+<!-- {% include assign-heading.html %} -->
 
 
 
-{% include tut-image.html image-name="1-1-1.png" %}
+<!-- {% include tut-image.html image-name="1-1-1.png" %} -->
 
 
 
-{% include google-in-article-ads.html %}
-
-
-
-
+<!-- {% include google-in-article-ads.html %} -->
 
 
 
 
 
-{% include assign-heading.html %}
 
 
 
-{% include assign-heading.html %}
+
+<!-- {% include assign-heading.html %} -->
+
+
+
+<!-- {% include assign-heading.html %} -->
 
 
 
