@@ -21,4 +21,5 @@
 - h1: ["实战", "/tutorials/machine-learning/ML-practice/"]
   h2:
     - ["从头做一个机器人手臂", "/tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1/"]
+    - ["从头做一个汽车状态分类器", "/tutorials/machine-learning/ML-practice/build-car-classifier-from-scratch1/"]
 
