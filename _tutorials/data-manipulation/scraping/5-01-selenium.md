@@ -7,7 +7,7 @@ title: "高级爬虫: 让 Selenium 控制你的浏览器帮你爬"
 description: "Selenium 是为了测试而出生的. 但是没想到到了爬虫的年代, 它摇身一变, 变成了爬虫的好工具.
 让我试着用一句话来概括 Seleninm: 它能控制你的浏览器, 有模有样地学人类看网页."
 publish-date: 2017-12-30
-thumbnail: "/static/thumbnail-small/data-manipulation/5-1 selenium.jpg"
+thumbnail: "/static/thumbnail-small/scraping/5-1 selenium.jpg"
 chapter: 5
 post-headings:
   - 安装 Selenium
