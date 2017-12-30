@@ -36,12 +36,12 @@ post-headings:
 计算机执行一些代码, 然后等待下载网页, 下好以后, 再执行一些代码... 或者在等待的时候, 用另外一个线程执行其他的代码, 这是多线程的手段. 那么 asyncio 就像右边,
 只使用一个线程, 但是将这些等待时间统统掐掉, 下载应该都调到了后台, 这个时间里, 执行其他异步的功能, 下载好了之后, 再调回来接着往下执行.
 
-{% include tut-image.html image-name="asnycio1.png" %}
+{% include tut-image.html image-name="4-2-1.png" %}
 
 如果换一张 Python 自家解释 asyncio 的图([来源](https://docs.python.org/3/library/asyncio-task.html){:target="_blank"}), 虽然稍微复杂一点, 但是就是和上图想要表达的是一个意思.
 
 
-{% include tut-image.html image-name="asnycio2.png" %}
+{% include tut-image.html image-name="4-2-2.png" %}
 
 那么, 我们今天就来尝试使用 asyncio 来替换掉 multiprocessing 或者 threading, 看看效果如何.
 
@@ -225,18 +225,18 @@ Async total time: 0.11447715759277344
 这样大大节省了下载和运算时间. 再看右边的这个 asyncio 的例子, 我们解析网页还是用的和 multiprocessing 那边一样的并行处理, 因为 asyncio 好像不支持解析网页的异步,
 毕竟是计算密集型工序. 然后不一样的地方是, 我们在下载网页时, 不用 multiprocessing, 改用 asyncio, 用一个单线程的东西挑战多进程.
 
-{% include tut-image.html image-name="asnycio3.png" %}
+{% include tut-image.html image-name="4-2-3.png" %}
 
 具体的代码可以在[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}详细观看, 需要注意的是, 我使用的内网进行测试(外网的下载速度变动太大),
 在下载网页的地方, 我使用 `sleep(0.1)` 的功能模拟了网页下载的延迟. 一共下载了我 莫烦 Python 的快400个网页.
 因为代码表达的内容我已经用上图展示给大家了, [每一个代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}都有50-60行, 我就不粘贴在这里了.
 具体的结果, 我们可以总结一下.
 
-| Process number | Time (Multiprocessing) | Time (Asyncio) |
-|:--------------:|------------------------|----------------|
-|        2       |          25.5s         |      7.5s      |
-|        4       |          15.4s         |      7.0s      |
-|        8       |          11.5s         |      7.2s      |
+| Number of Process| Multiprocessing | Asyncio |
+|:----------------:|:---------------:|:-------:|
+|         2        |       25.5s     |   7.5s  |
+|         4        |       15.4s     |   7.0s  |
+|         8        |       11.5s     |   7.2s  |
 
 我们发现, 如果 `Pool(n)` 里面的这个 n 越大, 多进程才能越快, 但是 asyncio 却不会特别受进程数的影响.
 一个单线程的东西居然战胜了多线程. 可见异步 asyncio 下载网页的重要性.

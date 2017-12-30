@@ -41,7 +41,7 @@ post-headings:
 
 {% include tut-image.html image-name="3-3-3.png" %}
 
-而却图片地址都是在 `<img>` 中.
+而图片地址都是在 `<img>` 中.
 
 ```
 <img src="http://image.nationalgeographic.com.cn/2017/1228/20171228030617696.jpg">

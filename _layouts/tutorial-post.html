@@ -145,7 +145,7 @@ structured-type: BlogPosting
                {% if page.post-headings %}
                 <ul style="padding-left: 1em;">
                   {% for heading in page.post-headings %}
-                  {% assign hid = heading | replace: " ", "" %}
+                  {% assign hid = heading | replace: " ", "-" %}
                     <li><a href="{{ page.url }}#{{ hid }}" style="color:#ffffff;">{{ heading }}</a> </li>
                   {% endfor %}
                 </ul>

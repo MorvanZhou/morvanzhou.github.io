@@ -143,6 +143,11 @@ color: white;
 }
 
 /* ======== inner page ======== */
+.tut-h2-a:link, .tut-h2-a:visited {
+color: var(--c-n);
+color:#4cb07b;
+}
+
 .course-summary-image {
 padding: 0;
 display:block;
