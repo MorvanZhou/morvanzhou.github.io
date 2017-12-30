@@ -59,3 +59,10 @@ post-headings:
 LSTM 就是为了解决这个问题而诞生的. LSTM 和普通 RNN 相比, 多出了三个控制器. (输入控制, 输出控制, 忘记控制). 现在, LSTM RNN 内部的情况是这样.
 
 他多了一个 控制全局的记忆, 我们用粗线代替. 为了方便理解, 我们把粗线想象成电影或游戏当中的 主线剧情. 而原本的 RNN 体系就是 分线剧情. 三个控制器都是在原始的 RNN 体系上, 我们先看 输入方面 , 如果此时的分线剧情对于剧终结果十分重要, 输入控制就会将这个分线剧情按重要程度 写入主线剧情 进行分析. 再看 忘记方面, 如果此时的分线剧情更改了我们对之前剧情的想法, 那么忘记控制就会将之前的某些主线剧情忘记, 按比例替换成现在的新剧情. 所以 主线剧情的更新就取决于输入 和忘记 控制. 最后的输出方面, 输出控制会基于目前的主线剧情和分线剧情判断要输出的到底是什么.基于这些控制机制, LSTM 就像延缓记忆衰退的良药, 可以带来更好的结果.
+
+
+*Python相关教程*
+
+* *Tensorflow RNN [例子]({% link _tutorials/machine-learning/tensorflow/5-08-RNN2.md %})*
+* *PyTorch RNN [例子]({% link _tutorials/machine-learning/torch/4-02-RNN-classification.md %})*
+* *Keras [快速搭建 RNN]({% link _tutorials/machine-learning/keras/2-4-RNN-classifier.md %})*

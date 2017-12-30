@@ -74,3 +74,9 @@ RNN 的形式不单单这有这样一种, 他的结构形式很自由. 如果用
 或者是语言翻译的 RNN, 给出一段英文, 然后再翻译成中文.
 
 有了这些不同形式的 RNN, RNN 就变得强大了. 有很多有趣的 RNN 应用. 比如之前提到的, 让 RNN 描述照片. 让 RNN 写学术论文, 让 RNN 写程序脚本, 让 RNN 作曲. 我们一般人甚至都不能分辨这到底是不是机器写出来的.
+
+*Python相关教程*
+
+* *Tensorflow RNN [例子]({% link _tutorials/machine-learning/tensorflow/5-08-RNN2.md %})*
+* *PyTorch RNN [例子]({% link _tutorials/machine-learning/torch/4-02-RNN-classification.md %})*
+* *Keras [快速搭建 RNN]({% link _tutorials/machine-learning/keras/2-4-RNN-classifier.md %})*

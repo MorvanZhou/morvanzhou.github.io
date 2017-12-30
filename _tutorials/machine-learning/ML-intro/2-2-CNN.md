@@ -70,4 +70,13 @@ post-headings:
 
 {% include tut-image.html image-name="cnn6.png" %}
 
-比较流行的一种搭建结构是这样, 从下到上的顺序, 首先是输入的图片(image), 经过一层卷积层 (convolution), 然后在用池化(pooling)方式处理卷积的信息, 这里使用的是 max pooling 的方式. 然后在经过一次同样的处理, 把得到的第二次处理的信息传入两层全连接的神经层 (fully connected),这也是一般的两层神经网络层,最后在接上一个分类器(classifier)进行分类预测. 这仅仅是对卷积神经网络在图片处理上一次简单的介绍. 如果你想知道使用 python 搭建这样的卷积神经网络, 我会把教程的链接附在我的视频描述当中, 也欢迎订阅我的频道, 获得更多关于机器学习的知识~
+比较流行的一种搭建结构是这样, 从下到上的顺序, 首先是输入的图片(image), 经过一层卷积层 (convolution), 然后在用池化(pooling)方式处理卷积的信息, 这里使用的是 max pooling 的方式. 然后在经过一次同样的处理, 把得到的第二次处理的信息传入两层全连接的神经层 (fully connected),这也是一般的两层神经网络层,最后在接上一个分类器(classifier)进行分类预测.
+这仅仅是对卷积神经网络在图片处理上一次简单的介绍.
+如果你想知道使用 python 搭建这样的卷积神经网络, 欢迎点击下面的内容.
+
+
+*Python 教程*
+
+* *Tensorflow CNN [教程]({% link _tutorials/machine-learning/tensorflow/5-03-CNN1.md %})*
+* *PyTorch CNN [教程]({% link _tutorials/machine-learning/torch/4-01-CNN.md %})*
+* *方便快捷的 Keras CNN[教程]({% link _tutorials/machine-learning/keras/2-3-CNN.md %})*

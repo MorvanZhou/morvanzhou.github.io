@@ -87,3 +87,8 @@ Generator 会根据随机数来生成有意义的数据 , Discriminator 会学�
 
 甚至你还能玩点新花样,  比如让图片来做加减法, 戴眼镜的男人 减去 男人 加上 女人, 他居然能生成 戴眼镜的女人的图片.  甚至还能根据你随便画的几笔草图来生成可能是你需要的蓝天白云大草地图片. 哈哈, 看起来机器也能有想象力啦. 如果你想试着动手做一个 GAN 的实践, 却不知道如何做, 不用担心, 我也为准备好了一个使用 Python 和他神经网络模块搭建的最简单的 GAN 实践代码. 欢迎大家访问莫烦 Python 了解更多机器学习的内容.
 
+
+*Python相关教程*
+
+* *Tensorflow [50行 GAN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}*
+* *PyTorch [GAN 教程]({% link _tutorials/machine-learning/torch/4-06-GAN.md %})*

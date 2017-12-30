@@ -15,7 +15,7 @@ post-headings:
 
 学习资料:
   * Tensorflow Autoencoder [链接]({% link _tutorials/machine-learning/tensorflow/5-11-autoencoder.md %})
-  * PyTorch RNN [例子1]({% link _tutorials/machine-learning/torch/4-04-autoencoder.md %})
+  * PyTorch RNN [例子]({% link _tutorials/machine-learning/torch/4-04-autoencoder.md %})
   * Keras Autoencoder [链接]({% link _tutorials/machine-learning/keras/2-6-autoencoder.md %})
 
 
@@ -70,3 +70,10 @@ post-headings:
 有一个例子就是让它能模仿并生成手写数字.
 
 {% include tut-image.html image-name="auto6.jpg" %}
+
+
+*Python相关教程*
+
+* *Tensorflow Autoencoder [链接]({% link _tutorials/machine-learning/tensorflow/5-11-autoencoder.md %})*
+* *PyTorch RNN [例子]({% link _tutorials/machine-learning/torch/4-04-autoencoder.md %})*
+* *Keras Autoencoder [链接]({% link _tutorials/machine-learning/keras/2-6-autoencoder.md %})*
