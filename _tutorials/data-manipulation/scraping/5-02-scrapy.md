@@ -117,7 +117,7 @@ class MofanSpider(scrapy.Spider):
 
 然后在这个response网页中筛选 `urls`, 这里我们也不需要使用 `urljoin()` 这种功能给 url 改变形式. 它在 `follow()` 这一步会自动检测 url 的格式.
 (真是省心啊~), 然后对于每个找到的 url, 然后 yield 重新使用 `self.parse()` 来爬取, 这里又是自动去重!
-Scrapy 反复知道你最不想做什么, 它自动帮你都做好了. 开心~
+Scrapy 仿佛知道你最不想做什么, 它自动帮你都做好了. 开心~
 
 最后需要运行的时候有点不同, 你需要在 terminal 或 cmd 中运行这个爬虫. 而且还能帮你保存刚刚 yield 的 `{title:, url:}` 的结果.
 `runspider 5-2-scrapy.py` 就是选择你要跑的这个 Python 文件.
