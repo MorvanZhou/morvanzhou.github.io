@@ -53,10 +53,11 @@ pip3 install selenium
 * Safari [driver](https://webkit.org/blog/6900/webdriver-support-in-safari-10/){:target="_blank"}
 
 Linux 和 MacOS 用户下载好之后, 请将下载好的"geckodriver"文件放在你的计算机的 "/usr/bin" 或 "/usr/local/bin" 目录.
-不会放的, 请使用这条语句.
+并赋予执行权限, 不会放的, 请使用这条语句.
 
 ```shell
 sudo cp 你的geckodriver位置 /usr/local/bin
+sudo chmod +x /usr/local/bin/geckodriver
 ```
 
 对于 Windows 用户, 官网上的[说法](http://selenium-python.readthedocs.io/installation.html#detailed-instructions-for-windows-users){:target="_blank"},

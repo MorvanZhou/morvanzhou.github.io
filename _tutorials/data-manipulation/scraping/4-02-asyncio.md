@@ -69,7 +69,7 @@ Python 2 和 Python 3.3- 是没有的. 而且 Python 3.5 之后, 和 Python 3.4 
 {% include assign-heading.html %}
 
 接着我们来举例介绍 asyncio, 像之前画的图那样, 我们要时刻记住, asyncio 不是多进程, 也不是多线程, 单单是一个线程, 但是是在 Python 的功能间切换着执行.
-切换的点用 `await` 来标记, 能够异步的功能用 `async` 标记, 比如 `async def function():`. 首先我们看一下, 不适用 `async` 完成的一份代码, 然后我们将这份代码改成 `async` 版的.
+切换的点用 `await` 来标记, 能够异步的功能用 `async` 标记, 比如 `async def function():`. 首先我们看一下, 不使用 `async` 完成的一份代码, 然后我们将这份代码改成 `async` 版的.
 这些代码我都会放在我的 github 中, 如果想一次性看全部, 请来[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}.
 
 ```python
@@ -148,7 +148,7 @@ Async total time :  2.001495838165283
 {% include assign-heading.html %}
 
 有了对 asyncio 的基本了解, 我们就来看怎么把它用在爬虫. 这个功能对于爬虫非常的理想, 原因很简单, 我们在等待一个网页下载的时候, 完全可以切换到其它代码,
-事半功倍. 这是 asycio 自己还是没办法完成这项任务的, 我们还需要安装另一个牛逼的模块用到将 `requests` 模块代替成一个异步的 `requests`, 这个牛逼的模块叫作
+事半功倍. 但是 asycio 自己还是没办法完成这项任务的, 我们还需要安装另一个牛逼的模块将 `requests` 模块代替成一个异步的 `requests`, 这个牛逼的模块叫作
 `aiohttp` ([官网在这](https://aiohttp.readthedocs.io/en/stable/index.html){:target="_blank"}). 下载安装特别简单.
 直接在你的 terminal 或者 cmd 里面输入 "pip3 install aiohttp".
 
@@ -177,7 +177,7 @@ Normal total time: 0.3869960308074951
 """
 ```
 
-用 requests 用久了以后, 这样的代码真是信手拈来. 很好, 我们打开 [莫烦 Python](/) **两次**的首页只花了 **0.38秒**.
+用 requests 用久了以后, 这样的代码真是信手拈来. 很好, 我们打开 [莫烦 Python](/) 的首页**两次**只花了 **0.38秒**.
 然后我们在用 [aiohttp](https://aiohttp.readthedocs.io/en/stable/index.html){:target="_blank"} 来实现一样的功能.
 结果 asyncio 的方式只用了 **0.11秒**! 大获全胜.
 
@@ -239,7 +239,7 @@ Async total time: 0.11447715759277344
 |         8        |       11.5s     |   7.2s  |
 
 我们发现, 如果 `Pool(n)` 里面的这个 n 越大, 多进程才能越快, 但是 asyncio 却不会特别受进程数的影响.
-一个单线程的东西居然战胜了多线程. 可见异步 asyncio 下载网页的重要性.
+一个单线程的东西居然战胜了多进程. 可见异步 asyncio 下载网页的重要性.
 
 上面介绍的还只是 asyncio 的一小部分功能, 如果想了解更多有关于 asyncio 的使用方法, 请看到 Python 的[官方介绍](https://docs.python.org/3/library/asyncio.html){:target="_blank"}.
 

@@ -169,7 +169,7 @@ webbrowser.open(r.url)
 * Request Method (post)
 * Form Data (post 去的信息)
 
-有了谢谢记录, 我们就能开始写 Python 来模拟这一次提交 post 了. 根据 `'firstname'` 和 `'lastname'`, 也就是上图里面的
+有了这些记录, 我们就能开始写 Python 来模拟这一次提交 post 了. 根据 `'firstname'` 和 `'lastname'`, 也就是上图里面的
 Form data, 组织成一个 python 字典. 让后把这个字典传入 `requests.post()`, 注意, 这里的 post 里面的 url, 不是我们填表时的 url (http://pythonscraping.com/pages/files/form.html),
 而是要把 Form 信息提交去的那个网页, 也就是上图中查看到的 Request URL (http://pythonscraping.com/files/processing.php).
 
@@ -236,13 +236,11 @@ print(r.text)
 简单来说, 因为打开网页时, 每一个页面都是不连续的, 没有关联的,
 cookies 就是用来衔接一个页面和另一个页面的关系. 比如说当我登录以后, 浏览器为了保存我的登录信息, 将这些信息存放在了 cookie 中.
 然后我访问第二个页面的时候, 保存的 cookie 被调用, 服务器知道我之前做了什么, 浏览了些什么. 像你在网上看到的广告, 为什么都可能是你感兴趣的商品?
-你登录淘宝, 给你推荐的为什么都和你买过的类似? 走都是 cookies 的功劳, 让服务器知道你的个性化需求.
+你登录淘宝, 给你推荐的为什么都和你买过的类似? 都是 cookies 的功劳, 让服务器知道你的个性化需求.
 
 所以大部分时候, 每次你登录, 你就会有一个 cookies, 里面会提到你已经是登录状态了. 所以 cookie 在这时候很重要. cookies 的传递也特别重要,
 比如我用 `requests.post` + `payload` 的用户信息发给网页, 返回的 `r` 里面会有生成的 cookies 信息.
 接着我请求去登录后的页面时, 使用 `request.get`, 并将之前的 cookies 传入到 get 请求. 这样就能已登录的名义访问 get 的页面了.
-
-{% include tut-image.html image-name="3-1-14.png" %}
 
 ```python
 payload = {'username': 'Morvan', 'password': 'password'}
@@ -258,6 +256,7 @@ print(r.text)
 # Hey Morvan! Looks like you're still logged into the site!
 ```
 
+{% include tut-image.html image-name="3-1-14.png" %}
 
 {% include google-in-article-ads.html %}
 
@@ -268,7 +267,7 @@ print(r.text)
 {% include assign-heading.html %}
 
 不过每次都要传递 cookies 是很麻烦的, 好在 requests 有个很 handy 的功能, 那就是 Session. 在一次会话中,
-我们的 cookies 信息都是联通的, 它自动帮我们传递这些 cookies 信息. 这时我感叹, 程序员真会偷懒~ 哈哈.
+我们的 cookies 信息都是相连通的, 它自动帮我们传递这些 cookies 信息. 这时我感叹, 程序员真会偷懒~ 哈哈.
 
 同样是执行上面的登录操作, 下面就是使用 session 的版本. 创建完一个 session 过后, 我们直接只用 session 来
 `post` 和 `get`. 而且这次 `get` 的时候, 我们并没有传入 cookies. 但是实际上 session 内部就已经有了之前的 cookies 了.

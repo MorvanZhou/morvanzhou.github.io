@@ -98,7 +98,7 @@ def parse(html):
     soup = BeautifulSoup(html, 'lxml')
     urls = soup.find_all('a', {"href": re.compile('^/.+?/$')})
     title = soup.find('h1').get_text().strip()
-    page_urls = set([urljoin(base_url, url['href']) for url in urls])
+    page_urls = set([urljoin(base_url, url['href']) for url in urls])   # 去重
     url = soup.find('meta', {'property': "og:url"})['content']
     return title, page_urls, url
 ```
@@ -135,7 +135,7 @@ while len(unseen) != 0:                 # still get some url to visit
     seen.update(unseen)         # seen the crawled
     unseen.clear()              # nothing unseen
 
-    for res in results:
+    for title, page_urls, url in results:
         unseen.update(page_urls - seen)     # get new url to crawl
 ```
 
