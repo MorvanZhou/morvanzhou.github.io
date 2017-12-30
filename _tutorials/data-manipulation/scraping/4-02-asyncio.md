@@ -7,7 +7,7 @@ title: "加速爬虫: 异步加载 Asyncio"
 description: "之前我一直在想如何用 multiprocessing 或者 threading 加速我的爬虫,
 也做过了一些小实验, 确实, 我们看到了不小的效率提升. 但是当我更加深入的时候, 我发现, Python 还提供了一个有力的工具,
 叫做 asyncio."
-publish-date:
+publish-date: 2017-12-30
 thumbnail: "/static/thumbnail-small/scraping/4-2 asyncio.jpg"
 chapter: 4
 post-headings:
