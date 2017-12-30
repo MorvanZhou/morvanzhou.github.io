@@ -81,7 +81,7 @@ pip3 install scrapy
 一定还要给这个 spider 一个名字, 我就用 `mofan` 好了, 因为是爬 莫烦Python 的.
 给定一些初始爬取的网页, 写在 `start_urls` 里. 这里特别要提的是:
 **之前我们用 python 的 set 来去除重复的 url, 在 scrapy 中, 这是不需要的, 因为它自动帮你去重**.
-这可省心多了.
+这可省心多了. 如果你想一次性看到全部代码, 请看到我的 [github](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/5-2-scrapy.ipynb){:target="_blank"}.
 
 ```python
 import scrapy
