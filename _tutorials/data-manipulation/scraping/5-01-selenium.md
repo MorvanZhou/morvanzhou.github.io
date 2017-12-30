@@ -72,14 +72,14 @@ sudo cp 你的geckodriver位置 /usr/local/bin
 
 {% include assign-heading.html %}
 
-这你教你用[火狐浏览器](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"}偷懒的一招, 因为暂时只有火狐上有这个插件.
+在这教你用[火狐浏览器](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"}偷懒的一招, 因为暂时只有火狐上有这个插件.
 插件 Katalon Recorder 下载的网址[在这](https://addons.mozilla.org/en-US/firefox/addon/katalon-automation-record/){:target="_blank"}
 
 {% include tut-image.html image-name="5-1-2.png" %}
 
 这个插件能让你记录你使用浏览器的操作. 我以前玩网游, 为了偷懒, 用过一个叫"按键精灵"的东西,
 帮我做了很多重复性的工作, 拯救了我的鼠标和键盘, 当然还有我的手指! 看着别人一直在点鼠标, 我心中暗爽~
-这个 Katalon Recorder 插件就和按键精灵是一个意思. 记录你的操作, 然后你可以让电脑重复上千遍.
+这个 Katalon Recorder 插件 + Selenium 就和按键精灵是一个意思. 记录你的操作, 然后你可以让电脑重复上千遍.
 
 {% include google-in-article-ads.html %}
 
