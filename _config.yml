@@ -2,7 +2,7 @@
 markdown: kramdown
 
 highlighter: rouge
-url: https://morvanzhou.github.io/
+url: https://morvanzhou.github.io
 exclude: ['README.md']
 
 

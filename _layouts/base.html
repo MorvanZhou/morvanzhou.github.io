@@ -6,27 +6,27 @@
   <meta name="description" content="{{ page.description }}">
   <meta name="keywords" content="莫烦,python,tutorial,machine learning,{{ page.keywords }}">
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
-  <meta name="thumbnail" content="{{site.url}}{{ page.thumbnail | replace_first: '/static/thumbnail-small', 'static/thumbnail'}}" />
+  <meta name="thumbnail" content="{{site.url}}{{ page.thumbnail | replace_first: '/static/thumbnail-small', '/static/thumbnail'}}" />
   <title>{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python</title>
 
   <meta property="fb:app_id" content="2053270218284962"/>
   <meta property="og:site_name" content="莫烦Python"/>
   <meta property="og:title" content='{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python' />
   <meta property="og:description" content="{{ page.description }}"/>
-  <meta property="og:image" content="{{site.url}}{{ page.thumbnail | replace_first: '/static/thumbnail-small', 'static/thumbnail'}}">
-  <meta property="og:url" content="{{site.url}}{{page.url | replace_first: '/', ''}}">
+  <meta property="og:image" content="{{site.url}}{{ page.thumbnail | replace_first: '/static/thumbnail-small', '/static/thumbnail'}}">
+  <meta property="og:url" content="{{site.url}}{{page.url}}">
   <meta property="og:type" content="article"/>
 
-  <link href="/stylesheets/page-style.css" type="text/css" rel="stylesheet">
-  <link href="/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
-  <link href="/stylesheets/syntax.css" type="text/css" rel="stylesheet">
-  <link href="/stylesheets/resize.css" type="text/css" rel="stylesheet">
-  <link rel="icon" href="{{site.baseurl}}/static/img/description/tab_icon.png">
+  <link href="{{site.url}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
+  <link href="{{site.url}}/stylesheets/tutorial-page.css" type="text/css" rel="stylesheet">
+  <link href="{{site.url}}/stylesheets/syntax.css" type="text/css" rel="stylesheet">
+  <link href="{{site.url}}/stylesheets/resize.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="{{site.url}}/static/img/description/tab_icon.png">
 
   <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/video-select.js"></script>
-  <script type="text/javascript" src="/js/check-flash.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/video-select.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/check-flash.js"></script>
   <script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 

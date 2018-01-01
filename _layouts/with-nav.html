@@ -90,13 +90,13 @@ nav-items:
 <header>
   <nav id="home-nav">
     <ul>
-      <li><a class="nav-home" href="{{site.baseurl}}/" ><strong>莫烦PYTHON</strong></a></li>
-      <li><a href="{{site.baseurl}}/discuss/">大家说</a></li>
-      <li><a href="{{site.baseurl}}/support/">赞助</a></li>
-      <li><a href="{{site.baseurl}}/about/">About</a></li>
+      <li><a class="nav-home" href="/" ><strong>莫烦PYTHON</strong></a></li>
+      <li><a href="/discuss/">大家说</a></li>
+      <li><a href="/support/">赞助</a></li>
+      <li><a href="/about/">About</a></li>
       <li>
 
-        <a class="search-bar clicker"><img class="search-img" src="{{site.baseurl}}/static/img/icon/search_icon.png" alt="Go"></a>
+        <a class="search-bar clicker"><img class="search-img" src="/static/img/icon/search_icon.png" alt="Go"></a>
 
         <!-- 360 search -->
         <!--<form class="search-box dropdown-content" action="https://www.so.com/s" target="_blank">-->
@@ -132,13 +132,13 @@ nav-items:
                       <ul class="dropdown-content">
                         {% for sub-item-link in sub-item.link %}
                         <li><img class="icon-image" src="/static/img/icon/{{ sub-item-link[2] }}" style="max-width:1.5em; max-height:1.1em;">
-                          <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
+                          <a href="{{ site.url }}/tutorials/{{ item.tut-path }}{{ sub-item-link[1] }}">{{ sub-item-link[0] }}</a></li>
                         {% endfor %}
                       </ul>
                     </li>
                   {% else %}
                     <li><img class="icon-image" src="/static/img/icon/{{ sub-item.icon-path }}" style="max-width:1.5em; max-height:1.1em;">
-                      <a href="{{ site.baseurl }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
+                      <a href="{{ site.url }}/tutorials/{{ item.tut-path }}{{ sub-item.link }}">{{ sub-item.name }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>
