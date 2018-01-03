@@ -160,6 +160,7 @@ for d in d_jan:
 
 *相关教程*
 
+* *[Why 爬虫?]({% link _tutorials/data-manipulation/scraping/1-00-why.md %})*
 * *[了解网页结构]({% link _tutorials/data-manipulation/scraping/1-01-understand-website.md %})*
 * *[BeautifulSoup 解析网页: 基础]({% link _tutorials/data-manipulation/scraping/2-01-beautifulsoup-basic.md %})*
 * *[BeautifulSoup 解析网页: CSS]({% link _tutorials/data-manipulation/scraping/2-02-beautifulsoup-css.md %})*

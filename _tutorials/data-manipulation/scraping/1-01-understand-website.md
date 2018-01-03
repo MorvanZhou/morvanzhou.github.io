@@ -11,7 +11,6 @@ publish-date: 2017-12-29
 thumbnail: "/static/thumbnail-small/scraping/1-1 html.jpg"
 chapter: 1
 post-headings:
-  - 课程介绍
   - 网页基本组成部分
   - 用 Python 登录网页
   - 匹配网页内容
@@ -38,28 +37,6 @@ CSS 和 JavaScript 会在后期简单介绍一下. 因为爬网页的时候多�
 这样的应用途径正在越来越多被采用. 所以如果你的数据也是分散在各个网页中, 爬虫是你减少人力劳动的必修课.
 
 
-
-
-
-
-
-{% include assign-heading.html %}
-
-当我第一次接触爬虫的时候, 其实很陌生, 完全不知道从何开始. 在网上自己搜一些介绍, 但是他们的介绍都太笼统了,
-给你丢几个关键词, 让你自己解决. 当时我就懵逼了, 看着那些关键词 (requests, urllib, beautifulsoup, scrapy) 不知道从何下手,
-我估计你也会有这种感觉. 当时, 我花了大把的精力, 想弄懂这些东西和爬虫的关系. 而且分清如果只想入门, 我们需要掌握哪些?
-毕竟商业化和入门还是有很大不同的. 有些关键词或者模块是为了商业化而用的. 所以我花了很多时间, 整理网上的这些信息.
-总结出一条入门爬虫的便捷之路.
-
-**这一系列教程, 重在帮你引进爬虫的门, 是为初学者定制的. 如果你已经入过门, 想着如何商业化爬虫,
-这个教程应该不能满足你的需求了.**
-
-{% include tut-image.html image-name="1-1-0.png" %}
-
-这系列教程按照上面的逻辑来教会你爬虫, 我们会从网页的基本结构开始讲述, 慢慢使用一些简单的工具, 做一些简单的爬虫.
-还会有一些小练习, 让你爬爬真正的互联网. 下载美图, 逛逛百度百科, 全网爬取等等. 当你懂得了爬虫的概念, 我们在深入一些,
-谈谈如何加速你那和蠕虫(爬的慢)一样的爬虫, 把它升级为一只小飞虫(多进程,异步爬取). 当然这些内容都不会特别深入, 重点是把你带入门.
-但是我会在每节内容里加一些链接, 提供给想要深入了解的朋友们.
 
 
 
@@ -207,6 +184,7 @@ print("\nAll links: ", res)
 
 *相关教程*
 
+* *[Why 爬虫?]({% link _tutorials/data-manipulation/scraping/1-00-why.md %})*
 * *[了解网页结构]({% link _tutorials/data-manipulation/scraping/1-01-understand-website.md %})*
 * *[BeautifulSoup 解析网页: 基础]({% link _tutorials/data-manipulation/scraping/2-01-beautifulsoup-basic.md %})*
 * *[BeautifulSoup 解析网页: CSS]({% link _tutorials/data-manipulation/scraping/2-02-beautifulsoup-css.md %})*

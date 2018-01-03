@@ -1,0 +1,4 @@
+<video class="tut-content-video" controls loop autoplay muted>
+  <source src="{% if include.global-path %}{{include.global-path}}{% else %}/static/results/{{page.category}}/{{include.video-name}}{% endif %}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
