@@ -147,6 +147,9 @@
   main {
     width: 800px;
   }
+  main.tut-main {
+  margin: 0;
+  }
   .tut-content-menu {
   display: none;
   }
@@ -161,6 +164,7 @@
 @media screen and (min-width: 1000px) {
   main.tut-main {
     width: 1000px;
+    margin: 0 auto;
   }
 }
 
