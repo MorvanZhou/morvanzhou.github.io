@@ -182,7 +182,6 @@ defaults:
       category: scraping
       keywords: scraping, 爬虫, beautifulsoup
       thumbnail: /static/img/course_cover/scraping.jpg
-      published: true
 
   - scope:
       path: "_tutorials/python-basic/multiprocessing"
@@ -238,3 +237,4 @@ defaults:
       category: git
       keywords: 其他, git, VCS
       thumbnail: /static/img/course_cover/git.jpg
+      published: true
