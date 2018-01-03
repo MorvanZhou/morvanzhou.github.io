@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzI4OTA2Mzc4MA
+youtube_id: dSypElTfcFM
 bilibili_id: 17920849&page=6
 title: "小练习: 爬百度百科"
 description: "有了前面几节内容了练习, 我们现在完全有能力爬出你想要的信息了. 看吧, 我说很简单的, 只要你用 Python 打开网页,

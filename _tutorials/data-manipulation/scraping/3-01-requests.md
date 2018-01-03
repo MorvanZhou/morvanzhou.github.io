@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzI4OTA5OTE4MA
+youtube_id: L6ewlStcEzI
 bilibili_id: 17920849&page=7
 title: 多功能的 Requests
 description: "之前我们通常使用 Python 的自带模块 urllib, 来提交网页请求. 这个模块能满足我们大部分的需求, 但是为了满足你日益膨胀的其他需求,
