@@ -1,6 +1,6 @@
 ---
 title: 爬虫
-icon-dir: /static/img/icon/scraping_icon.ico
+icon-dir: /static/img/icon/scraping_icon.png
 tut-dir: /tutorials/data-manipulation/scraping/
 ---
 
