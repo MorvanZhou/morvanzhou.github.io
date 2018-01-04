@@ -70,7 +70,6 @@ post-headings:
 要是 "https://morvanzhou.github.io/" (下载速度会受外网影响).
 
 ```python
-
 import multiprocessing as mp
 import time
 from urllib.request import urlopen, urljoin
@@ -127,8 +126,20 @@ seen = set()
 我们用循环一个个 `crawl` `unseen` 里面的 url, 爬出来的 HTML 放到 `parse` 里面去分析得到结果.
 接着就是更新 `seen` 和 `unseen` 这两个集合了.
 
+**特别注意: 任何网站都是有一个服务器压力的, 如果你爬的过于频繁, 特别是使用多进程爬取或异步爬取, 一次性提交请求给服务器太多次,
+这将可能会使得服务器瘫痪, 你可能再也看不到莫烦 Python 了. 所以为了安全起见, 我限制了爬取数量(restricted_crawl=True).** 因为我测试使用的是内网 "http://127.0.0.1:4000/" 所以不会有这种压力.
+你在以后的爬网页中, 会经常遇到这样的爬取次数的限制 (甚至被封号). 我以前爬 github 时就被限制成一小时只能爬60页.
+
 ```python
+# DON'T OVER CRAWL THE WEBSITE OR YOU MAY NEVER VISIT AGAIN
+if base_url != "http://127.0.0.1:4000/":
+    restricted_crawl = True
+else:
+    restricted_crawl = False
+
 while len(unseen) != 0:                 # still get some url to visit
+    if restricted_crawl and len(seen) >= 20:
+        break
     htmls = [crawl(url) for url in unseen]
     results = [parse(html) for html in htmls]
 

@@ -227,6 +227,10 @@ Async total time: 0.11447715759277344
 
 {% include tut-image.html image-name="4-2-3.png" %}
 
+**特别注意: 任何网站都是有一个服务器压力的, 如果你爬的过于频繁, 特别是使用多进程爬取或异步爬取, 一次性提交请求给服务器太多次,
+这将可能会使得服务器瘫痪, 你可能再也看不到莫烦 Python 了. 所以为了安全起见, 我限制了爬取数量(restricted_crawl=True).** 因为我测试使用的是内网 "http://127.0.0.1:4000/" 所以不会有这种压力.
+你在以后的爬网页中, 会经常遇到这样的爬取次数的限制 (甚至被封号). 我以前爬 github 时就被限制成一小时只能爬60页.
+
 具体的代码可以在[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}详细观看, 需要注意的是, 我使用的内网进行测试(外网的下载速度变动太大),
 在下载网页的地方, 我使用 `sleep(0.1)` 的功能模拟了网页下载的延迟. 一共下载了我 莫烦 Python 的快400个网页.
 因为代码表达的内容我已经用上图展示给大家了, [每一个代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}都有50-60行, 我就不粘贴在这里了.

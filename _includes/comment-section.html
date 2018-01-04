@@ -2,17 +2,44 @@
 <!-- 来必力 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8yNzI5MC8zODc1">
 	<script async type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
+	{% if page.permalink == "/discuss/" %}
 
-       if (typeof LivereTower === 'function') { return; }
+		// 来必力正式代码
+		(function(d, s) {
+			var j, e = d.getElementsByTagName(s)[0];
 
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
+			if (typeof LivereTower === 'function') { return; }
 
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
+			j = d.createElement(s);
+			j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+			j.async = true;
+
+			e.parentNode.insertBefore(j, e);
+		})(document, 'script');
+
+	{% else %}
+		var torchBottom = false;
+		$(window).scroll(function() {
+	    if ($(window).scrollTop() + $(window).height() > $(document).height() - 500 && !torchBottom) {
+	        torchBottom = true;
+
+
+	        // 来必力正式代码
+					(function(d, s) {
+					var j, e = d.getElementsByTagName(s)[0];
+
+					if (typeof LivereTower === 'function') { return; }
+
+					j = d.createElement(s);
+					j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+					j.async = true;
+
+					e.parentNode.insertBefore(j, e);
+					})(document, 'script');
+	    }
+	  });
+	{% endif %}
+
 	</script>
 	<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
 </div>

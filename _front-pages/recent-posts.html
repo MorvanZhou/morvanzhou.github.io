@@ -9,8 +9,8 @@ permalink: /recent-posts/
   {% assign sorted-items = site.tutorials | sort: "publish-date" | reverse | slice: 0, 100 %}
   {% for item in sorted-items %}
 
-    {% assign index = forloop.index | modulo:10 %}
-    {% if index == 9 %}
+    {% assign index = forloop.index | modulo:15 %}
+    {% if index == 14 %}
     <!-- ads -->
     <li class="section">
       <div style="width: 100%;">
