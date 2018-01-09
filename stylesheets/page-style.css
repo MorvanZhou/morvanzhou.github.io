@@ -7,6 +7,8 @@
   --c-green-no-hover: #191818;
   --c-green-hover: #f2f2f2;
   --c-p: #415849;
+  --c-tut-table: var(--c-n);
+  --c-tut-table-hover: var(--c-n-mofan);
 }
 
 
@@ -534,3 +536,553 @@ display: block;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* ===================== TUTORIAL PAGE ====================== */
+
+
+/* ====== recent update ===== */
+#recent-update {
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+display: inline-block;
+text-align: center;
+width: 100%;
+}
+
+#recent-update li {
+padding: 0 5px 0 0;
+display: inline-block;
+}
+
+#recent-update img:hover {
+background-color:#000;
+opacity:0.8;
+}
+
+
+
+.tut-course-thumbnail {
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+display: inline-block;
+text-align: center;
+width: 100%;
+}
+
+.tut-course-thumbnail li {
+padding: 0 2px 0 0;
+display: inline-block;
+}
+
+.tut-course-thumbnail img {
+max-width: 213px;
+max-h
+}
+.tut-course-thumbnail img:hover {
+background-color:#000;
+opacity:0.8;
+}
+
+
+/* ======= tutorial content menu ========= */
+.tut-content-menu {
+z-index: 3;
+position:fixed;
+bottom: 2%;
+right: 2%;
+}
+
+.tut-content-menu img {
+max-width: 4em;
+border-radius:50%;
+box-shadow: 0px 0px 5px #888888;
+}
+
+
+
+/* ====== switch video button ===== */
+.switch-video-div {
+display:block;
+margin: 0 auto;
+padding: 1em 0;
+text-align: center;
+}
+
+button.switch-video-btn {
+display: inline;
+background-color: var(--c-n);
+background-color:#4cb07b;
+filter: none !important;
+border: none;
+font-size: 1em;
+padding: 0.2em 2em;
+color: var(--c-green-no-hover);
+color: #191818;
+box-shadow: 0px 0px 5px #888888;
+border-radius:5px;
+}
+
+button.switch-video-btn:hover {
+background-color: var(--c-n-mofan);
+background-color: #3d9667;
+filter: none !important;
+color: var(--c-green-hover);
+color:white;
+}
+
+
+/* ======== table of contents ======== */
+.table-of-contents-ul {
+background-color: var(--c-tut-table);
+background-color:#4cb07b;
+padding: 1em;
+color: var(--c-green-no-hover);
+color: #191818;
+counter-reset: item;
+list-style-type: none;
+box-shadow: 0px 0px 5px #888888;
+}
+
+.table-of-contents-ul h4 {
+color: var(--c-green-no-hover);
+color: #191818;
+text-align: left;
+}
+
+.chapter-li {
+margin: 0 1.2em;
+}
+
+.chapter-li ul {
+list-style-type: none;
+}
+
+.content-li {
+padding: 0.3em 0.3em;
+display: block;
+}
+
+.content-li a {
+color: var(--c-green-no-hover);
+color: #191818;
+text-decoration: none;
+}
+
+.content-li:hover {
+background-color: var(--c-tut-table-hover);
+background-color: #44a371;
+color: white;
+}
+
+/* ======== inner page ======== */
+.tut-h2-a:link, .tut-h2-a:visited {
+color: var(--c-n);
+color:#4cb07b;
+}
+
+.course-summary-image {
+padding: 0;
+display:block;
+margin: 0 auto;
+width: 100%;
+box-shadow: 0px 0px 5px #888888;
+}
+
+.course-image {
+padding: 0;
+display:block;
+margin: 0 auto;
+max-width: 100%;
+max-height: 430px;
+box-shadow: 0px 0px 5px #888888;
+}
+
+h2.tut-h2-pad {
+padding-top: 5em;
+padding-bottom: 1.5em;
+font-size: 1.5em;
+text-align: left;
+margin: 0.8em 0;
+}
+
+#tut-content p {
+padding: 0;
+}
+
+/* ======= tutorial main part ====== */
+.tut-main-content-pad {
+padding: 0 2em;
+}
+
+.tut-right-bar, .tut-post-main {
+display: inline-block;
+vertical-align: top;
+top: 4.5em;
+filter: none !important;
+}
+
+.tut-post-main {
+width: 700px;
+}
+
+.tut-right-bar {
+width: calc(1000px - 700px);
+font-size: 0.75em;
+position: fixed;
+margin-left: 0.5em;
+}
+
+.author, .editor, .publish-date {
+font-weight: bold;
+padding: 0 1em 0 0;
+}
+
+
+/* ======= tutorial right part ====== */
+.tut-table-content-nav {
+background-color: var(--c-tut-table);
+background-color: #4cb07b;
+margin-bottom: 0px;
+height: 400px;
+overflow-y: scroll;
+}
+
+.tut-table-content-nav p {
+margin:0;
+padding: 0.5em 0;
+color: black;
+text-align: center;
+font-size: 1.2em;
+}
+
+.tut-table-content-nav-contents {
+padding: 0 0.5em 0 2em;
+margin: 0.1em 0;
+}
+
+.tut-table-content-nav-contents a:visited, .tut-table-content-nav-contents a:link {
+color: black;
+opacity:1;
+}
+
+.tut-table-content-nav-li {
+padding: 0.2em 0;
+}
+
+.tut-table-content-nav-li:hover {
+color:white;
+}
+
+
+/* ======= video and next previous button ====== */
+.tut-content-video {
+width: 80%;
+display: block;
+margin: 0 auto;
+}
+
+
+.link-under-youtube {
+text-align: center;
+margin: 0;
+}
+
+.pad-page-navigation {
+padding: 2em 1em;
+}
+
+.PageNavigation {
+display: block;
+width: auto;
+overflow: hidden;
+}
+
+.PageNavigation a {
+display: block;
+color: var(--c-green-no-hover);
+color: #191818;
+background-color: var(--c-n);
+background-color: #4cb07b;
+text-decoration: none;
+padding: 0.9em;
+margin: 0.5em 0;
+border-radius: 10px;
+}
+
+.PageNavigation i {
+font-size: 1em;
+}
+
+.PageNavigation a:hover {
+color: var(--c-green-hover);
+color:white;
+background-color: var(--c-n-mofan);
+background-color: #44a371;
+}
+
+.PageNavigation .prev {
+float: left;
+}
+
+.PageNavigation .next {
+float: right;
+text-align: right;
+}
+
+/* ======== bottom donation ======== */
+#bottom-donation-section {
+padding: 1em;
+clear: both;
+}
+
+#bottom-donation-title {
+display: block;
+text-align: center;
+margin: 0;
+padding: 1em 0;
+}
+
+#bottom-donation-button {
+width: 50%;
+display: block;
+color: var(--c-green-no-hover);
+color: #191818;
+text-align: center;
+padding: 10px;
+background-color: var(--c-donation);
+background-color: #4cb07b;
+margin: 1em auto 2em auto;
+text-decoration: none;
+border-radius: 20px;
+box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
+}
+
+#bottom-donation-button:hover {
+background-color: var(--c-donation-hover);
+background-color: #44a371;
+color: var(--c-green-hover);
+color:white;
+}
+
+/* ======== ads ======== */
+#under-title-ads {
+float: right;
+height: 250px;
+width:250px;
+margin: 0.5em 0 0.5em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== RESIZE CSS ====================== */
+
+
+
+/* ===================== PHONE ==================== */
+@media screen and  (max-width: 40.5em) {
+  /* =============== recent post ========== */
+  .recent-update-img-div {
+  height: 90px;
+  }
+
+  #recent-post-ul img {
+  height:100%;
+  }
+  .recent-post-description {
+  display: none;
+  }
+  .recent-post-title {
+  font-size: 0.9em;
+  }
+  /* ======== DEFAULT FOR ALL PAGES ========= */
+
+  body {
+    font-size:14px;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  .large-top-bottom-padding {
+    padding: 0.5em 0;
+  }
+
+
+  /* ======== nav ========= */
+
+  #home-nav {
+    height: 3.8em;
+  }
+
+  #home-nav > ul > li > a, #home-nav > ul > li > a:link, #home-nav > ul > li > a:visited {
+    padding: 1.1em 0.3em;
+    font-size: 0.8em;
+  }
+  #home-nav > ul > li > ul {
+    width: 80%;
+  }
+  #home-nav > ul > li:last-child {       /* tutorial dropdown */
+    float: none;
+  }
+  #home-nav > ul > li > ul, .search-box {
+    top:2.9em;
+    }
+  .search-box {
+    display: none;
+    position: fixed;
+    left:0;
+    }
+  #home-nav .search-text {
+    font-size:1.4em;
+    }
+
+  #home-nav .search-img {
+    padding: 0 0.3em;
+  }
+
+  /* =========== main body ===== */
+  .pad-main {
+    padding: 1em 0.5em;
+  }
+  main {
+  width: 100%;
+  }
+
+  /* ====== recent update ====== */
+  #recent-update {
+    height: 180px;
+    overflow-y: scroll;
+  }
+
+  /* ======= tutorial right part ====== */
+  .tut-right-bar {
+  display: none;
+  width: 0;
+  }
+  .course-image {
+  max-width: 100%;
+  }
+  .tut-main-content-pad {
+  padding: 0 0.5em;
+  }
+
+
+  /* ======= video and next previous button ====== */
+ .tut-content-video {
+  width: 100%;
+ }
+
+ /* ======== ads ======== */
+  #under-title-ads {
+  float: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em;
+  }
+}
+
+
+
+
+
+
+/* ===================== less than 800px ==================== */
+/* ======= tutorial content menu ========= */
+@media screen and (max-width: 800px) {
+  .tut-content-menu {
+  right: 1em;
+  }
+  main, main .tut-post-main {
+  width: 100%;
+  }
+  .tut-right-bar {
+  display: none;
+  }
+  main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
+  max-width: 100%;
+  margin: 0 auto;
+  }
+}
+
+
+
+
+/* ===================== more than 800px ==================== */
+/* ====== video ===== */
+@media screen and (min-width: 800px) {
+  main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  main {
+    width: 800px;
+  }
+  main.tut-main {
+  margin: 0;
+  }
+  .tut-content-menu {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 800px and max-width: 1000px) {
+  main.tut-main {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main.tut-main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ======= IE ====== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .ie-size {
+     width: 700px;
+     margin: 0.5em auto;
+     }
+     .tut-right-bar {
+     width: calc(1000px - 700px);
+     }
+     .tut-post-main {
+     margin-left:10%;
+     }
+     @media screen and  (max-width: 40.5em) {
+     .ie-size {
+     width: 100%;
+     }
+     }
+}
