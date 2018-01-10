@@ -85,7 +85,7 @@ plt.show()
 更多信息参考[matplotlib animation api](http://matplotlib.sourceforge.net/api/animation_api.html){:target="_blank"}：
 
 ```python
-anim.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+ani.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
 ```
   
   
