@@ -167,13 +167,13 @@
     {% include footer.html %}
   </footer>
 
-  <!-- lazy load image (must at the end) -->
+  <!-- lazy load image -->
   <script type="text/javascript">
   $(function($) {
     $("img.lazy-img").Lazy({
       effect: "fadeIn",
       effectTime: 500,
-      threshold: 0
+      threshold: 0,
     });
   });
   </script>
