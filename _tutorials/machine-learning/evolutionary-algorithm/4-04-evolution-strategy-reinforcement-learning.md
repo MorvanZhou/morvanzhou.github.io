@@ -33,23 +33,23 @@ post-headings:
 
 本节内容提前看:
 
-<video class="tut-content-video" controls loop autoplay muted>
-  <source src="/static/results/evolutionary-algorithm/4-4-0.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+{% include tut-video.html video-name=4-4-0.mp4 %}
 
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 {% include tut-image.html image-name="4-4-1.png" %}
 
 简单来说, 这个算法就是在不断地试错, 然后每一次试错后, 让自己更靠近到那些返回更多奖励的尝试点. 如果大家对[强化学习的 Policy Gradient]({% link _tutorials/machine-learning/reinforcement-learning/5-1-policy-gradient-softmax1.md %})
 有了解的话, 我们就来在这里说说 Policy Gradient (PG) 和 Evolution Strategy (ES) 的不同之处.
 
+{% include tut-image.html image-name="4-4-4.png" %}
+
 PG 和 ES 是一对双胞胎兄弟, 他们非常像, 不过他们最重要的一点差别就是. **PG 需要进行误差反向传播, 而 ES 不用**. 在行为的策略上, **PG 是扰动 Action**, 不同的 action 带来不同的 reward,
 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 **ES 是扰动 神经网络中的 Parameters**, 不同的 parameters 带来不同的 reward,
-通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
+通过 reward 大小对应上 parameters 来按比例更新原始的 parameters. 下图来自[这里](https://blog.openai.com/better-exploration-with-parameter-noise/){:target="_blank"}.
+
 
 [OpenAI 官网](https://blog.openai.com/evolution-strategies/){:target="_blank"}上对这种算法的最简单 Python 诠释:
 
@@ -78,7 +78,7 @@ for i in range(300):
 
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 [OpenAI gym](https://gym.openai.com/){:target="_blank"} 应该算是当下最流行的 强化学习练手模块了吧. 它有超级多的虚拟环境可以让你 plugin 你的 python 脚本.
 
@@ -90,7 +90,7 @@ for i in range(300):
 {% include google-in-article-ads.html %}
 
 
- {% include assign-heading.html %}
+{% include assign-heading.html %}
 
 这次进化的框架系统大致是这样的:
 
