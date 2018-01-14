@@ -76,12 +76,12 @@ class QLearningTable(RL):   # 继承了父类 RL
 
     def learn(self, s, a, r, s_):   # learn 的方法在每种类型中有不一样, 需重新定义
         self.check_state_exist(s_)
-        q_predict = self.q_table.ix[s, a]
+        q_predict = self.q_table.loc[s, a]
         if s_ != 'terminal':
-            q_target = r + self.gamma * self.q_table.ix[s_, :].max()
+            q_target = r + self.gamma * self.q_table.loc[s_, :].max()
         else:
             q_target = r
-        self.q_table.ix[s, a] += self.lr * (q_target - q_predict)
+        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
 ```
 
 {% include assign-heading.html %}
@@ -98,12 +98,12 @@ class SarsaTable(RL):   # 继承 RL class
 
     def learn(self, s, a, r, s_, a_):
         self.check_state_exist(s_)
-        q_predict = self.q_table.ix[s, a]
+        q_predict = self.q_table.loc[s, a]
         if s_ != 'terminal':
-            q_target = r + self.gamma * self.q_table.ix[s_, a_]  # q_target 基于选好的 a_ 而不是 Q(s_) 的最大值
+            q_target = r + self.gamma * self.q_table.loc[s_, a_]  # q_target 基于选好的 a_ 而不是 Q(s_) 的最大值
         else:
             q_target = r  # 如果 s_ 是终止符
-        self.q_table.ix[s, a] += self.lr * (q_target - q_predict)  # 更新 q_table
+        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)  # 更新 q_table
 ```
 
 如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze){:target="_blank"}

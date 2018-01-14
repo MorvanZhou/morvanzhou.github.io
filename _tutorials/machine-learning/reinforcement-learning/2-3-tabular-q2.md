@@ -75,7 +75,7 @@ class QLearningTable:
 
         # 选择 action
         if np.random.uniform() < self.epsilon:  # 选择 Q value 最高的 action
-            state_action = self.q_table.ix[observation, :]
+            state_action = self.q_table.loc[observation, :]
 
             # 同一个 state, 可能会有多个相同的 Q action value, 所以我们乱序一下
             state_action = state_action.reindex(np.random.permutation(state_action.index))
@@ -99,12 +99,12 @@ class QLearningTable:
 ```python
     def learn(self, s, a, r, s_):
         self.check_state_exist(s_)  # 检测 q_table 中是否存在 s_ (见后面标题内容)
-        q_predict = self.q_table.ix[s, a]
+        q_predict = self.q_table.loc[s, a]
         if s_ != 'terminal':
-            q_target = r + self.gamma * self.q_table.ix[s_, :].max()  # 下个 state 不是 终止符
+            q_target = r + self.gamma * self.q_table.loc[s_, :].max()  # 下个 state 不是 终止符
         else:
             q_target = r  # 下个 state 是终止符
-        self.q_table.ix[s, a] += self.lr * (q_target - q_predict)  # 更新对应的 state-action 值
+        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)  # 更新对应的 state-action 值
 ```
 
 {% include assign-heading.html %}

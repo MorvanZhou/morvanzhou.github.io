@@ -172,14 +172,14 @@ def rl():
 
             A = choose_action(S, q_table)   # 选行为
             S_, R = get_env_feedback(S, A)  # 实施行为并得到环境的反馈
-            q_predict = q_table.ix[S, A]    # 估算的(状态-行为)值
+            q_predict = q_table.loc[S, A]    # 估算的(状态-行为)值
             if S_ != 'terminal':
                 q_target = R + GAMMA * q_table.iloc[S_, :].max()   #  实际的(状态-行为)值 (回合没结束)
             else:
                 q_target = R     #  实际的(状态-行为)值 (回合结束)
                 is_terminated = True    # terminate this episode
 
-            q_table.ix[S, A] += ALPHA * (q_target - q_predict)  #  q_table 更新
+            q_table.loc[S, A] += ALPHA * (q_target - q_predict)  #  q_table 更新
             S = S_  # 探索者移动到下一个 state
 
             update_env(S, episode, step_counter+1)  # 环境更新
