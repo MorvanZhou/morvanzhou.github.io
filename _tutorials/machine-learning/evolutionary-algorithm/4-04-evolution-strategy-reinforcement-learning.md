@@ -33,7 +33,7 @@ post-headings:
 
 本节内容提前看:
 
-{% include tut-video.html video-name=4-4-0.mp4 %}
+{% include tut-video.html video-name="4-4-0.mp4" %}
 
 
 
