@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzM1MDk0MDQ3Mg
+youtube_id: roTwhVIHkAo
 bilibili_id: 17920849&page=12
 title: "高级爬虫: 让 Selenium 控制你的浏览器帮你爬"
 description: "Selenium 是为了测试而出生的. 但是没想到到了爬虫的年代, 它摇身一变, 变成了爬虫的好工具.

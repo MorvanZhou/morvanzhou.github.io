@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: MzM1MDQ3ODE2MA
+youtube_id: QRJdEdgpTos
 bilibili_id: 17920849&page=10
 title: "加速爬虫: 多进程分布式"
 description: "当你看到这里的时候, 说明你已经不满足于自己的爬虫速度, 你想要最求更快, 更便捷的爬虫方法.

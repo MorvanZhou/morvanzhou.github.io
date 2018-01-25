@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzM1MDIyNjI4NA
+youtube_id: ScT0FJdHc5o
 bilibili_id: 17920849&page=8
 title: 下载文件
 description: "从网上下载文件的时候你肯定很开心, 比如说什么电影, pdf, 音乐等. 我们使用爬虫, python 一样也可以做到. 而且做得途径还有很多.

@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzM1MDMwNjA4OA
+youtube_id: rwI7bFXdOsk
 bilibili_id: 17920849&page=9
 title: "小练习: 下载美图"
 description: "学会爬虫, 关键在于练习, 见多识广, 见多了网页的构造, 才知道怎么爬. 今天我们就来一个小实战,

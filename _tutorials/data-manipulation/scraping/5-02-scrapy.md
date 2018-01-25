@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzM1MTA5Nzc3Mg
+youtube_id: 0Uug1fDa8nw
 bilibili_id: 17920849&page=13
 title: "高级爬虫: 高效无忧的 Scrapy 爬虫库"
 description: "前面的教程我们已经学会了如何写出自己的爬虫, 轻轻松松就能写出一个高性能的爬虫. 如果你想更高效的开发,

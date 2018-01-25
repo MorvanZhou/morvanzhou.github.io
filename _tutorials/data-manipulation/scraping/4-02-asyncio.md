@@ -1,7 +1,6 @@
 ---
-enable_ads: false
-youku_id:
-youtube_id:
+youku_id: XMzM1MDYyOTYyOA
+youtube_id: Wa2K7sB7BZE
 bilibili_id: 17920849&page=11
 title: "加速爬虫: 异步加载 Asyncio"
 description: "之前我一直在想如何用 multiprocessing 或者 threading 加速我的爬虫,
