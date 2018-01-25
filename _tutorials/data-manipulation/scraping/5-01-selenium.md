@@ -61,7 +61,7 @@ sudo chmod +x /usr/local/bin/geckodriver
 ```
 
 对于 Windows 用户, 官网上的[说法](http://selenium-python.readthedocs.io/installation.html#detailed-instructions-for-windows-users){:target="_blank"},
-好像没有提到要具体怎么操作, 我想, 应该是把 geckodriver 这个文件的位置加在 Windows 的环境变量中(PATH). 成功的朋友请在下面留言, 我再根据留言来修改这个描述.
+好像没有提到要具体怎么操作, 我想, 应该是把 geckodriver 这个文件的位置加在 Windows 的环境变量中(PATH).
 
 如果你安装有任何的问题, 请在它们的[官网](http://selenium-python.readthedocs.io/installation.html){:target="_blank"}上查询解决方案.
 
