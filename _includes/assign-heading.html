@@ -5,6 +5,8 @@
 
 {% assign heading = page.post-headings[post-heading-count] %}
 {% assign hid = heading | replace: " ", "-" %}
-<h2 class="tut-h2-pad" id="{{ hid }}"><a href="{{page.url}}#{{ hid }}" class="tut-h2-a">{{ heading }}</a></h2>
+<h2 class="tut-h2-pad" id="{{ hid }}">{{ heading }}
+  <a href="{{page.url}}#{{ hid }}" class="headerlink" title="Permalink to this headline">¶</a>
+</h2>
 
 {% assign post-heading-count = post-heading-count | plus: 1 %}

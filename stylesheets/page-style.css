@@ -748,6 +748,15 @@ font-weight: bold;
 padding: 0 1em 0 0;
 }
 
+a.headerlink {
+visibility: hidden;
+}
+
+h2.tut-h2-pad:hover > a.headerlink {
+  visibility: visible;
+}
+
+
 
 /* ======= tutorial right part ====== */
 .tut-table-content-nav {
