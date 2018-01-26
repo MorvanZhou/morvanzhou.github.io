@@ -1,4 +1,5 @@
 ---
+no-video: true
 youku_id:
 youtube_id:
 bilibili_id:
