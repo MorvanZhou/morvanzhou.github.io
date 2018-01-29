@@ -34,7 +34,8 @@ post-headings:
 我们的各种 RL 算法都能使用这些环境. 不过 OpenAI gym 暂时只支持 MacOS 和 Linux 系统. Windows 已经支持, 但是听说还没有全面支持, 大家时不时查看下官网, 可能就有惊喜.
 是在等不及更新了, 也行用 tkinter 来手动编写一下环境.
 这里有我制作的很好的 [tkinter 入门教程]({% link _table-contents/python-basic/tkinter.html %}), 之前的 maze 环境也是用 tkinter
-编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/maze_env.py){:target="_blank"}编写就 ok 啦.
+编出来的. 大家可以仿照[这个文件](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5_Deep_Q_Network/maze_env.py){:target="_blank"}编写就 ok 啦.
+或者还可以玩玩更厉害的, 想 OpenAI 一样, 使用 pyglet 模块来编写, 我做了一个从环境开始编写的[强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %}).
 
 
 
