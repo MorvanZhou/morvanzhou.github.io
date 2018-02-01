@@ -48,7 +48,8 @@ post-headings:
 
 PG 和 ES 是一对双胞胎兄弟, 他们非常像, 不过他们最重要的一点差别就是. **PG 需要进行误差反向传播, 而 ES 不用**. 在行为的策略上, **PG 是扰动 Action**, 不同的 action 带来不同的 reward,
 通过 reward 大小对应上 action 来计算 gradient, 再反向传递 gradient. 但是 **ES 是扰动 神经网络中的 Parameters**, 不同的 parameters 带来不同的 reward,
-通过 reward 大小对应上 parameters 来按比例更新原始的 parameters. 下图来自[这里](https://blog.openai.com/better-exploration-with-parameter-noise/){:target="_blank"}.
+通过 reward 大小对应上 parameters 来按比例更新原始的 parameters.
+[上图](https://blog.openai.com/better-exploration-with-parameter-noise/){:target="_blank"}就阐述了这样的思路.
 
 
 [OpenAI 官网](https://blog.openai.com/evolution-strategies/){:target="_blank"}上对这种算法的最简单 Python 诠释:
