@@ -132,7 +132,7 @@ def build_net():
 之后我们在并行的时候再将参数变成矩阵形式. 所以这个地方, 我也 `return` 了各层的 `shape` 为了之后变矩阵.
 
 我们将使用 `multiprocessing` 这个模块来实现 CPU 的并行, 有兴趣了解 python 并行的朋友, 我有一个非常简单的 `multiprocessing` 的[教程](https://morvanzhou.github.io/tutorials/python-basic/multiprocessing/){:target="_blank"}. 并行的时候传给每个 CPU 的数据越少, 运行越快,
-所以与其将像这样的 `np.random.randn(noise.size)` array 噪点数据传入其他 CPU, 还不如在其他 CPU 运算的时候在组装这些噪点就好.
+所以与其将像这样的 `np.random.randn(noise.size)` array 噪点数据传入其他 CPU, 还不如在其他 CPU 运算的时候再组装这些噪点就好.
 因为我们只需要给 CPU 传入一个数 `noise seed` 来代替庞大的 `array`, 用 `seed` 来伪随机生成 `array`, 这样能加速你的运算.
 在更新网络的时候再用同样的 `seed` 伪随机构造同样的 `array` 更新就行. 虽然创建了两遍 `array`, 但是这还是比将 `noise array` 传入其他 CPU 快.
 
@@ -146,7 +146,7 @@ def train(net_shapes, net_params, pool):
             for k_id in range(N_KID)]
     rewards = np.array([j.get() for j in jobs])
 
-    cumulative_update = np.zeros_like(net_params)       # initialize update values
+    cumulative_update = np.zeros_like(net_params)       # initialize updated values
     for k_id in range(N_KID):
         np.random.seed(noise_seed[k_id])                # reconstruct noise using seed
         cumulative_update += rewards[k_id] * np.random.randn(net_params.size)
