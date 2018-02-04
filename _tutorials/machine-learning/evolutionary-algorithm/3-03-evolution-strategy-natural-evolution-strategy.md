@@ -16,7 +16,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES){:target="_blank"}.py)
+  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py){:target="_blank"}
   * [我制作的 什么是进化策略 动画简介]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
   * 论文 [Natural evolution strategies](http://www.jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf){:target="_blank"}
 
@@ -102,6 +102,6 @@ for g in range(N_GENERATION):
 
 这节内容如果看不太懂的话, 应该是还不是很了解 Tensorflow 的使用方法, 强烈推荐看看我的 [Tensorflow 教程](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/){:target="_blank"}, 简单明了.
 
-可视化的代码我没有在文章中体现, 如果想详细看看如何可视化, 请看到我的 [Github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES){:target="_blank"}.py).
+可视化的代码我没有在文章中体现, 如果想详细看看如何可视化, 请看到我的 [Github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Evolution%20Strategy/Natural%20Evolution%20Strategy%20(NES).py){:target="_blank"}.
 
 下次我们来看看[遗传算法和进化策略+神经网络的牛逼应用]({% link _tutorials/machine-learning/evolutionary-algorithm/4-01-neuro-evolution.md %}).
