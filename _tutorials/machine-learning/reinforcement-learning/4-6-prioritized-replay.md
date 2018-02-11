@@ -166,7 +166,7 @@ class Memory(object):
 {% include assign-heading.html %}
 
 
-基于之前的 [DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py){:target="_blank"},
+基于之前的 [DQN 代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.1_Double_DQN/RL_brain.py){:target="_blank"},
 我们做出以下修改. 我们将 class 的名字改成 `DQNPrioritiedReplay`, 为了对比 Natural DQN,
 我们也保留原来大部分的 DQN 的代码. 我们在 `__init__` 中加一个 `prioritized` 参数来表示 DQN 是否具备 prioritized 能力.
 为了对比的需要, 我们的 `tf.Session()` 也单独传入. 并移除原本在 DQN 代码中的这一句:
@@ -232,7 +232,7 @@ class DQNPrioritizedReplay:
             self.memory_counter += 1
 ```
 
-接下来是相对于 [Natural DQN 代码](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5_Deep_Q_Network/RL_brain.py){:target="_blank"},
+接下来是相对于 [Natural DQN 代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5_Deep_Q_Network/RL_brain.py){:target="_blank"},
 我们在 `learn()` 改变的部分也在如下展示.
 
 ```python
@@ -269,7 +269,7 @@ class DQNPrioritizedReplay:
 
 {% include tut-image.html image-name="4-6-4.png" %}
 
-运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.2_Prioritized_Replay_DQN/run_MountainCar.py){:target="_blank"},
+运行我 Github 中的这个 [MountainCar 脚本](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.2_Prioritized_Replay_DQN/run_MountainCar.py){:target="_blank"},
 我们就不难发现, 我们都从两种方法最初拿到第一个 `R=+10` 奖励的时候算起, 看看经历过一次 `R=+10` 后, 他们有没有好好利用这次的奖励,
 可以看出, 有 Prioritized replay 的可以高效的利用这些不常拿到的奖励, 并好好学习他们. 所以 Prioritized replay 会更快结束每个 episode, 很快就到达了小旗子.
 

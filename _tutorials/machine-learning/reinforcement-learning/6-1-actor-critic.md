@@ -75,7 +75,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-有了点理解, 我们来代码 (如果想一次性看所有代码, 请来我的 [Github](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/8_Actor_Critic_Advantage/AC_CartPole.py){:target="_blank"}):
+有了点理解, 我们来代码 (如果想一次性看所有代码, 请来我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/8_Actor_Critic_Advantage/AC_CartPole.py){:target="_blank"}):
 
 {% include tut-image.html image-name="6-1-2.png" %}
 

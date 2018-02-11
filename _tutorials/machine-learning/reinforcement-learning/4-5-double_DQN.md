@@ -80,7 +80,7 @@ Double DQN 中的 `Q_next = Q_next(s', argmax(Q_eval(s', a_all)))`. 也可以表
 
 好了, 有了理论, 我们就来用 Python 实现它吧.
 
-这里的代码都是基于之前 DQN 教程中的代码 [(github)](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/RL_brain.py){:target="_blank"},
+这里的代码都是基于之前 DQN 教程中的代码 [(github)](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.1_Double_DQN/RL_brain.py){:target="_blank"},
 在 `RL_brain` 中, 我们将 class 的名字改成 `DoubleDQN`, 为了对比 Natural DQN,
 我们也保留原来大部分的 DQN 的代码. 我们在 `__init__` 中加一个 `double_q` 参数来表示使用的是 Natural DQN 还是 Double DQN.
 为了对比的需要, 我们的 `tf.Session()` 也单独传入. 并移除原本在 DQN 代码中的这一句:
@@ -176,7 +176,7 @@ class DoubleDQN:
 
 {% include assign-heading.html %}
 
-接着我们就来对比 Natural DQN 和 Double DQN 带来的不同结果啦. [代码在这](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/5.1_Double_DQN/run_Pendulum.py){:target="_blank"}
+接着我们就来对比 Natural DQN 和 Double DQN 带来的不同结果啦. [代码在这](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/5.1_Double_DQN/run_Pendulum.py){:target="_blank"}
 
 ```python
 import gym

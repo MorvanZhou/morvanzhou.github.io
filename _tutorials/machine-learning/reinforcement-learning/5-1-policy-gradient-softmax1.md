@@ -125,5 +125,5 @@ for i_episode in range(3000):
         observation = observation_
 ```
 
-另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax/run_MountainCar.py){:target="_blank"},
+另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/7_Policy_gradient_softmax/run_MountainCar.py){:target="_blank"},
 和上面那些代码类似, 只改动了一些大写的参数.
