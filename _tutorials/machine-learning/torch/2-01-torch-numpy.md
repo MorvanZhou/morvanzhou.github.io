@@ -100,3 +100,13 @@ print(
     '\ntorch: ', tensor.dot(tensor)     # torch 会转换成 [1,2,3,4].dot([1,2,3,4) = 30.0
 )
 ```
+
+新版本中(>=0.3.0), 关于 `tensor.dot()` 有了新的改变, 它[只能](http://pytorch.org/docs/master/torch.html){:target="_blank"}针对于一维的数组.
+所以上面的有所改变.
+
+```python
+tensor.dot(tensor)     # torch 会转换成 [1,2,3,4].dot([1,2,3,4) = 30.0
+
+# 变为
+torch.dot(tensor.dot(tensor)
+```
