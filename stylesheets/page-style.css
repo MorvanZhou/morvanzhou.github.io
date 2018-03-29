@@ -1064,11 +1064,17 @@ margin: 0.5em 0 0.5em 1em;
   .tut-content-menu {
   display: none;
   }
+  .mobile-hid {
+  display:block;
+  }
 }
 
 @media screen and (min-width: 800px and max-width: 1000px) {
   main.tut-main {
     width: 100%;
+  }
+  .mobile-hid {
+  display:block;
   }
 }
 
@@ -1076,6 +1082,9 @@ margin: 0.5em 0 0.5em 1em;
   main.tut-main {
     width: 1000px;
     margin: 0 auto;
+  }
+  .mobile-hid {
+  display:block;
   }
 }
 
