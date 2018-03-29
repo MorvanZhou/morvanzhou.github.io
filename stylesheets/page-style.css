@@ -892,7 +892,7 @@ width:250px;
 margin: 0.5em 0 0.5em 1em;
 }
 #top-ads {
-height: 52px;
+height: 50px;
 }
 
 
@@ -1039,7 +1039,7 @@ height: 52px;
   main, main .tut-post-main {
   width: 100%;
   }
-  .tut-right-bar {
+  .tut-right-bar, .mobile-hid {
   display: none;
   }
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
