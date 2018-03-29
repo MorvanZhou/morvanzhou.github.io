@@ -891,9 +891,6 @@ height: 250px;
 width:250px;
 margin: 0.5em 0 0.5em 1em;
 }
-#top-ads {
-height: 60px;
-}
 
 
 
@@ -1020,9 +1017,6 @@ height: 60px;
   margin: 0 auto;
   padding: 0.5em;
   }
-  #top-ads {
-  display:none;
-  }
 }
 
 
@@ -1039,7 +1033,7 @@ height: 60px;
   main, main .tut-post-main {
   width: 100%;
   }
-  .tut-right-bar, .mobile-hid {
+  .tut-right-bar {
   display: none;
   }
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
@@ -1067,14 +1061,12 @@ height: 60px;
   .tut-content-menu {
   display: none;
   }
-
 }
 
 @media screen and (min-width: 800px and max-width: 1000px) {
   main.tut-main {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -1082,7 +1074,6 @@ height: 60px;
     width: 1000px;
     margin: 0 auto;
   }
-
 }
 
 
