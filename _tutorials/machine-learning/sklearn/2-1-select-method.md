@@ -19,7 +19,8 @@ post-headings:
 
 安装完 Sklearn 后，不要直接去用，先了解一下都有什么模型方法，然后选择适当的方法，来达到你的目标。
 
-Sklearn 官网提供了一个流程图，蓝色圆圈内是判断条件，绿色方框内是可以选择的算法：
+Sklearn 官网提供了一个[流程图](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html){:target="_blank"}，
+蓝色圆圈内是判断条件，绿色方框内是可以选择的算法：
 
 {% include tut-image.html image-name="2_1_1.png" %}
 
