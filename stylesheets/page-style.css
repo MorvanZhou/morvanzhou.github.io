@@ -884,14 +884,18 @@ color: var(--c-green-hover);
 color:white;
 }
 
-/* ======== ads ======== */
-#under-title-ads {
+/* ======== a-d-s ======== */
+#under-title-a-d-s {
 float: right;
 height: 250px;
 width:250px;
 margin: 0.5em 0 0.5em 1em;
 }
 
+#juejin {
+width: 700px;
+height:60px;
+}
 
 
 
@@ -1009,13 +1013,19 @@ margin: 0.5em 0 0.5em 1em;
   width: 100%;
  }
 
- /* ======== ads ======== */
-  #under-title-ads {
+ /* ======== a-d-s ======== */
+  #under-title-a-d-s {
   float: none;
   text-align: center;
   display: block;
   margin: 0 auto;
   padding: 0.5em;
+  }
+  #juejin {
+  width:100%;
+  max-height:40px;
+  height:auto;
+  padding:0;
   }
 }
 
