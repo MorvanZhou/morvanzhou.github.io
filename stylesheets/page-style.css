@@ -892,8 +892,12 @@ width:250px;
 margin: 0.5em 0 0.5em 1em;
 }
 
+#top-ads {
+height: 60px;
+}
+
 #juejin {
-width: 700px;
+width:700px;
 height:60px;
 }
 
@@ -1021,6 +1025,11 @@ height:60px;
   margin: 0 auto;
   padding: 0.5em;
   }
+
+  #top-ads {
+  display:none;
+  }
+
   #juejin {
   width:100%;
   max-height:40px;
@@ -1043,7 +1052,7 @@ height:60px;
   main, main .tut-post-main {
   width: 100%;
   }
-  .tut-right-bar {
+  .tut-right-bar, .mobile-hid {
   display: none;
   }
   main .video-container, main .video-container iframe, main .video-container object, main .video-container embed {
