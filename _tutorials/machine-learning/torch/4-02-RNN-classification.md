@@ -41,7 +41,6 @@ post-headings:
 ```python
 import torch
 from torch import nn
-from torch.autograd import Variable
 import torchvision.datasets as dsets
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
@@ -81,7 +80,7 @@ test_data = torchvision.datasets.MNIST(root='./mnist/', train=False)
 train_loader = Data.DataLoader(dataset=train_data, batch_size=BATCH_SIZE, shuffle=True)
 
 # 为了节约时间, 我们测试时只测试前2000个
-test_x = Variable(torch.unsqueeze(test_data.test_data, dim=1), volatile=True).type(torch.FloatTensor)[:2000]/255.   # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
+test_x = torch.unsqueeze(test_data.test_data, dim=1).type(torch.FloatTensor)[:2000]/255.   # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
 test_y = test_data.test_labels[:2000]
 ```
 
@@ -146,9 +145,8 @@ loss_func = nn.CrossEntropyLoss()   # the target label is not one-hotted
 
 # training and testing
 for epoch in range(EPOCH):
-    for step, (x, y) in enumerate(train_loader):   # gives batch data
-        b_x = Variable(x.view(-1, 28, 28))   # reshape x to (batch, time_step, input_size)
-        b_y = Variable(y)   # batch y
+    for step, (x, b_y) in enumerate(train_loader):   # gives batch data
+        b_x = x.view(-1, 28, 28)   # reshape x to (batch, time_step, input_size)
 
         output = rnn(b_x)               # rnn output
         loss = loss_func(output, b_y)   # cross entropy loss

@@ -38,14 +38,10 @@ post-headings:
 
 ```python
 import torch
-from torch.autograd import Variable
 import matplotlib.pyplot as plt
 
 x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
 y = x.pow(2) + 0.2*torch.rand(x.size())                 # noisy y data (tensor), shape=(100, 1)
-
-# 用 Variable 来修饰这些数据 tensor
-x, y = torch.autograd.Variable(x), Variable(y)
 
 # 画图
 plt.scatter(x.data.numpy(), y.data.numpy())
@@ -94,7 +90,7 @@ Net (
 
 ```python
 # optimizer 是训练的工具
-optimizer = torch.optim.SGD(net.parameters(), lr=0.5)  # 传入 net 的所有参数, 学习率
+optimizer = torch.optim.SGD(net.parameters(), lr=0.2)  # 传入 net 的所有参数, 学习率
 loss_func = torch.nn.MSELoss()      # 预测值和真实值的误差计算公式 (均方差)
 
 for t in range(100):
@@ -118,7 +114,7 @@ import matplotlib.pyplot as plt
 plt.ion()   # 画图
 plt.show()
 
-for t in range(100):
+for t in range(200):
 
     ...
     loss.backward()
@@ -130,7 +126,7 @@ for t in range(100):
         plt.cla()
         plt.scatter(x.data.numpy(), y.data.numpy())
         plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
-        plt.text(0.5, 0, 'Loss=%.4f' % loss.data[0], fontdict={'size': 20, 'color':  'red'})
+        plt.text(0.5, 0, 'Loss=%.4f' % loss.data.numpy(), fontdict={'size': 20, 'color':  'red'})
         plt.pause(0.1)
 ```
 

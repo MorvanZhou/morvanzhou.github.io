@@ -50,7 +50,6 @@ post-headings:
 ```python
 import torch
 import torch.nn as nn
-from torch.autograd import Variable
 import torch.utils.data as Data
 import torchvision
 
@@ -129,10 +128,9 @@ optimizer = torch.optim.Adam(autoencoder.parameters(), lr=LR)
 loss_func = nn.MSELoss()
 
 for epoch in range(EPOCH):
-    for step, (x, y) in enumerate(train_loader):
-        b_x = Variable(x.view(-1, 28*28))   # batch x, shape (batch, 28*28)
-        b_y = Variable(x.view(-1, 28*28))   # batch y, shape (batch, 28*28)
-        b_label = Variable(y)               # batch label
+    for step, (x, b_label) in enumerate(train_loader):
+        b_x = x.view(-1, 28*28)   # batch x, shape (batch, 28*28)
+        b_y = x.view(-1, 28*28)   # batch y, shape (batch, 28*28)
 
         encoded, decoded = autoencoder(b_x)
 
@@ -153,7 +151,7 @@ for epoch in range(EPOCH):
 
 ```python
 # 要观看的数据
-view_data = Variable(train_data.train_data[:200].view(-1, 28*28).type(torch.FloatTensor)/255.)
+view_data = train_data.train_data[:200].view(-1, 28*28).type(torch.FloatTensor)/255.
 encoded_data, _ = autoencoder(view_data)    # 提取压缩的特征值
 fig = plt.figure(2)
 ax = Axes3D(fig)    # 3D 图

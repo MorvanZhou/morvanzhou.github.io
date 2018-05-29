@@ -50,7 +50,6 @@ post-headings:
 import torch
 import torch.utils.data as Data
 import torch.nn.functional as F
-from torch.autograd import Variable
 import matplotlib.pyplot as plt
 
 torch.manual_seed(1)    # reproducible
@@ -68,7 +67,7 @@ plt.scatter(x.numpy(), y.numpy())
 plt.show()
 
 # 使用上节内容提到的 data loader
-torch_dataset = Data.TensorDataset(data_tensor=x, target_tensor=y)
+torch_dataset = Data.TensorDataset(x, y)
 loader = Data.DataLoader(dataset=torch_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2,)
 ```
 
@@ -123,9 +122,7 @@ losses_his = [[], [], [], []]   # 记录 training 时不同神经网络的 loss
 ```python
 for epoch in range(EPOCH):
     print('Epoch: ', epoch)
-    for step, (batch_x, batch_y) in enumerate(loader):
-        b_x = Variable(batch_x)  # 务必要用 Variable 包一下
-        b_y = Variable(batch_y)
+    for step, (b_x, b_y) in enumerate(loader):
 
         # 对每个优化器, 优化属于他的神经网络
         for net, opt, l_his in zip(nets, optimizers, losses_his):
@@ -134,7 +131,7 @@ for epoch in range(EPOCH):
             opt.zero_grad()                # clear gradients for next train
             loss.backward()                # backpropagation, compute gradients
             opt.step()                     # apply gradients
-            l_his.append(loss.data[0])     # loss recoder
+            l_his.append(loss.data.numpy())     # loss recoder
 ```
 
 {% include tut-image.html image-name="3-6-2.png" %}

@@ -39,7 +39,6 @@ post-headings:
 
 ```python
 import torch
-from torch.autograd import Variable
 import matplotlib.pyplot as plt
 
 # 假数据
@@ -52,9 +51,6 @@ y1 = torch.ones(100)                # 类型1 y data (tensor), shape=(100, 1)
 # 注意 x, y 数据的数据形式是一定要像下面一样 (torch.cat 是在合并数据)
 x = torch.cat((x0, x1), 0).type(torch.FloatTensor)  # FloatTensor = 32-bit floating
 y = torch.cat((y0, y1), ).type(torch.LongTensor)    # LongTensor = 64-bit integer
-
-# torch 只能在 Variable 上训练, 所以把它们变成 Variable
-x, y = Variable(x), Variable(y)
 
 # plt.scatter(x.data.numpy()[:, 0], x.data.numpy()[:, 1], c=y.data.numpy(), s=100, lw=0, cmap='RdYlGn')
 # plt.show()
@@ -146,7 +142,7 @@ for t in range(100):
         pred_y = prediction.data.numpy().squeeze()
         target_y = y.data.numpy()
         plt.scatter(x.data.numpy()[:, 0], x.data.numpy()[:, 1], c=pred_y, s=100, lw=0, cmap='RdYlGn')
-        accuracy = sum(pred_y == target_y)/200  # 预测中有多少和真实值一样
+        accuracy = sum(pred_y == target_y)/200.  # 预测中有多少和真实值一样
         plt.text(1.5, -4, 'Accuracy=%.2f' % accuracy, fontdict={'size': 20, 'color':  'red'})
         plt.pause(0.1)
 

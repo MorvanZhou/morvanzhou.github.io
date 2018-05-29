@@ -52,7 +52,6 @@ post-headings:
 
 ```python
 import torch
-from torch.autograd import Variable
 from torch import nn
 from torch.nn import init
 import torch.utils.data as Data
@@ -80,10 +79,10 @@ noise = np.random.normal(0, 2, test_x.shape)
 test_y = np.square(test_x) - 5 + noise
 
 train_x, train_y = torch.from_numpy(x).float(), torch.from_numpy(y).float()
-test_x = Variable(torch.from_numpy(test_x).float(), volatile=True)  # volatile=True 不进行梯度计算
-test_y = Variable(torch.from_numpy(test_y).float(), volatile=True)
+test_x = torch.from_numpy(test_x).float()
+test_y = torch.from_numpy(test_y).float()
 
-train_dataset = Data.TensorDataset(data_tensor=train_x, target_tensor=train_y)
+train_dataset = Data.TensorDataset(train_x, train_y)
 train_loader = Data.DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2,)
 
 # show data
@@ -125,8 +124,8 @@ class Net(nn.Module):
         self._set_init(self.predict)            # 参数初始化
 
     def _set_init(self, layer):     # 参数初始化
-        init.normal(layer.weight, mean=0., std=.1)
-        init.constant(layer.bias, B_INIT)
+        init.normal_(layer.weight, mean=0., std=.1)
+        init.constant_(layer.bias, B_INIT)
 
     def forward(self, x):
         pre_activation = [x]
@@ -158,7 +157,6 @@ losses = [[], []]  # 每个网络一个 list 来记录误差
 for epoch in range(EPOCH):
     print('Epoch: ', epoch)
     for step, (b_x, b_y) in enumerate(train_loader):
-        b_x, b_y = Variable(b_x), Variable(b_y)
         for net, opt in zip(nets, opts):     # 训练两个网络
             pred, _, _ = net(b_x)
             loss = loss_func(pred, b_y)

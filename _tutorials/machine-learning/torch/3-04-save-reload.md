@@ -42,8 +42,6 @@ torch.manual_seed(1)    # reproducible
 # 假数据
 x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
 y = x.pow(2) + 0.2*torch.rand(x.size())  # noisy y data (tensor), shape=(100, 1)
-x, y = Variable(x, requires_grad=False), Variable(y, requires_grad=False)
-
 
 def save():
     # 建网络

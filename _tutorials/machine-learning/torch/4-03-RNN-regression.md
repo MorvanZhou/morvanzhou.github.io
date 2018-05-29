@@ -46,7 +46,6 @@ post-headings:
 ```python
 import torch
 from torch import nn
-from torch.autograd import Variable
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -131,19 +130,19 @@ loss_func = nn.MSELoss()
 
 h_state = None   # 要使用初始 hidden state, 可以设成 None
 
-for step in range(60):
+for step in range(100):
     start, end = step * np.pi, (step+1)*np.pi   # time steps
     # sin 预测 cos
     steps = np.linspace(start, end, 10, dtype=np.float32)
     x_np = np.sin(steps)    # float32 for converting torch FloatTensor
     y_np = np.cos(steps)
 
-    x = Variable(torch.from_numpy(x_np[np.newaxis, :, np.newaxis]))    # shape (batch, time_step, input_size)
-    y = Variable(torch.from_numpy(y_np[np.newaxis, :, np.newaxis]))
+    x = torch.from_numpy(x_np[np.newaxis, :, np.newaxis])    # shape (batch, time_step, input_size)
+    y = torch.from_numpy(y_np[np.newaxis, :, np.newaxis])
 
     prediction, h_state = rnn(x, h_state)   # rnn 对于每个 step 的 prediction, 还有最后一个 step 的 h_state
     # !!  下一步十分重要 !!
-    h_state = Variable(h_state.data)  # 要把 h_state 重新包装一下才能放入下一个 iteration, 不然会报错
+    h_state = h_state.data  # 要把 h_state 重新包装一下才能放入下一个 iteration, 不然会报错
 
     loss = loss_func(prediction, y)     # cross entropy loss
     optimizer.zero_grad()               # clear gradients for this training step

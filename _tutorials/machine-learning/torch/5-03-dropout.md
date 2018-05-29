@@ -45,7 +45,6 @@ post-headings:
 
 ```python
 import torch
-from torch.autograd import Variable
 import matplotlib.pyplot as plt
 
 torch.manual_seed(1)    # reproducible
@@ -56,12 +55,10 @@ N_HIDDEN = 300
 # training data
 x = torch.unsqueeze(torch.linspace(-1, 1, N_SAMPLES), 1)
 y = x + 0.3*torch.normal(torch.zeros(N_SAMPLES, 1), torch.ones(N_SAMPLES, 1))
-x, y = Variable(x, requires_grad=False), Variable(y, requires_grad=False)
 
 # test data
 test_x = torch.unsqueeze(torch.linspace(-1, 1, N_SAMPLES), 1)
 test_y = test_x + 0.3*torch.normal(torch.zeros(N_SAMPLES, 1), torch.ones(N_SAMPLES, 1))
-test_x, test_y = Variable(test_x, requires_grad=False), Variable(test_y, requires_grad=False)
 
 # show data
 plt.scatter(x.data.numpy(), y.data.numpy(), c='magenta', s=50, alpha=0.5, label='train')
