@@ -68,6 +68,13 @@ tensorflow:
     - 可视化好助手 Tensorboard
     - 高阶内容
 
+computer-vision:
+  chapter-names:
+    - 前沿计算机视觉
+    - 卷积神经网络
+    - 目标检测
+    - 生成对抗网络
+
 
 theano:
   chapter-names:

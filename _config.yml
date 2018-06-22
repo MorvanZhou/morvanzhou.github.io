@@ -157,6 +157,16 @@ defaults:
       thumbnail: /static/img/course_cover/ML-practice.jpg
 
   - scope:
+      path: "_tutorials/machine-learning/computer-vision"
+    values:
+      series: 计算机视觉
+      tut-permalink: /tutorials/machine-learning/computer-vision/
+      category: computer-vision
+      keywords: tensorflow, 机器学习, 神经网络, 计算机视觉，Computer-vision
+      thumbnail: /static/img/course_cover/computer-vision.jpg
+      published: true
+
+  - scope:
       path: "_tutorials/data-manipulation/np-pd"
     values:
       series: Numpy & Pandas

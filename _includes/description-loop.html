@@ -11,12 +11,12 @@
 
 		{% if description.tut-course-detail %}
 		<ul class="tut-course-thumbnail">
-	  {% for item in description.tut-course-detail %}
-	    <li><a href="{{ item[0] }}/">
-	     <img class="lazy-img" alt="{{ item[1] }}" data-src="{{ item[2] }}" src="/static/img/description/loading.gif" title='{{ item[1] }}'>
-	    </a></li>
-	  {% endfor %}
-	  </ul>
+	    {% for item in description.tut-course-detail %}
+	      <li><a href="{{ item[0] }}/">
+	        <img class="lazy-img" alt="{{ item[1] }}" data-src="{{ item[2] }}" src="/static/img/description/loading.gif" title='{{ item[1] }}'>
+	      </a></li>
+	    {% endfor %}
+	    </ul>
 		<br>
 		{% endif %}
 

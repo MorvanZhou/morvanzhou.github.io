@@ -12,6 +12,7 @@ tut-course-detail:
   - ["/tutorials/machine-learning/theano", "Theano", "/static/img/course_cover-small/theano.jpg"]
   - ["/tutorials/machine-learning/keras", "Keras", "/static/img/course_cover-small/keras.jpg"]
   - ["/tutorials/machine-learning/sklearn", "SciKit-Learn", "/static/img/course_cover-small/sklearn.jpg"]
+  - ["/tutorials/machine-learning/computer-vision", "计算机视觉", "/static/img/course_cover-small/CV.jpg"]
   - ["/tutorials/machine-learning/ML-practice", "机器学习实战", "/static/img/course_cover-small/ML-practice.jpg"]
 ---
 
