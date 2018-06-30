@@ -92,6 +92,7 @@ defaults:
       category: reinforcement-learning
       keywords: reinforcement learning, 强化学习, tensorflow
       thumbnail: /static/img/course_cover/rl.jpg
+      b-cid: 27657236
 
   - scope:
       path: "_tutorials/machine-learning/evolutionary-algorithm"
@@ -101,6 +102,7 @@ defaults:
       category: evolutionary-algorithm
       keywords: evolutionary algorithm, 进化算法, 遗传算法, genetic algorithm, neuro evalution
       thumbnail: /static/img/course_cover/EA.jpg
+      b-cid: 27670572
 
   - scope:
       path: "_tutorials/machine-learning/keras"
@@ -110,6 +112,7 @@ defaults:
       category: keras
       keywords: keras, 神经网络, tensorflow, theano
       thumbnail: /static/img/course_cover/keras.jpg
+      b-cid: 27639729
 
   - scope:
       path: "_tutorials/machine-learning/torch"
@@ -119,6 +122,7 @@ defaults:
       category: torch
       keywords: Torch, pytorch, 神经网络
       thumbnail: /static/img/course_cover/torch.jpg
+      b-cid: 27669626
 
   - scope:
       path: "_tutorials/machine-learning/sklearn"
@@ -128,6 +132,7 @@ defaults:
       category: sklearn
       keywords: sklearn, scikit-learn, 机器学习
       thumbnail: /sstatic/img/course_cover/sklearn.jpg
+      b-cid: 27793625
 
   - scope:
       path: "_tutorials/machine-learning/tensorflow"
@@ -137,6 +142,7 @@ defaults:
       category: tensorflow
       keywords: tensorflow, tensorboard, 机器学习, 神经网络
       thumbnail: /static/img/course_cover/tf.jpg
+      b-cid: 27636880
 
   - scope:
       path: "_tutorials/machine-learning/theano"
@@ -146,6 +152,7 @@ defaults:
       category: theano
       keywords: theano, 机器学习, 神经网络
       thumbnail: /static/img/course_cover/theano.jpg
+      b-cid: 27691025
 
   - scope:
       path: "_tutorials/machine-learning/ML-practice"
@@ -155,6 +162,7 @@ defaults:
       category: ML-practice
       keywords: 从头开始, 实战, 机器学习, 神经网络
       thumbnail: /static/img/course_cover/ML-practice.jpg
+      c-id: ""
 
   - scope:
       path: "_tutorials/machine-learning/computer-vision"
@@ -164,7 +172,7 @@ defaults:
       category: computer-vision
       keywords: tensorflow, 机器学习, 神经网络, 计算机视觉，Computer-vision
       thumbnail: /static/img/course_cover/computer-vision.jpg
-      published: true
+      b-cid: ""
 
   - scope:
       path: "_tutorials/data-manipulation/np-pd"
@@ -174,6 +182,7 @@ defaults:
       category: np-pd
       keywords: numpy, pandas, 数据, 处理
       thumbnail: /static/img/course_cover/np_pd.jpg
+      b-cid: 26721401
 
   - scope:
       path: "_tutorials/data-manipulation/plt"
@@ -183,6 +192,7 @@ defaults:
       category: plt
       keywords: matplotlib, plt, 数据可视化
       thumbnail: /static/img/course_cover/plt.jpg
+      b-cid: 26720349
 
   - scope:
       path: "_tutorials/data-manipulation/scraping"
@@ -192,6 +202,7 @@ defaults:
       category: scraping
       keywords: scraping, 爬虫, beautifulsoup
       thumbnail: /static/img/course_cover/scraping.jpg
+      b-cid: 29254375
 
   - scope:
       path: "_tutorials/python-basic/multiprocessing"
@@ -201,6 +212,7 @@ defaults:
       category: multiprocessing
       keywords: python, 基础, 多进程, multiprocessing
       thumbnail: /static/img/course_cover/multiprocessing.jpg
+      b-cid: 27699301
 
   - scope:
       path: "_tutorials/python-basic/threading"
@@ -210,6 +222,7 @@ defaults:
       category: threading
       keywords: python, 基础, 多线程, threading
       thumbnail: /static/img/course_cover/threading.jpg
+      b-cid: 27699349
 
 
   - scope:
@@ -220,6 +233,7 @@ defaults:
       category: tkinter
       keywords: python, 基础, GUI, 窗口, tkinter, tk
       thumbnail: /static/img/course_cover/tkinter.jpg
+      b-cid: 27695903
 
   - scope:
       path: "_tutorials/python-basic/basic"
@@ -229,6 +243,7 @@ defaults:
       category: basic
       keywords: python, 基础
       thumbnail: /static/img/course_cover/python_basic.jpg
+      b-cid: 27671105
 
   - scope:
       path: "_tutorials/others/linux-basic"
@@ -238,6 +253,7 @@ defaults:
       category: linux-basic
       keywords: linux, 基础
       thumbnail: /static/img/course_cover/ML_intro.png
+      b-cid: 26070871
 
   - scope:
       path: "_tutorials/others/git"
@@ -247,4 +263,5 @@ defaults:
       category: git
       keywords: 其他, git, VCS
       thumbnail: /static/img/course_cover/git.jpg
+      b-cid: 26719433
       published: true

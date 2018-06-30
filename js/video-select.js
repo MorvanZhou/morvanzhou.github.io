@@ -1,4 +1,6 @@
-function videoChinaIP(src) {
+function videoChinaIP(src, src_name, vid) {
+// this function is not in here!!!!! find it in base.html
+
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
         var request = new XMLHttpRequest();
@@ -15,14 +17,16 @@ function videoChinaIP(src) {
             var element = root.getElementsByTagName("CountryName");
             var country = element[0].firstChild.nodeValue;
             if (country == "China"){
-                chooseVideo(src);
+                chooseVideo(src, src_name, vid);
             }
         }
     }
     request.send(null);
+
 }
 
 function chooseVideo(src, src_name, vid)
+// this function is not in here!!!!! find it in base.html
 {
     var velem = document.getElementById('videogfw');
     var vai = document.getElementById("video-alrt-info");
@@ -39,7 +43,7 @@ function chooseVideo(src, src_name, vid)
         vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid + '" target="_blank" >点击这里</a> 跳转至B站内)';
       }
       else if (src.includes("bilibili")) {
-        velem.style.paddingBottom = "58%";
+        velem.style.paddingBottom = "72.5%";
         vai.style.display = "block";
         vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
       }
@@ -77,5 +81,4 @@ function chooseVideo(src, src_name, vid)
         $("#myVideo").remove();
         $("#videogfw").append(video);
     }
-
 }

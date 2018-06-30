@@ -25,18 +25,18 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     /* video-select.js */
-    function videoChinaIP(src) {
+    function videoChinaIP(src, src_name, vid) {
       if (window.XMLHttpRequest){ var request = new XMLHttpRequest();}
       else{var request = new ActiveXObject("Microsoft.XMLHTTP");}
       request.open('GET', '//freegeoip.net/xml/');
       request.onreadystatechange = function() {
-          if (request.readyState == 4 && request.status == 200) {
-              var xmlDoc = request.responseXML;
-              var root = xmlDoc.documentElement;
-              var element = root.getElementsByTagName("CountryName");
-              var country = element[0].firstChild.nodeValue;
-              if (country == "China"){
-                  chooseVideo(src);}}}
+        if (request.readyState == 4 && request.status == 200) {
+          var xmlDoc = request.responseXML;
+          var root = xmlDoc.documentElement;
+          var element = root.getElementsByTagName("CountryName");
+          var country = element[0].firstChild.nodeValue;
+          if (country == "China"){
+              chooseVideo(src, src_name, vid);}}}
       request.send(null);}
     function chooseVideo(src, src_name, vid){
       var velem = document.getElementById('videogfw');
@@ -52,7 +52,7 @@
           vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid + '" target="_blank" >点击这里</a> 跳转至B站内)';
         }
         else if (src.includes("bilibili")) {
-          velem.style.paddingBottom = "58%";
+          velem.style.paddingBottom = "72.5%";
           vai.style.display = "block";
           vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
         }}
@@ -71,17 +71,17 @@
         if (vai) { vai.style.display = "none"; }
       }
       if (src.includes("swf") && (!FlashDetect.installed)){
-          $("#myVideo").remove();
-          velem.style.paddingBottom = "0";
-          velem.style.lineHeight = "90px";
-          velem.style.textAlign = "center";
-          velem.style.fontSize = "2.5em";
-          velem.innerHTML = "您的浏览器不支持 Flash 播放器, 请前往<a href='https://www.bilibili.com/video/av" + vid +"' target='_blank'>B站内</a>观看或切换视频源";
+        $("#myVideo").remove();
+        velem.style.paddingBottom = "0";
+        velem.style.lineHeight = "90px";
+        velem.style.textAlign = "center";
+        velem.style.fontSize = "2.5em";
+        velem.innerHTML = "您的浏览器不支持 Flash 播放器, 请前往<a href='https://www.bilibili.com/video/av" + vid +"' target='_blank'>B站内</a>观看或切换视频源";
       }
       else {
-          var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
-          $("#myVideo").remove();
-          $("#videogfw").append(video);}}
+        var video = '<iframe id="myVideo" class="myvideo" width="560" height=315 src=' + src + ' frameborder="0" allowfullscreen></iframe>';
+        $("#myVideo").remove();
+        $("#videogfw").append(video);}}
   </script>
   <script type="text/javascript">
     /* check-flash.js */

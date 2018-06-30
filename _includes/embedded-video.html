@@ -9,27 +9,31 @@
 
 	<div id="videogfw" class="video-container">
 	<script type="text/javascript">
-	    var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
-	    var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
-	    // var bilibili_src = "//www.bilibili.com/blackboard/player.html?aid={{page.bilibili_id}}&as_wide=1";
-	    var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
-	    // var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
+		var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
+		var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
+		{% assign aidpage = page.bilibili_id | split:'&' %}
+		var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
 
-	    // the default video source you wanna play
-	    chooseVideo(youtube_src, "youtube", "{{page.youtube_id}}");
+		// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
+		// var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
 
-	   // Uncomment the following line if you want
-	   // it automatically select the video source
-	   // according to ip address:
-	   var len_b = "{{page.bilibili_id}}";
-	   if (len_b.length != 0)
-	   {
-	    videoChinaIP(bilibili_src);
-	   }
-	   else
-	   {
-	    videoChinaIP(youku_src);
-	   }
+		// the default video source you wanna play
+		chooseVideo(youtube_src, "youtube", "{{page.youtube_id}}");
+
+		// Uncomment the following line if you want
+		// it automatically select the video source
+		// according to ip address:
+		var len_b = "{{page.bilibili_id}}";
+
+		// if don't have bilibili video
+		if (len_b.length != 0)
+		{
+		videoChinaIP(bilibili_src, 'bilibili', '{{page.bilibili_id}}');
+		}
+		else
+		{
+		videoChinaIP(youku_src, 'youku', '{{page.youku_id}}');
+		}
 	</script>
 	</div>
 
@@ -42,15 +46,15 @@
 		{% endif %}
 
 		{% if page.youku_id %}
-	  <button class="switch-video-btn" onclick="chooseVideo(youku_src, 'youku', '{{page.youku_id}}')">
-	    优酷
-	  </button>
+		<button class="switch-video-btn" onclick="chooseVideo(youku_src, 'youku', '{{page.youku_id}}')">
+			优酷
+		</button>
 		{% endif %}
 
 		{% if page.bilibili_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}')">
-	    Bilibili
-	  </button>
+	    	Bilibili
+	    </button>
 		{% endif %}
 
 		<p id="video-alrt-info" style="display: none; font-size: 0.8em; text-align: center;">
