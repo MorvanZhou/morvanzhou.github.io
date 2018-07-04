@@ -9,37 +9,35 @@
 
 	<div id="videogfw" class="video-container">
 	<script type="text/javascript">
-		window.addEventListener('load', function(){
-    (function(d, s) {
 
-      var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
-			var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
-			{% assign aidpage = page.bilibili_id | split:'&' %}
-			var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
+    var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
+		var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
+		{% assign aidpage = page.bilibili_id | split:'&' %}
+		var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
 
-			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
-			// var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
+		// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
+		// var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
 
-			// the default video source you wanna play
-			chooseVideo(youtube_src, "youtube", "{{page.youtube_id}}");
+		// the default video source you wanna play
+		// chooseVideo(youtube_src, "youtube", "{{page.youtube_id}}");
+		chooseVideo(bilibili_src, "bilibili", "{{page.bilibili_id}}");
 
-			// Uncomment the following line if you want
-			// it automatically select the video source
-			// according to ip address:
-			var len_b = "{{page.bilibili_id}}";
+		// Uncomment the following line if you want
+		// it automatically select the video source
+		// according to ip address:
+		var len_b = "{{page.bilibili_id}}";
 
-			// if don't have bilibili video
-			if (len_b.length != 0)
-			{
-			videoChinaIP(bilibili_src, 'bilibili', '{{page.bilibili_id}}');
-			}
-			else
-			{
-			videoChinaIP(youku_src, 'youku', '{{page.youku_id}}');
-			}
-
-      })(document, 'script');
-    }, false)
+		// if don't have bilibili video
+		if (len_b.length != 0)
+		{
+		chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}');
+		// videoChinaIP(bilibili_src, 'bilibili', '{{page.bilibili_id}}');
+		}
+		else
+		{
+		chooseVideo(youku_src, 'youku', '{{page.youku_id}}')
+		// videoChinaIP(youku_src, 'youku', '{{page.youku_id}}');
+		}
 
 	</script>
 	</div>
