@@ -11,15 +11,16 @@ function videoChinaIP(src, src_name, vid) {
     }
     request.open('GET', '//ip-api.com/xml');
     request.onreadystatechange = function() {
-        if (request.readyState == 4 && request.status == 200) {
-            var xmlDoc = request.responseXML;
-            var root = xmlDoc.documentElement;
-            var element = root.getElementsByTagName("countryCode");
-            var country = element[0].firstChild.nodeValue;
-            if (country == "CN"){
-                chooseVideo(src, src_name, vid);
-            }
+      if (request.readyState == 4 && request.status == 200) {
+        var xmlDoc = request.responseXML;
+        var root = xmlDoc.documentElement;
+        var element = root.getElementsByTagName("countryCode");
+        var country = element[0].firstChild.nodeValue;
+        if (country == "CN"){
+          chooseVideo(src, src_name, vid);
         }
+        alert(country);
+      }
     }
     request.send(null);
 
