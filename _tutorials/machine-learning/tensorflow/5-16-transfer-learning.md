@@ -64,7 +64,8 @@ CNN 通常都是大型模型, 下面我们拿 CNN 来举个例子. 我训练好�
 {% include tut-image.html image-name="5_16_03.png" %}
 
 因为有些图片url已经过期了, 所以我自己也手动过滤了一遍, 将不是图片的和404的图片给清理掉了. 因为只有两个类,
-图片不是很多, 比较好清理.
+图片不是很多, 比较好清理. 有网友说一些很多链接和图片已经"失联", 我把我收集到的图片数据打包放在[我的百度云](https://pan.baidu.com/s/1weg_hw-F9wVjK0J7ldjNZw){:target="_blank"},
+如果用代码下图片感到有困难的同学们, 请直接在我[百度云](https://pan.baidu.com/s/1weg_hw-F9wVjK0J7ldjNZw){:target="_blank"}下载吧.
 
 因为现在我们不是预测分类结果了, 所以我伪造了一些体长的数据. 老虎通常要比猫长, 所以它们的 distribution 就差不多是下面这种结构(单位cm).
 
@@ -76,7 +77,7 @@ CNN 通常都是大型模型, 下面我们拿 CNN 来举个例子. 我训练好�
 处理好图片后, 我们可以开始弄 VGG 的 pre-trained model. 我使用的是[machrisaa](https://github.com/machrisaa/tensorflow-vgg){:target="_blank"} 改写的
 [VGG16 的代码](https://github.com/machrisaa/tensorflow-vgg/blob/master/vgg16.py){:target="_blank"}.
 和他提供的 VGG16 train 好了的 model parameters, 你可以在[这里下载](https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM){:target="_blank"} 这些 parameters
-(有网友说这个文件下载不了，我把它放在了[百度云共享](https://pan.baidu.com/s/1Spps1Wy0bvrQHH2IMkRfpg){:target="_blank"}了).
+(有网友说这个文件下载不了，我把它放在了[百度云共享](https://pan.baidu.com/s/1Dnz11zVrpWhKmUIAOm33-w){:target="_blank"}了).
 做好准备, 这个 parameter 文件有500+MB.
 可见一般 CNN 的 model 有多大.
 
