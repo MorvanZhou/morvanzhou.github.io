@@ -19,7 +19,7 @@ function videoChinaIP(src, src_name, vid) {
         if (country == "CN"){
           chooseVideo(src, src_name, vid);
         }
-        alert(country);
+
       }
     }
     request.send(null);
