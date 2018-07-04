@@ -9,14 +9,14 @@ function videoChinaIP(src, src_name, vid) {
     {// code for IE6, IE5
         var request = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    request.open('GET', '//freegeoip.net/xml/');
+    request.open('GET', '//ip-api.com/xml');
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
             var xmlDoc = request.responseXML;
             var root = xmlDoc.documentElement;
-            var element = root.getElementsByTagName("CountryName");
+            var element = root.getElementsByTagName("countryCode");
             var country = element[0].firstChild.nodeValue;
-            if (country == "China"){
+            if (country == "CN"){
                 chooseVideo(src, src_name, vid);
             }
         }
@@ -33,13 +33,13 @@ function chooseVideo(src, src_name, vid)
 
     // bilibili
     if (src_name == "bilibili") {
+      if (vid.includes("&page=")) {
+          var words = vid.split("&page=");
+          var vid = words[0] +"/?p=" + words[1];
+      }
       if (src.includes("hdslb")) {
         velem.style.paddingBottom = "70%";
         vai.style.display = "block";
-        if (vid.includes("&page=")) {
-          var words = vid.split("&page=");
-          var vid = words[0] +"/#page=" + words[1];
-        }
         vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid + '" target="_blank" >点击这里</a> 跳转至B站内)';
       }
       else if (src.includes("bilibili")) {
