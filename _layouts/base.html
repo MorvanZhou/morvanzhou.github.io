@@ -44,7 +44,7 @@
       if (src_name == "bilibili") {
         if (src.includes("hdslb")) {
           velem.style.paddingBottom = "70%";
-          vai.style.display = "block";
+          // vai.style.display = "block";
           if (vid.includes("&page=")) {
             var words = vid.split("&page=");
             var vid = words[0] +"/#page=" + words[1];
@@ -53,7 +53,7 @@
         }
         else if (src.includes("bilibili")) {
           velem.style.paddingBottom = "72.5%";
-          vai.style.display = "block";
+          // vai.style.display = "block";
           vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
         }}
       else if (src_name == "youku") {
