@@ -14,7 +14,7 @@ function getEmbeddedVideo(bilibili_src, bilibili_id, youtube_src, youtube_id, yo
         var root = xmlDoc.documentElement;
         var element = root.getElementsByTagName("countryCode");
         var country = element[0].firstChild.nodeValue;
-        if (country != "CN"){
+        if (country == "CN"){
           // alert('china');
           chooseVideo(bilibili_src, 'bilibili', bilibili_id);
 
