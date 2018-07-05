@@ -21,22 +21,22 @@
 	</div>
 
 	<div class="switch-video-div">
-		视频源：
+		切换视频源：
 		{% if page.youtube_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(youtube_src, 'youtube', '{{page.youtube_id}}')">
-			YouTube
+			<img class="icon" src="/static/img/icon/youtube.png" alt="Youtube频道">
 		</button>
 		{% endif %}
 
 		{% if page.youku_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(youku_src, 'youku', '{{page.youku_id}}')">
-			优酷
+			<img class="icon" src="/static/img/icon/youku.jpg" alt="优酷频道">
 		</button>
 		{% endif %}
 
 		{% if page.bilibili_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}')">
-	    	Bilibili
+	    	<img class="icon" src="/static/img/icon/bilibili_icon.png" alt="Bilibili">
 	    </button>
 		{% endif %}
 
