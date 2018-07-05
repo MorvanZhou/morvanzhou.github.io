@@ -1,32 +1,33 @@
 function getEmbeddedVideo(bilibili_src, bilibili_id, youtube_src, youtube_id, youku_src, youku_id) {
-    if (window.XMLHttpRequest)
-    {// code for IE7+, Firefox, Chrome, Opera, Safari
-        var request = new XMLHttpRequest();
-    }
-    else
-    {// code for IE6, IE5
-        var request = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    request.open('GET', '//ip-api.com/xml');
-    request.onreadystatechange = function() {
-      if (request.readyState == 4 && request.status == 200) {
-        var xmlDoc = request.responseXML;
-        var root = xmlDoc.documentElement;
-        var element = root.getElementsByTagName("countryCode");
-        var country = element[0].firstChild.nodeValue;
-        if (country == "CN"){
-          // alert('china');
-          chooseVideo(bilibili_src, 'bilibili', bilibili_id);
+    chooseVideo(bilibili_src, 'bilibili', bilibili_id);
 
-        }
-        else {
-          // alert('overseas');
-          chooseVideo(youtube_src, 'youtube', youtube_id);
-          }
-
-      }
-    }
-    request.send(null);
+//    if (window.XMLHttpRequest)
+//    {// code for IE7+, Firefox, Chrome, Opera, Safari
+//        var request = new XMLHttpRequest();
+//    }
+//    else
+//    {// code for IE6, IE5
+//        var request = new ActiveXObject("Microsoft.XMLHTTP");
+//    }
+//    request.open('GET', '//ip-api.com/xml');
+//    request.onreadystatechange = function() {
+//      if (request.readyState == 4 && request.status == 200) {
+//        var xmlDoc = request.responseXML;
+//        var root = xmlDoc.documentElement;
+//        var element = root.getElementsByTagName("countryCode");
+//        var country = element[0].firstChild.nodeValue;
+//        if (country == "CN"){
+//          // alert('china');
+//          chooseVideo(bilibili_src, 'bilibili', bilibili_id);
+//        }
+//        else {
+//          // alert('overseas');
+//          chooseVideo(youtube_src, 'youtube', youtube_id);
+//          }
+//
+//      }
+//    }
+//    request.send(null);
 
 }
 
