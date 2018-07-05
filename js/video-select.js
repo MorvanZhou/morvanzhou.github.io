@@ -1,6 +1,4 @@
-function videoChinaIP(src, src_name, vid) {
-// this function is not in here!!!!! find it in base.html
-
+function getEmbeddedVideo(bilibili_src, bilibili_id, youtube_src, youtube_id, youku_src, youku_id) {
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
         var request = new XMLHttpRequest();
@@ -16,9 +14,15 @@ function videoChinaIP(src, src_name, vid) {
         var root = xmlDoc.documentElement;
         var element = root.getElementsByTagName("countryCode");
         var country = element[0].firstChild.nodeValue;
-        if (country == "CN"){
-          chooseVideo(src, src_name, vid);
+        if (country != "CN"){
+          // alert('china');
+          chooseVideo(bilibili_src, 'bilibili', bilibili_id);
+
         }
+        else {
+          // alert('overseas');
+          chooseVideo(youtube_src, 'youtube', youtube_id);
+          }
 
       }
     }
@@ -85,3 +89,5 @@ function chooseVideo(src, src_name, vid)
         $("#videogfw").append(video);
     }
 }
+
+

@@ -8,25 +8,16 @@
 	{% if page.youtube_id %}
 
 	<div id="videogfw" class="video-container">
-	<script type="text/javascript">
+		<!-- video embedding-->
+		<script type="text/javascript">
+			var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
+			var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
+			{% assign aidpage = page.bilibili_id | split:'&' %}
+			var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
+			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
 
-    var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
-		var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
-		{% assign aidpage = page.bilibili_id | split:'&' %}
-		var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
-
-		// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
-		// var alternate_src = "//player.youku.com/player.php/sid/{{page.youku_id}}==/v.swf";
-
-		// the default video source you wanna play
-		chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}');
-
-		// Uncomment the following line if you want
-		// it automatically select the video source
-		// according to ip address:
-		var len_b = "{{page.bilibili_id}}";
-
-	</script>
+    		getEmbeddedVideo(bilibili_src, "{{page.bilibili_id}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
+		</script>
 	</div>
 
 	<div class="switch-video-div">
