@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="switch-video-div">
-		切换视频源：
+		<span style="font-weight: bold;vertical-align: super;" >切换视频源：</span>
 		{% if page.youtube_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(youtube_src, 'youtube', '{{page.youtube_id}}')">
 			<img class="icon" src="/static/img/icon/youtube.png" alt="Youtube频道">
@@ -40,8 +40,8 @@
 	    </button>
 		{% endif %}
 
-		<p id="video-alrt-info" style="display: none; font-size: 0.8em; text-align: center;">
-		</p>
+		<p id="video-alrt-info" style="display: none; font-size: 0.8em; text-align: center;"></p>
+		<hr style="width: 60%;">
 
 
 	</div>
