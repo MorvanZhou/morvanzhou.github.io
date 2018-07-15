@@ -1,5 +1,11 @@
 function getEmbeddedVideo(bilibili_src, bilibili_id, youtube_src, youtube_id, youku_src, youku_id) {
-    chooseVideo(bilibili_src, 'bilibili', bilibili_id);
+    if ((returnCitySN["cid"] != "710000") && (returnCitySN["cid"] == parseInt(Number(returnCitySN["cid"])))) {
+        chooseVideo(bilibili_src, 'bilibili', bilibili_id);
+    }
+    else {
+        chooseVideo(youtube_src, 'youtube', youtube_id);
+    }
+
 
 //    if (window.XMLHttpRequest)
 //    {// code for IE7+, Firefox, Chrome, Opera, Safari
