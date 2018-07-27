@@ -1,9 +1,9 @@
 <scheme name="WarmNeon" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2018-07-27T18:48:57</property>
+    <property name="created">2018-07-27T19:51:34</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2018.1.4.0.0</property>
-    <property name="modified">2018-07-27T18:49:02</property>
+    <property name="modified">2018-07-27T19:51:41</property>
     <property name="originalScheme">_@user_WarmNeon</property>
   </metaInfo>
   <colors>
@@ -1241,7 +1241,8 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="594b52" />
+        <option name="FOREGROUND" value="2b2b2b" />
+        <option name="BACKGROUND" value="dfbdce" />
         <option name="ERROR_STRIPE_COLOR" value="ffcdff" />
       </value>
     </option>
