@@ -1,0 +1,4 @@
+- question: 在教程中使用的 Pycharm 配色方案可以共享吗?
+  answer:  感谢你们的喜爱, 我把我的配色方案放在网上了, 你可以<a href='/static/files/Morvan Pycharm color scheme.icls'>点击这里</a>下载. 在 Pycharm 中, 找到 Python 的配色方案 (Editor > Color Scheme > Python), 点击上部的小齿轮, 选 import scheme, 然后选择你刚刚下载的那个文件就行啦.
+  original-question: 您好！我是一个喜欢看您深度学习教学的大三学生，来自北京邮电大学。在您的教学视频中我发现您的pycharm配色非常好看，写代码看起来心情都会变的有活力起来哎...与另一个也看您教学的同学交流之后发现大家都是一样的想法！今天发这封这封邮件，是想麻烦您把自己的pycharm代码高亮配色贴出来，算是我们的一个小愿望啦！如有打扰还请多包涵～
+
