@@ -1,9 +1,9 @@
 <scheme name="WarmNeon" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2018-07-27T15:18:58</property>
+    <property name="created">2018-07-27T18:48:57</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2018.1.4.0.0</property>
-    <property name="modified">2018-07-27T15:19:27</property>
+    <property name="modified">2018-07-27T18:49:02</property>
     <property name="originalScheme">_@user_WarmNeon</property>
   </metaInfo>
   <colors>
@@ -295,7 +295,7 @@
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="6ccf3f" />
+        <option name="FOREGROUND" value="9bc28e" />
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER" baseAttributes="TEXT" />
@@ -336,6 +336,11 @@
     <option name="DEFAULT_NUMBER">
       <value>
         <option name="FOREGROUND" value="f971bb" />
+      </value>
+    </option>
+    <option name="DEFAULT_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="859dff" />
       </value>
     </option>
     <option name="DEFAULT_STATIC_FIELD">
@@ -922,7 +927,7 @@
     </option>
     <option name="PY.DECORATOR">
       <value>
-        <option name="FOREGROUND" value="6699ff" />
+        <option name="FOREGROUND" value="459cff" />
       </value>
     </option>
     <option name="PY.DOC_COMMENT">
@@ -945,7 +950,7 @@
     </option>
     <option name="PY.KEYWORD_ARGUMENT">
       <value>
-        <option name="FOREGROUND" value="f66a37" />
+        <option name="FOREGROUND" value="37c22b" />
       </value>
     </option>
     <option name="PY.LINE_COMMENT">
