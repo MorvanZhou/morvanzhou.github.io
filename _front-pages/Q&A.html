@@ -12,16 +12,16 @@ description: "在邮件,知乎,微博,或留言中常被提问的问题"
 {% assign questions = site.data.Q-and-A %}
 {% for q in questions %}
 
-<div id="{{ forloop.index }}" class="pad-main section ie-size" style="font-size:0.9em;">
-  <div>
-    <a href="{{page.url}}#{{ forloop.index }}" title="Permalink to this question">
-      <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">Q:</p>
+<div id="{{ q.key }}" class="pad-main section ie-size" style="font-size:0.9em;">
+  <div style="font-size:1.5em;">
+    <a href="{{page.url}}#{{ q.key }}" title="Permalink to this question">
+      <p style="font-weight:bold;float: left;padding-right: 0.8em;margin: 0;">Q:</p>
     </a>
     <p>{{ q.question }}</p>
   </div>
 
   <div style="clear:both;">
-    <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">A:</p>
+    <p style="font-weight:bold;float: left;padding-right: 0.8em;margin: 0;font-size:1.5em;">A:</p>
     <p>{{ q.answer }}</p>
   </div>
 
