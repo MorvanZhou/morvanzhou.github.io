@@ -11,19 +11,26 @@ description: "在邮件,知乎,微博,或留言中常被提问的问题"
 
 {% assign questions = site.data.Q-and-A %}
 {% for q in questions %}
-<div class="pad-main section ie-size" style="font-size:0.9em;">
-  <div>
-    <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">Q:</p>
-    <p>{{ q.question }}</p>
-  </div>
-  <div style="clear:both;">
-    <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">A:</p>
-    <p>{{ q.answer }}</p>
-  </div>
-  <div style="font-size:0.8em;clear:both;">
-    <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">原问题:</p>
-    <p>{{ q.original-question }}</p>
-  </div>
+<a href="{{page.url}}#{{ forloop.index }}" title="Permalink to this question">
+  <div id="{{ forloop.index }}" class="pad-main section ie-size" style="font-size:0.9em;">
 
-</div>
+    <div>
+      <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">Q:</p>
+      <p>{{ q.question }}</p>
+    </div>
+
+    <div style="clear:both;">
+      <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">A:</p>
+      <p>{{ q.answer }}</p>
+    </div>
+
+    <hr style="width:90%;">
+
+    <div style="font-size:0.8em;clear:both;">
+      <p style="font-weight:bold;float: left;padding-right: 2em;margin: 0;">原问题:</p>
+      <p>{{ q.original-question }}</p>
+    </div>
+
+  </div>
+</a>
 {% endfor %}
