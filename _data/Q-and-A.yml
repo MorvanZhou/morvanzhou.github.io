@@ -1,21 +1,29 @@
 - key: pycharm-color-scheme
   question: 在教程中使用的 Pycharm 配色方案可以共享吗?
   answer: |
-    感谢你们的喜爱, 我把我的配色方案放在网上了, 你可以<a href='/static/files/Morvan Pycharm color scheme.icls'>点击这里</a>下载. 在 Pycharm 中, 找到 Python 的配色方案 (Editor > Color Scheme > Python), 点击上部的小齿轮, 选 import scheme, 然后选择你刚刚下载的那个文件就行啦.
+    感谢你们的喜爱, 我把我的配色方案放在网上了,
+    你可以<a href='/static/files/Morvan Pycharm color scheme.icls'>点击这里</a>下载.
+    在 Pycharm 中, 找到 Python 的配色方案 (Editor > Color Scheme > Python), 点击上部的小齿轮, 选 import scheme, 然后选择你刚刚下载的那个文件就行啦.
   original-question: 您好！我是一个喜欢看您深度学习教学的大三学生，来自北京邮电大学。在您的教学视频中我发现您的pycharm配色非常好看，写代码看起来心情都会变的有活力起来哎...与另一个也看您教学的同学交流之后发现大家都是一样的想法！今天发这封这封邮件，是想麻烦您把自己的pycharm代码高亮配色贴出来，算是我们的一个小愿望啦！如有打扰还请多包涵～
 
 - key: monosnap
   question: 用什么软件录的视频?
-  answer: 我是 Macbook, 所以我选 <a href="https://monosnap.com/welcome" target="_blank">Monosnap</a> 录的视频, 里面可以设置你自己的头像.
+  answer: |
+    我是 Macbook, 所以我选 <a href="https://monosnap.com/welcome" target="_blank">Monosnap</a> 录的视频, 里面可以设置你自己的头像.
   original-question: 请问录视频时，怎么设置右下角露自己的头像？
 
 - key: self-taught-ML
   question: 如何自学机器学习?
   answer: |
     其实我也是走的自学的道路一路走到今天这样. 我来总结一下我自己的自学之路吧.
-    (1) 首先个人认为还是以上课的形式来学习比较快, 比如 Andrew Ng 的 <a href="https://www.coursera.org/learn/machine-learning">Machine Learning</a> 公开课, 还有李飞飞的 <a href="http://cs231n.stanford.edu/">公开课</a>. 还有很多, 比如中文教学的李宏毅的课程. 毕竟有老师来讲课, 你理解起来也方便些.
-    (2) 有了一定理解之后, 就到了动手做实验的时候了. 这时, <a href="/">我的这些教学</a>就能帮助你快速搭建起你的工程实践能力. 你也可以参考一下我画的这个<a href="/learning-steps/">学习流程</a>.
+
+    (1) 首先个人认为还是以上课的形式来学习比较快, 比如 Andrew Ng 的 <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning</a> 公开课,
+    还有李飞飞的 <a href="http://cs231n.stanford.edu/" target="_blank>公开课</a>. 还有很多, 比如中文教学的李宏毅的课程. 毕竟有老师来讲课, 你理解起来也方便些.
+
+    (2) 有了一定理解之后, 就到了动手做实验的时候了. 这时, <a href="/">我的这些教学</a>就能帮助你快速搭建起你的工程实践能力.
+    你也可以参考一下我画的这个<a href="/learning-steps/">学习流程</a>.
     当然, 网络上还有很多其他很优秀的教学, 你也不要放过任何机会, 多看看他们和我的教学有哪些不同, 看看在我教学中没有, 你还没学到的东西.
+
     (3) 最后, 就是耐下心来读论文, 看paper, 紧紧抓住最前沿技术的尾巴, 让自己不落后于时代.
   original-question: 看到你的教程感觉真的很舒服！非常的通俗易懂！也很感谢有你的教程！其实我也自学过。但效果不是很理想。想请教下你的自学方法！是买书看呢还是什么！
 
@@ -23,9 +31,13 @@
   question: 怎么申请澳洲博士?
   answer: |
     澳洲有很多有名的大学, 申请博士的步骤也不会特别复杂. 我个人比较推荐这样的步骤.
+
     (1) 不要只看学校, 要看你想读的专业方向的老师, 在他们学校的官网中, 找到研究方向对你胃口的老师.
+
     (2) 不要急于申请学校, 先和这个老师沟通, 可以说有70%概率是老师要你, 然后你就可以去哪个学校读博了. 可以先发email和老师沟通 (不过大多数时候老师的email都有看不完的邮件, 你的邮件很可能就淹没掉了).
     不要灰心, 如果很久没有收到回复, 可以尝试联系一下这个老师下面的博士生们. 尝试联系一下这些博士生 (夸他们在学术上的成就通常是一个好开头), 将你想要当同门师兄弟的愿望告诉他们, 然后他们可以帮你内推哦.
+
     (3) 老师同意后, 给出 offer. 不过特别不推荐自费读博. 特别贵! 这个学校不给奖学金, 说不定下一个会给. 总之, 优先给奖学金的学校.
-    (4) 有资金, 有导师, 有门路, 现在就祝你学业有成啦.
+
+    (4) 有资金, 有导师, 有门路, 现在就祝你学业有成啦."
   original-question: 我也打算去澳洲读PDH,想请教一下老师，您在申请PHD的时候是怎么联系导师的？另外在澳洲读PHD的时候，总体消费大概是什么情况？在网上搜到相关的问题，回答的出入很大，所以想听听您的回答。
