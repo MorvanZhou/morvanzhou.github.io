@@ -15,7 +15,8 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt13_image.py){:target="_blank"}
-
+  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/509d7f77acdb895f){:target="_blank"}
+  
 {% include assign-heading.html %}
 
 这一节我们讲解怎样在**matplotlib**中打印出图像。这里我们打印出的是纯粹的数字，而非自然图像。

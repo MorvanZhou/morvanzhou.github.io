@@ -14,7 +14,8 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt9_tick_visibility.py){:target="_blank"}
-
+  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/1193c089abfb296d){:target="_blank"}
+  
 {% include assign-heading.html %}
 
 当图片中的内容较多，相互遮盖时，我们可以通过设置相关内容的透明度来使图片更易于观察，也即是通过本节中的`bbox`参数设置来调节图像信息.

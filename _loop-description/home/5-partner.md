@@ -5,5 +5,6 @@ tut-dir: /
 description: ""
 tut-course-detail:
   - ["http://sofasofa.io", "SofaSofa数据科学社区", "/static/img/support/sofasofa_logo.png",  ]
+  - ["https://www.kesci.com", "科赛网", "/static/img/support/kesci_logo.png", ]
 ---
 
