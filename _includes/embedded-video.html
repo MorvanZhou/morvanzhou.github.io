@@ -16,11 +16,15 @@
 			var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
 			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
 
-    		getEmbeddedVideo(bilibili_src, "{{page.bilibili_id}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
+    	getEmbeddedVideo(bilibili_src, "{{page.bilibili_id}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
 		</script>
 	</div>
 
 	<div class="switch-video-div">
+		{% assign bwords = page.bilibili_id | split:'&page=' %}
+		<span style="color:#ff0000;font-weight: bold;">B站播放出现暂时性问题, 重复播放同一个视频.</span> <br>
+		<span>暂时解决方法: (a)下方切换播放源. (b)或<a href="https://www.bilibili.com/video/av{{bwords[0]}}/?p={{bwords[1]}}" target="_blank">点这里</a>去B站.</span><br>
+
 		<span style="font-weight: bold;vertical-align: super;" >切换视频源：</span>
 		{% if page.youtube_id %}
 		<button class="switch-video-btn" onclick="chooseVideo(youtube_src, 'youtube', '{{page.youtube_id}}')">
