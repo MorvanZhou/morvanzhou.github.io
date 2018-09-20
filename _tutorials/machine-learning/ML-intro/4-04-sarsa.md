@@ -20,7 +20,7 @@ post-headings:
   * [Q-learning 简介视频]({% link _tutorials/machine-learning/ML-intro/4-03-q-learning.md %})
   * [Sarsa Python 教程]({% link _tutorials/machine-learning/reinforcement-learning/3-1-tabular-sarsa1.md %})
   * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
-  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf){:target="_blank"}
+  * 学习书籍 [Reinforcement learning: An introduction](/static/files/Reinforcement_learning_An_introduction.pdf){:target="_blank"}
 
 
 

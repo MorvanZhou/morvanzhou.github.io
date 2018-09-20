@@ -25,7 +25,7 @@ post-headings:
   * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/4_Sarsa_lambda_maze){:target="_blank"}
   * [什么是 Sarsa-lambda 短视频]({% link _tutorials/machine-learning/ML-intro/4-05-sarsa-lambda.md %})
   * 模拟视频效果[Youtube](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}, [Youku](http://list.youku.com/albumlist/show/id_27485743){:target="_blank"}
-  * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf){:target="_blank"}
+  * 学习书籍 [Reinforcement learning: An introduction](/static/files/Reinforcement_learning_An_introduction.pdf){:target="_blank"}
 
 {% include assign-heading.html %}
 
