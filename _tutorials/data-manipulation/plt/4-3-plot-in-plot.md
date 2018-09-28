@@ -15,7 +15,6 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt17_plot_in_plot.py){:target="_blank"}
-  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/16a48850e120b2fb){:target="_blank"}
   
 这次我们来讲matplotlib里一个很有意思的功能，叫做图中图(plot in plot)，最后的效果如下：
 

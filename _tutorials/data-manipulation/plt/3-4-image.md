@@ -15,7 +15,6 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt13_image.py){:target="_blank"}
-  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/509d7f77acdb895f){:target="_blank"}
   
 {% include assign-heading.html %}
 

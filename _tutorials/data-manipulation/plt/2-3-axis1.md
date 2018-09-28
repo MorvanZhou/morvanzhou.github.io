@@ -14,7 +14,6 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt5_ax_setting1.py){:target="_blank"}
-  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/d60a765cb32bd572){:target="_blank"}
   
 在 matplotlib 中如何设置坐标轴的范围, 单位长度, 替代文字等等.
 

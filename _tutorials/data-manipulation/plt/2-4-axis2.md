@@ -14,7 +14,6 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt6_ax_setting2.py){:target="_blank"}
-  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/d60a765cb32bd572){:target="_blank"}
 
 这次会说到在我们如何移动matplotlib 中 axis 坐标轴的位置.
 

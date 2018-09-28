@@ -14,7 +14,7 @@ post-headings:
 
 学习资料:
   * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt15_subplot.py){:target="_blank"}
-  * 科赛网友情[代码复现](https://www.kesci.com/home/project/share/16a48850e120b2fb){:target="_blank"}
+  
   
 {% include assign-heading.html %}
 
