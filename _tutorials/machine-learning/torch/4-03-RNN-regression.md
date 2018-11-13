@@ -109,7 +109,7 @@ def forward(self, x, h_state):
     r_out, h_state = self.rnn(x, h_state)
     r_out = r_out.view(-1, 32)
     outs = self.out(r_out)
-    return outs, h_state
+    return outs.view(-1, 32, TIME_STEP), h_state
 ```
 
 {% include google-in-article-ads.html %}
