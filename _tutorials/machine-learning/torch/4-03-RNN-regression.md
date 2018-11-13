@@ -107,9 +107,9 @@ RNN (
 ```python
 def forward(self, x, h_state):
     r_out, h_state = self.rnn(x, h_state)
-    r_out_reshaped = r_out.view(-1, HIDDEN_SIZE) # to 2D data
-    outs = self.linear_layer(r_out_reshaped)
-    outs = outs.view(-1, TIME_STEP, INPUT_SIZE)  # to 3D data
+    r_out = r_out.view(-1, 32)
+    outs = self.out(r_out)
+    return outs, h_state
 ```
 
 {% include google-in-article-ads.html %}
