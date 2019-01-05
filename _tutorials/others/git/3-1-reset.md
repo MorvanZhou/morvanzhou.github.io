@@ -98,7 +98,7 @@ $ git log --oneline
 c6762a1 change 1
 13be9a7 create 1.py
 -----------------------
-# 回到 c10ea64 change 1
+# 回到 c6762a1 change 1
 # 方式1: "HEAD^"
 $ git reset --hard HEAD^  
 

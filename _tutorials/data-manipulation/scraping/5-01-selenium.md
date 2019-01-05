@@ -46,7 +46,7 @@ pip3 install selenium
 
 要操控浏览器, 你就要有浏览器的 driver. Selenium 针对几个主流的浏览器都有 driver. **针对 Linux 和 MacOS**.
 
-* Chrome [driver](https://sites.google.com/a/chromium.org/chromedriver/downloads){:target="_blank"}
+* Chrome [driver](https://sites.google.com/a/chromium.org/chromedriver/downloads){:target="_blank"}, 如果前面链接无法打开, 请尝试[这个](https://npm.taobao.org/mirrors/chromedriver){:target="_blank"}, 并下载对应版本的 driver
 * Edge [driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/){:target="_blank"}
 * Firefox [driver](https://github.com/mozilla/geckodriver/releases){:target="_blank"}
 * Safari [driver](https://webkit.org/blog/6900/webdriver-support-in-safari-10/){:target="_blank"}
