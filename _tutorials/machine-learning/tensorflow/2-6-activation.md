@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU5NjA2MTk0MA
 youtube_id: 6gbGCxBGxZA
-bilibili_id: 16001891&page=14
+b_av: 16001891
+b_cid: 27636892
+b_page: 14
 description: Tensorflow 的神经网络 里面处理较为复杂的问题时都会需要运用激励函数 activation function, 影片里说到了什么是激励函数,和在 Tensorflow 中有哪些是可以直接调用的激励函数.同时也介绍了在神经网络中激励函数处在哪个位置.
 author : 商晋
 chapter: 2

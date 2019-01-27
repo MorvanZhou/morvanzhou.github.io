@@ -1,7 +1,9 @@
 ---
 youku_id: XMjUzMjA1NjY2NA
 youtube_id: 9m3DN2dyi8I
-bilibili_id: 16921335&page=18
+b_av: 16921335
+b_cid: 27657253
+b_page: 18
 chapter: 4
 title: OpenAI gym 环境库
 publish-date: 2017-02-26

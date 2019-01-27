@@ -1,7 +1,9 @@
 ---
 youku_id: XMzEyMTA0OTMzMg
 youtube_id: Kp6RAGtWCew
-bilibili_id: 15976434&page=8
+b_av: 15976434
+b_cid: 27635075
+b_page: 8
 chapter: 2
 title: Linux 基本指令 nano 和 cat
 publish-date: 2017-10-12

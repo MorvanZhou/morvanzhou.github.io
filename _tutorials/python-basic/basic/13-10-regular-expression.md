@@ -1,7 +1,9 @@
 ---
 youku_id: XMzIzNTkzODYyOA
 youtube_id: l1MAW1z641E
-bilibili_id: 16926522&page=36
+b_av: 16926522
+b_cid: 28279154
+b_page: 36
 chapter: 13
 title: 正则表达式
 publish-date: 2017-11-29

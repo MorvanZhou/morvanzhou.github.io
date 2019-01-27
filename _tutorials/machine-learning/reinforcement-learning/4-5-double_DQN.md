@@ -1,7 +1,9 @@
 ---
 youku_id: XMjYxMTA1NzkwOA
 youtube_id: TjAEpfE8A64
-bilibili_id: 16921335&page=19
+b_av: 16921335
+b_cid: 27657254
+b_page: 19
 chapter: 4
 title: Double DQN (Tensorflow)
 publish-date: 2017-03-07

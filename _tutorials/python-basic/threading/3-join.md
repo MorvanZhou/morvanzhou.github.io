@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944429&page=3
+b_av: 16944429
+b_cid: 27699351
+b_page: 3
 youku_id: XMTYwMDg0ODg0MA
 youtube_id: BksasCVcJiY
 description: "关于使用 python threading 的 join 功能, 基本应用"

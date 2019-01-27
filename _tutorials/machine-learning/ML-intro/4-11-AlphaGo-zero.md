@@ -1,7 +1,7 @@
 ---
 youku_id: XMzEwNDMxODAwMA
 youtube_id: tABt4fdmaFg
-bilibili_id: 15986543
+b_av: 15986543
 title: AlphaGo Zero 为什么更厉害?
 description: "2016 年, AlphaGo 第一版发表在了 Nature 自然杂志上, 这可是牛逼得不要不要的期刊, 如果有谁能发表一篇期刊去Nature, 哈哈, 保证他下半生衣食无忧. 而如今刚过去一年, Google DeepMind 又在 Nature 上发表了一篇 AlphaGo 的改进版, AlphaGo zero, 同样的围棋 AI, 竟然在自然杂志上发了两次! 赞叹他们的实力呀! 要弄懂 AlphaGo zero, 首先我们得弄懂 AlphaGo 是怎样战胜人类的.
 AlphaGo 战胜过欧洲冠军樊麾, 韩国九段棋手李世石, 近期的比赛中又赢了世界冠军柯洁, 种种迹象表明, 人类已经失守最拿手的围棋了. 这些围棋高手一个个都表示 AlphaGo 走到了他们想不到的地方, 战胜了人类的生物极限, 不会感觉疲惫等等. 的确, 这就是机器相比人类的一个绝大优势. 那 AlphaGo 又是怎么在策略上战胜人类的呢? 很简单, 它会做计划."

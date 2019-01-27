@@ -1,7 +1,9 @@
 ---
 youku_id: XMzIzNjMxNTE5Mg
 youtube_id: 0AjtDFUzteM
-bilibili_id: 17310310&page=2
+b_av: 17310310
+b_cid: 28284907
+b_page: 2
 b-cid: 28283745
 title: "从头开始做一个汽车状态分类器2: 搭建模型"
 description: "上次我们已经处理好了需要用到的数据, 这就已经解决了一大堆问题了. 在机器学习/深度学习中, 其实花时间最多的不是训练, 而是数据的预处理.

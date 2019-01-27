@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16942112&page=6
+b_av: 16942112
+b_cid: 27695908
+b_page: 6
 youku_id: XMTYwODE0Njg2MA
 youtube_id: rRZdcHKZQw8
 description: 使用 python 和 tkinter 来做简单的窗口程序. 拉动条 scale 练习.

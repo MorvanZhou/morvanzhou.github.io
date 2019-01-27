@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU4ODcyODMwMA
 youtube_id: o1j-biEc1Pc
-bilibili_id: 16378934&page=9
+b_av: 16378934
+b_cid: 27595013
+b_page: 9
 title: Numpy array 分割
 description: 关于 Numpy array 的分割运算, 包括横向和纵向分割的不同分割功能 (split).
 author: Bhan

@@ -1,7 +1,9 @@
 ---
 youku_id: XMTY0NDUzMDYzMg
 youtube_id: Y2xmMG_jXnc
-bilibili_id: 16378934&page=17
+b_av: 16378934
+b_cid: 27595021
+b_page: 17
 title: Pandas 合并 merge
 description: pandas 中的 merge 和 concat 类似,但主要是用于两组有 key column 的数据,统一索引的数据. 通常也被用在 database 的处理当中.
 author: Bhan

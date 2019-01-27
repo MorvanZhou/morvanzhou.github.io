@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0MjcwMDc0NA
 youtube_id: EXsn02rMWX8
-bilibili_id: 16001891&page=6
+b_av: 16001891
+b_cid: 27636884
+b_page: 6
 description: 安装 Tensorflow 时需要注意的几点
 chapter: 1
 title: Tensorflow 安装

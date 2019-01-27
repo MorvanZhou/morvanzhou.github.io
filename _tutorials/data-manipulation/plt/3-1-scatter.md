@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcxNjMzMDEyOA
 youtube_id: EPDaHAbLPs4
-bilibili_id: 16378354&page=10
+b_av: 16378354
+b_cid: 27599034
+b_page: 10
 description: 当然, matplotlib 是可以做散点图 scatter 的. 而且还可以做散点图很多特效, 我们来做一个练习.
 author: Hao
 chapter: 3

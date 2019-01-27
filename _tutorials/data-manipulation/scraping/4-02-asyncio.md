@@ -1,7 +1,9 @@
 ---
 youku_id: XMzM1MDYyOTYyOA
 youtube_id: Wa2K7sB7BZE
-bilibili_id: 17920849&page=11
+b_av: 17920849
+b_cid: 30507993
+b_page: 11
 title: "加速爬虫: 异步加载 Asyncio"
 description: "之前我一直在想如何用 multiprocessing 或者 threading 加速我的爬虫,
 也做过了一些小实验, 确实, 我们看到了不小的效率提升. 但是当我更加深入的时候, 我发现, Python 还提供了一个有力的工具,

@@ -1,7 +1,9 @@
 ---
 youku_id: XMTc3OTEwMDk3Ng
 youtube_id: I_on5dTY3d4
-bilibili_id: 16910214&page=8
+b_av: 16910214
+b_cid: 27639730
+b_page: 8
 title: Regressor 回归
 description: "用简单的几句语句就能搭建好 keras 的一个神经网络. 神经网络可以用来模拟回归问题 (regression)，例如给下面一组数据，用一条线来对数据进行拟合，并可以预测新输入 `x` 的输出值。"
 author: Alice

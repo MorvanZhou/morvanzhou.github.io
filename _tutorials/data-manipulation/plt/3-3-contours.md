@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcyMTQ1MjAwNA
 youtube_id: Sb4NKsYbULI
-bilibili_id: 16378354&page=12
+b_av: 16378354
+b_cid: 27599036
+b_page: 12
 description: 用 matplotlib 画等高线, 用一个最简单的例子来阐述如何画出等高线图.
 author: Hao
 chapter: 3

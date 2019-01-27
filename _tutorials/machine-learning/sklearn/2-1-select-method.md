@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=4
+b_av: 17003173
+b_cid: 27793628
+b_page: 4
 youku_id: XMTYxMjk0MzY3Ng
 youtube_id: GB8SNR-cT7w
 description: 处理不同问题的时候呢, 我们会要用到不同的机器学习-学习方法. Sklearn 提供了一张非常有用的流程图,供我们选择合适的学习方法. 

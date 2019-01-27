@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0NjA3MzE1Mg
 youtube_id: KBdb53NrVAc
-bilibili_id: 15997678&page=7
+b_av: 15997678
+b_cid: 27669630
+b_page: 7
 title: Torch 或 Numpy
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail-small/torch/2-1_torch_or_numpy.jpg"

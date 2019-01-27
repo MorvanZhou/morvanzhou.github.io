@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU4ODY3NTE2OA
 youtube_id: 82Tva71Lm1E
-bilibili_id: 16378934&page=7
+b_av: 16378934
+b_cid: 27595011
+b_page: 7
 title: Numpy 索引
 description: 在 Numpy 中, 运用最多的, 还是方便的索引功能, 这里介绍了几种最基本的索引方法.
 author: Sincejuly

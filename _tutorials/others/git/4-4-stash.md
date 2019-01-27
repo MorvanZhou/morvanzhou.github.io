@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0NDYzNjUzNg
 youtube_id: mqjAMciBrdU
-bilibili_id: 16377923&page=10
+b_av: 16377923
+b_cid: 27600895
+b_page: 10
 description: "想想有天在开开心心地改进代码, 突然接到老板的一个电话说要改之前的一个程序.
 怎么办? 虽然还需要很久时间才能改进完自己的代码,
 可我有强迫症, 又不想把要改的程序和自己改进代码的部分一起 commit 了.

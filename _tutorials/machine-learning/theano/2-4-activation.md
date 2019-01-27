@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=12
+b_av: 16938887
+b_cid: 27691036
+b_page: 12
 youku_id: XMTY2MzkxNDE1Ng
 youtube_id: Xm2InCJqFY4
 title: Activation function 激励函数

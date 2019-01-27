@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=2
+b_av: 16938887
+b_cid: 27691026
+b_page: 2
 youku_id: XMTU5NDc3MDQwOA
 youtube_id: RSRkp8VAavQ
 title: 什么是神经网络 (Neural Network)

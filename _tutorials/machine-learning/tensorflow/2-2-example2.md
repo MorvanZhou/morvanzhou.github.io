@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYxMzQ2NzE0OA
 youtube_id: JKR1Dxinwwc
-bilibili_id: 16001891&page=9
+b_av: 16001891
+b_cid: 27636887
+b_page: 9
 description: "Tensorflow 是非常重视结构的, 我们得建立好了神经网络的结构, 才能将数字放进去,
 运行这个结构.这个例子简单的阐述了 tensorflow 当中如何用代码来运行我们搭建的结构."
 chapter: 2

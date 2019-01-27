@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0NDY5NDMzMg
 youtube_id: oWUvXRheaeY
-bilibili_id: 16377923&page=11
+b_av: 16377923
+b_cid: 27600896
+b_page: 11
 description: github 是一个大家都积极贡献的地方, 你可以和各种人合作创作. 也是开源的天堂~ 只要你愿意, 任何人都能下载, 或修改你的杰作.
 chapter: 5
 title: Github 在线代码管理

@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0NDU3ODYwMA
 youtube_id: fLvr4BRoJ8I
-bilibili_id: 16377923&page=9
+b_av: 16377923
+b_cid: 27600894
+b_page: 9
 description: "和上节内容一样, 不过我们今天来玩一个更高级的合并方式 rebase.
 同样是合并 rebase 的做法和 merge 不一样.
 假设共享的 branch 是 branch B, 而我在 branch A 上工作, 有一天我发现branch B已经有一些小更新,

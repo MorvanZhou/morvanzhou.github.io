@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944405&page=7
+b_av: 16944405
+b_cid: 27699307
+b_page: 7
 youku_id: XMTYwNTMwMTcwOA
 youtube_id: VJBSkVhHX3g
 description: "这次我们讲进程锁的运用。让我们看看没有加进程锁时会产生什么样的结果。"

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=8
+b_av: 17003173
+b_cid: 27793632
+b_page: 8
 youku_id: XMTYxNjgwNjkxNg
 youtube_id: 3GxT8n0ShsU
 description: normalization 在数据跨度不一的情况下对机器学习有很重要的作用.特别是各种数据属性还会互相影响的情况之下. Scikit-learn 中标准化的语句是 preprocessing.scale() . scale 以后, model 就更能从标准化数据中学到东西.

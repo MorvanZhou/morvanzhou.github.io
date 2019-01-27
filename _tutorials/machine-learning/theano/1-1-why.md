@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=5
+b_av: 16938887
+b_cid: 27691029
+b_page: 5
 youku_id: XMTY1OTQ4NDI2OA
 youtube_id: 84yGQZE43OU
 title: Why Theano?

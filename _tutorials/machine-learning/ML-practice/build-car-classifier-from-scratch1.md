@@ -1,7 +1,9 @@
 ---
 youku_id: XMzIzNjE5OTE3Mg
 youtube_id: 7__jPfjFuR4
-bilibili_id: 17310310&page=1
+b_av: 17310310
+b_cid: 28283745
+b_page: 1
 b-cid: 28283745
 title: "从头开始做一个汽车状态分类器1: 分析数据"
 description: "大家都喜欢看实践, 因为即使学了很多机器学习的知识(比如说在莫烦Python上的很多教程), 我们大多数时候碰到真正的问题却束手无策.

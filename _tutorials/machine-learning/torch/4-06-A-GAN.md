@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc1OTY2OTMxNg
 youtube_id: yYUN_k36u5Q
-bilibili_id: 15997678&page=28
+b_av: 15997678
+b_cid: 27669650
+b_page: 28
 title: 什么是生成对抗网络 (GAN)
 description: Hello 大家好, 欢迎观看有趣的机器学习系列视频, 今天我们会来说说现在最流行的一种生成网络, 叫做 GAN, 又称生成对抗网络, 也是 Generative Adversarial Nets 的简称. 完全没有听懂, GAN 是什么鬼.. 不急, 我们慢慢来解释.
 chapter: 4

@@ -3,7 +3,9 @@ chapter: 2
 ref-path: _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md
 youku_id: XMjk0NzE0MjgxNg
 youtube_id: BEquIwfEXes
-bilibili_id: 16926245&page=2
+b_av: 16926245
+b_cid: 27670573
+b_page: 2
 title: 遗传算法 (Genetic Algorithm)
 thumbnail: /static/thumbnail-small/ML-intro/genetic-algorithm.png
 description: "这次我们尝试踏足机器学习中的另外一个领域, 用进化理论来解决复杂的问题. 遗传算法是进化算法的一个分支. 它将达尔文的进化理论搬进了计算机.

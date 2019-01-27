@@ -1,7 +1,9 @@
 ---
 youku_id: XMzI4NzczMTgwNA
 youtube_id: 7B-nvXUJGQs
-bilibili_id: 17920849&page=2
+b_av: 17920849
+b_cid: 29257093
+b_page: 2
 title: 了解网页结构
 description: "学习爬虫, 首先要懂的是网页. 支撑起各种光鲜亮丽的网页的不是别的, 全都是一些代码.
 这种代码我们称之为 HTML, HTML 是一种浏览器(Chrome, Safari, IE, Firefox等)看得懂的语言, 浏览器能将这种语言转换成我们用肉眼看到的网页.

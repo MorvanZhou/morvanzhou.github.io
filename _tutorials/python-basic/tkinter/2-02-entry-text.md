@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16942112&page=3
+b_av: 16942112
+b_cid: 27695905
+b_page: 3
 youku_id: XMTYwNzAwNTY0NA
 youtube_id: lVcM_V3KqOE
 description: 使用 python 和 tkinter 来做简单的窗口程序. entry 和 text 练习.

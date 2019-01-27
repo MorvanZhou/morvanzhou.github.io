@@ -1,7 +1,9 @@
 ---
 youku_id: XMzE5NTE5MTk5Ng
 youtube_id: inRN6p6IOWI
-bilibili_id: 16797357&page=5
+b_av: 16797357
+b_cid: 27448082
+b_page: 5
 b-cid: 27444433
 title: 从头开始做一个机器手臂5 完善测试
 description: "上节我们加上了强化学习的方法, 来测试了一下整个学习的流程.

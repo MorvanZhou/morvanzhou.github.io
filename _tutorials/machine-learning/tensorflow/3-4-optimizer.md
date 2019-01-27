@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYwMzk1NDM4OA
 youtube_id: 9BmaWixFwj8
-bilibili_id: 16001891&page=19
+b_av: 16001891
+b_cid: 27636897
+b_page: 19
 description: Tensorflow 中的optimizer 分了很多种,最基础的是 GradientDescentOptimizer,还有像 AdamOptimizer 等等.
 author: 赵孔亚
 chapter: 3

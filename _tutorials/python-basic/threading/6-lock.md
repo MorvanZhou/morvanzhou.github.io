@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944429&page=6
+b_av: 16944429
+b_cid: 27699354
+b_page: 6
 youku_id: XMTYwMjQ4Njk4OA
 youtube_id: -q4txLdUMBM
 description: "threading 中有线程锁, 我们能锁住变量的更新, 让它按预定的方式进行更新和交流"

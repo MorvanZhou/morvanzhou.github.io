@@ -1,7 +1,9 @@
 ---
 youku_id: XMTc4MDEyMDk0MA
 youtube_id: zHop6Oq757Y
-bilibili_id: 16910214&page=11
+b_av: 16910214
+b_cid: 27639733
+b_page: 11
 title: CNN 卷积神经网络
 description: "CNN 一般用来处理图片. 他在图片识别上有很多优势. 这次我们主要讲CNN（Convolutional Neural Networks）卷积神经网络在 keras 上的代码实现。
 用到的数据集还是MNIST。不同的是这次用到的层比较多，导入的模块也相应增加了一些。"

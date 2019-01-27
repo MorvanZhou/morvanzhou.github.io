@@ -1,7 +1,9 @@
 ---
 youku_id: XMTc3OTA0NDc5Mg
 youtube_id: FIZiuAM5kQo
-bilibili_id: 16910214&page=7
+b_av: 16910214
+b_cid: 27639729
+b_page: 7
 title: 兼容 backend
 description: "怎么样调整 keras 的 backend (Tensorflow, theano). 我们来介绍 Keras 的两个 Backend，也就是Keras基于什么东西来做运算。Keras 可以基于两个Backend，一个是 Theano，一个是 Tensorflow。如果我们选择Theano作为Keras的Backend，
 那么Keras就用 Theano 在底层搭建你需要的神经网络；同样，如果选择 Tensorflow 的话呢，Keras 就使用 Tensorflow 在底层搭建神经网络。"

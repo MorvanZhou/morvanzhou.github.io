@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU5NjEzOTA4NA
 youtube_id: FTR36h-LKcY
-bilibili_id: 16001891&page=15
+b_av: 16001891
+b_cid: 27636893
+b_page: 15
 description: 在 Tensorflow 里定义一个添加层的函数可以很容易的添加神经层,为之后的添加省下不少时间.
 author: 赵孔亚
 chapter: 3

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944405&page=4
+b_av: 16944405
+b_cid: 27699304
+b_page: 4
 youku_id: XMTYwNDIyNzk2MA
 youtube_id: In5ye-JXj-w
 description: "上篇讲了多进程/多核的运算，这次我们来对比下多进程，多线程和什么都不做时的消耗时间，看看哪种方式更有效率。"

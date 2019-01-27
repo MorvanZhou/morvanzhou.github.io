@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16942112&page=11
+b_av: 16942112
+b_cid: 27695913
+b_page: 11
 youku_id: XMTYxMDU1NTAyOA
 youtube_id: Hj5sTDW-xqg
 description: 使用 python 和 tkinter 来做简单的窗口程序. 弹出通知 messagebox 练习.

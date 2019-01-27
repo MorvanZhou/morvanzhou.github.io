@@ -2,7 +2,7 @@
 no-video: true
 youku_id:
 youtube_id:
-bilibili_id:
+b_av:
 title: 为什么用 Numpy 还是慢, 你用对了吗?
 description: "最近在写代码, 编一个 Python 模拟器, 做 simulation, 好不容易用传说中 Python 里速度最快的计算模块 Numpy 的写好了, 结果运行起来, 出奇的慢! 因为一次simulation要一个小时, 要不停测试, 所以自己受不了了.. 首先, 我的脑海中的问题, 渐渐浮现出来.
 我知道 Pandas 要比 Numpy 慢, 所以我尽量避免用 Pandas. 但是 Numpy (速度怪兽), 为什么还是这么慢?"

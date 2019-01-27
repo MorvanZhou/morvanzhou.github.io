@@ -2,7 +2,9 @@
 ref-path: _tutorials/machine-learning/ML-intro/2-8-gradient-descent.md
 youku_id: XMjg1NzQwNDc4OA
 youtube_id: 9sJG7LjGCnI
-bilibili_id: 16910214&page=3
+b_av: 16910214
+b_cid: 27639725
+b_page: 3
 title: 神经网络 梯度下降
 chapter: 1
 thumbnail: "/static/thumbnail-small/ML-intro/gradient_descent.png"

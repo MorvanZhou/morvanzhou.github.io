@@ -2,7 +2,9 @@
 ref-path: _tutorials/machine-learning/ML-intro/2-0-ANN-and-NN.md
 youku_id: XMjc3MzA3OTM0NA
 youtube_id: lAaCeiqE6CE
-bilibili_id: 16910214&page=1
+b_av: 16910214
+b_cid: 27639723
+b_page: 1
 title: "科普: 人工神经网络 VS 生物神经网络"
 thumbnail: "/static/thumbnail-small/ML-intro/ANN_and_NN.png"
 chapter: 1

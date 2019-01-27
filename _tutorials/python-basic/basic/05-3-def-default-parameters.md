@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16926522&page=12
+b_av: 16926522
+b_cid: 27671116
+b_page: 12
 youku_id: XMTU4NTEwODYyNA
 youtube_id: 4r_uaoulXLs
 chapter: 5

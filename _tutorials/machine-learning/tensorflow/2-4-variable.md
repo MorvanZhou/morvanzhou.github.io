@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYxMzY2MDM2OA
 youtube_id: jGxK7gfglrI
-bilibili_id: 16001891&page=11
+b_av: 16001891
+b_cid: 27636889
+b_page: 11
 description: "注意定义了变量以后, 一定要定义init = tf.initialize_all_variables(), 不然,变量就不会被初始.然后同样,在 sess里,也要 sess.run(init), 激活 init这一步."
 author : 商晋
 chapter: 2

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944405&page=6
+b_av: 16944405
+b_cid: 27699306
+b_page: 6
 youku_id: XMTYwNDc3MjgxNg
 youtube_id: EFjEPeYSlYY
 description: "这节我们学习如何定义共享内存。只有用共享内存才能让CPU之间有交流。"

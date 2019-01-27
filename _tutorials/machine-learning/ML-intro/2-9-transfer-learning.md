@@ -1,7 +1,7 @@
 ---
 youku_id: XMzM3ODMzMTM2NA
 youtube_id: fCEHdyLkjNE
-bilibili_id: 19120226
+b_av: 19120226
 title: 迁移学习 Transfer Learning
 chapter: 2
 thumbnail: "/static/thumbnail-small/ML-intro/transfer_learning.png"

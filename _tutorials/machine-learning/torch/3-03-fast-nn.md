@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0ODAxNDYwMA
 youtube_id: yqo9-lWTdOk
-bilibili_id: 15997678&page=13
+b_av: 15997678
+b_cid: 27669636
+b_page: 13
 title: 快速搭建法
 publish-date: 2017-05-06
 thumbnail: "/static/thumbnail-small/torch/3-3_nn_fast.jpg"

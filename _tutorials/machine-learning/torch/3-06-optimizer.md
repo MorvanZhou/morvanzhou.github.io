@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0ODE5OTYyMA
 youtube_id: FIZgQuOXk8g
-bilibili_id: 15997678&page=17
+b_av: 15997678
+b_cid: 27669640
+b_page: 17
 title: Optimizer 优化器
 publish-date: 2017-05-06
 thumbnail: "/static/thumbnail-small/torch/3-6_optimizer.jpg"

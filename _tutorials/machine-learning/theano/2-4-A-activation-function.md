@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=11
+b_av: 16938887
+b_cid: 27691035
+b_page: 11
 youku_id: XMTcxMTExNjA5Mg
 youtube_id: tI9AbaBfnPc
 title: 什么是激励函数 (Activation Function)

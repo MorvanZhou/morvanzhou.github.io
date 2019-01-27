@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU5OTQzOTMzNg
 youtube_id: nhn8B0pM9ls
-bilibili_id: 16001891&page=17
+b_av: 16001891
+b_cid: 27636895
+b_page: 17
 description: 我们已经建立好了一个完整的神经网络,如果能够可视化训练的结果,就能够更好的理解神经网络是如何训练的.这次就提到了 matplotlib 这个模块,用它来进行结果可视化处理.我们看到了神经网络的模型是如何 fit 上原始的 data 的.
 author: 赵孔亚
 chapter: 3

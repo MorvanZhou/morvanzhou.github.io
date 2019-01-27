@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYyNzE2MDUwOA
 youtube_id: R-22pnDezHU
-bilibili_id: 16001891&page=29
+b_av: 16001891
+b_cid: 27636907
+b_page: 29
 description: 我们做好了一个神经网络,训练好了,肯定也想保存起来,再次加载. 那今天我们就来说说怎样用 Tensorflow 中的 saver 保存和加载吧
 chapter: 5
 title: Saver 保存读取 

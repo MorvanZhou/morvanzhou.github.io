@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYxMzYzNTc2OA
 youtube_id: HhjtJ73AwIY
-bilibili_id: 16001891&page=10
+b_av: 16001891
+b_cid: 27636888
+b_page: 10
 description: Session 是每个 Tensorflow 文件都需要的步骤. 运行 seesion.run()可以获得你要得知的运算结果, 或者是你所要运算的部分.
 author : 商晋
 chapter: 2

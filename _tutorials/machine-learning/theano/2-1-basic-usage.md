@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=8
+b_av: 16938887
+b_cid: 27691032
+b_page: 8
 youku_id: XMTY2MTY1NDY1Ng
 youtube_id: je2oHCX5m74
 title: 基本用法

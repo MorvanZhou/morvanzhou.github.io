@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0NDMwNjUxNg
 youtube_id: gN0E9SQmySw
-bilibili_id: 16377923&page=8
+b_av: 16377923
+b_cid: 27600893
+b_page: 8
 description: "今天的情况是这样, 想象不仅有人在做开发版 dev 的更新, 还有人在修改 master 中的一些 bug.
 当我们再 merge dev 的时候, 冲突就来了. 因为 git 不知道应该怎么处理 merge 时, 在 master
 和 dev 的不同修改.

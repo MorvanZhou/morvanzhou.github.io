@@ -1,7 +1,9 @@
 ---
 youku_id: XMzExNjk0ODg4NA
 youtube_id: HeA0K-hzRpw
-bilibili_id: 15976434&page=3
+b_av: 15976434
+b_cid: 27635070
+b_page: 3
 chapter: 1
 title: 快速了解 Ubuntu 17.10 基本界面
 publish-date: 2017-10-11

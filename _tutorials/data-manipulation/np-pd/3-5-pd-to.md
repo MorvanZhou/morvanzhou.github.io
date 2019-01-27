@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYzODIxMTg3Mg
 youtube_id: Vb2aR_t957E
-bilibili_id: 16378934&page=15
+b_av: 16378934
+b_cid: 27595019
+b_page: 15
 title: Pandas 导入导出
 description: 使用 pandas 进行文件的导入导出是一件非常简单的事情 (csv, pickle等).
 author: Bhan

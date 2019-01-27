@@ -1,7 +1,9 @@
 ---
 youku_id: XMjY1MzU2NTc2NA
 youtube_id: DwrGHh9Nkvg
-bilibili_id: 16921335&page=24
+b_av: 16921335
+b_cid: 27657259
+b_page: 24
 chapter: 5
 title: Policy Gradients 思维决策 (Tensorflow)
 thumbnail: "/static/thumbnail-small/rl/5.2_PG2.jpg"

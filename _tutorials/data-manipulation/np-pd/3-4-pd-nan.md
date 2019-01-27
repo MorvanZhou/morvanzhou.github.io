@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYzMTUxNzgwOA
 youtube_id: H9jqCR4z7Pw
-bilibili_id: 16378934&page=14
+b_av: 16378934
+b_cid: 27595018
+b_page: 14
 title: Pandas 处理丢失数据 
 description: 有时候我们导入或处理数据, 会产生一些空的或者是 NaN 数据,如何删除或者是填补这些 NaN 数据就是我们今天所要提到的内容.
 author: 张能波

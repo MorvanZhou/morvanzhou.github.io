@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=13
+b_av: 17003173
+b_cid: 27793637
+b_page: 13
 youku_id: XMTYyOTkwNzA2OA
 youtube_id: 8sMZkhWtdaI
 description: 总算到了最后一次的课程了, 我们练习好了一个 model 以后总需要保存和再次预测, 所以保存和读取我们的 sklearn model 也是同样重要的一步.

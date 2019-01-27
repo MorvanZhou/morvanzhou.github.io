@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944405&page=1
+b_av: 16944405
+b_cid: 27699301
+b_page: 1
 youku_id: XMTYwNDA2Mzg2NA
 youtube_id: LIF4tn5KVu4
 description: "多进程 Multiprocessing 和多线程 threading 类似, 他们都是在 python 中用来并行运算的.

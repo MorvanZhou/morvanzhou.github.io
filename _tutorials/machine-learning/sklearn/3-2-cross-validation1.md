@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=10
+b_av: 17003173
+b_cid: 27793634
+b_page: 10
 youku_id: XMTYxNzcwOTc1Ng
 youtube_id: UeyZX31VZE8
 description: sklearn 中的 cross validation 交叉验证 对于我们选择正确的 model 和model 的参数是非常有帮助的. 有了他的帮助, 我们能直观的看出不同 model 或者参数对结构准确度的影响. 

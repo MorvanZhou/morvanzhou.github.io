@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16942112&page=2
+b_av: 16942112
+b_cid: 27695904
+b_page: 2
 youku_id: XMTYwNTc3OTE3Mg
 youtube_id: vMAK1oJAtkQ
 description: 使用 python 和 tkinter 来做简单的窗口程序. label button 按钮 练习.

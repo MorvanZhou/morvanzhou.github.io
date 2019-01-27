@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYzODQ4MzY0OA
 youtube_id: DcyFh2m3g6c
-bilibili_id: 16378934&page=16
+b_av: 16378934
+b_cid: 27595020
+b_page: 16
 title: Pandas 合并 concat
 description: pandas 处理多组数据的时候往往会要用到数据的合并处理,使用 concat 是一种基本的合并方式.而且 concat 中有很多参数可以调整,合并成你想要的数据形式.
 author: Bhan

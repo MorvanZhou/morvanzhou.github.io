@@ -1,7 +1,9 @@
 ---
 youku_id: XMzA0MTMxNDcyOA
 youtube_id: x-svcNmIMBs
-bilibili_id: 16926245&page=15
+b_av: 16926245
+b_cid: 27670586
+b_page: 15
 title: Evolution Strategy 强化学习
 publish-date: 2017-09-23
 thumbnail: "/static/thumbnail-small/evolutionary-algorithm/44es.jpg"

@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcxMTExNjA5Mg
 youtube_id: tI9AbaBfnPc
-bilibili_id: 16001891&page=13
+b_av: 16001891
+b_cid: 27636891
+b_page: 13
 title: 什么是激励函数 (Activation Function)
 description: 今天我们会来聊聊现代神经网络中 必不可少的一个组成部分, 激励函数, activation function. 激励函数也就是为了解决我们日常生活中不能用线性方程所概括的问题.
 chapter: 2

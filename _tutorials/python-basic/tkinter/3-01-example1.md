@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16942112&page=13
+b_av: 16942112
+b_cid: 27695915
+b_page: 13
 youku_id: XMTYxMTEyNDIyNA
 youtube_id: 3yVR0H5lhso
 description: 使用 python 和 tkinter 来做简单的窗口程序. 制作一个简单的登录窗口练习.

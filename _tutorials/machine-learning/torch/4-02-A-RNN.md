@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcyNzYwNjU1Ng
 youtube_id: EEtf4kNsk7Q
-bilibili_id: 15997678&page=20
+b_av: 15997678
+b_cid: 27669643
+b_page: 20
 title: 什么是循环神经网络 RNN (Recurrent Neural Network)
 description: 今天我们会来聊聊在语言分析, 序列化数据中穿梭自如的循环神经网络 RNN. RNN 是用来干什么的 ? 它和普通的神经网络有什么不同 ? 我会将会一一探讨.
 chapter: 4

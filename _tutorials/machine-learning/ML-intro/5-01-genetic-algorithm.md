@@ -1,7 +1,7 @@
 ---
 youku_id: XMjk0NzE0MjgxNg
 youtube_id: BEquIwfEXes
-bilibili_id: 15983143
+b_av: 15983143
 title: 遗传算法 (Genetic Algorithm)
 publish-date: 2017-08-05
 chapter: 5

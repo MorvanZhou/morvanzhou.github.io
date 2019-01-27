@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc4ODExNDYxMg
 youtube_id: 4IuaU08Wuq0
-bilibili_id: 15997678&page=30
+b_av: 15997678
+b_cid: 27669652
+b_page: 30
 title: 为什么 Torch 是动态的
 publish-date: 2017-05-27
 thumbnail: "/static/thumbnail-small/torch/5.1_dynamic.jpg"

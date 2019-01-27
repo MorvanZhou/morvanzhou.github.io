@@ -1,7 +1,9 @@
 ---
 youku_id: XMTc4MDI2MDg1Mg
 youtube_id: OubNgB-Fa4M
-bilibili_id: 16910214&page=17
+b_av: 16910214
+b_cid: 27639739
+b_page: 17
 title: Autoencoder 自编码
 description: "Keras 的 autoencoder自编码 也很好编辑, 类加上几个 layers 就好了. 自编码，简单来说就是把输入数据进行一个压缩和解压缩的过程。
 原来有很多 Feature，压缩成几个来代表原来的数据，解压之后恢复成原来的维度，再和原数据进行比较。

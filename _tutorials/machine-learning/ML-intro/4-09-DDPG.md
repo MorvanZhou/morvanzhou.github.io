@@ -1,7 +1,7 @@
 ---
 youku_id: XMjY5NTAyNDU2OA
 youtube_id: 3e6pfzux1x0
-bilibili_id: 15990727
+b_av: 15990727
 title: Deep Deterministic Policy Gradient (DDPG)
 description: "今天我们会来说说强化学习中的一种actor critic 的提升方式 Deep Deterministic Policy Gradient (DDPG), DDPG 最大的优势就是能够在连续动作上更有效地学习.
 它吸收了 Actor critic 让 Policy gradient 单步更新的精华, 而且还吸收让计算机学会玩游戏的 DQN 的精华, 合并成了一种新算法,

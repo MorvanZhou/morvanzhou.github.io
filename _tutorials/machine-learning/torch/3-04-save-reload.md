@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0ODA2MDIzMg
 youtube_id: ZfmXTsaW3Lo
-bilibili_id: 15997678&page=14
+b_av: 15997678
+b_cid: 27669637
+b_page: 14
 title: 保存提取
 publish-date: 2017-05-06
 thumbnail: "/static/thumbnail-small/torch/3-4_save_reload.jpg"

@@ -1,7 +1,9 @@
 ---
 youku_id: XMzI4OTA2Mzc4MA
 youtube_id: dSypElTfcFM
-bilibili_id: 17920849&page=6
+b_av: 17920849
+b_cid: 29287895
+b_page: 6
 title: "小练习: 爬百度百科"
 description: "有了前面几节内容了练习, 我们现在完全有能力爬出你想要的信息了. 看吧, 我说很简单的, 只要你用 Python 打开网页,
 用 BeautifulSoup 找准地方, 然后这样循环往复, 就叫做爬虫了. 哈哈. 被我抽象得不行了. 不过说到底,

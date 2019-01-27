@@ -1,7 +1,9 @@
 ---
 youku_id: XMzE5NTA1Nzc4NA
 youtube_id: n2v_yLShjE4
-bilibili_id: 16797357&page=4
+b_av: 16797357
+b_cid: 27446615
+b_page: 4
 b-cid: 27444433
 title: 从头开始做一个机器手臂4 加入强化学习算法
 description: "在上节中,

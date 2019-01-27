@@ -45,13 +45,9 @@ function chooseVideo(src, src_name, vid)
 
     // bilibili
     if (src_name == "bilibili") {
-      if (vid.includes("&page=")) {
-          var words = vid.split("&page=");
-          var vid = words[0] +"/?p=" + words[1];
-      }
       if (vai) {
           vai.style.display = "block";
-          vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + vid +'" target="_blank" >点击这里</a> 跳转至B站内)';
+          vai.innerHTML = '(Bilibili 无法播放? 请 <a href="https://www.bilibili.com/video/av' + String(vid) +'" target="_blank" >点击这里</a> 跳转至B站内)';
       }
       if (src.includes("hdslb")) {
         velem.style.paddingBottom = "70%";

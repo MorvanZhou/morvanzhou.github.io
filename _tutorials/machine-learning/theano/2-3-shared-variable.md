@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=10
+b_av: 16938887
+b_cid: 27691034
+b_page: 10
 youku_id: XMTY2Mjc3NTU4NA
 youtube_id: GbYWEOjjsAI
 title: Shared 变量

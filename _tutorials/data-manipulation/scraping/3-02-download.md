@@ -1,7 +1,9 @@
 ---
 youku_id: XMzM1MDIyNjI4NA
 youtube_id: ScT0FJdHc5o
-bilibili_id: 17920849&page=8
+b_av: 17920849
+b_cid: 30503104
+b_page: 8
 title: 下载文件
 description: "从网上下载文件的时候你肯定很开心, 比如说什么电影, pdf, 音乐等. 我们使用爬虫, python 一样也可以做到. 而且做得途径还有很多.
 今天我们就来探讨有哪些可行的途径, 之后我们还能用这些途径来做一个小实战, 下载国家地理杂志上的美图"

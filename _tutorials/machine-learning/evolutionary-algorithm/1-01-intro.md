@@ -1,7 +1,9 @@
 ---
 youku_id: XMjk2MzAwMjYyMA
 youtube_id: 7R3bnpv5q9k
-bilibili_id: 16926245&page=1
+b_av: 16926245
+b_cid: 27670572
+b_page: 1
 title: 进化算法 简介
 description: "进化 Evolution, 可以说是人类历史上伟大的发现之一. 适者生存, 不适者淘汰, 达尔文的进化理论让我们见识到了自己是怎么来的.
 那, 现在想象一下, 如果你的程序也能进化, 也用适者生存, 不适者淘汰的原则生长出一个牛逼的物种,

@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc4ODM5MzQyNA
 youtube_id: NGO0oxdz-zs
-bilibili_id: 15997678&page=35
+b_av: 15997678
+b_cid: 27669657
+b_page: 35
 title: Batch Normalization 批标准化
 publish-date: 2017-05-27
 thumbnail: "/static/thumbnail-small/torch/5.4_batch_normalization.jpg"

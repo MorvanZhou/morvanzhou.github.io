@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16944405&page=3
+b_av: 16944405
+b_cid: 27699303
+b_page: 3
 youku_id: XMTYwNDE4NTQ5Ng
 youtube_id: _TNIlBlV5c0
 description: "Queue的功能是将每个核或线程的运算结果放在队里中，

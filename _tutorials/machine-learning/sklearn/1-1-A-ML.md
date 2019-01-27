@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=1
+b_av: 17003173
+b_cid: 27793625
+b_page: 1
 youku_id: XMTYyMjk2NDIwOA
 youtube_id: YY7-VKXybjc
 title: 机器学习 (Machine Learning)

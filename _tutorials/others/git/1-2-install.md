@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0MjA5NzM3Mg
 youtube_id: BMKlINSwEas
-bilibili_id: 16377923&page=2
+b_av: 16377923
+b_cid: 27600887
+b_page: 2
 description: "安装 git 的方式在每种系统中各不相同, 所以我们分开来说: (Linux 系统, MacOS 系统, Windows 系统)"
 chapter: 1
 title: Git 安装

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=11
+b_av: 17003173
+b_cid: 27793635
+b_page: 11
 youku_id: XMTYxNzgxODQzMg
 youtube_id: VsLYdjiG5KQ
 description: sklearn.learning_curve 中的 learning curve 可以很直观的看出我们的 model 学习的进度,对比发现有没有 overfitting 的问题.然后我们可以对我们的 model 进行调整,克服 overfitting 的问题.

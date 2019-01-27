@@ -1,7 +1,9 @@
 ---
 youku_id: XMzI4NzkwMDIxNg
 youtube_id: KLq0W1wUVmw
-bilibili_id: 17920849&page=3
+b_av: 17920849
+b_cid: 29260739
+b_page: 3
 title: "BeautifulSoup 解析网页: 基础"
 description: "上节内容我们了解了网页 (html) 的基本构架, 知道了爬网页就是在这个构架中找到需要的信息. 那么找到需要的信息时,
 BeautifulSoup 就是一个找信息好帮手. 它能帮你又快有准地找到信息. 大大简化了使用难度."

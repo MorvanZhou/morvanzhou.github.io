@@ -1,7 +1,9 @@
 ---
 youku_id: XMTk3MTU4Njg2MA
 youtube_id: JafbuFHZPdc
-bilibili_id: 16921335&page=8
+b_av: 16921335
+b_cid: 27657243
+b_page: 8
 chapter: 2
 title: Q-learning 思维决策
 thumbnail: "/static/thumbnail-small/rl/2.3_qlearning2.jpg"

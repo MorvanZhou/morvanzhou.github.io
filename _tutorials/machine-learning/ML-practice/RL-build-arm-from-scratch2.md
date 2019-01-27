@@ -1,7 +1,9 @@
 ---
 youku_id: XMzE5NDcwNzIxNg
 youtube_id: d8d8M_RO6AU
-bilibili_id: 16797357&page=2
+b_av: 16797357
+b_cid: 27444434
+b_page: 2
 b-cid: 27444433
 title: 从头开始做一个机器手臂2 写静态环境
 description: "上次我们已经搭建好了三个主要部分, 包括

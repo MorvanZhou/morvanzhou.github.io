@@ -1,7 +1,9 @@
 ---
 youku_id: XMzA0MTAzMTM4OA
 youtube_id: uEzhTYiQdh8
-bilibili_id: 16926245&page=13
+b_av: 16926245
+b_cid: 27670584
+b_page: 13
 title: NEAT 监督学习
 publish-date: 2017-09-23
 thumbnail: "/static/thumbnail-small/evolutionary-algorithm/42neat.jpg"

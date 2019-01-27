@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0NjQ2MjQxNg
 youtube_id: Qm3zzq-xeDI
-bilibili_id: 15997678&page=12
+b_av: 15997678
+b_cid: 27669635
+b_page: 12
 title: 区分类型 (分类)
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail-small/torch/3-2_classification.jpg"

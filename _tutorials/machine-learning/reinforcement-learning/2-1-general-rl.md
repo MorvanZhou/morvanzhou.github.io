@@ -1,7 +1,9 @@
 ---
 youku_id: XMTk2NzM1Mjk5Mg
 youtube_id: OkGFJE_XDzI
-bilibili_id: 16921335&page=5
+b_av: 16921335
+b_cid: 27657240
+b_page: 5
 chapter: 2
 title: 小例子
 thumbnail: "/static/thumbnail-small/rl/2.1_example.jpg"

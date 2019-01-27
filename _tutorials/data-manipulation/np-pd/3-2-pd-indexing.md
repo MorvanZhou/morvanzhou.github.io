@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYzMDE5ODc2OA
 youtube_id: BRps4z_EJO0
-bilibili_id: 16378934&page=12
+b_av: 16378934
+b_cid: 27595016
+b_page: 12
 title: Pandas 选择数据
 description: pandas 中选择数据或索引的方法有很多种,一般我们会用到这几种 (loc, iloc, ix).
 author: 张能波

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16926522&page=27
+b_av: 16926522
+b_cid: 27671131
+b_page: 27
 youku_id: XMTU5MjY2MTg3Mg
 youtube_id: vfUjqt9r04o
 description: 

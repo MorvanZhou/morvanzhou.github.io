@@ -1,7 +1,9 @@
 ---
 youku_id: XMzM3ODUxNzc4OA
 youtube_id: HWHBCsUR-58
-bilibili_id: 16001891&page=44
+b_av: 16001891
+b_cid: 31193840
+b_page: 44
 chapter: 5
 title: 迁移学习 Transfer Learning
 publish-date: 2018-02-03

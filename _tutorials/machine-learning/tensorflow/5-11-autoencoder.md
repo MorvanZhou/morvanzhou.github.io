@@ -1,7 +1,9 @@
 ---
 youku_id: XMTc3NjQ4NjE0OA
 youtube_id: F2h3tbC-sBk
-bilibili_id: 16001891&page=37
+b_av: 16001891
+b_cid: 27636915
+b_page: 37
 description: Autoencoder 是神经网络的一种非监督学习 unsupervised learning. 通过压缩再解压的过程只学习整么样重新组合数据. 然后压缩出来的效果就和 PCA 后的效果类似. 这节我们讲两个内容, 一个是观看解压出来的图片和原图片的对比, 一个是看看压缩成2个 features 的样子是怎样, 是什么进行非监督学习的.
 author: Hao
 chapter: 5

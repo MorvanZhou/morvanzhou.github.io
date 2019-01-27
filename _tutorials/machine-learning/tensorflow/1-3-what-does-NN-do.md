@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYxMzQzNDc5Ng
 youtube_id: tM4z02cDNa4
-bilibili_id: 16001891&page=7
+b_av: 16001891
+b_cid: 27636885
+b_page: 7
 description: 机器学习 其实就是让电脑不断的尝试模拟预测已知的数据.
 chapter: 1
 title: 神经网络在干嘛

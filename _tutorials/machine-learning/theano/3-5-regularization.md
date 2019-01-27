@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=18
+b_av: 16938887
+b_cid: 27691042
+b_page: 18
 youku_id: XMTY2NTAwNTk0MA
 youtube_id: Bn3VWIwxxXg
 title: Regularization 正规化 

@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc2MDUxNzUyOA
 youtube_id: V7VgLkEgXVY
-bilibili_id: 15997678&page=25
+b_av: 15997678
+b_cid: 27669744
+b_page: 25
 title: AutoEncoder (自编码/非监督学习)
 publish-date: 2017-05-11
 thumbnail: "/static/thumbnail-small/torch/4.4_autoencoder.jpg"

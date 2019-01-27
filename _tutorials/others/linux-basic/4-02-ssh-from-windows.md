@@ -1,7 +1,9 @@
 ---
 youku_id: XMzEzMDkxMTUyNA
 youtube_id: RkqVvzlY6V0
-bilibili_id: 15976434&page=11
+b_av: 15976434
+b_cid: 27635078
+b_page: 11
 chapter: 4
 title: 怎么样从 Windows 通过 SSH 远程 Linux
 publish-date: 2017-10-16

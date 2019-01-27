@@ -1,7 +1,9 @@
 ---
 youku_id: XMTg0Mzg1MjE4OA
 youtube_id: QEuqlpMOL9E
-bilibili_id: 16377923&page=6
+b_av: 16377923
+b_cid: 27600891
+b_page: 6
 description: "之前我们使用 reset 的时候是针对整个版本库, 回到版本库的某个过去.
 不过如果我们只想回到某个文件的过去, 又该怎么办呢?"
 chapter: 3

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 17003173&page=9
+b_av: 17003173
+b_cid: 27793633
+b_page: 9
 youku_id: XMTY5MTk1NzIzMg
 youtube_id: vBJ_XbRnzKE
 title: 检验神经网络 (Evaluation)

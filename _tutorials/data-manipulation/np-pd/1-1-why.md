@@ -1,7 +1,9 @@
 ---
 youku_id: XMTU4NjM3MTc4MA
 youtube_id: To3YL92HZyc
-bilibili_id: 16378934&page=1
+b_av: 16378934
+b_cid: 26721401
+b_page: 1
 title: Why Numpy & Pandas?
 description: numpy & pandas 都是 python 科学运算中必不可少的组成部分. 学会应用它们会对数据分析和机器学习有很大的帮助
 author: abner

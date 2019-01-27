@@ -1,7 +1,9 @@
 ---
 youku_id: XMTgzNDk2NjcyNA
 youtube_id: fkZKdLtgNVo
-bilibili_id: 16001891&page=38
+b_av: 16001891
+b_cid: 27636916
+b_page: 38
 description: "name_scope 和 variable_scope 的不同还有使用方法.scope 能让你命名变量的时候轻松很多. 同时也会在 reusing variable 代码中常常见到. 所以今天我们会来讨论下 tensorflow 当中的两种定义 scope 的方式.
 最后并附加一个 RNN 运用 reuse variable 的例子.
 "

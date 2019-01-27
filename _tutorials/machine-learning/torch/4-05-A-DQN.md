@@ -1,7 +1,9 @@
 ---
 youku_id: XMjUyMzI1NzgwMA
 youtube_id: b7PO_xfEMwE
-bilibili_id: 15997678&page=26
+b_av: 15997678
+b_cid: 27669648
+b_page: 26
 title: 什么是 DQN
 description: "今天我们会来说说强化学习中的一种强大武器, Deep Q Network 简称为 DQN. Google Deep mind 团队就是靠着这 DQN 使计算机玩电动玩得比我们还厉害.
 之前我们所谈论到的强化学习方法都是比较传统的方式,

@@ -1,7 +1,9 @@
 ---
 youku_id: XMjc0NTk2NTgxNg
 youtube_id: JIGkxYmLPPY
-bilibili_id: 15997678&page=6
+b_av: 15997678
+b_cid: 27669629
+b_page: 6
 title: Pytorch 安装
 publish-date: 2017-05-05
 thumbnail: "/static/thumbnail-small/torch/1-2_install.jpg"

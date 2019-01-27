@@ -1,7 +1,9 @@
 ---
 youku_id: XMzE5NDgxNjIwOA
 youtube_id: T5QlePZ4s3U
-bilibili_id: 16797357&page=3
+b_av: 16797357
+b_cid: 27444435
+b_page: 3
 b-cid: 27444433
 title: 从头开始做一个机器手臂3 写动态环境
 description: "上次我们搭建好了一个静态的环境, 整个环境还没有动起来.

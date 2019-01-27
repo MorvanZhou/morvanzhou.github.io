@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcxNjI2OTIyNA
 youtube_id: p7FoQqWk_Uo
-bilibili_id: 16378354&page=8
+b_av: 16378354
+b_cid: 27599032
+b_page: 8
 description: 在用 matplotlib 做标注 annotation 的时候, 我们其实可以用两种方法, 一种是用 plt 里面的 annotate, 一种就是直接用 plt 里面的 text 来写标注.
 chapter: 2
 title: Annotation 标注

@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=16
+b_av: 16938887
+b_cid: 27691040
+b_page: 16
 youku_id: XMTY2NDI3ODc2NA
 youtube_id: ho4ms9gVjKE
 title: Classification 分类学习 

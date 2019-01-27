@@ -1,7 +1,9 @@
 ---
 youku_id: XMzE5NDYzMDU4MA
 youtube_id: sN3PN7LKPJs
-bilibili_id: 16797357&page=1
+b_av: 16797357
+b_cid: 27444433
+b_page: 1
 b-cid: 27444433
 title: 从头开始做一个机器手臂1 搭建结构
 description: "做这个实践的主要目的就是让我们活学活用, 从0开始搭建一个强化学习框架. 之前我们在强化学习系列教程中学习到了很多强化学习的知识,

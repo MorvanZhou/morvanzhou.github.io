@@ -1,7 +1,9 @@
 ---
 youku_id: XMzExNjczNDYwOA
 youtube_id: tA9OKOZqjdg
-bilibili_id: 15976434&page=2
+b_av: 15976434
+b_cid: 27635069
+b_page: 2
 chapter: 1
 title: 安装 Ubuntu 17.10
 publish-date: 2017-10-11

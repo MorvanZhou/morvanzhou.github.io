@@ -1,7 +1,9 @@
 ---
 youku_id: XMzI4ODIxNDU1Mg
 youtube_id: SiIwSAIC458
-bilibili_id: 17920849&page=4
+b_av: 17920849
+b_cid: 29263187
+b_page: 4
 title: "BeautifulSoup 解析网页: CSS"
 description: "BeautifulSoup 十分好用, 能快速定位到你需要的网页信息.
 上次我们学着使用了 BeautifulSoup, 这次我们将会了解它更强大的功能, 使用 CSS 的 Class 来选择内容."

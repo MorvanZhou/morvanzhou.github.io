@@ -1,7 +1,7 @@
 ---
 youku_id: XMTc2OTk5NDA4MA
 youtube_id: doXeC9_vMhg
-bilibili_id: 16009140
+b_av: 16009140
 title: 处理不均衡数据 (Imbalanced data)
 description: 今天我们会来聊聊在机器学习中常会遇到的问题. 满手都是不均衡数据.很多数据中,正反数据量都是不均衡的,比如在一千个人中预测一个得癌症的人. 有时候只要一直预测多数派, model 的预测误差也能很小, 形成"已经学习好了"的假象. 今天我们来看看如何避免这种情况的发生. 
 chapter: 3

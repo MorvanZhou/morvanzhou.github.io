@@ -1,5 +1,7 @@
 ---
-bilibili_id: 16938887&page=15
+b_av: 16938887
+b_cid: 27691039
+b_page: 15
 youku_id: XMTY2NDE5MDY2NA
 youtube_id: nslbfsN8wiU
 title: 可视化结果 回归例子

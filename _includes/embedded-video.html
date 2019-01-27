@@ -5,18 +5,16 @@
 		此节只有文字教学~</span>
 	<br>
 {% else %}
-	{% if page.youtube_id %}
-
+	{% if page.b_av %}
 	<div id="videogfw" class="video-container">
 		<!-- video embedding-->
 		<script type="text/javascript">
 			var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
 			var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
-			{% assign aidpage = page.bilibili_id | split:'&' %}
-			var bilibili_src = "//player.bilibili.com/player.html?aid={{ aidpage[0] }}&cid={{ page.b-cid }}&{{ aidpage[1] }}";
-			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.bilibili_id}}";
+			var bilibili_src = "//player.bilibili.com/player.html?aid={{ page.b_av }}&cid={{ page.b_cid }}&page={{ page.b_page }}";
+			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.b_av}}";
 
-    	getEmbeddedVideo(bilibili_src, "{{page.bilibili_id}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
+    	getEmbeddedVideo(bilibili_src, "{{page.b_av}}/?p={{page.b_page}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
 		</script>
 	</div>
 
@@ -34,8 +32,8 @@
 		</button>
 		{% endif %}
 
-		{% if page.bilibili_id %}
-		<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.bilibili_id}}')">
+		{% if page.b_av %}
+		<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.b_av}}/?p={{page.b_page}}')">
 	    	<img class="icon" src="/static/img/icon/bilibili_icon.png" alt="Bilibili">
 	    </button>
 		{% endif %}

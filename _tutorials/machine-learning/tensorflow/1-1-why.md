@@ -1,7 +1,9 @@
 ---
 youku_id: XMTYxMzQzMDA3Mg
 youtube_id: vZ263nfbh8g
-bilibili_id: 16001891&page=5
+b_av: 16001891
+b_cid: 26109441
+b_page: 5
 description: "最近几年火起来的机器学习有没有让你动心呢? 学习 google 开发定制的 tensorflow, 能让你成为机器学习, 神经网络的大牛,同时也会在海量的信息当中受益匪浅."
 chapter: 1
 title: 为什么选 Tensorflow?

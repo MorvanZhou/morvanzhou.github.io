@@ -1,7 +1,7 @@
 ---
 youku_id: 
 youtube_id: 
-bilibili_id: 
+b_av:
 description: 
 chapter: 1
 title: 为什么要计算机视觉

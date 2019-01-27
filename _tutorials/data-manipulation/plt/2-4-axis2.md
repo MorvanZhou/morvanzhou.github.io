@@ -1,7 +1,9 @@
 ---
 youku_id: XMTcxNjE2MjkwMA
 youtube_id: w83mFG5tyW4
-bilibili_id: 16378354&page=6
+b_av: 16378354
+b_cid: 27599030
+b_page: 6
 description: 这次会说到在我们如何移动 matplotlib 中 axis 坐标轴的位置. 实现多样化的坐标轴显示.
 author: 黄伟
 chapter: 2

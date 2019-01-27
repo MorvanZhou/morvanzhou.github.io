@@ -1,7 +1,9 @@
 ---
 youku_id: XMzA5OTU1MzY3Mg
 youtube_id: c8STJnGZPLQ
-bilibili_id: 15976434&page=1
+b_av: 15976434
+b_cid: 26070871
+b_page: 1
 chapter: 1
 title: Why Linux?
 publish-date: 2017-10-11

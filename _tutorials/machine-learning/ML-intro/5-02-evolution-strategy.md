@@ -1,7 +1,7 @@
 ---
 youku_id: XMjk3OTcyMTU1Mg
 youtube_id: Etj_gclFFFo
-bilibili_id: 15983100
+b_av: 15983100
 title: 进化策略 (Evolution Strategy)
 publish-date: 2017-08-19
 chapter: 5

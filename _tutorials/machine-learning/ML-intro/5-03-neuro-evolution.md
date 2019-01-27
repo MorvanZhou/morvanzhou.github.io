@@ -1,7 +1,7 @@
 ---
 youku_id: XMzAwNzU0NzI1Ng
 youtube_id: tWoS8Td6biQ
-bilibili_id: 15983148
+b_av: 15983148
 title: 神经网络进化 (Neuro-Evolution)
 publish-date: 2017-09-05
 chapter: 5
