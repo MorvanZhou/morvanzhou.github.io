@@ -53,10 +53,10 @@ Policy gradient 是 RL 中另外一个大家族, 他不像 Value-based 方法 (Q
 
 {% include tut-image.html image-name="5-1-1.png" %}
 
-`log(Policy(s,a))*V` 中的 `log(Policy(s,a))` 表示在 状态 `s` 对所选动作 `a` 的吃惊度,
+`delta(log(Policy(s,a))*V)` 表示在 状态 `s` 对所选动作 `a` 的吃惊度,
 如果 `Policy(s,a)` 概率越小, 反向的 `log(Policy(s,a))` (即 `-log(P)`) 反而越大. 如果在 `Policy(s,a)` 很小的情况下,
-拿到了一个 大的 `R`, 也就是 大的 `V`, 那 `-log(Policy(s, a))*V` 就更大, 表示更吃惊, (我选了一个不常选的动作, 却发现原来它能得到了一个好的 reward,
-那我就得对我这次的参数进行一个大幅修改). 这就是 `log(Policy)*V` 的物理意义啦.
+拿到了一个 大的 `R`, 也就是 大的 `V`, 那 `-delta(log(Policy(s, a))*V)` 就更大, 表示更吃惊, (我选了一个不常选的动作, 却发现原来它能得到了一个好的 reward,
+那我就得对我这次的参数进行一个大幅修改). 这就是吃惊度的物理意义啦.
 
 {% include assign-heading.html %}
 
