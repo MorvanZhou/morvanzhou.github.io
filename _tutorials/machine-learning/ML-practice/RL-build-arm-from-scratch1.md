@@ -27,7 +27,7 @@ post-headings:
 {% include assign-heading.html %}
 
 做这个实践的主要目的就是让我们活学活用, 从0开始搭建一个强化学习框架. 之前我们在[强化学习系列教程](/tutorials/machine-learning/reinforcement-learning/)中学习到了很多强化学习的知识,
-了解了各种算法应该怎样运用, 从最简单的 [Q-Learning]({% link _tutorials/machine-learning/reinforcement-learning/2-2-A-q-learning.md %}) 到结合神经网络的
+了解了各种算法应该怎样运用, 从最简单的 [Q-Learning]({% link _tutorials/machine-learning/reinforcement-learning/2-1-A-q-learning.md %}) 到结合神经网络的
 [DQN]({% link _tutorials/machine-learning/reinforcement-learning/4-1-A-DQN.md %}), 再到做连续动作的 [DDPG]({% link _tutorials/machine-learning/reinforcement-learning/6-2-A-DDPG.md %}) 以及分布式训练的 [A3C]({% link _tutorials/machine-learning/reinforcement-learning/6-3-A1-A3C.md %})
 和 [DPPO]({% link _tutorials/machine-learning/reinforcement-learning/6-4-DPPO.md %}). **但是我们却没有真正意义上的实践过一次**, 因为在那个系列中大多数时候我们只关注了算法本身.
 但是搭建模拟环境, 调整参数也同样重要. 所以我们在这个系列中将会做到这些, 让你真正意义上入门了强化学习.
