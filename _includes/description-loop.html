@@ -4,7 +4,7 @@
 <div class="section ie-size">
 	<div class="pad-main">
 		<a class="non-underscore hover-move" href="{{description.tut-dir}}"><h2 class="small-h1">
-			<img class="icon-image lazy-img" data-src="{{description.icon-dir}}">
+			<img class="icon-image lazy-img" src="{{description.icon-dir}}">
 				{{description.title}}</h2>
 		</a>
 
@@ -13,7 +13,7 @@
 		<ul class="tut-course-thumbnail">
 	    {% for item in description.tut-course-detail %}
 	      <li><a href="{{ item[0] }}/">
-	        <img class="lazy-img" alt="{{ item[1] }}" data-src="{{ item[2] }}" src="/static/img/description/loading.gif" title='{{ item[1] }}'>
+	        <img class="lazy-img" alt="{{ item[1] }}" src="{{ item[2] }}" title='{{ item[1] }}'>
 	      </a></li>
 	    {% endfor %}
 	    </ul>

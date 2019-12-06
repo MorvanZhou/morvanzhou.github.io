@@ -8,7 +8,7 @@
 	{% if page.b_av %}
 	<div id="videogfw" class="video-container">
 		<!-- video embedding-->
-		<script type="text/javascript">
+		<script type="text/javascript" async>
 			var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
 			var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
 			var bilibili_src = "//player.bilibili.com/player.html?aid={{ page.b_av }}&cid={{ page.b_cid }}&page={{ page.b_page }}";

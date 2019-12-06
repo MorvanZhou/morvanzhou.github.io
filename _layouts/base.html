@@ -109,16 +109,24 @@
 
 
   <!-- load images after page load -->
-  <script type="text/javascript">
-  window.addEventListener('load', function(){
-    var allimages = document.getElementsByClassName('lazy-img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
-    };
-  }, false)
-  </script>
+  <!--<script type="text/javascript" async>-->
+  <!--var allimages = document.getElementsByClassName('lazy-img');-->
+  <!--for (var i=0; i<allimages.length; i++) {-->
+      <!--if (allimages[i].getAttribute('data-src')) {-->
+          <!--allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));-->
+      <!--}-->
+  <!--}-->
+  <!--</script>-->
+  <!--<script type="text/javascript">-->
+  <!--window.addEventListener('load', function(){-->
+    <!--var allimages = document.getElementsByClassName('lazy-img');-->
+    <!--for (var i=0; i<allimages.length; i++) {-->
+        <!--if (allimages[i].getAttribute('data-src')) {-->
+            <!--allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));-->
+        <!--}-->
+    <!--};-->
+  <!--}, false)-->
+  <!--</script>-->
 
 
   <script type="text/javascript">
