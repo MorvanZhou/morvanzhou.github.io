@@ -104,6 +104,23 @@
         <!--$("#myVideo").remove();-->
         <!--$("#videogfw").append(video);}}-->
   <!--</script>-->
+
+
+
+
+  <!-- load images after page load -->
+  <script type="text/javascript" async>
+  window.addEventListener('load', function(){
+    var allimages = document.getElementsByClassName('lazy-img');
+    for (var i=0; i<allimages.length; i++) {
+        if (allimages[i].getAttribute('data-src')) {
+            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+        }
+    };
+  }, false)
+  </script>
+
+
   <script type="text/javascript">
     /* check-flash.js */
     var FlashDetect=new function(){var self=this;self.installed=false;self.raw="";self.major=-1;self.minor=-1;self.revision=-1;self.revisionStr="";var activeXDetectRules=[{"name":"ShockwaveFlash.ShockwaveFlash.7","version":function(obj){return getActiveXVersion(obj);}},{"name":"ShockwaveFlash.ShockwaveFlash.6","version":function(obj){var version="6,0,21";try{obj.AllowScriptAccess="always";version=getActiveXVersion(obj);}catch(err){}
@@ -185,18 +202,6 @@
   <footer>
     {% include footer.html %}
   </footer>
-
-  <!-- load images after page load -->
-  <script type="text/javascript">
-  window.addEventListener('load', function(){
-    var allimages = document.getElementsByClassName('lazy-img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
-    };
-  }, false)
-  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-108653085-1"></script>
