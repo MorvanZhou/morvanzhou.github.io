@@ -143,7 +143,7 @@ with tf.variable_scope('A_train'):
 
 ```python
 with tf.variable_scope('a_grad'):
-    self.a_grads = tf.gradients(self.q, a)[0]   # dQ/da
+    self.a_grads = tf.gradients(self.q, self.a)[0]   # dQ/da
 ```
 
 
