@@ -587,7 +587,7 @@ display: inline-block;
 
 .tut-course-thumbnail img {
 max-width: 213px;
-max-h
+
 }
 .tut-course-thumbnail img:hover {
 background-color:#000;
@@ -1078,7 +1078,7 @@ height:60px;
   }
 }
 
-@media screen and (min-width: 800px and max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
   main.tut-main {
     width: 100%;
   }
