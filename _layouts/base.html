@@ -200,8 +200,12 @@
 
 </head>
 
-<body onload="bodyLoad()">
-  <script type="text/javascript" async>
+<body>
+
+  {{content}}
+
+  <footer onload="bodyLoad()">
+    <script type="text/javascript" async>
     function bodyLoad(){
         if (window.confirm('莫烦Python已更新至新域名（mofanpy.com）,最新教学将会使用新域名，此老域名不会再更新了。\n点击【确认】跳转到新域名！\n取消则继续留在此页面'))
         {
@@ -210,9 +214,6 @@
     }
 
   </script>
-  {{content}}
-
-  <footer>
     {% include footer.html %}
   </footer>
 
