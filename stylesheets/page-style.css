@@ -144,7 +144,15 @@ left: 0;
 .large-top-bottom-padding {
 padding: 1.3em 0;
 }
-
+.announcement {
+  padding: 10px;
+  background-color: #FF5733;
+}
+.announcement > a {
+  color: white;
+  font-weight: bold;
+    font-size: 1.8em;
+}
 
 /* ================== DEFAULT FOR PAGES =================== */
 
