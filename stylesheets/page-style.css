@@ -147,6 +147,7 @@ padding: 1.3em 0;
 .announcement {
   padding: 10px;
   background-color: #FF5733;
+  text-align: center;
 }
 .announcement > a {
   color: white;
