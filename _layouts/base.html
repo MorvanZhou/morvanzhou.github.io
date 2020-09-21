@@ -8,7 +8,9 @@
   <meta name="author" content="Mofan, Morvan,莫烦,周沫凡,周莫烦,{{ page.author }}">
   <meta name="thumbnail" content="{{site.url}}{{ page.thumbnail | replace_first: '/static/thumbnail-small', '/static/thumbnail'}}" />
   <title>{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python</title>
-
+  {% if page.title == "莫烦Python" %}
+  <meta http-equiv="refresh" content="0; URL='https://mofanpy.com/'" />
+  {% endif %}
   <meta property="fb:app_id" content="2053270218284962"/>
   <meta property="og:site_name" content="莫烦Python"/>
   <meta property="og:title" content='{% if page.title != "" %}{{page.title}}{% endif %}{% if page.series %} - {{page.series}}{% endif %}{% if page.series or page.title != "" %} | {% endif %}莫烦Python' />
